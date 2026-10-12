@@ -176,5 +176,22 @@
   "software.heading": "For your own computer",
   "software.text": "The same classification is available as a program for Windows, Mac and Linux. It adds full-text search in the text of the regulation: ask a question in your own words, and the helper shows the passages of the regulation that answer it. Install, start, done — no Python, no setup, no sign-up.",
   "software.link": "Program and source code on GitHub",
-  "software.license": "— Apache License 2.0."
+  "software.license": "— Apache License 2.0.",
+
+  "showcase.heading": "Walk through the European Commission's examples",
+  "showcase.intro": "{count} of the {total} official examples from the Commission's guidelines, answered step by step. At the end the helper's finding stands next to the Commission's verdict.",
+  "showcase.mix": "{high} high-risk · {minimal} not high-risk · {exemption} derogation under Article 6(3)",
+  "showcase.commissionSays": "Commission: {verdict}",
+  "showcase.verdict.highRisk": "high-risk",
+  "showcase.verdict.notHighRisk": "not high-risk",
+  "showcase.verdict.exemption": "derogation applies",
+  "showcase.bannerKicker": "Commission example · guidelines paragraph {ref}",
+  "showcase.answersGiven": "The answers are given as far as the description supports them. “Next” moves on to the next step.",
+  "showcase.comparisonHeading": "Comparison with the Commission",
+  "showcase.commission": "Commission's verdict",
+  "showcase.helper": "Helper's finding",
+  "showcase.agreement": "The helper reaches the same result as the Commission.",
+  "showcase.disagreement": "The helper differs from the Commission here.",
+  "showcase.more": "More examples",
+  "showcase.own": "Classify your own system"
 }

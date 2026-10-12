@@ -2,9 +2,10 @@
 
 Context: the flow logic exists twice (classification/question_flow.py and web/walkthrough.js) and
 two copies of the same logic drift apart. | Input: seeded random answer patterns (--runs, --seed),
-every fourth one aimed at the Annex I path with many "don't know" answers, the web folder (--web),
-Node.js | Output: per-run comparison of question order, risk class, citations, evidence, open
-provisions, filter reason and closing text in German and English; exit code 1 on divergences.
+every fourth one aimed at the Annex I path with many "don't know" answers, the worked examples of
+web/showcase.json, the web folder (--web), Node.js | Output: per-run comparison of question order,
+risk class, citations, evidence, open provisions, filter reason and closing text in German and
+English; exit code 1 on divergences.
 """
 
 from __future__ import annotations
@@ -103,6 +104,18 @@ def random_answers(d: Walkthrough, rng: random.Random) -> dict[str, object]:
     return pattern
 
 
+def showcase_patterns(web: Path) -> list[dict[str, object]]:
+    """Answer patterns of the worked examples, exactly as page.js replays them."""
+    source = web / "showcase.json"
+    if not source.exists():
+        return []
+    cases = json.loads(source.read_text(encoding="utf-8"))["cases"]
+    return [
+        {**dict.fromkeys(case["yes"], True), **dict.fromkeys(case["unknown"], NOT_APPLICABLE)}
+        for case in cases
+    ]
+
+
 def _result_fields(e: Finding, language: str) -> dict[str, object]:
     return {
         "risk_class": e.risk_class,
@@ -151,6 +164,8 @@ def main(argv: list[str] | None = None) -> int:
     pattern = [random_answers(d, rng) for _ in range(a.runs)]
     for m in pattern[::ANNEX_I_PATTERN_EVERY]:
         m.update(annex_i_answers(d, rng))
+    worked_examples = showcase_patterns(a.web)
+    pattern += worked_examples
 
     tmp_dir = tempfile.TemporaryDirectory()
     directory = Path(tmp_dir.name)
@@ -186,11 +201,13 @@ def main(argv: list[str] | None = None) -> int:
     js = json.loads(run.stdout)
 
     error = 0
+    differing: list[int] = []
     for i, m in enumerate(pattern):
         py_result = python_run(d, m)
         if py_result == js[i]:
             continue
         error += 1
+        differing.append(i)
         if error <= 3:
             print(f"\n--- Run {i}: Python and browser differ ---")
             if py_result["trace"] != js[i]["trace"]:
@@ -210,7 +227,12 @@ def main(argv: list[str] | None = None) -> int:
                 if py_result[key] != js[i].get(key):
                     print(f"  {key}: Python {py_result[key]!r}, browser {js[i][key]!r}")
 
-    print(f"\n{a.runs - error} of {a.runs} runs identical.")
+    random_errors = sum(i < a.runs for i in differing)
+    example_errors = error - random_errors
+    print(f"\n{a.runs - random_errors} of {a.runs} runs identical.")
+    if worked_examples:
+        identical = len(worked_examples) - example_errors
+        print(f"{identical} of {len(worked_examples)} worked examples identical.")
     return 1 if error else 0
 
 

@@ -182,6 +182,30 @@ summary{cursor:pointer;font-weight:500;font-size:.95rem}
 .assessment{font-size:.76rem;font-weight:700;letter-spacing:.02em}
 .assessment.yes{color:var(--warn)} .assessment.no{color:var(--good)}
 .source-ref{font-size:.8rem;color:var(--text-faint);margin:.4rem 0 0 !important}
+.showcase{margin-top:2.6rem;padding-top:2rem;border-top:1px solid var(--line)}
+.showcase h3{font-family:var(--serif);font-weight:400;font-size:clamp(1.3rem,3vw,1.6rem);margin:0 0 .8rem}
+.showcase-grid{list-style:none;margin:1.4rem 0 0;padding:0;display:grid;gap:12px;
+  grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.showcase-card{font:inherit;width:100%;height:100%;text-align:left;display:flex;flex-direction:column;gap:.45rem;
+  padding:16px 18px;border:1px solid var(--line);border-radius:var(--round);background:var(--sheet);
+  color:var(--text);cursor:pointer;transition:border-color .15s,box-shadow .15s}
+.showcase-card:hover,.showcase-card:focus-visible{border-color:var(--blue);box-shadow:var(--shadow);outline:none}
+.showcase-topic{font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text-faint)}
+.showcase-title{font-family:var(--serif);font-size:1.06rem;line-height:1.35;flex:1}
+.verdict-tag{align-self:flex-start;font-size:.76rem;font-weight:600;padding:3px 10px;border-radius:999px;
+  background:var(--cool-surface);color:var(--cool)}
+.verdict-tag.high{background:var(--warn-surface);color:var(--warn)}
+.verdict-tag.minimal{background:var(--good-surface);color:var(--good)}
+.case-banner{background:var(--cool-surface);border-left:4px solid var(--blue);border-radius:var(--round);
+  padding:16px 20px;margin:0 0 1.6rem}
+.case-banner p{margin:0 0 .5rem;max-width:70ch}
+.case-banner p:last-child{margin-bottom:0}
+.case-banner .kicker{font-size:.76rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--blue)}
+.case-banner .case-title{font-family:var(--serif);font-size:1.15rem}
+.choice button[disabled]{cursor:default}
+.choice button[disabled]:not([aria-pressed="true"]):hover{background:transparent;color:var(--text-muted)}
+.agreement{color:var(--good);font-weight:600;margin-top:1rem !important}
+.disagreement{color:var(--stop);font-weight:600;margin-top:1rem !important}
 
 footer.footer{max-width:1140px;margin:0 auto;padding:0 20px 56px;color:var(--text-muted);font-size:.85rem}
 footer.footer p{max-width:70ch;margin:0 0 .6rem}

@@ -11,6 +11,24 @@ Changes to the rule set and the legal corpus come before program changes within 
 For someone who receives an answer, a changed article reference matters more than any program
 change. Every entry on the data status names the date the rule set stands on afterwards.
 
+## [Unreleased]
+
+**Context:** visitors can check the measured accuracy themselves | **Input:** 20 official Commission examples with curated answers | **Output:** worked examples on the start page, a replay check and a parity check for them
+
+The rule set still stands on **31 May 2026**; no question, rule or legal text changed.
+
+### Added
+
+- Start page section with 20 worked examples from the Commission draft guidelines of 19 May
+  2026: 13 high risk, 6 not high risk, 1 exemption under Article 6(3), across nine areas. A card
+  replays the walkthrough with the answers prefilled and ends with the helper's finding next to
+  the Commission's verdict and paragraph, in German and English.
+- `data/evaluation/showcase.yaml` (the answers), `compliance_helper.classification.showcase`
+  (replay and agreement check) and `scripts/export_showcase.py`, which writes
+  `web/showcase.json` and refuses to write a case that misses the Commission's verdict.
+- `scripts/check_parity.py` also replays the 20 worked examples in Python and in the browser
+  code and requires identical results.
+
 ## [2.0.0] - 2026-10-09
 
 **Context:** the project speaks English as well as German | **Input:** all commits after 1.2.4 | **Output:** English code and data names, a German/English switch everywhere, an English corpus and search index

@@ -49,6 +49,15 @@ gives **207 of 210**. The method and every single deviation are in
 
 What this figure does not show: no lawyer has reviewed the run.
 
+The start page shows **20 of these examples as worked examples**: employment, credit and
+insurance, public benefits, emergency triage, education, biometrics, critical infrastructure,
+migration and Annex I products. 13 end in high risk, 6 in not high risk and one in the exemption
+of Article 6(3). Each card replays the walkthrough step by step with the answers a reader gives
+from the description alone, then puts the helper's finding next to the Commission's verdict and
+paragraph. The answers live in
+[data/evaluation/showcase.yaml](data/evaluation/showcase.yaml); a test fails as soon as a rule
+change turns one of them into a disagreement.
+
 ## Why questions instead of guessing
 
 **Context:** the central design decision | **Input:** experience from the first versions | **Output:** why the classification comes from answers
@@ -75,7 +84,7 @@ probable but correct, as far as the answers are. And the user sees what it depen
 | Sourced | Every question, exclusion and example carries the paragraph number of the official interpretation |
 | Two languages | German and English for the web page, the command-line interface (CLI), the web service, the legal corpus and the search index; both corpora use the same unit ids |
 | Two code paths, one result | Web page and program provably compute the same: 400 of 400 test runs |
-| Tests | 641 tests, of which 610 run on every push without models or network |
+| Tests | 670 tests, of which 639 run on every push without models or network |
 
 The questions are taken line by line from the draft guidelines of the European Commission of
 19 May 2026. None of them is invented.

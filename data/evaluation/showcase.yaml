@@ -1,0 +1,124 @@
+# Worked examples for the web page: official examples replayed step by step.
+#
+# Each entry names one example of official_examples.json by its index and the answers a reader
+# gives when filling in the walkthrough from the example text alone. Questions listed under
+# "yes_answers" are answered yes, those under "unknown_answers" with "don't know"; every other
+# question the walkthrough asks is answered no. Scenario, Commission verdict, rationale and
+# paragraph come from official_examples.json, so nothing here restates the guidelines.
+#
+# tests/test_showcase.py replays every entry and requires the Commission's verdict;
+# scripts/export_showcase.py writes the browser copy web/showcase.json.
+
+cases:
+  - index: 94
+    title: {de: "Online-Test reiht Bewerber für das Vorstellungsgespräch", en: "Online test ranks applicants for the interview"}
+    topic: {de: "Personal", en: "Employment"}
+    yes_answers: [is-ai-system, natural-persons, "area:AI-Act/annex-III/pt-4", "main:pt-4-employment:0", "main:pt-4-employment:1",
+          "follow-up:pt-4-employment:0:0", "follow-up:pt-4-employment:0:5", "follow-up:pt-4-employment:1:1",
+          "follow-up:pt-4-employment:1:3", "follow-up:pt-4-employment:1:5", "follow-up:pt-4-employment:1:6",
+          "follow-up:pt-4-employment:1:7"]
+  - index: 81
+    title: {de: "Schichtplaner verteilt Schichten nach Leistungswerten", en: "Shift planner allocates shifts by performance scores"}
+    topic: {de: "Personal", en: "Employment"}
+    yes_answers: [is-ai-system, natural-persons, "area:AI-Act/annex-III/pt-4", "main:pt-4-employment:0", "main:pt-4-employment:2",
+          "follow-up:pt-4-employment:0:0", "follow-up:pt-4-employment:0:5", "follow-up:pt-4-employment:2:0",
+          "follow-up:pt-4-employment:2:1", "follow-up:pt-4-employment:2:6", "follow-up:pt-4-employment:2:7",
+          "follow-up:pt-4-employment:2:8", "follow-up:pt-4-employment:2:9", "follow-up:pt-4-employment:2:11",
+          "follow-up:pt-4-employment:2:14", "follow-up:pt-4-employment:2:15", "follow-up:pt-4-employment:2:18",
+          "follow-up:pt-4-employment:2:19"]
+  - index: 39
+    title: {de: "Persönliche Eingangsbestätigung für Bewerbungen", en: "Personalised acknowledgement of applications"}
+    topic: {de: "Personal", en: "Employment"}
+    yes_answers: [is-ai-system, natural-persons, "area:AI-Act/annex-III/pt-4", "main:pt-4-employment:0",
+          "follow-up:pt-4-employment:0:0"]
+  - index: 132
+    title: {de: "Bonitätswert für Verbraucherkredit und Hypothek", en: "Credit score for consumer loans and mortgages"}
+    topic: {de: "Kredit und Versicherung", en: "Credit and insurance"}
+    yes_answers: [is-ai-system, natural-persons, "area:AI-Act/annex-III/pt-5", "main:pt-5-essential-services:1",
+          "follow-up:pt-5-essential-services:1:0", "follow-up:pt-5-essential-services:1:3",
+          "follow-up:pt-5-essential-services:1:4", "follow-up:pt-5-essential-services:1:8"]
+  - index: 5
+    title: {de: "Zinsrechner ohne eigene Bonitätsprüfung", en: "Interest rate pricing without its own credit check"}
+    topic: {de: "Kredit und Versicherung", en: "Credit and insurance"}
+    yes_answers: [is-ai-system, natural-persons, "area:AI-Act/annex-III/pt-5"]
+  - index: 129
+    title: {de: "Kreditwürdigkeit von Firmen aus Bilanzen", en: "Creditworthiness of companies from balance sheets"}
+    topic: {de: "Kredit und Versicherung", en: "Credit and insurance"}
+    yes_answers: [is-ai-system]
+  - index: 123
+    title: {de: "Krankenversicherung legt Beiträge nach Einzelrisiko fest", en: "Health insurer sets premiums by individual risk"}
+    topic: {de: "Kredit und Versicherung", en: "Credit and insurance"}
+    yes_answers: [is-ai-system, natural-persons, "area:AI-Act/annex-III/pt-5", "main:pt-5-essential-services:2",
+          "follow-up:pt-5-essential-services:2:0", "follow-up:pt-5-essential-services:2:1",
+          "follow-up:pt-5-essential-services:2:2", "follow-up:pt-5-essential-services:2:9"]
+  - index: 60
+    title: {de: "Empfehlung zum Arbeitslosengeld", en: "Recommendation on unemployment benefit"}
+    topic: {de: "Öffentliche Leistungen", en: "Public benefits"}
+    yes_answers: [is-ai-system, natural-persons, "area:AI-Act/annex-III/pt-5", "main:pt-5-essential-services:0",
+          "follow-up:pt-5-essential-services:0:0", "follow-up:pt-5-essential-services:0:1",
+          "follow-up:pt-5-essential-services:0:6", "follow-up:pt-5-essential-services:0:7",
+          "follow-up:pt-5-essential-services:0:8"]
+  - index: 52
+    title: {de: "Vorsortierung in der Notaufnahme", en: "Triage in the emergency department"}
+    topic: {de: "Notfall", en: "Emergency"}
+    yes_answers: [is-ai-system, natural-persons, "area:AI-Act/annex-III/pt-5", "main:pt-5-essential-services:3",
+          "follow-up:pt-5-essential-services:3:3"]
+  - index: 197
+    title: {de: "Notenvorschlag für Prüfungen", en: "Grade proposals for exams"}
+    topic: {de: "Bildung", en: "Education"}
+    yes_answers: [is-ai-system, natural-persons, "area:AI-Act/annex-III/pt-3", "main:pt-3-education:1",
+          "follow-up:pt-3-education:1:1", "follow-up:pt-3-education:1:2", "follow-up:pt-3-education:1:4",
+          "follow-up:pt-3-education:1:10"]
+  - index: 33
+    title: {de: "Prüfungsaufsicht mit Gesichtserkennung", en: "Exam proctoring with face recognition"}
+    topic: {de: "Bildung", en: "Education"}
+    yes_answers: [is-ai-system, natural-persons, "area:AI-Act/annex-III/pt-3", "main:pt-3-education:3",
+          "follow-up:pt-3-education:3:1", "follow-up:pt-3-education:3:3", "follow-up:pt-3-education:3:4",
+          "follow-up:pt-3-education:3:5", "follow-up:pt-3-education:3:6"]
+  - index: 70
+    title: {de: "Sprachlern-App ohne Zeugnis", en: "Language learning app without a certificate"}
+    topic: {de: "Bildung", en: "Education"}
+    yes_answers: [is-ai-system, natural-persons, "area:AI-Act/annex-III/pt-3"]
+  - index: 170
+    title: {de: "Schulbewerbungen nach Klassenstufe sortieren", en: "Sorting school applications by grade level"}
+    topic: {de: "Bildung", en: "Education"}
+    yes_answers: [is-ai-system, natural-persons, "area:AI-Act/annex-III/pt-3", "main:pt-3-education:0",
+          "follow-up:pt-3-education:0:1", "follow-up:pt-3-education:0:3", "filter:narrow-procedural-task"]
+  - index: 69
+    title: {de: "Gesichtsabgleich im Stadion nach einem Vorfall", en: "Face matching in a stadium after an incident"}
+    topic: {de: "Biometrie", en: "Biometrics"}
+    yes_answers: [is-ai-system, natural-persons, "area:AI-Act/annex-III/pt-1", "main:pt-1-biometrics:0",
+          "follow-up:pt-1-biometrics:0:0", "follow-up:pt-1-biometrics:0:2", "follow-up:pt-1-biometrics:0:3"]
+  - index: 61
+    title: {de: "Callcenter erkennt Wut in der Stimme", en: "Call centre detects anger in the voice"}
+    topic: {de: "Biometrie", en: "Biometrics"}
+    yes_answers: [is-ai-system, natural-persons, "area:AI-Act/annex-III/pt-1", "main:pt-1-biometrics:2",
+          "follow-up:pt-1-biometrics:2:0", "follow-up:pt-1-biometrics:2:1", "follow-up:pt-1-biometrics:2:2"]
+  - index: 54
+    title: {de: "Müdigkeitswarner im Auto", en: "Driver drowsiness warning in the car"}
+    topic: {de: "Biometrie", en: "Biometrics"}
+    yes_answers: [is-ai-system, natural-persons, "area:AI-Act/annex-III/pt-1"]
+  - index: 35
+    title: {de: "Ampelsteuerung nach Verkehrslage", en: "Traffic lights adjusted to the traffic"}
+    topic: {de: "Kritische Infrastruktur", en: "Critical infrastructure"}
+    yes_answers: [is-ai-system, natural-persons, "area:AI-Act/annex-III/pt-2", "main:pt-2-critical-infrastructure:0",
+          "main:pt-2-critical-infrastructure:2", "follow-up:pt-2-critical-infrastructure:0:1",
+          "follow-up:pt-2-critical-infrastructure:2:0", "follow-up:pt-2-critical-infrastructure:2:3"]
+    unknown_answers: ["main:pt-2-critical-infrastructure:1", "follow-up:pt-2-critical-infrastructure:1:0"]
+  - index: 46
+    title: {de: "Gefahrenwert für Migranten", en: "Risk score for migrants"}
+    topic: {de: "Migration", en: "Migration"}
+    yes_answers: [is-ai-system, natural-persons, "area:AI-Act/annex-III/pt-7", "main:pt-6-7-8-public-authorities:6",
+          "main:pt-6-7-8-public-authorities:8", "follow-up:pt-6-7-8-public-authorities:6:0",
+          "follow-up:pt-6-7-8-public-authorities:6:8", "follow-up:pt-6-7-8-public-authorities:8:0",
+          "follow-up:pt-6-7-8-public-authorities:8:1", "follow-up:pt-6-7-8-public-authorities:8:3"]
+  - index: 68
+    title: {de: "Sicherheitsbauteil einer Maschine", en: "Safety component of a machine"}
+    topic: {de: "Produkte nach Anhang I", en: "Products under Annex I"}
+    yes_answers: [is-ai-system, "annex-i:product-under-annex-i", "annex-i-category:machinery", "annex-i:part-of-regulated-product",
+          "annex-i:safety-function", "annex-i:failure-endangers-safety", "annex-i:third-party-assessment-required"]
+  - index: 1
+    title: {de: "Thermostat lernt die Heizzeiten", en: "Thermostat learns the heating times"}
+    topic: {de: "Produkte nach Anhang I", en: "Products under Annex I"}
+    yes_answers: [is-ai-system, "annex-i:product-under-annex-i", "annex-i-category:radio-equipment",
+          "annex-i:part-of-regulated-product", "annex-i:comfort-or-efficiency-only", "annex-i:connected-home-appliance"]

@@ -9,6 +9,9 @@
 /question_flow.json
   Cache-Control: public, max-age=3600, must-revalidate
 
+/showcase.json
+  Cache-Control: public, max-age=3600, must-revalidate
+
 /walkthrough.js
   Cache-Control: public, max-age=3600, must-revalidate
 

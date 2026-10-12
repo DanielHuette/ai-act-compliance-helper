@@ -14,7 +14,7 @@
 | Rechtsbestand | deutsch, 2.811 Stellen | deutsch und englisch, je 2.811 Stellen mit gleichen Kennungen; Englisch aus dem Amtsblatt und der amtlichen BDSG-Übersetzung |
 | Suchindex | deutsch, Neubau rund eine Stunde | je Sprache einer, Neubau nur geänderter Stellen |
 | Paket / Befehl | `helfer` / `konformitaetshelfer` | `compliance_helper` / `compliance-helper` |
-| Prüfungen | 218 | 641 (610 ohne Modelle, Netz und Docker) |
+| Prüfungen | 218 | 670 (639 ohne Modelle, Netz und Docker) |
 | Kommentarzeilen im Code | 9,6 % | unter 5 % je Datei |
 
 ## Gemessene Ergebnisse
@@ -46,6 +46,18 @@
 | Interne Kürzel in der Ausgabe („needs_review“, „KI-VO/anh-III/nr-4“) | lesbare Bezeichnungen und Fundstellen in der gewählten Sprache |
 | Zwei veröffentlichte Zahlen waren falsch (11 Abweichungen, 303 Rechtsgrundlagen) | korrigiert auf 10 und 302 |
 
+## Beispiele zum Nachvollziehen
+
+**Kontext:** Die Genauigkeit stand nur als Zahl da, nicht sichtbar auf der Seite | **Eingabe:** 20 der 217 amtlichen Beispiele, gewählt für alle Wertungen und neun Bereiche | **Ergebnis:** ein abspielbarer Abschnitt auf der Startseite, abgesichert durch Tests und den Gleichlauf-Test
+
+| Befund | Änderung | Nachweis |
+|---|---|---|
+| Besucher konnten „207 von 217“ nicht selbst prüfen | Abschnitt auf der Startseite mit 20 Beispielen; jedes spielt den Durchlauf ab und stellt am Ende den Befund des Helfers neben Wertung und Randnummer der Kommission | `tests/test_showcase.py`: 20 von 20 stimmen überein; Browserdurchgang aller 20, deutsch und englisch |
+| Die hinterlegten Antworten konnten unbemerkt vom Fragenablauf abweichen | das Abspielen lehnt Antworten auf nie gestellte Fragen ab; der Export verweigert einen Fall, der die Wertung verfehlt | `test_replay_rejects_answers_the_flow_never_asks`, `test_export_rejects_a_replay_that_misses_the_verdict` |
+| Die Browserkopie konnte hinter den Antworten zurückbleiben | `scripts/export_showcase.py` schreibt `web/showcase.json`; ein Test vergleicht einen frischen Export mit der eingecheckten Datei | `test_export_writes_the_web_copy_by_default_and_it_is_current` |
+| Python- und Browserdurchlauf wurden nur mit Zufallsantworten verglichen | `scripts/check_parity.py` spielt zusätzlich die 20 Beispiele in beiden ab | 400 von 400 Zufallsläufen und 20 von 20 Beispielen gleich |
+| YAML 1.1 liest den Schlüssel `yes` als Wahrheitswert, die Antworten waren dadurch leer | Schlüssel heißen `yes_answers` und `unknown_answers`; ein Fall mit Ja und „Weiß nicht“ für dieselbe Frage wird abgelehnt | `test_load_cases_rejects_contradicting_answers` |
+
 ## Abschlussprüfung
 
 **Kontext:** Abnahme vor der Veröffentlichung | **Eingabe:** frischer Klon, frische Umgebung | **Ergebnis:** alle Prüfungen bestanden
@@ -53,7 +65,7 @@
 | Prüfung | Ergebnis |
 |---|---|
 | `ruff check`, `ruff format --check`, `mypy` | fehlerfrei |
-| `pytest` ohne Modelle | 610 bestanden |
+| `pytest` ohne Modelle | 639 bestanden |
 | Langsame Such- und Genauigkeitsprüfungen mit Modellen, beide Sprachen | bestanden |
 | Container bauen und Container-Prüfungen | 13 bestanden |
 | Paket gebaut, in frischer Umgebung installiert, `classify` ausgeführt | funktioniert |

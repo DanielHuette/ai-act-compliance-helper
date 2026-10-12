@@ -50,6 +50,15 @@ Abweichung stehen in [data/evaluation/MEASUREMENT.de.md](data/evaluation/MEASURE
 
 Was diese Zahl nicht hergibt: kein Jurist hat den Durchlauf gegengelesen.
 
+Die Startseite zeigt **20 dieser Beispiele zum Nachvollziehen**: Personal, Kredit und
+Versicherung, öffentliche Leistungen, Notaufnahme, Bildung, Biometrie, kritische Infrastruktur,
+Migration und Produkte nach Anhang I. 13 enden mit hohem Risiko, 6 ohne hohes Risiko und eines
+mit der Ausnahme des Artikels 6 Absatz 3. Jede Karte spielt den Durchlauf Schritt für Schritt
+mit den Antworten ab, die man allein aus der Beschreibung gibt, und stellt danach den Befund des
+Helfers neben die Wertung und die Randnummer der Kommission. Die Antworten stehen in
+[data/evaluation/showcase.yaml](data/evaluation/showcase.yaml); ein Test schlägt fehl, sobald
+eine Regeländerung eines davon zur Abweichung macht.
+
 ## Warum Fragen statt Raten
 
 **Kontext:** die Grundentscheidung | **Eingabe:** die Erfahrung aus den ersten Fassungen | **Ergebnis:** warum die Einstufung aus Antworten entsteht
@@ -76,7 +85,7 @@ wahrscheinlich, sondern richtig, soweit seine Angaben stimmen. Und er sieht, wor
 | Belegt | Jede Frage, jeder Ausschluss, jedes Beispiel trägt die Absatznummer der amtlichen Auslegung |
 | Zwei Sprachen | Deutsch und Englisch für Webseite, Kommandozeile, Webdienst, Rechtsbestand und Suchbestand; beide Rechtsbestände nutzen dieselben Kennungen |
 | Zwei Wege, ein Ergebnis | Webseite und Programm rechnen nachweislich gleich: 400 von 400 Prüfläufen |
-| Prüfungen | 641 Prüfungen, davon laufen 610 bei jedem Hochladen ohne Modelle und ohne Netz |
+| Prüfungen | 670 Prüfungen, davon laufen 639 bei jedem Hochladen ohne Modelle und ohne Netz |
 
 Die Fragen stammen Zeile für Zeile aus dem Entwurf der Leitlinien der Europäischen Kommission
 vom 19. Mai 2026. Nichts darin ist ausgedacht.

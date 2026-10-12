@@ -14,7 +14,7 @@
 | Legal corpus | German, 2,811 units | German and English, 2,811 units each with identical ids; English from the Official Journal and the official BDSG translation |
 | Search index | German, full rebuild about one hour | one per language, incremental rebuild of changed units only |
 | Package / command | `helfer` / `konformitaetshelfer` | `compliance_helper` / `compliance-helper` |
-| Tests | 218 | 641 (610 without models, network or Docker) |
+| Tests | 218 | 670 (639 without models, network or Docker) |
 | Comment lines in code | 9.6 % | below 5 % per file |
 
 ## Measured results
@@ -46,6 +46,18 @@
 | Raw ids in output ("needs_review", "KI-VO/anh-III/nr-4") | readable labels and citations in the chosen language |
 | Two published figures were wrong (11 deviations, 303 legal bases) | corrected to 10 and 302 |
 
+## Worked examples
+
+**Context:** The accuracy figure was only stated, not visible on the page | **Input:** 20 of the 217 official examples, chosen to cover every verdict and nine areas | **Output:** a replayable showcase on the start page, guarded by tests and the parity check
+
+| Finding | Change | Evidence |
+|---|---|---|
+| Visitors could not check "207 of 217" themselves | start page section with 20 worked examples; each replays the walkthrough and ends with the helper's finding next to the Commission's verdict and paragraph | `tests/test_showcase.py`: 20 of 20 agree; browser run of all 20, German and English |
+| Curated answers could silently drift from the question flow | the replay rejects answers to questions the flow never asks; the export refuses a case that misses the verdict | `test_replay_rejects_answers_the_flow_never_asks`, `test_export_rejects_a_replay_that_misses_the_verdict` |
+| The browser copy could fall behind the curated answers | `scripts/export_showcase.py` writes `web/showcase.json`; a test compares a fresh export with the committed file | `test_export_writes_the_web_copy_by_default_and_it_is_current` |
+| Python and browser walkthrough were only compared on random answers | `scripts/check_parity.py` also replays the 20 worked examples in both | 400 of 400 random runs and 20 of 20 worked examples identical |
+| YAML 1.1 reads the key `yes` as the boolean true, which emptied the answers | keys are `yes_answers` and `unknown_answers`; a case answered both yes and "don't know" is rejected | `test_load_cases_rejects_contradicting_answers` |
+
 ## Final check
 
 **Context:** Acceptance before publication | **Input:** fresh clone, fresh environment | **Output:** all checks passed
@@ -53,7 +65,7 @@
 | Check | Result |
 |---|---|
 | `ruff check`, `ruff format --check`, `mypy` | clean |
-| `pytest` without models | 610 passed |
+| `pytest` without models | 639 passed |
 | Slow search and accuracy tests with models, both languages | passed |
 | Container build and container tests | 13 passed |
 | Wheel built and installed in a clean environment, `classify` run | works |

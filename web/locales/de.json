@@ -176,5 +176,22 @@
   "software.heading": "Für den eigenen Rechner",
   "software.text": "Dieselbe Einstufung gibt es als Programm für Windows, Mac und Linux. Dort kommt die Volltextsuche im Verordnungstext dazu: eine Frage in eigenen Worten, und der Helfer zeigt die Stellen der Verordnung, die sie beantworten. Installieren, starten, fertig — kein Python, keine Einrichtung, keine Anmeldung.",
   "software.link": "Programm und Quellcode auf GitHub",
-  "software.license": "— Apache-Lizenz 2.0."
+  "software.license": "— Apache-Lizenz 2.0.",
+
+  "showcase.heading": "Beispiele der EU-Kommission durchspielen",
+  "showcase.intro": "{count} der {total} amtlichen Beispiele aus den Leitlinien der Kommission, Schritt für Schritt beantwortet. Am Ende steht der Befund des Helfers neben der Wertung der Kommission.",
+  "showcase.mix": "{high} Hochrisiko · {minimal} nicht hochriskant · {exemption} Ausnahme nach Artikel 6 Absatz 3",
+  "showcase.commissionSays": "Kommission: {verdict}",
+  "showcase.verdict.highRisk": "Hochrisiko",
+  "showcase.verdict.notHighRisk": "nicht hochriskant",
+  "showcase.verdict.exemption": "Ausnahme greift",
+  "showcase.bannerKicker": "Beispiel der Kommission · Leitlinien Absatz {ref}",
+  "showcase.answersGiven": "Die Antworten sind so gegeben, wie die Beschreibung es hergibt. Mit „Weiter“ geht es zum nächsten Schritt.",
+  "showcase.comparisonHeading": "Vergleich mit der Kommission",
+  "showcase.commission": "Wertung der Kommission",
+  "showcase.helper": "Befund des Helfers",
+  "showcase.agreement": "Der Helfer kommt zum selben Ergebnis wie die Kommission.",
+  "showcase.disagreement": "Der Helfer weicht hier von der Kommission ab.",
+  "showcase.more": "Weitere Beispiele",
+  "showcase.own": "Eigenes System einstufen"
 }

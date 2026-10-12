@@ -35,6 +35,19 @@ let flow = null;
 let answers = {};
 let screens = [];
 let view = "loading";
+let showcase = null;
+let replayedCase = null;
+
+/* Commission verdicts of the worked examples and the risk classes of the walkthrough that agree
+ * with each; the same table as AGREEING_RISK_CLASSES in classification/showcase.py. */
+const VERDICTS = {
+  high_risk: {key: "showcase.verdict.highRisk", tone: "high",
+    agreeing: ["high_risk_annex_iii", "high_risk_annex_i", "high_risk_conditional"]},
+  not_high_risk: {key: "showcase.verdict.notHighRisk", tone: "minimal",
+    agreeing: ["not_high_risk", "not_ai_system"]},
+  exemption_applies: {key: "showcase.verdict.exemption", tone: "neutral",
+    agreeing: ["high_risk_exemption"]},
+};
 
 function supportedLanguage(code) {
   const candidate = String(code || "").slice(0, 2).toLowerCase();
@@ -252,10 +265,72 @@ function drawStart() {
       el("button", {class: "button", id: "start", text: t("start.button")}),
     ]),
     el("p", {class: "source", text: t("start.source")}),
+    ...[showcaseSection()].filter(Boolean),
   );
   document.getElementById("start").onclick = begin;
   setProgressSteps(0);
   setProgress(t("progress.ready"), "", 0);
+}
+
+function showcaseSection() {
+  if (!showcase || !showcase.cases.length) return null;
+  const counts = {high_risk: 0, not_high_risk: 0, exemption_applies: 0};
+  const grid = el("ul", {class: "showcase-grid"});
+  for (const example of showcase.cases) {
+    counts[example.expected] += 1;
+    const verdict = VERDICTS[example.expected];
+    const card = el("button", {type: "button", class: "showcase-card"}, [
+      el("span", {class: "showcase-topic", text: text(example.topic)}),
+      el("span", {class: "showcase-title", text: text(example.title)}),
+      el("span", {class: "verdict-tag " + verdict.tone,
+        text: t("showcase.commissionSays", {verdict: t(verdict.key)})}),
+    ]);
+    card.onclick = () => startShowcase(example);
+    grid.append(el("li", {}, [card]));
+  }
+  return el("section", {class: "showcase", id: "showcase"}, [
+    el("h3", {text: t("showcase.heading")}),
+    el("p", {text: t("showcase.intro",
+      {count: showcase.cases.length, total: showcase.official_examples})}),
+    el("p", {class: "muted", text: t("showcase.mix", {high: counts.high_risk,
+      minimal: counts.not_high_risk, exemption: counts.exemption_applies})}),
+    grid,
+  ]);
+}
+
+function replayAnswer(example, questionId) {
+  if (example.yes.includes(questionId)) return true;
+  if (example.unknown.includes(questionId)) return NOT_APPLICABLE;
+  return false;
+}
+
+function caseBanner() {
+  return el("div", {class: "case-banner"}, [
+    el("p", {class: "kicker", text: t("showcase.bannerKicker",
+      {ref: paragraphNumber(replayedCase.source_ref)})}),
+    el("p", {class: "case-title", text: text(replayedCase.title)}),
+    el("p", {text: text(replayedCase.scenario)}),
+    el("p", {class: "muted", text: t("showcase.answersGiven")}),
+  ]);
+}
+
+function comparisonBlock(riskClass) {
+  const verdict = VERDICTS[replayedCase.expected];
+  const agrees = verdict.agreeing.includes(riskClass);
+  const rationale = text(replayedCase.rationale);
+  return el("section", {class: "block comparison"}, [
+    el("h3", {text: t("showcase.comparisonHeading")}),
+    el("dl", {}, [
+      el("dt", {text: t("showcase.commission")}),
+      el("dd", {text: t(verdict.key)}),
+      rationale ? el("dd", {class: "muted", text: rationale}) : null,
+      el("dd", {class: "location", text: paragraphLabel(replayedCase.source_ref)}),
+      el("dt", {text: t("showcase.helper")}),
+      el("dd", {text: t(`finding.${riskClass}.word`)}),
+    ]),
+    el("p", {class: agrees ? "agreement" : "disagreement",
+      text: t(agrees ? "showcase.agreement" : "showcase.disagreement")}),
+  ]);
 }
 
 function areaName(question) {
@@ -284,6 +359,7 @@ function drawQuestions({scroll = true} = {}) {
     Math.min(92, Math.round((step / Math.max(step + 1, 6)) * 100)));
 
   const parts = [el("h2", {text: heading})];
+  if (replayedCase) parts.unshift(caseBanner());
   if (firstQuestion.stage === "area") {
     parts.push(el("p", {class: "hint", text: t("group.areaHint")}));
   }
@@ -310,7 +386,9 @@ function drawQuestions({scroll = true} = {}) {
     const options = [[true, "answer.yes"], [false, "answer.no"], [NOT_APPLICABLE, "answer.unknown"]];
     for (const [value, key] of options) {
       const pressed = answers[f.id] === value ? "true" : "false";
-      const button = el("button", {type: "button", "aria-pressed": pressed, text: t(key)});
+      const attrs = {type: "button", "aria-pressed": pressed, text: t(key)};
+      if (replayedCase) attrs.disabled = "";
+      const button = el("button", attrs);
       button.onclick = () => {
         answers[f.id] = value;
         for (const other of choice.children) other.setAttribute("aria-pressed", "false");
@@ -422,9 +500,18 @@ function drawFinding({scroll = true} = {}) {
     parts.push(details);
   }
 
-  const restartButton = el("button", {class: "button outline", text: t("nav.restart")});
-  restartButton.onclick = restart;
-  parts.push(el("div", {class: "actions"}, [restartButton]));
+  if (replayedCase) {
+    parts.splice(1, 0, comparisonBlock(riskClass));
+    const moreButton = el("button", {class: "button", text: t("showcase.more")});
+    moreButton.onclick = showExamples;
+    const ownButton = el("button", {class: "button outline", text: t("showcase.own")});
+    ownButton.onclick = begin;
+    parts.push(el("div", {class: "actions"}, [moreButton, ownButton]));
+  } else {
+    const restartButton = el("button", {class: "button outline", text: t("nav.restart")});
+    restartButton.onclick = restart;
+    parts.push(el("div", {class: "actions"}, [restartButton]));
+  }
 
   stage.replaceChildren(...parts);
   if (scroll) window.scrollTo({top: 0, behavior: "instant"});
@@ -444,6 +531,7 @@ function draw(options) {
 }
 
 function begin() {
+  replayedCase = null;
   answers = {};
   screens = [];
   advance();
@@ -455,6 +543,9 @@ function advance() {
     view = "finding";
   } else {
     screens.push(group);
+    if (replayedCase) {
+      for (const question of group) answers[question.id] = replayAnswer(replayedCase, question.id);
+    }
     view = "questions";
   }
   draw();
@@ -462,11 +553,25 @@ function advance() {
 
 function goBack() {
   for (const question of screens.pop() || []) delete answers[question.id];
+  if (!screens.length) replayedCase = null;
   view = screens.length ? "questions" : "start";
   draw();
 }
 
+function startShowcase(example) {
+  replayedCase = example;
+  answers = {};
+  screens = [];
+  advance();
+}
+
+function showExamples() {
+  restart();
+  document.getElementById("showcase")?.scrollIntoView({behavior: "instant", block: "start"});
+}
+
 function restart() {
+  replayedCase = null;
   answers = {};
   screens = [];
   view = "start";
@@ -514,11 +619,13 @@ async function loadInitialCatalog() {
 }
 
 async function main() {
-  const [chosen, data] = await Promise.all([
+  const [chosen, data, examples] = await Promise.all([
     loadInitialCatalog(),
     fetch("./question_flow.json").then((r) => r.json()).catch(() => null),
+    fetch("./showcase.json").then((r) => r.json()).catch(() => null),
   ]);
   language = chosen;
+  showcase = examples;
   if (data) {
     flow = new Walkthrough(data);
     view = "start";
