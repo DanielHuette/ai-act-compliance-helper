@@ -1,0 +1,28 @@
+<section id="search" data-transition="fade" style="background:#061634;color:#FFFFFF;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:28px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:62px;font-weight:400;line-height:1.1;color:#FFFFFF"><de>Vier Suchwege finden die Fundstelle nach Sinn und Wortlaut</de><en>Four search routes find the passage by meaning and wording</en></h2>
+<p style="font-size:26px;line-height:1.45;color:#AEC0E2;width:1600px"><de>Die zweite Aufgabe neben der Einstufung: nachlesen. Rechtsfragen werden auf zwei Arten gestellt — nach dem Sinn („Dürfen wir Bewerbungen vorsortieren?") und nach dem Wortlaut („Was sagt Artikel 6 Absatz 3?"). Ein einziger Suchweg verliert jeweils die andere Hälfte.</de><en>The second task besides classification: looking things up. Legal questions come in two kinds — by meaning (“May we pre-sort job applications?”) and by wording (“What does Article 6(3) say?”). A single search route loses the other half each time.</en></p>
+<div style="display:flex;gap:18px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#102A57;padding:26px;border-radius:16px">
+<p style="font-size:24px;font-weight:600;color:#FFCC00"><de>1 &middot; Bedeutung</de><en>1 &middot; Meaning</en></p>
+<h3 style="font-size:25px;font-weight:600;color:#FFFFFF"><de>Vektorsuche</de><en>Vector search</en></h3>
+<p style="font-size:24px;line-height:1.4;color:#AEC0E2"><de>Findet „Einstellung oder Auswahl natürlicher Personen", obwohl kein Wort übereinstimmt.</de><en>Finds “recruitment or selection of natural persons” although no word matches.</en></p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#102A57;padding:26px;border-radius:16px">
+<p style="font-size:24px;font-weight:600;color:#FFCC00"><de>2 &middot; Wortlaut</de><en>2 &middot; Wording</en></p>
+<h3 style="font-size:25px;font-weight:600;color:#FFFFFF"><de>Stichwortsuche</de><en>Keyword search</en></h3>
+<p style="font-size:24px;line-height:1.4;color:#AEC0E2"><de>BM25 über den Wortlaut. Eine Vektorsuche verwischt Artikelnummern &mdash; Zahlen sehen für sie fast gleich aus.</de><en>BM25 ranking over the wording. A vector search blurs article numbers &mdash; to it, numbers look almost alike.</en></p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#102A57;padding:26px;border-radius:16px">
+<p style="font-size:24px;font-weight:600;color:#FFCC00"><de>3 &middot; Zusammenhang</de><en>3 &middot; Context</en></p>
+<h3 style="font-size:25px;font-weight:600;color:#FFFFFF"><de>Wortgewichte des Modells</de><en>Model word weights</en></h3>
+<p style="font-size:24px;line-height:1.4;color:#AEC0E2"><de>Liegt zwischen Sinn und Wortlaut: gewichtet Wörter nach ihrer Rolle im Satz.</de><en>Sits between meaning and wording: weights words by their role in the sentence.</en></p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#2F6B5E;padding:26px;border-radius:16px">
+<p style="font-size:24px;font-weight:600;color:#C9E8DF"><de>4 &middot; Genannte Stelle</de><en>4 &middot; Named provision</en></p>
+<h3 style="font-size:25px;font-weight:600;color:#FFFFFF"><de>Fundstellenweg</de><en>Citation route</en></h3>
+<p style="font-size:24px;line-height:1.4;color:#D4EDE6"><de>„Art. 6 Abs. 3" wird zu einer Kennung aufgelöst und direkt geholt. Ohne diesen Weg bekäme eine genaue Frage nur ungefähre Nähe.</de><en>“Art. 6(3)” is resolved to an id and fetched directly. Without this route an exact question would only get approximate similarity.</en></p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#7D92B8"><de>Je Sprache ein eigener Suchbestand &middot; Suchmodell rund 2,3 Gigabyte, einmal geladen &mdash; die Einstufung läuft ohne</de><en>One search index per language &middot; search model about 2.3 gigabytes, loaded once &mdash; classification runs without it</en></p>
+<aside><de>Der vierte Weg ist der, den man leicht vergisst — und der am häufigsten gebraucht wird: ein Jurist nennt die Norm, nach der er fragt. Eine reine Bedeutungssuche antwortet darauf mit etwas Ähnlichem statt mit dem Gesuchten. Zusammengeführt werden nicht die Punktzahlen, die zwischen den Wegen nicht vergleichbar sind, sondern die Rangplätze; ein Treffer, den mehrere Wege vorne haben, steigt auf. Auf Wunsch ordnet danach ein Kreuzbewerter, der Frage und Fundstelle zusammen liest, die besten 30 neu. Die Suche ist eine Zusatzleistung: die Einstufung braucht sie nicht und läuft ohne jedes Modell.</de><en>The fourth route is easy to forget — and the one needed most often: a lawyer names the provision they are asking about. A pure meaning search answers that with something similar instead of the thing asked for. The routes are merged not by their scores, which are not comparable between routes, but by rank; a hit that several routes rank high moves up. On request a cross-encoder, which reads question and passage together, then reorders the best 30. Search is an extra: the classification does not need it and runs without any model.</en></aside>
+</section>

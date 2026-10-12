@@ -1,0 +1,16 @@
+{
+ "corpus_units": 2811,
+ "ai_act": 1386,
+ "gdpr": 1024,
+ "questions": 379,
+ "provisions": 31,
+ "exclusions": 214,
+ "examples": 187,
+ "preliminary_questions": 3,
+ "area_questions": 8,
+ "annex_i_categories": 15,
+ "matched": 207,
+ "total": 217,
+ "avg_steps": 5.3,
+ "parity": 400
+}

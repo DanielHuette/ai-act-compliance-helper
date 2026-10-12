@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Konformitätshelfer">
+  <!-- Ein Paragraphenzeichen in einem Rahmen: Recht, nachlesbar. Keine bunte
+       Marke — das Werkzeug sagt Leuten, dass sie Bussgelder riskieren. -->
+  <rect width="32" height="32" rx="6" fill="#1b4e7a"/>
+  <text x="16" y="23" font-family="Georgia, 'Times New Roman', serif" font-size="20"
+        font-weight="600" fill="#ffffff" text-anchor="middle">§</text>
+</svg>

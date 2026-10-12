@@ -1,0 +1,1729 @@
+area: "AI-Act/annex-III/pt-6-7-8"
+title:
+  de: "Strafverfolgung, Migration, Rechtspflege und demokratische Prozesse"
+  en: "Law enforcement, migration, administration of justice and democratic processes"
+source:
+  de: "Entwurf der Leitlinien der Kommission vom 19.05.2026, Anhang III, Abschnitte 3.6 bis 3.8"
+  en: "Draft Commission guidelines of 19 May 2026, Annex III, sections 3.6 to 3.8"
+source_ref_hint:
+  de: "Die Beispiellisten im amtlichen Text tragen keine eigenen Absatznummern. Sie sind hier mit der letzten davorstehenden Absatznummer belegt: Abschnitt 3.6.2 mit (359), 3.6.3 mit (362), 3.6.4 mit (365), 3.6.5 mit (368), 3.6.6 mit (370), 3.6.7 mit (372), 3.7.2 mit (390) fuer die erfassten und (392) fuer die nicht erfassten Beispiele, 3.7.3 mit (396), 3.7.4 mit (400), 3.7.5 mit (403), 3.8.1 mit (423) fuer die Beispiele zu Justizbehoerden und 3.8.2 mit (447). Die Abgrenzung, wann jemand im Namen einer Behoerde handelt, steht in Abschnitt 2.5 unter den Absaetzen (79) bis (81); Absatz (414) des Abschnitts 3.8.1 verweist ausdruecklich darauf."
+  en: "The lists of examples in the official text have no paragraph numbers of their own. Here they are referenced by the last preceding paragraph number: section 3.6.2 by (359), 3.6.3 by (362), 3.6.4 by (365), 3.6.5 by (368), 3.6.6 by (370), 3.6.7 by (372), 3.7.2 by (390) for the covered and (392) for the not covered examples, 3.7.3 by (396), 3.7.4 by (400), 3.7.5 by (403), 3.8.1 by (423) for the examples on judicial authorities and 3.8.2 by (447). The delimitation of when someone acts on behalf of a public authority is set out in section 2.5 in paragraphs (79) to (81); paragraph (414) of section 3.8.1 refers to it expressly."
+provisions:
+  - citation: "AI-Act/annex-III/pt-6-preliminary"
+    main_question:
+      de: "Soll Ihr System bei der Verhuetung, Aufklaerung, Aufdeckung oder Verfolgung von Straftaten oder bei der Vollstreckung von Strafen eingesetzt werden, und zwar von einer dafuer zustaendigen Behoerde, von jemandem in deren Auftrag oder von einer Einrichtung der Europaeischen Union, die solche Behoerden unterstuetzt?"
+      en: "Is your system to be used in the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, namely by a public authority competent for this, by someone on its behalf or by a Union institution, body, office or agency supporting such authorities?"
+    follow_up_questions:
+      - question:
+          de: "Ist die Stelle, die Ihr System einsetzt, eine Behoerde, die nach dem Gesetz Straftaten verhueten, aufklaeren, aufdecken oder verfolgen oder Strafen vollstrecken darf? Dazu zaehlt auch die Abwehr von Gefahren fuer die oeffentliche Sicherheit."
+          en: "Is the body that uses your system a public authority that is competent by law to prevent, investigate, detect or prosecute criminal offences or to execute criminal penalties? This includes safeguarding against threats to public security."
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(340)"
+      - question:
+          de: "Ist die Stelle keine Behoerde, hat ihr aber das Recht eines Mitgliedstaats hoheitliche Aufgaben und Befugnisse genau fuer diese Zwecke uebertragen?"
+          en: "If the body is not a public authority, has the law of a Member State entrusted it with public authority and public powers precisely for these purposes?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(340)"
+      - question:
+          de: "Erfuellt die Stelle nach dem Gesetz tatsaechlich Aufgaben der Strafverfolgung und nicht nur Aufgaben der Verwaltung?"
+          en: "Does the body in fact carry out law enforcement tasks under the law, and not only administrative tasks?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(341)"
+      - question:
+          de: "Hat die Stelle sowohl Aufgaben der Strafverfolgung als auch Aufgaben der Verwaltung, und soll Ihr System allein bei den Verwaltungsaufgaben eingesetzt werden?"
+          en: "Does the body have both law enforcement tasks and administrative tasks, and is your system to be used solely for the administrative tasks?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(341)"
+      - question:
+          de: "Soll Ihr System von einem Gericht oder einer anderen Stelle eingesetzt werden, die in Strafsachen richterliche Aufgaben wahrnimmt oder zum Justizwesen in Strafsachen gehoert? Dann gilt die Stelle gleichzeitig als Justizbehoerde nach Nummer 8 und als Strafverfolgungsbehoerde nach Nummer 6."
+          en: "Is your system to be used by a court or another body that performs judicial functions in criminal matters or belongs to the judiciary in criminal matters? In that case, the body counts both as a judicial authority under point 8 and as a law enforcement authority under point 6."
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(342)"
+      - question:
+          de: "Setzt eine Zollbehoerde Ihr System ein, um zollbezogene Straftaten zu verhueten, aufzuklaeren oder aufzudecken?"
+          en: "Does a customs authority use your system to prevent, investigate or detect customs-related criminal offences?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(343)"
+      - question:
+          de: "Setzt eine Zollbehoerde Ihr System allein in ihrer verwaltenden Taetigkeit ein, etwa bei der Einfuhr, der Ausfuhr oder der Durchfuhr von Waren?"
+          en: "Does a customs authority use your system solely in its administrative activity, for example for the import, export or transit of goods?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(349)"
+      - question:
+          de: "Nimmt ein Nachrichtendienst mit Ihrem System Aufgaben der Strafverfolgung wahr, also Verhuetung, Aufklaerung, Aufdeckung oder Verfolgung von Straftaten oder Strafvollstreckung?"
+          en: "Does an intelligence service use your system to carry out law enforcement tasks, that is the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(344)"
+      - question:
+          de: "Ist Ihr System ausschliesslich fuer militaerische Zwecke, fuer die Verteidigung oder fuer die nationale Sicherheit bestimmt?"
+          en: "Is your system intended exclusively for military, defence or national security purposes?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(344)"
+      - question:
+          de: "Soll Ihr System sowohl von Strafverfolgungsbehoerden als auch von Nachrichtendiensten genutzt werden?"
+          en: "Is your system to be used both by law enforcement authorities and by intelligence services?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(345)"
+      - question:
+          de: "Soll Ihr System allein von Nachrichtendiensten genutzt werden, die ausschliesslich ausserhalb der Strafverfolgung arbeiten?"
+          en: "Is your system to be used solely by intelligence services that work exclusively outside law enforcement?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(345)"
+      - question:
+          de: "Hat eine Behoerde Ihrem Unternehmen die Durchfuehrung dieser Taetigkeit ganz oder zum Teil uebertragen oder Ihr Unternehmen im Einzelfall um Unterstuetzung gebeten?"
+          en: "Has a public authority entrusted your company with carrying out this activity in whole or in part, or asked your company for support in an individual case?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(81)"
+      - question:
+          de: "Handelt Ihr Unternehmen auf eigene Rechnung, also aus eigenem Entschluss, freiwillig oder allein zur Erfuellung einer eigenen gesetzlichen Pflicht?"
+          en: "Does your company act on its own account, that is on its own initiative, voluntarily or solely to comply with a legal obligation of its own?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(81)"
+      - question:
+          de: "Setzt eine Einrichtung der Europaeischen Union wie Europol, Eurojust oder die Europaeische Staatsanwaltschaft Ihr System zur Unterstuetzung von Strafverfolgungsbehoerden oder in deren Namen ein?"
+          en: "Does a Union institution, body, office or agency such as Europol, Eurojust or the European Public Prosecutor's Office use your system in support of law enforcement authorities or on their behalf?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(347)"
+      - question:
+          de: "Geht es bei Ihrem System allein um Verstoesse, die keine Straftat sind, also um Verwaltungsverstoesse oder Ordnungswidrigkeiten?"
+          en: "Does your system deal solely with infringements that are not criminal offences, that is administrative infringements or regulatory offences?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(350)"
+      - question:
+          de: "Verarbeitet Ihr System personenbezogene Daten automatisch, um persoenliche Eigenschaften, Verhalten, Aufenthalt oder Bewegungen eines Menschen zu bewerten oder vorauszusagen? Das nennt die Verordnung Profilbildung."
+          en: "Does your system automatically process personal data to evaluate or predict a person's personal characteristics, behaviour, location or movements? The Regulation calls this profiling."
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(353)"
+      - question:
+          de: "Wertet Ihr System nur Daten auf Gruppenebene aus, ohne dabei personenbezogene Daten zu verarbeiten?"
+          en: "Does your system only analyse data at group level, without processing personal data?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(354)"
+      - question:
+          de: "Wird ein aus Gruppendaten gewonnenes Muster am Ende auf einzelne Menschen angewandt?"
+          en: "Is a pattern derived from group data ultimately applied to individual persons?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(354)"
+      - question:
+          de: "Analysiert oder kartiert Ihr System allein Orte oder geografische Gebiete, ohne einzelne Menschen zu bewerten?"
+          en: "Does your system solely analyse or map locations or geographical areas, without evaluating individual persons?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(355)"
+      - question:
+          de: "Kann Ihr System zusaetzlich Gefuehle wie Wut oder Aggressivitaet erkennen? Dann greift Nummer 1 Buchstabe c des Anhangs III und nicht Nummer 6."
+          en: "Can your system additionally recognise emotions such as anger or aggressiveness? In that case, Annex III, point 1(c) applies and not point 6."
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(355)"
+    covered:
+      - text:
+          de: "Polizei, Staatsanwaltschaften, Bewaehrungs- und Fuehrungsaufsichtsdienste sowie Justizvollzugsanstalten gelten als Strafverfolgungsbehoerden, soweit sie Aufgaben der Strafverfolgung wahrnehmen."
+          en: "Police, public prosecutors' offices, probation and supervision services and prisons count as law enforcement authorities insofar as they carry out law enforcement tasks."
+        source_ref: "(341)"
+      - text:
+          de: "Gerichte und andere Stellen, die in Strafsachen richterliche Aufgaben wahrnehmen, gelten gleichzeitig als Justizbehoerden nach Nummer 8 und als Strafverfolgungsbehoerden nach Nummer 6."
+          en: "Courts and other bodies that perform judicial functions in criminal matters count both as judicial authorities under point 8 and as law enforcement authorities under point 6."
+        source_ref: "(342)"
+      - text:
+          de: "Zollbehoerden gelten in den Faellen als Strafverfolgungsbehoerden, in denen sie zollbezogene Straftaten verhueten, aufklaeren und aufdecken."
+          en: "Customs authorities count as law enforcement authorities in those cases in which they prevent, investigate and detect customs-related criminal offences."
+        source_ref: "(343)"
+      - text:
+          de: "Nimmt ein Nachrichtendienst Aufgaben der Strafverfolgung wahr, kann ein dafuer bestimmtes System hochriskant sein."
+          en: "Where an intelligence service carries out law enforcement tasks, a system intended for that purpose can be high-risk."
+        source_ref: "(344)"
+      - text:
+          de: "Ein System, das sowohl fuer Strafverfolgungsbehoerden als auch fuer Nachrichtendienste bestimmt ist, ist hochriskant; dasselbe gilt fuer ein gemeinsam entwickeltes System, soweit es auch fuer die Strafverfolgung bestimmt ist."
+          en: "A system intended both for law enforcement authorities and for intelligence services is high-risk; the same applies to a jointly developed system insofar as it is also intended for law enforcement."
+        source_ref: "(345)"
+      - text:
+          de: "Europol, Eurojust und die Europaeische Staatsanwaltschaft sind erfasst; Frontex ist erfasst, soweit seine Taetigkeit Strafverfolgung ist."
+          en: "Europol, Eurojust and the European Public Prosecutor's Office are covered; Frontex is covered insofar as its activity is law enforcement."
+        source_ref: "(347)"
+      - text:
+          de: "Ein privates Unternehmen handelt im Namen einer Behoerde, wenn die Behoerde ihm die Taetigkeit ganz oder zum Teil uebertraegt oder es im Einzelfall um Unterstuetzung dieser Taetigkeit bittet."
+          en: "A private company acts on behalf of a public authority if the authority entrusts it with the activity in whole or in part or asks it for support with that activity in an individual case."
+        source_ref: "(81)"
+      - text:
+          de: "Die Woerter im Namen von sollen verhindern, dass die Einordnung als hochriskant dadurch umgangen wird, dass ein System nur bestimmten privaten Stellen verkauft wird, obwohl die Gefahr fuer die Grundrechte dieselbe ist."
+          en: "The words 'on behalf of' are meant to prevent the classification as high-risk from being circumvented by selling a system only to certain private bodies, even though the risk to fundamental rights is the same."
+        source_ref: "(80)"
+      - text:
+          de: "Fuehrt ein System Profilbildung bei Menschen durch, ist es immer hochriskant; die Ausnahmen des Filters greifen dann nicht."
+          en: "If a system performs profiling of natural persons, it is always high-risk; the exemptions of the filter then do not apply."
+        source_ref: "(353)"
+      - text:
+          de: "Wird ein Gruppenmuster auf einzelne Menschen angewandt, ist das Profilbildung, weil es diese Menschen unmittelbar betrifft und ihre persoenliche Lage beeinflusst."
+          en: "If a group pattern is applied to individual persons, that is profiling, because it directly affects these persons and influences their personal situation."
+        source_ref: "(354)"
+    not_covered:
+      - text:
+          de: "Ein privates Unternehmen handelt nicht im Namen einer Behoerde, wenn es auf eigene Rechnung handelt, sei es freiwillig oder zur Erfuellung einer eigenen gesetzlichen Pflicht."
+          en: "A private company does not act on behalf of a public authority if it acts on its own account, whether voluntarily or to comply with a legal obligation of its own."
+        source_ref: "(81)"
+      - text:
+          de: "Behoerden mit gemischten Zustaendigkeiten: Nummer 6 gilt nicht allein deshalb, weil die Behoerde auch Befugnisse der Strafverfolgung hat; sie gilt nur, soweit das System bei der Ausuebung dieser Strafverfolgungsaufgaben eingesetzt werden soll."
+          en: "Authorities with mixed competences: point 6 does not apply merely because the authority also has law enforcement powers; it applies only insofar as the system is intended to be used in the exercise of these law enforcement tasks."
+        source_ref: "(341)"
+      - text:
+          de: "Systeme, die eigens fuer Verwaltungstaetigkeiten bestimmt sind, etwa bei Steuer- und Zollbehoerden fuer Zoelle, Tarife oder Pruefungen ohne Strafcharakter."
+          en: "Systems intended specifically for administrative activities, for example at tax and customs authorities for duties, tariffs or checks of a non-criminal nature."
+        source_ref: "(348)"
+      - text:
+          de: "Systeme von Zentralstellen fuer Geldwaescheverdachtsmeldungen, die Verwaltungsaufgaben der Informationsauswertung nach dem Geldwaescherecht der Union erfuellen; dasselbe gilt sinngemaess fuer Verwaltungsstellen auf Unionsebene in diesen Bereichen."
+          en: "Systems of financial intelligence units that carry out administrative tasks of analysing information under the Union's anti-money laundering law; the same applies mutatis mutandis to administrative bodies at Union level in these areas."
+        source_ref: "(348)"
+      - text:
+          de: "Systeme fuer Zollbehoerden, solange ihr Einsatz auf Verwaltungsverfahren beschraenkt ist, etwa Einfuhr- und Eingangsverfahren, Ausfuhr- und Ausgangsverfahren und Durchfuhrverfahren."
+          en: "Systems for customs authorities, as long as their use is limited to administrative procedures, for example import and entry procedures, export and exit procedures and transit procedures."
+        source_ref: "(349)"
+      - text:
+          de: "Verwaltungsverstoesse sind vom Anwendungsbereich der Nummer 6 ausgenommen."
+          en: "Administrative infringements are excluded from the scope of point 6."
+        source_ref: "(350)"
+      - text:
+          de: "Auswertung von Daten auf Gruppenebene ohne Verarbeitung personenbezogener Daten ist keine Profilbildung."
+          en: "Analysis of data at group level without processing personal data is not profiling."
+        source_ref: "(354)"
+      - text:
+          de: "Die Faelle der Nummer 6 Buchstaben a, d und e erfassen nicht die Analyse oder Kartierung von Orten oder geografischen Gebieten."
+          en: "The cases of point 6(a), (d) and (e) do not cover the analysis or mapping of locations or geographical areas."
+        source_ref: "(355)"
+      - text:
+          de: "Systeme zur Automatisierung von Verwaltungsaufgaben, etwa Verwaltung und Buchhaltung, Aktenverwaltung, Geraeteverwaltung oder die Einsatzplanung von Streifendiensten; sie sind reine Nebentaetigkeiten der Verwaltung."
+          en: "Systems for automating administrative tasks, for example administration and accounting, file management, equipment management or the deployment planning of patrol services; they are purely ancillary administrative activities."
+        source_ref: "(372)"
+      - text:
+          de: "Chatbots auf Internetseiten der Polizei, die allgemeine Auskuenfte geben und Nutzer durch die Seite fuehren."
+          en: "Chatbots on police websites that provide general information and guide users through the site."
+        source_ref: "(372)"
+      - text:
+          de: "Automatische Kennzeichenleser, die bestimmte Fahrzeuge erkennen sollen; die Technik ist auf Fahrzeuge und nicht auf Menschen gerichtet."
+          en: "Automatic number plate readers intended to recognise certain vehicles; the technology is directed at vehicles and not at persons."
+        source_ref: "(372)"
+      - text:
+          de: "Systeme, die pruefen, ob Regeln der Verkehrssicherheit gebrochen werden, etwa Geschwindigkeitsverstoesse, Rotlichtverstoesse, fehlender Helm oder Handynutzung am Steuer."
+          en: "Systems that check whether road safety rules are being broken, for example speeding, running red lights, not wearing a helmet or using a mobile phone while driving."
+        source_ref: "(372)"
+      - text:
+          de: "Systeme zur Erkennung von Gegenstaenden, etwa Waffen, verdaechtige Pakete, gefaehrliche Gegenstaende oder gestohlene Waren einschliesslich Kulturgut und Kunst."
+          en: "Systems for detecting objects, for example weapons, suspicious packages, dangerous objects or stolen goods including cultural property and art."
+        source_ref: "(372)"
+      - text:
+          de: "Systeme zur Erkennung ungewoehnlichen Verhaltens oder ungewoehnlicher Bewegungen, etwa Rennen, erhobene Arme, Kampfhaltung oder eine Koerperhaltung, die auf eine gehaltene Waffe hindeutet, in Echtzeit oder im Videobild, solange keine Person bestimmt wird."
+          en: "Systems for detecting unusual behaviour or unusual movements, for example running, raised arms, a fighting stance or a posture indicating a weapon being held, in real time or in video footage, as long as no person is identified."
+        source_ref: "(372)"
+      - text:
+          de: "Systeme, die Schussgeraeusche in Echtzeit erkennen; sie arbeiten mit Geraeuschen und nicht mit Menschen."
+          en: "Systems that detect gunshot sounds in real time; they work with sounds and not with persons."
+        source_ref: "(372)"
+      - text:
+          de: "Systeme von Zollbehoerden zur Bewertung von Warensendungen; Zollbehoerden, die Sendungen pruefen, gelten im Rahmen der Nummer 6 normalerweise nicht als Strafverfolgungsbehoerden, und die Systeme bewerten die Regelkonformitaet von Waren anhand nachpruefbarer Daten statt persoenlicher Eigenschaften oder Verhalten."
+          en: "Customs authority systems for assessing consignments of goods; customs authorities that check consignments do not normally count as law enforcement authorities within the meaning of point 6, and the systems assess the compliance of goods on the basis of verifiable data instead of personal characteristics or behaviour."
+        source_ref: "(372)"
+      - text:
+          de: "Systeme von Zoll- oder Strafverfolgungsbehoerden, die Daten zu Warenbewegungen und Transporten auswerten, etwa Schiffsrouten, Haeufigkeit und Muster von Sendungen, Auffaelligkeiten bei angemeldeter Ladung oder Transportarten, um den Missbrauch gewerblicher Transportwege fuer geschmuggelte Waren zu erkennen."
+          en: "Systems of customs or law enforcement authorities that analyse data on movements of goods and transport, for example shipping routes, frequency and patterns of consignments, anomalies in declared cargo or modes of transport, in order to detect the misuse of commercial transport routes for smuggled goods."
+        source_ref: "(372)"
+      - text:
+          de: "Die Faelle der Nummer 6 und der Nummer 1 erfassen nicht alle Systeme, die zu Zwecken der Strafverfolgung eingesetzt werden; sie betreffen vor allem Systeme, die unmittelbar auf Menschen angewandt werden oder Entscheidungen wesentlich beeinflussen koennen."
+          en: "The cases of point 6 and point 1 do not cover all systems used for law enforcement purposes; they mainly concern systems that are applied directly to persons or can materially influence decisions."
+        source_ref: "(371)"
+    examples:
+      - scenario:
+          de: "Eine Polizeibehoerde setzt ein System ein, das die Gefahrenlage fuer Terrorismus in einem Stadtbezirk mit Regierungsgebaeuden einschaetzt, etwa niedrig, mittel oder erheblich, und sich dabei auf Gefahrenhinweise aus Lageberichten, die Zahl der letzten Vorfaelle und politische Entwicklungen stuetzt."
+          en: "A police authority uses a system that assesses the terrorism threat level in a city district with government buildings, for example as low, medium or substantial, relying on threat indications from situation reports, the number of recent incidents and political developments."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es findet keine Profilbildung bei Menschen statt, die Einschaetzung bewertet keine persoenlichen Merkmale einer bestimmten Person, das Ergebnis gilt gemeinsam fuer alle Anwesenden im Bezirk, und niemand wird als moeglicher Taeter oder moegliches Opfer herausgegriffen."
+          en: "No profiling of natural persons takes place, the assessment does not evaluate personal characteristics of a specific person, the result applies collectively to everyone present in the district, and no one is singled out as a possible offender or possible victim."
+        source_ref: "(355)"
+      - scenario:
+          de: "Ein System zur Zollrisikosteuerung liefert Zollbeamten Hinweise darauf, wie wahrscheinlich es ist, dass Waren beim Grenzuebertritt rechtliche Anforderungen nicht erfuellen."
+          en: "A customs risk management system provides customs officers with indications of how likely it is that goods crossing the border do not meet legal requirements."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Solche Systeme sollen im Regelfall keine Straftaten verhueten, aufklaeren, aufdecken oder verfolgen, sondern moegliche Verstoesse gegen Regeln zu Agrar- und Lebensmittelsicherheit, Pflanzen- und Tiergesundheit, Rechten des geistigen Eigentums, Produktsicherheit, Umwelt und Abfall oder dem Schutz von Kulturgut anzeigen. Werden sie zusaetzlich zur Aufdeckung von Straftaten eingesetzt, sind sie hochriskant, wenn sie unter einen der Faelle der Nummer 6 fallen."
+          en: "As a rule, such systems are not intended to prevent, investigate, detect or prosecute criminal offences, but to flag possible infringements of rules on agricultural and food safety, plant and animal health, intellectual property rights, product safety, environment and waste, or the protection of cultural property. If they are additionally used to detect criminal offences, they are high-risk if they fall under one of the cases of point 6."
+        source_ref: "(349)"
+      - scenario:
+          de: "Eine Wirtschaftspruefungsgesellschaft setzt ein System zur Erkennung von Geldwaesche ein, um ihre Pflichten aus dem Geldwaescherecht der Europaeischen Union zu erfuellen."
+          en: "An audit firm uses a system for detecting money laundering in order to comply with its obligations under the European Union's anti-money laundering law."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Die Gesellschaft handelt nicht im Namen von Strafverfolgungsbehoerden, sondern auf eigene Rechnung, weshalb das System im Bereich der Strafverfolgung nach Nummer 6 nicht als hochriskant eingeordnet wird."
+          en: "The firm does not act on behalf of law enforcement authorities but on its own account, which is why the system is not classified as high-risk in the area of law enforcement under point 6."
+        source_ref: "(81)"
+  - citation: "AI-Act/annex-III/pt-6-a"
+    main_question:
+      de: "Soll Ihr System einschaetzen, wie gross die Gefahr ist, dass ein bestimmter Mensch Opfer einer Straftat wird?"
+      en: "Is your system intended to assess how great the risk is that a specific person becomes the victim of a criminal offence?"
+    follow_up_questions:
+      - question:
+          de: "Soll Ihr System von einer Strafverfolgungsbehoerde, in deren Namen oder von einer Einrichtung der Europaeischen Union zur Unterstuetzung solcher Behoerden oder in deren Namen eingesetzt werden?"
+          en: "Is your system to be used by a law enforcement authority, on its behalf, or by a Union institution, body, office or agency in support of such authorities or on their behalf?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(356)"
+      - question:
+          de: "Bewertet Ihr System die Gefahr fuer einen Menschen als moegliches Opfer und nicht die Gefahr fuer einen Gegenstand, einen Ort, ein Ereignis oder eine Organisation?"
+          en: "Does your system assess the risk to a person as a potential victim, and not the risk to an object, a place, an event or an organisation?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(356)"
+      - question:
+          de: "Geht es darum, dass dieser Mensch kuenftig Opfer einer Straftat werden koennte, und nicht um andere Gefahren wie Unfaelle oder Verwaltungsverstoesse?"
+          en: "Is it about this person possibly becoming the victim of a criminal offence in the future, and not about other risks such as accidents or administrative infringements?"
+        on_yes: "covered"
+        on_no: "not_covered"
+        source_ref: "(356)"
+      - question:
+          de: "Verarbeitet Ihr System dazu persoenliche Angaben und Angaben zum Umfeld eines Menschen, etwa Vorgeschichte, Behoerdenberichte oder soziale und familiaere Verhaeltnisse, um die Wahrscheinlichkeit einer Opferwerdung auszugeben?"
+          en: "Does your system process personal information and information on a person's environment for this purpose, for example history, authority reports or social and family circumstances, in order to output the likelihood of becoming a victim?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(357)"
+    covered:
+      - text:
+          de: "Als Opfer gilt hier ein Mensch, bei dem das System darauf schliesst oder feststellt, dass er der Wahrscheinlichkeit oder der Gefahr eines Schadens ausgesetzt ist, auch eines koerperlichen, seelischen oder gefuehlsmaessigen Schadens oder eines wirtschaftlichen Verlusts, der aus einem Verhalten folgen wuerde, das als Straftat gilt."
+          en: "A victim here is a person whom the system infers or determines to be exposed to the likelihood or risk of harm, including physical, mental or emotional harm or economic loss, that would result from conduct that constitutes a criminal offence."
+        source_ref: "(358)"
+      - text:
+          de: "Systeme zur Einschaetzung der Gefahr haeuslicher Gewalt, die Opferaussagen, Polizeiberichte, fruehere Vorfaelle, Daten zu Kontakt- und Naeherungsverboten, Unterlagen der Sozialdienste und weitere Daten auswerten, um die Gefahrenstufe fuer ein moegliches Opfer zu bestimmen. Der Einsatz umfasst Profilbildung, der Filter greift daher nicht."
+          en: "Systems for assessing the risk of domestic violence that analyse victim statements, police reports, previous incidents, data on contact and approach bans, social services records and other data in order to determine the risk level for a potential victim. The use involves profiling, so the filter does not apply."
+        source_ref: "(359)"
+      - text:
+          de: "Ein System zur Gefahreneinschaetzung, das Justizbehoerden in Strafverfahren nutzen, um die Wahrscheinlichkeit schwerer oder wiederholter Gewalt in Paarbeziehungen einzuschaetzen, etwa beim Erlass oder bei der Aufrechterhaltung eines Kontaktverbots. Da die Einschaetzung Profilbildung umfasst, greift der Filter nicht."
+          en: "A risk assessment system used by judicial authorities in criminal proceedings to assess the likelihood of serious or repeated violence in intimate relationships, for example when issuing or maintaining a contact ban. As the assessment involves profiling, the filter does not apply."
+        source_ref: "(359)"
+      - text:
+          de: "Systeme zur Erkennung der Gefaehrdung durch Menschenhandel, die die Gefahr einschaetzen, dass ein Mensch Opfer von Menschenhandel wird, besonders bei Grenzuebertritt, Arbeitsausbeutung oder Migration oder bei jungen Menschen aus besonders gefaehrdeten Verhaeltnissen. Sie fassen Anhaltspunkte wie Alter, fehlende gueltige Papiere, Reise mit einem nicht verwandten Erwachsenen, Anzeichen von Fremdbestimmung und Verbindungen zu gefaehrdeten Wirtschaftszweigen zu einem Wert zusammen. Der Einsatz umfasst Profilbildung, der Filter greift daher nicht."
+          en: "Systems for detecting vulnerability to human trafficking that assess the risk of a person becoming a victim of human trafficking, especially at border crossings, in labour exploitation or migration, or for young people from particularly vulnerable circumstances. They combine indicators such as age, lack of valid documents, travelling with an unrelated adult, signs of being controlled by others and links to high-risk economic sectors into a score. The use involves profiling, so the filter does not apply."
+        source_ref: "(359)"
+    not_covered:
+      - text:
+          de: "Systeme, die die Gefahr einschaetzen, dass es in einer bestimmten Umgebung oder an einem bestimmten Ort zu Straftaten und Opfern kommt; sie bewerten keine Gefahr fuer bestimmte Menschen, ausser weil diese sich in einem gefaehrlichen Gebiet aufhalten."
+          en: "Systems that assess the risk of criminal offences and victims occurring in a particular environment or at a particular place; they do not assess a risk to specific persons, except because these persons are present in a dangerous area."
+        source_ref: "(359)"
+      - text:
+          de: "Systeme zur Lageerfassung und Gefahreneinschaetzung, die Einsatzkraefte in den ersten Schritten am gemeldeten Tatort unterstuetzen, etwa ueber Roboter oder Drohnen, und Bild- und Umfelddaten auswerten, um bewaffnete Personen, Waffen oder Gefahren der Umgebung zu erkennen. Allein deswegen sind sie nicht hochriskant, weil sie die unmittelbare Umgebung und nicht die Gefahr fuer bestimmte Menschen bewerten."
+          en: "Systems for situational awareness and risk assessment that support emergency personnel in the first steps at a reported crime scene, for example via robots or drones, and analyse image and environmental data to detect armed persons, weapons or environmental hazards. For that reason alone they are not high-risk, because they assess the immediate environment and not the risk to specific persons."
+        source_ref: "(359)"
+      - text:
+          de: "Systeme, die Strassenabschnitte oder Zeiten bestimmen, in denen Unfaelle wahrscheinlich sind; die Gefahr muss sich auf Straftaten und nicht auf Unfaelle beziehen, und solche Systeme sind ortsbezogen."
+          en: "Systems that determine road sections or times at which accidents are likely; the risk must relate to criminal offences and not to accidents, and such systems are location-based."
+        source_ref: "(359)"
+      - text:
+          de: "Videoauswertung zur Vorhersage von Ueberfuellung, Gedraenge oder baulichen Gefahren bei grossen Versammlungen."
+          en: "Video analysis for predicting overcrowding, crushes or structural hazards at large gatherings."
+        source_ref: "(359)"
+      - text:
+          de: "Modelle zur Hochwassergefahr und zur Ausbreitung von Waldbraenden, die Bevoelkerungsgruppen bestimmen sollen, die Opfer von Unfaellen oder Katastrophen werden koennten."
+          en: "Flood risk and wildfire spread models intended to identify population groups that could become victims of accidents or disasters."
+        source_ref: "(359)"
+    examples:
+      - scenario:
+          de: "Ein System soll die Gefahr vorhersagen, dass eine bestimmte Person in einem bestimmten Gebiet eine Straftat begeht."
+          en: "A system is intended to predict the risk that a specific person commits a criminal offence in a particular area."
+        verdict: "high_risk"
+        rationale:
+          de: "Ein solches System fiele nicht unter Nummer 6 Buchstabe a, sondern unter Nummer 6 Buchstabe d."
+          en: "Such a system would not fall under point 6(a) but under point 6(d)."
+        source_ref: "(359)"
+      - scenario:
+          de: "Ein System zur Lageerfassung am Tatort hat zusaetzlich die Faehigkeit, Menschen an koerperlichen Merkmalen zu erkennen."
+          en: "A system for situational awareness at the crime scene additionally has the capability of recognising persons by physical characteristics."
+        verdict: "high_risk"
+        rationale:
+          de: "Dann kann es unter Nummer 1 des Anhangs III fallen."
+          en: "It may then fall under Annex III, point 1."
+        source_ref: "(359)"
+  - citation: "AI-Act/annex-III/pt-6-b"
+    main_question:
+      de: "Soll Ihr System als Luegendetektor oder als aehnliches Werkzeug eingesetzt werden, also feststellen, ob ein Mensch die Wahrheit sagt?"
+      en: "Is your system to be used as a polygraph or similar tool, that is to determine whether a person is telling the truth?"
+    follow_up_questions:
+      - question:
+          de: "Misst Ihr System koerperliche Reaktionen wie Herzschlag, Blutdruck, Atmung oder Hautleitfaehigkeit, um zu beurteilen, ob ein Mensch die Wahrheit sagt?"
+          en: "Does your system measure physical reactions such as heart rate, blood pressure, breathing or skin conductance in order to judge whether a person is telling the truth?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(360)"
+      - question:
+          de: "Untersucht Ihr System Stimmmuster auf Anzeichen von Taeuschung?"
+          en: "Does your system examine voice patterns for signs of deception?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(361)"
+      - question:
+          de: "Beobachtet Ihr System Augenbewegungen oder die Weite der Pupille, um auf geistige Anspannung zu schliessen?"
+          en: "Does your system observe eye movements or pupil dilation in order to infer mental strain?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(361)"
+      - question:
+          de: "Erfasst Ihr System Hirnaktivitaet, die mit dem Luegen in Verbindung gebracht wird?"
+          en: "Does your system record brain activity that is associated with lying?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(361)"
+      - question:
+          de: "Deutet Ihr System kleinste Gesichtsbewegungen, Koerpersprache oder Sprechmerkmale, um auf Taeuschung zu schliessen?"
+          en: "Does your system interpret micro-expressions, body language or speech characteristics in order to infer deception?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(361)"
+      - question:
+          de: "Zieht Ihr System ueberhaupt Schluesse darueber, ob eine Aussage wahr ist?"
+          en: "Does your system draw any conclusions at all as to whether a statement is true?"
+        on_yes: "covered"
+        on_no: "not_covered"
+        source_ref: "(362)"
+    covered:
+      - text:
+          de: "Systeme, die kleinste Gesichtsbewegungen auswerten, um die Glaubhaftigkeit von Antworten bei einer Befragung zu beurteilen, ebenso Systeme, die Augenbewegungen und Pupillenreaktionen messen, waehrend ein Verdaechtiger Fragen beantwortet. Wegen ihrer Rolle bei der Entscheidung und wegen der Profilbildung greifen die Ausnahmen des Filters nicht."
+          en: "Systems that analyse micro-expressions in order to judge the credibility of answers during an interview, as well as systems that measure eye movements and pupil reactions while a suspect answers questions. Because of their role in the decision and because of the profiling, the exemptions of the filter do not apply."
+        source_ref: "(362)"
+      - text:
+          de: "Luegendetektoren und aehnliche Werkzeuge koennen zusaetzlich Gefuehle erkennen, weil Angst als Anhaltspunkt fuer eine Luege dienen kann; dann kann das System zusaetzlich unter Nummer 1 des Anhangs III fallen."
+          en: "Polygraphs and similar tools can additionally recognise emotions, because fear can serve as an indicator of a lie; the system can then additionally fall under Annex III, point 1."
+        source_ref: "(362)"
+    not_covered:
+      - text:
+          de: "Systeme, die Muedigkeit oder Belastung von Polizeibeamten ueber tragbare Messgeraete oder Gesichtsauswertung ueberwachen, und zwar aus Gruenden des Arbeitsschutzes und der Arbeitssicherheit."
+          en: "Systems that monitor fatigue or stress of police officers via wearable measuring devices or facial analysis, namely for reasons of occupational health and safety."
+        source_ref: "(362)"
+      - text:
+          de: "Systeme von Strafverfolgungsbehoerden, die Befragungen verschriftlichen und Aenderungen im Tonfall anzeigen, etwa hoehere Stimmlage oder langsameres und schnelleres Sprechen, ohne Schluesse auf die Wahrheit der Aussagen zu ziehen. Zu pruefen bleibt, ob der Einzelfall nicht doch Gefuehlserkennung ist und damit unter Nummer 1 des Anhangs III fiele."
+          en: "Systems of law enforcement authorities that transcribe interviews and flag changes in tone of voice, for example a higher pitch or slower and faster speech, without drawing conclusions on the truth of the statements. It remains to be checked whether the individual case is in fact emotion recognition and would thus fall under Annex III, point 1."
+        source_ref: "(362)"
+      - text:
+          de: "Systeme, die Unstimmigkeiten darin aufzeigen, wie verschiedene Pruefer von Luegendetektoren aehnliche Faelle beurteilen, und Strafverfolgungsbehoerden auf Widersprueche hinweisen; ein solches System ist selbst kein Luegendetektor, sondern bewertet die Arbeit der Pruefer."
+          en: "Systems that reveal inconsistencies in how different polygraph examiners assess similar cases and alert law enforcement authorities to contradictions; such a system is not itself a polygraph but evaluates the work of the examiners."
+        source_ref: "(362)"
+      - text:
+          de: "Luegendetektoren haben einen anderen Zweck als Systeme zur Gefuehlserkennung nach Nummer 1 Buchstabe c: Luegendetektoren sollen auf Taeuschung schliessen und werden bei Strafverfolgung vor allem bei Befragungen genutzt, waehrend Systeme zur Gefuehlserkennung koerperbezogene Anhaltspunkte auswerten, um auf Gefuehlslagen wie Trauer oder Wut zu schliessen, meist ohne unmittelbaren koerperlichen Kontakt."
+          en: "Polygraphs have a different purpose from emotion recognition systems under point 1(c): polygraphs are intended to infer deception and, in law enforcement, are used mainly in interviews, whereas emotion recognition systems analyse body-related indicators to infer emotional states such as sadness or anger, usually without direct physical contact."
+        source_ref: "(362)"
+  - citation: "AI-Act/annex-III/pt-6-c"
+    main_question:
+      de: "Soll Ihr System beurteilen, wie verlaesslich ein Beweis in einer laufenden Ermittlung oder Strafverfolgung ist?"
+      en: "Is your system intended to evaluate the reliability of evidence in an ongoing investigation or prosecution?"
+    follow_up_questions:
+      - question:
+          de: "Soll Ihr System von einer Strafverfolgungsbehoerde, in deren Namen oder von einer Einrichtung der Europaeischen Union zur Unterstuetzung solcher Behoerden eingesetzt werden?"
+          en: "Is your system to be used by a law enforcement authority, on its behalf, or by a Union institution, body, office or agency in support of such authorities?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(363)"
+      - question:
+          de: "Geht es um eine laufende Ermittlung oder Strafverfolgung?"
+          en: "Is it about an ongoing investigation or prosecution?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(363)"
+      - question:
+          de: "Beurteilt Ihr System, wie vertrauenswuerdig, zutreffend und glaubhaft ein Beweis ist?"
+          en: "Does your system evaluate how trustworthy, accurate and credible evidence is?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(364)"
+      - question:
+          de: "Prueft Ihr System die Echtheit eines Beweises?"
+          en: "Does your system check the authenticity of evidence?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(364)"
+      - question:
+          de: "Prueft Ihr System, ob Daten unveraendert sind?"
+          en: "Does your system check whether data are unaltered?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(364)"
+      - question:
+          de: "Beurteilt Ihr System, wie verlaesslich eine Quelle ist?"
+          en: "Does your system evaluate how reliable a source is?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(364)"
+      - question:
+          de: "Prueft Ihr System, ob ein Beweis zu anderen vorhandenen Angaben passt oder in sich widerspruchsfrei ist?"
+          en: "Does your system check whether evidence is consistent with other available information or internally free of contradictions?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(364)"
+      - question:
+          de: "Arbeitet Ihr System nur mit den gesammelten Angaben, ohne deren Verlaesslichkeit zu beurteilen?"
+          en: "Does your system work only with the collected information, without evaluating its reliability?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(365)"
+    covered:
+      - text:
+          de: "Loesungen der digitalen Spurensuche fuer Bild-, Ton- und Videoauswertung, mit denen Strafverfolgungsbehoerden erkennen, ob digitale Bilder, Tonaufnahmen oder Videos veraendert oder manipuliert wurden, etwa um die Echtheit von Aufnahmen aus Ueberwachungskameras oder von Mobiltelefonen zu bestaetigen oder um zu pruefen, ob gesammelte Bilder keine Faelschungen sind."
+          en: "Digital forensics solutions for image, audio and video analysis with which law enforcement authorities detect whether digital images, audio recordings or videos have been altered or manipulated, for example to confirm the authenticity of footage from surveillance cameras or mobile phones or to check that collected images are not forgeries."
+        source_ref: "(365)"
+      - text:
+          de: "Systeme, mit denen Strafverfolgungsbehoerden Veraenderungen an Schriftstuecken oder gefaelschte Unterschriften bestimmen und bewerten."
+          en: "Systems with which law enforcement authorities identify and evaluate alterations to documents or forged signatures."
+        source_ref: "(365)"
+      - text:
+          de: "Systeme zur Bewertung der Echtheit digitaler Beweise aus Mobiltelefonen oder anderen Geraeten, auch durch Auswertung digitaler Spuren wie Standortdaten oder Verlaeufe zur Erstellung und Aenderung von Dateien, und durch Anzeigen von Punkten, die ein Mensch genauer pruefen muss."
+          en: "Systems for evaluating the authenticity of digital evidence from mobile phones or other devices, including by analysing digital traces such as location data or histories of file creation and modification, and by flagging points that a human must examine more closely."
+        source_ref: "(365)"
+      - text:
+          de: "Systeme, die zustaendige Strafverfolgungsbehoerden bei der Beurteilung der Verlaesslichkeit von Beweisen unterstuetzen, auch von Beweisen aus menschlichen Quellen, etwa der Glaubwuerdigkeit von Hinweisgebern oder Zeugen, indem sie die Widerspruchsfreiheit von Aussagen, ihre Uebereinstimmung mit gesicherten Tatsachen und die Richtigkeit frueherer Angaben derselben Quelle auswerten."
+          en: "Systems that support competent law enforcement authorities in evaluating the reliability of evidence, including evidence from human sources, for example the credibility of informants or witnesses, by analysing the consistency of statements, their agreement with established facts and the accuracy of earlier information from the same source."
+        source_ref: "(365)"
+    not_covered:
+      - text:
+          de: "Nicht erfasst sind das Sammeln, Ordnen und Strukturieren von Angaben, das Herausziehen und Verknuepfen von Daten, das Gruppieren von Dokumenten, das Nachbauen von Zeitabläufen, das Veranschaulichen, das Verzeichnen von Dokumenten, das Erkennen von Doppelstuecken, jede Form von Suche, auch Suche ueber Schlagwoerter, Aehnlichkeitssuche, Suche ueber Wissensnetze und Suche nach Inhalt und Bedeutung ueber Text, Ton, Bild und Video, ferner Uebersetzung und Verschriftlichung sowie das Strukturieren und Vereinheitlichen von Daten."
+          en: "Not covered are the collection, ordering and structuring of information, the extraction and linking of data, the clustering of documents, the reconstruction of timelines, visualisation, the indexing of documents, the detection of duplicates, any form of search, including keyword search, similarity search, knowledge graph search and semantic search across text, audio, image and video, as well as translation and transcription and the structuring and standardisation of data."
+        source_ref: "(365)"
+      - text:
+          de: "Systeme fuer den Nachbau von Spuren, die Bildverbesserung oder die Datenrettung aus Geraeten; sie beurteilen die Verlaesslichkeit nicht, sondern helfen Sachverstaendigen, Daten aufzubereiten, wiederherzustellen oder herauszuziehen."
+          en: "Systems for reconstructing traces, image enhancement or data recovery from devices; they do not evaluate reliability but help experts to prepare, restore or extract data."
+        source_ref: "(365)"
+      - text:
+          de: "Systeme, die Tatorte kartieren, nachbauen oder anhand gesammelter Daten wie Fotos und Messungen veranschaulichen; sie helfen beim Verstaendnis raeumlicher Zusammenhaenge und des Ablaufs, ohne die Verlaesslichkeit von Beweisen zu beurteilen."
+          en: "Systems that map, reconstruct or visualise crime scenes on the basis of collected data such as photos and measurements; they help in understanding spatial relationships and the sequence of events without evaluating the reliability of evidence."
+        source_ref: "(365)"
+      - text:
+          de: "Systeme, die Muster in Ermittlungen erkennen und Strafverfolgungsbehoerden darauf hinweisen, etwa aehnliche Einbruchsmethoden bei letzten Diebstaehlen oder aehnliche Opferprofile bei letzten Toetungen; sie finden Zusammenhaenge und Muster, beurteilen aber keine Verlaesslichkeit."
+          en: "Systems that detect patterns in investigations and alert law enforcement authorities to them, for example similar burglary methods in recent thefts or similar victim profiles in recent homicides; they find connections and patterns but do not evaluate reliability."
+        source_ref: "(365)"
+      - text:
+          de: "Systeme zur Erkennung von Darstellungen sexuellen Missbrauchs von Kindern im Netz, ohne deren Verlaesslichkeit als Beweis zu beurteilen; ihre Hauptaufgabe ist das Bestimmen, Anzeigen und Filtern von Inhalten, die moeglicherweise rechtswidrig sind."
+          en: "Systems for detecting online child sexual abuse material without evaluating its reliability as evidence; their main task is identifying, flagging and filtering content that may be illegal."
+        source_ref: "(365)"
+      - text:
+          de: "Loesungen fuer Strafverfolgungsbehoerden zur Durchsicht von Darstellungen sexuellen Missbrauchs von Kindern im Netz und zu ihrer Einteilung in neues Material, bereits in der Datenbank erfasstes Material und gefaelschte Bilder; sie beurteilen keine Verlaesslichkeit, sondern filtern und sortieren grosse Mengen eingehenden Materials vor. Eine Einordnung als hochriskant unter einem anderen Fall des Anhangs III, etwa Nummer 6 Buchstabe a, bleibt davon unberuehrt."
+          en: "Solutions for law enforcement authorities for reviewing online child sexual abuse material and classifying it into new material, material already recorded in the database and fake images; they do not evaluate reliability but pre-filter and sort large volumes of incoming material. A classification as high-risk under another case of Annex III, for example point 6(a), remains unaffected."
+        source_ref: "(365)"
+      - text:
+          de: "Systeme, mit denen Strafverfolgungsbehoerden Anzeigen aus dem Sexgewerbe im Netz auswerten und diejenigen anzeigen, die am wahrscheinlichsten mit Menschenhandel zusammenhaengen; sie beurteilen keine Verlaesslichkeit, sondern bestimmen, zeigen an und filtern moeglicherweise rechtswidrige Inhalte."
+          en: "Systems with which law enforcement authorities analyse online sex work advertisements and flag those most likely to be linked to human trafficking; they do not evaluate reliability but identify, flag and filter potentially illegal content."
+        source_ref: "(365)"
+      - text:
+          de: "Systeme, die Spuren auf einem Projektil mit Spuren in einer Vergleichsdatenbank abgleichen, um festzustellen, ob eine bestimmte Waffe fuer eine Straftat benutzt wurde; sie beurteilen keine Verlaesslichkeit, sondern sind ein Mittel der Aktenbearbeitung oder der Datenbanksuche ueber den Vergleich von Aehnlichkeiten."
+          en: "Systems that compare marks on a projectile with marks in a reference database in order to determine whether a particular weapon was used for a criminal offence; they do not evaluate reliability but are a means of case file processing or database search by comparing similarities."
+        source_ref: "(365)"
+    examples:
+      - scenario:
+          de: "Ein System wird bei der Beweisbewertung eingesetzt, teilt aber nur die zur Echtheitspruefung ausgewaehlten Schriftstuecke, Bilder, Videos oder anderes Material in Gruppen ein, und diese Einteilung wirkt sich auf die Beurteilung der Verlaesslichkeit nicht aus."
+          en: "A system is used in evaluating evidence but only sorts the documents, images, videos or other material selected for authenticity checking into groups, and this grouping has no effect on the evaluation of reliability."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Solche Systeme fallen unter die Ausnahme fuer Systeme, die eine eng begrenzte Verfahrensaufgabe erfuellen."
+          en: "Such systems fall under the exemption for systems that perform a narrow procedural task."
+        source_ref: "(365)"
+      - scenario:
+          de: "Ein System verzeichnet und beschlagwortet im Lauf der Beweisbewertung gesammelte Finanzunterlagen, etwa damit sie mit Kontobewegungen verglichen oder auf das Vorkommen von Namen oder Gegenstaenden geprueft werden koennen."
+          en: "A system indexes and tags financial records collected in the course of evaluating evidence, for example so that they can be compared with account transactions or checked for the occurrence of names or objects."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Solche Systeme fallen unter die Ausnahmen fuer Systeme, die eine eng begrenzte Verfahrensaufgabe oder eine vorbereitende Aufgabe erfuellen."
+          en: "Such systems fall under the exemptions for systems that perform a narrow procedural task or a preparatory task."
+        source_ref: "(365)"
+  - citation: "AI-Act/annex-III/pt-6-d"
+    main_question:
+      de: "Soll Ihr System einschaetzen, wie gross die Gefahr ist, dass ein bestimmter Mensch eine Straftat begeht oder erneut begeht?"
+      en: "Is your system intended to assess how great the risk is that a specific person commits or re-commits a criminal offence?"
+    follow_up_questions:
+      - question:
+          de: "Soll Ihr System von einer Strafverfolgungsbehoerde, in deren Namen oder von einer Einrichtung der Europaeischen Union zur Unterstuetzung solcher Behoerden eingesetzt werden?"
+          en: "Is your system to be used by a law enforcement authority, on its behalf, or by a Union institution, body, office or agency in support of such authorities?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(366)"
+      - question:
+          de: "Bezieht sich die Einschaetzung auf einen oder mehrere bestimmte Menschen und nicht auf Orte oder Gebiete?"
+          en: "Does the assessment relate to one or more specific persons and not to places or areas?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(366)"
+      - question:
+          de: "Stuetzt sich Ihr System allein auf Profilbildung, allein auf die Bewertung von Persoenlichkeitsmerkmalen und Eigenschaften oder allein auf frueheres strafbares Verhalten des Menschen oder der Gruppen, zu denen er gehoert?"
+          en: "Is your system based solely on profiling, solely on assessing personality traits and characteristics, or solely on past criminal behaviour of the person or of groups to which the person belongs?"
+        on_yes: "not_covered"
+        on_no: "covered"
+        source_ref: "(367)"
+      - question:
+          de: "Unterstuetzt Ihr System eine menschliche Beurteilung, die schon auf nachpruefbaren Tatsachen beruht, die unmittelbar mit einer Straftat zusammenhaengen, etwa weil gegen den Menschen bereits ein begruendeter Verdacht besteht?"
+          en: "Does your system support a human assessment that is already based on verifiable facts directly linked to a criminal offence, for example because there is already a reasonable suspicion against the person?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(368)"
+    covered:
+      - text:
+          de: "Liegt mindestens einer der drei Faelle vor, ist das System hochriskant, es sei denn, es fiele unter das Verbot des Artikels 5 Absatz 1 Buchstabe d. Die drei Faelle sind nach Erwaegungsgrund 59 nicht kumulativ, sondern Alternativen."
+          en: "If at least one of the three cases applies, the system is high-risk, unless it falls under the prohibition in Article 5(1)(d). According to recital 59, the three cases are not cumulative but alternatives."
+        source_ref: "(367)"
+      - text:
+          de: "Ein System, das bei der ersten Bearbeitung festgenommener jugendlicher Verdaechtiger durch die Polizei einen Wert fuer die Wahrscheinlichkeit erneuter Straftaten berechnet, der dann in eine Entscheidung ueber die zu treffenden Massnahmen einfliesst. Das System entscheidet nicht selbst, das Ergebnis wird neben anderen Angaben beruecksichtigt, und die zustaendigen Behoerden entscheiden am Ende. Es stuetzt sich nicht allein auf Profilbildung, weil nachpruefbare Tatsachen mit unmittelbarem Bezug zu einer Straftat vorliegen; die Beurteilung erfolgt nach der Festnahme."
+          en: "A system that, during the initial processing by the police of arrested juvenile suspects, calculates a score for the likelihood of reoffending, which then feeds into a decision on the measures to be taken. The system does not decide itself, the result is taken into account alongside other information, and the competent authorities decide in the end. It is not based solely on profiling, because there are verifiable facts directly linked to a criminal offence; the assessment takes place after the arrest."
+        source_ref: "(368)"
+      - text:
+          de: "Ein System, mit dem Bewaehrungshelfer Beurteilungen fuer Entscheidungen ueber Bewaehrung oder bedingte Entlassung unterstuetzen, indem es Vorstrafen, Verhalten und Entwicklung im Vollzug und weitere fallbezogene Angaben der Aufsicht auswertet; nachpruefbare Tatsachen verbinden den Menschen unmittelbar mit einer Straftat, weil er bereits verurteilt ist."
+          en: "A system with which probation officers support assessments for decisions on probation or conditional release by analysing criminal records, behaviour and progress in custody and other case-related supervision information; verifiable facts link the person directly to a criminal offence, because the person has already been convicted."
+        source_ref: "(368)"
+      - text:
+          de: "Ein System, mit dem eine Justizvollzugsanstalt die Wahrscheinlichkeit erneuter Straftaten anhand von Vorstrafen, Gewalt innerhalb der Anstalt oder sozialen und wirtschaftlichen Angaben vorhersagt; nachpruefbare Tatsachen verbinden den Menschen unmittelbar mit einer Straftat, weil er verurteilt oder wegen Verdachts in Haft ist."
+          en: "A system with which a prison predicts the likelihood of reoffending on the basis of criminal records, violence within the institution or social and economic information; verifiable facts link the person directly to a criminal offence, because the person has been convicted or is in custody on suspicion."
+        source_ref: "(368)"
+      - text:
+          de: "Ein System zur Gefahreneinschaetzung in Strafgerichten, das die Wahrscheinlichkeit von Rueckfall, gewaltsamer Wiederholung oder weiteren schweren Straftaten einschaetzt. Da es Profilbildung umfasst, greifen die Ausnahmen des Filters nicht."
+          en: "A risk assessment system in criminal courts that assesses the likelihood of recidivism, violent reoffending or further serious criminal offences. As it involves profiling, the exemptions of the filter do not apply."
+        source_ref: "(368)"
+    not_covered:
+      - text:
+          de: "Systeme, die Orte und Zeitraeume wahrscheinlicher Straftaten vorhersagen, etwa die Einbruchsgefahr in einem Stadtviertel, ohne die Vorhersage mit bestimmbaren Menschen zu verbinden; Nummer 6 Buchstabe d betrifft die Gefahreneinschaetzung bei Menschen und nicht raumbezogene Vorhersagen."
+          en: "Systems that predict places and periods of likely criminal offences, for example the risk of burglary in a neighbourhood, without linking the prediction to identifiable persons; point 6(d) concerns risk assessment of persons and not location-based predictions."
+        source_ref: "(368)"
+      - text:
+          de: "Ausdruecklich ausgenommen sind Systeme, die sich allein auf Profilbildung, allein auf die Bewertung von Persoenlichkeitsmerkmalen und Eigenschaften oder allein auf frueheres strafbares Verhalten von Menschen oder Gruppen stuetzen; die ersten beiden Faelle sind bereits nach Artikel 5 Absatz 1 Buchstabe d verboten."
+          en: "Expressly excluded are systems based solely on profiling, solely on assessing personality traits and characteristics, or solely on past criminal behaviour of persons or groups; the first two cases are already prohibited under Article 5(1)(d)."
+        source_ref: "(367)"
+    examples:
+      - scenario:
+          de: "Ein System prueft, ob in einem Beurteilungsbogen eines Bewaehrungshelfers alle Pflichtfelder gefuellt sind, oder zeigt Widersprueche in den eingegebenen Daten an, etwa nicht zusammenpassende Daten der Tat oder der Haftzeit."
+          en: "A system checks whether all mandatory fields in a probation officer's assessment form are filled in, or flags contradictions in the data entered, for example inconsistent dates of the offence or of the period of detention."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Das System erfuellt eine vorbereitende Aufgabe fuer die Gefahreneinschaetzung und bewertet keine persoenlichen Merkmale; es erfuellt zudem eine eng begrenzte Verfahrensaufgabe, weil es nur Widersprueche anzeigt."
+          en: "The system performs a preparatory task for the risk assessment and does not evaluate personal characteristics; it also performs a narrow procedural task, because it only flags contradictions."
+        source_ref: "(368)"
+      - scenario:
+          de: "Ein System sammelt Vorstrafen, Bewaehrungsberichte und andere Unterlagen und sortiert sie vor, um eine Fallakte fuer menschliche Bearbeiter vorzubereiten."
+          en: "A system collects criminal records, probation reports and other documents and pre-sorts them in order to prepare a case file for human case handlers."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Das System erfuellt eine vorbereitende Aufgabe fuer die Gefahreneinschaetzung und kommt daher fuer eine Ausnahme in Betracht."
+          en: "The system performs a preparatory task for the risk assessment and therefore qualifies for consideration for an exemption."
+        source_ref: "(368)"
+  - citation: "AI-Act/annex-III/pt-6-e"
+    main_question:
+      de: "Soll Ihr System bei der Aufdeckung, Ermittlung oder Verfolgung von Straftaten Profile von Menschen bilden, also personenbezogene Daten automatisch auswerten, um persoenliche Eigenschaften oder Verhalten zu bewerten oder vorauszusagen?"
+      en: "Is your system intended to create profiles of persons in the detection, investigation or prosecution of criminal offences, that is to automatically analyse personal data in order to evaluate or predict personal characteristics or behaviour?"
+    follow_up_questions:
+      - question:
+          de: "Soll Ihr System von einer Strafverfolgungsbehoerde, in deren Namen oder von einer Einrichtung der Europaeischen Union zur Unterstuetzung solcher Behoerden eingesetzt werden?"
+          en: "Is your system to be used by a law enforcement authority, on its behalf, or by a Union institution, body, office or agency in support of such authorities?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(369)"
+      - question:
+          de: "Geschieht die Profilbildung im Rahmen der Aufdeckung, Ermittlung oder Verfolgung von Straftaten?"
+          en: "Does the profiling take place in the course of the detection, investigation or prosecution of criminal offences?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(369)"
+      - question:
+          de: "Hilft Ihr System dabei, moegliche Verdaechtige oder andere Menschen von Interesse zu bestimmen, etwa Opfer?"
+          en: "Does your system help to identify possible suspects or other persons of interest, for example victims?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(370)"
+      - question:
+          de: "Wertet Ihr System dafuer verschiedene Arten von Daten aus, etwa Angaben zum Ort, Daten aus Registern, Zeugenbeschreibungen oder Verhalten im Netz, und erzeugt daraus Profile oder Hinweise?"
+          en: "Does your system analyse different types of data for this purpose, for example location information, data from registers, witness descriptions or online behaviour, and generate profiles or indications from them?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(370)"
+    covered:
+      - text:
+          de: "Systeme, die beim Verschwinden eines Kindes helfen, moegliche Verdaechtige zu bestimmen, indem sie die Nachbarschaft, die dort wohnenden im Register fuer Sexualstraftaeter eingetragenen Menschen, deren Bewegungen und die Art der frueher missbrauchten Kinder auswerten. Der Zweck ist, aus Verhaltensmustern Rueckschluesse auf einzelne Menschen zu ziehen und sie so als moegliche Verdaechtige herauszufiltern. Stuetzt sich die Beurteilung zusaetzlich auf frueheres strafbares Verhalten und andere nachpruefbare Tatsachen, beruht sie nicht allein auf Profilbildung und Bewertung persoenlicher Merkmale, weshalb Nummer 6 Buchstabe e und nicht das Verbot vorhersagender Polizeiarbeit greift."
+          en: "Systems that, when a child disappears, help to identify possible suspects by analysing the neighbourhood, the persons living there who are listed in the sex offender register, their movements and the type of children abused in the past. The purpose is to draw conclusions about individual persons from behavioural patterns and thus to filter them out as possible suspects. If the assessment is additionally based on past criminal behaviour and other verifiable facts, it is not based solely on profiling and the assessment of personal characteristics, which is why point 6(e) applies and not the prohibition of predictive policing."
+        source_ref: "(370)"
+      - text:
+          de: "Systeme, die helfen, moegliche Verdaechtige anhand von Zeugenbeschreibungen und anderen personenbezogenen Daten zu bestimmen; sie werten personenbezogene Daten aus, um aus Mustern auf Merkmale der Person und andere persoenliche Umstaende zu schliessen und einzelne Menschen als moegliche Verdaechtige herauszugreifen."
+          en: "Systems that help to identify possible suspects on the basis of witness descriptions and other personal data; they analyse personal data in order to infer characteristics of the person and other personal circumstances from patterns and to single out individual persons as possible suspects."
+        source_ref: "(370)"
+      - text:
+          de: "Ein System, das Beitraege im Netz beobachtet, Nutzer nach Stimmungsauswertung, Veroeffentlichungsmustern und Netzwerken einteilt und Hinweise auf eine moegliche extremistische Zugehoerigkeit setzt. Es wertet Kommunikationsmuster, Sprachgebrauch und Verhaltensanzeichen aus, um Menschen als moeglicherweise radikalisiert einzuordnen, und betreibt damit Profilbildung. Eine verbotene soziale Bewertung liegt nicht vor, weil das System auf die gezielte Beobachtung von Radikalisierung in bestimmten Bereichen beschraenkt ist."
+          en: "A system that monitors online posts, categorises users by sentiment analysis, posting patterns and networks, and sets indications of a possible extremist affiliation. It analyses communication patterns, language use and behavioural signs in order to classify persons as possibly radicalised, and thus performs profiling. There is no prohibited social scoring, because the system is limited to the targeted monitoring of radicalisation in specific areas."
+        source_ref: "(370)"
+    not_covered:
+      - text:
+          de: "Systeme, die Stadtviertel auswerten und ihnen Werte fuer Kriminalitaet zuweisen, also Systeme zur Kartierung vorhergesagter Kriminalitaet, solange sie keine Profile einzelner Menschen im Sinne der Nummer 6 Buchstaben d und e bilden."
+          en: "Systems that analyse neighbourhoods and assign them crime scores, that is systems for mapping predicted crime, as long as they do not create profiles of individual persons within the meaning of point 6(d) and (e)."
+        source_ref: "(370)"
+      - text:
+          de: "Systeme, die verdaechtige Zahlungsmuster erkennen, die auf Geldwaesche oder Terrorismusfinanzierung hindeuten, auch wenn sich solche Zahlungen persoenlichen Profilen zuordnen lassen."
+          en: "Systems that detect suspicious payment patterns indicating money laundering or terrorist financing, even if such payments can be attributed to personal profiles."
+        source_ref: "(370)"
+      - text:
+          de: "Ein System zur Verknuepfung von Straftaten, das Polizeiberichte und Fallakten mit Angaben wie Zeit, Ort, Vorgehensweise, Beschreibungen von Verdaechtigen und Opfern, koerperlichen Merkmalen, Kleidung, Fahrzeugen und sozialen Kennzahlen auswertet, um Muster und Aehnlichkeiten ueber verschiedene Vorfaelle hinweg zu erkennen und sie zu moeglichen Serien desselben Taeters zu verbinden. Die Ergebnisse sind Warnhinweise, Verknuepfungsvermutungen und Vorhersagen wahrscheinlicher kuenftiger Straftaten, die nicht mit einem bestimmten Menschen verbunden sind."
+          en: "A crime linkage system that analyses police reports and case files with information such as time, place, modus operandi, descriptions of suspects and victims, physical characteristics, clothing, vehicles and social indicators in order to detect patterns and similarities across different incidents and to link them into possible series by the same offender. The results are alerts, presumed links and predictions of likely future criminal offences that are not linked to a specific person."
+        source_ref: "(370)"
+    examples:
+      - scenario:
+          de: "Ein System erkennt verdaechtige Zahlungsmuster und wird zusaetzlich mit personenbezogenen Daten wie Namen oder Kontonummern angereichert, sodass daraus Profile einzelner Menschen entstehen."
+          en: "A system detects suspicious payment patterns and is additionally enriched with personal data such as names or account numbers, so that profiles of individual persons are created from it."
+        verdict: "high_risk"
+        rationale:
+          de: "Bewertet das System auf diese Weise persoenliche Merkmale, ist es als hochriskant einzuordnen; allein auf Zahlungsdaten bezogen, etwa auf Betraege, Haeufigkeiten, Abstaende und Leitwege, ist es es nicht."
+          en: "If the system evaluates personal characteristics in this way, it is to be classified as high-risk; if it relates solely to payment data, for example amounts, frequencies, intervals and routing paths, it is not."
+        source_ref: "(370)"
+  - citation: "AI-Act/annex-III/pt-7-preliminary"
+    main_question:
+      de: "Soll Ihr System im Bereich Migration, Asyl oder Grenzkontrolle eingesetzt werden, und zwar von einer dafuer zustaendigen Behoerde, in deren Namen oder von einer Einrichtung der Europaeischen Union?"
+      en: "Is your system to be used in the area of migration, asylum or border control, namely by a public authority competent for this, on its behalf or by a Union institution, body, office or agency?"
+    follow_up_questions:
+      - question:
+          de: "Ist die Stelle, die Ihr System einsetzt, eine nach Unionsrecht oder nach nationalem Recht fuer diesen Bereich bestimmte Behoerde oder eine Einrichtung der Europaeischen Union, die in ihrem Auftrag handelt?"
+          en: "Is the body that uses your system a public authority designated for this area under Union or national law, or a Union institution, body, office or agency acting within its mandate?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(375)"
+      - question:
+          de: "Soll Ihr System von einer Grenzschutzbehoerde eingesetzt werden, die Kontrollen an den Aussengrenzen und damit verbundene Aufgaben wahrnimmt?"
+          en: "Is your system to be used by a border guard authority that carries out checks at the external borders and related tasks?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(376)"
+      - question:
+          de: "Soll Ihr System von einer Auslandsvertretung oder einer zentralen Visumbehoerde eingesetzt werden, die Visumantraege prueft und ueber Visa entscheidet?"
+          en: "Is your system to be used by a consulate or a central visa authority that examines visa applications and decides on visas?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(376)"
+      - question:
+          de: "Soll Ihr System von einer Asylbehoerde eingesetzt werden, insbesondere von einer Stelle, die Antraege auf internationalen Schutz in erster Instanz prueft?"
+          en: "Is your system to be used by an asylum authority, in particular by a body that examines applications for international protection at first instance?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(376)"
+      - question:
+          de: "Soll Ihr System von einer Einwanderungs-, Rueckkehr- oder Abschiebungsbehoerde eingesetzt werden, die Rueckkehrentscheidungen erlaesst und durchsetzt oder Rueckkehr- und Haftverfahren betreibt?"
+          en: "Is your system to be used by an immigration, return or removal authority that issues and enforces return decisions or conducts return and detention procedures?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(376)"
+      - question:
+          de: "Soll Ihr System von einer Beschwerde- oder Ueberpruefungsstelle eingesetzt werden, auch von einer Widerspruchsstelle der Verwaltung oder einem Gericht, die Rechtsbehelfe oder Beschwerden gegen Asyl-, Visum- oder Aufenthaltsentscheidungen pruefen?"
+          en: "Is your system to be used by an appeal or review body, including an administrative appeal body or a court, that examines legal remedies or appeals against asylum, visa or residence decisions?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(376)"
+      - question:
+          de: "Soll Ihr System von einer Einrichtung der Europaeischen Union in diesem Bereich eingesetzt werden, etwa von Frontex, von der Asylagentur der Europaeischen Union oder von der Agentur fuer das Betriebsmanagement von IT-Grosssystemen?"
+          en: "Is your system to be used by a Union institution, body, office or agency in this area, for example by Frontex, the European Union Agency for Asylum or the Agency for the Operational Management of Large-Scale IT Systems?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(376)"
+      - question:
+          de: "Hat eine Behoerde Ihrem Unternehmen die Durchfuehrung dieser Taetigkeit ganz oder zum Teil uebertragen oder Ihr Unternehmen im Einzelfall um Unterstuetzung gebeten?"
+          en: "Has a public authority entrusted your company with carrying out this activity in whole or in part, or asked your company for support in an individual case?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(81)"
+      - question:
+          de: "Handelt Ihr Unternehmen auf eigene Rechnung, also aus eigenem Entschluss, freiwillig oder allein zur Erfuellung einer eigenen gesetzlichen Pflicht?"
+          en: "Does your company act on its own account, that is on its own initiative, voluntarily or solely to comply with a legal obligation of its own?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(81)"
+      - question:
+          de: "Verarbeitet Ihr System koerperbezogene Merkmale wie Gesicht, Fingerabdruecke oder Gangbild?"
+          en: "Does your system process biometric characteristics such as the face, fingerprints or gait?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(379)"
+      - question:
+          de: "Prueft Ihr System allein Reise- oder Ausweispapiere, etwa auf Bildverschmelzung, ungewoehnliche Tinte, kopierte Unterschriften oder die Gueltigkeit des Chips?"
+          en: "Does your system solely check travel or identity documents, for example for image morphing, unusual ink, copied signatures or the validity of the chip?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(380)"
+      - question:
+          de: "Prueft Ihr System, ob eine echte lebende Person vor dem Geraet steht, und wird diese Pruefung allein als Schutz gegen Taeuschung bei einem Abgleich der Person mit ihrem eigenen Reisepapier verwendet?"
+          en: "Does your system check whether a real live person is in front of the device, and is this check used solely as protection against spoofing when matching the person with their own travel document?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(380)"
+      - question:
+          de: "Wird dieselbe Faehigkeit darueber hinaus genutzt, um Menschen im Einsatz zu erkennen, zu verfolgen oder zu bestimmen?"
+          en: "Is the same capability also used to recognise, track or identify persons in the field?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(380)"
+      - question:
+          de: "Ist Ihr System ausschliesslich fuer Suche und Rettung, also zur Lebensrettung, bestimmt?"
+          en: "Is your system intended exclusively for search and rescue, that is for saving lives?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(381)"
+      - question:
+          de: "Ist Ihr System sowohl fuer die Grenzkontrolle als auch fuer Suche und Rettung oder fuer die Sicherheit der Schifffahrt bestimmt?"
+          en: "Is your system intended both for border control and for search and rescue or for maritime safety?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(381)"
+    covered:
+      - text:
+          de: "Erfasst sind die nach Unionsrecht oder nationalem Recht fuer diesen Bereich bestimmten nationalen Behoerden sowie Einrichtungen der Europaeischen Union, die im Rahmen ihres Auftrags nach diesem Recht handeln."
+          en: "Covered are the national public authorities designated for this area under Union or national law and Union institutions, bodies, offices or agencies acting within their mandate under that law."
+        source_ref: "(375)"
+      - text:
+          de: "Ein privates Unternehmen handelt im Namen einer Behoerde, wenn die Behoerde ihm die Taetigkeit ganz oder zum Teil uebertraegt oder es im Einzelfall um Unterstuetzung dieser Taetigkeit bittet."
+          en: "A private company acts on behalf of a public authority if the authority entrusts it with the activity in whole or in part or asks it for support with that activity in an individual case."
+        source_ref: "(81)"
+      - text:
+          de: "Verarbeitet ein System koerperbezogene Merkmale, wird es zugleich nach Nummer 1 des Anhangs III als hochriskant eingeordnet, wenn es unter Nummer 1 Buchstabe a, b oder c fällt; es unterliegt dann einer Konformitaetsbewertung durch eine dritte Stelle."
+          en: "If a system processes biometric characteristics, it is at the same time classified as high-risk under Annex III, point 1 if it falls under point 1(a), (b) or (c); it is then subject to a third-party conformity assessment."
+        source_ref: "(379)"
+      - text:
+          de: "Pruefungen, ob eine echte lebende Person vor dem Geraet steht, die im Ablauf der Erkennung und Bestimmung von Menschen eingesetzt werden, sind keine Papierpruefung und werden im Regelfall nach Nummer 7 Buchstabe d als hochriskant eingeordnet, es sei denn, das System dient der biometrischen Fernidentifizierung, dann greift Nummer 1 Buchstabe a."
+          en: "Checks of whether a real live person is in front of the device that are used in the process of recognising and identifying persons are not document checks and are as a rule classified as high-risk under point 7(d), unless the system is used for remote biometric identification, in which case point 1(a) applies."
+        source_ref: "(380)"
+      - text:
+          de: "Ist ein System sowohl fuer die Grenzkontrolle als auch fuer Suche und Rettung oder fuer die Sicherheit der Schifffahrt bestimmt, fällt es wegen der beabsichtigten Nutzung zur Grenzkontrolle unter Nummer 7."
+          en: "If a system is intended both for border control and for search and rescue or for maritime safety, it falls under point 7 because of the intended use for border control."
+        source_ref: "(381)"
+      - text:
+          de: "Werkzeuge zur Erkennung von Taeuschung oder Glaubhaftigkeit an der Grenze, etwa ueber kleinste Gesichtsbewegungen oder Stimmbelastung, gelten nicht als biometrische Fernidentifizierung und werden im Regelfall nach Nummer 7 als hochriskant eingeordnet, weil sie die Identitaet nicht ueber einen Datenbankabgleich feststellen."
+          en: "Tools for detecting deception or credibility at the border, for example via micro-expressions or vocal stress, do not count as remote biometric identification and are as a rule classified as high-risk under point 7, because they do not establish identity by matching against a database."
+        source_ref: "(386)"
+      - text:
+          de: "Fällt ein System unter eines der Verbote des Artikels 5, ist sein Einsatz verboten; sind nicht alle Voraussetzungen des Verbots erfuellt, ist es als hochriskant einzuordnen, wenn es unter Nummer 1 oder Nummer 7 des Anhangs III fällt."
+          en: "If a system falls under one of the prohibitions in Article 5, its use is prohibited; if not all conditions of the prohibition are met, it is to be classified as high-risk if it falls under Annex III, point 1 or point 7."
+        source_ref: "(382)"
+      - text:
+          de: "Werkzeuge, die kuenftiges strafbares Verhalten von Menschen an der Grenze vorhersagen, koennen unter das Verbot des Artikels 5 Absatz 1 Buchstabe d fallen; sind nicht alle Voraussetzungen erfuellt, kann dasselbe Werkzeug nach Nummer 7 Buchstabe b hochriskant sein, wenn sein Zweck die Einschaetzung eines Migrationsrisikos ist."
+          en: "Tools that predict future criminal behaviour of persons at the border can fall under the prohibition in Article 5(1)(d); if not all conditions are met, the same tool can be high-risk under point 7(b) if its purpose is the assessment of a migration risk."
+        source_ref: "(385)"
+      - text:
+          de: "Ein Grenzuebergang gilt nicht als oeffentlich zugaenglicher Ort, weshalb das Verbot der biometrischen Fernidentifizierung in Echtzeit dort nicht greift; der Einsatz wird aber wahrscheinlich nach Nummer 1 oder Nummer 7 des Anhangs III als hochriskant eingeordnet. Die Strasse zu einem Grenzuebergang oder ein Wald in der Naehe ist dagegen im Regelfall ein oeffentlich zugaenglicher Ort, und bei einem Flughafen gilt das fuer die allgemeinen Bereiche, nicht fuer den Bereich der Grenzkontrolle."
+          en: "A border crossing point does not count as a publicly accessible space, which is why the prohibition of real-time remote biometric identification does not apply there; however, the use is likely to be classified as high-risk under Annex III, point 1 or point 7. By contrast, the road to a border crossing point or a nearby forest is as a rule a publicly accessible space, and at an airport this applies to the general areas, not to the border control area."
+        source_ref: "(387)"
+    not_covered:
+      - text:
+          de: "Ein privates Unternehmen handelt nicht im Namen einer Behoerde, wenn es auf eigene Rechnung handelt, sei es freiwillig oder zur Erfuellung einer eigenen gesetzlichen Pflicht."
+          en: "A private company does not act on behalf of a public authority if it acts on its own account, whether voluntarily or to comply with a legal obligation of its own."
+        source_ref: "(81)"
+      - text:
+          de: "Systeme zur Pruefung von Reise- oder Ausweispapieren, auch auf Bildverschmelzung, ungewoehnliche Tinten, kopierte Unterschriften oder die Gueltigkeit des Chips und der zugehoerigen Schluesselverwaltung, fallen nicht unter Nummer 7 Buchstabe d."
+          en: "Systems for checking travel or identity documents, including for image morphing, unusual inks, copied signatures or the validity of the chip and the associated key management, do not fall under point 7(d)."
+        source_ref: "(380)"
+      - text:
+          de: "In fliessenden Grenzverfahren, in denen Reisende sich selbst zum Abgleich mit ihrem eigenen Reisepapier vorstellen, bleibt die Pruefung auf Taeuschungsversuche Teil dieser Abgleichsfunktion und macht das System allein dadurch nicht hochriskant."
+          en: "In seamless border procedures in which travellers present themselves for matching with their own travel document, the check for spoofing attempts remains part of this matching function and does not by itself make the system high-risk."
+        source_ref: "(380)"
+      - text:
+          de: "Systeme, die ausschliesslich fuer Suche und Rettung, also zur Lebensrettung, bestimmt sind, fallen nicht unter den Fall der Grenzkontrolle und sind nach Nummer 7 nicht hochriskant."
+          en: "Systems intended exclusively for search and rescue, that is for saving lives, do not fall under the border control case and are not high-risk under point 7."
+        source_ref: "(381)"
+      - text:
+          de: "Werkzeuge zur Verhaltensauswertung, etwa zu Stimmbelastung, kleinsten Gesichtsbewegungen oder Blickmustern, sind nicht schon deshalb verboten, weil sie Anspannung oder kulturell gepraegte Ausdrucksformen falsch deuten koennen; solche Fehldeutungen koennen die Beweisbewertung beeinflussen, haben aber nicht zwingend den Zweck oder die Wirkung, das Verhalten eines Menschen zu verzerren."
+          en: "Behavioural analysis tools, for example on vocal stress, micro-expressions or gaze patterns, are not prohibited merely because they may misinterpret nervousness or culturally shaped forms of expression; such misinterpretations can influence the evaluation of evidence but do not necessarily have the objective or the effect of distorting a person's behaviour."
+        source_ref: "(383)"
+    examples:
+      - scenario:
+          de: "Ein System bewertet oder ordnet Migranten ueber einen Zeitraum hinweg nach koerperlichen Reaktionen, Verhalten einschliesslich der Taetigkeit im Netz oder anderen persoenlichen Daten, um daraus einen allgemeinen Wert fuer Vertrauenswuerdigkeit oder Gefahr zu bilden, besonders wenn das ueber verschiedene Lebensbereiche hinweg geschieht oder zu Nachteilen fuehrt."
+          en: "A system evaluates or classifies migrants over a period of time on the basis of physical reactions, behaviour including online activity or other personal data in order to derive a general score of trustworthiness or risk, especially if this happens across different areas of life or leads to detrimental treatment."
+        verdict: "high_risk"
+        rationale:
+          de: "Ein solches System kann eine nach Artikel 5 Absatz 1 Buchstabe c verbotene soziale Bewertung sein; Anbieter und Betreiber muessen sicherstellen, dass der Einsatz nicht darauf hinauslaeuft."
+          en: "Such a system can constitute social scoring prohibited under Article 5(1)(c); providers and deployers must ensure that the use does not amount to this."
+        source_ref: "(384)"
+  - citation: "AI-Act/annex-III/pt-7-a"
+    main_question:
+      de: "Soll Ihr System im Bereich Migration, Asyl oder Grenzkontrolle als Luegendetektor oder als aehnliches Werkzeug eingesetzt werden?"
+      en: "Is your system to be used as a polygraph or similar tool in the area of migration, asylum or border control?"
+    follow_up_questions:
+      - question:
+          de: "Wertet Ihr System koerperliche, verhaltensbezogene oder koerpermerkmalbezogene Signale aus, um darauf zu schliessen, dass ein Mensch taeuscht?"
+          en: "Does your system analyse physical, behavioural or biometric signals in order to infer that a person is being deceptive?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(388)"
+      - question:
+          de: "Soll Ihr System in diesem Bereich von einer Strafverfolgungsbehoerde oder in deren Namen eingesetzt werden?"
+          en: "Is your system to be used in this area by a law enforcement authority or on its behalf?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(388)"
+      - question:
+          de: "Wertet Ihr System Stimmmuster, kleinste Gesichtsbewegungen oder Gesichtsmuskelbewegungen, Blick, Koerperhaltung oder Koerperbewegungen aus, erstellt Waermebilder koerperlicher Reaktionen oder verbindet mehrere dieser Signale in einer Befragungsumgebung?"
+          en: "Does your system analyse voice patterns, micro-expressions or facial muscle movements, gaze, posture or body movements, create thermal images of physical reactions, or combine several of these signals in an interview setting?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(390)"
+      - question:
+          de: "Werden diese Signale allein zu anderen Zwecken als zum Schluss auf Taeuschung verwendet, etwa zur Erkennung von Sprache oder Mundart?"
+          en: "Are these signals used solely for purposes other than inferring deception, for example for recognising language or dialect?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(390)"
+    covered:
+      - text:
+          de: "Die Einordnung als hochriskant gilt auch dann, wenn die zustaendigen Behoerden die endgueltige Entscheidung ueber Einreise, Aufenthalt oder Schutz nicht selbst treffen; auch bei menschlicher Letztentscheidung kann die Ausgabe des Systems die Entscheidung wegen uebermaessigen Vertrauens und der Neigung, der Maschine zu folgen, erheblich beeinflussen."
+          en: "The classification as high-risk also applies if the competent authorities do not themselves take the final decision on entry, residence or protection; even where a human takes the final decision, the system's output can significantly influence the decision because of excessive trust and the tendency to follow the machine."
+        source_ref: "(389)"
+      - text:
+          de: "Grenzbeamte setzen in der zweiten Kontrolllinie an einem Aussengrenzflughafen ein System ein, das waehrend einer von einem Beamten gefuehrten Befragung die sprachlichen und nichtsprachlichen Reaktionen des Reisenden auswertet und dem Beamten einen ergaenzenden Hinweis zur Glaubhaftigkeit gibt."
+          en: "Border guards in the second line of control at an external border airport use a system that, during an interview conducted by an officer, analyses the traveller's verbal and non-verbal reactions and gives the officer a supplementary indication of credibility."
+        source_ref: "(390)"
+      - text:
+          de: "Eine Auslandsvertretung setzt ein System ein, das Stimmmuster und Antworten eines Antragstellers waehrend eines von Konsularbeamten gefuehrten Visumgespraechs auswertet und dem Beamten ergaenzende Hinweise zur Wahrheit der Aussagen gibt."
+          en: "A consulate uses a system that analyses an applicant's voice patterns and answers during a visa interview conducted by consular officers and gives the officer supplementary indications of the truthfulness of the statements."
+        source_ref: "(390)"
+      - text:
+          de: "Der Filter greift bei solchen Systemen nicht, weil sie bewertende Ausgaben erzeugen, die den Inhalt einer Einzelpruefung unmittelbar beeinflussen, und daher keine eng begrenzte Verfahrensaufgabe, keine vorbereitende und keine nachgelagerte Aufgabe erfuellen."
+          en: "The filter does not apply to such systems, because they generate evaluative outputs that directly influence the substance of an individual assessment, and therefore perform neither a narrow procedural task nor a preparatory nor a downstream task."
+        source_ref: "(391)"
+      - text:
+          de: "Solche Systeme sind nicht nach Artikel 5 Absatz 1 Buchstabe h verboten und auch nicht nach Nummer 1 Buchstabe a des Anhangs III hochriskant, weil sie keine biometrische Fernidentifizierung sind: sie arbeiten mit der taetigen Mitwirkung des Menschen in einem Gespraech von Angesicht zu Angesicht, vergleichen die Identitaet nicht mit vielen Eintraegen einer Vergleichsdatenbank und zielen nicht darauf, die Identitaet festzustellen."
+          en: "Such systems are not prohibited under Article 5(1)(h) nor high-risk under Annex III, point 1(a), because they are not remote biometric identification: they work with the active participation of the person in a face-to-face interview, do not compare the identity against many entries of a reference database and are not aimed at establishing identity."
+        source_ref: "(392)"
+    not_covered:
+      - text:
+          de: "Ein System, das Gespraechston verarbeitet, wie Luegendetektoren es tun, aber nicht auf Taeuschung schliesst, sondern das Gespraech selbsttaetig verschriftlicht oder die Antworten fuer die Akte in eine andere Sprache der Europaeischen Union uebersetzt."
+          en: "A system that processes interview audio as polygraphs do, but does not infer deception; instead it automatically transcribes the interview or translates the answers into another official language of the European Union for the file."
+        source_ref: "(392)"
+      - text:
+          de: "Ein System, das allein sachliche, nicht nach Bedeutung geordnete Zusammenfassungen von Gespraechen fuer die Akte erstellt, ohne Bewertung der Glaubhaftigkeit und ohne Empfehlungen; es beurteilt keine Taeuschung."
+          en: "A system that solely produces factual summaries of interviews for the file that are not ordered by significance, without assessing credibility and without recommendations; it does not assess deception."
+        source_ref: "(392)"
+      - text:
+          de: "Solche Systeme sind nicht von sich aus nach Artikel 5 Absatz 1 Buchstabe b verboten, es sei denn, sie sind darauf angelegt oder werden dazu genutzt, das Verhalten schutzbeduerftiger Menschen in erheblich schaedlicher Weise zu verzerren."
+          en: "Such systems are not in themselves prohibited under Article 5(1)(b), unless they are designed or used to materially distort the behaviour of vulnerable persons in a significantly harmful way."
+        source_ref: "(392)"
+    examples:
+      - scenario:
+          de: "Ein System vereinheitlicht Ton- und Bildsignale, etwa durch Rauschminderung, Anpassung der Beleuchtung oder Herausziehen von Gesichtspunkten, damit Sachbearbeiter Aufnahmen leichter durchsehen koennen."
+          en: "A system standardises audio and video signals, for example by noise reduction, adjusting the lighting or extracting facial landmarks, so that case handlers can review recordings more easily."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Erzeugt das System keine Schluesse auf Taeuschung und legt es solche auch nicht nahe, kann es unter die Ausnahme fuer Systeme mit vorbereitender Aufgabe fallen."
+          en: "If the system does not generate any conclusions on deception and does not suggest any, it can fall under the exemption for systems performing a preparatory task."
+        source_ref: "(392)"
+  - citation: "AI-Act/annex-III/pt-7-b"
+    main_question:
+      de: "Soll Ihr System einschaetzen, welche Gefahr von einem Menschen ausgeht, der in einen Mitgliedstaat einreisen will oder eingereist ist, etwa eine Gefahr fuer die Sicherheit, eine Gefahr unerlaubter Migration oder eine Gefahr fuer die Gesundheit?"
+      en: "Is your system intended to assess what risk is posed by a person who intends to enter or has entered a Member State, for example a security risk, a risk of irregular migration or a health risk?"
+    follow_up_questions:
+      - question:
+          de: "Soll Ihr System von einer zustaendigen Behoerde, in deren Namen oder von einer Einrichtung der Europaeischen Union eingesetzt werden?"
+          en: "Is your system to be used by a competent public authority, on its behalf or by a Union institution, body, office or agency?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(393)"
+      - question:
+          de: "Ist es der Zweck Ihres Systems, fuer einen einzelnen Menschen einen Gefahrenwert, eine Einstufung oder einen Hinweis zu erzeugen, der Entscheidungen ueber Einreise, Aufenthalt, Haft, Rueckkehr oder damit verbundene Massnahmen beeinflussen kann?"
+          en: "Is the purpose of your system to generate a risk score, a classification or an indication for an individual person that can influence decisions on entry, residence, detention, return or related measures?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(394)"
+      - question:
+          de: "Fasst Ihr System Daten nur zu einer uebergeordneten Uebersicht zusammen, etwa durch Summieren, Durchschnittsbildung oder Gruppieren, und sind die Ergebnisse keinem bestimmten Menschen zugeordnet?"
+          en: "Does your system only aggregate data into a higher-level overview, for example by summing, averaging or grouping, and are the results not attributed to any specific person?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(394)"
+      - question:
+          de: "Verarbeitet Ihr System dabei personenbezogene Daten?"
+          en: "Does your system process personal data in doing so?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(395)"
+      - question:
+          de: "Verarbeitet Ihr System allein anonymisierte Daten, sodass kein Mensch bestimmt oder bestimmbar ist?"
+          en: "Does your system process solely anonymised data, so that no person is identified or identifiable?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(395)"
+      - question:
+          de: "Wird ein aus Gruppendaten gewonnener Anhaltspunkt am Ende auf einen namentlich bekannten oder bestimmbaren Reisenden angewandt, um einen Hinweis oder eine Vorsortierung zu erzeugen?"
+          en: "Is an indicator derived from group data ultimately applied to a traveller who is known by name or identifiable, in order to generate an indication or a pre-sorting?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(395)"
+    covered:
+      - text:
+          de: "Gefahrenbewertung bei Einreisekontrollen: ein System, das Vorgeschichte, Reisemuster und Treffer in Fahndungslisten eines Reisenden auswertet und einen Gefahrenwert erzeugt, den Grenzbeamte nutzen, um ueber eine Weiterleitung in die zweite Kontrolllinie zu entscheiden."
+          en: "Risk assessment at entry checks: a system that analyses a traveller's history, travel patterns and hits in watch lists and generates a risk score that border guards use to decide on referral to the second line of control."
+        source_ref: "(396)"
+      - text:
+          de: "Selbsttaetige Sicherheitshinweise: ein System, das bei der Reisegenehmigung oder Visumbearbeitung personenbezogene Gefahrenhinweise zu Sicherheit, unerlaubter Migration oder Gesundheit berechnet und namentlich bekannte Reisende zu weiteren Pruefungen weiterleitet."
+          en: "Automated security flags: a system that, during travel authorisation or visa processing, calculates person-related risk flags on security, irregular migration or health and refers travellers known by name for further checks."
+        source_ref: "(396)"
+      - text:
+          de: "Visumbewertung: ein System, das Visumantragsteller nach der vorhergesagten Gefahr eines ueberlangen Aufenthalts ordnet und dabei Staatsangehoerigkeit und aehnliche Ersatzmerkmale nutzt, was fuer bestimmte Gruppen zu verschaerften Verfahren fuehrt."
+          en: "Visa assessment: a system that ranks visa applicants by the predicted risk of overstaying and uses nationality and similar proxy characteristics in doing so, which leads to stricter procedures for certain groups."
+        source_ref: "(396)"
+      - text:
+          de: "Hinweise auf Migrationsabsicht aus Suchverhalten: ein System, das aus dem letzten Suchverhalten im Netz eines namentlich bekannten Reisenden auf die Wahrscheinlichkeit unerlaubter Migration schliesst und daraus bei der Einreisekontrolle einen personenbezogenen Hinweis erzeugt."
+          en: "Indications of migration intent from search behaviour: a system that infers the likelihood of irregular migration from the recent online search behaviour of a traveller known by name and generates a person-related indication from it at the entry check."
+        source_ref: "(396)"
+      - text:
+          de: "Gesundheitsbezogene Hinweise zu einzelnen Menschen: ein System, das anhand koerperbezogener Messwerte und der letzten Reisen beurteilt, ob ein Mensch eine Ansteckungsgefahr darstellt, und ihn fuer weitere medizinische Untersuchungen vormerkt."
+          en: "Health-related indications on individual persons: a system that judges, on the basis of biometric measurements and recent travel, whether a person poses a risk of infection and flags the person for further medical examinations."
+        source_ref: "(396)"
+      - text:
+          de: "Aus Gegenstaenden und Reisewegen abgeleitete personenbezogene Gefahr: ein System, das Kennzeichenerfassungen und Fahrzeiten verarbeitet, um einen personenbezogenen Hinweis zu erzeugen, dass ein namentlich bekannter Reisender eine erhoehte Gefahr unerlaubter Migration darstellt, weil seine Fahrt zwischen zwei Punkten ungewoehnlich lang war, und ihn zur zweiten Kontrolle weiterleitet. Das gilt auch, wenn ein zweites System oder ein Mensch die endgueltige Beurteilung vornimmt."
+          en: "Person-related risk derived from objects and travel routes: a system that processes number plate captures and travel times in order to generate a person-related indication that a traveller known by name poses an increased risk of irregular migration because their journey between two points took unusually long, and refers the traveller to the second check. This also applies if a second system or a human makes the final assessment."
+        source_ref: "(396)"
+      - text:
+          de: "Gruppenbezogene Anhaltspunkte, die auf einzelne Menschen angewandt werden: ein System, das aus zusammengefassten Verlaufsdaten gruppenbezogene Anhaltspunkte bildet, etwa Quoten ueberlangen Aufenthalts nach Reiseweg und Jahreszeit, und diese auf die personenbezogenen Daten namentlich bekannter Reisender anwendet, um personenbezogene Hinweise fuer verschaerfte Kontrollen zu erzeugen."
+          en: "Group-related indicators applied to individual persons: a system that derives group-related indicators from aggregated historical data, for example overstay rates by travel route and season, and applies them to the personal data of travellers known by name in order to generate person-related indications for stricter checks."
+        source_ref: "(396)"
+      - text:
+          de: "Zusammengesetzte Anlagen aus Bausteinen, die einzeln nicht hochriskant sind: ein System, das aus zusammengefassten Verlaufsdaten gruppenbezogene Anhaltspunkte bildet, wird mit einer regelbasierten Einheit ohne kuenstliche Intelligenz verbunden, die diese Anhaltspunkte auf namentlich bekannte Reisende anwendet und personenbezogene Hinweise erzeugt. Einzeln betrachtet ist kein Baustein hochriskant, zusammen mit dem Zweck, die Gefahr durch einen Menschen einzuschaetzen, ist die Gesamtanlage hochriskant und kommt fuer den Filter nicht in Betracht."
+          en: "Composite set-ups of components that are not high-risk individually: a system that derives group-related indicators from aggregated historical data is combined with a rule-based unit without artificial intelligence that applies these indicators to travellers known by name and generates person-related indications. Considered individually, no component is high-risk; together with the purpose of assessing the risk posed by a person, the overall set-up is high-risk and does not qualify for the filter."
+        source_ref: "(396)"
+      - text:
+          de: "Solche Ausgaben beeinflussen den Inhalt der Beurteilung wesentlich und sind keine Aufgaben, die fuer den Filter in Betracht kommen."
+          en: "Such outputs materially influence the substance of the assessment and are not tasks that qualify for the filter."
+        source_ref: "(396)"
+    not_covered:
+      - text:
+          de: "Ein System, das grosse Datenmengen verarbeitet und zusammenfasst, um Entwicklungen und Muster der Migration zu erkennen, Bewegungen vorauszusehen oder moegliche Netzwerke unerlaubter Migration auf zusammengefasster Ebene zu bestimmen, solange aus den zusammengefassten Daten kein Mensch bestimmt oder bestimmbar ist."
+          en: "A system that processes and aggregates large volumes of data in order to detect migration trends and patterns, anticipate movements or identify possible networks of irregular migration at an aggregated level, as long as no person is identified or identifiable from the aggregated data."
+        source_ref: "(396)"
+      - text:
+          de: "Ein System, das zusammengefasste Daten verarbeitet, etwa Herkunftsland, Merkmale des Reisewegs oder aktuelle Krankheitslage, um eine ankommende Gruppe als gesundheitlich erhoeht gefaehrdet zu kennzeichnen und Massnahmen des Gesundheitsschutzes wie Tests oder Quarantaene auszuloesen, wenn dieselbe Massnahme fuer alle Mitglieder der Gruppe gilt. Werden dagegen einzelne Menschen innerhalb der Gruppe nach ihren eigenen Merkmalen fuer eine andere Behandlung ausgewaehlt, fällt das System unter diesen Fall."
+          en: "A system that processes aggregated data, for example country of origin, characteristics of the travel route or the current disease situation, in order to flag an arriving group as being at increased health risk and to trigger health protection measures such as tests or quarantine, if the same measure applies to all members of the group. If, by contrast, individual persons within the group are selected for different treatment on the basis of their own characteristics, the system falls under this case."
+        source_ref: "(396)"
+      - text:
+          de: "Ein System, das Kennzeichenerfassungen und Fahrzeiten verarbeitet, um Fahrzeuge mit ungewoehnlich langen Fahrten zu kennzeichnen und das Fahrzeug auf eine allgemeine zweite Spur zur technischen Pruefung zu leiten, ohne damit eine Gefahreneinschaetzung zu Fahrer oder Mitfahrern zu erzeugen oder nahezulegen. Dass Grenzbeamte danach auch die Mitfahrenden pruefen, macht die Ausgabe nicht zu einer personenbezogenen Gefahreneinschaetzung."
+          en: "A system that processes number plate captures and travel times in order to flag vehicles with unusually long journeys and to direct the vehicle to a general second lane for technical inspection, without thereby generating or suggesting a risk assessment of the driver or passengers. The fact that border guards then also check the passengers does not make the output a person-related risk assessment."
+        source_ref: "(396)"
+      - text:
+          de: "Ein System, das Fahrzeuge an einem Grenzuebergang beobachtet, um gestohlene Fahrzeuge fuer eine zweite Pruefung zu kennzeichnen; es schaetzt keine Gefahr ein, die von einem Menschen ausgeht."
+          en: "A system that monitors vehicles at a border crossing point in order to flag stolen vehicles for a second check; it does not assess a risk posed by a person."
+        source_ref: "(396)"
+      - text:
+          de: "Ein System, das in abgeschlossenen Gefahrenbeurteilungen die Begriffe vereinheitlicht und Doppeleintraege erkennt, nachdem die menschliche Beurteilung beendet ist; es erzeugt keine personenbezogene Gefahrenausgabe fuer Entscheidungen ueber Einreise oder Aufenthalt."
+          en: "A system that standardises the terminology and detects duplicate entries in completed risk assessments after the human assessment has ended; it does not generate a person-related risk output for decisions on entry or residence."
+        source_ref: "(396)"
+      - text:
+          de: "Werden zusammengefasste Daten verarbeitet und wird dabei kein Mensch bestimmt oder bestimmbar, liegt keine Profilbildung vor; eine geringe Zusammenfassung oder die Verknuepfbarkeit mit anderen Datenbestaenden kann zusammengefasste Daten jedoch wieder zu personenbezogenen Daten machen."
+          en: "If aggregated data are processed and no person is identified or identifiable in the process, there is no profiling; however, a low level of aggregation or the possibility of linking with other data sets can turn aggregated data back into personal data."
+        source_ref: "(395)"
+      - text:
+          de: "Ein System kann den Filter nur nutzen, wenn es eine eng begrenzte Verfahrensaufgabe oder eine rein vorbereitende Aufgabe erfuellt, dabei selbst keine Profilbildung vornimmt und den Inhalt oder das Ergebnis einer einzelnen Gefahrenbeurteilung nicht wesentlich beeinflusst; zusammengesetzte Anlagen werden als Ganzes beurteilt."
+          en: "A system can use the filter only if it performs a narrow procedural task or a purely preparatory task, does not itself perform profiling in doing so, and does not materially influence the substance or the outcome of an individual risk assessment; composite set-ups are assessed as a whole."
+        source_ref: "(396)"
+  - citation: "AI-Act/annex-III/pt-7-c"
+    main_question:
+      de: "Soll Ihr System eine Behoerde dabei unterstuetzen, einen Antrag auf Asyl, Visum oder Aufenthalt oder eine dazugehoerige Beschwerde zu pruefen, also die Frage, ob der Mensch die Voraussetzungen fuer einen Status erfuellt?"
+      en: "Is your system intended to assist a public authority in examining an application for asylum, a visa or a residence permit or an associated complaint, that is the question of whether the person meets the eligibility conditions for a status?"
+    follow_up_questions:
+      - question:
+          de: "Soll Ihr System von einer zustaendigen Behoerde, in deren Namen oder von einer Einrichtung der Europaeischen Union eingesetzt werden?"
+          en: "Is your system to be used by a competent public authority, on its behalf or by a Union institution, body, office or agency?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(397)"
+      - question:
+          de: "Geht es um einen Antrag auf Asyl, Visum oder Aufenthalt oder um eine dazugehoerige Beschwerde? Eines davon genuegt."
+          en: "Is it about an application for asylum, a visa or a residence permit or about an associated complaint? One of these is sufficient."
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(399)"
+      - question:
+          de: "Betrifft die Beschwerde Punkte, die die inhaltliche Beurteilung des Antrags beeinflussen koennen, etwa Tatsachen, Beweise oder Glaubhaftigkeit, oder die Verfahrensgerechtigkeit, etwa das Recht auf Anhoerung, die Verdolmetschung oder die Begruendung?"
+          en: "Does the complaint concern points that can influence the substantive assessment of the application, for example facts, evidence or credibility, or procedural fairness, for example the right to be heard, interpretation or the statement of reasons?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(398)"
+      - question:
+          de: "Betrifft die Beschwerde allein die allgemeine Dienstqualitaet, also organisatorische oder ablauftechnische Fragen, die die inhaltliche Beurteilung und die Verfahrensgerechtigkeit nicht beruehren?"
+          en: "Does the complaint concern solely the general quality of service, that is organisational or procedural-logistical questions that do not affect the substantive assessment or procedural fairness?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(398)"
+      - question:
+          de: "Beeinflussen die Ausgaben Ihres Systems den Inhalt oder das Ergebnis der Statusentscheidung wesentlich, etwa indem sie Beweise bestaetigen oder in Frage stellen, Widersprueche aufzeigen, Punkte nach Bedeutung ordnen oder Merkmale des Status vorab einordnen?"
+          en: "Do the outputs of your system materially influence the substance or the outcome of the status decision, for example by corroborating or challenging evidence, revealing contradictions, ranking points by significance or pre-classifying characteristics of the status?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(399)"
+      - question:
+          de: "Gewinnt Ihr System seine Ausgaben aus dem Inhalt eines laufenden Falls, also aus Aussagen, Unterlagen oder Herkunftslandinformationen, und nutzt sie, um Beweise nach Bedeutung zu ordnen, hervorzuheben, zu bestaetigen oder in Frage zu stellen oder um naechste Schritte zu empfehlen?"
+          en: "Does your system derive its outputs from the content of an ongoing case, that is from statements, documents or country of origin information, and use them to rank evidence by significance, highlight, corroborate or challenge it, or to recommend next steps?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(399)"
+      - question:
+          de: "Beurteilt Ihr System die Verlaesslichkeit von Beweisen?"
+          en: "Does your system evaluate the reliability of evidence?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(399)"
+      - question:
+          de: "Ist Ihr System ein einziger zusammengefasster Assistent, der die Pruefung der Statusvoraussetzungen steuert?"
+          en: "Is your system a single integrated assistant that steers the examination of the eligibility conditions for a status?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(400)"
+      - question:
+          de: "Sind die einzelnen Funktionen Ihres Systems wirklich trennbar und werden sie eigenstaendig in Betrieb genommen, etwa als selbststaendige Werkzeuge?"
+          en: "Are the individual functions of your system genuinely separable, and are they put into service independently, for example as stand-alone tools?"
+        on_yes: "continue"
+        on_no: "covered"
+        source_ref: "(400)"
+    covered:
+      - text:
+          de: "Die Unterstuetzung ist nicht auf die Entscheidung selbst beschraenkt; erfasst sind auch fruehere Schritte der Pruefung, etwa Schritte, die Gespraechsinhalte, Unterlagen oder Herkunftslandinformationen auswerten und fuer die Entscheidung in der Sache von Bedeutung sind."
+          en: "The assistance is not limited to the decision itself; it also covers earlier steps of the examination, for example steps that analyse interview content, documents or country of origin information and are relevant to the decision on the merits."
+        source_ref: "(399)"
+      - text:
+          de: "Der Zusatz einschliesslich der damit verbundenen Beurteilung der Verlaesslichkeit von Beweisen bedeutet, dass Pruefungen der Verlaesslichkeit nur Beispiele sind und die Aufzaehlung nicht abschliessend ist."
+          en: "The addition 'including related assessments of the reliability of evidence' means that reliability checks are only examples and the list is not exhaustive."
+        source_ref: "(399)"
+      - text:
+          de: "Systeme, die die Verlaesslichkeit von Beweisen beurteilen, beeinflussen die Entscheidung im Regelfall wesentlich und sind daher grundsaetzlich hochriskant, etwa bei der Erkennung von Bildverschmelzung in Papieren."
+          en: "Systems that evaluate the reliability of evidence as a rule materially influence the decision and are therefore in principle high-risk, for example in detecting image morphing in documents."
+        source_ref: "(399)"
+      - text:
+          de: "Ein System zur Beurteilung der Echtheit und Widerspruchsfreiheit von Unterlagen oder der Glaubhaftigkeit persoenlicher Schilderungen, das dem Pruefer Hinweise zur Glaubwuerdigkeit gibt, auf die er sich bei der Statusentscheidung stuetzt."
+          en: "A system for assessing the authenticity and consistency of documents or the credibility of personal accounts that gives the examiner indications of credibility on which the examiner relies in the status decision."
+        source_ref: "(400)"
+      - text:
+          de: "Ein System, das rechtmaessig von einem Geraet erlangte Telefondaten auswertet, um Reisewege, Zeitablaeufe oder Kontakte zu bestaetigen, und daraus Hinweise fuer die Statuspruefung erzeugt."
+          en: "A system that analyses phone data lawfully obtained from a device in order to corroborate travel routes, timelines or contacts and generates indications for the status examination from them."
+        source_ref: "(400)"
+      - text:
+          de: "Ein System zur Erkennung von Bildverschmelzung, abweichenden Tinten, kopierten Unterschriften oder der Gueltigkeit von Chip und Schluesselverwaltung, soweit die Papierpruefung ein Schritt im Pruefverfahren fuer ein Visum, einen Aufenthaltstitel oder internationalen Schutz ist."
+          en: "A system for detecting image morphing, deviating inks, copied signatures or the validity of the chip and key management, insofar as the document check is a step in the examination procedure for a visa, a residence permit or international protection."
+        source_ref: "(400)"
+      - text:
+          de: "Ein System, das inhaltliche oder fuer die Glaubwuerdigkeit bedeutsame Abweichungen gegenueber frueheren Angaben bestimmt, um die anschliessende Pruefung des Antrags oder der Beschwerde zu unterstuetzen."
+          en: "A system that identifies substantive deviations, or deviations relevant to credibility, from earlier statements in order to support the subsequent examination of the application or complaint."
+        source_ref: "(400)"
+      - text:
+          de: "Ein System, das aufgenommene Sprache auswertet, um ein wahrscheinliches Herkunftsland oder eine wahrscheinliche Herkunftsregion anzuzeigen, damit die Behoerde dies in ihrer Begruendung und bei der Auswahl der Herkunftslandinformationen verwendet."
+          en: "A system that analyses recorded speech in order to indicate a likely country or region of origin, so that the authority uses this in its statement of reasons and in selecting the country of origin information."
+        source_ref: "(400)"
+      - text:
+          de: "Bausteine mit geringem Risiko innerhalb eines einzigen Assistenten, der die Pruefung der Statusvoraussetzungen steuert, koennen den Filter nicht nutzen, und ihr Einbau bringt auch das Gesamtsystem nicht unter den Filter."
+          en: "Low-risk components within a single assistant that steers the examination of the eligibility conditions for a status cannot use the filter, and their integration does not bring the overall system under the filter either."
+        source_ref: "(400)"
+    not_covered:
+      - text:
+          de: "Ein System, das Antragstellern haeufige Fragen beantwortet, sie zu den richtigen Formularen fuehrt, Termine vergibt oder ueber den Stand des Antrags benachrichtigt; es unterstuetzt die Behoerde nicht bei der Pruefung der Statusvoraussetzungen oder der Beschwerden, sondern erbringt eine Dienstleistung fuer die Antragsteller."
+          en: "A system that answers applicants' frequently asked questions, guides them to the right forms, schedules appointments or notifies them of the status of their application; it does not assist the authority in examining the eligibility conditions for a status or complaints but provides a service to the applicants."
+        source_ref: "(400)"
+      - text:
+          de: "Nicht erfasst sind Beschwerden ueber die allgemeine Dienstqualitaet, also ueber organisatorische oder ablauftechnische Seiten der Leistungserbringung, die die inhaltliche Beurteilung der Statusvoraussetzungen oder die Verfahrensgerechtigkeit nicht beruehren."
+          en: "Not covered are complaints about the general quality of service, that is about organisational or procedural-logistical aspects of service provision that do not affect the substantive assessment of the eligibility conditions for a status or procedural fairness."
+        source_ref: "(398)"
+    examples:
+      - scenario:
+          de: "Ein System ordnet eine Fallakte allein nach festgelegten Kategorien zur Ablage und zum Wiederfinden, etwa Ausweispapiere, Gesundheitsunterlagen, Gespraechsnotizen, ohne das Material nach Bedeutung zu ordnen und ohne etwas auszulassen."
+          en: "A system sorts a case file solely according to fixed categories for filing and retrieval, for example identity documents, health records, interview notes, without ranking the material by significance and without omitting anything."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Das Anbringen fester, vorgegebener Bezeichnungen zur Ablage und zum Wiederfinden ist eine eng begrenzte Verfahrenshandlung; das System bewertet keine Beweise, setzt keine Rangfolge und beeinflusst die Beurteilung nicht."
+          en: "Applying fixed, predefined labels for filing and retrieval is a narrow procedural act; the system does not evaluate evidence, does not establish a ranking and does not influence the assessment."
+        source_ref: "(400)"
+      - scenario:
+          de: "Ein System prueft Visumantraege auf Vollstaendigkeit und Form und sortiert oder verteilt Akten zur verwaltungsmaessigen Bearbeitung nach oeffentlichen und sachlichen Maßstaeben, wobei es nur technische und nicht auslegende Handlungen vornimmt, den Inhalt nicht bewertet, den Verfahrensweg nicht bestimmt und die Pruefung inhaltlich nicht steuert."
+          en: "A system checks visa applications for completeness and form and sorts or allocates files for administrative processing according to public and objective criteria, performing only technical and non-interpretative operations, without evaluating the content, determining the procedural route or steering the examination in substance."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es erfuellt eine eng begrenzte Verfahrensaufgabe."
+          en: "It performs a narrow procedural task."
+        source_ref: "(400)"
+      - scenario:
+          de: "Ein System zeigt woertliche Unterschiede zwischen aktuellen und frueheren Aussagen an, etwa Unterschiede auf Zeichenebene, ohne eine Bewertung der Glaubwuerdigkeit zu erzeugen und ohne Nachfragen zu empfehlen."
+          en: "A system flags verbatim differences between current and earlier statements, for example differences at character level, without generating an assessment of credibility and without recommending follow-up questions."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Bewertet das System dagegen die Bedeutung der Unterschiede oder bezeichnet es sie als Zweifel an der Glaubwuerdigkeit, greift die Ausnahme nicht mehr."
+          en: "If, by contrast, the system evaluates the significance of the differences or labels them as doubts about credibility, the exemption no longer applies."
+        source_ref: "(400)"
+      - scenario:
+          de: "Ein Vorpruefwerkzeug leitet einen Antragsteller nach strengen, sachlichen Regeln zur Zahlung einer festen Gebuehr, etwa weil ein Abkommen zur Visumerleichterung die Gebuehr fuer Antragsteller aus einem bestimmten Land festlegt."
+          en: "A pre-screening tool directs an applicant, according to strict, objective rules, to pay a fixed fee, for example because a visa facilitation agreement sets the fee for applicants from a particular country."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es erfuellt eine eng begrenzte Verfahrensaufgabe."
+          en: "It performs a narrow procedural task."
+        source_ref: "(400)"
+      - scenario:
+          de: "Ein System prueft Akten einer Reisegenehmigung oder eines Visums auf Vollstaendigkeit oder Form, etwa Pflichtfelder und das Vorhandensein von Unterlagen, ohne einen Gefahrenwert, einen Hinweis oder eine Vorsortierung von Menschen zu erzeugen."
+          en: "A system checks travel authorisation or visa files for completeness or form, for example mandatory fields and the presence of documents, without generating a risk score, an indication or a pre-sorting of persons."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es erfuellt eng begrenzte Verfahrensaufgaben und keine vorbereitenden Aufgaben, weil es keine inhaltlichen Teile fuer die Pruefung vorbereitet oder strukturiert."
+          en: "It performs narrow procedural tasks and not preparatory tasks, because it does not prepare or structure any substantive parts for the examination."
+        source_ref: "(400)"
+      - scenario:
+          de: "Ein System verschriftlicht Gespraeche, uebersetzt Gespraechsmitschriften oder erstellt sachliche Zusammenfassungen fuer die Akte, ohne zu naechsten Schritten zu raten und ohne Ergebnisse vorzuschlagen."
+          en: "A system transcribes interviews, translates interview transcripts or produces factual summaries for the file, without advising on next steps and without proposing outcomes."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es erfuellt eine vorbereitende Aufgabe; geht ein System darueber hinaus, etwa indem es Angaben hinzufuegt, die in den Aussagen nicht enthalten sind, die Glaubwuerdigkeit bewertet oder die Aussagen mit dem Rechtsrahmen verknuepft, greift die Ausnahme nicht."
+          en: "It performs a preparatory task; if a system goes beyond this, for example by adding information that is not contained in the statements, evaluating credibility or linking the statements to the legal framework, the exemption does not apply."
+        source_ref: "(400)"
+      - scenario:
+          de: "Ein System durchsucht elektronische Geraete in grossem Umfang, um Begleitdaten zum Reiseweg eines Menschen herauszuziehen, und gibt alle Standortdaten sachlich aus, ohne eine Angabe gegenueber einer anderen zu bevorzugen."
+          en: "A system searches electronic devices on a large scale in order to extract metadata on a person's travel route and outputs all location data factually, without favouring one item of information over another."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Das kann als vorbereitende Aufgabe gelten."
+          en: "This can count as a preparatory task."
+        source_ref: "(400)"
+      - scenario:
+          de: "Ein System vereinheitlicht Begriffe und verbessert die Sprache in einer Entscheidung, nachdem die menschliche Beurteilung abgeschlossen ist, ohne zusaetzliche Begruendung einzufuehren und ohne das Ergebnis zu aendern."
+          en: "A system standardises terminology and improves the language in a decision after the human assessment has been completed, without introducing additional reasoning and without changing the outcome."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es verbessert das Ergebnis einer bereits abgeschlossenen menschlichen Taetigkeit; ein System, das rechtliche oder tatsaechliche Gruende erschliesst oder formuliert, die nicht ausdruecklich genannt sind, oder das die Glaubwuerdigkeit erneut bewertet, ist davon nicht gedeckt."
+          en: "It improves the result of a previously completed human activity; a system that infers or formulates legal or factual reasons that are not expressly stated, or that re-evaluates credibility, is not covered by this."
+        source_ref: "(400)"
+      - scenario:
+          de: "Ein System wertet abgeschlossene Statusakten aus, um Muster oder Abweichungen in der Entscheidungspraxis fuer die Qualitaetssicherung zu erkennen, ohne Ergebnisse fuer laufende Faelle vorzuschlagen."
+          en: "A system analyses closed status files in order to detect patterns or deviations in decision-making practice for quality assurance, without proposing outcomes for ongoing cases."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es erfuellt die Ausnahme fuer die nachtraegliche Erkennung von Mustern; dafuer muss das System auf die nachtraegliche Erkennung von Mustern oder Abweichungen angelegt sein."
+          en: "It meets the exemption for the subsequent detection of patterns; for this, the system must be designed for the subsequent detection of patterns or deviations."
+        source_ref: "(400)"
+  - citation: "AI-Act/annex-III/pt-7-d"
+    main_question:
+      de: "Soll Ihr System im Bereich Migration, Asyl oder Grenzkontrolle Menschen aufspueren, erkennen oder bestimmen?"
+      en: "Is your system intended to detect, recognise or identify persons in the area of migration, asylum or border control?"
+    follow_up_questions:
+      - question:
+          de: "Soll Ihr System von einer zustaendigen Behoerde, in deren Namen oder von einer Einrichtung der Europaeischen Union eingesetzt werden?"
+          en: "Is your system to be used by a competent public authority, on its behalf or by a Union institution, body, office or agency?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(401)"
+      - question:
+          de: "Ist es der Zweck Ihres Systems, Menschen aufzuspueren, zu erkennen oder zu bestimmen?"
+          en: "Is the purpose of your system to detect, recognise or identify persons?"
+        on_yes: "covered"
+        on_no: "not_covered"
+        source_ref: "(401)"
+      - question:
+          de: "Beschraenkt sich Ihr System auf die Pruefung von Reisepapieren?"
+          en: "Is your system limited to checking travel documents?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(402)"
+      - question:
+          de: "Prueft Ihr System am Menschen selbst, etwa ob eine echte lebende Person vorhanden ist oder ob ein Taeuschungsversuch vorliegt, und geschieht das im Ablauf der Erkennung oder Bestimmung von Menschen?"
+          en: "Does your system perform checks on the person themselves, for example whether a real live person is present or whether there is a spoofing attempt, and does this happen in the process of recognising or identifying persons?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(402)"
+      - question:
+          de: "Ist Ihr System ausschliesslich fuer Suche und Rettung bestimmt?"
+          en: "Is your system intended exclusively for search and rescue?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(403)"
+    covered:
+      - text:
+          de: "Ein System mit Gesichtserkennung in Echtzeit fuer Identitaetspruefungen an Grenzuebergaengen, das Bilder aus laufenden Kameras mit koerperbezogenen Vorlagen in angeschlossenen Systemen vergleicht und Treffer zur Identitaet fuer das Handeln der Bediener ausgibt."
+          en: "A system with real-time facial recognition for identity checks at border crossing points that compares images from live cameras with biometric templates in connected systems and outputs identity matches for the operators to act on."
+        source_ref: "(403)"
+      - text:
+          de: "Dienste, die Satellitenbilder mit Ueberwachungstuermen oder unbemannten Fluggeraeten verbinden und die Anwesenheit von Menschen fuer eine grenzpolizeiliche Reaktion gegen die aufgespuerten Menschen anzeigen, etwa um Streifen zu entsenden, Menschen aufzugreifen oder sie der zweiten Kontrolllinie zuzufuehren."
+          en: "Services that combine satellite imagery with surveillance towers or unmanned aircraft and flag the presence of persons for a border police response against the persons detected, for example to dispatch patrols, apprehend persons or bring them to the second line of control."
+        source_ref: "(403)"
+      - text:
+          de: "Ein System zur Seeraumueberwachung, das Menschen fuer die Migrationssteuerung oder fuer grenzpolizeiliche Einsaetze aufspuert und verfolgt, auch zur Veranlassung von Aufgriff oder Anbordgehen; es kommt auf den Zweck und nicht auf den Ort an, also nicht darauf, ob das Fahrzeug in Hoheitsgewaessern, in der Anschlusszone oder auf hoher See arbeitet."
+          en: "A maritime surveillance system that detects and tracks persons for migration management or for border police operations, including for initiating interception or boarding; what matters is the purpose and not the location, that is not whether the vessel operates in territorial waters, in the contiguous zone or on the high seas."
+        source_ref: "(403)"
+      - text:
+          de: "Ein System, das Messdaten auswertet, um die Anwesenheit oder die Zahl von Menschen in Fahrzeugen festzustellen, auch versteckter Menschen, und Hinweise erzeugt, die eine zweite Kontrolle veranlassen; der Filter greift nicht, weil die Hinweise ein Handeln im Einsatz ausloesen, was weder eine eng begrenzte Verfahrensaufgabe noch eine vorbereitende Aufgabe ist."
+          en: "A system that analyses sensor data in order to determine the presence or number of persons in vehicles, including hidden persons, and generates indications that trigger a second check; the filter does not apply, because the indications trigger operational action, which is neither a narrow procedural task nor a preparatory task."
+        source_ref: "(403)"
+      - text:
+          de: "Ein System, das Aufnahme- oder Hafteinrichtungen ueberwacht, bestimmte Menschen aufspuert oder verfolgt und das Personal zum Eingreifen alarmiert."
+          en: "A system that monitors reception or detention facilities, detects or tracks specific persons and alerts staff to intervene."
+        source_ref: "(403)"
+    not_covered:
+      - text:
+          de: "Ein System, das Menschen in Seenot ausschliesslich zur Abstimmung von Suche und Rettung aufspuert, ohne Bezug zur Migrationssteuerung oder zu grenzpolizeilichen Aufgaben; der Zweck ist die Lebensrettung und nicht die Grenzkontrolle."
+          en: "A system that detects persons in distress at sea exclusively for coordinating search and rescue, without any link to migration management or border police tasks; the purpose is saving lives and not border control."
+        source_ref: "(403)"
+      - text:
+          de: "Ein System zur Pruefung von Reise- oder Ausweispapieren, etwa auf die Gueltigkeit von Chip und Schluesselverwaltung, auf Bildverschmelzung oder Auffaelligkeiten der Tinte oder auf kopierte Unterschriften; die Pruefung von Reise- oder Ausweispapieren ist von diesem Fall ausgenommen."
+          en: "A system for checking travel or identity documents, for example the validity of the chip and key management, image morphing or ink anomalies, or copied signatures; the checking of travel or identity documents is excluded from this case."
+        source_ref: "(403)"
+      - text:
+          de: "Ein System in einem Schiff oder einem unbemannten Fahrzeug der Grenzbehoerden, das bestimmungsgemaess und technisch darauf beschraenkt ist, Zusammenstoesse zu vermeiden, also Hindernisse einschliesslich Menschen nur zur Vermeidung von Zusammenstoessen aufspuert und keine Hinweise fuer Aufgriff, Verfolgung, Vorsortierung oder eine andere grenzpolizeiliche Reaktion erzeugt."
+          en: "A system in a vessel or an unmanned vehicle of the border authorities that is limited by its intended purpose and technically to avoiding collisions, that is it detects obstacles including persons only to avoid collisions and generates no indications for interception, tracking, pre-sorting or any other border police response."
+        source_ref: "(403)"
+      - text:
+          de: "Ein System, das Verlaufsdaten auswertet, um Muster von Papierfaelschungen zu bestimmen und daraus allgemeine Anhaltspunkte oder Personalplanungen abzuleiten, ohne Menschen aufzuspueren."
+          en: "A system that analyses historical data in order to identify patterns of document fraud and to derive general indicators or staff planning from them, without detecting persons."
+        source_ref: "(403)"
+      - text:
+          de: "Ein System, das die Groesse von Menschenmengen oder die Belegung von Durchgaengen einschaetzt, um Spuren auszugleichen und Wartezeiten zu verkuerzen, sofern es so gestaltet ist, dass es Menschen nicht aufspuert, erkennt oder bestimmt und keine personenbezogenen Hinweise erzeugt."
+          en: "A system that estimates the size of crowds or the occupancy of gates in order to balance lanes and shorten waiting times, provided it is designed so that it does not detect, recognise or identify persons and does not generate person-related indications."
+        source_ref: "(403)"
+      - text:
+          de: "Nur Funktionen, die Menschen weder aufspueren noch erkennen noch bestimmen und die das Handeln im Einsatz nicht beeinflussen, koennen die Ausnahmen des Filters nutzen."
+          en: "Only functions that neither detect nor recognise nor identify persons and that do not influence operational action can use the exemptions of the filter."
+        source_ref: "(403)"
+    examples:
+      - scenario:
+          de: "Ein System ueberwacht Aufnahme- oder Hafteinrichtungen, schaetzt aber nur Auffaelligkeiten der Gesamtlage ein, etwa einen Andrang oder einen ploetzlichen Laermanstieg, ohne Menschen aufzuspueren oder zu verfolgen und ohne personenbezogene Hinweise."
+          en: "A system monitors reception or detention facilities but only assesses anomalies in the overall situation, for example a crowding or a sudden increase in noise, without detecting or tracking persons and without person-related indications."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Das System faellt nicht unter diesen Fall."
+          en: "The system does not fall under this case."
+        source_ref: "(403)"
+      - scenario:
+          de: "Ein System erkennt Muster von Papierfaelschungen, und diese Muster werden spaeter auf namentlich bekannte Menschen angewandt, um sie vorzusortieren."
+          en: "A system detects patterns of document fraud, and these patterns are later applied to persons known by name in order to pre-sort them."
+        verdict: "high_risk"
+        rationale:
+          de: "Dann fällt das System unter diesen Fall, weil es eine Gefahreneinschaetzung auf Personenebene vornimmt."
+          en: "The system then falls under this case, because it performs a risk assessment at the level of individual persons."
+        source_ref: "(403)"
+      - scenario:
+          de: "Ein System stabilisiert, entrauscht oder verbessert Videobilder, ohne Menschen aufzuspueren, zu erkennen oder zu bestimmen und ohne Hinweise fuer ein Handeln im Einsatz zu erzeugen."
+          en: "A system stabilises, denoises or enhances video images without detecting, recognising or identifying persons and without generating indications for operational action."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es fällt unter die Ausnahme fuer Systeme mit vorbereitender Aufgabe."
+          en: "It falls under the exemption for systems performing a preparatory task."
+        source_ref: "(403)"
+  - citation: "AI-Act/annex-III/pt-8-a"
+    main_question:
+      de: "Soll Ihr System ein Gericht oder eine Stelle der aussergerichtlichen Streitbeilegung dabei unterstuetzen, Tatsachen und Recht zu ermitteln und auszulegen oder das Recht auf einen bestimmten Sachverhalt anzuwenden?"
+      en: "Is your system intended to assist a court or an alternative dispute resolution body in researching and interpreting facts and the law or in applying the law to a concrete set of facts?"
+    follow_up_questions:
+      - question:
+          de: "Soll Ihr System von einer Justizbehoerde oder in deren Namen eingesetzt werden?"
+          en: "Is your system to be used by a judicial authority or on its behalf?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(407)"
+      - question:
+          de: "Soll Ihr System ein Gericht oder einen Richter unterstuetzen, etwa ein Amtsgericht, ein Landgericht, ein Obergericht, ein oberstes Gericht, ein Verfassungsgericht oder ein besonderes Gericht?"
+          en: "Is your system intended to assist a court or a judge, for example a local court, a regional court, a higher court, a supreme court, a constitutional court or a specialised court?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(410)"
+      - question:
+          de: "Soll Ihr System allein von der Gerichtsverwaltung eingesetzt werden, also von Einrichtungen, die die Justiz verwalten, steuern und unterstuetzen, statt Faelle zu entscheiden?"
+          en: "Is your system to be used solely by the court administration, that is by bodies that administer, manage and support the judiciary instead of deciding cases?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(411)"
+      - question:
+          de: "Soll Ihr System von einer Stelle eingesetzt werden, die zwar entscheidet, aber einer Justizbehoerde nicht gleichsteht, etwa von einer Datenschutzbehoerde oder einer Wettbewerbsbehoerde, die als Verwaltungsstelle handelt?"
+          en: "Is your system to be used by a body that does take decisions but is not equivalent to a judicial authority, for example a data protection authority or a competition authority acting as an administrative body?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(411)"
+      - question:
+          de: "Uebt die Stelle in dem fraglichen Fall richterliche Aufgaben aus und nicht Aufgaben der Verwaltung?"
+          en: "Does the body exercise judicial functions in the case in question and not administrative functions?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(412)"
+      - question:
+          de: "Hat ein Gericht einen Dritten beauftragt, angewiesen oder bestellt, eine bestimmte Aufgabe nach seinen Weisungen und unter seiner Verantwortung zu erledigen, und setzt dieser Dritte dafuer Ihr System ein?"
+          en: "Has a court commissioned, instructed or appointed a third party to carry out a specific task in accordance with its instructions and under its responsibility, and does this third party use your system for that task?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(414)"
+      - question:
+          de: "Ist der Sachverstaendige von einer Partei und nicht vom Gericht beauftragt?"
+          en: "Has the expert been commissioned by a party and not by the court?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(415)"
+      - question:
+          de: "Soll Ihr System von Parteien oder ihren Rechtsvertretern genutzt werden?"
+          en: "Is your system to be used by parties or their legal representatives?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(416)"
+      - question:
+          de: "Unterstuetzt Ihr System beim Ermitteln und Auslegen von Tatsachen und Recht? Eines von beidem genuegt."
+          en: "Does your system assist in researching and interpreting facts and the law? Either of the two is sufficient."
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(417)"
+      - question:
+          de: "Unterstuetzt Ihr System beim Anwenden des Rechts auf einen bestimmten Sachverhalt?"
+          en: "Does your system assist in applying the law to a concrete set of facts?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(417)"
+      - question:
+          de: "Beschraenkt sich Ihr System auf das blosse Abrufen von Angaben, also auf Ordnen von Dokumenten, Abrufen von Rechtstexten oder Rechtsprechung oder Suche ueber Schlagwoerter?"
+          en: "Is your system limited to the mere retrieval of information, that is to ordering documents, retrieving legal texts or case law or keyword search?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(421)"
+      - question:
+          de: "Geht Ihr System darueber hinaus und legt einen Sinn fest, loest eine Unklarheit auf oder zieht rechtliche Schluesse aus den gefundenen Quellen, etwa indem es anhand des Sachverhalts passende Vorentscheidungen vorschlaegt, die wesentlichen rechtlichen Punkte bestimmt und zusammenfasst oder aus mehreren Quellen eine rechtliche Begruendung erschliesst?"
+          en: "Does your system go beyond this and determine a meaning, resolve an ambiguity or draw legal conclusions from the sources found, for example by suggesting relevant precedents on the basis of the facts, identifying and summarising the essential legal points or inferring legal reasoning from several sources?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(422)"
+      - question:
+          de: "Ist Ihr System allein fuer reine Nebentaetigkeiten der Verwaltung bestimmt, die die Rechtspflege im Einzelfall nicht beruehren, etwa fuer das Anonymisieren oder Pseudonymisieren von Entscheidungen, Dokumenten oder Daten, fuer die Verstaendigung zwischen Mitarbeitern oder fuer Verwaltungsaufgaben?"
+          en: "Is your system intended solely for purely ancillary administrative activities that do not affect the administration of justice in individual cases, for example for anonymising or pseudonymising decisions, documents or data, for communication between staff or for administrative tasks?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(419)"
+      - question:
+          de: "Soll Ihr System von einer Stelle der aussergerichtlichen Streitbeilegung genutzt werden, also bei einer Streitentscheidung ausserhalb des Gerichts mit Hilfe einer unparteiischen Stelle, etwa Schiedsverfahren, Mediation, Schlichtung, Ombudsstellen oder Beschwerdeausschuesse?"
+          en: "Is your system to be used by an alternative dispute resolution body, that is in the resolution of a dispute outside court with the help of an impartial body, for example arbitration, mediation, conciliation, ombudsman bodies or complaints boards?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(426)"
+      - question:
+          de: "Hat das Ergebnis dieses Verfahrens Rechtswirkungen fuer die Parteien?"
+          en: "Does the outcome of this procedure have legal effects for the parties?"
+        on_yes: "covered"
+        on_no: "not_covered"
+        source_ref: "(430)"
+      - question:
+          de: "Fuehrt Ihr System Profilbildung durch?"
+          en: "Does your system perform profiling?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(420)"
+    covered:
+      - text:
+          de: "Zwei Voraussetzungen muessen zusammen erfuellt sein: das System muss fuer die Nutzung durch eine Justizbehoerde oder in deren Namen bestimmt sein, und sein Zweck muss darin liegen, die Justizbehoerde beim Ermitteln und Auslegen von Tatsachen und Recht und beim Anwenden des Rechts auf einen bestimmten Sachverhalt zu unterstuetzen."
+          en: "Two conditions must be met cumulatively: the system must be intended to be used by a judicial authority or on its behalf, and its purpose must be to assist the judicial authority in researching and interpreting facts and the law and in applying the law to a concrete set of facts."
+        source_ref: "(407)"
+      - text:
+          de: "Eine Justizbehoerde ist nach der Rechtsprechung des Gerichtshofs eine durch Gesetz errichtete, unabhaengige Stelle, die in der Rechtspflege verbindlich entscheiden darf, typischerweise ein Gericht; Notare gehoeren nicht dazu."
+          en: "According to the case law of the Court of Justice, a judicial authority is an independent body established by law that may take binding decisions in the administration of justice, typically a court; notaries are not included."
+        source_ref: "(412)"
+      - text:
+          de: "Der Begriff Justizbehoerde ist weiter als Richter und kann auch andere Stellen umfassen, die richterliche Aufgaben ausueben oder Teil des Justizwesens sind."
+          en: "The term judicial authority is broader than judges and can also include other bodies that exercise judicial functions or are part of the judiciary."
+        source_ref: "(409)"
+      - text:
+          de: "Staatsanwaelte fallen im Regelfall unter Nummer 6; ob sie zugleich Justizbehoerde nach Nummer 8 Buchstabe a sind, haengt von ihrer Unabhaengigkeit nach dem geltenden Recht und von dem Zweck ab, zu dem das System bei ihnen eingesetzt werden soll."
+          en: "Public prosecutors as a rule fall under point 6; whether they are at the same time a judicial authority under point 8(a) depends on their independence under the applicable law and on the purpose for which the system is intended to be used by them."
+        source_ref: "(413)"
+      - text:
+          de: "Beauftragt ein Gericht einen Dritten, also bestellt oder weist es ihn an, eine Auswertung von Fallmaterial unter seiner Verantwortung, Weisung oder Uebertragung durchzufuehren, und nutzt dieser Dritte dafuer ein System, gilt das als Nutzung im Namen des Gerichts."
+          en: "If a court commissions a third party, that is appoints or instructs it to carry out an analysis of case material under its responsibility, instruction or delegation, and this third party uses a system for that purpose, this counts as use on behalf of the court."
+        source_ref: "(414)"
+      - text:
+          de: "Gerichtlich bestellte Sachverstaendige, etwa technische Sachverstaendige, Forensiker, Psychologen oder Sozialdienste, koennen im Namen eines Gerichts handeln, wenn sie vom Gericht angeforderte Berichte erstellen, die das Gericht in seiner Entscheidungstaetigkeit unterstuetzen sollen. Entscheidend ist nicht, dass der Bericht im Verfahren verwendet werden kann, sondern dass die Aufgabe im Rahmen des gerichtlichen Auftrags, auf Weisung des Gerichts und unter seiner Verfahrensaufsicht erledigt wird."
+          en: "Court-appointed experts, for example technical experts, forensic experts, psychologists or social services, can act on behalf of a court if they prepare reports requested by the court that are intended to support the court in its decision-making activity. What is decisive is not that the report can be used in the proceedings, but that the task is carried out within the framework of the court's mandate, on the court's instructions and under its procedural supervision."
+        source_ref: "(415)"
+      - text:
+          de: "Die beiden Taetigkeiten sind Alternativen: es genuegt, dass das System beim Ermitteln und Auslegen von Tatsachen und Recht oder beim Anwenden des Rechts auf einen bestimmten Sachverhalt unterstuetzt; die Umstaende der Nutzung durch das Gericht sind fuer die Einordnung nicht entscheidend, und das System muss diese Aufgaben nicht selbst erfuellen, sondern nur dabei unterstuetzen."
+          en: "The two activities are alternatives: it is sufficient that the system assists in researching and interpreting facts and the law or in applying the law to a concrete set of facts; the circumstances of use by the court are not decisive for the classification, and the system does not have to perform these tasks itself but only assist in them."
+        source_ref: "(418)"
+      - text:
+          de: "Das Anwenden des Rechts auf einen bestimmten Sachverhalt ist weit zu verstehen und umfasst sowohl die Unterstuetzung bei der vollstaendigen rechtlichen Beurteilung eines Falls als auch bei der Beurteilung einzelner Bestandteile."
+          en: "Applying the law to a concrete set of facts is to be understood broadly and covers both assistance with the complete legal assessment of a case and assistance with the assessment of individual elements."
+        source_ref: "(423)"
+      - text:
+          de: "Ein System, das die tatsaechlichen Umstaende des Falls und die eingegangenen Schriftsaetze auswertet, das anwendbare Recht und die Rechtsprechung bestimmt und dann Entwuerfe gerichtlicher Entscheidungen oder Teile davon erzeugt, besonders die Begruendung und den Entscheidungssatz."
+          en: "A system that analyses the factual circumstances of the case and the submissions received, identifies the applicable law and case law and then generates drafts of court decisions or parts of them, in particular the reasoning and the operative part."
+        source_ref: "(423)"
+      - text:
+          de: "Ein System, das Entscheidungsentwuerfe in Bagatellsachen oder Mahnbescheide erzeugt, gestuetzt auf strukturierte Falldaten und rechtliche Vorlagen; wegen der Naehe zur Entscheidung und der Auswirkung auf sie kommt keine Ausnahme des Filters in Betracht."
+          en: "A system that generates draft decisions in small claims cases or payment orders, based on structured case data and legal templates; because of its proximity to the decision and its effect on it, no exemption of the filter can be considered."
+        source_ref: "(423)"
+      - text:
+          de: "Ein System, das Richter bei gleichen oder aehnlichen Faellen unterstuetzt, indem es erstens die wesentlichen Tatsachen aus der Klage herauszieht und nach wiederkehrenden Sachverhaltsmustern gruppiert, zweitens eine Datenbank frueherer Entscheidungen durchsucht, um aehnliche Faelle und Begruendungsmuster zu finden, und drittens Vorschlaege und zugehoerige Textbausteine fuer die Entscheidung erstellt. Das System ist in seiner Gesamtanlage zu beurteilen, deren gemeinsame Ausgaben das Ergebnis der Einzelentscheidung wesentlich beeinflussen koennen, und nicht in einzelnen Bausteinen. Ein System, das allein den ersten Schritt erfuellt, waere eine vorbereitende Aufgabe und kaeme fuer den Filter in Betracht."
+          en: "A system that supports judges in identical or similar cases by, first, extracting the essential facts from the claim and grouping them according to recurring factual patterns, second, searching a database of earlier decisions in order to find similar cases and patterns of reasoning, and third, preparing proposals and associated text modules for the decision. The system is to be assessed as an overall set-up whose combined outputs can materially influence the outcome of the individual decision, and not by individual components. A system that performs only the first step would be a preparatory task and would qualify for the filter."
+        source_ref: "(423)"
+      - text:
+          de: "Ein System, das die vorgetragenen Tatsachen des Falls oder ihre Zusammenfassung auswertet, dann Richtern hilft, einschlaegige Gesetze und Vorentscheidungen zu bestimmen, und vorschlaegt, wie diese auf den Sachverhalt anzuwenden sind; wegen seines Einflusses auf die Entscheidung kommt keine Ausnahme des Filters in Betracht."
+          en: "A system that analyses the facts of the case as presented or a summary of them, then helps judges to identify relevant legislation and precedents, and suggests how these are to be applied to the facts; because of its influence on the decision, no exemption of the filter can be considered."
+        source_ref: "(423)"
+      - text:
+          de: "Bei aussergerichtlicher Streitbeilegung muessen zwei Voraussetzungen erfuellt sein: das System muss fuer eine Stelle der aussergerichtlichen Streitbeilegung bestimmt sein, deren Verfahrensergebnis Rechtswirkungen fuer die Parteien hat, und sein Zweck muss darin liegen, diese Stelle beim Ermitteln und Auslegen von Tatsachen und Recht und beim Anwenden des Rechts auf einen bestimmten Sachverhalt zu unterstuetzen."
+          en: "For alternative dispute resolution, two conditions must be met: the system must be intended for an alternative dispute resolution body whose procedural outcome has legal effects for the parties, and its purpose must be to assist this body in researching and interpreting facts and the law and in applying the law to a concrete set of facts."
+        source_ref: "(425)"
+      - text:
+          de: "Zu den Stellen der aussergerichtlichen Streitbeilegung zaehlen unter anderem Schiedsstellen des Handels und Stellen fuer Investitionsstreitigkeiten, Mediationsstellen fuer Zivil- und Handelssachen, Stellen der Streitbeilegung im Arbeitsrecht, Gleichbehandlungsstellen, die in Diskriminierungsfaellen aussergerichtliche Loesungen anbieten, und Berufsaufsichts- oder Disziplinarstellen, etwa im Gesundheitswesen, in den Rechtsberufen oder im Ingenieurwesen."
+          en: "Alternative dispute resolution bodies include, among others, commercial arbitration bodies and bodies for investment disputes, mediation bodies for civil and commercial matters, dispute resolution bodies in labour law, equality bodies that offer out-of-court solutions in discrimination cases, and professional supervisory or disciplinary bodies, for example in healthcare, the legal professions or engineering."
+        source_ref: "(429)"
+      - text:
+          de: "Schiedssprueche haben im Regelfall bindende und endgueltige Wirkung fuer die Parteien, aehnlich einem Gerichtsurteil, und sind nach nationalem Recht durchsetzbar; ob ein Verfahren Rechtswirkungen hat, haengt vom nationalen Recht ab und ist im Einzelfall zu pruefen."
+          en: "Arbitral awards as a rule have binding and final effect for the parties, similar to a court judgment, and are enforceable under national law; whether a procedure has legal effects depends on national law and must be examined in each individual case."
+        source_ref: "(431)"
+      - text:
+          de: "Fuer Rechtswirkungen genuegt es, dass die Bindung fuer eine der Parteien gilt, etwa allein fuer den Unternehmer."
+          en: "For legal effects, it is sufficient that the binding effect applies to one of the parties, for example only to the trader."
+        source_ref: "(432)"
+      - text:
+          de: "Hat das Ergebnis des Verfahrens Rechtswirkungen fuer die Parteien, ist ein System hochriskant, dessen Zweck darin liegt, die Stelle beim Ermitteln und Auslegen von Tatsachen und Recht oder beim Anwenden des Rechts auf einen bestimmten Sachverhalt zu unterstuetzen; die Beispiele der Justizbehoerden lassen sich darauf uebertragen."
+          en: "If the outcome of the procedure has legal effects for the parties, a system whose purpose is to assist the body in researching and interpreting facts and the law or in applying the law to a concrete set of facts is high-risk; the examples for judicial authorities can be transferred to this."
+        source_ref: "(434)"
+    not_covered:
+      - text:
+          de: "Nicht erfasst ist die Gerichtsverwaltung, also Einrichtungen oder Stellen, die fuer Verwaltung, Steuerung und Unterstuetzung der Justiz zustaendig sind statt fuer das Entscheiden der Faelle."
+          en: "Not covered is the court administration, that is institutions or bodies responsible for administering, managing and supporting the judiciary instead of deciding cases."
+        source_ref: "(411)"
+      - text:
+          de: "Nicht erfasst sind Stellen mit entscheidungsaehnlichen Aufgaben, die einer Justizbehoerde nicht gleichstehen, etwa Datenschutzbehoerden oder Wettbewerbsbehoerden, die als Verwaltungsstellen handeln; ihre Entscheidungen bleiben gerichtlich nachpruefbar, und in diesem Fall kann Nummer 8 Buchstabe a wieder von Bedeutung sein."
+          en: "Not covered are bodies with decision-like tasks that are not equivalent to a judicial authority, for example data protection authorities or competition authorities acting as administrative bodies; their decisions remain subject to judicial review, and in that case point 8(a) can become relevant again."
+        source_ref: "(411)"
+      - text:
+          de: "Uebt eine Stelle Verwaltungsbefugnisse aus, ohne zugleich in einem bestimmten Fall zu entscheiden, uebt sie keine richterliche Aufgabe aus."
+          en: "If a body exercises administrative powers without at the same time deciding a specific case, it does not exercise a judicial function."
+        source_ref: "(412)"
+      - text:
+          de: "Von einer Partei beauftragte Sachverstaendige handeln nicht im Namen eines Gerichts, weil sie von einer Partei und nicht vom Gericht angewiesen werden."
+          en: "Experts commissioned by a party do not act on behalf of a court, because they are instructed by a party and not by the court."
+        source_ref: "(415)"
+      - text:
+          de: "Systeme fuer Parteien und ihre Rechtsvertreter fallen nicht unter Nummer 8 Buchstabe a, weil diese nicht im Namen eines Gerichts handeln; daher fallen auch Systeme nicht darunter, mit denen Anwaelte die Einreichung von Verfahrensschriftstuecken erleichtern."
+          en: "Systems for parties and their legal representatives do not fall under point 8(a), because these do not act on behalf of a court; therefore systems with which lawyers facilitate the filing of procedural documents do not fall under it either."
+        source_ref: "(416)"
+      - text:
+          de: "Die Unterstuetzung fehlt, wenn die Aufgabe keinen hinreichend unmittelbaren Zusammenhang mit der richterlichen Begruendung oder Entscheidung hat; reine Nebentaetigkeiten der Verwaltung, die die Rechtspflege im Einzelfall nicht beruehren, etwa Anonymisieren oder Pseudonymisieren von Entscheidungen, Dokumenten oder Daten, Verstaendigung zwischen Mitarbeitern und Verwaltungsaufgaben, sind nicht erfasst."
+          en: "Assistance is lacking if the task has no sufficiently direct connection with the judicial reasoning or decision; purely ancillary administrative activities that do not affect the administration of justice in individual cases, for example anonymising or pseudonymising decisions, documents or data, communication between staff and administrative tasks, are not covered."
+        source_ref: "(419)"
+      - text:
+          de: "Das blosse Abrufen von Angaben ist nicht erfasst; Systeme, die als erweiterte Suchwerkzeuge dienen, fallen im Allgemeinen nicht unter Nummer 8 Buchstabe a, ebenso Systeme, die nur Dokumente ordnen, Rechtstexte oder Rechtsprechung abrufen oder nach Schlagwoertern suchen, weil sie den Zugang zu Rechtsquellen erleichtern, ohne selbst rechtlich zu begruenden oder auszulegen."
+          en: "The mere retrieval of information is not covered; systems that serve as enhanced search tools generally do not fall under point 8(a), nor do systems that only order documents, retrieve legal texts or case law or search by keywords, because they facilitate access to legal sources without themselves performing legal reasoning or interpretation."
+        source_ref: "(421)"
+      - text:
+          de: "Ein System zur Umwandlung von Sprache in Text, mit dem ein Gericht Tonaufnahmen von Verhandlungen verschriftlicht, die dann Teil der Akte werden, auch mit selbsttaetiger Sprechertrennung, Zeichensetzung und Anpassung des Fachwortschatzes. Dass Aufnahmen oder Mitschriften spaeter Teil des Beweisstoffs werden und Fehler Grundrechte beruehren koennen, macht das System nicht zu einer Unterstuetzung beim Ermitteln und Auslegen von Tatsachen und Recht. Das gilt auch, wenn ein solches System spaeter als technische Hilfe beim Durchsuchen der Mitschrift dient, etwa fuer die Frage, wann ein Thema besprochen wurde. Anders kann es sein, wenn die Mitschriften von einem System weiterverarbeitet werden, um die wesentlichen Argumente zusammenzufassen oder auszuwaehlen oder um ihre Bedeutung fuer die Entscheidung weiter zu bewerten, auch wenn daraus Empfehlungen an Richter werden."
+          en: "A speech-to-text system with which a court transcribes audio recordings of hearings, which then become part of the file, including with automatic speaker separation, punctuation and adaptation of specialist vocabulary. The fact that recordings or transcripts later become part of the evidence and errors can affect fundamental rights does not make the system an aid in researching and interpreting facts and the law. This also applies if such a system later serves as a technical aid for searching the transcript, for example for the question of when a topic was discussed. The situation may be different if the transcripts are further processed by a system in order to summarise or select the essential arguments or to further evaluate their relevance for the decision, including where this results in recommendations to judges."
+        source_ref: "(423)"
+      - text:
+          de: "Chatbots auf Internetseiten von Gerichten, die Besuchern beim Finden von Auskuenften helfen und ueber Verfahrensschritte, erforderliche Unterlagen, Fristen und moegliche Rechtsbehelfe informieren."
+          en: "Chatbots on court websites that help visitors find information and inform them about procedural steps, required documents, deadlines and possible legal remedies."
+        source_ref: "(423)"
+      - text:
+          de: "Ein System, das Justizbehoerden beim Erstellen von Pressemitteilungen oder rechtlichen Zusammenfassungen zu Faellen von oeffentlichem Interesse unterstuetzt und die Fachsprache eines Urteils in verstaendliche Zusammenfassungen uebertraegt; das ist eine Nebentaetigkeit der Verwaltung, die die Rechtspflege im Einzelfall nicht beruehrt."
+          en: "A system that supports judicial authorities in preparing press releases or legal summaries on cases of public interest and translates the technical language of a judgment into understandable summaries; this is an ancillary administrative activity that does not affect the administration of justice in individual cases."
+        source_ref: "(423)"
+      - text:
+          de: "Ein System, das Faelle unter Beruecksichtigung von Fachgebiet, Arbeitsbelastung oder Urlaubsplanung auf Richter verteilt; die Beurteilung kann anders ausfallen, wenn das System zugleich rechtliche Beurteilungen zu Verfahrensvoraussetzungen eines bestimmten Falls vornimmt, etwa ob oeffentlich verhandelt wird, ob das Gericht zustaendig ist oder ob ein Einzelrichter oder eine Kammer entscheidet."
+          en: "A system that allocates cases to judges taking into account specialisation, workload or holiday planning; the assessment may be different if the system at the same time makes legal assessments on procedural requirements of a specific case, for example whether the hearing is public, whether the court has jurisdiction or whether a single judge or a chamber decides."
+        source_ref: "(423)"
+      - text:
+          de: "Ein System, das ein Gericht bei der Verwaltung und Durchsuchung grosser Mengen von Beweismaterial unterstuetzt, indem es erstens einen Zeitablauf bestimmter im Beweismaterial belegter Ereignisse bereitstellt und zweitens Inhalte im Beweismaterial durchsucht und Verweise darauf angibt; es unterstuetzt beim Ordnen und Zugaenglichmachen des Tatsachenstoffs, ohne ihn auszuwerten, zu bewerten oder Schluesse daraus zu ziehen."
+          en: "A system that supports a court in managing and searching large volumes of evidence by, first, providing a timeline of certain events documented in the evidence and, second, searching content in the evidence and providing references to it; it assists in ordering the factual material and making it accessible without analysing or evaluating it or drawing conclusions from it."
+        source_ref: "(423)"
+      - text:
+          de: "Systeme fuer reine Nebentaetigkeiten der Verwaltung, die die Entscheidung einzelner Faelle nicht beruehren, etwa Anonymisieren oder Pseudonymisieren von Entscheidungen, Dokumenten oder Daten, interne Verstaendigung zwischen Mitarbeitern, Suche nach Zustelladressen und Versand von Dokumenten, Pruefung der Zahlung von Gerichtskosten, Bearbeitung elektronischer Unterschriften, Pruefung von Vollmachten und aehnliche Verwaltungsaufgaben."
+          en: "Systems for purely ancillary administrative activities that do not affect the decision in individual cases, for example anonymising or pseudonymising decisions, documents or data, internal communication between staff, searching for addresses for service and dispatching documents, checking the payment of court fees, processing electronic signatures, checking powers of attorney and similar administrative tasks."
+        source_ref: "(423)"
+      - text:
+          de: "Ist das Ergebnis eines Verfahrens der aussergerichtlichen Streitbeilegung eine freiwillige Vereinbarung oder eine unverbindliche Empfehlung, fällt ein dafuer bestimmtes System nicht unter Nummer 8 Buchstabe a, weil das Verfahren keine Rechtswirkungen fuer die Parteien erzeugt."
+          en: "If the outcome of an alternative dispute resolution procedure is a voluntary agreement or a non-binding recommendation, a system intended for it does not fall under point 8(a), because the procedure does not produce legal effects for the parties."
+        source_ref: "(430)"
+      - text:
+          de: "Bei Mediation und Schlichtung ist das Ergebnis im Regelfall eine freiwillige Vereinbarung ohne bindende Rechtskraft; die Mediationsrichtlinie erlaubt den Parteien jedoch zu vereinbaren, dass ihre Vereinbarung durch ein Gericht oder eine zustaendige Stelle fuer vollstreckbar erklaert wird und damit dieselbe Wirkung wie ein Urteil erhaelt."
+          en: "In mediation and conciliation, the outcome is as a rule a voluntary agreement without binding legal force; however, the Mediation Directive allows the parties to agree that their agreement be declared enforceable by a court or a competent body and thus acquire the same effect as a judgment."
+        source_ref: "(431)"
+    examples:
+      - scenario:
+          de: "Ein System wertet den Inhalt einer bei Gericht eingegangenen Klage oder eines Antrags sowie Muster frueherer Rechtsprechung aus, um die Fallart vorab einzuordnen, etwa Vertragsrecht oder Erbsache."
+          en: "A system analyses the content of a claim or an application received by the court as well as patterns of earlier case law in order to pre-classify the type of case, for example contract law or a succession matter."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Grundsaetzlich kann das als Unterstuetzung beim Ermitteln und Auslegen von Tatsachen und Recht gelten, doch kommen die Ausnahmen fuer eine eng begrenzte Verfahrensaufgabe und fuer eine vorbereitende Aufgabe in Betracht. Gibt das System zusaetzlich Empfehlungen zur Zulaessigkeit des Falls, abgesehen von rein technischen Pruefungen, greifen die Ausnahmen nicht mehr, auch wenn Gerichtsmitarbeiter das spaeter pruefen."
+          en: "In principle, this can count as assistance in researching and interpreting facts and the law, but the exemptions for a narrow procedural task and for a preparatory task can be considered. If the system additionally gives recommendations on the admissibility of the case, apart from purely technical checks, the exemptions no longer apply, even if court staff check this later."
+        source_ref: "(423)"
+      - scenario:
+          de: "Ein System wertet Daten aus, um anhand des Akteninhalts Begleitangaben herauszuziehen, etwa die Verfahrensrollen aus der Klage, also Parteien, Rechtsvertreter, Zeugen und Sachverstaendige, um Bueroarbeiten wie Ladungen zu unterstuetzen."
+          en: "A system analyses data in order to extract metadata on the basis of the content of the file, for example the procedural roles from the claim, that is parties, legal representatives, witnesses and experts, in order to support clerical work such as summonses."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Im Regelfall gilt das nicht als Unterstuetzung beim Ermitteln und Auslegen von Tatsachen und Recht; selbst wenn einzelne Funktionen dazu fuehren wuerden, greift jedenfalls die Ausnahme fuer eine eng begrenzte Verfahrensaufgabe."
+          en: "As a rule, this does not count as assistance in researching and interpreting facts and the law; even if individual functions were to lead to this, the exemption for a narrow procedural task applies in any case."
+        source_ref: "(423)"
+      - scenario:
+          de: "Ein System ist in eine oeffentliche Datenbank der nationalen Rechtsprechung eingebunden, die von der Oeffentlichkeit und von Gerichtsmitarbeitern genutzt wird, und erlaubt die Suche nach Entscheidungen mit herkoemmlichen Mitteln, erstellt Zusammenfassungen veroeffentlichter Entscheidungen und von Suchergebnissen und erlaubt die Suche in natuerlicher Sprache."
+          en: "A system is integrated into a public database of national case law that is used by the public and by court staff, and allows searching for decisions by conventional means, produces summaries of published decisions and of search results and allows natural language search."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Das System unterstuetzt zwar beim Ermitteln und Auslegen des Rechts, erfuellt dabei aber nur eng begrenzte Verfahrensaufgaben."
+          en: "The system does assist in researching and interpreting the law, but in doing so it performs only narrow procedural tasks."
+        source_ref: "(423)"
+      - scenario:
+          de: "Ein System liest Korrektur oder verbessert den Stil von Entscheidungen oder Urteilen, die Richter verfasst haben, ohne den Inhalt zu aendern."
+          en: "A system proofreads or improves the style of decisions or judgments drafted by judges, without changing the content."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es ist zweifelhaft, ob darin ueberhaupt eine Unterstuetzung beim Anwenden des Rechts liegt, weil der Grad der Unterstuetzung sehr gering erscheint; jedenfalls greift die Ausnahme fuer Systeme, die das Ergebnis einer bereits abgeschlossenen menschlichen Taetigkeit verbessern."
+          en: "It is doubtful whether this constitutes assistance in applying the law at all, because the degree of assistance appears very low; in any case, the exemption for systems that improve the result of a previously completed human activity applies."
+        source_ref: "(423)"
+      - scenario:
+          de: "Ein System wird genutzt, nachdem der Richter die Entscheidung entworfen hat, und vergleicht den Entwurf mit der Fallakte, um Tatsachenfragen oder Punkte zu bestimmen, die der Entwurf offenbar nicht behandelt."
+          en: "A system is used after the judge has drafted the decision and compares the draft with the case file in order to identify factual questions or points that the draft apparently does not address."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Dabei kann eine Auslegung des Tatsachenstoffs vorkommen; nimmt das System aber nur eine Vollstaendigkeitspruefung vor, bewertet es keine Glaubwuerdigkeit, bestimmt es nicht, was geschehen ist, schlaegt es keine Antwort auf eine Tatsachenfrage vor und beeinflusst es die richterliche Feststellung der Tatsachen nicht wesentlich, so verbessert es das Ergebnis einer bereits abgeschlossenen menschlichen Taetigkeit."
+          en: "This may involve an interpretation of the factual material; however, if the system only performs a completeness check, does not evaluate credibility, does not determine what happened, does not propose an answer to a factual question and does not materially influence the judicial finding of facts, it improves the result of a previously completed human activity."
+        source_ref: "(423)"
+  - citation: "AI-Act/annex-III/pt-8-b"
+    main_question:
+      de: "Soll Ihr System das Ergebnis einer Wahl oder einer Volksabstimmung beeinflussen oder das Wahlverhalten von Menschen bei der Stimmabgabe beeinflussen?"
+      en: "Is your system intended to influence the outcome of an election or referendum or the voting behaviour of natural persons in the exercise of their vote?"
+    follow_up_questions:
+      - question:
+          de: "Ist es der Zweck Ihres Systems, auf die Entscheidung der Waehler oder auf die Wahlbeteiligung einzuwirken?"
+          en: "Is the purpose of your system to influence the decision of voters or voter turnout?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(437)"
+      - question:
+          de: "Sind Menschen den Ausgaben Ihres Systems unmittelbar ausgesetzt, bekommen sie also selbst zu sehen oder zu hoeren, was das System erzeugt?"
+          en: "Are natural persons directly exposed to the outputs of your system, that is do they themselves get to see or hear what the system generates?"
+        on_yes: "covered"
+        on_no: "not_covered"
+        source_ref: "(436)"
+      - question:
+          de: "Dient Ihr System allein dazu, eine politische Kampagne verwaltungsmaessig oder ablauftechnisch zu organisieren, zu verbessern oder zu ordnen?"
+          en: "Does your system serve solely to organise, optimise or structure a political campaign from an administrative or logistical point of view?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(445)"
+      - question:
+          de: "Beeinflusst Ihr System das Wahlergebnis nur ungewollt und nebenbei, etwa weil es als allgemeines System zur Inhalteempfehlung unter anderem auch politische Inhalte empfiehlt?"
+          en: "Does your system influence the election outcome only unintentionally and incidentally, for example because, as a general content recommendation system, it also recommends political content among other things?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(437)"
+      - question:
+          de: "Soll Ihr System darauf einwirken, wie Menschen ihre Stimme abgeben, also welche Partei oder welchen Bewerber sie unterstuetzen?"
+          en: "Is your system intended to influence how persons cast their vote, that is which party or which candidate they support?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(440)"
+      - question:
+          de: "Soll Ihr System darauf einwirken, ob Menschen ueberhaupt an der Wahl oder Abstimmung teilnehmen, einschliesslich der Stimmenthaltung durch Nichtwaehlen oder durch Abgabe eines leeren oder ungueltigen Stimmzettels?"
+          en: "Is your system intended to influence whether persons take part in the election or vote at all, including abstention by not voting or by casting a blank or invalid ballot?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(440)"
+      - question:
+          de: "Ist Ihr System fuer den Einsatz im Zusammenhang mit einer Wahl oder einer Volksabstimmung auf europaeischer, nationaler, regionaler oder oertlicher Ebene entwickelt?"
+          en: "Is your system developed for use in connection with an election or a referendum at European, national, regional or local level?"
+        on_yes: "covered"
+        on_no: "not_covered"
+        source_ref: "(442)"
+    covered:
+      - text:
+          de: "Zwei Voraussetzungen muessen erfuellt sein: der Zweck des Systems muss darin liegen, das Ergebnis einer Wahl oder Volksabstimmung oder das Wahlverhalten von Menschen bei der Stimmabgabe zu beeinflussen, und Menschen muessen den Ausgaben des Systems unmittelbar ausgesetzt sein."
+          en: "Two conditions must be met: the purpose of the system must be to influence the outcome of an election or referendum or the voting behaviour of natural persons in the exercise of their vote, and natural persons must be directly exposed to the outputs of the system."
+        source_ref: "(436)"
+      - text:
+          de: "Das System muss eigens darauf angelegt sein, auf die Entscheidung der Waehlerschaft oder auf die Wahlbeteiligung einzuwirken; es kommt auf diesen Zweck an und nicht darauf, dass das System nebenbei dazu in der Lage waere."
+          en: "The system must be specifically designed to influence the decision of the electorate or voter turnout; what matters is this purpose and not that the system would incidentally be capable of doing so."
+        source_ref: "(437)"
+      - text:
+          de: "Erfasst sind sowohl die gemeinsame Beeinflussung, also das Ergebnis der Wahl oder Abstimmung als Ganzes, als auch die Beeinflussung einzelner Waehler."
+          en: "Covered are both collective influence, that is the outcome of the election or vote as a whole, and the influencing of individual voters."
+        source_ref: "(438)"
+      - text:
+          de: "Das Beeinflussen des Ergebnisses kann ueber die Stimmabgabe hinausgehen und andere Abschnitte des Wahlvorgangs betreffen, etwa das Neuziehen von Wahlkreisgrenzen."
+          en: "Influencing the outcome can go beyond casting votes and concern other stages of the electoral process, for example the redrawing of constituency boundaries."
+        source_ref: "(439)"
+      - text:
+          de: "Es ist nicht erforderlich, dass das Wahlverhalten tatsaechlich beeinflusst wird; es genuegt, dass das System fuer diesen Zweck bestimmt ist, auch wenn es mit diesem Zweck beworben wird. Das tatsaechliche Ergebnis nach dem Einsatz ist unerheblich."
+          en: "It is not necessary that voting behaviour is actually influenced; it is sufficient that the system is intended for this purpose, including where it is marketed with this purpose. The actual outcome after its use is irrelevant."
+        source_ref: "(441)"
+      - text:
+          de: "Die Einordnung haengt nicht davon ab, wer das System bereitstellt, in Betrieb nimmt oder nutzt; entscheidend ist der vom Anbieter festgelegte Zweck. Alle Anbieter solcher Systeme muessen sie als hochriskant einordnen."
+          en: "The classification does not depend on who makes the system available, puts it into service or uses it; what is decisive is the purpose specified by the provider. All providers of such systems must classify them as high-risk."
+        source_ref: "(443)"
+      - text:
+          de: "Als Nutzer kommen vor allem politische Parteien, politische Stiftungen, Kampagnenorganisationen und Bewerber in Betracht, ausserdem Dritte wie Interessengruppen; Medien fallen in vielen Faellen nicht darunter, was aber nicht immer gilt, etwa wenn sie einer Kampagnenorganisation oder Partei verbunden sind oder von einer Partei betrieben werden oder wenn sie Anwendungen zur Wahlempfehlung anbieten."
+          en: "Users are mainly political parties, political foundations, campaign organisations and candidates, as well as third parties such as interest groups; in many cases media do not fall under this, but that does not always hold, for example if they are affiliated with a campaign organisation or party or are operated by a party, or if they offer voting advice applications."
+        source_ref: "(444)"
+      - text:
+          de: "Ein System, das die Zielgruppenauswahl und die Ausspielung politischer Werbung innerhalb der Grenzen der Verordnung ueber politische Werbung verbessert, einschliesslich besonderer Systeme zur Inhalteempfehlung; es soll das Wahlergebnis beeinflussen, indem es die politischen Ansichten moeglicher Waehler beeinflusst. In vielen Faellen enthalten solche Systeme Profilbildung, sodass der Filter nicht greift."
+          en: "A system that optimises the targeting and delivery of political advertising within the limits of the Regulation on political advertising, including specific content recommendation systems; it is intended to influence the election outcome by influencing the political views of potential voters. In many cases such systems involve profiling, so that the filter does not apply."
+        source_ref: "(447)"
+      - text:
+          de: "Ein Chatbot oder eine virtuelle Sprecherfigur, die fuer politische Akteure entwickelt wurde, um mit Menschen im Gespraech zu verkehren und den politischen Dialog mit Waehlern nachzubilden, damit diese einen Bewerber oder eine Politik unterstuetzen; der Zweck umfasst das Einwirken auf politische Ansichten und damit am Ende auf die Entscheidung der Waehlerschaft."
+          en: "A chatbot or a virtual spokesperson character developed for political actors in order to interact with persons in conversation and simulate political dialogue with voters so that they support a candidate or a policy; the purpose includes influencing political views and thus ultimately the decision of the electorate."
+        source_ref: "(447)"
+      - text:
+          de: "Eine Anwendung zur Wahlempfehlung, die anhand der Ansichten eines einzelnen Waehlers Parteien oder Bewerber empfiehlt, also Fragen zu politischen Vorlieben, Werten oder Streitfragen stellt und die Antworten mit den Standpunkten der Parteien oder Bewerber vergleicht und den naechstliegenden Treffer anzeigt; sie erzeugt persoenliche Empfehlungen, die Vorlieben zu bestimmten Parteien oder Bewerbern lenken und die Wahrnehmung politischer Naehe praegen koennen."
+          en: "A voting advice application that recommends parties or candidates on the basis of an individual voter's views, that is asks questions on political preferences, values or contested issues, compares the answers with the positions of the parties or candidates and displays the closest match; it generates personal recommendations that can steer preferences towards certain parties or candidates and shape the perception of political proximity."
+        source_ref: "(447)"
+    not_covered:
+      - text:
+          de: "Nicht erfasst sind Systeme, deren Ausgaben Menschen nicht unmittelbar ausgesetzt sind, etwa Werkzeuge, mit denen politische Kampagnen verwaltungsmaessig oder ablauftechnisch organisiert, verbessert oder geordnet werden; das schliesst im Allgemeinen Systeme aus, mit denen Parteien oder Bewerber ihre innere Arbeit wirtschaftlicher machen."
+          en: "Not covered are systems to whose outputs natural persons are not directly exposed, for example tools used to organise, optimise or structure political campaigns from an administrative or logistical point of view; this generally excludes systems with which parties or candidates make their internal work more efficient."
+        source_ref: "(445)"
+      - text:
+          de: "Systeme mit nicht beabsichtigtem Einfluss auf das Wahlergebnis oder das Wahlverhalten, etwa allgemeine Systeme zur Inhalteempfehlung, die unter anderem auch politische Inhalte empfehlen und damit tatsaechlich politische Meinungen beeinflussen koennen."
+          en: "Systems with an unintended influence on the election outcome or voting behaviour, for example general content recommendation systems that also recommend political content among other things and can thus actually influence political opinions."
+        source_ref: "(437)"
+      - text:
+          de: "Allgemein verwendbare Systeme mit ausreichenden Vorkehrungen gegen eine Nutzung zur Beeinflussung von Wahlvorgaengen, etwa ein Chatbot, der auf die Frage nach Wahlempfehlungen klar antwortet, dass er keine geben kann, oder der allein sachliche und informierende Inhalte zu Wahlen bietet, also Angaben zum Wahlvorgang nach Art, Zeit und Ort, zur Anmeldung, zum rechtlichen und behoerdlichen Rahmen, sachliche Angaben zu Parteien und Bewerbern wie Verweise auf deren amtliche Internetseiten und allgemeine staatsbuergerliche Bildung zu demokratischen Vorgaengen."
+          en: "General-purpose systems with sufficient safeguards against use for influencing electoral processes, for example a chatbot that clearly answers, when asked for voting recommendations, that it cannot give any, or that offers solely factual and informative content on elections, that is information on the voting process by type, time and place, on registration, on the legal and administrative framework, factual information on parties and candidates such as links to their official websites, and general civic education on democratic processes."
+        source_ref: "(437)"
+      - text:
+          de: "Systeme, die die Verwaltung von Kampagnenpersonal einschliesslich Freiwilliger verbessern, Systeme, die Veranstaltungen planen, Parteimitglieder dazu einteilen oder Themenschwerpunkte auswaehlen; sie sind durch den zweiten Satz der Nummer 8 Buchstabe b von der Einordnung als hochriskant ausgenommen."
+          en: "Systems that optimise the management of campaign staff including volunteers, systems that plan events, allocate party members to them or select thematic priorities; they are excluded from the classification as high-risk by the second sentence of point 8(b)."
+        source_ref: "(447)"
+      - text:
+          de: "Systeme, die frueher gefuehrte Spenderdatenbanken einer Partei auswerten, um die Wahrscheinlichkeit von Beitraegen fuer die laufende oder kuenftige Kampagne vorherzusagen; sie sind durch den zweiten Satz der Nummer 8 Buchstabe b ausgenommen."
+          en: "Systems that analyse a party's previously maintained donor databases in order to predict the likelihood of contributions for the current or a future campaign; they are excluded by the second sentence of point 8(b)."
+        source_ref: "(447)"
+      - text:
+          de: "Systeme zum Erzeugen von Inhalten politischer Werbung, etwa Systeme, die Wahlsprueche und Mitteilungen entwerfen, die eine Partei prueft und verbreitet, ohne dass das System sie selbst weiterverbreitet; sie helfen bei der Vorbereitung von Kampagnenmaterial und sind nicht darauf gerichtet, das Wahlergebnis zu beeinflussen."
+          en: "Systems for generating political advertising content, for example systems that draft slogans and messages that a party reviews and disseminates without the system itself disseminating them further; they help in preparing campaign material and are not aimed at influencing the election outcome."
+        source_ref: "(447)"
+      - text:
+          de: "Systeme, die anhand der Angaben auf dem Internetauftritt eines Parlaments beobachten, wie gewaehlte Mandatstraeger Gesetzesvorlagen oder Aenderungsantraege einbringen; diese Beobachtung dient vor allem der Unterrichtung und hat nicht den unmittelbaren Zweck, das Wahlergebnis zu beeinflussen."
+          en: "Systems that monitor, on the basis of the information on a parliament's website, how elected representatives introduce legislative proposals or amendments; this monitoring serves mainly to inform and does not have the direct purpose of influencing the election outcome."
+        source_ref: "(447)"
+      - text:
+          de: "Systeme von Meinungsforschungsstellen, die Angaben sachlich und offen sammeln, auswerten und darstellen, sofern ihre einzige Aufgabe darin liegt, die Oeffentlichkeit oder Beteiligte zu unterrichten, ohne auf Wahlvorgaenge einwirken zu wollen."
+          en: "Systems of opinion research bodies that collect, analyse and present information objectively and openly, provided their only task is to inform the public or stakeholders without seeking to influence electoral processes."
+        source_ref: "(447)"
+      - text:
+          de: "Systeme, mit denen wissenschaftliche Einrichtungen das Wahlverhalten zu Forschungszwecken nachbilden; sie sind nicht darauf gerichtet, das Wahlergebnis zu beeinflussen, und waeren ohnehin wahrscheinlich nach Artikel 2 Absatz 6 ausgenommen."
+          en: "Systems with which scientific institutions simulate voting behaviour for research purposes; they are not aimed at influencing the election outcome and would in any case probably be excluded under Article 2(6)."
+        source_ref: "(447)"
+      - text:
+          de: "Systeme zum selbsttaetigen Zaehlen von Stimmzetteln; wird ein System allein zum maschinellen Erkennen und Zusammenzaehlen von Stimmzetteln genutzt, etwa durch Einlesen und Texterkennung, ist es eine technische Hilfe und nicht hochriskant, weil sein Zweck nicht dem der Nummer 8 Buchstabe b entspricht."
+          en: "Systems for the automatic counting of ballots; if a system is used solely for the machine recognition and tallying of ballots, for example by scanning and text recognition, it is a technical aid and not high-risk, because its purpose does not correspond to that of point 8(b)."
+        source_ref: "(447)"
+      - text:
+          de: "Ein Chatbot, der im Namen von Wahlbehoerden Waehler unterrichtet und politisch neutral arbeitet, etwa mit Angaben dazu, wann die Wahl stattfindet, wo gewaehlt werden kann und zu welchen Zeiten."
+          en: "A chatbot that informs voters on behalf of electoral authorities and works in a politically neutral way, for example with information on when the election takes place, where people can vote and at what times."
+        source_ref: "(447)"
+      - text:
+          de: "Politische Beeinflussung ist eine rechtmaessige Taetigkeit und Teil des Wahlgeschehens, soweit sie geltendem Recht der Union und der Mitgliedstaaten entspricht; die Einordnung als hochriskant will die Entwicklung und Nutzung solcher Systeme nicht einschraenken, sondern sichere und vertrauenswuerdige Entwicklung und Nutzung gewaehrleisten."
+          en: "Political influence is a lawful activity and part of the electoral process insofar as it complies with applicable Union and Member State law; the classification as high-risk is not intended to restrict the development and use of such systems, but to ensure their safe and trustworthy development and use."
+        source_ref: "(446)"
+    examples:
+      - scenario:
+          de: "Ein System prueft den Ton bereits von Menschen geschriebener Kampagnentexte, hebt moeglicherweise unklare oder nachteilige Formulierungen hervor, zeigt Widersprueche zu bestehenden Parteimaterialien auf oder schlaegt Umformulierungen vor, die die von der Partei betonten Haltungen oder Werte besser vermitteln."
+          en: "A system checks the tone of campaign texts already written by humans, highlights potentially unclear or disadvantageous wording, reveals contradictions with existing party materials or suggests rewordings that better convey the positions or values emphasised by the party."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Man koennte darin eine Beeinflussung des Wahlergebnisses durch Einwirken auf die Entscheidung der Waehlerschaft sehen, doch kommt die Ausnahme in Betracht, weil das System lediglich das Ergebnis einer bereits abgeschlossenen menschlichen Taetigkeit verbessert."
+          en: "This could be seen as influencing the election outcome by influencing the decision of the electorate, but the exemption can be considered, because the system merely improves the result of a previously completed human activity."
+        source_ref: "(447)"

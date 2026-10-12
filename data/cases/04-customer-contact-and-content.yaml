@@ -1,0 +1,158 @@
+topic:
+  de: "Kundenkontakt und erzeugte Inhalte"
+  en: "Customer contact and generated content"
+hint:
+  de: "Die Fälle sind Beispiele zum Lernen, keine Rechtsberatung. Ob eine Einstufung im Einzelfall trägt, hängt von Umständen ab, die hier nicht alle stehen können. Wo es darauf ankommt, ist es im Fall vermerkt.\n"
+  en: "The cases are examples for learning, not legal advice. Whether a classification holds in an individual case depends on circumstances that cannot all be stated here. Where it matters, this is noted in the case.\n"
+cases:
+  - id: customer-service-chatbot
+    title:
+      de: "Chatbot auf der Internetseite des Kundendienstes"
+      en: "Chatbot on the customer service website"
+    scenario:
+      de: "Ein Versandhändler stellt auf seine Internetseite einen Chatbot — ein KI-System, das mit Kunden schriftlich spricht. Er beantwortet Fragen zu Lieferzeiten und Rücksendungen, sucht Bestellungen heraus und gibt Gespräche an einen Mitarbeiter weiter, wenn er nicht weiterkommt. Der Bot trägt einen Vornamen und schreibt in der ersten Person.\n"
+      en: "A mail-order retailer puts a chatbot on its website — an AI system that talks with customers in writing. It answers questions about delivery times and returns, looks up orders and hands conversations over to a member of staff when it gets stuck. The bot has a first name and writes in the first person.\n"
+    roles: [deployer]
+    classification: transparency
+    rationale:
+      de: "Der Chatbot fällt in keinen Bereich von Anhang III und ist damit kein Hochrisiko-KI-System. Es greift aber Artikel 50 Absatz 1: Systeme, die für die direkte Interaktion mit Menschen bestimmt sind, müssen so gestaltet sein, dass die Menschen erfahren, dass sie mit einem KI-System sprechen — es sei denn, das ist aus den Umständen offensichtlich. Ein Bot mit menschlichem Vornamen, der in der ersten Person schreibt, macht es gerade nicht offensichtlich.\n"
+      en: "The chatbot falls into no area of Annex III and is therefore not a high-risk AI system. Article 50(1) does apply, however: systems intended to interact directly with natural persons must be designed so that the persons are informed that they are interacting with an AI system — unless this is obvious from the circumstances. A bot with a human first name that writes in the first person is precisely not making it obvious.\n"
+    legal_basis: [AI-Act/art-50/para-1, AI-Act/art-4, AI-Act/annex-III]
+    obligations:
+      - de: "Zu Beginn jedes Gesprächs deutlich machen, dass hier ein KI-System antwortet, nicht ein Mitarbeiter."
+        en: "At the start of every conversation, make clear that an AI system is answering here, not a member of staff."
+      - de: "Den Hinweis dort platzieren, wo er gelesen wird, nicht nur in den Nutzungsbedingungen."
+        en: "Place the notice where it is read, not only in the terms of use."
+      - de: "Einen Weg zu einem Menschen anbieten und ihn auch benennen."
+        en: "Offer a way to reach a human and also name it."
+      - de: "Für die KI-Kompetenz der Beschäftigten sorgen, die den Bot betreuen."
+        en: "Ensure AI literacy of the employees who look after the bot."
+      - de: "Die Einstufung neu prüfen, wenn der Bot Entscheidungen über Kunden treffen soll."
+        en: "Re-check the classification if the bot is to make decisions about customers."
+    learning_note:
+      de: "Die Transparenzpflicht nach Artikel 50 ist eine eigene Schublade neben der Risikoeinstufung. Ein System kann völlig unkritisch sein und trotzdem eine Pflicht auslösen, nur weil Menschen mit ihm sprechen oder es Inhalte erzeugt. Wer nur nach hohem Risiko sucht, übersieht diese Pflichten regelmäßig — und sie treffen in der Praxis viel mehr Unternehmen als die Hochrisiko-Regeln, weil fast jeder Betrieb irgendwo einen Bot oder ein Textwerkzeug einsetzt.\n"
+      en: "The transparency obligation under Article 50 is a separate drawer next to the risk classification. A system can be completely uncritical and still trigger an obligation, simply because people talk to it or it generates content. Anyone who only looks for high risk regularly overlooks these obligations — and in practice they affect far more companies than the high-risk rules, because almost every business uses a bot or a text tool somewhere.\n"
+    pitfall:
+      de: "Der Hinweis steht in den Nutzungsbedingungen oder verschwindet nach der ersten Nachricht. Offensichtlich ist er dann nicht, und genau das verlangt die Vorschrift.\n"
+      en: "The notice is in the terms of use or disappears after the first message. It is then not obvious, and that is exactly what the provision requires.\n"
+    related_cases: [cloned-voice-phone-system, generated-product-images, technical-manual-translation]
+
+  - id: generated-product-images
+    title:
+      de: "Erzeugte Produktbilder im Onlineshop"
+      en: "Generated product images in the online shop"
+    scenario:
+      de: "Ein Möbelhändler lässt seine Wohnzimmermöbel nicht mehr fotografieren, sondern von einem KI-System in gestalteten Räumen darstellen. Die Bilder zeigen das jeweilige Sofa in einer Wohnung, die es nicht gibt. Der Händler verwendet dazu einen zugekauften Bilddienst und stellt die Ergebnisse in seinen Shop.\n"
+      en: "A furniture retailer no longer has its living room furniture photographed, but has an AI system depict it in designed rooms. The images show the sofa in question in a flat that does not exist. The retailer uses a purchased image service for this and puts the results in its shop.\n"
+    roles: [deployer]
+    classification: transparency
+    rationale:
+      de: "Die Erzeugung von Bildern löst Transparenzpflichten aus. Nach Artikel 50 Absatz 2 muss der Anbieter des erzeugenden Systems dafür sorgen, dass die Ausgaben maschinenlesbar als künstlich erzeugt gekennzeichnet sind — diese Pflicht trifft den Bilddienst, nicht den Händler. Der Händler muss nach Artikel 50 Absatz 4 offenlegen, wenn er Inhalte erzeugt oder manipuliert, die ein Deepfake sind. Darstellungen erfundener Räume mit echten Produkten sind in der Regel keine Deepfakes, weil sie keine bestehenden Personen, Orte oder Ereignisse vortäuschen; sobald aber ein echter Ort oder eine erkennbare Person gezeigt wird, kippt die Beurteilung. Vom Wettbewerbsrecht ist das unabhängig.\n"
+      en: "Generating images triggers transparency obligations. Under Article 50(2), the provider of the generating system must ensure that the outputs are marked in a machine-readable format as artificially generated — this obligation falls on the image service, not on the retailer. Under Article 50(4), the retailer must disclose when it generates or manipulates content that constitutes a deep fake. Depictions of invented rooms with real products are as a rule not deep fakes, because they do not falsely present existing persons, places or events; but as soon as a real place or a recognisable person is shown, the assessment flips. Competition law is independent of this.\n"
+    legal_basis: [AI-Act/art-50/para-2, AI-Act/art-50/para-4, AI-Act/art-4]
+    obligations:
+      - de: "Beim Bilddienst nachfragen und sich bestätigen lassen, dass die Ausgaben maschinenlesbar gekennzeichnet werden."
+        en: "Ask the image service and obtain confirmation that the outputs are marked in a machine-readable format."
+      - de: "Die Kennzeichnung nicht beim Hochladen in den Shop entfernen — Zuschneiden und Umwandeln löscht sie oft."
+        en: "Do not remove the marking when uploading to the shop — cropping and converting often delete it."
+      - de: "Dafür sorgen, dass die Darstellung das Produkt nicht anders aussehen lässt, als es ist."
+        en: "Ensure that the depiction does not make the product look different from what it is."
+      - de: "Prüfen, sobald echte Orte oder erkennbare Personen ins Bild kommen; dann gilt die Offenlegungspflicht für Deepfakes."
+        en: "Check as soon as real places or recognisable persons come into the picture; the disclosure obligation for deep fakes then applies."
+    learning_note:
+      de: "Bei erzeugten Inhalten liegen die Pflichten auf zwei Schultern: Der Anbieter des Werkzeugs kennzeichnet maschinenlesbar, der Betreiber legt Deepfakes offen. Wer ein Werkzeug einkauft, erbt die Kennzeichnung nicht automatisch — er muss prüfen, ob sie vorhanden ist, und darf sie bei der Weiterverarbeitung nicht zerstören. Für eigene Fälle lohnt die Frage: Wer ist in meiner Kette Anbieter, wer Betreiber, und welche der beiden Pflichten trifft deshalb mich?\n"
+      en: "With generated content, the obligations rest on two shoulders: the provider of the tool marks in a machine-readable way, the deployer discloses deep fakes. Anyone buying a tool does not automatically inherit the marking — they must check whether it is present and must not destroy it during further processing. For your own cases, the question is worthwhile: who in my chain is provider, who is deployer, and which of the two obligations therefore falls on me?\n"
+    pitfall:
+      de: "Die Kennzeichnung steckt in den Metadaten der Bilddatei und geht beim Zuschneiden oder beim Umwandeln in ein anderes Format verloren. Der Händler meint, geliefert zu haben, was der Dienst zugesagt hat, und löscht sie im nächsten Arbeitsschritt selbst.\n"
+      en: "The marking sits in the metadata of the image file and is lost when cropping or converting to another format. The retailer thinks it has delivered what the service promised, and deletes the marking itself in the next work step.\n"
+    related_cases: [deepfake-actor-advert, cloned-voice-phone-system, customer-service-chatbot]
+
+  - id: cloned-voice-phone-system
+    title:
+      de: "Geklonte Stimme in der Telefonansage"
+      en: "Cloned voice in the telephone announcement"
+    scenario:
+      de: "Ein Autohaus lässt seine Telefonansagen mit der geklonten Stimme seines Serviceleiters erzeugen, damit Anrufer eine vertraute Stimme hören. Die Ansagen nennen Öffnungszeiten und leiten weiter. Für neue Texte muss der Serviceleiter nichts mehr einsprechen; das KI-System erzeugt sie aus geschriebenem Text.\n"
+      en: "A car dealership has its telephone announcements generated with the cloned voice of its service manager, so that callers hear a familiar voice. The announcements give opening hours and transfer calls. For new texts the service manager no longer has to record anything; the AI system generates them from written text.\n"
+    roles: [deployer]
+    classification: transparency
+    rationale:
+      de: "Die mit einer echten, erkennbaren Stimme erzeugte Ansage ist ein Deepfake im Sinne der Verordnung, weil sie einen Tonbeitrag vortäuscht, den die Person nicht gesprochen hat. Nach Artikel 50 Absatz 4 muss der Betreiber offenlegen, dass der Inhalt künstlich erzeugt wurde. Daneben gilt für den Anbieter des erzeugenden Systems die Kennzeichnungspflicht nach Artikel 50 Absatz 2. Die Einwilligung des Serviceleiters ist für die Persönlichkeitsrechte wichtig, ersetzt die Offenlegung gegenüber den Anrufern aber nicht.\n"
+      en: "The announcement generated with a real, recognisable voice is a deep fake within the meaning of the Regulation, because it falsely presents an audio contribution the person did not speak. Under Article 50(4), the deployer must disclose that the content has been artificially generated. In addition, the marking obligation under Article 50(2) applies to the provider of the generating system. The service manager's consent is important for personality rights, but does not replace disclosure to the callers.\n"
+    legal_basis: [AI-Act/art-50/para-2, AI-Act/art-50/para-4, AI-Act/art-4]
+    obligations:
+      - de: "In der Ansage offenlegen, dass die Stimme künstlich erzeugt ist."
+        en: "Disclose in the announcement that the voice is artificially generated."
+      - de: "Die schriftliche Einwilligung des Serviceleiters in die Verwendung seiner Stimme einholen."
+        en: "Obtain the service manager's written consent to the use of his voice."
+      - de: "Festlegen, wer Texte freigeben darf, und den Zugang zum Stimmmodell begrenzen."
+        en: "Lay down who may approve texts, and restrict access to the voice model."
+      - de: "Regeln, was mit dem Stimmmodell geschieht, wenn der Serviceleiter das Unternehmen verlässt."
+        en: "Settle what happens to the voice model if the service manager leaves the company."
+    learning_note:
+      de: "Die Einwilligung der abgebildeten Person und die Offenlegung gegenüber dem Publikum sind zwei verschiedene Dinge mit zwei verschiedenen Adressaten. Wer die Einwilligung hat, darf die Stimme verwenden; wer sie verwendet, muss dem Zuhörer trotzdem sagen, dass sie künstlich ist. Das gilt überall, wo echte Menschen nachgebildet werden — und ein Stimmmodell ist dabei ein Wert, der wie ein Zugangsschlüssel verwaltet werden muss, nicht wie eine Audiodatei.\n"
+      en: "The consent of the person depicted and disclosure to the audience are two different things with two different addressees. Whoever has the consent may use the voice; whoever uses it must still tell the listener that it is artificial. This applies wherever real people are replicated — and a voice model is an asset that must be managed like an access key, not like an audio file.\n"
+    pitfall:
+      de: "Das Unternehmen hält die Offenlegung für überflüssig, weil die Stimme dem eigenen Mitarbeiter gehört und er zugestimmt hat. Die Pflicht besteht gegenüber den Anrufern und hängt nicht von der Zustimmung der Person ab.\n"
+      en: "The company considers disclosure superfluous because the voice belongs to its own employee and he has agreed. The obligation exists towards the callers and does not depend on the person's consent.\n"
+    related_cases: [deepfake-actor-advert, generated-product-images, customer-service-chatbot]
+
+  - id: deepfake-actor-advert
+    title:
+      de: "Werbespot mit nachgebildetem Schauspieler"
+      en: "Commercial with a replicated actor"
+    scenario:
+      de: "Eine Brauerei dreht einen Werbespot und lässt für zwei Szenen das Gesicht eines bekannten Schauspielers von einem KI-System auf einen Statisten setzen. Der Schauspieler hat dem gegen Honorar zugestimmt. Der Spot läuft im Fernsehen und in Videoportalen.\n"
+      en: "A brewery shoots a commercial and, for two scenes, has an AI system put the face of a well-known actor onto an extra. The actor agreed to this for a fee. The commercial runs on television and on video platforms.\n"
+    roles: [deployer]
+    classification: transparency
+    rationale:
+      de: "Ein Gesichtstausch bei einer echten, erkennbaren Person ist ein Deepfake. Nach Artikel 50 Absatz 4 muss der Betreiber offenlegen, dass der Inhalt künstlich erzeugt oder manipuliert wurde. Für offensichtlich künstlerische, kreative, satirische oder fiktionale Werke beschränkt sich die Pflicht darauf, das Vorhandensein solcher Inhalte in geeigneter Weise offenzulegen, ohne den Genuss des Werks zu beeinträchtigen. Ein Werbespot ist kein solches Werk im üblichen Verständnis; ob eine erkennbar fiktionale Inszenierung darunter fällt, kommt auf die Gestaltung an und ist hier nicht entschieden.\n"
+      en: "A face swap involving a real, recognisable person is a deep fake. Under Article 50(4), the deployer must disclose that the content has been artificially generated or manipulated. For evidently artistic, creative, satirical or fictional works, the obligation is limited to disclosing the existence of such content in an appropriate manner that does not hamper the display or enjoyment of the work. A commercial is not such a work in the usual understanding; whether a recognisably fictional staging falls under it depends on the design and is not decided here.\n"
+    legal_basis: [AI-Act/art-50/para-2, AI-Act/art-50/para-4, AI-Act/art-4]
+    obligations:
+      - de: "Im Spot oder in unmittelbarer Nähe offenlegen, dass Bildinhalte künstlich erzeugt wurden."
+        en: "Disclose in the commercial or in its immediate vicinity that image content has been artificially generated."
+      - de: "Die Einwilligung des Schauspielers schriftlich fassen und den Umfang der Verwendung darin begrenzen."
+        en: "Put the actor's consent in writing and limit the scope of use in it."
+      - de: "Beim erzeugenden Dienst die maschinenlesbare Kennzeichnung sicherstellen."
+        en: "Ensure machine-readable marking with the generating service."
+      - de: "Festhalten, welche Szenen bearbeitet wurden, damit die Offenlegung belegbar ist."
+        en: "Record which scenes were edited, so that the disclosure can be evidenced."
+    learning_note:
+      de: "Die Ausnahme für künstlerische Werke lockert die Offenlegung, sie hebt sie nicht auf: Verlangt bleibt, das Vorhandensein erzeugter Inhalte geeignet offenzulegen. Wer sich darauf berufen will, muss also immer noch etwas tun, nur zurückhaltender. In der Werbung ist der Verweis auf Kunst ohnehin ein schwaches Argument, weil der Zweck der Inszenierung der Verkauf ist.\n"
+      en: "The exception for artistic works relaxes disclosure; it does not lift it: disclosing the existence of generated content in an appropriate manner is still required. Anyone wanting to rely on it therefore still has to do something, only more discreetly. In advertising, pointing to art is a weak argument anyway, because the purpose of the staging is selling.\n"
+    pitfall:
+      de: "Die Offenlegung wandert in den Abspann oder in die Videobeschreibung und erreicht den Zuschauer nicht. Geeignet ist eine Offenlegung nur, wenn sie dort erscheint, wo der Inhalt wahrgenommen wird.\n"
+      en: "The disclosure moves into the end credits or the video description and does not reach the viewer. A disclosure is appropriate only if it appears where the content is perceived.\n"
+    related_cases: [cloned-voice-phone-system, generated-product-images, scraped-face-database]
+
+  - id: technical-manual-translation
+    title:
+      de: "Übersetzung technischer Handbücher"
+      en: "Translation of technical manuals"
+    scenario:
+      de: "Ein Maschinenbauer übersetzt seine Bedienungshandbücher mit einem KI-System vom Deutschen ins Englische und Spanische. Die Rohübersetzungen gehen an die Technische Redaktion, die sie fachlich prüft und freigibt. Erst danach gehen sie mit der Maschine an den Kunden.\n"
+      en: "A mechanical engineering company translates its operating manuals from German into English and Spanish with an AI system. The raw translations go to the technical writing team, which checks them for subject accuracy and approves them. Only then do they go to the customer with the machine.\n"
+    roles: [deployer]
+    classification: minimal
+    rationale:
+      de: "Die Übersetzung fällt in keinen Bereich von Anhang III und berührt keine verbotene Praktik. Die Kennzeichnungspflicht für erzeugte Inhalte nach Artikel 50 Absatz 2 greift hier nicht, weil sie nicht gilt, soweit Systeme eine unterstützende Funktion für die Standardbearbeitung ausführen oder die eingegebenen Daten und deren Bedeutung nicht wesentlich verändern — eine Übersetzung soll den Sinn gerade erhalten. Damit bleibt es bei der Pflicht zur KI-Kompetenz nach Artikel 4. Produktsicherheitsrechtliche Anforderungen an die Richtigkeit der Anleitung bestehen unabhängig davon weiter.\n"
+      en: "The translation falls into no area of Annex III and touches no prohibited practice. The marking obligation for generated content under Article 50(2) does not apply here, because it does not apply to the extent that systems perform an assistive function for standard editing or do not substantially alter the input data provided or its semantics — a translation is meant precisely to preserve the meaning. This leaves the AI literacy obligation under Article 4. Product safety requirements for the correctness of the instructions continue to apply independently of this.\n"
+    legal_basis: [AI-Act/art-50/para-2, AI-Act/art-4, AI-Act/annex-III]
+    obligations:
+      - de: "Die fachliche Prüfung der Rohübersetzung verbindlich festschreiben, bevor ein Handbuch hinausgeht."
+        en: "Make the subject-matter review of the raw translation a binding step before any manual goes out."
+      - de: "Für die KI-Kompetenz der Technischen Redaktion sorgen."
+        en: "Ensure AI literacy of the technical writing team."
+      - de: "Sicherheitsrelevante Passagen besonders prüfen; eine falsch übersetzte Warnung ist ein Produktproblem."
+        en: "Check safety-relevant passages particularly carefully; a mistranslated warning is a product problem."
+      - de: "Festhalten, wer welche Fassung freigegeben hat."
+        en: "Record who approved which version."
+    learning_note:
+      de: "Artikel 50 Absatz 2 enthält eine Ausnahme, die viele Alltagswerkzeuge trägt: Wer nur unterstützend bearbeitet oder den Inhalt nicht wesentlich verändert, muss nicht kennzeichnen. Übersetzen, Zusammenfassen und sprachliches Glätten fallen in der Regel darunter, freies Erzeugen neuer Inhalte nicht. Die Trennlinie verläuft dort, wo aus dem Bearbeiten eines vorhandenen Inhalts das Erfinden eines neuen wird — und diese Linie ist bei eigenen Werkzeugen oft schnell überschritten.\n"
+      en: "Article 50(2) contains an exception that covers many everyday tools: anyone who only edits in an assistive way or does not substantially alter the content need not mark it. Translating, summarising and linguistic smoothing generally fall under it; freely generating new content does not. The dividing line runs where editing existing content turns into inventing new content — and with your own tools this line is often crossed quickly.\n"
+    pitfall:
+      de: "Dasselbe Werkzeug wird im nächsten Schritt für Werbetexte eingesetzt, die es frei formuliert. Dort ist die Ausnahme nicht mehr tragfähig, und die Einstufung des Einsatzes muss neu beurteilt werden.\n"
+      en: "In the next step, the same tool is used for advertising copy that it formulates freely. There the exception no longer holds, and the classification of the use must be reassessed.\n"
+    related_cases: [public-sector-writing-assistant, customer-service-chatbot, generated-product-images]

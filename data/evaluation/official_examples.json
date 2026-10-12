@@ -1,0 +1,2745 @@
+[
+ {
+  "scenario": {
+   "de": "Ein Finanzintermediär bewertet mit einem System, ob bestehenden oder künftigen Kunden ein Wertpapierkredit für gehebelte Produkte gewährt oder erhöht wird, und nur das.",
+   "en": "A financial intermediary uses a system to assess whether existing or prospective customers are granted, or have increased, a securities-based loan for leveraged products, and nothing else."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-5-b",
+  "source_ref": "(nach 309)",
+  "official_rationale": {
+   "de": "Es ist allein für einen nicht grundlegenden privaten Dienst gedacht.",
+   "en": "It is intended solely for a non-essential private service."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein KI-System verbessert lediglich die Heizzeiten anhand der Gewohnheiten des Haushalts, um Energie zu sparen. Ein Ausfall führt nur zu Unbehagen oder höheren Energiekosten.",
+   "en": "An AI system merely improves heating times on the basis of the household's habits in order to save energy. A failure only leads to discomfort or higher energy costs."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-I",
+  "source_ref": "(43)",
+  "official_rationale": {
+   "de": "Das System erfüllt weder eine Sicherheitsaufgabe noch das Merkmal, dass Ausfall oder Fehlverhalten Gesundheit und Sicherheit gefährden. Es ist daher kein Sicherheitsbauteil.",
+   "en": "The system neither fulfils a safety function nor meets the criterion that its failure or malfunctioning endangers health and safety. It is therefore not a safety component."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System ordnet Schlussfolgerungen den Beweisunterlagen zu, um die Nachvollziehbarkeit einer Entscheidung zu stützen, ohne das menschliche Urteil zu ersetzen.",
+   "en": "A system maps conclusions to the supporting evidence in order to support the traceability of a decision, without replacing human judgement."
+  },
+  "expected": "exemption_applies",
+  "provision": "",
+  "source_ref": "(96)",
+  "official_rationale": {
+   "de": "Der Text nennt das als Beispiel einer unterstützenden Verbesserungsfunktion nach Artikel 6 Absatz 3 Buchstabe b.",
+   "en": "The text cites this as an example of a supporting improvement function under Article 6(3)(b)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System überwacht nach der Kreditvergabe nur noch die Kreditrisiken des Hauses und erkennt früh Zahlungsschwierigkeiten.",
+   "en": "After the credit has been granted, a system only monitors the institution's own credit risks and detects payment difficulties early."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-5-b",
+  "source_ref": "(nach 309)",
+  "official_rationale": {
+   "de": "Es dient allein innerbetrieblichen Aufsichtszwecken nach der Vergabe.",
+   "en": "It serves solely internal supervisory purposes after the credit has been granted."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System entscheidet anhand von Einkommen, Ausgaben und Familiengroesse, ob eine Person ein Stipendium erhalten kann.",
+   "en": "A system decides on the basis of income, expenditure and family size whether a person can receive a scholarship."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-3-a",
+  "source_ref": "(219)",
+  "official_rationale": {
+   "de": "Mit der Entscheidung ueber die Geldhilfe wird der Zugang der Person zu einer Bildungseinrichtung bestimmt.",
+   "en": "The decision on the financial aid determines the person's access to an educational institution."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System berechnet allein Zinssätze und Preise und greift dafür auf Daten aus einer Bewertung der Zahlungsfähigkeit zurück.",
+   "en": "A system solely calculates interest rates and prices, drawing for this purpose on data from a creditworthiness assessment."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-5-b",
+  "source_ref": "(300)",
+  "official_rationale": {
+   "de": "Reine Preisbildung gehört nicht zum Anwendungsfall.",
+   "en": "Pure pricing does not fall within the use case."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System kennzeichnet Fehler oder Widersprüche in abgeschlossener menschlicher Arbeit und übernimmt damit eine Aufgabe der Qualitätssicherung.",
+   "en": "A system flags errors or inconsistencies in completed human work and thereby performs a quality assurance task."
+  },
+  "expected": "exemption_applies",
+  "provision": "",
+  "source_ref": "(96)",
+  "official_rationale": {
+   "de": "Der Text nennt das als Beispiel einer unterstützenden Verbesserungsfunktion nach Artikel 6 Absatz 3 Buchstabe b.",
+   "en": "The text cites this as an example of a supporting improvement function under Article 6(3)(b)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System soll die Gefahr vorhersagen, dass eine bestimmte Person in einem bestimmten Gebiet eine Straftat begeht.",
+   "en": "A system is intended to predict the risk that a particular person will commit a criminal offence in a particular area."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-6-a",
+  "source_ref": "(359)",
+  "official_rationale": {
+   "de": "Ein solches System fiele nicht unter Nummer 6 Buchstabe a, sondern unter Nummer 6 Buchstabe d.",
+   "en": "Such a system would fall not under point 6(a) but under point 6(d)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Chatbot beantwortet Sachfragen eines Sachbearbeiters zum Antrag auf Gesundheitsleistungen, etwa das Alter der Person, und gibt vorhandene Angaben nur geordnet wieder; der Sachbearbeiter muss sie prüfen.",
+   "en": "A chatbot answers a caseworker's factual questions about an application for healthcare services, such as the person's age, and only reproduces the available information in an organised form; the caseworker must check it."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-5-a",
+  "source_ref": "(nach 293)",
+  "official_rationale": {
+   "de": "Der Fall gehört in den Anwendungsfall, ist aber als enge Verfahrensaufgabe nach Artikel 6 Absatz 3 Buchstaben a und d ausgenommen.",
+   "en": "The case falls within the use case, but is exempted as a narrow procedural task under Article 6(3)(a) and (d)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine Internetplattform, über die Verbraucher selbstständige Dienstleister für verschiedene Aufgaben finden, bildet mit einem Abgleichwerkzeug eine Rangfolge der Dienstleister und bestimmt, welche den Verbrauchern gezeigt werden.",
+   "en": "An online platform through which consumers find self-employed service providers for various tasks uses a matching tool to rank the service providers and determine which are shown to consumers."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-4-a",
+  "source_ref": "(254)",
+  "official_rationale": {
+   "de": "Die Ausgabe bestimmt den Zugang zu künftigen Aufträgen und kann über Laufbahn, Lebensunterhalt und Rechte der Selbstständigen entscheiden.",
+   "en": "The output determines access to future assignments and can decide on the careers, livelihoods and rights of the self-employed."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine Aufsichtsperson bemerkt in einer Pruefung im Netz auffaelliges Verhalten und laesst sich den Verdacht von einem System bestaetigen oder verwerfen; das System liefert einen Bericht mit den erkannten Mustern, die Aufsichtsperson entscheidet danach selbst ueber das weitere Vorgehen.",
+   "en": "A proctor notices suspicious behaviour during an online examination and has a system confirm or dismiss the suspicion; the system delivers a report with the detected patterns, and the proctor then decides on the further course of action themselves."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-3-d",
+  "source_ref": "(235)",
+  "official_rationale": {
+   "de": "Das System verbessert das Ergebnis einer bereits abgeschlossenen menschlichen Taetigkeit; Ausnahme nach Artikel 6 Absatz 3 Buchstabe b.",
+   "en": "The system improves the result of a previously completed human activity; exemption under Article 6(3)(b)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine Brandmeldeanlage mit KI-Steuerung in einem Rechenzentrum für Rechenleistung aus dem Netz.",
+   "en": "An AI-controlled fire alarm system in a data centre for cloud computing."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(194)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Ein System, das unberechtigte Zugriffe erkennen hilft, sodass betroffene Kunden gewarnt werden, bevor ihr Kennwort missbraucht wird.",
+   "en": "A system that helps detect unauthorised access so that affected customers are warned before their password is misused."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(187)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Ein System ordnet Personen einfach nach persönlichen Merkmalen wie Alter, Geschlecht und Körpergröße ein.",
+   "en": "A system simply categorises persons according to personal characteristics such as age, sex and height."
+  },
+  "expected": "exemption_applies",
+  "provision": "",
+  "source_ref": "(112)",
+  "official_rationale": {
+   "de": "Eine solche einfache Einordnung führt nicht zwangsläufig zu Profiling; ob eine Bewertung Vorhersagen oder Schlussfolgerungen enthält, hängt vom Zweck der Einordnung ab. Ohne Vorhersage, Einschätzung oder Urteil über persönliche Merkmale liegt kein Profiling vor und der Filter ist nicht gesperrt.",
+   "en": "Such a simple categorisation does not necessarily lead to profiling; whether an assessment involves predictions or inferences depends on the purpose of the categorisation. Without a prediction, evaluation or judgement about personal aspects there is no profiling and the filter is not blocked."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System wertet abgeschlossene Statusakten aus, um Muster oder Abweichungen in der Entscheidungspraxis fuer die Qualitaetssicherung zu erkennen, ohne Ergebnisse fuer laufende Faelle vorzuschlagen.",
+   "en": "A system analyses closed status files in order to detect patterns or deviations in decision-making practice for quality assurance, without proposing outcomes for ongoing cases."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-7-c",
+  "source_ref": "(400)",
+  "official_rationale": {
+   "de": "Es erfuellt die Ausnahme fuer die nachtraegliche Erkennung von Mustern; dafuer muss das System auf die nachtraegliche Erkennung von Mustern oder Abweichungen angelegt sein.",
+   "en": "It meets the exemption for the subsequent detection of patterns; for this, the system must be designed for the subsequent detection of patterns or deviations."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System ordnet Lernende mit besonderem Bildungsbedarf passenden Programmen zu und empfiehlt die geeignete Platzierung samt notwendiger Unterstuetzung, auf Grundlage von Testergebnissen, Rueckmeldungen von Lehrkraeften, psychologischen Berichten und der Krankheitsgeschichte.",
+   "en": "A system assigns learners with special educational needs to suitable programmes and recommends the appropriate placement together with the necessary support, on the basis of test results, teacher feedback, psychological reports and medical history."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-3-c",
+  "source_ref": "(229)",
+  "official_rationale": {
+   "de": "Das System bestimmt die Einstufung und das Mass der Unterstuetzung fuer einzelne Personen.",
+   "en": "The system determines the classification and the level of support for individual persons."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine Stadt oder eine Region weist Kinder automatisch Schulen zu, anhand von Wohnort, Schulbezirk, freien Plaetzen, Geschwisterkindern und Angaben zu den Eltern.",
+   "en": "A city or region automatically allocates children to schools on the basis of place of residence, school district, available places, siblings and information on the parents."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-3-a",
+  "source_ref": "(219)",
+  "official_rationale": {
+   "de": "Weil das System dabei persoenliche Daten bewertet, kann die Ausnahmeregel in Artikel 6 Absatz 3 nicht angewandt werden.",
+   "en": "Because the system evaluates personal data in doing so, the derogation in Article 6(3) cannot be applied."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System bewertet Risiko und Beitrag einer Krankenversicherung und hat zusätzlich eine Funktion zur Betrugsaufdeckung, die kein eigenes System für sich ist.",
+   "en": "A system assesses risk and premium of a health insurance and additionally has a fraud detection function that is not a separate system in its own right."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-c",
+  "source_ref": "(321)",
+  "official_rationale": {
+   "de": "Für die Lebens- und Krankenversicherung gibt es keine Ausnahme für Betrugsaufdeckung.",
+   "en": "For life and health insurance there is no exception for fraud detection."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System zur Überwachung der Netz- und Informationssicherheit in Stromnetzen. Es überwacht fortlaufend den Netzverkehr, erkennt ungewöhnliche Muster und meldet mögliche Angriffe an das Sicherheitspersonal; es arbeitet unabhängig von den Betriebssystemen, die den Stromnetzbetrieb körperlich steuern.",
+   "en": "A system for monitoring network and information security in electricity grids. It continuously monitors network traffic, detects unusual patterns and reports possible attacks to security staff; it operates independently of the operational systems that physically control the operation of the electricity grid."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(206)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Eine Plattform empfiehlt Schuelerinnen und Schuelern anhand ihrer angegebenen Vorlieben und Interessen Studiengaenge und passende Hochschulen.",
+   "en": "A platform recommends degree programmes and suitable higher education institutions to pupils on the basis of their stated preferences and interests."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-3-a",
+  "source_ref": "(219)",
+  "official_rationale": {
+   "de": "Das Ergebnis bestimmt den Zugang nicht, sondern unterstuetzt die Lernenden bei ihrer eigenen Entscheidung, ob sie sich bewerben.",
+   "en": "The output does not determine access, but supports learners in their own decision on whether to apply."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System platziert Stellenanzeigen gezielt bei bestimmten Nutzern sozialer Medien; es sammelt und analysiert Nutzungsmuster und Nutzermerkmale, erhält von den Werbenden Zielkriterien wie Alter, Bildung, Berufserfahrung oder Branche und bestimmt und priorisiert daraufhin mögliche Zielgruppen - über ein blosses Abgleichen von Anforderungen wie Berufszulassung oder Ort hinaus.",
+   "en": "A system places job advertisements in a targeted way with particular social media users; it collects and analyses usage patterns and user characteristics, receives targeting criteria such as age, education, professional experience or sector from the advertisers, and on that basis determines and prioritises possible target groups - going beyond merely matching requirements such as professional licence or location."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-4-a",
+  "source_ref": "(254)",
+  "official_rationale": {
+   "de": "Es bestimmt über gezielte Werbung den Zugang zu Beschäftigungsmöglichkeiten und kann wesentlich beeinflussen, welche Bewerber überhaupt von offenen Stellen erfahren.",
+   "en": "Through targeted advertising it determines access to employment opportunities and can significantly influence which candidates learn of vacancies at all."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System einer Behörde lädt Menschen auf Grundlage von Bevölkerungsgruppen zur Vorsorgeuntersuchung ein, etwa zur Mammographie, und prüft dabei auch den Anspruch darauf.",
+   "en": "A system of a public authority invites people to preventive screening, such as mammography, on the basis of population groups, and in doing so also assesses their eligibility for it."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-a",
+  "source_ref": "(nach 293)",
+  "official_rationale": {
+   "de": "Es prüft den Anspruch auf eine Gesundheitsleistung, auch wenn das über eine Einladung von sich aus geschieht.",
+   "en": "It assesses eligibility for a healthcare service, even if this happens proactively by way of an invitation."
+  }
+ },
+ {
+  "scenario": {
+   "de": "KI-Systeme in vernetzten Haushaltsgeräten wie Thermostaten, Waschmaschinen, Luftreinigern, Kühlschränken und Fernsehgeräten, deren Zweck Komfort, Bequemlichkeit oder Optimierung ist, etwa von Energieverbrauch, Luftgüte, Helligkeit oder Ton.",
+   "en": "AI systems in connected household appliances such as thermostats, washing machines, air purifiers, refrigerators and television sets whose purpose is comfort, convenience or optimisation, for example of energy consumption, air quality, brightness or sound."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-I",
+  "source_ref": "(48)",
+  "official_rationale": {
+   "de": "Die meisten dieser Systeme fallen nicht unter den Begriff des Sicherheitsbauteils, weil ein Ausfall oder Fehlverhalten Gesundheit und Sicherheit voraussichtlich nicht gefährdet, sondern zu Unannehmlichkeit, Unbehagen, falschen Vorschlägen oder schwächerer Leistung führt.",
+   "en": "Most of these systems do not fall under the notion of safety component, because a failure or malfunctioning is not likely to endanger health and safety but rather leads to inconvenience, discomfort, incorrect suggestions or degraded performance."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine Bildungseinrichtung prueft Hausaufgaben und abgegebene Arbeiten gegen eine Sammlung bestehender Texte auf Abschreiben.",
+   "en": "An educational institution checks homework and submitted assignments for plagiarism against a collection of existing texts."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-3-d",
+  "source_ref": "(235)",
+  "official_rationale": {
+   "de": "Es werden abgegebene Arbeiten geprueft, die in unbeaufsichtigter Umgebung entstanden sind; es gibt keine Beobachtung in Echtzeit waehrend einer Pruefung.",
+   "en": "Submitted assignments produced in an unsupervised environment are checked; there is no real-time monitoring during a test."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System platziert Arbeitgeberwerbung, die das Unternehmen als attraktiven Arbeitsplatz darstellt - etwa Unternehmenskultur, Zusatzleistungen oder Entwicklungsmöglichkeiten -, ist an keine konkrete offene Stelle gebunden, ist nicht diskriminierend und optimiert die Platzierung nach Kennzahlen wie Seitenaufrufen, Beteiligungsraten oder allgemeiner Bevölkerungsstruktur.",
+   "en": "A system places employer branding advertising that presents the company as an attractive workplace - for example its corporate culture, benefits or development opportunities -, is not tied to any specific vacancy, is not discriminatory and optimises placement according to metrics such as page views, engagement rates or general demographics."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-4-a",
+  "source_ref": "(254)",
+  "official_rationale": {
+   "de": "Es beschränkt sich auf Arbeitgeberwerbung und betrifft keine bestimmten offenen Stellen.",
+   "en": "It is limited to employer branding and does not concern any specific vacancies."
+  }
+ },
+ {
+  "scenario": {
+   "de": "System der Spielebranche verfolgt Körperhaltung, Gesichtsausdruck, Augenschluss und Blick, um Erregung, Wut, Frust und Belustigung der Spieler zu messen und das Produkt zu verbessern.",
+   "en": "A system in the gaming industry tracks posture, facial expressions, eye closure and gaze in order to measure players' excitement, anger, frustration and amusement and to improve the product."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-1-c",
+  "source_ref": "(177)",
+  "official_rationale": {
+   "de": "Gefühle werden aus Körpermerkmalen erschlossen.",
+   "en": "Emotions are inferred from biometric data."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Dasselbe System erzeugt die notwendigen Qualifikationen und Fähigkeiten selbst aus einer groben Beschreibung der Stelle, oder es bewertet zusätzlich die Lebensläufe der Bewerber an der von ihm erstellten Stellenbeschreibung und empfiehlt daraufhin, wer geeignet ist.",
+   "en": "The same system itself generates the necessary qualifications and skills from a rough description of the job, or it additionally assesses the candidates' CVs against the job description it has created and on that basis recommends who is suitable."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-4-a",
+  "source_ref": "(247)",
+  "official_rationale": {
+   "de": "Es kann das Bewerbungsverfahren wesentlich beeinflussen und fällt deshalb nicht unter die Ausnahmen.",
+   "en": "It can materially influence the recruitment procedure and therefore does not fall under the exemptions."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System ueberwacht Aufnahme- oder Hafteinrichtungen, schaetzt aber nur Auffaelligkeiten der Gesamtlage ein, etwa einen Andrang oder einen ploetzlichen Laermanstieg, ohne Menschen aufzuspueren oder zu verfolgen und ohne personenbezogene Hinweise.",
+   "en": "A system monitors reception or detention facilities but only assesses anomalies in the overall situation, such as crowding or a sudden increase in noise, without detecting or tracking people and without person-related indications."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-7-d",
+  "source_ref": "(403)",
+  "official_rationale": {
+   "de": "Das System faellt nicht unter diesen Fall.",
+   "en": "The system does not fall under this case."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System zur Optimierung des Verkehrsflusses auf Grundlage von Daten, die in Echtzeit gesammelt werden.",
+   "en": "A system for optimising traffic flow on the basis of data collected in real time."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(183)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Ein System prueft eine von einer Lehrkraft erstellte Pruefung auf Grammatikfehler, unklare Formulierungen und Widersprueche zum Bewertungsraster und schlaegt Aenderungen vor.",
+   "en": "A system checks a test created by a teacher for grammatical errors, unclear wording and inconsistencies with the marking scheme and suggests changes."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-3-b",
+  "source_ref": "(225)",
+  "official_rationale": {
+   "de": "Es aendert Inhalt, Schwierigkeit und Lernziel nicht, die Lehrkraft bleibt fuer die Pruefung verantwortlich; es faellt unter die Ausnahme fuer das Verbessern des Ergebnisses einer bereits abgeschlossenen menschlichen Taetigkeit, Artikel 6 Absatz 3 Buchstabe b.",
+   "en": "It does not change the content, difficulty or learning objective, and the teacher remains responsible for the test; it falls under the exemption for improving the result of a previously completed human activity, Article 6(3)(b)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Software, die die Maschinenverordnung (EU) 2023/1230 ausdrücklich in die Begriffsbestimmung der Maschinenprodukte einbezieht und die für eine Konformitätsbewertung durch eine dritte Stelle vorgesehen ist.",
+   "en": "Software that the Machinery Regulation (EU) 2023/1230 expressly includes in the definition of machinery products and that is subject to third-party conformity assessment."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-I",
+  "source_ref": "(30)",
+  "official_rationale": {
+   "de": "Solche Software kann selbst ein geregeltes Produkt nach der Maschinenverordnung sein und ist dann nach Artikel 6 Absatz 1 hochriskant, sofern für sie eine Bewertung durch eine dritte Stelle verlangt ist.",
+   "en": "Such software can itself be a regulated product under the Machinery Regulation and is then high-risk under Article 6(1), provided that a third-party conformity assessment is required for it."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Gesichtserkennung am Stadioneingang, die gesperrte Personen bei der Einlasskontrolle erkennt.",
+   "en": "Facial recognition at a stadium entrance that identifies banned persons during admission control."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-1-a",
+  "source_ref": "(144)",
+  "official_rationale": {
+   "de": "Die Bedingung der Erkennung aus der Ferne fehlt, weil die Personen bewusst vor das Gerät treten müssen, um Einlass zu bekommen.",
+   "en": "The condition of remote identification is missing, because the persons must deliberately step in front of the device to gain admission."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System verarbeitet Sozialleistungsanträge, gleicht sie mit externen Datenbanken ab und erzeugt daraus eine Entscheidung über den Anspruch.",
+   "en": "A system processes social benefit applications, cross-checks them against external databases and generates a decision on eligibility from this."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-a",
+  "source_ref": "(nach 293)",
+  "official_rationale": {
+   "de": "Es prüft den Anspruch und erzeugt die Entscheidung darüber.",
+   "en": "It assesses eligibility and generates the decision on it."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine Einrichtung beobachtet mit Gesichtserkennung, Auswertung des Tastenanschlags und Bildschirmbeobachtung Pruefungsteilnehmer in einer Pruefung zur Zertifizierung und erkennt unerlaubtes Verhalten, etwa den Zugriff auf verbotene Unterlagen oder die Verstaendigung mit anderen Personen.",
+   "en": "An organisation uses facial recognition, keystroke analysis and screen monitoring to monitor candidates in a certification examination and detects prohibited behaviour, such as accessing prohibited materials or communicating with other persons."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-3-d",
+  "source_ref": "(235)",
+  "official_rationale": {
+   "de": "Das System beobachtet und erkennt unerlaubtes Verhalten waehrend einer Pruefung.",
+   "en": "The system monitors and detects prohibited behaviour during a test."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Chatbot zur Vorsortierung in der seelischen Krise bewertet über Textkontakt Schwere und Dringlichkeit, ohne ärztliche Untersuchung oder Diagnose.",
+   "en": "A chatbot for triage in mental health crises assesses severity and urgency via text contact, without medical examination or diagnosis."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-d",
+  "source_ref": "(nach 336)",
+  "official_rationale": {
+   "de": "Es steuert die Reaktion und nimmt eine erste Vorsortierung im Notfall vor.",
+   "en": "It steers the response and carries out an initial emergency triage."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System, das den Straßenverkehr überwacht und die Ampeln entsprechend nachregelt.",
+   "en": "A system that monitors road traffic and adjusts the traffic lights accordingly."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(196)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Das KI-System ist zwar Ausfall-kritisch, aber die Gefährdung von Menschen oder Eigentum ist nur theoretisch denkbar und tritt im Zusammenhang des Produkts nicht ein.",
+   "en": "The AI system is failure-critical, but the endangerment of persons or property is only theoretically conceivable and does not occur in the context of the product."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-I",
+  "source_ref": "(39)",
+  "official_rationale": {
+   "de": "Die Wahrscheinlichkeit eines Ausfalls oder Fehlverhaltens darf nicht nur eine theoretische Möglichkeit sein, sondern muss im Zusammenhang des Produkts zu einer Gefährdung von Personen oder Eigentum führen.",
+   "en": "The likelihood of a failure or malfunctioning must not be merely a theoretical possibility, but must lead to a risk to persons or property in the context of the product."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Der Inhaber einer Rechtsperson wird auf Kreditwürdigkeit geprüft, weil er einen Firmenkredit besichert.",
+   "en": "The owner of a legal person is assessed for creditworthiness because he secures a business loan."
+  },
+  "expected": "not_high_risk",
+  "provision": "",
+  "source_ref": "(74)",
+  "official_rationale": {
+   "de": "Der Inhaber fällt nicht unter Nummer 5 Buchstabe b, obwohl er als natürliche Person handelt, weil der Kredit vorrangig der Firma und nicht der Einzelperson zugutekommt.",
+   "en": "The owner does not fall under point 5(b), even though he acts as a natural person, because the loan primarily benefits the company and not the individual."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System soll bei der Einstellung von Beschäftigten eingesetzt werden. Es erkennt Abweichungen von früheren Entscheidungsmustern bei der Einstellung, bevor die Einstellung abgeschlossen ist, um mögliche Unstimmigkeiten und Abweichungen von den Einstellungsregeln des Unternehmens zu erkennen, und bewertet dabei die persönlichen Merkmale der Personen, die die Bewerbungsgespräche führen.",
+   "en": "A system is intended to be used in the recruitment of employees. It detects deviations from previous decision-making patterns in recruitment before the recruitment is completed, in order to detect possible inconsistencies and deviations from the company's recruitment rules, and in doing so evaluates the personal characteristics of the persons conducting the job interviews."
+  },
+  "expected": "high_risk",
+  "provision": "",
+  "source_ref": "(112)",
+  "official_rationale": {
+   "de": "Die Bewertung der Entscheidungen der Gesprächsführenden und ihrer persönlichen Merkmale zur Untersuchung möglicher Abweichungen von früheren Entscheidungsmustern ist Profiling. Die Verwendung könnte unter Artikel 6 Absatz 3 Buchstabe c fallen, aber weil das System personenbezogene Daten verarbeitet, um die Gesprächsführenden zu profilieren, ist der Filter nicht anwendbar.",
+   "en": "The evaluation of the interviewers' decisions and their personal characteristics to examine possible deviations from previous decision-making patterns is profiling. The use could fall under Article 6(3)(c), but because the system processes personal data to profile the interviewers, the filter is not applicable."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System versendet persönlich zugeschnittene Eingangsbestätigungen per E-Mail mit Namen und Anrede der Person, die sich beworben hat.",
+   "en": "A system sends personalised acknowledgements of receipt by e-mail with the name and form of address of the person who has applied."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-4-a",
+  "source_ref": "(254)",
+  "official_rationale": {
+   "de": "Es beeinflusst die Aussicht auf Auswahl in keiner Weise; enge Verfahrensaufgabe nach Artikel 6 Absatz 3 Buchstabe a.",
+   "en": "It does not influence the prospects of selection in any way; narrow procedural task under Article 6(3)(a)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System wertet Daten aus, um anhand des Akteninhalts Begleitangaben herauszuziehen, etwa die Verfahrensrollen aus der Klage, also Parteien, Rechtsvertreter, Zeugen und Sachverstaendige, um Bueroarbeiten wie Ladungen zu unterstuetzen.",
+   "en": "A system analyses data in order to extract metadata from the content of the case file, such as the procedural roles from the claim, i.e. parties, legal representatives, witnesses and experts, in order to support clerical work such as summonses."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-8-a",
+  "source_ref": "(423)",
+  "official_rationale": {
+   "de": "Im Regelfall gilt das nicht als Unterstuetzung beim Ermitteln und Auslegen von Tatsachen und Recht; selbst wenn einzelne Funktionen dazu fuehren wuerden, greift jedenfalls die Ausnahme fuer eine eng begrenzte Verfahrensaufgabe.",
+   "en": "As a rule, this is not considered assistance in researching and interpreting facts and the law; even if individual functions were to lead to that, the exemption for a narrowly defined procedural task applies in any case."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System durchsucht elektronische Geraete in grossem Umfang, um Begleitdaten zum Reiseweg eines Menschen herauszuziehen, und gibt alle Standortdaten sachlich aus, ohne eine Angabe gegenueber einer anderen zu bevorzugen.",
+   "en": "A system searches electronic devices on a large scale to extract metadata on a person's travel route and outputs all location data objectively, without favouring one item of information over another."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-7-c",
+  "source_ref": "(400)",
+  "official_rationale": {
+   "de": "Das kann als vorbereitende Aufgabe gelten.",
+   "en": "This can count as a preparatory task."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System zur Störungserkennung zur vorsorglichen Vermeidung von Ausfällen. Es erkennt Abweichungen, sagt drohende Ausfälle voraus und warnt die Netzleitstelle, die dann vorsorglich Lasten umschalten kann.",
+   "en": "A system for fault detection for the preventive avoidance of outages. It detects deviations, predicts impending outages and warns the grid control centre, which can then preventively switch loads."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(206)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Ein System prueft Bewerbungen, Zeugnisse und Testergebnisse und bestimmt daraus, wer an der Einrichtung aufgenommen werden kann.",
+   "en": "A system checks applications, certificates and test results and determines from them who can be admitted to the institution."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-3-a",
+  "source_ref": "(219)",
+  "official_rationale": {
+   "de": "Das Ergebnis wirkt sich unmittelbar auf das Recht aus, an dieser Einrichtung zu lernen, sich auszubilden oder sich einzuschreiben, weil die Bewertung und die Empfehlung den Ausgang der Aufnahmeentscheidung bestimmen koennen.",
+   "en": "The output directly affects the right to study, train or enrol at that institution, because the assessment and the recommendation can determine the outcome of the admission decision."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System fasst Arztberichte zusammen, die Grundlage der Entscheidung über Gesundheitsleistungen sind; der Sachbearbeiter muss die Berichte selbst durchsehen.",
+   "en": "A system summarises medical reports that form the basis of the decision on healthcare services; the caseworker must review the reports themselves."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-5-a",
+  "source_ref": "(nach 293)",
+  "official_rationale": {
+   "de": "Der Fall gehört in den Anwendungsfall, ist aber als enge Verfahrensaufgabe nach Artikel 6 Absatz 3 Buchstaben a und d ausgenommen.",
+   "en": "The case falls within the use case, but is exempted as a narrow procedural task under Article 6(3)(a) and (d)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Körperkameras von Polizeikräften erkennen selbsttätig Verhaltensmuster und melden eine aggressive Körperhaltung anhand von Gangart, Haltung, Bewegung und Gesichtsauswertung, um einzuschätzen, ob eine Person in eine Auseinandersetzung geraten wird.",
+   "en": "Body cameras of police officers automatically detect behavioural patterns and flag an aggressive posture on the basis of gait, stance, movement and facial analysis in order to assess whether a person will become involved in a confrontation."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-1-c",
+  "source_ref": "(177)",
+  "official_rationale": {
+   "de": "Körperliche Anzeichen werden ausgelegt, um den Gefühlszustand Wut zu erschliessen.",
+   "en": "Physical signals are interpreted in order to infer the emotional state of anger."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System bewertet oder ordnet Migranten ueber einen Zeitraum hinweg nach koerperlichen Reaktionen, Verhalten einschliesslich der Taetigkeit im Netz oder anderen persoenlichen Daten, um daraus einen allgemeinen Wert fuer Vertrauenswuerdigkeit oder Gefahr zu bilden, besonders wenn das ueber verschiedene Lebensbereiche hinweg geschieht oder zu Nachteilen fuehrt.",
+   "en": "A system evaluates or classifies migrants over a period of time according to physical reactions, behaviour including online activity, or other personal data in order to derive a general score of trustworthiness or risk, especially where this happens across different areas of life or leads to detrimental treatment."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-7-preliminary",
+  "source_ref": "(384)",
+  "official_rationale": {
+   "de": "Ein solches System kann eine nach Artikel 5 Absatz 1 Buchstabe c verbotene soziale Bewertung sein; Anbieter und Betreiber muessen sicherstellen, dass der Einsatz nicht darauf hinauslaeuft.",
+   "en": "Such a system can constitute social scoring prohibited under Article 5(1)(c); providers and deployers must ensure that its use does not amount to this."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System soll früher abgeschlossene Prüfungen der Anspruchsberechtigung durch Bedienstete einer öffentlichen Verwaltung auswerten, um Entscheidungsmuster oder Abweichungen für Qualitätssicherung und Berichtswesen zu erkennen, ohne Ergebnisse für laufende Fälle vorzuschlagen und ohne die Leistung der Beschäftigten zu bewerten, etwa im Rahmen der jährlichen Beurteilung.",
+   "en": "A system is intended to analyse eligibility assessments previously completed by staff of a public administration in order to detect decision-making patterns or deviations for quality assurance and reporting, without proposing outcomes for ongoing cases and without evaluating the performance of the staff, for example in the context of the annual appraisal."
+  },
+  "expected": "exemption_applies",
+  "provision": "",
+  "source_ref": "(102)",
+  "official_rationale": {
+   "de": "Wird das System erst eingesetzt, nachdem die Bediensteten ihre Beurteilungen getroffen haben, kann es für die Ausnahme nach Artikel 6 Absatz 3 Buchstabe c in Betracht kommen und ist kein Profiling. Der Vergleich erlaubt dem Bediensteten, vom System erkannte Abweichungen von früheren Entscheidungsmustern in ähnlichen Fällen zu sehen, samt allen Punkten und Nachweisen, die bei der ersten Beurteilung berücksichtigt wurden; der Beurteiler oder eine Qualitätssicherung entscheidet nach ordentlicher menschlicher Nachprüfung, ob die erkannten Abweichungen für die abgeschlossene Beurteilung erheblich sind.",
+   "en": "If the system is only used after the staff have made their assessments, it may qualify for the exemption under Article 6(3)(c) and is not profiling. The comparison allows the staff member to see deviations from previous decision-making patterns in similar cases detected by the system, together with all points and evidence taken into account in the initial assessment; the assessor or a quality assurance function decides, after proper human review, whether the detected deviations are material to the completed assessment."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System wandelt von Menschen geprüften Inhalt für die Zusammenarbeit zwischen Systemen oder für die Zugänglichkeit um.",
+   "en": "A system converts human-reviewed content for interoperability between systems or for accessibility."
+  },
+  "expected": "exemption_applies",
+  "provision": "",
+  "source_ref": "(96)",
+  "official_rationale": {
+   "de": "Das System formt die menschliche Ausgabe um, ersetzt sie aber nicht; der Text nennt es als Beispiel einer unterstützenden Verbesserungsfunktion nach Artikel 6 Absatz 3 Buchstabe b.",
+   "en": "The system reshapes the human output but does not replace it; the text cites it as an example of a supporting improvement function under Article 6(3)(b)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine Beratungsgesellschaft verbessert mit einem Schreibhilfssystem die Beförderungsberichte der Führungskräfte, nachdem die Bewertungen vollständig abgeschlossen sind; die Führungskräfte entscheiden über die Empfehlungen, verfassen die Begründungen und setzen die Bewertungen nach den Unternehmenskriterien selbst, bevor das System die Sprache klarer macht, die Einheitlichkeit mit dem Hausstil sichert und möglicherweise voreingenommene Formulierungen markiert; am Ende muss die Führungskraft die überarbeiteten Bewertungen nach interner Vorgabe noch einmal prüfen. Das System ändert keine Ergebnisse oder Bewertungen und erzeugt keine neuen Inhalte.",
+   "en": "A consultancy uses a writing assistance system to improve managers' promotion reports after the assessments have been fully completed; the managers decide on the recommendations, write the justifications and set the ratings themselves according to the company criteria before the system makes the language clearer, ensures consistency with the house style and flags potentially biased wording; at the end, the manager must review the revised assessments once more in accordance with internal rules. The system does not change any outcomes or ratings and does not generate new content."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-4-b",
+  "source_ref": "(278)",
+  "official_rationale": {
+   "de": "Das System betrifft Beförderungsentscheidungen, beeinflusst aber die Entscheidungsfindung nicht; es fällt unter die Ausnahme für Systeme, die das Ergebnis einer bereits abgeschlossenen menschlichen Tätigkeit verbessern sollen, nach Artikel 6 Absatz 3 Buchstabe b.",
+   "en": "The system concerns promotion decisions but does not influence the decision-making; it falls under the exemption for systems intended to improve the result of a previously completed human activity under Article 6(3)(b)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System erkennt ausschließlich nicht inklusive oder diskriminierende Formulierungen in Anzeigentexten; die Erkennungslogik beruht auf Mustern und Begriffen, die Menschen festgelegt und geprüft haben, und das System markiert mögliche problematische Wendungen.",
+   "en": "A system exclusively detects non-inclusive or discriminatory wording in job advertisement texts; the detection logic is based on patterns and terms defined and reviewed by humans, and the system flags potentially problematic phrases."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-4-a",
+  "source_ref": "(254)",
+  "official_rationale": {
+   "de": "Es ist nicht dazu bestimmt, Menschen zu gewinnen oder auszuwählen, auch wenn es im weiten Beschäftigungsbereich arbeitet.",
+   "en": "It is not intended for recruiting or selecting people, even though it operates in the broad field of employment."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System wird genutzt, nachdem der Richter die Entscheidung entworfen hat, und vergleicht den Entwurf mit der Fallakte, um Tatsachenfragen oder Punkte zu bestimmen, die der Entwurf offenbar nicht behandelt.",
+   "en": "A system is used after the judge has drafted the decision and compares the draft with the case file in order to identify factual issues or points that the draft apparently does not address."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-8-a",
+  "source_ref": "(423)",
+  "official_rationale": {
+   "de": "Dabei kann eine Auslegung des Tatsachenstoffs vorkommen; nimmt das System aber nur eine Vollstaendigkeitspruefung vor, bewertet es keine Glaubwuerdigkeit, bestimmt es nicht, was geschehen ist, schlaegt es keine Antwort auf eine Tatsachenfrage vor und beeinflusst es die richterliche Feststellung der Tatsachen nicht wesentlich, so verbessert es das Ergebnis einer bereits abgeschlossenen menschlichen Taetigkeit.",
+   "en": "This may involve an interpretation of the facts; but if the system only performs a completeness check, does not assess credibility, does not determine what happened, does not propose an answer to a factual question and does not materially influence the judicial finding of facts, it improves the result of a previously completed human activity."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System in einer Notaufnahme sortiert Patienten nach Vorrang, ohne ärztliche Untersuchung oder Diagnose.",
+   "en": "A system in an emergency department sorts patients by priority, without medical examination or diagnosis."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-d",
+  "source_ref": "(nach 336)",
+  "official_rationale": {
+   "de": "Es bestimmt die Reihenfolge beim Ingangsetzen der Vorsortierung von Notfallpatienten.",
+   "en": "It determines the order in which emergency patient triage is initiated."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Derselbe Grenzautomat gleicht die aufgenommenen Körpermerkmale zusätzlich mit einer Sammlung von Straftätern ab.",
+   "en": "The same automated border gate additionally compares the captured biometric data against a database of offenders."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-1-a",
+  "source_ref": "(136)",
+  "official_rationale": {
+   "de": "Neben der Bestätigung tritt ein Abgleich mit einer Sammlung zur Feststellung der Identität.",
+   "en": "In addition to the verification, a comparison against a database for the purpose of establishing identity takes place."
+  }
+ },
+ {
+  "scenario": {
+   "de": "System im Fahrzeug verfolgt Körperhaltung, Gesichtsausdruck, Augenschluss und Blick, um zu erkennen, wenn der Fahrer die Aufmerksamkeit verliert, einschläft oder ein plötzliches gesundheitliches Problem hat, und bringt das Fahrzeug sicher zum Stehen.",
+   "en": "An in-vehicle system tracks posture, facial expressions, eye closure and gaze in order to detect when the driver loses attention, falls asleep or has a sudden health problem, and brings the vehicle safely to a stop."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-1-c",
+  "source_ref": "(177)",
+  "official_rationale": {
+   "de": "Schmerz und Müdigkeit sind körperliche Zustände und gehören nicht zu Gefühlen oder Absichten.",
+   "en": "Pain and fatigue are physical states and do not belong to emotions or intentions."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System, das beim Betrieb von Stromnetzen Abweichungen in Datenmustern erkennt, um kritische Funktionen zu überwachen und Entscheidungen dazu zu unterstützen, etwa die Verteilung der Last, die Netzstabilität oder Abschaltverfahren.",
+   "en": "A system that detects deviations in data patterns in the operation of electricity grids in order to monitor critical functions and support decisions on them, such as load distribution, grid stability or shutdown procedures."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(206)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Ein System soll Daten bewerten, die für eine Entscheidung erheblich sind, zum Beispiel über öffentliche Leistungen, und liefert dem menschlichen Bearbeiter Hinweise auf die einschlägigen Rechtsvorschriften, Angaben zur Zuständigkeit und möglicherweise bestehende interne Leitlinien, die für den Entscheidungsvorgang erheblich sind.",
+   "en": "A system is intended to evaluate data that are relevant to a decision, for example on public benefits, and provides the human caseworker with references to the relevant legal provisions, information on competence and any internal guidelines that may exist and are relevant to the decision-making process."
+  },
+  "expected": "exemption_applies",
+  "provision": "",
+  "source_ref": "(108)",
+  "official_rationale": {
+   "de": "Die Aufgaben können als vorbereitend im Sinne des Artikels 6 Absatz 3 Buchstabe d gelten, weil sie den konkreten Fall weder untersuchen noch bewerten und keine Ausgabe erzeugen, die die Entscheidung wesentlich beeinflusst; das System verweist auf allgemeine Angaben als ergänzende Information für den menschlichen Beurteiler.",
+   "en": "The tasks can be considered preparatory within the meaning of Article 6(3)(d), because they neither examine nor assess the specific case and do not generate any output that materially influences the decision; the system refers to general information as supplementary information for the human assessor."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System unterstützt die Einarbeitung neuer Mitarbeiter mit persönlich zugeschnittenen Hinweisen zu Unternehmensregeln und Schulungsplänen und beantwortet häufige Fragen.",
+   "en": "A system supports the onboarding of new employees with personalised guidance on company rules and training plans and answers frequently asked questions."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-4-a",
+  "source_ref": "(254)",
+  "official_rationale": {
+   "de": "Es unterstützt interne Personalabläufe nach der Einstellung und beeinflusst weder Gewinnung oder Auswahl noch in irgendeiner Weise den Zugang zur Arbeit; es kann jedoch unter Nummer 4 Buchstabe b fallen, wenn es die Bedingungen des Arbeitsverhältnisses betrifft, in Leistungsbewertungen einfließt oder Mitarbeiter überwacht.",
+   "en": "It supports internal HR processes after recruitment and influences neither recruitment or selection nor access to work in any way; however, it can fall under point 4(b) if it concerns the terms of the work-related relationship, feeds into performance evaluations or monitors employees."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System hört während des Gesprächs mit, schreibt mit und vergleicht mit früheren Notrufen, um dem Mitarbeiter Anzeichen lebensbedrohlicher Lagen anzuzeigen.",
+   "en": "A system listens in during the call, transcribes it and compares it with previous emergency calls in order to show the operator signs of life-threatening situations."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-d",
+  "source_ref": "(nach 336)",
+  "official_rationale": {
+   "de": "Es bewertet den Anruf und hilft, ihn nach Schwere einzustufen.",
+   "en": "It evaluates the call and helps to classify it by severity."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine Wirtschaftspruefungsgesellschaft setzt ein System zur Erkennung von Geldwaesche ein, um ihre Pflichten aus dem Geldwaescherecht der Europaeischen Union zu erfuellen.",
+   "en": "An audit firm uses a system to detect money laundering in order to fulfil its obligations under the anti-money laundering law of the European Union."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-6-preliminary",
+  "source_ref": "(81)",
+  "official_rationale": {
+   "de": "Die Gesellschaft handelt nicht im Namen von Strafverfolgungsbehoerden, sondern auf eigene Rechnung, weshalb das System im Bereich der Strafverfolgung nach Nummer 6 nicht als hochriskant eingeordnet wird.",
+   "en": "The firm does not act on behalf of law enforcement authorities but on its own account, which is why the system is not classified as high-risk in the area of law enforcement under point 6."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System entscheidet im Einzelfall über Arbeitslosengeld, prüft wer wie lange und in welcher Höhe Anspruch hat und empfiehlt das dem Sachbearbeiter.",
+   "en": "A system decides in the individual case on unemployment benefit, assesses who is entitled, for how long and in what amount, and recommends this to the caseworker."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-a",
+  "source_ref": "(nach 293)",
+  "official_rationale": {
+   "de": "Es prüft den Anspruch und empfiehlt Gewähren oder Ablehnen.",
+   "en": "It assesses eligibility and recommends granting or refusal."
+  }
+ },
+ {
+  "scenario": {
+   "de": "System im Callcenter wertet Tonlage, Tonhöhe und Lautstärke der Kundenstimme aus, um Zufriedenheit zu messen, Wut zu erkennen und an einen Menschen weiterzuleiten.",
+   "en": "A call centre system analyses the tone, pitch and volume of the customer's voice in order to measure satisfaction, detect anger and transfer the call to a human."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-1-c",
+  "source_ref": "(177)",
+  "official_rationale": {
+   "de": "Aus der Stimme werden Gefühle abgeleitet; dass der Kunde nicht erkannt werden soll, ändert nichts.",
+   "en": "Emotions are inferred from the voice; the fact that the customer is not to be identified changes nothing."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Fernsehsender zählt mit einem Gerät, wie oft seine Nachrichtensprecher in die Kamera lächeln.",
+   "en": "A television broadcaster uses a device to count how often its newsreaders smile into the camera."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-1-c",
+  "source_ref": "(177)",
+  "official_rationale": {
+   "de": "Blosse Beobachtung eines offen sichtbaren Ausdrucks ohne Ableitung von Gefühlen.",
+   "en": "Mere detection of a readily apparent expression without inferring emotions."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System empfiehlt Lernenden selbst, welche Kurse, Programme oder Abschluesse sie im naechsten Jahr anstreben koennten, auf Grundlage ihrer eigenen Angaben zu Interessen und Berufszielen.",
+   "en": "A system itself recommends to learners which courses, programmes or qualifications they could pursue in the following year, on the basis of their own information on interests and career goals."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-3-c",
+  "source_ref": "(229)",
+  "official_rationale": {
+   "de": "Es wird nicht von einer Bildungseinrichtung eingesetzt, sondern hilft den Lernenden nur, ihren Bildungsweg selbst zu entscheiden.",
+   "en": "It is not used by an educational institution, but only helps learners to decide on their educational path themselves."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System im Bereich Migration, Grenzkontrolle und Grenzverwaltung durchsucht jede eingereichte Visumsakte, wandelt eingelesene Dokumente in Text zum Verzeichnen um, legt Bestandteile selbsttätig in feste, vorab bestimmte Ordner wie Ausweispapiere, Reiseverlauf, Nachweise und Übersetzungen ab und erkennt vollständig gleiche Doppelanlagen und kennzeichnet sie als Doppel.",
+   "en": "A system in the area of migration, border control and border management searches every submitted visa file, converts scanned documents into text for indexing, automatically files components into fixed, predefined folders such as identity documents, travel history, supporting evidence and translations, and detects exact duplicate attachments and flags them as duplicates."
+  },
+  "expected": "exemption_applies",
+  "provision": "",
+  "source_ref": "(93)",
+  "official_rationale": {
+   "de": "Solche engen Verfahrensaufgaben können den Filter nutzen, sofern das System keine Rangfolge bildet, die Dokumente bewertet, aussortiert oder verbirgt, kein Material als nützlich oder weniger nützlich kennzeichnet und keine nächsten Schritte oder Einschätzungen der Glaubwürdigkeit vorschlägt.",
+   "en": "Such narrow procedural tasks can make use of the filter, provided that the system does not create a ranking, does not assess, filter out or hide the documents, does not mark any material as useful or less useful and does not propose next steps or credibility assessments."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System prüft Berufszulassungen von Bewerbern gegen amtliche Register, etwa die vom Bewerber angegebene Kammermitgliedsnummer gegen die Register der Kammern; die Ausgabe ist tatsächlich und lautet bestätigt oder nicht bestätigt, Auffälligkeiten gehen zur Nachprüfung an die Personalabteilung oder die Rechtsabteilung.",
+   "en": "A system checks candidates' professional licences against official registers, for example the chamber membership number stated by the candidate against the registers of the chambers; the output is factual and reads confirmed or not confirmed, and anomalies go to the HR department or the legal department for review."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-4-a",
+  "source_ref": "(254)",
+  "official_rationale": {
+   "de": "Es fällt in den Anwendungsfall, prägt aber die Auswahl über die tatsächliche Bestätigung hinaus nicht wesentlich und erfüllt eine klar umschriebene, begrenzte Funktion; es ist deshalb eine enge Verfahrensaufgabe nach Artikel 6 Absatz 3 Buchstabe a.",
+   "en": "It falls within the use case, but does not materially shape the selection beyond the factual confirmation and fulfils a clearly defined, limited function; it is therefore a narrow procedural task under Article 6(3)(a)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System stabilisiert, entrauscht oder verbessert Videobilder, ohne Menschen aufzuspueren, zu erkennen oder zu bestimmen und ohne Hinweise fuer ein Handeln im Einsatz zu erzeugen.",
+   "en": "A system stabilises, denoises or enhances video images, without detecting, recognising or identifying people and without generating indications for operational action."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-7-d",
+  "source_ref": "(403)",
+  "official_rationale": {
+   "de": "Es fällt unter die Ausnahme fuer Systeme mit vorbereitender Aufgabe.",
+   "en": "It falls under the exemption for systems performing a preparatory task."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System prueft im Nachhinein die Entscheidungen eines Zulassungsausschusses, um die Qualitaet des Verfahrens zu kontrollieren.",
+   "en": "A system reviews the decisions of an admissions committee retrospectively in order to check the quality of the procedure."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-3-a",
+  "source_ref": "(219)",
+  "official_rationale": {
+   "de": "Es soll Entscheidungsmuster und Abweichungen erkennen und nicht die abgeschlossene menschliche Bewertung ersetzen oder beeinflussen; es faellt unter die Ausnahme in Artikel 6 Absatz 3 Buchstabe c.",
+   "en": "It is intended to detect decision-making patterns and deviations and not to replace or influence the completed human assessment; it falls under the exemption in Article 6(3)(c)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein KI-System ist Sicherheitsbauteil eines Produkts nach Anhang I der Maschinenverordnung oder selbst ein solches Produkt, nach Artikel 25 Absatz 2 und Absatz 3 jener Verordnung.",
+   "en": "An AI system is a safety component of a product under Annex I to the Machinery Regulation or is itself such a product, in accordance with Article 25(2) and (3) of that Regulation."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-I",
+  "source_ref": "(59)",
+  "official_rationale": {
+   "de": "Der Text stuft diese KI-Systeme ebenso wie die der Spielzeugverordnung nach Artikel 6 Absatz 1 als hochriskant ein.",
+   "en": "The text classifies these AI systems, like those under the Toy Safety Regulation, as high-risk under Article 6(1)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Kameras in Wand und Decke eines Stadions; nach einem Vorfall werden die aufgenommenen Gesichtsbilder mit einer Sammlung abgeglichen, um Täter festzustellen, ohne dass die Besucher mitmachen.",
+   "en": "Cameras in the walls and ceiling of a stadium; after an incident, the captured facial images are compared against a database in order to identify perpetrators, without the active involvement of the visitors."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-1-a",
+  "source_ref": "(144)",
+  "official_rationale": {
+   "de": "Feststellung der Identität durch Abgleich mit einer Sammlung, ohne bewusstes Mitmachen.",
+   "en": "Establishing identity by comparison against a database, without deliberate active involvement."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine Sprachlern-Anwendung gibt Lernenden sofortige Rueckmeldung und korrigiert erkannte Fehler; sie fuehrt zu keinem Zeugnis, keiner Bescheinigung und keiner anerkannten Form der Anerkennung und wird von Lernenden aus eigenem Antrieb genutzt, ohne dass eine Einrichtung das verlangt.",
+   "en": "A language learning application gives learners immediate feedback and corrects detected errors; it does not lead to a certificate, an attestation or any recognised form of recognition and is used by learners on their own initiative, without any institution requiring it."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-3-b",
+  "source_ref": "(225)",
+  "official_rationale": {
+   "de": "Sie dient nicht formalem und beilaeufigem Lernen aus eigenem Antrieb und fuehrt zu keiner anerkannten Qualifikation.",
+   "en": "It serves non-formal and informal self-directed learning and does not lead to a recognised qualification."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System erkennt Muster von Papierfaelschungen, und diese Muster werden spaeter auf namentlich bekannte Menschen angewandt, um sie vorzusortieren.",
+   "en": "A system detects patterns of document fraud, and these patterns are later applied to named, known individuals in order to pre-sort them."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-7-d",
+  "source_ref": "(403)",
+  "official_rationale": {
+   "de": "Dann fällt das System unter diesen Fall, weil es eine Gefahreneinschaetzung auf Personenebene vornimmt.",
+   "en": "In that case the system falls under this case, because it carries out a risk assessment at the level of individual persons."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System der Zollbehörden bewertet das Risiko, dass in die Europäische Union eingehende Waren dem an der Grenze anwendbaren Recht nicht entsprechen, auf Grundlage von Angaben zu den Wirtschaftsbeteiligten der Waren, etwa Behälternummer, Warenbeschreibung, Streckenführung, Transport und Zahlungsweise.",
+   "en": "A customs authority system assesses the risk that goods entering the European Union do not comply with the law applicable at the border, on the basis of information on the economic operators of the goods, such as container number, description of goods, routing, transport and method of payment."
+  },
+  "expected": "exemption_applies",
+  "provision": "",
+  "source_ref": "(111)",
+  "official_rationale": {
+   "de": "Die Verarbeitung bewertet keine persönlichen Aspekte einer natürlichen Person, sondern das Risiko nicht vorschriftsmäßiger Sendungen; eine solche Bewertung ist deshalb kein Profiling und sperrt den Filter nicht.",
+   "en": "The processing does not evaluate personal aspects of a natural person but the risk of non-compliant consignments; such an assessment is therefore not profiling and does not block the filter."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System liest Korrektur oder verbessert den Stil von Entscheidungen oder Urteilen, die Richter verfasst haben, ohne den Inhalt zu aendern.",
+   "en": "A system proofreads or improves the style of decisions or judgments drafted by judges, without changing the content."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-8-a",
+  "source_ref": "(423)",
+  "official_rationale": {
+   "de": "Es ist zweifelhaft, ob darin ueberhaupt eine Unterstuetzung beim Anwenden des Rechts liegt, weil der Grad der Unterstuetzung sehr gering erscheint; jedenfalls greift die Ausnahme fuer Systeme, die das Ergebnis einer bereits abgeschlossenen menschlichen Taetigkeit verbessern.",
+   "en": "It is doubtful whether this constitutes assistance in applying the law at all, because the degree of assistance appears very low; in any case the exemption for systems that improve the result of a previously completed human activity applies."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Das Produkt fällt nicht unter eine der in Anhang I genannten Rechtsvorschriften.",
+   "en": "The product does not fall under any of the legislation listed in Annex I."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-I",
+  "source_ref": "(26)",
+  "official_rationale": {
+   "de": "Artikel 6 Absatz 1 erweitert das Produktrecht nicht auf neue oder weitere Produkte, die diesem Recht nicht schon unterliegen, und die Liste der Rechtsvorschriften in Anhang I ist abschließend.",
+   "en": "Article 6(1) does not extend product legislation to new or additional products that are not already subject to that legislation, and the list of legislation in Annex I is exhaustive."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine Einrichtung wertet mit einem System aus, welche Empfehlungen Ausbilder Auszubildenden fuer weiterfuehrende Kurse gegeben haben, und erhaelt Vorschlaege, wie sie dabei kuenftig vorgehen koennte.",
+   "en": "An institution uses a system to analyse which recommendations trainers have given to trainees for further courses, and receives suggestions on how it could proceed in this respect in future."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-3-c",
+  "source_ref": "(229)",
+  "official_rationale": {
+   "de": "Das Ergebnis verbessert das Vorgehen der Einrichtung, trifft aber keine Entscheidung ueber Einstufung oder Moeglichkeiten der Auszubildenden; Ausnahme nach Artikel 6 Absatz 3 Buchstabe b.",
+   "en": "The output improves the institution's approach but takes no decision on the classification or opportunities of the trainees; exemption under Article 6(3)(b)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System benennt Menschen mit Bedarf an Vorsorge, prüft aber keinen Anspruch, und sein Ergebnis wird nicht zur Priorisierung oder zum Ausschluss genutzt.",
+   "en": "A system identifies people in need of preventive care but does not assess any eligibility, and its output is not used for prioritisation or exclusion."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-5-a",
+  "source_ref": "(nach 293)",
+  "official_rationale": {
+   "de": "Es bestimmt keinen Anspruch der benannten Menschen.",
+   "en": "It does not determine any entitlement of the persons identified."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Industrieunternehmen sammelt mit einem System die monatlichen Anwesenheitsdaten der Beschäftigten automatisch aus der Zeiterfassungsanwendung, ordnet sie in gegliederte Berichte und Übersichten und schickt diese zu einem festen Termin an die Führungskräfte; es überwacht die Anwesenheit nicht, erzeugt keine Leistungswerte, gibt keine Empfehlungen und markiert keine Beschäftigten, sondern fasst nur die Angaben zusammen, die die Beschäftigten selbst in der Zeiterfassung eingetragen haben. Die Führungskräfte nehmen ihre inhaltlichen Bewertungen weiterhin selbst vor.",
+   "en": "An industrial company uses a system to automatically collect employees' monthly attendance data from the time recording application, organises them into structured reports and overviews and sends these to managers on a fixed date; it does not monitor attendance, does not generate performance scores, does not give recommendations and does not flag any employees, but only aggregates the information that employees have themselves entered in the time recording system. The managers continue to carry out their substantive assessments themselves."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-4-b",
+  "source_ref": "(278)",
+  "official_rationale": {
+   "de": "Das System fällt in den Anwendungsfall, überwacht aber nicht und trifft keine bewertenden Urteile; es fällt unter die Ausnahme für vorbereitende Aufgaben nach Artikel 6 Absatz 3 Buchstabe d.",
+   "en": "The system falls within the use case but does not monitor and makes no evaluative judgements; it falls under the exemption for preparatory tasks under Article 6(3)(d)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System durchsucht Anträge auf Krankengeld nach Unstimmigkeiten und Betrugshinweisen und markiert einzelne zur Prüfung durch einen Sachbearbeiter.",
+   "en": "A system searches sickness benefit applications for inconsistencies and indications of fraud and flags individual applications for review by a caseworker."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-a",
+  "source_ref": "(nach 293)",
+  "official_rationale": {
+   "de": "Die Markierung entscheidet über genauere Prüfung, Verzögerung, Aussetzung oder möglicherweise Ablehnung und wirkt damit auf den Zugang.",
+   "en": "The flag decides on closer review, delay, suspension or possibly refusal and thus affects access."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Gesichts- und Stimmerkennung, die ausgewählte Personen in Rundfunkarchiven aufspürt, indem der Inhalt mit einer Sammlung abgeglichen wird, ohne dass die Personen mitmachen.",
+   "en": "Facial and voice recognition that locates selected persons in broadcasting archives by comparing the content against a database, without the active involvement of the persons."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-1-a",
+  "source_ref": "(144)",
+  "official_rationale": {
+   "de": "Feststellung der Identität durch Abgleich mit einer Sammlung ohne Mitmachen der Betroffenen.",
+   "en": "Establishing identity by comparison against a database without the active involvement of the persons concerned."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine Anwaltskanzlei verteilt mit einem System die Arbeitslast unter den angestellten Anwälten; es verarbeitet Daten zu abgerechneten Stunden, Bearbeitungszeiten früherer Mandate, Reaktionsbereitschaft auf E-Mails und freiwilliger Teilnahme an Kanzleiaktivitäten wie Schulungen oder Mandantengewinnung und fasst diese Verhaltensdaten zu einem Wert zusammen, der die Grundlage für die Zuweisung von Mandaten bildet.",
+   "en": "A law firm uses a system to distribute the workload among its employed lawyers; it processes data on billed hours, processing times of previous mandates, responsiveness to e-mails and voluntary participation in firm activities such as training or client acquisition, and aggregates these behavioural data into a score that forms the basis for allocating mandates."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-4-b",
+  "source_ref": "(278)",
+  "official_rationale": {
+   "de": "Das System weist Aufgaben anhand des individuellen Verhaltens zu und berührt damit wesentlich sowohl die gegenwärtigen Arbeitsbedingungen als auch die langfristigen Berufswege.",
+   "en": "The system allocates tasks on the basis of individual behaviour and thus materially affects both current working conditions and long-term career paths."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Handels- und Logistikunternehmen setzt einen Planer ein, der Schichten, Ruhezeiten und Rufbereitschaftsfenster zuweist; Eingangsgrößen sind unter anderem Verhaltens- und Leistungssignale wie Pünktlichkeit, Nichterscheinen in der Vergangenheit, Annahme- und Ablehnungsraten angebotener Schichten sowie Bewertungen von Kunden und Führungskräften. Der Planer bringt die Arbeitenden für jeden Platz in eine Rangfolge und weist Schichten selbst zu, wobei die leistungsstärksten Personen die wichtigsten Schichten erhalten; niedriger eingeordnete Personen erhalten weniger wichtige und möglicherweise weniger Schichten, geringeres veränderliches Entgelt und unbeständigere Muster, und wer vorrangige Angebote ablehnt, wird in der Priorität herabgestuft.",
+   "en": "A retail and logistics company uses a scheduler that allocates shifts, rest periods and on-call windows; inputs include behavioural and performance signals such as punctuality, past no-shows, acceptance and rejection rates of offered shifts and ratings by customers and managers. The scheduler ranks the workers for each slot and allocates shifts itself, with the highest-performing persons receiving the most important shifts; lower-ranked persons receive less important and possibly fewer shifts, lower variable pay and less stable patterns, and anyone who declines priority offers is downgraded in priority."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-4-b",
+  "source_ref": "(278)",
+  "official_rationale": {
+   "de": "Das System bewertet Leistung und Verhalten der Arbeitenden und weist auf dieser Grundlage Aufgaben zu; der Einsatz berührt Entgelt, Zugang zu vorrangigen Aufgaben und möglicherweise den Aufstieg, so dass die Ausnahmen des Artikels 6 Absatz 3 nicht greifen.",
+   "en": "The system evaluates the performance and behaviour of the workers and allocates tasks on that basis; the use affects pay, access to priority tasks and possibly promotion, so that the exemptions in Article 6(3) do not apply."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Steuerungssystem, das über Telekommunikationsnetze mit Verkehrsteilnehmern sprechen kann (intelligentes Verkehrssteuerungssystem). Es erkennt Verkehr, wertet die empfangenen Daten aus und entscheidet auf dieser Grundlage, etwa um bestimmte Verkehrsteilnehmer zu bevorrechtigen oder Verkehrsteilnehmern mitzuteilen, wie lange eine Ampel rot oder grün bleibt.",
+   "en": "A control system that can communicate with road users via telecommunications networks (intelligent traffic control system). It detects traffic, evaluates the data received and takes decisions on that basis, for example to give priority to certain road users or to inform road users how long a traffic light will remain red or green."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(196)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Ein System erkennt hochwassergefährdete Gebiete, modelliert die Ausbreitung von Waldbränden und beobachtet Wetter und Erdbebentätigkeit, ohne über Zeitpunkt oder Ort des Losschickens zu entscheiden.",
+   "en": "A system identifies flood-prone areas, models the spread of forest fires and monitors weather and seismic activity, without deciding on the time or place of dispatch."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-5-d",
+  "source_ref": "(nach 336)",
+  "official_rationale": {
+   "de": "Es fehlt der Bezug zum Losschicken von Rettungskräften.",
+   "en": "The link to the dispatch of emergency services is missing."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System in einer Notrufzentrale stuft Anrufe an die 112 mit Sprachverarbeitung nach Dringlichkeit ein und lenkt die Einsatzkräfte.",
+   "en": "A system in an emergency call centre uses speech processing to classify calls to 112 by urgency and directs the emergency responders."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-d",
+  "source_ref": "(nach 336)",
+  "official_rationale": {
+   "de": "Es bewertet und stuft Anrufe ein, bestimmt die Reihenfolge und schickt die Kräfte los.",
+   "en": "It evaluates and classifies calls, determines the order and dispatches the responders."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System zur Betrugsaufdeckung liefert ein Ergebnis, das danach in die Bewertung der Zahlungsfähigkeit oder in den Punktwert einfließt.",
+   "en": "A fraud detection system delivers an output that subsequently feeds into the creditworthiness assessment or the credit score."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-5-b",
+  "source_ref": "(308)",
+  "official_rationale": {
+   "de": "Es fällt aus dem Anwendungsfall heraus, obwohl sein Ergebnis weiterverwendet wird.",
+   "en": "It falls outside the use case, even though its output is used further."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System einer Bank berechnet nur die risikogewichteten Forderungsbeträge von Darlehensbeständen nach dem auf internen Beurteilungen beruhenden Ansatz und ist nicht für Punktwerte oder die Bewertung der Zahlungsfähigkeit gedacht.",
+   "en": "A bank's system only calculates the risk-weighted exposure amounts of loan portfolios under the internal ratings-based approach and is not intended for credit scores or the assessment of creditworthiness."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-5-b",
+  "source_ref": "(323)",
+  "official_rationale": {
+   "de": "Der Zweck des Anwendungsfalls fehlt.",
+   "en": "The purpose of the use case is missing."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System deutet Wetterrisikodaten vor einer wahrscheinlichen Notlage und liefert Vorarbeit für die Verteilung von Mitteln, etwa vorverlegte Feuerwehrkräfte; Fachleute und der zuständige Einsatzleiter prüfen und bestätigen das.",
+   "en": "A system interprets weather risk data ahead of a probable emergency and provides groundwork for the allocation of resources, for example pre-positioned fire brigade units; experts and the competent incident commander review and confirm this."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-5-d",
+  "source_ref": "(nach 336)",
+  "official_rationale": {
+   "de": "Der Fall gehört in den Anwendungsfall, ist aber als vorbereitende Aufgabe nach Artikel 6 Absatz 3 Buchstabe d ausgenommen.",
+   "en": "The case falls within the use case, but is exempted as a preparatory task under Article 6(3)(d)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System, das als Druckfühler in der Überwachung des Wasserdrucks eingesetzt wird.",
+   "en": "A system used as a pressure sensor in water pressure monitoring."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(198)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Armbanduhr misst Stimme und Herzschlag und überwacht die Stimmung des Trägers, um ihm den eigenen Gefühlszustand bewusst zu machen und Vorschläge zur Besserung zu geben.",
+   "en": "A wristwatch measures voice and heartbeat and monitors the wearer's mood in order to make them aware of their own emotional state and to give suggestions for improvement."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-1-c",
+  "source_ref": "(177)",
+  "official_rationale": {
+   "de": "Gefühle werden erschlossen; dass das Ergebnis nur dem Träger angezeigt wird, ändert nichts.",
+   "en": "Emotions are inferred; the fact that the result is only shown to the wearer changes nothing."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System wandelt das Gespräch zwischen Sachbearbeiter und Antragsteller in Text um und fasst es zusammen; der Sachbearbeiter ist dabei und kann die Zusammenfassung prüfen.",
+   "en": "A system converts the conversation between caseworker and applicant into text and summarises it; the caseworker is present and can check the summary."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-5-a",
+  "source_ref": "(nach 293)",
+  "official_rationale": {
+   "de": "Der Fall gehört in den Anwendungsfall, doch das Ergebnis ist nur unterstützend und nicht entscheidend und nach Artikel 6 Absatz 3 Buchstaben a und d ausgenommen.",
+   "en": "The case falls within the use case, but the output is only supporting and not decisive, and is exempted under Article 6(3)(a) and (d)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System ordnet eine Fallakte allein nach festgelegten Kategorien zur Ablage und zum Wiederfinden, etwa Ausweispapiere, Gesundheitsunterlagen, Gespraechsnotizen, ohne das Material nach Bedeutung zu ordnen und ohne etwas auszulassen.",
+   "en": "A system organises a case file solely according to predefined categories for filing and retrieval, such as identity documents, health records, interview notes, without ranking the material by relevance and without omitting anything."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-7-c",
+  "source_ref": "(400)",
+  "official_rationale": {
+   "de": "Das Anbringen fester, vorgegebener Bezeichnungen zur Ablage und zum Wiederfinden ist eine eng begrenzte Verfahrenshandlung; das System bewertet keine Beweise, setzt keine Rangfolge und beeinflusst die Beurteilung nicht.",
+   "en": "Applying fixed, predefined labels for filing and retrieval is a narrowly defined procedural act; the system does not assess evidence, does not establish a ranking and does not influence the assessment."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Anbieter entwickelt ein System, das die Bonität des Inhabers eines Kleinbetriebs oder einer Firma bestimmen soll, die keine Rechtsperson ist.",
+   "en": "A provider develops a system intended to determine the creditworthiness of the owner of a small business or of a business that is not a legal person."
+  },
+  "expected": "not_high_risk",
+  "provision": "",
+  "source_ref": "(73)",
+  "official_rationale": {
+   "de": "Ein solches System soll keine natürliche Person bewerten, wenn es nur Betriebs- oder Firmendaten verwendet.",
+   "en": "Such a system is not intended to evaluate a natural person if it only uses business or company data."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Kameras an der Grenze nehmen Gesichtsbilder auf und leiten daraus Alter und Geschlecht einreisender Ausländer ab.",
+   "en": "Cameras at the border capture facial images and infer from them the age and sex of foreign nationals entering the country."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-1-b",
+  "source_ref": "(170)",
+  "official_rationale": {
+   "de": "Alter und Geschlecht sind keine geschützten Merkmale.",
+   "en": "Age and sex are not protected characteristics."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System bewertet schriftliche oder mündliche Antworten von Bewerbern in einer Online-Prüfung, gibt jedem eine Punktzahl nach sprachlichen und inhaltlichen Kriterien und erzeugt daraus eine Rangfolge, die bestimmt, wer zum Gespräch eingeladen wird.",
+   "en": "A system evaluates candidates' written or oral answers in an online test, gives each a score according to linguistic and content-related criteria, and generates from this a ranking that determines who is invited to interview."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-4-a",
+  "source_ref": "(254)",
+  "official_rationale": {
+   "de": "Es übernimmt eine zentrale bewertende Aufgabe und beeinflusst die Substanz von Gewinnung und Auswahl in bedeutsamer Weise.",
+   "en": "It performs a central evaluative task and influences the substance of recruitment and selection in a significant way."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine Fahrdienstplattform setzt ein System ein, um die Vergütung der Fahrer laufend festzulegen; Eingangsgrößen sind die aktuelle Nachfrage, Annahmeraten der Fahrer, Bewertungen der Fahrgäste und durchschnittliche Fahrtzeiten. Das System berechnet Fahrtpreise und verändert die Entgeltfaktoren einzelner Fahrer: wer dauerhaft schlechter bewertet wird oder langsamer fährt, erhält einen geringeren Faktor, hoch bewertete Fahrer erhalten Zuschläge. Die Anpassungen erfolgen automatisch in Echtzeit; eine menschliche Aufsicht besteht förmlich, in der Praxis bestimmt aber allein der Algorithmus die Entgelthöhe, und Beschwerden ändern die Ergebnisse selten.",
+   "en": "A ride-hailing platform uses a system to set drivers' remuneration on an ongoing basis; inputs are current demand, drivers' acceptance rates, passenger ratings and average journey times. The system calculates fares and changes the pay factors of individual drivers: anyone who is consistently rated lower or drives more slowly receives a lower factor, and highly rated drivers receive bonuses. The adjustments are made automatically in real time; human oversight exists formally, but in practice the algorithm alone determines the level of pay, and complaints rarely change the results."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-4-b",
+  "source_ref": "(278)",
+  "official_rationale": {
+   "de": "Entscheidungen über die Vergütung gehören zu den Bedingungen eines Arbeitsverhältnisses.",
+   "en": "Decisions on remuneration are part of the terms of a work-related relationship."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Das Risiko des KI-Systems betrifft allein öffentliche Belange jenseits von Gesundheit, Sicherheit und Grundrechten, etwa die Nutzung von Funkfrequenzen oder die elektromagnetische Verträglichkeit.",
+   "en": "The risk of the AI system concerns solely public interests beyond health, safety and fundamental rights, such as the use of radio frequencies or electromagnetic compatibility."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-I",
+  "source_ref": "(25)",
+  "official_rationale": {
+   "de": "Für die Einstufung nach Artikel 6 Absatz 1 ist der Begriff des Sicherheitsbauteils so zu verstehen, dass solche Belange ausgenommen sind.",
+   "en": "For the classification under Article 6(1), the notion of safety component is to be understood as excluding such interests."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System erkennt vor allem gefälschte Ausweise, Einkommensnachweise und Kontoauszüge in Kreditanträgen; die Betrugsaufdeckung geht allen anderen Zwecken vor.",
+   "en": "A system primarily detects forged identity documents, proofs of income and bank statements in credit applications; fraud detection takes precedence over all other purposes."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-5-b",
+  "source_ref": "(307)",
+  "official_rationale": {
+   "de": "Die Ausnahme für die Aufdeckung von Finanzbetrug greift, weil die Betrugsaufdeckung der vorrangige Zweck ist.",
+   "en": "The exception for the detection of financial fraud applies, because fraud detection is the primary purpose."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System sagt Wahrscheinlichkeit und Richtung von Waldbränden voraus und löst zugleich das Losschicken der Kräfte aus oder empfiehlt klar die Verteilung des Personals; der Mensch entscheidet weiter.",
+   "en": "A system predicts the likelihood and direction of forest fires and at the same time triggers the dispatch of resources or clearly recommends the allocation of personnel; the human still decides."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-d",
+  "source_ref": "(nach 336)",
+  "official_rationale": {
+   "de": "Es ist ausdrücklich dafür gedacht, Rettungskräfte auszulösen und über Zeitpunkt und Ort des Losschickens zu entscheiden.",
+   "en": "It is expressly intended to trigger emergency services and to decide on the time and place of dispatch."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System zur Überwachung und zum Schutz des äußeren Umfelds einer Stromanlage, etwa Kamerasysteme, Radarsysteme und die Steuerung von Fluggeräten ohne Besatzung.",
+   "en": "A system for monitoring and protecting the outer surroundings of a power installation, such as camera systems, radar systems and the control of unmanned aircraft."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(206)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Ein System hilft Lehrkraeften, die Pruefung der Bereitschaft einer Person fuer eine Stufe vorzubereiten, indem es aus Vorbildung und Berufserfahrung Fragen und Themen erstellt, die die Lehrkraft dann selbst nutzt.",
+   "en": "A system helps teachers prepare the assessment of a person's readiness for a level by creating questions and topics from prior education and professional experience, which the teacher then uses themselves."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-3-c",
+  "source_ref": "(229)",
+  "official_rationale": {
+   "de": "Das Ergebnis dient der Lehrkraft fuer ihr eigenes Vorgehen und befindet nicht selbst ueber die Stufe; es faellt unter die Ausnahme fuer vorbereitende Taetigkeiten in Artikel 6 Absatz 3 Buchstabe d.",
+   "en": "The output serves the teacher for their own approach and does not itself decide on the level; it falls under the exemption for preparatory tasks in Article 6(3)(d)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System prueft, ob in einem Beurteilungsbogen eines Bewaehrungshelfers alle Pflichtfelder gefuellt sind, oder zeigt Widersprueche in den eingegebenen Daten an, etwa nicht zusammenpassende Daten der Tat oder der Haftzeit.",
+   "en": "A system checks whether all mandatory fields in a probation officer's assessment form are filled in, or indicates inconsistencies in the data entered, such as mismatching dates of the offence or of the period of detention."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-6-d",
+  "source_ref": "(368)",
+  "official_rationale": {
+   "de": "Das System erfuellt eine vorbereitende Aufgabe fuer die Gefahreneinschaetzung und bewertet keine persoenlichen Merkmale; es erfuellt zudem eine eng begrenzte Verfahrensaufgabe, weil es nur Widersprueche anzeigt.",
+   "en": "The system performs a preparatory task for the risk assessment and does not evaluate personal characteristics; it also performs a narrowly defined procedural task, because it only indicates inconsistencies."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Nach einer Festnahme wird im Polizeigewahrsam ein Lichtbild des Verdächtigen aufgenommen und mit einer Sammlung gespeicherter Körpermerkmale abgeglichen.",
+   "en": "After an arrest, a photograph of the suspect is taken in police custody and compared against a database of stored biometric data."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-1-a",
+  "source_ref": "(140)",
+  "official_rationale": {
+   "de": "Keine Erkennung aus der Ferne, weil der Verdächtige im formellen Verfahren mitmacht.",
+   "en": "No remote identification, because the suspect actively participates in the formal procedure."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System gibt den Einsatzkräften ein Lagebild der Unfallstelle, etwa Aufenthaltsort und Körpertemperatur von Verletzten, aus Daten von Helfern, Rettungsrobotern, Drohnen und Sensoren, und gibt vorhandene Angaben nur geordnet wieder.",
+   "en": "A system gives emergency responders a situational picture of the accident site, such as the location and body temperature of injured persons, from data from helpers, rescue robots, drones and sensors, and only reproduces the available information in an organised form."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-5-d",
+  "source_ref": "(nach 336)",
+  "official_rationale": {
+   "de": "Der Fall gehört in den Anwendungsfall, ist aber als enge Verfahrens- und vorbereitende Aufgabe nach Artikel 6 Absatz 3 Buchstaben a und d ausgenommen.",
+   "en": "The case falls within the use case, but is exempted as a narrow procedural and preparatory task under Article 6(3)(a) and (d)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine Essenslieferplattform empfiehlt mit einem System Gebiete, in denen nach Wetter, früheren Bestellungen und aktuellen Verkehrsdaten höhere Nachfrage erwartet wird; die Kuriere erhalten Hinweise wie hohe Nachfrage in Gebiet X zwischen 13 und 14 Uhr, können sie aber frei übergehen. Es gibt keine Nachteile für das Ablehnen, kein Verzeichnis darüber, wer Empfehlungen angenommen oder abgelehnt hat, und das System verringert den Zugang zu künftigen Aufträgen nicht.",
+   "en": "A food delivery platform uses a system to recommend areas in which higher demand is expected on the basis of weather, previous orders and current traffic data; couriers receive notices such as high demand in area X between 1 and 2 p.m., but can freely ignore them. There are no disadvantages for declining, no record of who accepted or declined recommendations, and the system does not reduce access to future assignments."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-4-b",
+  "source_ref": "(278)",
+  "official_rationale": {
+   "de": "Das Empfehlungswerkzeug liefert nur freiwillige, nicht bindende Hilfsinformationen und stellt keine Aufgabenzuweisung auf der Grundlage individuellen Verhaltens dar.",
+   "en": "The recommendation tool only provides voluntary, non-binding assistance information and does not constitute task allocation based on individual behaviour."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System hilft Bewerbern, ihren Lebenslauf auf eine bestimmte offene Stelle zuzuschneiden: es prüft den Lebenslauf und die vom Bewerber selbst bereitgestellte Stellenbeschreibung und empfiehlt Änderungen, um die Einladungschance zu erhöhen; die Empfehlungen gehen ausschließlich an den Bewerber.",
+   "en": "A system helps candidates to tailor their CV to a particular vacancy: it checks the CV and the job description provided by the candidate themselves and recommends changes to increase the chance of being invited; the recommendations go exclusively to the candidate."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-4-a",
+  "source_ref": "(254)",
+  "official_rationale": {
+   "de": "Der Einsatz wird vom Bewerber begonnen und geführt, liegt außerhalb der Einflussmöglichkeit des möglichen Arbeitgebers und findet außerhalb des Einstellungs- und Auswahlverfahrens statt.",
+   "en": "The use is initiated and conducted by the candidate, lies outside the sphere of influence of the potential employer and takes place outside the recruitment and selection procedure."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Landwirtschaft: ein KI-System in einer Drohne oder einem Roboter dient Zwecken des Anbaus, etwa der Ertragsvorhersage oder einer besseren Bewässerung.",
+   "en": "Agriculture: an AI system in a drone or robot serves cultivation purposes, such as yield prediction or improved irrigation."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-I",
+  "source_ref": "(47)",
+  "official_rationale": {
+   "de": "Das System erfüllt keine Sicherheitsaufgabe, und seine Fehlfunktion würde Gesundheit, Sicherheit oder Eigentum nicht gefährden. Könnte sein Ausfall oder Fehlverhalten im Zusammenhang des Produkts Gesundheit und Sicherheit von Menschen oder Eigentum gefährden, kann es dennoch Sicherheitsbauteil sein, sofern die übrigen Bedingungen des Artikels 6 Absatz 1 erfüllt sind.",
+   "en": "The system does not fulfil a safety function, and its malfunctioning would not endanger health, safety or property. If its failure or malfunctioning could endanger the health and safety of persons or property in the context of the product, it can nevertheless be a safety component, provided that the other conditions of Article 6(1) are met."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System untersucht große Mengen demografischer, verhaltensbezogener und sozioökonomischer Daten, um Bedarfslücken zu finden und neue Lebensversicherungsprodukte samt Preisrahmen zu gestalten, ohne Einzelfälle zu bewerten.",
+   "en": "A system examines large volumes of demographic, behavioural and socio-economic data in order to identify gaps in demand and to design new life insurance products together with price ranges, without assessing individual cases."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-5-c",
+  "source_ref": "(nach 321)",
+  "official_rationale": {
+   "de": "Es wird kein Risikoprofil eines Menschen bewertet; die Produktgestaltung ist eine frühere und eigene Stufe.",
+   "en": "No risk profile of a person is assessed; product design is an earlier and separate stage."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System erkennt verdaechtige Zahlungsmuster und wird zusaetzlich mit personenbezogenen Daten wie Namen oder Kontonummern angereichert, sodass daraus Profile einzelner Menschen entstehen.",
+   "en": "A system detects suspicious payment patterns and is additionally enriched with personal data such as names or account numbers, so that profiles of individual persons result from it."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-6-e",
+  "source_ref": "(370)",
+  "official_rationale": {
+   "de": "Bewertet das System auf diese Weise persoenliche Merkmale, ist es als hochriskant einzuordnen; allein auf Zahlungsdaten bezogen, etwa auf Betraege, Haeufigkeiten, Abstaende und Leitwege, ist es es nicht.",
+   "en": "If the system evaluates personal characteristics in this way, it is to be classified as high-risk; if it relates solely to payment data, such as amounts, frequencies, intervals and routings, it is not."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Werkzeug gleicht Bewerber automatisch mit Stellen ab und bildet eine Rangfolge; es verarbeitet Lebensläufe, Fähigkeiten, Bildung, frühere Einsätze sowie kognitive, soziale und emotionale Kompetenzen, vergleicht sie mit Stellenbeschreibungen oder früheren Einstellungsdaten und erzeugt Punktwerte, Ranglisten wie Top 5 und Passungskategorien wie hohe oder geringe Passung. Interne und externe Personalverantwortliche dürfen übersteuern, aber die Rangfolge ist die wichtigste Eingangsgröße der Entscheidung.",
+   "en": "A tool automatically matches candidates with jobs and creates a ranking; it processes CVs, skills, education, previous assignments and cognitive, social and emotional competences, compares them with job descriptions or past hiring data and generates scores, rankings such as top 5 and fit categories such as high or low fit. Internal and external recruiters may override, but the ranking is the most important input to the decision."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-4-a",
+  "source_ref": "(254)",
+  "official_rationale": {
+   "de": "Das System prüft und filtert Bewerber; es könnte etwa zu einer niedrigen Einordnung oder zum Ausschluss von Bewerbern eines bestimmten Geschlechts oder von Bewerbern mit Behinderungen führen.",
+   "en": "The system screens and filters candidates; it could, for example, lead to a low ranking or the exclusion of candidates of a particular sex or of candidates with disabilities."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Köder-System im Netz (Honeypot), das Angriffe über das Netz in Echtzeit erkennen und unschädlich machen soll.",
+   "en": "An online decoy system (honeypot) intended to detect and neutralise network attacks in real time."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(187)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Ein Ausfall oder Fehlverhalten des KI-Systems führt nur zu Schaden am Ansehen, zu rein finanziellem Verlust, zu einer geringen Verschlechterung des Dienstes oder zu einer Unannehmlichkeit ohne Sicherheitsgefahr.",
+   "en": "A failure or malfunctioning of the AI system only leads to reputational damage, purely financial loss, a minor degradation of the service or an inconvenience without a safety risk."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-I",
+  "source_ref": "(40)",
+  "official_rationale": {
+   "de": "Diese Folgen zählen nicht zur Gefährdung von Gesundheit, Sicherheit und Eigentum.",
+   "en": "These consequences do not count as endangering health, safety and property."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine Bildungseinrichtung beobachtet Verhalten in Mensa, Gaengen und anderen Bereichen ohne Pruefung und warnt Personal bei moeglichen Vorfaellen wie Schikane oder Belaestigung.",
+   "en": "An educational institution monitors behaviour in the canteen, corridors and other areas outside of tests and alerts staff to possible incidents such as bullying or harassment."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-3-d",
+  "source_ref": "(235)",
+  "official_rationale": {
+   "de": "Das System beobachtet kein unerlaubtes Verhalten waehrend Pruefungen, sondern dient der Sicherheit und Ordnung; es kann aber unter Nummer 1 des Anhangs III fallen, wenn es ein System zur biometrischen Fernidentifizierung ist.",
+   "en": "The system does not monitor prohibited behaviour during tests but serves safety and order; it can, however, fall under point 1 of Annex III if it is a remote biometric identification system."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System zur Lageerfassung am Tatort hat zusaetzlich die Faehigkeit, Menschen an koerperlichen Merkmalen zu erkennen.",
+   "en": "A system for situational awareness at a crime scene additionally has the capability to recognise people by their physical features."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-6-a",
+  "source_ref": "(359)",
+  "official_rationale": {
+   "de": "Dann kann es unter Nummer 1 des Anhangs III fallen.",
+   "en": "It can then fall under point 1 of Annex III."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System erkennt unvollständige Formulare und kennzeichnet sie, damit sie zur richtigen Ergänzung an den Antragsteller zurückgehen.",
+   "en": "A system detects incomplete forms and flags them so that they are returned to the applicant for proper completion."
+  },
+  "expected": "exemption_applies",
+  "provision": "",
+  "source_ref": "(93)",
+  "official_rationale": {
+   "de": "Das kann als enge Verfahrensaufgabe eingeordnet werden und den Filter nutzen.",
+   "en": "This can be classified as a narrow procedural task and make use of the filter."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein smartes Thermostat fällt unter die Funkanlagen-Richtlinie. Sein Verwendungszweck ist, durch Erlernen der Haushaltsabläufe und Anpassen der Temperatur Komfort und Energieeffizienz zu steigern.",
+   "en": "A smart thermostat falls under the Radio Equipment Directive. Its intended purpose is to increase comfort and energy efficiency by learning household routines and adjusting the temperature."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-I",
+  "source_ref": "(49)",
+  "official_rationale": {
+   "de": "Das System soll keine Sicherheitsaufgabe erfüllen, und ein Ausfall oder Fehlverhalten führt nur zu Unbehagen oder höheren Energiekosten, ohne Gesundheit und Sicherheit von Menschen oder Eigentum zu gefährden.",
+   "en": "The system is not intended to fulfil a safety function, and a failure or malfunctioning only leads to discomfort or higher energy costs, without endangering the health and safety of persons or property."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Punktesystem einer Verwaltung sagt aus demografischen, Verhaltens- und Finanzdaten die Wahrscheinlichkeit von Betrug oder dauerhafter Abhängigkeit voraus und wird für Sozialwohnungen oder Arbeitslosengeld genutzt.",
+   "en": "A public administration's scoring system predicts the likelihood of fraud or long-term dependency from demographic, behavioural and financial data and is used for social housing or unemployment benefit."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-a",
+  "source_ref": "(nach 293)",
+  "official_rationale": {
+   "de": "Es hilft bei der Anspruchsprüfung und beeinflusst die Entscheidung über den Erhalt wesentlich.",
+   "en": "It assists in the eligibility assessment and materially influences the decision on receipt."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine Auskunftei betreibt ein System, das Punktwerte bildet und an Dritte weitergibt, die damit über Darlehen, Hypothek oder Zugang zu Wohnung, Gesundheitsversorgung und Telekommunikation entscheiden.",
+   "en": "A credit reference agency operates a system that produces scores and passes them on to third parties, who use them to decide on loans, mortgages or access to housing, healthcare and telecommunications."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-b",
+  "source_ref": "(nach 309)",
+  "official_rationale": {
+   "de": "Der Betreiber muss nicht derselbe sein wie die entscheidende Stelle.",
+   "en": "The deployer need not be the same as the deciding body."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System sammelt Vorstrafen, Bewaehrungsberichte und andere Unterlagen und sortiert sie vor, um eine Fallakte fuer menschliche Bearbeiter vorzubereiten.",
+   "en": "A system collects criminal records, probation reports and other documents and pre-sorts them in order to prepare a case file for human caseworkers."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-6-d",
+  "source_ref": "(368)",
+  "official_rationale": {
+   "de": "Das System erfuellt eine vorbereitende Aufgabe fuer die Gefahreneinschaetzung und kommt daher fuer eine Ausnahme in Betracht.",
+   "en": "The system performs a preparatory task for the risk assessment and therefore qualifies for an exemption."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Kurier- und Versandunternehmen verfolgt mit einem System Versanddaten und erkennt mögliche Fehler bei der Beschriftung oder Störungen in der Verteilung; es prüft Inhalte von Etiketten, beobachtet Pakete auf dem Weg und erkennt Abweichungen zwischen erwarteter und tatsächlicher Route. Erkennt es eine Abweichung, benachrichtigt es ausschließlich den zuständigen Mitarbeiter, der dann die nötigen Schritte zur Berichtigung einleitet.",
+   "en": "A courier and shipping company uses a system to track shipping data and detect possible labelling errors or disruptions in distribution; it checks the contents of labels, monitors parcels in transit and detects deviations between the expected and the actual route. If it detects a deviation, it notifies exclusively the responsible employee, who then initiates the necessary steps for correction."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-4-b",
+  "source_ref": "(278)",
+  "official_rationale": {
+   "de": "Zweck ist ein störungsfreier Arbeitsablauf und die Einhaltung vertraglicher Pflichten; das System unterstützt die Arbeitenden bei ihren Aufgaben statt ihre Leistung zu bewerten, die Überwachung ist nur beiläufig - vorausgesetzt, es ist nicht auch zur Leistungsbeurteilung bestimmt.",
+   "en": "The purpose is a smooth workflow and compliance with contractual obligations; the system supports the workers in their tasks instead of evaluating their performance, and the monitoring is only incidental - provided that it is not also intended for performance evaluation."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System prueft Akten einer Reisegenehmigung oder eines Visums auf Vollstaendigkeit oder Form, etwa Pflichtfelder und das Vorhandensein von Unterlagen, ohne einen Gefahrenwert, einen Hinweis oder eine Vorsortierung von Menschen zu erzeugen.",
+   "en": "A system checks travel authorisation or visa files for completeness or form, such as mandatory fields and the presence of documents, without generating a risk score, an alert or a pre-sorting of people."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-7-c",
+  "source_ref": "(400)",
+  "official_rationale": {
+   "de": "Es erfuellt eng begrenzte Verfahrensaufgaben und keine vorbereitenden Aufgaben, weil es keine inhaltlichen Teile fuer die Pruefung vorbereitet oder strukturiert.",
+   "en": "It performs narrowly defined procedural tasks and not preparatory tasks, because it does not prepare or structure any substantive parts for the assessment."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System verzeichnet und beschlagwortet im Lauf der Beweisbewertung gesammelte Finanzunterlagen, etwa damit sie mit Kontobewegungen verglichen oder auf das Vorkommen von Namen oder Gegenstaenden geprueft werden koennen.",
+   "en": "A system indexes and tags financial records collected in the course of the evaluation of evidence, for example so that they can be compared with account transactions or checked for the occurrence of names or items."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-6-c",
+  "source_ref": "(365)",
+  "official_rationale": {
+   "de": "Solche Systeme fallen unter die Ausnahmen fuer Systeme, die eine eng begrenzte Verfahrensaufgabe oder eine vorbereitende Aufgabe erfuellen.",
+   "en": "Such systems fall under the exemptions for systems that perform a narrowly defined procedural task or a preparatory task."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Kameras an Wänden und Decken prüfen bei Konzerten die Stimmung des Publikums anhand von Stimmen, Gesichtern und Bewegungen und schicken mehr Sicherheitspersonal in Bereiche, in denen die Stimmung aggressiv wird.",
+   "en": "Cameras on walls and ceilings check the mood of the audience at concerts on the basis of voices, faces and movements and send more security staff to areas in which the mood becomes aggressive."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-1-c",
+  "source_ref": "(177)",
+  "official_rationale": {
+   "de": "Gefühle einzelner Teilnehmer werden ausgewertet, um die Stimmung einzuschätzen.",
+   "en": "Emotions of individual attendees are analysed in order to assess the mood."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System einer öffentlich-rechtlichen Krankenversicherung bewertet das Risiko einzelner Menschen und legt Beiträge fest.",
+   "en": "A system of a statutory health insurance fund assesses the risk of individual persons and sets premiums."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-c",
+  "source_ref": "(319)",
+  "official_rationale": {
+   "de": "Die Versicherung kann privat oder öffentlich angeboten werden.",
+   "en": "The insurance may be offered privately or publicly."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System eines Versicherers schätzt die erwarteten Behandlungskosten einer Risikogruppe, rechnet Verwaltungsaufwand und Gewinnspanne hinzu, und daraus wird der Beitrag der Gruppenmitglieder.",
+   "en": "An insurer's system estimates the expected treatment costs of a risk group, adds administrative costs and profit margin, and from this the premium of the group members is derived."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-c",
+  "source_ref": "(nach 321)",
+  "official_rationale": {
+   "de": "Es legt den Beitrag fest.",
+   "en": "It sets the premium."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System schreibt Notrufe schlechter Qualität mit und hebt Schlüsselwörter hervor, bewertet und stuft den Anruf aber nicht ein.",
+   "en": "A system transcribes poor-quality emergency calls and highlights keywords, but does not evaluate or classify the call."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-5-d",
+  "source_ref": "(nach 336)",
+  "official_rationale": {
+   "de": "Es bewertet und stuft den Anruf nicht ein.",
+   "en": "It does not evaluate or classify the call."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System prüft mit Kameras und Sensoren das Sehvermögen von Pilotenbewerbern, misst etwa Sehschärfe und Reaktionsgeschwindigkeit und bewertet, ob die Schwellenwerte für den Passagierflug erreicht werden; das Ergebnis entscheidet unmittelbar über die Eignung für bestimmte Rollen.",
+   "en": "A system uses cameras and sensors to test the vision of pilot candidates, measures for example visual acuity and reaction speed, and assesses whether the thresholds for passenger flights are reached; the result directly decides on suitability for certain roles."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-4-a",
+  "source_ref": "(254)",
+  "official_rationale": {
+   "de": "Es wird in Gewinnung und Auswahl eingesetzt, um die Eignung von Bewerbern zu bewerten.",
+   "en": "It is used in recruitment and selection to evaluate the suitability of candidates."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System bewertet die Zahlungsfähigkeit und bildet im selben durchgehenden Vorgang den Kreditpreis.",
+   "en": "A system assesses creditworthiness and, in the same continuous process, sets the price of credit."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-b",
+  "source_ref": "(300)",
+  "official_rationale": {
+   "de": "Beide Funktionen sind in einem System zusammengeführt.",
+   "en": "Both functions are combined in one system."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System, das Abweichungen in Daten aus dem Stromnetzbetrieb erkennt und auswertet, dessen Ergebnis die Grundlage für künftige Verbesserungen im Netzbetrieb ist und von einem Menschen geprüft wird.",
+   "en": "A system that detects and analyses deviations in data from electricity grid operation, whose output is the basis for future improvements in grid operation and is reviewed by a human."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(206)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Ein Anbieter entwickelt ein System, das die Kreditwürdigkeit von Firmen anhand ihrer Daten, Bilanzen und Abschlüsse bewertet.",
+   "en": "A provider develops a system that assesses the creditworthiness of companies on the basis of their data, balance sheets and financial statements."
+  },
+  "expected": "not_high_risk",
+  "provision": "",
+  "source_ref": "(74)",
+  "official_rationale": {
+   "de": "Solange das System nicht die persönlichen Finanzen natürlicher Personen bewerten soll, ist seine vorgesehene Verwendung keine Bewertung natürlicher Personen und das System deshalb nicht hochriskant.",
+   "en": "As long as the system is not intended to evaluate the personal finances of natural persons, its intended use is not an evaluation of natural persons and the system is therefore not high-risk."
+  }
+ },
+ {
+  "scenario": {
+   "de": "System nimmt das Tippverhalten von Kunden auf, leitet daraus das Geschlecht ab und spielt danach persönlich zugeschnittene Werbung aus.",
+   "en": "A system records customers' typing behaviour, infers their sex from it and then serves personalised advertising."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-1-b",
+  "source_ref": "(170)",
+  "official_rationale": {
+   "de": "Es wird nach Körpermerkmalen eingeteilt, das abgeleitete Merkmal Geschlecht ist aber nicht geschützt.",
+   "en": "Categorisation takes place on the basis of biometric data, but the inferred characteristic sex is not protected."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System prueft den Ton bereits von Menschen geschriebener Kampagnentexte, hebt moeglicherweise unklare oder nachteilige Formulierungen hervor, zeigt Widersprueche zu bestehenden Parteimaterialien auf oder schlaegt Umformulierungen vor, die die von der Partei betonten Haltungen oder Werte besser vermitteln.",
+   "en": "A system checks the tone of campaign texts already written by humans, highlights potentially unclear or unfavourable wording, points out inconsistencies with existing party materials or suggests rewordings that better convey the positions or values emphasised by the party."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-8-b",
+  "source_ref": "(447)",
+  "official_rationale": {
+   "de": "Man koennte darin eine Beeinflussung des Wahlergebnisses durch Einwirken auf die Entscheidung der Waehlerschaft sehen, doch kommt die Ausnahme in Betracht, weil das System lediglich das Ergebnis einer bereits abgeschlossenen menschlichen Taetigkeit verbessert.",
+   "en": "This could be seen as influencing the outcome of an election by acting on the decision of the electorate, but the exemption comes into consideration because the system merely improves the result of a previously completed human activity."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System bildet aus Zahlungsverhalten und Einkommen eine Kennzahl der Zahlungsfähigkeit und unterstützt damit die Entscheidung über einen Verbraucherkredit oder eine Hypothek.",
+   "en": "A system produces a creditworthiness indicator from payment behaviour and income and thereby supports the decision on a consumer credit or a mortgage."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-b",
+  "source_ref": "(nach 309)",
+  "official_rationale": {
+   "de": "Verbraucherkredit und Hypothek sind grundlegende private Dienste.",
+   "en": "Consumer credit and mortgages are essential private services."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Einrichtungen, Politik und Forschung nutzen ein System, das aus verschiedenen Quellen allgemeine Entwicklungen auswertet, welche Bildungsstufen nach der weiterfuehrenden Schule gewaehlt werden.",
+   "en": "Institutions, policymakers and researchers use a system that analyses general trends from various sources as to which levels of education are chosen after secondary school."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-3-c",
+  "source_ref": "(229)",
+  "official_rationale": {
+   "de": "Das Ergebnis dient nicht Entscheidungen ueber die Einstufung oder die Moeglichkeiten einzelner Lernender, sondern einem breiteren Bild der Bildungslandschaft.",
+   "en": "The output does not serve decisions on the classification or the opportunities of individual learners, but a broader picture of the education landscape."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System plant Vorstellungsgespräche: es greift auf die Kalenderwerkzeuge des Unternehmens und die von den Bewerbern angegebenen Zeitwünsche zu, schlägt Termine nach gegenseitiger Verfügbarkeit und Randbedingungen wie Zeitzonen oder maximaler Zahl täglicher Gespräche vor, versendet Erinnerungen und nimmt angegebene Barrierefreiheitsbedarfe wie Gebärdensprachdolmetschung, verlängerte Gesprächsdauer oder andere Kommunikationsformen auf.",
+   "en": "A system schedules job interviews: it accesses the company's calendar tools and the time preferences stated by the candidates, proposes appointments according to mutual availability and constraints such as time zones or a maximum number of interviews per day, sends reminders and records stated accessibility needs such as sign language interpretation, extended interview duration or other forms of communication."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-4-a",
+  "source_ref": "(254)",
+  "official_rationale": {
+   "de": "Der Zweck ist rein organisatorisch; das System trägt nicht zur Auswahl bei und löst oder beeinflusst keine beschäftigungsbezogene Bewertung; enge Verfahrensaufgabe nach Artikel 6 Absatz 3 Buchstabe a.",
+   "en": "The purpose is purely organisational; the system does not contribute to the selection and does not trigger or influence any employment-related evaluation; narrow procedural task under Article 6(3)(a)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System verarbeitet waehrend einer Pruefung Ausweise oder biometrische Angaben wie einen Gesichtsabgleich, um festzustellen, ob die anwesende Person die angemeldete Person ist.",
+   "en": "During a test, a system processes identity documents or biometric data such as a facial comparison in order to establish whether the person present is the registered person."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-3-d",
+  "source_ref": "(235)",
+  "official_rationale": {
+   "de": "Es erleichtert nur die Feststellung der Person und entscheidet nicht selbst, ob die Person fortfahren darf oder ob Folgen eintreten; das entscheidet die Aufsichtsperson; Ausnahme nach Artikel 6 Absatz 3 Buchstabe a.",
+   "en": "It only facilitates establishing the person's identity and does not itself decide whether the person may continue or whether consequences follow; that is decided by the proctor; exemption under Article 6(3)(a)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System für vorausschauende Wartung, das genauere Vorhersagen zur Wartung der Straßeninfrastruktur erlaubt und Teil einer Reihe von Sicherheitsmaßnahmen ist.",
+   "en": "A system for predictive maintenance that allows more accurate predictions on the maintenance of road infrastructure and is part of a set of safety measures."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(196)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Ein System ist in eine oeffentliche Datenbank der nationalen Rechtsprechung eingebunden, die von der Oeffentlichkeit und von Gerichtsmitarbeitern genutzt wird, und erlaubt die Suche nach Entscheidungen mit herkoemmlichen Mitteln, erstellt Zusammenfassungen veroeffentlichter Entscheidungen und von Suchergebnissen und erlaubt die Suche in natuerlicher Sprache.",
+   "en": "A system is integrated into a public database of national case law used by the public and by court staff, and allows searching for decisions by conventional means, creates summaries of published decisions and of search results, and allows searching in natural language."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-8-a",
+  "source_ref": "(423)",
+  "official_rationale": {
+   "de": "Das System unterstuetzt zwar beim Ermitteln und Auslegen des Rechts, erfuellt dabei aber nur eng begrenzte Verfahrensaufgaben.",
+   "en": "Although the system assists in researching and interpreting the law, it only performs narrowly defined procedural tasks in doing so."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System prüft menschliche Muster bei früheren Einstellungsentscheidungen: es wertet anonymisierte Daten wie Lebenslaufbewertungen, Gesprächsnotizen und Einstellungsergebnisse statistisch aus, um mögliche Verzerrungen oder Widersprüche zu erkennen; es nimmt an laufenden Verfahren nicht teil, beeinflusst keine aktuellen Bewerberbewertungen und bewertet oder entscheidet nicht anhand bestimmbarer persönlicher Merkmale von Personalverantwortlichen oder Bewerbern.",
+   "en": "A system examines human patterns in past recruitment decisions: it statistically analyses anonymised data such as CV ratings, interview notes and recruitment outcomes in order to detect possible biases or inconsistencies; it does not take part in ongoing procedures, does not influence current candidate evaluations and does not evaluate or decide on the basis of identifiable personal characteristics of recruiters or candidates."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-4-a",
+  "source_ref": "(254)",
+  "official_rationale": {
+   "de": "Es fällt in den Anwendungsfall, nutzt aber die Ausnahme des Artikels 6 Absatz 3 Buchstabe c für Systeme, die Entscheidungsmuster oder Abweichungen davon erkennen sollen, ohne abgeschlossene menschliche Bewertungen zu ersetzen oder zu beeinflussen.",
+   "en": "It falls within the use case, but makes use of the exemption in Article 6(3)(c) for systems intended to detect decision-making patterns or deviations from them, without replacing or influencing completed human assessments."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Selbstfahrende Roboter, die in einem Heizkraftwerk regelmäßige, vorab festgelegte Runden und Kontrollpunkte abfahren.",
+   "en": "Self-driving robots that travel regular, predefined rounds and checkpoints in a combined heat and power plant."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(202)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Ein System erkennt bei wartenden Anrufen in der Warteschlange Art und Schwere der Notlage und weist den Mitarbeiter auf vorzuziehende Anrufe hin; die Entscheidung bleibt beim Menschen.",
+   "en": "For calls waiting in the queue, a system detects the type and severity of the emergency and alerts the operator to calls that should be prioritised; the decision remains with the human."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-d",
+  "source_ref": "(nach 336)",
+  "official_rationale": {
+   "de": "Es bewertet und stuft Notrufe in lebensbedrohliche und nicht lebensbedrohliche ein.",
+   "en": "It evaluates and classifies emergency calls into life-threatening and non-life-threatening."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System prüft eine von einem Menschen getroffene Entscheidung, einen Plan oder eine Konstruktion und liefert eine wesentlich andere Lösung.",
+   "en": "A system reviews a decision, plan or design made by a human and delivers a substantially different solution."
+  },
+  "expected": "high_risk",
+  "provision": "",
+  "source_ref": "(96)",
+  "official_rationale": {
+   "de": "Das ist kein Verbessern eines zuvor abgeschlossenen menschlichen Ergebnisses im Sinne des Artikels 6 Absatz 3 Buchstabe b, weil es sich nicht auf Verfeinern oder Aufwerten des Ergebnisses beschränkt; die Bedingung trägt die Ausnahme nicht.",
+   "en": "This is not an improvement of a previously completed human result within the meaning of Article 6(3)(b), because it is not limited to refining or enhancing the result; the condition does not support the exemption."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Werkzeug für vorausschauende Wartung zur Überwachung einer Gasfernleitung, das Betriebsdaten auswertet, um den Wartungsbedarf vorherzusagen.",
+   "en": "A predictive maintenance tool for monitoring a gas transmission pipeline, which analyses operating data in order to predict maintenance needs."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(200)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Eine Technik, die sich mit möglichen Angreifern aktiv einlässt, um neue Angriffsmuster zu lernen.",
+   "en": "A technique that actively engages with potential attackers in order to learn new attack patterns."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(187)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Eine Bildungseinrichtung erkennt mit Gesichtserkennung und Gegenstandserkennung unerlaubtes Verhalten in Pruefungen in Praesenz, etwa die Nutzung verbotener Unterlagen oder Geraete.",
+   "en": "An educational institution uses facial recognition and object recognition to detect prohibited behaviour in in-person tests, such as the use of prohibited materials or devices."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-3-d",
+  "source_ref": "(235)",
+  "official_rationale": {
+   "de": "Das System beobachtet und erkennt unerlaubtes Verhalten waehrend einer Pruefung.",
+   "en": "The system monitors and detects prohibited behaviour during a test."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Unternehmen bewertet mit einem System den Fortschritt der Beschäftigten in freiwilligen Schulungsmodulen anhand von Testergebnissen und Abschlussdaten; es gibt ausschließlich Rückmeldungen und Lernempfehlungen an die Beschäftigten selbst, um deren persönliche Entwicklung zu unterstützen.",
+   "en": "A company uses a system to assess employees' progress in voluntary training modules on the basis of test results and completion data; it gives feedback and learning recommendations exclusively to the employees themselves in order to support their personal development."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-4-b",
+  "source_ref": "(278)",
+  "official_rationale": {
+   "de": "Die Funktion beschränkt sich darauf, Lernergebnisse in einem Schulungszusammenhang zu messen; sie beurteilt nicht die Arbeitsleistung, bestimmt keine Beförderungen und prägt keine Leitungsentscheidungen.",
+   "en": "The function is limited to measuring learning outcomes in a training context; it does not assess work performance, does not determine promotions and does not shape management decisions."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System teilt nur mit, welche Stelle einen Antrag auf grundlegende Unterstützungsleistungen weiter bearbeiten soll.",
+   "en": "A system only indicates which office should further process an application for essential assistance benefits."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-5-a",
+  "source_ref": "(nach 293)",
+  "official_rationale": {
+   "de": "Es empfiehlt nur den Bearbeiter, ohne den Anspruch zu bewerten.",
+   "en": "It only recommends the caseworker, without assessing eligibility."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Chatbot beantwortet rechtliche Fragen eines Sachbearbeiters, zugeschnitten auf den einzelnen Pflegeleistungsfall; der Sachbearbeiter entscheidet weiter selbst.",
+   "en": "A chatbot answers a caseworker's legal questions, tailored to the individual long-term care benefit case; the caseworker continues to decide themselves."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-a",
+  "source_ref": "(nach 293)",
+  "official_rationale": {
+   "de": "Die Entscheidung über den Anspruch wird durch die rechtlichen Antworten wesentlich beeinflusst.",
+   "en": "The decision on eligibility is materially influenced by the legal answers."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System zur Zollrisikosteuerung liefert Zollbeamten Hinweise darauf, wie wahrscheinlich es ist, dass Waren beim Grenzuebertritt rechtliche Anforderungen nicht erfuellen.",
+   "en": "A customs risk management system provides customs officers with indications of how likely it is that goods do not comply with legal requirements when crossing the border."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-6-preliminary",
+  "source_ref": "(349)",
+  "official_rationale": {
+   "de": "Solche Systeme sollen im Regelfall keine Straftaten verhueten, aufklaeren, aufdecken oder verfolgen, sondern moegliche Verstoesse gegen Regeln zu Agrar- und Lebensmittelsicherheit, Pflanzen- und Tiergesundheit, Rechten des geistigen Eigentums, Produktsicherheit, Umwelt und Abfall oder dem Schutz von Kulturgut anzeigen. Werden sie zusaetzlich zur Aufdeckung von Straftaten eingesetzt, sind sie hochriskant, wenn sie unter einen der Faelle der Nummer 6 fallen.",
+   "en": "As a rule, such systems are not intended to prevent, investigate, detect or prosecute criminal offences, but to indicate possible infringements of rules on agricultural and food safety, plant and animal health, intellectual property rights, product safety, environment and waste or the protection of cultural goods. If they are additionally used to detect criminal offences, they are high-risk if they fall under one of the cases of point 6."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine öffentliche Verwaltung weist mit einem System erfolgreiche Bewerber wie Lehrkräfte oder Ärzte nach einem bestandenen Auswahlverfahren bestimmten Stellen zu; es berücksichtigt Prüfungsergebnisse, Ortswünsche, freie Stellen und Dienstalter und erzeugt endgültige Zuweisungslisten, die bestimmen, wer welche Stelle erhält. Beschwerden sind möglich, in der Praxis ist die Zuweisung des Systems aber entscheidend, weil die Verwaltung sich bei der endgültigen Besetzung darauf stützt.",
+   "en": "A public administration uses a system to allocate successful candidates such as teachers or doctors to specific posts after a passed selection procedure; it takes into account examination results, location preferences, vacancies and seniority and generates final allocation lists that determine who receives which post. Complaints are possible, but in practice the system's allocation is decisive, because the administration relies on it for the final appointments."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-4-b",
+  "source_ref": "(278)",
+  "official_rationale": {
+   "de": "Das System wird zur Zuweisung von Rollen im öffentlichen Dienst eingesetzt und bestimmt unmittelbar und bedeutsam die Arbeitsbedingungen und Berufswege der Bediensteten.",
+   "en": "The system is used to allocate roles in the public service and directly and significantly determines the working conditions and career paths of the staff."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Dasselbe System wird sowohl für den Punktwert einzelner Menschen als auch für interne Beurteilungen und Ausfallschätzungen zur Eigenmittelberechnung genutzt.",
+   "en": "The same system is used both for the credit score of individual persons and for internal ratings and default estimates for the calculation of own funds."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-b",
+  "source_ref": "(324)",
+  "official_rationale": {
+   "de": "Es kommt nicht auf den Hauptzweck an; einer der Zwecke erfüllt den Anwendungsfall.",
+   "en": "The main purpose is not what matters; one of the purposes fulfils the use case."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine Behörde prüft mit Gesichtserkennung die Identität von Personen gegen eine Liste terrorverdächtiger Personen, um ihnen Einlass in einen abgesperrten Sicherheitsbereich innerhalb eines öffentlichen Platzes zu geben; Hinweise sind sichtbar angebracht und der Sensor verlangt, dass man in einem markierten Feld steht und hineinschaut.",
+   "en": "A public authority uses facial recognition to check the identity of persons against a list of terrorist suspects in order to admit them to a cordoned-off security area within a public square; notices are visibly displayed and the sensor requires that one stands in a marked field and looks into it."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-1-a",
+  "source_ref": "(140)",
+  "official_rationale": {
+   "de": "Die Personen machen bewusst mit, deshalb fehlt die Erkennung aus der Ferne.",
+   "en": "The persons deliberately participate, which is why remote identification is missing."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Bestandteil soll ausschließlich Zwecken der Cybersicherheit dienen, im Zusammenhang mit Sicherheitsbauteilen in kritischer Infrastruktur.",
+   "en": "A component is intended to be used exclusively for cybersecurity purposes, in connection with safety components in critical infrastructure."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-I",
+  "source_ref": "(38)",
+  "official_rationale": {
+   "de": "Erwägungsgrund 55 der KI-Verordnung nimmt Bestandteile, die ausschließlich für Zwecke der Cybersicherheit verwendet werden sollen, ausdrücklich von den Sicherheitsbauteilen aus, dies aber nur im Zusammenhang mit Sicherheitsbauteilen in kritischer Infrastruktur. Außerhalb dieses Zusammenhangs können KI-Bestandteile für die Cybersicherheit Sicherheitsbauteile sein, wenn ihr Ausfall oder Fehlverhalten Gesundheit und Sicherheit von Menschen oder Eigentum gefährden könnte.",
+   "en": "Recital 55 of the AI Act expressly excludes components intended to be used solely for cybersecurity purposes from safety components, but only in connection with safety components in critical infrastructure. Outside this context, AI components for cybersecurity can be safety components if their failure or malfunctioning could endanger the health and safety of persons or property."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System vereinheitlicht Begriffe und verbessert die Sprache in einer Entscheidung, nachdem die menschliche Beurteilung abgeschlossen ist, ohne zusaetzliche Begruendung einzufuehren und ohne das Ergebnis zu aendern.",
+   "en": "A system harmonises terminology and improves the language in a decision after the human assessment has been completed, without introducing additional reasoning and without changing the outcome."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-7-c",
+  "source_ref": "(400)",
+  "official_rationale": {
+   "de": "Es verbessert das Ergebnis einer bereits abgeschlossenen menschlichen Taetigkeit; ein System, das rechtliche oder tatsaechliche Gruende erschliesst oder formuliert, die nicht ausdruecklich genannt sind, oder das die Glaubwuerdigkeit erneut bewertet, ist davon nicht gedeckt.",
+   "en": "It improves the result of a previously completed human activity; a system that infers or formulates legal or factual reasons that are not expressly stated, or that reassesses credibility, is not covered by this."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine Einrichtung nutzt ein Einstufungswerkzeug, das die Faehigkeiten neuer Lernender prueft und den Lehrkraeften empfiehlt, ob sie in den Anfaenger-, Mittel- oder Fortgeschrittenenkurs gehoeren, oder das darueber befindet, ob eine Person in die Hochschulbildung oder in die Berufsbildung wechselt.",
+   "en": "An institution uses a placement tool that tests the abilities of new learners and recommends to the teachers whether they belong in the beginner, intermediate or advanced course, or that decides whether a person moves into higher education or into vocational training."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-3-c",
+  "source_ref": "(229)",
+  "official_rationale": {
+   "de": "Das System bestimmt die passende Stufe fuer eine bestimmte Person.",
+   "en": "The system determines the appropriate level for a particular person."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System, das als Assistent Empfehlungen gibt und den Energieverbrauch auf Ebene der Fernleitung, der Region oder vor Ort vorhersagt.",
+   "en": "A system that gives recommendations as an assistant and predicts energy consumption at transmission, regional or local level."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(206)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Systeme, die die Dienstgüte und den Betrieb kritischer digitaler Infrastruktur verbessern sollen: Verwaltung von Störungsmeldungen, Optimierung des Netzes und Anpassung an einzelne Kundenbedürfnisse, KI-gestützte Auskunft aus dem technischen Handbuch zur Netzwartung, Vorhersage der Netzlast.",
+   "en": "Systems intended to improve the quality of service and operation of critical digital infrastructure: management of fault reports, optimisation of the network and adaptation to individual customer needs, AI-assisted information retrieval from the technical manual for network maintenance, prediction of network load."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(194)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Eine Nachhilfeplattform verwaltet mit einem System die Konten selbstständiger Lehrkräfte; Eingangsgrößen sind Zufriedenheitsbewertungen der Schüler, Abschlussquoten der Stunden und Pünktlichkeitsprotokolle aus dem Videosystem. Daraus bildet das System einen Leistungswert; fällt er drei Wochen hintereinander unter vier von fünf, sperrt das System das Konto automatisch für einen Monat, halten die niedrigen Bewertungen in einem weiteren Prüfzeitraum an, wird das Konto dauerhaft abgeschaltet - die Lehrkräfte können dann keine Stunden mehr annehmen.",
+   "en": "A tutoring platform uses a system to manage the accounts of self-employed teachers; inputs are pupils' satisfaction ratings, lesson completion rates and punctuality logs from the video system. From these the system produces a performance score; if it falls below four out of five for three consecutive weeks, the system automatically suspends the account for one month, and if the low ratings persist in a further review period, the account is permanently deactivated - the teachers can then no longer accept lessons."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-4-b",
+  "source_ref": "(278)",
+  "official_rationale": {
+   "de": "Die Wirkung ist die tatsächliche Beendigung des Arbeitsverhältnisses; Beendigung ist inhaltlich zu verstehen und umfasst jede Entscheidung, die den Arbeitenden die weitere Beschäftigung nimmt.",
+   "en": "The effect is the de facto termination of the work-related relationship; termination is to be understood in substance and covers any decision that deprives the workers of further employment."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System erkennt Angaben in eingegangenen Lebensläufen und ordnet sie in einer internen Datenbank, die Personalverantwortliche durchsuchen können.",
+   "en": "A system recognises information in received CVs and organises it in an internal database that recruiters can search."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-4-a",
+  "source_ref": "(254)",
+  "official_rationale": {
+   "de": "Es erfüllt eine klar umschriebene, begrenzte Funktion und wirkt sich nicht wesentlich auf Gewinnung oder Auswahl des Bewerbers aus; es fällt unter die Ausnahme des Artikels 6 Absatz 3 Buchstabe d.",
+   "en": "It fulfils a clearly defined, limited function and does not materially affect the recruitment or selection of the candidate; it falls under the exemption in Article 6(3)(d)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Lernbegleiter fuer Menschen mit anderer Wahrnehmung oder Verarbeitung, etwa Autismus, Lese-Rechtschreib-Schwierigkeiten oder Aufmerksamkeitsstoerung, baut persoenliche Lernwege, passt Material, Tempo und Darstellung an und bietet Vorlesefunktion, Schriftgroessen, Farbanpassungen, mehr Zeit oder Pausen.",
+   "en": "A learning companion for people who perceive or process information differently, for example with autism, dyslexia or attention deficit disorder, builds personal learning paths, adapts material, pace and presentation and offers a read-aloud function, font sizes, colour adjustments, more time or breaks."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-3-b",
+  "source_ref": "(225)",
+  "official_rationale": {
+   "de": "Das Ergebnis dient dem Unterricht der Lehrkraft und der zusaetzlichen Unterstuetzung; es soll keine Noten bestimmen und das Gelernte nicht bewerten.",
+   "en": "The output serves the teacher's instruction and the additional support; it is not intended to determine grades or to evaluate what has been learned."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System eines Versicherers prüft Anträge auf Lebensversicherung, verarbeitet Alter, Gesundheitszustand, Familiengeschichte, Lebensgewohnheiten und Beruf und nutzt Sterbetafeln; daraus folgt, ob der Antrag angenommen wird und zu welchen Bedingungen.",
+   "en": "An insurer's system examines applications for life insurance, processes age, state of health, family history, lifestyle habits and occupation and uses mortality tables; from this follows whether the application is accepted and on what terms."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-c",
+  "source_ref": "(nach 321)",
+  "official_rationale": {
+   "de": "Es handelt sich um eine Risikobewertung.",
+   "en": "It is a risk assessment."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System hilft Bewerbern, die beste verfügbare Stelle zu finden: es prüft offene Stellen und die vom Bewerber angegebenen Fähigkeiten, Erfahrungen und Erwartungen, bildet daraus eine Rangfolge der Stellen und empfiehlt die passendsten; die Empfehlungen gehen ausschließlich an den Bewerber.",
+   "en": "A system helps candidates to find the best available job: it checks vacancies and the skills, experience and expectations stated by the candidate, creates a ranking of the jobs from this and recommends the most suitable ones; the recommendations go exclusively to the candidate."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-4-a",
+  "source_ref": "(254)",
+  "official_rationale": {
+   "de": "Der Einsatz wird vom Bewerber begonnen und geführt, liegt außerhalb der Einflussmöglichkeit des möglichen Arbeitgebers und findet außerhalb des Einstellungs- und Auswahlverfahrens statt.",
+   "en": "The use is initiated and conducted by the candidate, lies outside the sphere of influence of the potential employer and takes place outside the recruitment and selection procedure."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Unternehmen durchsucht mit einem System Internetplattformen und soziale Medien nach Äußerungen über sich als Arbeitgeber, um das eigene Ansehen zu verfolgen und allgemeine Entwicklungen in der Wahrnehmung durch mögliche Bewerber zu erkennen; einzelne Beiträge oder einzelne Nutzer werden nicht ausgewertet oder verfolgt, die Daten werden bei der Erhebung anonymisiert.",
+   "en": "A company uses a system to search online platforms and social media for statements about itself as an employer, in order to track its own reputation and to detect general trends in its perception by potential candidates; individual posts or individual users are not analysed or tracked, and the data are anonymised at collection."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-4-a",
+  "source_ref": "(254)",
+  "official_rationale": {
+   "de": "Das System ist nicht dazu bestimmt, Menschen unmittelbar zu gewinnen oder auszuwählen, auch wenn das Ansehen des Arbeitgebers mittelbar mit der Personalgewinnung zusammenhängt.",
+   "en": "The system is not intended to directly recruit or select people, even though the employer's reputation is indirectly connected with recruitment."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System verschriftlicht Gespraeche, uebersetzt Gespraechsmitschriften oder erstellt sachliche Zusammenfassungen fuer die Akte, ohne zu naechsten Schritten zu raten und ohne Ergebnisse vorzuschlagen.",
+   "en": "A system transcribes interviews, translates interview transcripts or creates factual summaries for the file, without advising on next steps and without proposing outcomes."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-7-c",
+  "source_ref": "(400)",
+  "official_rationale": {
+   "de": "Es erfuellt eine vorbereitende Aufgabe; geht ein System darueber hinaus, etwa indem es Angaben hinzufuegt, die in den Aussagen nicht enthalten sind, die Glaubwuerdigkeit bewertet oder die Aussagen mit dem Rechtsrahmen verknuepft, greift die Ausnahme nicht.",
+   "en": "It performs a preparatory task; if a system goes beyond this, for example by adding information not contained in the statements, assessing credibility or linking the statements to the legal framework, the exemption does not apply."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System verteilt begrenzte Stunden häuslicher Pflege unter anspruchsberechtigten Menschen und legt die Reihenfolge fest.",
+   "en": "A system distributes limited hours of home care among eligible persons and determines the order."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-a",
+  "source_ref": "(nach 293)",
+  "official_rationale": {
+   "de": "Es beeinflusst den Zugang zu grundlegenden Pflegeleistungen wesentlich.",
+   "en": "It materially influences access to essential care services."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Vorpruefwerkzeug leitet einen Antragsteller nach strengen, sachlichen Regeln zur Zahlung einer festen Gebuehr, etwa weil ein Abkommen zur Visumerleichterung die Gebuehr fuer Antragsteller aus einem bestimmten Land festlegt.",
+   "en": "A pre-screening tool directs an applicant, according to strict, objective rules, to pay a fixed fee, for example because a visa facilitation agreement sets the fee for applicants from a particular country."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-7-c",
+  "source_ref": "(400)",
+  "official_rationale": {
+   "de": "Es erfuellt eine eng begrenzte Verfahrensaufgabe.",
+   "en": "It performs a narrowly defined procedural task."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System gegen Geldwäsche und Terrorismusfinanzierung ist funktional verbunden und zugleich dafür gedacht, die Zahlungsfähigkeit zu bewerten.",
+   "en": "A system against money laundering and terrorist financing is functionally linked and at the same time intended to assess creditworthiness."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-b",
+  "source_ref": "(309)",
+  "official_rationale": {
+   "de": "Die Betrugsausnahme gilt hier nicht, und der Zweck der Bewertung der Zahlungsfähigkeit ist mitumfasst.",
+   "en": "The fraud exception does not apply here, and the purpose of assessing creditworthiness is included."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System zeigt woertliche Unterschiede zwischen aktuellen und frueheren Aussagen an, etwa Unterschiede auf Zeichenebene, ohne eine Bewertung der Glaubwuerdigkeit zu erzeugen und ohne Nachfragen zu empfehlen.",
+   "en": "A system indicates verbatim differences between current and previous statements, such as differences at character level, without generating a credibility assessment and without recommending follow-up questions."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-7-c",
+  "source_ref": "(400)",
+  "official_rationale": {
+   "de": "Bewertet das System dagegen die Bedeutung der Unterschiede oder bezeichnet es sie als Zweifel an der Glaubwuerdigkeit, greift die Ausnahme nicht mehr.",
+   "en": "If, by contrast, the system assesses the significance of the differences or describes them as doubts about credibility, the exemption no longer applies."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Spielzeug: ein KI-System empfiehlt Musik in einem vernetzten Spielzeug.",
+   "en": "Toys: an AI system recommends music in a connected toy."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-I",
+  "source_ref": "(47)",
+  "official_rationale": {
+   "de": "Das System erfüllt keine Sicherheitsaufgabe, und seine Fehlfunktion würde Gesundheit, Sicherheit oder Eigentum nicht gefährden. Es fällt daher nicht unter den Begriff des Sicherheitsbauteils.",
+   "en": "The system does not fulfil a safety function, and its malfunctioning would not endanger health, safety or property. It therefore does not fall under the notion of safety component."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System errechnet aus den im Schuljahr erzielten Noten und deren Gewichtungen den Durchschnitt, den die Lehrkraft fuer ihre Endbewertung nutzt.",
+   "en": "A system calculates, from the grades achieved in the school year and their weightings, the average that the teacher uses for the final assessment."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-3-b",
+  "source_ref": "(225)",
+  "official_rationale": {
+   "de": "Es fuehrt nur eine einfache Rechnung aus und faellt damit unter die Ausnahme fuer eng umgrenzte Verfahrensaufgaben in Artikel 6 Absatz 3 Buchstabe a.",
+   "en": "It only performs a simple calculation and thus falls under the exemption for narrowly defined procedural tasks in Article 6(3)(a)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System sortiert eingehende Bewerbungen für die Aufnahme an einer Schule oder Hochschule nach der angestrebten Klassenstufe oder Bildungsstufe und ordnet sie in vorab festgelegte Kategorien ein, etwa Grundschule, weiterführende Schule, Oberstufe oder bestimmte Klassenstufen, auf Grundlage der Angaben in der Bewerbung.",
+   "en": "A system sorts incoming applications for admission to a school or higher education institution by the intended grade or level of education and assigns them to predefined categories, such as primary school, secondary school, upper secondary level or specific grades, on the basis of the information in the application."
+  },
+  "expected": "exemption_applies",
+  "provision": "",
+  "source_ref": "(92)",
+  "official_rationale": {
+   "de": "Das System erfüllt eine enge Verfahrensaufgabe, weil es die Geeignetheit der Bewerber nicht bewertet und keine Aufnahmeentscheidungen trifft.",
+   "en": "The system performs a narrow procedural task, because it does not assess the suitability of the applicants and does not take admission decisions."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System vereinheitlicht Ton- und Bildsignale, etwa durch Rauschminderung, Anpassung der Beleuchtung oder Herausziehen von Gesichtspunkten, damit Sachbearbeiter Aufnahmen leichter durchsehen koennen.",
+   "en": "A system standardises audio and video signals, for example through noise reduction, lighting adjustment or extraction of facial points, so that caseworkers can review recordings more easily."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-7-a",
+  "source_ref": "(392)",
+  "official_rationale": {
+   "de": "Erzeugt das System keine Schluesse auf Taeuschung und legt es solche auch nicht nahe, kann es unter die Ausnahme fuer Systeme mit vorbereitender Aufgabe fallen.",
+   "en": "If the system does not generate inferences of deception and does not suggest them either, it can fall under the exemption for systems performing a preparatory task."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein persoenlicher Lernassistent gibt fortlaufend Rueckmeldung und erstellt am Ende jeder Einheit einen Bericht mit Noten, Staerken, Schwaechen und Verbesserungsvorschlaegen; die Lehrkraft nutzt den Bericht fuer die Notengebung am Ende des Zeitraums.",
+   "en": "A personal learning assistant gives continuous feedback and at the end of each unit produces a report with grades, strengths, weaknesses and suggestions for improvement; the teacher uses the report for grading at the end of the period."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-3-b",
+  "source_ref": "(225)",
+  "official_rationale": {
+   "de": "Obwohl das System vor allem begleitend Rueckmeldung gibt, wird sein Ergebnis von der Lehrkraft fuer die Notenentscheidung genutzt und wirkt damit auf die abschliessende Bewertung ein.",
+   "en": "Although the system primarily gives formative feedback, its output is used by the teacher for the grading decision and thus affects the final evaluation."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Unternehmen optimiert mit einem Buchungswerkzeug die Verteilung von Arbeitsplätzen in einem gemischt genutzten Büro, indem es Reservierungen der Beschäftigten mit freien Schreibtischen oder Besprechungsräumen zusammenbringt.",
+   "en": "A company uses a booking tool to optimise the allocation of workplaces in a shared office by matching employees' reservations with free desks or meeting rooms."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-4-b",
+  "source_ref": "(278)",
+  "official_rationale": {
+   "de": "Es organisiert körperliche Arbeitsmittel, weist aber keine Aufgaben zu, bestimmt keine Beförderungen, bewertet die Arbeitenden nicht und berührt keine Beschäftigungsrechte.",
+   "en": "It organises physical work resources, but does not allocate tasks, does not determine promotions, does not evaluate the workers and does not affect employment rights."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System wird bei der Beweisbewertung eingesetzt, teilt aber nur die zur Echtheitspruefung ausgewaehlten Schriftstuecke, Bilder, Videos oder anderes Material in Gruppen ein, und diese Einteilung wirkt sich auf die Beurteilung der Verlaesslichkeit nicht aus.",
+   "en": "A system is used in the evaluation of evidence, but only divides the documents, images, videos or other material selected for authenticity checks into groups, and this division does not affect the assessment of reliability."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-6-c",
+  "source_ref": "(365)",
+  "official_rationale": {
+   "de": "Solche Systeme fallen unter die Ausnahme fuer Systeme, die eine eng begrenzte Verfahrensaufgabe erfuellen.",
+   "en": "Such systems fall under the exemption for systems that perform a narrowly defined procedural task."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System, das Wasserstandsdaten in Echtzeit mit der Schleusensteuerung für den Straßenverkehr verknüpft, etwa bei Hochwassergefahr.",
+   "en": "A system that links real-time water level data with the control of sluice gates for road traffic, for example in the event of a flood risk."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(196)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Eine Arbeitsagentur laesst Vorbildung, Abschluesse und Testergebnisse von Bewerbern auswerten und ordnet die Personen freien Ausbildungsplaetzen zu.",
+   "en": "An employment agency has the prior education, qualifications and test results of applicants analysed and assigns the persons to vacant training places."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-3-a",
+  "source_ref": "(219)",
+  "official_rationale": {
+   "de": "Das System wendet feste Zugangskriterien und Platzgrenzen an und weist dadurch Personen Ausbildungsplaetze zu; weil es dabei persoenliche Daten bewertet, greift die Ausnahmeregel in Artikel 6 Absatz 3 nicht.",
+   "en": "The system applies fixed access criteria and place limits and thereby assigns persons to training places; because it evaluates personal data in doing so, the derogation in Article 6(3) does not apply."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System bewertet Bewerbungen um Sozialwohnungen nach Einkommen, Haushaltsgröße, Alter, Erwerbsstatus und Wohnort und bildet daraus Dringlichkeit und Reihenfolge.",
+   "en": "A system evaluates applications for social housing according to income, household size, age, employment status and place of residence and derives urgency and order from this."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-a",
+  "source_ref": "(nach 293)",
+  "official_rationale": {
+   "de": "Es wirkt sich unmittelbar auf den Zugang zu grundlegenden Wohnleistungen aus.",
+   "en": "It has a direct effect on access to essential housing services."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Wirtschaftsunternehmen setzt ein System zur Unterstützung der Gewinnung von Auszubildenden ein; es verwaltet und bearbeitet Bewerbungen, sichtet Lebensläufe, ordnet Bewerber Rollen zu oder erzeugt engere Listen anhand vorgegebener Kriterien wie Qualifikation oder Alter.",
+   "en": "A commercial company uses a system to support the recruitment of apprentices; it manages and processes applications, screens CVs, assigns candidates to roles or generates shortlists on the basis of predefined criteria such as qualifications or age."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-4-a",
+  "source_ref": "(254)",
+  "official_rationale": {
+   "de": "Obwohl eine Ausbildung Lernanteile hat, wird das System im Rahmen der Einstellung für ein förmliches Arbeitsverhältnis eingesetzt.",
+   "en": "Although an apprenticeship has learning components, the system is used in the context of recruitment for a formal employment relationship."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine Polizeibehoerde setzt ein System ein, das die Gefahrenlage fuer Terrorismus in einem Stadtbezirk mit Regierungsgebaeuden einschaetzt, etwa niedrig, mittel oder erheblich, und sich dabei auf Gefahrenhinweise aus Lageberichten, die Zahl der letzten Vorfaelle und politische Entwicklungen stuetzt.",
+   "en": "A police authority uses a system that assesses the terrorism threat level in a city district with government buildings, for example low, medium or substantial, drawing on threat indications from situation reports, the number of recent incidents and political developments."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-6-preliminary",
+  "source_ref": "(355)",
+  "official_rationale": {
+   "de": "Es findet keine Profilbildung bei Menschen statt, die Einschaetzung bewertet keine persoenlichen Merkmale einer bestimmten Person, das Ergebnis gilt gemeinsam fuer alle Anwesenden im Bezirk, und niemand wird als moeglicher Taeter oder moegliches Opfer herausgegriffen.",
+   "en": "No profiling of people takes place, the assessment does not evaluate personal characteristics of a particular person, the result applies collectively to everyone present in the district, and no one is singled out as a potential offender or potential victim."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine Bildungseinrichtung wertet mit maschinellem Lernen in Echtzeit das Verhalten der Lernenden aus und erkennt Muster, die auf Taeuschung in Pruefungen im Netz hindeuten.",
+   "en": "An educational institution uses machine learning to analyse learners' behaviour in real time and detects patterns indicating cheating in online tests."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-3-d",
+  "source_ref": "(235)",
+  "official_rationale": {
+   "de": "Das System beobachtet und erkennt unerlaubtes Verhalten waehrend einer Pruefung.",
+   "en": "The system monitors and detects prohibited behaviour during a test."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System bearbeitet Leistungsfälle einer Krankenversicherung, prüft die Berechtigung nach den Vertragsbedingungen und bestimmt die Zahlungshöhe.",
+   "en": "A system processes claims of a health insurance, checks eligibility under the terms of the contract and determines the amount of payment."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-5-c",
+  "source_ref": "(nach 321)",
+  "official_rationale": {
+   "de": "Leistungsfallbearbeitung ist von Risikobewertung und Beitragsfestlegung zu unterscheiden.",
+   "en": "Claims handling is to be distinguished from risk assessment and pricing."
+  }
+ },
+ {
+  "scenario": {
+   "de": "System teilt Patienten ein: es nimmt das Gangbild auf, leitet daraus Gesundheitsangaben ab und ordnet die Personen Krankheitsstufen zu, um frühe Anzeichen von Krankheiten mit Bewegungsstörungen zu erkennen.",
+   "en": "A system categorises patients: it records the gait, infers health information from it and assigns the persons to disease stages in order to detect early signs of diseases with movement disorders."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-1-b",
+  "source_ref": "(170)",
+  "official_rationale": {
+   "de": "Körpermerkmale als Eingabe, Gesundheit als abgeleitetes geschütztes Merkmal, danach Einteilung.",
+   "en": "Biometric data as input, health as an inferred protected characteristic, followed by categorisation."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine Personalvermittlung sucht mit einem Werkzeug in sozialen Netzwerken, Berufsportalen, Stellenbörsen und eigenen Lebenslaufdatenbanken nach Personen, die vorgegebenen Kriterien wie Berufsjahren, technischen Fähigkeiten oder Bildungsweg entsprechen, und erzeugt eine engere Liste möglicher Bewerber oder Auftragnehmer.",
+   "en": "A recruitment agency uses a tool to search social networks, professional portals, job boards and its own CV databases for persons who meet predefined criteria such as years of experience, technical skills or educational background, and generates a shortlist of potential candidates or contractors."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-4-a",
+  "source_ref": "(254)",
+  "official_rationale": {
+   "de": "Es wirkt unmittelbar und bedeutsam auf Gewinnung und Auswahl von Menschen, indem es Bewerber filtert und auffindet; keine der Ausnahmen des Artikels 6 Absatz 3 greift.",
+   "en": "It directly and significantly affects the recruitment and selection of people by filtering and finding candidates; none of the exemptions in Article 6(3) applies."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System wertet Notrufe bei der Polizei aus, zieht Schlüsselwörter heraus, bewertet die Dringlichkeit und bestimmt die Reihenfolge der Einsätze.",
+   "en": "A system analyses emergency calls to the police, extracts keywords, assesses urgency and determines the order of operations."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-d",
+  "source_ref": "(nach 336)",
+  "official_rationale": {
+   "de": "Es ist unmittelbar an Bewertung, Reihenfolge und Veranlassung der eingehenden Anrufe beteiligt.",
+   "en": "It is directly involved in the evaluation, prioritisation and dispatch of incoming calls."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine Buchhaltungsfirma setzt ein System ein, das Geldwäsche erkennt, um ihre Pflichten aus dem Geldwäscherecht der Europäischen Union zu erfüllen.",
+   "en": "An accounting firm uses a system that detects money laundering in order to fulfil its obligations under the anti-money laundering law of the European Union."
+  },
+  "expected": "not_high_risk",
+  "provision": "",
+  "source_ref": "(81)",
+  "official_rationale": {
+   "de": "Die Firma handelt nicht im Namen der Strafverfolgungsbehörden, sondern im eigenen Namen; das System ist deshalb im Bereich Strafverfolgung nach Nummer 6 des Anhangs III nicht hochriskant.",
+   "en": "The firm does not act on behalf of the law enforcement authorities but in its own name; the system is therefore not high-risk in the area of law enforcement under point 6 of Annex III."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine Berufsbildungseinrichtung prueft mit Einstufungstests und Kompetenzpruefungen Wissen und Koennen in Mathematik, Physik und technischen Grundlagen und bestimmt daraus die Zugangsberechtigung fuer eine bestimmte Stufe oder einen bestimmten Kurs.",
+   "en": "A vocational training institution uses placement tests and competence tests to assess knowledge and skills in mathematics, physics and technical fundamentals and determines from this the eligibility for access to a particular level or a particular course."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-3-c",
+  "source_ref": "(229)",
+  "official_rationale": {
+   "de": "Das System schaetzt ein, welche Stufe der Bildung die Person in einem bestimmten Programm erreichen kann.",
+   "en": "The system assesses which level of education the person can reach in a particular programme."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Werkzeug für Übersetzung in Echtzeit im Straßenverkehr.",
+   "en": "A tool for real-time translation in road traffic."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(196)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Ein System, das den Überlauf der Abwasseranlage vorhersagt, soweit dieser das Trinkwasser beeinträchtigt.",
+   "en": "A system that predicts the overflow of the wastewater system, insofar as it affects drinking water."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(198)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Ein System sortiert eingehende Bewerbungen vor dem Verfahren, ordnet sie festen Gruppen zu und markiert doppelte Bewerbungen.",
+   "en": "A system sorts incoming applications before the procedure, assigns them to fixed groups and flags duplicate applications."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-3-a",
+  "source_ref": "(219)",
+  "official_rationale": {
+   "de": "Solange es keine Entscheidung ueber Aufnahme oder Zugang trifft, faellt es unter die Ausnahme fuer eng umgrenzte Verfahrensaufgaben der Datenverarbeitung und Ordnung in Artikel 6 Absatz 3 Buchstabe a.",
+   "en": "As long as it takes no decision on admission or access, it falls under the exemption for narrowly defined procedural tasks of data processing and organisation in Article 6(3)(a)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Auskunftsassistent einer Hochschule beantwortet Fragen zu Zulassungsvoraussetzungen, Bewerbungsablauf und Studienangebot.",
+   "en": "An information assistant of a higher education institution answers questions on admission requirements, the application process and the range of programmes."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-3-a",
+  "source_ref": "(219)",
+  "official_rationale": {
+   "de": "Er entscheidet nicht ueber Aufnahmen und gibt keine persoenlichen Empfehlungen, die eine Aufnahmeentscheidung spuerbar beeinflussen koennten.",
+   "en": "It does not decide on admissions and gives no personal recommendations that could noticeably influence an admission decision."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Chatbot löst in einer medizinischen Einrichtung den Notfalldienst aus, ohne ärztliche Untersuchung oder Diagnose.",
+   "en": "A chatbot in a medical facility triggers the emergency service, without medical examination or diagnosis."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-d",
+  "source_ref": "(nach 336)",
+  "official_rationale": {
+   "de": "Es gehört zu den in Nummer 5 Buchstabe d genannten Zwecken.",
+   "en": "It belongs to the purposes listed in point 5(d)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Spielzeug mit einem KI-System als Sicherheitsbauteil, bei dem der Hersteller auf die Bewertung durch eine dritte Stelle verzichten darf, weil er harmonisierte Normen anwendet.",
+   "en": "A toy with an AI system as a safety component, for which the manufacturer may dispense with third-party assessment because it applies harmonised standards."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-I",
+  "source_ref": "(59)",
+  "official_rationale": {
+   "de": "Die Wahl des Bewertungsverfahrens durch den Hersteller soll die Einstufung als hochriskantes KI-System nach Artikel 6 Absatz 1 nicht berühren, auch wenn ein Verzicht auf die Bewertung durch eine dritte Stelle bei Anwendung harmonisierter Normen möglich ist.",
+   "en": "The manufacturer's choice of assessment procedure is not intended to affect the classification as a high-risk AI system under Article 6(1), even if it is possible to dispense with third-party assessment when harmonised standards are applied."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System zur Optimierung des Stromnetzes durch Vorhersage des Energiebedarfs.",
+   "en": "A system for optimising the electricity grid by predicting energy demand."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(206)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Ein System unterstuetzt die Bearbeitung von Bewerbungen, indem es Unterlagen ordnet, durchsucht, uebersetzt und die Angaben in eine geordnete Form bringt.",
+   "en": "A system supports the processing of applications by organising, searching and translating documents and bringing the information into a structured form."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-3-a",
+  "source_ref": "(219)",
+  "official_rationale": {
+   "de": "Es erleichtert nur das Ordnen und Durchsehen der Unterlagen und hat keinen bedeutsamen Einfluss auf die Entscheidung; es faellt unter die Ausnahme fuer vorbereitende Taetigkeiten in Artikel 6 Absatz 3 Buchstabe d.",
+   "en": "It only facilitates organising and reviewing the documents and has no significant influence on the decision; it falls under the exemption for preparatory tasks in Article 6(3)(d)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "System durchsucht Texte und Bilder, um verbotene oder unangemessene Inhalte zu finden, auch solche, die auf politische Meinungen hindeuten.",
+   "en": "A system searches texts and images to find prohibited or inappropriate content, including content that indicates political opinions."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-1-b",
+  "source_ref": "(170)",
+  "official_rationale": {
+   "de": "Die Einteilung beruht nicht auf Körpermerkmalen.",
+   "en": "The categorisation is not based on biometric data."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System, das schwere Gegenstände auf anfälligen Brücken und Kaimauern erkennt.",
+   "en": "A system that detects heavy objects on vulnerable bridges and quay walls."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(196)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Ein System bewertet Arbeiten, Tests, Kurztests und Pruefungen der Lernenden, die in die Endbewertung einfliessen, und schlaegt Noten vor.",
+   "en": "A system evaluates learners' assignments, tests, quizzes and examinations that feed into the final evaluation, and proposes grades."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-3-b",
+  "source_ref": "(225)",
+  "official_rationale": {
+   "de": "Es wirkt auf die abschliessende Bewertung der Lernenden ein, indem es die Ergebnisse auswertet und Noten vorschlaegt.",
+   "en": "It affects the final evaluation of the learners by analysing the results and proposing grades."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System erzeugt Stellenbeschreibungen ausschließlich aus einer Liste von Aufgaben und einer Liste notwendiger Qualifikationen und Fähigkeiten, die zuvor ein Mensch festgelegt hat.",
+   "en": "A system generates job descriptions exclusively from a list of tasks and a list of necessary qualifications and skills previously defined by a human."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-4-a",
+  "source_ref": "(247)",
+  "official_rationale": {
+   "de": "Es erfüllt eine enge Verfahrensaufgabe nach Artikel 6 Absatz 3 Buchstabe a, birgt nur begrenzte Risiken und beeinflusst das Bewerbungsverfahren nicht in bedeutsamer Weise.",
+   "en": "It performs a narrow procedural task under Article 6(3)(a), entails only limited risks and does not influence the application procedure in a significant way."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System prüft Kostenerstattungsanträge von Firmen, nicht von einzelnen Menschen.",
+   "en": "A system checks reimbursement claims from companies, not from individual persons."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-5-a",
+  "source_ref": "(nach 293)",
+  "official_rationale": {
+   "de": "Es bewertet keine Anträge einzelner Menschen.",
+   "en": "It does not assess any applications from individual persons."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System bewertet Anträge auf Gesundheitsleistungen vor und bestimmt damit, ob eine externe Stelle sie vertieft prüft; die Weiterleitung spricht ein Sachbearbeiter aus.",
+   "en": "A system pre-assesses applications for healthcare services and thereby determines whether an external body examines them in depth; the referral is issued by a caseworker."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-5-a",
+  "source_ref": "(nach 293)",
+  "official_rationale": {
+   "de": "Die Vorbewertung ist der entscheidende Schritt für die weitere Prüfung und damit für den Zugang zu Gesundheitsleistungen.",
+   "en": "The pre-assessment is the decisive step for the further examination and thus for access to healthcare services."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System zur Qualitätssicherung beim Einbau von Stromzählern, das Bilder eingebauter Zähler auswertet und dem Beschäftigten Hinweise auf Fehler und Verbesserungen gibt.",
+   "en": "A system for quality assurance in the installation of electricity meters, which analyses images of installed meters and gives the employee indications of errors and improvements."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(206)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Gangerkennung, die das gespeicherte Gangbild eines bekannten Flüchtigen mit Videomaterial aus Verkehrsknotenpunkten abgleicht, um ihn weiterzuverfolgen.",
+   "en": "Gait recognition that compares the stored gait of a known fugitive with video footage from transport hubs in order to keep tracking him."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-1-a",
+  "source_ref": "(135)",
+  "official_rationale": {
+   "de": "Das Verfolgen beruht auf Körpermerkmalen und auf dem Abgleich mit einer Sammlung.",
+   "en": "The tracking is based on biometric data and on comparison against a database."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System wertet den Inhalt einer bei Gericht eingegangenen Klage oder eines Antrags sowie Muster frueherer Rechtsprechung aus, um die Fallart vorab einzuordnen, etwa Vertragsrecht oder Erbsache.",
+   "en": "A system analyses the content of a claim or application received by a court as well as patterns of previous case law in order to pre-classify the type of case, such as contract law or a probate matter."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-8-a",
+  "source_ref": "(423)",
+  "official_rationale": {
+   "de": "Grundsaetzlich kann das als Unterstuetzung beim Ermitteln und Auslegen von Tatsachen und Recht gelten, doch kommen die Ausnahmen fuer eine eng begrenzte Verfahrensaufgabe und fuer eine vorbereitende Aufgabe in Betracht. Gibt das System zusaetzlich Empfehlungen zur Zulaessigkeit des Falls, abgesehen von rein technischen Pruefungen, greifen die Ausnahmen nicht mehr, auch wenn Gerichtsmitarbeiter das spaeter pruefen.",
+   "en": "In principle this can count as assistance in researching and interpreting facts and the law, but the exemptions for a narrowly defined procedural task and for a preparatory task come into consideration. If the system additionally gives recommendations on the admissibility of the case, apart from purely technical checks, the exemptions no longer apply, even if court staff check this later."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein Werkzeug gibt Lernenden Rueckmeldung zu Aussprache oder Lesefluss, analysiert die Sprache und schlaegt Verbesserungen bei Betonung, Rhythmus und Aussprache vor.",
+   "en": "A tool gives learners feedback on pronunciation or reading fluency, analyses speech and suggests improvements in stress, rhythm and pronunciation."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-3-b",
+  "source_ref": "(225)",
+  "official_rationale": {
+   "de": "Die Rueckmeldung nutzen die Lernenden selbst; Lehrkraefte verwenden sie nicht, um Noten zu bestimmen, die in eine Endbewertung einfliessen, und nicht, um Sprachkenntnisse festzustellen.",
+   "en": "The learners use the feedback themselves; teachers do not use it to determine grades that feed into a final evaluation, nor to establish language proficiency."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System übersetzt fremdsprachige Anträge auf öffentliche Unterstützungsdienste.",
+   "en": "A system translates applications for public assistance services written in foreign languages."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-5-a",
+  "source_ref": "(nach 293)",
+  "official_rationale": {
+   "de": "Der Fall gehört in den Anwendungsfall, doch die Übersetzung ist ein unvermeidlicher, aber für die Anspruchsprüfung nicht entscheidender Schritt und nach Artikel 6 Absatz 3 Buchstaben a und d ausgenommen.",
+   "en": "The case falls within the use case, but the translation is an unavoidable step that is not decisive for the eligibility assessment, and is exempted under Article 6(3)(a) and (d)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System führt Hintergrundprüfungen von Bewerbern durch: es bündelt amtliche Nachweise, Beschäftigungsverlauf, Verlauf in sozialen Netzwerken sowie - soweit rechtlich zulässig - Kredit- und Finanzdaten mit offen zugänglichen Internetinformationen und gibt zusammengesetzte Risikowerte, Kategorien wie geringes, mittleres oder hohes Risiko oder Hinweise auf auffällige Punkte aus; in Verfahren mit hohen Bewerberzahlen werden damit Bewerber vor der menschlichen Prüfung zurückgestellt oder ausgeschlossen.",
+   "en": "A system carries out background checks on candidates: it combines official records, employment history, social network history and - where legally permitted - credit and financial data with publicly available online information, and outputs composite risk scores, categories such as low, medium or high risk, or flags on conspicuous points; in procedures with high numbers of applicants, it is used to set aside or exclude candidates before human review."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-4-a",
+  "source_ref": "(254)",
+  "official_rationale": {
+   "de": "Die Ausgabe beeinflusst in der Praxis stark, wer weiterkommt, und damit die Berufsaussichten wesentlich; weil das System Profilbildung vornimmt, kann es die Ausnahmen des Artikels 6 Absatz 3 nicht nutzen.",
+   "en": "In practice the output strongly influences who proceeds and thus materially affects career prospects; because the system performs profiling, it cannot make use of the exemptions in Article 6(3)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Spielzeug mit einem KI-System als Sicherheitsbauteil, für das eine Konformitätsbewertung durch eine dritte Stelle verlangt ist, nach Artikel 26 Absatz 2 und Absatz 3 der Spielzeugverordnung (EU) 2025/2509.",
+   "en": "A toy with an AI system as a safety component, for which a third-party conformity assessment is required, in accordance with Article 26(2) and (3) of the Toy Safety Regulation (EU) 2025/2509."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-I",
+  "source_ref": "(59)",
+  "official_rationale": {
+   "de": "Erwägungsgrund 15 der Spielzeugverordnung bestätigt diese Einstufung ausdrücklich. KI-Systeme, die Sicherheitsbauteile von Spielzeug sind oder selbst solche Produkte, sind nach Artikel 6 Absatz 1 hochriskant.",
+   "en": "Recital 15 of the Toy Safety Regulation expressly confirms this classification. AI systems that are safety components of toys or are themselves such products are high-risk under Article 6(1)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Grenzautomat vergleicht das aufgenommene Gesichtsbild eines Reisenden mit dem Bild im Chip seines Passes, um zu bestätigen, dass er der Inhaber des Dokuments ist.",
+   "en": "An automated border gate compares the captured facial image of a traveller with the image in the chip of his passport in order to confirm that he is the holder of the document."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-1-a",
+  "source_ref": "(136)",
+  "official_rationale": {
+   "de": "Reine Bestätigung der behaupteten Identität.",
+   "en": "Mere verification of the claimed identity."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Flughafenkameras nehmen Gangbild und Gesichtsmuster der Reisenden auf, leiten daraus unter anderem die ethnische Herkunft ab und teilen die Reisenden in Gruppen ein, etwa um Sammelprofile zu bilden oder gezielte Massnahmen zu stützen.",
+   "en": "Airport cameras capture the gait and facial patterns of travellers, infer from them, among other things, their ethnic origin and divide the travellers into groups, for example to create group profiles or to support targeted measures."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-1-b",
+  "source_ref": "(170)",
+  "official_rationale": {
+   "de": "Ethnische Herkunft wird aus Körpermerkmalen abgeleitet und zur Einteilung benutzt.",
+   "en": "Ethnic origin is inferred from biometric data and used for categorisation."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System, das verdächtige Absenderadressen von Nachrichten erkennt und entwendete Daten ausfindig macht.",
+   "en": "A system that detects suspicious sender addresses of messages and tracks down stolen data."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(187)",
+  "official_rationale": ""
+ },
+ {
+  "scenario": {
+   "de": "Ein Unternehmen optimiert mit einer Anwendung Geschäftsreisen und schlägt kostengünstige Flüge, Hotels und Reisewege für Beschäftigte vor, die Termine oder Tagungen besuchen müssen; die Vorschläge hindern die Beschäftigten nicht daran, anders zu wählen oder vollständig selbst zu buchen, solange sie nicht gegen sachliche Regeln der Unternehmensrichtlinie wie Höchstpreise verstoßen.",
+   "en": "A company uses an application to optimise business travel and suggests low-cost flights, hotels and travel routes for employees who have to attend appointments or meetings; the suggestions do not prevent employees from choosing differently or booking entirely by themselves, as long as they do not infringe objective rules of the company policy such as maximum prices."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-4-b",
+  "source_ref": "(278)",
+  "official_rationale": {
+   "de": "Das System unterstützt Abwicklung und Budgetierung, bestimmt aber nicht die Verteilung der Arbeit, keine Leistungsbewertungen, keinen Aufstieg und keine Beendigungsentscheidungen.",
+   "en": "The system supports processing and budgeting, but does not determine the allocation of work, performance evaluations, promotion or termination decisions."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Eine Arbeitsvermittlung ordnet mit einem System Bewerber offenen Stellen zu: es verarbeitet Bewerberdaten aus Lebensläufen wie Fähigkeiten, Bildungsweg und frühere Berufserfahrung sowie auf Arbeitgeberseite Stellenanforderungen, Berufsklassifikationen und Arbeitsmarktdaten und erzeugt Empfehlungen, indem es Bewerber für bestimmte Stellen in eine Rangfolge bringt oder Jobsuchenden passende Stellen vorschlägt; die Sachbearbeiter stützen sich bei großen Bewerbermengen stark darauf.",
+   "en": "An employment agency uses a system to match candidates with vacancies: it processes candidate data from CVs such as skills, educational background and previous professional experience and, on the employer side, job requirements, occupational classifications and labour market data, and generates recommendations by ranking candidates for particular jobs or suggesting suitable jobs to jobseekers; caseworkers rely heavily on it when dealing with large numbers of applicants."
+  },
+  "expected": "high_risk",
+  "provision": "AI-Act/annex-III/pt-4-a",
+  "source_ref": "(254)",
+  "official_rationale": {
+   "de": "Die Empfehlungen wirken sich unmittelbar darauf aus, welche Bewerber Arbeitgebern vorgeschlagen und welche Stellen Jobsuchenden gezeigt werden.",
+   "en": "The recommendations directly affect which candidates are proposed to employers and which jobs are shown to jobseekers."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System prueft Visumantraege auf Vollstaendigkeit und Form und sortiert oder verteilt Akten zur verwaltungsmaessigen Bearbeitung nach oeffentlichen und sachlichen Maßstaeben, wobei es nur technische und nicht auslegende Handlungen vornimmt, den Inhalt nicht bewertet, den Verfahrensweg nicht bestimmt und die Pruefung inhaltlich nicht steuert.",
+   "en": "A system checks visa applications for completeness and form and sorts or distributes files for administrative processing according to public and objective criteria, performing only technical and non-interpretive acts, without assessing the content, determining the procedural route or steering the substantive examination."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-7-c",
+  "source_ref": "(400)",
+  "official_rationale": {
+   "de": "Es erfuellt eine eng begrenzte Verfahrensaufgabe.",
+   "en": "It performs a narrowly defined procedural task."
+  }
+ },
+ {
+  "scenario": {
+   "de": "System schätzt aus Gesichtszügen oder Tippverhalten das Alter, um Minderjährige von schädlichen Inhalten, von altersbeschränkten Diensten, von Räumen oder von Warenautomaten fernzuhalten.",
+   "en": "A system estimates age from facial features or typing behaviour in order to keep minors away from harmful content, age-restricted services, premises or vending machines."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-1-b",
+  "source_ref": "(170)",
+  "official_rationale": {
+   "de": "Abgeleitet wird das Alter, das nicht zu den geschützten Merkmalen gehört.",
+   "en": "What is inferred is age, which is not one of the protected characteristics."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein System beobachtet die Bewertungsmuster von Lehrkraeften ueber die Zeit und meldet Abweichungen, die danach ein Mensch prueft und bei Bedarf berichtigt.",
+   "en": "A system monitors teachers' grading patterns over time and reports deviations, which a human then reviews and corrects if necessary."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-3-b",
+  "source_ref": "(225)",
+  "official_rationale": {
+   "de": "Es soll Entscheidungsmuster und Abweichungen davon erkennen, aendert Bewertungen nicht selbsttaetig und soll eine abgeschlossene menschliche Bewertung nicht ersetzen oder beeinflussen; Ausnahme nach Artikel 6 Absatz 3 Buchstabe c.",
+   "en": "It is intended to detect decision-making patterns and deviations from them, does not change grades automatically and is not intended to replace or influence a completed human assessment; exemption under Article 6(3)(c)."
+  }
+ },
+ {
+  "scenario": {
+   "de": "Ein von einem Menschen beaufsichtigtes System, das Ungleichgewichte im Stromnetz vorhersagt, etwa im Abstand von 15 Minuten. Die Vorhersagen stützen die Betriebsplanung, wirken aber auch unmittelbar auf Marktteilnehmer; eine Fehlfunktion könnte innere und äußere Beteiligte in die Irre führen und über schlechtere Einsatz- oder Absicherungsentscheidungen die Netzstabilität und damit die Stromversorgung beeinträchtigen.",
+   "en": "A human-supervised system that predicts imbalances in the electricity grid, for example at 15-minute intervals. The predictions support operational planning but also have a direct effect on market participants; a malfunction could mislead internal and external stakeholders and, through poorer dispatch or hedging decisions, impair grid stability and thus the electricity supply."
+  },
+  "expected": "not_high_risk",
+  "provision": "AI-Act/annex-III/pt-2",
+  "source_ref": "(206)",
+  "official_rationale": ""
+ }
+]

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ t('webui.page_title', name=t('app.name')) }}</title>
+<meta name="description" content="{{ t('webui.meta_description') }}">
+<meta name="robots" content="noindex">
+<!-- No external fonts, scripts or icons: the service must run without internet
+     access, and a legal query must not leak what someone asked about. -->
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" href="data:,">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="header-top">
+      <h1>{{ t('app.name') }}</h1>
+      <nav class="language-switch" aria-label="{{ t('webui.language_switch') }}">
+        {%- for code, name in languages %}
+        {% if not loop.first %}<span aria-hidden="true">|</span>{% endif -%}
+        <a href="?lang={{ code }}" hreflang="{{ code }}" lang="{{ code }}" title="{{ name }}"
+           {%- if code == lang %} aria-current="true"{% endif %}>{{ code|upper }}</a>
+        {%- endfor %}
+      </nav>
+    </div>
+    <p class="subtitle">{{ t('webui.subtitle') }}</p>
+    <dl class="version">
+      <dt>{{ t('webui.version_corpus') }}</dt>
+      <dd>{{ corpus_as_of }}</dd>
+      <dt>{{ t('webui.version_rules') }}</dt>
+      <dd>{{ rules_as_of }}</dd>
+      <dt>{{ t('webui.version_units') }}</dt>
+      <dd>{{ units_text }}</dd>
+    </dl>
+  </div>
+</header>
+
+<main>
+
+{% if restricted %}
+<section class="notice warning" role="status">
+  <h2>{{ t('webui.degraded_title') }}</h2>
+  <p>{{ t('webui.degraded_notice') }}</p>
+</section>
+{% endif %}
+
+<form id="check-form" novalidate>
+
+  <section class="field-group">
+    <label class="large" for="description">{{ t('webui.description_label') }}</label>
+    <p class="explanation">{{ t('webui.description_explanation') }}</p>
+    <textarea id="description" name="description" rows="7" maxlength="20000"
+      placeholder="{{ t('webui.description_placeholder') }}"></textarea>
+    <p class="char-count"><span id="char-count">0</span> {{ t('webui.char_count_suffix') }}</p>
+  </section>
+
+  <section class="field-group">
+    <label for="question">{{ t('webui.question_label') }} <span class="optional">{{ t('webui.optional') }}</span></label>
+    <p class="explanation">{{ t('webui.question_explanation') }}</p>
+    <input type="text" id="question" name="question" maxlength="2000"
+      placeholder="{{ t('webui.question_placeholder') }}">
+  </section>
+
+  <details class="questionnaire">
+    <summary>{{ t('webui.questionnaire_summary') }} <span class="optional">{{ t('webui.questionnaire_count', count=questionnaire|length) }}</span></summary>
+    <p class="explanation">{{ questionnaire_hint }}</p>
+
+    {% for item in questionnaire %}
+    <div class="item" data-id="{{ item.id }}" data-kind="{{ item.kind }}">
+      <p class="item-question" id="question-{{ item.id }}">{{ item.question }}</p>
+      {% if item.help_text %}<p class="item-help">{{ item.help_text }}</p>{% endif %}
+
+      {% if item.kind == 'yes_no' %}
+      <div class="choice" role="radiogroup" aria-labelledby="question-{{ item.id }}">
+        <label><input type="radio" name="{{ item.id }}" value="true"> {{ t('webui.answer_yes') }}</label>
+        <label><input type="radio" name="{{ item.id }}" value="false"> {{ t('webui.answer_no') }}</label>
+        <label><input type="radio" name="{{ item.id }}" value="" checked> {{ t('webui.answer_unknown') }}</label>
+      </div>
+
+      {% elif item.kind == 'choice' %}
+      <div class="choice vertical" role="group" aria-labelledby="question-{{ item.id }}">
+        {% for option in item.options %}
+        <label class="option">
+          <input type="checkbox" name="roles" value="{{ option.id }}">
+          <span><strong>{{ t('webui.role.' ~ option.id) }}</strong> — {{ option.explanation }}</span>
+        </label>
+        {% endfor %}
+      </div>
+
+      {% elif item.kind == 'number' %}
+      <input type="text" inputmode="decimal" name="{{ item.id }}"
+             aria-labelledby="question-{{ item.id }}" placeholder="{{ t('webui.number_placeholder') }}">
+
+      {% else %}
+      <input type="text" name="{{ item.id }}" maxlength="500"
+             aria-labelledby="question-{{ item.id }}">
+      {% endif %}
+
+      {% if item.relevant_for %}<p class="item-purpose">{{ t('webui.needed_for', text=item.relevant_for) }}</p>{% endif %}
+    </div>
+    {% endfor %}
+  </details>
+
+  <div class="button-row">
+    <button type="submit" id="check-button">{{ t('webui.check_button') }}</button>
+    <span id="status-line" class="status-line" role="status" aria-live="polite"></span>
+  </div>
+</form>
+
+<section id="error-area" class="notice error" hidden role="alert">
+  <h2>{{ t('webui.error_title') }}</h2>
+  <p id="error-text"></p>
+  <p id="error-hint" class="explanation"></p>
+</section>
+
+<!-- Hidden until a check has run: placeholders would look like a real result. -->
+<section id="result" hidden>
+
+  <article id="card" class="risk-card">
+    <p class="card-badge" id="card-badge"></p>
+    <h2 id="card-title"></h2>
+    <p id="card-text"></p>
+    <p id="card-roles" class="card-roles"></p>
+  </article>
+
+  <section class="block">
+    <h2>{{ t('webui.rationale_title') }}</h2>
+    <div id="rationale"></div>
+  </section>
+
+  <section class="block" id="obligation-block">
+    <h2>{{ t('webui.obligations_title') }}</h2>
+    <p class="explanation">{{ t('webui.obligations_explanation') }}</p>
+    <div id="obligations"></div>
+  </section>
+
+  <section class="block" id="data-protection-block" hidden>
+    <h2>{{ t('webui.data_protection_title') }}</h2>
+    <div id="data-protection"></div>
+  </section>
+
+  <section class="block" id="answer-block">
+    <h2>{{ t('webui.answer_title') }}</h2>
+    <p id="answer-source" class="explanation"></p>
+    <pre id="answer" class="answer"></pre>
+  </section>
+
+  <section class="block" id="learning-block" hidden>
+    <h2>{{ t('webui.learning_title') }}</h2>
+    <p id="learning-note" class="learning-note"></p>
+    <p id="example-cases" class="explanation"></p>
+  </section>
+
+  <section class="block" id="evidence-block">
+    <h2>{{ t('webui.evidence_title') }}</h2>
+    <p class="explanation">{{ t('webui.evidence_explanation') }}</p>
+    <div id="evidence"></div>
+  </section>
+
+  <section class="block" id="questions-block" hidden>
+    <h2>{{ t('webui.open_questions_title') }}</h2>
+    <p class="explanation">{{ t('webui.open_questions_explanation') }}</p>
+    <ul id="open-questions"></ul>
+  </section>
+
+  <section class="block" id="deadline-block">
+    <h2>{{ t('webui.deadlines_title') }}</h2>
+    <div id="deadlines"></div>
+  </section>
+
+</section>
+
+</main>
+
+<footer class="footer">
+  <h2>{{ t('webui.footer_title') }}</h2>
+  <p>
+    {{ t('webui.footer_before') }} <strong>{{ t('webui.footer_emphasis') }}</strong>{{ t('webui.footer_after') }}
+  </p>
+  <p class="footer-version">
+    {{ t('webui.footer_version', corpus_as_of=corpus_as_of, rules_as_of=rules_as_of, embedding_model=embedding_model, llm=llm) }}
+  </p>
+  {% if version_note_text %}<p class="footer-version">{{ version_note_text }}</p>{% endif %}
+  {% if deadline_caveat %}
+  <p class="caveat"><strong>{{ t('webui.deadline_caveat_label') }}</strong> {{ deadline_caveat }}</p>
+  {% endif %}
+</footer>
+
+<!-- A data block, not a script: the browser never executes type="application/json". -->
+<script type="application/json" id="ui-text">{{ browser_texts|tojson }}</script>
+<script src="/static/app.js"></script>
+</body>
+</html>

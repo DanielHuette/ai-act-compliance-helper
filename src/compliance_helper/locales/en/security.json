@@ -1,0 +1,10 @@
+{
+  "question_empty": "Please enter a question.",
+  "question_too_long": "The question is too long: {length} characters, at most {limit} are allowed. Please shorten the question and put the details in the system description field.",
+  "description_too_long": "The description is too long: {length} characters, at most {limit} are allowed. Please shorten it to what matters for the classification: purpose, area of use, affected persons, your role.",
+  "description_empty": "Please describe the AI system: what it does, who uses it and who is affected by its results.",
+  "rate_limited": "Too many requests from this address: {limit} requests per minute are allowed. Please try again in {seconds} seconds.",
+  "running_as_root": "The service is running with administrator rights (root). An error in the service then affects the whole system. In the container, the user app (ID 10001) prevents this.",
+  "debug_enabled": "The environment variable {name} is set ({value}). In debug mode, internal details can leak to the outside — switch it off in production.",
+  "two_llm_keys": "The environment holds API keys for two LLM providers. The service uses the first one it can reach — to use a specific model, set COMPLIANCE_HELPER_MODEL explicitly."
+}

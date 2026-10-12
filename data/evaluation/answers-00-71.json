@@ -1,0 +1,805 @@
+[
+ {
+  "index": 0,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 34,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 1,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 3,
+  "questions": 12,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 2,
+  "expected": "exemption_applies",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 3,
+  "questions": 12,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "(d) Die Lage nennt keinen Bereich des Anhangs III - ohne getragenen Punkt wird der Filter des Artikels 6 Absatz 3 nie gefragt.",
+   "en": "(d) The scenario names no Annex III area - without an established point the Article 6(3) filter is never asked."
+  }
+ },
+ {
+  "index": 3,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 34,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 4,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 28,
+  "citations": [
+   "AI-Act/annex-III/pt-3-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 5,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 4,
+  "questions": 16,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 6,
+  "expected": "exemption_applies",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 3,
+  "questions": 12,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "(d) Die Lage nennt keinen Bereich des Anhangs III - ohne getragenen Punkt wird der Filter des Artikels 6 Absatz 3 nie gefragt.",
+   "en": "(d) The scenario names no Annex III area - without an established point the Article 6(3) filter is never asked."
+  }
+ },
+ {
+  "index": 7,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 46,
+  "citations": [
+   "AI-Act/annex-III/pt-6-d"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 8,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 30,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 9,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 46,
+  "citations": [
+   "AI-Act/annex-III/pt-4-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 10,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 27,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 11,
+  "expected": "high_risk",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 6,
+  "questions": 38,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "(c) Nummer 2 verlangt im Verbund die foermliche Benennung als kritische Einrichtung; die Lage nennt sie nicht, und Anhang III Nummer 2 der Verordnung verlangt sie auch nicht.",
+   "en": "(c) In its combined condition, point 2 requires formal designation as a critical entity; the scenario does not name it, and Annex III, point 2 of the Regulation does not require it either."
+  }
+ },
+ {
+  "index": 12,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 3,
+  "questions": 12,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 13,
+  "expected": "exemption_applies",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 3,
+  "questions": 12,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "(d) Die Lage nennt keinen Bereich des Anhangs III; Alter, Geschlecht und Koerpergroesse sind kein geschuetztes Merkmal nach Nummer 1 Buchstabe b.",
+   "en": "(d) The scenario names no Annex III area; age, sex and height are not a protected characteristic under point 1(b)."
+  }
+ },
+ {
+  "index": 14,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 32,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 15,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 37,
+  "citations": [
+   "AI-Act/annex-III/pt-3-a",
+   "AI-Act/annex-III/pt-3-c"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 16,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 28,
+  "citations": [
+   "AI-Act/annex-III/pt-3-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 17,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 35,
+  "citations": [
+   "AI-Act/annex-III/pt-5-c"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 18,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 22,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 19,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 4,
+  "questions": 16,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 20,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 46,
+  "citations": [
+   "AI-Act/annex-III/pt-4-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 21,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 34,
+  "citations": [
+   "AI-Act/annex-III/pt-5-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 22,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 35,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 23,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 27,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 24,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 6,
+  "questions": 42,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 25,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 25,
+  "citations": [
+   "AI-Act/annex-III/pt-1-c"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 26,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 46,
+  "citations": [
+   "AI-Act/annex-III/pt-4-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 27,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 28,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 28,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 22,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 29,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 3,
+  "questions": 12,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 30,
+  "expected": "high_risk",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 5,
+  "questions": 35,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "(c) Anhang I verlangt die Gruppe Sicherheitsbauteil auch dann, wenn das KI-System selbst das Produkt ist - Artikel 6 Absatz 1 verlangt entweder das eine oder das andere.",
+   "en": "(c) Annex I requires the safety component group even where the AI system is itself the product - Article 6(1) requires either the one or the other."
+  }
+ },
+ {
+  "index": 31,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 22,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 32,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 34,
+  "citations": [
+   "AI-Act/annex-III/pt-5-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 33,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 34,
+  "citations": [
+   "AI-Act/annex-III/pt-3-d"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 34,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 34,
+  "citations": [
+   "AI-Act/annex-III/pt-5-d"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 35,
+  "expected": "high_risk",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 6,
+  "questions": 38,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "(c) Nummer 2 verlangt im Verbund die foermliche Benennung als kritische Einrichtung; die Lage nennt sie nicht, und Anhang III Nummer 2 der Verordnung verlangt sie auch nicht.",
+   "en": "(c) In its combined condition, point 2 requires formal designation as a critical entity; the scenario does not name it, and Annex III, point 2 of the Regulation does not require it either."
+  }
+ },
+ {
+  "index": 36,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 35,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 37,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 34,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 38,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 8,
+  "questions": 74,
+  "citations": [
+   "AI-Act/annex-III/pt-4-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 39,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 4,
+  "questions": 13,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 40,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 3,
+  "questions": 12,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 41,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 28,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 42,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 6,
+  "questions": 38,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 43,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 28,
+  "citations": [
+   "AI-Act/annex-III/pt-3-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 44,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 30,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 45,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 51,
+  "citations": [
+   "AI-Act/annex-III/pt-1-c"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 46,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 42,
+  "citations": [
+   "AI-Act/annex-III/pt-7-b"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 47,
+  "expected": "exemption_applies",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 5,
+  "questions": 30,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "(a) Keine Frage traegt Nummer 5 Buchstabe a allein ueber den Bereich; ein rein rueckblickendes Pruefwerkzeug kann den Punkt nicht oeffnen, darum wird der Filter nie gefragt.",
+   "en": "(a) No question establishes point 5(a) through the area alone; a purely retrospective auditing tool cannot open the point, so the filter is never asked."
+  }
+ },
+ {
+  "index": 48,
+  "expected": "exemption_applies",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 3,
+  "questions": 12,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "(d) Die Lage nennt keinen Bereich des Anhangs III - ohne getragenen Punkt wird der Filter des Artikels 6 Absatz 3 nie gefragt.",
+   "en": "(d) The scenario names no Annex III area - without an established point the Article 6(3) filter is never asked."
+  }
+ },
+ {
+  "index": 49,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 6,
+  "questions": 50,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 50,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 4,
+  "questions": 13,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 51,
+  "expected": "not_high_risk",
+  "actual": "high_risk_exemption",
+  "matched": true,
+  "steps": 7,
+  "questions": 35,
+  "citations": [
+   "AI-Act/annex-III/pt-8-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 52,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 34,
+  "citations": [
+   "AI-Act/annex-III/pt-5-d"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 53,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 8,
+  "questions": 51,
+  "citations": [
+   "AI-Act/annex-III/pt-1-a",
+   "AI-Act/annex-III/pt-7-d"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 54,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 21,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 55,
+  "expected": "high_risk",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 6,
+  "questions": 38,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "(c) Nummer 2 verlangt im Verbund die foermliche Benennung als kritische Einrichtung; die Lage nennt sie nicht, und Anhang III Nummer 2 der Verordnung verlangt sie auch nicht.",
+   "en": "(c) In its combined condition, point 2 requires formal designation as a critical entity; the scenario does not name it, and Annex III, point 2 of the Regulation does not require it either."
+  }
+ },
+ {
+  "index": 56,
+  "expected": "exemption_applies",
+  "actual": "high_risk_exemption",
+  "matched": true,
+  "steps": 7,
+  "questions": 35,
+  "citations": [
+   "AI-Act/annex-III/pt-5-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 57,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 4,
+  "questions": 13,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 58,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 34,
+  "citations": [
+   "AI-Act/annex-III/pt-5-d"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 59,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 3,
+  "questions": 12,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 60,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 34,
+  "citations": [
+   "AI-Act/annex-III/pt-5-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 61,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 25,
+  "citations": [
+   "AI-Act/annex-III/pt-1-c"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 62,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 21,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 63,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 25,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 64,
+  "expected": "exemption_applies",
+  "actual": "high_risk_exemption",
+  "matched": true,
+  "steps": 8,
+  "questions": 46,
+  "citations": [
+   "AI-Act/annex-III/pt-7-c"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 65,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 6,
+  "questions": 42,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 66,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 4,
+  "questions": 13,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 67,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 24,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 68,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_i",
+  "matched": true,
+  "steps": 5,
+  "questions": 35,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 69,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 26,
+  "citations": [
+   "AI-Act/annex-III/pt-1-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 70,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 27,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 71,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 42,
+  "citations": [
+   "AI-Act/annex-III/pt-7-b"
+  ],
+  "mismatch_reason": ""
+ }
+]

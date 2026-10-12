@@ -1,0 +1,132 @@
+topic:
+  de: "Medizin, Fertigung und Produkte"
+  en: "Medicine, manufacturing and products"
+hint:
+  de: "Die Fälle sind Beispiele zum Lernen, keine Rechtsberatung. Ob eine Einstufung im Einzelfall trägt, hängt von Umständen ab, die hier nicht alle stehen können. Wo es darauf ankommt, ist es im Fall vermerkt.\n"
+  en: "The cases are examples for learning, not legal advice. Whether a classification holds in an individual case depends on circumstances that cannot all be stated here. Where it matters, this is noted in the case.\n"
+cases:
+  - id: medical-device-software
+    title:
+      de: "Software, die Röntgenbilder vorbefundet"
+      en: "Software that pre-reads X-ray images"
+    scenario:
+      de: "Ein Medizintechnikunternehmen entwickelt eine Software, die Röntgenbilder des Brustraums auf Auffälligkeiten durchsucht und dem Radiologen markierte Bereiche mit einer Dringlichkeitsangabe vorlegt. Die Software wird als Medizinprodukt in Verkehr gebracht und braucht dafür die Prüfung durch eine unabhängige Stelle.\n"
+      en: "A medical technology company develops software that searches chest X-ray images for abnormalities and presents marked areas to the radiologist with an indication of urgency. The software is placed on the market as a medical device and for this requires assessment by an independent body.\n"
+    roles: [provider]
+    classification: high_risk_annex_i
+    rationale:
+      de: "Nach Artikel 6 Absatz 1 ist ein KI-System hochriskant, wenn es Sicherheitsbauteil eines Produkts nach Anhang I ist oder selbst ein solches Produkt darstellt und für dieses Produkt eine Konformitätsbewertung durch eine dritte Stelle verlangt wird. Die Medizinprodukte-Vorschriften stehen in Anhang I, und die Prüfung durch eine unabhängige Stelle ist hier erforderlich. Die Einstufung läuft damit nicht über Anhang III, sondern über das Produktsicherheitsrecht — ein eigener Weg mit eigener Geltungsfrist, die nach Artikel 113 später beginnt als die für Anhang III.\n"
+      en: "Under Article 6(1), an AI system is high-risk if it is a safety component of a product covered by Annex I or is itself such a product, and that product is required to undergo a third-party conformity assessment. The medical device rules are listed in Annex I, and assessment by an independent body is required here. The classification therefore does not run through Annex III but through product safety law — a separate route with its own date of application, which under Article 113 begins later than the one for Annex III.\n"
+    legal_basis: [AI-Act/art-6/para-1, AI-Act/annex-I, AI-Act/art-16, AI-Act/art-9, AI-Act/art-10, AI-Act/art-11, AI-Act/art-14, AI-Act/art-15, AI-Act/art-43, AI-Act/art-113]
+    obligations:
+      - de: "Ein Risikomanagementsystem über den gesamten Lebenszyklus einrichten und pflegen."
+        en: "Establish and maintain a risk management system throughout the entire lifecycle."
+      - de: "Die Trainings-, Validierungs- und Testdaten auf Eignung, Vollständigkeit und Verzerrungen prüfen und das belegen."
+        en: "Check the training, validation and testing data for suitability, completeness and biases, and document this."
+      - de: "Die technische Dokumentation erstellen und aktuell halten."
+        en: "Draw up the technical documentation and keep it up to date."
+      - de: "Die menschliche Aufsicht schon in der Gestaltung vorsehen: Der Radiologe muss Markierungen übergehen können."
+        en: "Build human oversight into the design from the outset: the radiologist must be able to override markings."
+      - de: "Genauigkeit, Robustheit und Cybersicherheit festlegen, messen und angeben."
+        en: "Define, measure and declare accuracy, robustness and cybersecurity."
+      - de: "Die Konformitätsbewertung mit der Medizinprodukteprüfung zusammenführen, statt zwei getrennte Verfahren zu fahren."
+        en: "Combine the conformity assessment with the medical device assessment instead of running two separate procedures."
+    learning_note:
+      de: "Es gibt zwei voneinander unabhängige Wege in das hohe Risiko: über Anhang III nach dem Einsatzbereich und über Anhang I nach dem Produkt, in dem die KI steckt. Wer nur Anhang III liest, findet Medizinprodukte, Maschinen oder Fahrzeuge dort nicht und schließt fälschlich auf geringes Risiko. Für Hersteller ist die gute Nachricht, dass die KI-Verordnung auf die bestehenden Produktprüfungen aufsattelt: Die Anforderungen gehören in das vorhandene Verfahren, nicht daneben.\n"
+      en: "There are two mutually independent routes into high risk: via Annex III according to the area of use, and via Annex I according to the product in which the AI is embedded. Anyone who reads only Annex III does not find medical devices, machinery or vehicles there and wrongly concludes that the risk is low. For manufacturers, the good news is that the AI Act builds on the existing product assessments: the requirements belong in the existing procedure, not alongside it.\n"
+    pitfall:
+      de: "Das Unternehmen führt die Anforderungen der KI-Verordnung als zweites, getrenntes Verfahren neben der Medizinprodukteprüfung — doppelte Arbeit und widersprüchliche Unterlagen sind die Folge.\n"
+      en: "The company runs the requirements of the AI Act as a second, separate procedure alongside the medical device assessment — double work and contradictory documentation are the result.\n"
+    related_cases: [emergency-braking-assistant, manufacturing-quality-inspection, health-insurance-pricing]
+
+  - id: manufacturing-quality-inspection
+    title:
+      de: "Kamerabasierte Qualitätsprüfung in der Fertigung"
+      en: "Camera-based quality inspection in manufacturing"
+    scenario:
+      de: "Ein Zulieferer prüft gestanzte Blechteile mit einer Kamera und einem KI-System auf Risse und Maßabweichungen. Erkannte Teile werden ausgeworfen, der Rest läuft weiter. Geprüft werden Teile, nicht Menschen; die Kamera ist auf das Band gerichtet.\n"
+      en: "A supplier inspects stamped sheet-metal parts for cracks and dimensional deviations with a camera and an AI system. Detected parts are ejected, the rest carries on. Parts are inspected, not people; the camera is pointed at the conveyor.\n"
+    roles: [deployer]
+    classification: minimal
+    rationale:
+      de: "Das System bewertet Werkstücke, nicht Menschen, und fällt in keinen Bereich von Anhang III. Ein hohes Risiko über Anhang I käme nur in Betracht, wenn das System Sicherheitsbauteil einer Maschine wäre und deren Konformitätsbewertung eine dritte Stelle verlangte — das ist bei einer reinen Qualitätsprüfung hinter dem Prozess nicht der Fall. Es bleibt bei der Pflicht zur KI-Kompetenz nach Artikel 4. Anders läge es, wenn die Prüfung zugleich die Leistung der Bediener bewertete; dann griffe Anhang III Nummer 4.\n"
+      en: "The system assesses workpieces, not people, and falls into no area of Annex III. High risk via Annex I would only be possible if the system were a safety component of a machine whose conformity assessment required a third party — that is not the case for a mere quality inspection downstream of the process. This leaves the AI literacy obligation under Article 4. It would be different if the inspection also evaluated the performance of the operators; Annex III, point 4 would then apply.\n"
+    legal_basis: [AI-Act/annex-III, AI-Act/art-6/para-1, AI-Act/art-4]
+    obligations:
+      - de: "Für die KI-Kompetenz der Beschäftigten an der Anlage sorgen."
+        en: "Ensure AI literacy of the employees at the installation."
+      - de: "Sicherstellen, dass die Prüfergebnisse nicht Bedienern zugeordnet und zur Leistungsbewertung verwendet werden."
+        en: "Ensure that the inspection results are not attributed to operators and used for performance evaluation."
+      - de: "Die Erkennungsgüte überwachen, weil durchgelassene Fehler ein Produktproblem werden."
+        en: "Monitor the detection quality, because defects that slip through become a product problem."
+      - de: "Die Einstufung erneut prüfen, falls das System in die Maschinensteuerung eingreift."
+        en: "Re-check the classification if the system intervenes in the machine control."
+    learning_note:
+      de: "Die KI-Verordnung ordnet nach Betroffenen, nicht nach Technik. Dieselbe Bilderkennung ist bei Blechteilen unkritisch und bei Gesichtern hochriskant oder sogar verboten. Die erste Frage bei jedem eigenen Fall lautet deshalb nicht, wie gut oder neu das Modell ist, sondern: Wird hier über Menschen etwas ausgesagt? Lautet die Antwort nein, wird die Prüfung kurz.\n"
+      en: "The AI Act classifies by the persons affected, not by technology. The same image recognition is uncritical for sheet-metal parts and high-risk or even prohibited for faces. The first question in any case of your own is therefore not how good or new the model is, but: is something being said here about people? If the answer is no, the check is short.\n"
+    pitfall:
+      de: "Die Auswurfquote wird je Schicht und Bediener ausgewertet, um Nachlässigkeiten zu finden. Damit bewertet dasselbe System das Verhalten von Beschäftigten und fällt unter Anhang III Nummer 4.\n"
+      en: "The ejection rate is evaluated per shift and operator in order to find carelessness. The same system thereby evaluates the behaviour of employees and falls under Annex III, point 4.\n"
+    related_cases: [predictive-maintenance, sales-performance-rating, medical-device-software]
+
+  - id: emergency-braking-assistant
+    title:
+      de: "Notbremsassistent für Nutzfahrzeuge"
+      en: "Emergency braking assistant for commercial vehicles"
+    scenario:
+      de: "Ein Zulieferer entwickelt einen Notbremsassistenten. Ein KI-System erkennt aus Kamera- und Radardaten Hindernisse und löst selbsttätig eine Vollbremsung aus. Das Teil wird als Fahrzeugbauteil in Verkehr gebracht und unterliegt der Fahrzeugtypgenehmigung.\n"
+      en: "A supplier develops an emergency braking assistant. An AI system detects obstacles from camera and radar data and automatically triggers full braking. The part is placed on the market as a vehicle component and is subject to vehicle type-approval.\n"
+    roles: [provider]
+    classification: high_risk_annex_i
+    rationale:
+      de: "Das KI-System ist Sicherheitsbauteil eines Fahrzeugs. Die Fahrzeugvorschriften gehören zu den in Anhang I genannten Rechtsvorschriften, und Artikel 6 Absatz 1 stuft solche Systeme als hochriskant ein, wenn für das Produkt eine Prüfung durch eine dritte Stelle verlangt wird. Für diesen Weg über Anhang I beginnt die Geltung nach Artikel 113 später als für Anhang III; der genaue Stand der Fristen ist vor einer Entscheidung mit Rechtsfolgen bei der zuständigen Behörde zu prüfen.\n"
+      en: "The AI system is a safety component of a vehicle. The vehicle rules are among the legislation listed in Annex I, and Article 6(1) classifies such systems as high-risk if the product is required to undergo a third-party assessment. For this route via Annex I, application under Article 113 begins later than for Annex III; the exact current status of the deadlines must be checked with the competent authority before any decision with legal consequences.\n"
+    legal_basis: [AI-Act/art-6/para-1, AI-Act/annex-I, AI-Act/art-9, AI-Act/art-15, AI-Act/art-16, AI-Act/art-43, AI-Act/art-113]
+    obligations:
+      - de: "Risikomanagement über den Lebenszyklus einrichten, einschließlich der Fälle, in denen das System falsch auslöst."
+        en: "Establish risk management throughout the lifecycle, including the cases in which the system triggers wrongly."
+      - de: "Genauigkeit und Robustheit auch bei schlechter Sicht, Nässe und Verschmutzung festlegen und messen."
+        en: "Define and measure accuracy and robustness also in poor visibility, wet conditions and dirt."
+      - de: "Cybersicherheit vorsehen, weil ein manipuliertes Bremssystem unmittelbar Menschen gefährdet."
+        en: "Provide for cybersecurity, because a manipulated braking system directly endangers people."
+      - de: "Die Anforderungen in das Typgenehmigungsverfahren einarbeiten."
+        en: "Incorporate the requirements into the type-approval procedure."
+      - de: "Vorfälle im Feld erfassen und auswerten."
+        en: "Record and evaluate incidents in the field."
+    learning_note:
+      de: "Nicht jede Software im Fahrzeug fällt über Anhang I ins hohe Risiko — entscheidend ist, ob sie Sicherheitsbauteil ist und ob die Produktvorschrift eine Prüfung durch Dritte verlangt. Ein Infotainmentsystem erfüllt das nicht, ein Bremseingriff schon. Für eigene Fälle ist die nützliche Frage: Was passiert, wenn diese Funktion ausfällt oder falsch auslöst? Wer dann eine körperliche Gefahr beschreiben muss, steht mit hoher Wahrscheinlichkeit vor einem Sicherheitsbauteil.\n"
+      en: "Not every piece of software in a vehicle falls into high risk via Annex I — what matters is whether it is a safety component and whether the product legislation requires assessment by a third party. An infotainment system does not meet this; a braking intervention does. For your own cases, the useful question is: what happens if this function fails or triggers wrongly? Anyone who then has to describe a physical danger is very probably looking at a safety component.\n"
+    pitfall:
+      de: "Das Unternehmen behandelt die KI-Verordnung als Thema für später, weil die Frist für Anhang I später greift. Die Anforderungen an Daten und Dokumentation lassen sich aber nicht nachträglich auf ein fertiges Modell aufsetzen — sie bestimmen, wie entwickelt wird.\n"
+      en: "The company treats the AI Act as a topic for later, because the deadline for Annex I takes effect later. But the requirements for data and documentation cannot be retrofitted onto a finished model — they determine how development is done.\n"
+    related_cases: [medical-device-software, predictive-maintenance, manufacturing-quality-inspection]
+
+  - id: predictive-maintenance
+    title:
+      de: "Wartungsvorhersage für den eigenen Maschinenpark"
+      en: "Predictive maintenance for the company's own machinery"
+    scenario:
+      de: "Ein Papierhersteller wertet die Schwingungs- und Temperaturdaten seiner Pumpen und Walzen mit einem KI-System aus. Es sagt vorher, welches Lager in den nächsten Wochen auffällig werden dürfte, und erzeugt daraus Wartungsaufträge für die Instandhaltung.\n"
+      en: "A paper manufacturer evaluates the vibration and temperature data of its pumps and rollers with an AI system. It predicts which bearing is likely to show abnormalities in the coming weeks and generates maintenance orders for the maintenance department from this.\n"
+    roles: [deployer]
+    classification: minimal
+    rationale:
+      de: "Das System bewertet Maschinenzustände, keine Menschen, und fällt in keinen Bereich von Anhang III. Es ist auch kein Sicherheitsbauteil eines Produkts, das in Verkehr gebracht wird, sondern ein innerbetriebliches Werkzeug. Es bleibt bei der Pflicht zur KI-Kompetenz nach Artikel 4. Anders wäre es, wenn das System in die Sicherheitsabschaltung einer Anlage eingriffe oder die Anlage zur kritischen Versorgung mit Wasser, Gas, Wärme oder Strom gehörte — dann käme Anhang III Nummer 2 in Betracht.\n"
+      en: "The system assesses machine conditions, not people, and falls into no area of Annex III. Nor is it a safety component of a product placed on the market; it is an in-house tool. This leaves the AI literacy obligation under Article 4. It would be different if the system intervened in the safety shutdown of an installation or the installation belonged to the critical supply of water, gas, heating or electricity — Annex III, point 2 would then be possible.\n"
+    legal_basis: [AI-Act/annex-III, AI-Act/annex-III/pt-2, AI-Act/art-4]
+    obligations:
+      - de: "Für die KI-Kompetenz der Instandhaltung sorgen."
+        en: "Ensure AI literacy of the maintenance staff."
+      - de: "Festlegen, wer Wartungsaufträge freigibt, damit die Vorhersage nicht ungeprüft Produktion stoppt."
+        en: "Lay down who approves maintenance orders, so that the prediction does not stop production unchecked."
+      - de: "Die Einstufung erneut prüfen, falls das System in Sicherheitsfunktionen eingreift."
+        en: "Re-check the classification if the system intervenes in safety functions."
+      - de: "Die Vorhersagegüte beobachten und nicht auf Dauer ungeprüft vertrauen."
+        en: "Monitor the prediction quality and do not trust it unchecked over time."
+    learning_note:
+      de: "Der große Bereich der Anlagen- und Prozessdaten liegt meist außerhalb der KI-Verordnung, weil es dort nicht um Menschen geht. Zwei Grenzen sollte man dennoch kennen: der Eingriff in Sicherheitsfunktionen und die kritische Infrastruktur nach Anhang III Nummer 2. Für Industriebetriebe ist das eine wichtige Entlastung — der Großteil der Vorhaben in Produktion und Instandhaltung ist frei von den schweren Pflichten, was die Kraft frei macht für die wenigen Fälle, in denen es wirklich um Menschen geht.\n"
+      en: "The large field of plant and process data mostly lies outside the AI Act, because it is not about people. Two boundaries should nevertheless be known: intervention in safety functions, and critical infrastructure under Annex III, point 2. For industrial companies this is an important relief — most projects in production and maintenance are free of the heavy obligations, which frees up effort for the few cases that really are about people.\n"
+    pitfall:
+      de: "Das System wird später um eine Bewertung erweitert, welche Instandhaltungsteams Störungen am schnellsten beheben. Damit bewertet es Beschäftigtenleistung und fällt unter Anhang III Nummer 4.\n"
+      en: "The system is later extended with an evaluation of which maintenance teams fix faults fastest. It thereby evaluates employee performance and falls under Annex III, point 4.\n"
+    related_cases: [manufacturing-quality-inspection, sales-performance-rating, emergency-braking-assistant]

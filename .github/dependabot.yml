@@ -1,0 +1,30 @@
+# Weekly and grouped: a single maintainer reads one bundle a week, not a daily stream.
+
+version: 2
+updates:
+  - package-ecosystem: pip
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+      time: "06:00"
+      timezone: Europe/Berlin
+    open-pull-requests-limit: 5
+    labels: ["dependencies", "python"]
+    commit-message:
+      prefix: "pip"
+    groups:
+      # Bumped one by one, the local model packages often stop fitting together.
+      models:
+        patterns:
+          - "torch"
+          - "sentence-transformers"
+          - "FlagEmbedding"
+      dev-tools:
+        patterns:
+          - "ruff"
+          - "mypy"
+          - "bandit"
+          - "pip-audit"
+          - "pytest*"
+

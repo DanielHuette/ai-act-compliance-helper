@@ -1,0 +1,7 @@
+{
+ "model": "BAAI/bge-m3",
+ "dimensions": 1024,
+ "language": "de",
+ "units": 2811,
+ "built_on": "2026-10-09"
+}

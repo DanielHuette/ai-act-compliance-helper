@@ -1,0 +1,136 @@
+topic:
+  de: "Eigene Modelle und Rollenwechsel"
+  en: "Own models and change of role"
+hint:
+  de: "Die Fälle sind Beispiele zum Lernen, keine Rechtsberatung. Ob eine Einstufung im Einzelfall trägt, hängt von Umständen ab, die hier nicht alle stehen können. Wo es darauf ankommt, ist es im Fall vermerkt.\n"
+  en: "The cases are examples for learning, not legal advice. Whether a classification holds in an individual case depends on circumstances that cannot all be stated here. Where it matters, this is noted in the case.\n"
+cases:
+  - id: domain-fine-tuning
+    title:
+      de: "Feinabstimmung eines zugekauften Sprachmodells auf eigene Fachtexte"
+      en: "Fine-tuning a purchased language model on in-house technical texts"
+    scenario:
+      de: "Ein Ingenieurbüro nimmt ein frei verfügbares Sprachmodell und stimmt es mit 12000 eigenen Prüfberichten nach — es trainiert das Modell also mit eigenen Texten weiter, damit es die Fachsprache des Hauses beherrscht. Das nachgestimmte Modell läuft auf einem eigenen Server und hilft den Ingenieuren beim Entwerfen neuer Berichte. Nach außen gibt das Büro nichts davon.\n"
+      en: "An engineering firm takes a freely available language model and fine-tunes it with 12000 of its own inspection reports — that is, it continues training the model with its own texts so that it masters the firm's technical language. The fine-tuned model runs on the firm's own server and helps the engineers draft new reports. The firm passes none of this on to outsiders.\n"
+    roles: [deployer]
+    classification: minimal
+    rationale:
+      de: "Die Feinabstimmung allein macht aus dem Büro keinen Anbieter eines Modells mit allgemeinem Verwendungszweck: Es bringt nichts in Verkehr und nimmt nichts unter eigenem Namen für andere in Betrieb, sondern nutzt das Modell intern. Der Einsatz berührt keinen Bereich von Anhang III und keine verbotene Praktik, deshalb bleibt es bei der Pflicht zur KI-Kompetenz nach Artikel 4. Die Einstufung verschiebt sich, sobald das Büro das Modell Dritten bereitstellt oder es für Aufgaben aus Anhang III einsetzt.\n"
+      en: "Fine-tuning alone does not make the firm a provider of a general-purpose AI model: it places nothing on the market and puts nothing into service under its own name for others, but uses the model internally. The use touches no area of Annex III and no prohibited practice, so this leaves the AI literacy obligation under Article 4. The classification shifts as soon as the firm makes the model available to third parties or uses it for tasks from Annex III.\n"
+    legal_basis: [AI-Act/art-3/pt-1, AI-Act/art-51, AI-Act/art-53, AI-Act/art-4, AI-Act/annex-III]
+    obligations:
+      - de: "Für die KI-Kompetenz der Ingenieure sorgen, die mit dem Modell arbeiten."
+        en: "Ensure AI literacy of the engineers who work with the model."
+      - de: "Prüfen, ob die Lizenz des Ausgangsmodells die Feinabstimmung und den Einsatz erlaubt."
+        en: "Check whether the licence of the base model permits fine-tuning and the use."
+      - de: "Klären, ob die Prüfberichte personenbezogene Daten oder fremde Betriebsgeheimnisse enthalten."
+        en: "Clarify whether the inspection reports contain personal data or third parties' trade secrets."
+      - de: "Festhalten, welches Ausgangsmodell in welchem Stand verwendet wurde."
+        en: "Record which base model was used, in which version."
+      - de: "Die Einstufung neu beurteilen, sobald das Modell nach außen gegeben wird."
+        en: "Reassess the classification as soon as the model is passed on to outsiders."
+    learning_note:
+      de: "Interne Nutzung und Inverkehrbringen sind die Scheidelinie zwischen Betreiber- und Anbieterpflichten. Wer ein Modell nur für sich nachstimmt und selbst benutzt, bleibt Betreiber; wer es anderen bereitstellt, wird Anbieter und übernimmt einen deutlich schwereren Katalog. Diese Linie wird in Unternehmen oft unbemerkt überschritten, etwa wenn ein internes Werkzeug zur Erleichterung an eine Tochtergesellschaft oder an Kunden weitergegeben wird.\n"
+      en: "Internal use and placing on the market are the dividing line between deployer and provider obligations. Anyone who fine-tunes a model only for themselves and uses it themselves remains a deployer; anyone who makes it available to others becomes a provider and takes on a considerably heavier catalogue. Companies often cross this line without noticing, for example when an internal tool is passed on to a subsidiary or to customers to make things easier.\n"
+    pitfall:
+      de: "Die Trainingsdaten werden nicht geprüft. Prüfberichte enthalten oft Namen von Mitarbeitern und Kunden, und ein Modell kann solche Angaben in seinen Ausgaben wiedergeben.\n"
+      en: "The training data are not checked. Inspection reports often contain names of employees and customers, and a model can reproduce such information in its outputs.\n"
+    related_cases: [in-house-foundation-model, white-labeled-system, training-on-customer-data]
+
+  - id: in-house-foundation-model
+    title:
+      de: "Ein Unternehmen trainiert ein eigenes Basismodell und gibt es heraus"
+      en: "A company trains its own base model and releases it"
+    scenario:
+      de: "Ein Softwarehaus trainiert ein eigenes Sprachmodell von Grund auf und stellt es anderen Unternehmen über eine Programmierschnittstelle zur Verfügung, damit sie es in ihre Produkte einbauen. Das Modell lässt sich für viele verschiedene Aufgaben einsetzen: Texte schreiben, zusammenfassen, einordnen, übersetzen.\n"
+      en: "A software house trains its own language model from scratch and makes it available to other companies through an application programming interface so that they can build it into their products. The model can be used for many different tasks: writing, summarising, classifying and translating texts.\n"
+    roles: [provider]
+    classification: gpai
+    rationale:
+      de: "Ein Modell, das sich für viele verschiedene Aufgaben einsetzen lässt, ist ein KI-Modell mit allgemeinem Verwendungszweck. Wer es unter eigenem Namen bereitstellt, ist dessen Anbieter und schuldet die Pflichten nach Artikel 53. Als systemisches Risiko gilt das Modell nach Artikel 51 Absatz 2 vermutlich dann, wenn die für das Training aufgewendete Rechenmenge mehr als 10 hoch 25 Gleitkommaoperationen beträgt; die Vermutung ist widerlegbar, und die Kommission kann ein Modell auch ohne diese Schwelle benennen. Trifft das zu, kommen die Pflichten nach Artikel 55 hinzu.\n"
+      en: "A model that can be used for many different tasks is a general-purpose AI model. Whoever makes it available under their own name is its provider and owes the obligations under Article 53. Under Article 51(2), the model is presumed to have systemic risk when the cumulative amount of computation used for its training is greater than 10 to the power of 25 floating-point operations; the presumption is rebuttable, and the Commission can also designate a model without this threshold. If that applies, the obligations under Article 55 are added.\n"
+    legal_basis: [AI-Act/art-51/para-1, AI-Act/art-51/para-2, AI-Act/art-53/para-1, AI-Act/art-53/para-2, AI-Act/art-55/para-1, AI-Act/art-113]
+    obligations:
+      - de: "Technische Dokumentation des Modells samt Trainings- und Testverfahren und Bewertungsergebnissen erstellen und aktuell halten."
+        en: "Draw up and keep up to date the technical documentation of the model, including its training and testing process and the results of its evaluation."
+      - de: "Den Unternehmen, die das Modell einbauen, Informationen bereitstellen, mit denen sie ihre eigenen Pflichten erfüllen können."
+        en: "Provide the companies that build the model in with information enabling them to comply with their own obligations."
+      - de: "Eine Strategie zur Einhaltung des Urheberrechts aufsetzen, einschließlich der Beachtung erklärter Nutzungsvorbehalte."
+        en: "Put in place a policy to comply with copyright law, including observing expressed reservations of rights."
+      - de: "Eine Zusammenfassung der verwendeten Trainingsinhalte veröffentlichen."
+        en: "Publish a summary of the content used for training."
+      - de: "Die Rechenmenge des Trainings erfassen, um die Schwelle für systemisches Risiko beurteilen zu können."
+        en: "Record the amount of computation used for training, so that the threshold for systemic risk can be assessed."
+      - de: "Bei systemischem Risiko Modellbewertung samt Angriffstests durchführen, Risiken mindern und schwerwiegende Vorfälle melden."
+        en: "In the case of systemic risk, perform model evaluation including adversarial testing, mitigate risks and report serious incidents."
+    learning_note:
+      de: "Modelle und Systeme sind in der Verordnung zwei verschiedene Dinge mit zwei verschiedenen Regelwerken. Ein Modell mit allgemeinem Verwendungszweck wird nicht nach Anhang III eingestuft, sondern hat eigene Pflichten in den Artikeln 53 bis 55. Wer ein solches Modell bereitstellt, muss also nicht fragen, in welchem Bereich es eingesetzt wird — die Pflichten treffen ihn unabhängig davon, und die Einsatzfrage stellt sich erst bei dem, der daraus ein System baut.\n"
+      en: "Models and systems are two different things in the Regulation, with two different sets of rules. A general-purpose AI model is not classified under Annex III but has its own obligations in Articles 53 to 55. Anyone who makes such a model available therefore does not need to ask in which area it is used — the obligations apply to them regardless, and the question of use only arises for whoever builds a system from it.\n"
+    pitfall:
+      de: "Für quelloffen bereitgestellte Modelle entfallen zwei der Pflichten aus Artikel 53 Absatz 1 — aber nur unter den dort genannten Lizenzbedingungen und nicht bei systemischem Risiko. Wer sich auf Quelloffenheit beruft, muss die Bedingungen genau einhalten.\n"
+      en: "For models released under a free and open-source licence, two of the obligations from Article 53(1) do not apply — but only under the licence conditions stated there and not where there is systemic risk. Anyone relying on open source must observe the conditions exactly.\n"
+    related_cases: [domain-fine-tuning, white-labeled-system, third-country-model-vendor]
+
+  - id: white-labeled-system
+    title:
+      de: "Zugekauftes System unter eigenem Namen angeboten"
+      en: "Purchased system offered under the company's own name"
+    scenario:
+      de: "Ein Personaldienstleister kauft bei einem Softwarehaus ein fertiges KI-System zur Bewerbervorauswahl ein. Er versieht die Oberfläche mit seinem Logo, nennt sie nach sich und stellt sie seinen Kundenunternehmen als eigenes Produkt zur Verfügung. Technisch verändert er nichts.\n"
+      en: "A recruitment services company buys a ready-made AI system for pre-selecting applicants from a software house. It puts its logo on the interface, names it after itself and makes it available to its client companies as its own product. Technically it changes nothing.\n"
+    roles: [provider]
+    classification: high_risk_annex_iii
+    rationale:
+      de: "Das System fällt als Bewerbervorauswahl unter Anhang III Nummer 4 Buchstabe a und ist damit hochriskant. Entscheidend ist hier die Rolle: Nach Artikel 25 Absatz 1 Buchstabe a gilt als Anbieter, wer ein bereits in Verkehr gebrachtes Hochrisiko-KI-System mit seinem Namen oder seiner Handelsmarke versieht. Der Dienstleister wird damit Anbieter und unterliegt den vollen Anbieterpflichten nach Artikel 16 — obwohl er keine Zeile Programmtext geschrieben hat. Das ursprüngliche Softwarehaus ist dann nicht mehr Anbieter dieses Systems, muss aber mitwirken und Unterlagen bereitstellen.\n"
+      en: "As applicant pre-selection, the system falls under Annex III, point 4(a) and is therefore high-risk. What matters here is the role: under Article 25(1)(a), anyone who puts their name or trademark on a high-risk AI system already placed on the market is considered a provider. The services company thereby becomes a provider and is subject to the full provider obligations under Article 16 — although it has not written a single line of program code. The original software house is then no longer the provider of this system, but must cooperate and provide documentation.\n"
+    legal_basis: [AI-Act/art-25/para-1, AI-Act/art-25/para-2, AI-Act/art-16, AI-Act/annex-III/pt-4, AI-Act/art-6/para-2, AI-Act/art-43, AI-Act/art-49]
+    obligations:
+      - de: "Die Anbieterpflichten vollständig übernehmen: Risikomanagement, Datenqualität, technische Dokumentation, Protokollierung, Genauigkeit und Robustheit."
+        en: "Take on the provider obligations in full: risk management, data quality, technical documentation, record-keeping, accuracy and robustness."
+      - de: "Ein Qualitätsmanagementsystem einrichten."
+        en: "Put a quality management system in place."
+      - de: "Das Konformitätsbewertungsverfahren durchführen und das System in der EU-Datenbank registrieren."
+        en: "Carry out the conformity assessment procedure and register the system in the EU database."
+      - de: "Vom Softwarehaus vertraglich die Unterlagen und die Mitwirkung sichern, die für diese Pflichten gebraucht werden."
+        en: "Secure contractually from the software house the documentation and cooperation needed for these obligations."
+      - de: "Den Kundenunternehmen eine Betriebsanleitung nach Artikel 13 bereitstellen."
+        en: "Provide the client companies with instructions for use in accordance with Article 13."
+    learning_note:
+      de: "Das eigene Logo auf einem fremden Hochrisiko-System ist der teuerste Aufkleber im Geschäftsleben. Artikel 25 kennt drei Wege, auf denen ein Betreiber zum Anbieter wird: den eigenen Namen anbringen, eine wesentliche Änderung vornehmen oder den Zweck so ändern, dass das System hochriskant wird. Wer ein fremdes System weitergeben will, sollte vorher wissen, auf welcher Seite dieser Linie er stehen wird — danach ist die Rolle vergeben und die Pflichten sind da.\n"
+      en: "Your own logo on someone else's high-risk system is the most expensive sticker in business. Article 25 knows three routes by which a deployer becomes a provider: putting on their own name, making a substantial modification, or changing the purpose in such a way that the system becomes high-risk. Anyone wanting to pass on someone else's system should know beforehand on which side of this line they will stand — afterwards the role is assigned and the obligations are there.\n"
+    pitfall:
+      de: "Im Vertrag mit dem Softwarehaus fehlt die Pflicht zur Herausgabe der technischen Dokumentation. Der Dienstleister schuldet sie dann als Anbieter, kommt aber nicht an die Unterlagen.\n"
+      en: "The contract with the software house lacks the obligation to hand over the technical documentation. The services company then owes it as provider, but cannot get hold of the documents.\n"
+    related_cases: [application-screening-llm, chatbot-repurposed-for-screening, domain-fine-tuning]
+
+  - id: chatbot-repurposed-for-screening
+    title:
+      de: "Aus dem Auskunfts-Chatbot wird eine Vorauswahl"
+      en: "The information chatbot becomes a pre-selection tool"
+    scenario:
+      de: "Eine Zeitarbeitsfirma betreibt seit zwei Jahren auf ihrer Seite einen Chatbot, der Interessenten Fragen zu offenen Stellen beantwortet. Nun erweitert sie ihn: Der Bot stellt Bewerbern im Gespräch fachliche Fragen und gibt der Personalabteilung am Ende eine Einschätzung, ob der Bewerber geeignet erscheint.\n"
+      en: "A temporary employment agency has been running a chatbot on its website for two years that answers prospective candidates' questions about open positions. Now it extends it: in the conversation, the bot asks applicants technical questions and at the end gives the HR department an assessment of whether the applicant appears suitable.\n"
+    roles: [provider, deployer]
+    classification: high_risk_annex_iii
+    rationale:
+      de: "Mit der Erweiterung bewertet der Bot Bewerber und fällt damit unter Anhang III Nummer 4 Buchstabe a. Zugleich greift Artikel 25 Absatz 1 Buchstabe c: Wer den Zweck eines nicht als hochriskant eingestuften Systems so verändert, dass es zum Hochrisiko-KI-System wird, gilt als Anbieter. Die Firma ist daher Anbieter des veränderten Systems und zugleich dessen Betreiber. Die Transparenzpflicht nach Artikel 50 Absatz 1 bleibt daneben bestehen, weil der Bot direkt mit Menschen spricht.\n"
+      en: "With the extension, the bot evaluates applicants and thus falls under Annex III, point 4(a). At the same time, Article 25(1)(c) applies: anyone who modifies the intended purpose of a system not classified as high-risk in such a way that it becomes a high-risk AI system is considered a provider. The agency is therefore the provider of the modified system and at the same time its deployer. The transparency obligation under Article 50(1) continues to apply alongside, because the bot talks directly with people.\n"
+    legal_basis: [AI-Act/art-25/para-1, AI-Act/art-16, AI-Act/annex-III/pt-4, AI-Act/art-6/para-2, AI-Act/art-50/para-1, AI-Act/art-26/para-11, AI-Act/art-49]
+    obligations:
+      - de: "Die Zweckänderung als Rollenwechsel behandeln und die Anbieterpflichten übernehmen."
+        en: "Treat the change of purpose as a change of role and take on the provider obligations."
+      - de: "Das System vor dem Start der neuen Funktion dem Konformitätsbewertungsverfahren unterziehen und registrieren."
+        en: "Before launching the new function, put the system through the conformity assessment procedure and register it."
+      - de: "Bewerbern sagen, dass sie mit einem KI-System sprechen und dass es an der Auswahl mitwirkt."
+        en: "Tell applicants that they are talking to an AI system and that it takes part in the selection."
+      - de: "Menschliche Aufsicht mit der Befugnis einrichten, die Einschätzung zu übergehen."
+        en: "Set up human oversight with the authority to override the assessment."
+      - de: "Die Einschätzungen auf Benachteiligung prüfen, weil Gesprächsverhalten stark von Sprache und Herkunft abhängt."
+        en: "Check the assessments for discrimination, because conversational behaviour depends heavily on language and origin."
+    learning_note:
+      de: "Eine Zweckänderung kann aus dem Benutzer eines Systems dessen Anbieter machen — und zwar genau dann, wenn die Änderung das System ins hohe Risiko hebt. Für die Praxis heißt das: Die gefährlichste Änderung ist die kleine Erweiterung an einem lange laufenden, unverdächtigen System, weil niemand sie als Neueinführung behandelt. Wer Änderungen an eingesetzten KI-Systemen ohne erneute Einstufung freigibt, sammelt genau diese Fälle an.\n"
+      en: "A change of purpose can turn the user of a system into its provider — precisely when the change lifts the system into high risk. In practice this means: the most dangerous change is the small extension to a long-running, unsuspicious system, because nobody treats it as a new introduction. Anyone who approves changes to AI systems in use without re-classification accumulates exactly these cases.\n"
+    pitfall:
+      de: "Die Erweiterung läuft als Verbesserung des bestehenden Bots durch die normale Freigabe. Niemand prüft die Einstufung neu, und die Anbieterpflichten entstehen, ohne dass sie jemand bemerkt.\n"
+      en: "The extension goes through normal approval as an improvement to the existing bot. Nobody re-checks the classification, and the provider obligations arise without anyone noticing.\n"
+    related_cases: [white-labeled-system, reliability-based-shift-planning, customer-service-chatbot]

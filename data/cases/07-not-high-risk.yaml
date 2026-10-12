@@ -1,0 +1,185 @@
+topic:
+  de: "Fälle ohne hohes Risiko und die Ausnahme nach Artikel 6 Absatz 3"
+  en: "Cases without high risk and the derogation under Article 6(3)"
+hint:
+  de: "Dieses Gebiet zeigt, wo die Ausnahme nach Artikel 6 Absatz 3 greift und wo nicht. Die Fälle sind Beispiele zum Lernen, keine Rechtsberatung. Wo es auf Umstände ankommt, ist es im Fall vermerkt.\n"
+  en: "This area shows where the derogation under Article 6(3) applies and where it does not. The cases are examples for learning, not legal advice. Where circumstances matter, this is noted in the case.\n"
+cases:
+  - id: public-sector-writing-assistant
+    title:
+      de: "Rechtschreib- und Stilhilfe für Bescheide einer Behörde"
+      en: "Spelling and style aid for an authority's administrative decisions"
+    scenario:
+      de: "Eine Behörde setzt eine KI-gestützte Schreibhilfe ein. Die Sachbearbeiterin schreibt den Bescheid fertig, dann glättet das System Satzbau und Rechtschreibung und schlägt verständlichere Formulierungen vor. An Inhalt, Begründung und Entscheidung ändert es nichts; die Sachbearbeiterin übernimmt oder verwirft jeden Vorschlag.\n"
+      en: "An authority uses an AI-assisted writing aid. The case handler finishes writing the notice of decision, then the system smooths sentence structure and spelling and suggests more understandable wording. It changes nothing about content, reasoning or the decision; the case handler adopts or discards each suggestion.\n"
+    roles: [deployer]
+    classification: high_risk_exemption
+    rationale:
+      de: "Der Bescheid betrifft Leistungen und damit einen Bereich, der nach Anhang III Nummer 5 Buchstabe a erfasst sein kann. Hier greift jedoch die Ausnahme nach Artikel 6 Absatz 3: Das System birgt kein erhebliches Risiko für Gesundheit, Sicherheit oder Grundrechte und beeinflusst das Ergebnis der Entscheidungsfindung nicht wesentlich. Erfüllt ist Buchstabe b — es verbessert das Ergebnis einer zuvor abgeschlossenen menschlichen Tätigkeit. Ein Profiling findet nicht statt. Nach Artikel 6 Absatz 4 ist die Bewertung zu dokumentieren.\n"
+      en: "The decision concerns benefits and thus an area that may be covered by Annex III, point 5(a). Here, however, the derogation under Article 6(3) applies: the system does not pose a significant risk of harm to health, safety or fundamental rights and does not materially influence the outcome of decision-making. Point (b) is met — it improves the result of a previously completed human activity. No profiling takes place. Under Article 6(4), the assessment must be documented.\n"
+    legal_basis: [AI-Act/art-6/para-3, AI-Act/art-6/para-3-b, AI-Act/art-6/para-4, AI-Act/art-49/para-2, AI-Act/annex-III/pt-5, AI-Act/art-4]
+    obligations:
+      - de: "Die Bewertung, dass die Ausnahme greift, vor der Inbetriebnahme schriftlich festhalten."
+        en: "Record the assessment that the derogation applies in writing before putting the system into use."
+      - de: "Die Registrierungspflicht nach Artikel 49 Absatz 2 beachten, soweit sie den Anbieter trifft, und die Bewertung den Behörden auf Verlangen vorlegen."
+        en: "Observe the registration obligation under Article 49(2) insofar as it falls on the provider, and provide the assessment to the authorities upon request."
+      - de: "Durch die Arbeitsanweisung sicherstellen, dass das System erst nach dem fertigen Entwurf eingesetzt wird."
+        en: "Ensure through the work instructions that the system is only used after the draft is finished."
+      - de: "Für die KI-Kompetenz der Sachbearbeitung sorgen."
+        en: "Ensure AI literacy of the case handlers."
+      - de: "Die Bewertung erneut prüfen, falls das System später inhaltliche Textvorschläge macht."
+        en: "Re-check the assessment if the system later makes suggestions on the substance of the text."
+    learning_note:
+      de: "Die Ausnahme nach Artikel 6 Absatz 3 ist kein Freibrief, sondern eine begründete und dokumentierte Entscheidung. Sie verlangt zwei Dinge zugleich: kein erhebliches Risiko und keine wesentliche Beeinflussung der Entscheidung — und zusätzlich einen der vier Fälle in den Buchstaben a bis d. Entscheidend ist hier die Reihenfolge im Verfahren: Dasselbe Werkzeug wäre nicht ausgenommen, wenn es den Bescheid mitformulieren würde, statt den fertigen zu glätten. Wer die Ausnahme nutzen will, gestaltet also den Arbeitsablauf so, dass sie trägt.\n"
+      en: "The derogation under Article 6(3) is not a free pass but a reasoned and documented decision. It requires two things at once: no significant risk and no material influence on the decision — and in addition one of the four cases in points (a) to (d). What matters here is the order in the procedure: the same tool would not be exempt if it helped formulate the decision instead of smoothing the finished one. Anyone wanting to use the derogation therefore designs the workflow so that it holds.\n"
+    pitfall:
+      de: "Die Behörde beruft sich auf die Ausnahme, ohne sie zu dokumentieren. Artikel 6 Absatz 4 verlangt die Dokumentation vor der Inbetriebnahme — eine nachgeschobene Begründung bei einer Prüfung ist zu spät.\n"
+      en: "The authority relies on the derogation without documenting it. Article 6(4) requires documentation before putting the system into use — a justification added later during an inspection is too late.\n"
+    related_cases: [technical-manual-translation, municipal-application-prescreening, grading-pattern-deviation]
+
+  - id: meeting-scheduler
+    title:
+      de: "Terminvorschläge für Besprechungen"
+      en: "Scheduling suggestions for meetings"
+    scenario:
+      de: "Ein Beratungsunternehmen setzt ein KI-System ein, das aus den Kalendern der Beteiligten freie Zeitfenster für Besprechungen vorschlägt. Es berücksichtigt Arbeitszeiten, Reisezeiten und die Dauer der Besprechung. Wer eingeladen wird, legt der Einladende fest.\n"
+      en: "A consultancy uses an AI system that suggests free time slots for meetings from the participants' calendars. It takes into account working hours, travel times and the length of the meeting. Who is invited is decided by the person sending the invitation.\n"
+    roles: [deployer]
+    classification: minimal
+    rationale:
+      de: "Das System ordnet Zeitfenster, nicht Menschen. Es wirkt nicht bei Einstellung, Beförderung, Kündigung, Vertragsbedingungen, Aufgabenzuweisung oder Leistungsbewertung mit und fällt daher nicht unter Anhang III Nummer 4. Auch kein anderer Bereich von Anhang III trifft zu. Es bleibt bei der Pflicht zur KI-Kompetenz nach Artikel 4. Eine Ausnahmeprüfung nach Artikel 6 Absatz 3 ist nicht nötig, weil Anhang III schon nicht eröffnet ist.\n"
+      en: "The system sorts time slots, not people. It takes no part in recruitment, promotion, termination, contractual terms, allocation of tasks or performance evaluation and therefore does not fall under Annex III, point 4. No other area of Annex III applies either. This leaves the AI literacy obligation under Article 4. A derogation check under Article 6(3) is not needed, because Annex III is not even engaged.\n"
+    legal_basis: [AI-Act/annex-III, AI-Act/annex-III/pt-4, AI-Act/art-4]
+    obligations:
+      - de: "Für die KI-Kompetenz der Beschäftigten sorgen."
+        en: "Ensure AI literacy of the employees."
+      - de: "Die Kalenderdaten nicht für andere Zwecke auswerten, etwa für Anwesenheitskontrolle."
+        en: "Do not evaluate the calendar data for other purposes, for example for attendance control."
+    learning_note:
+      de: "Die Prüfung läuft in einer festen Reihenfolge, und man soll sie nicht überspringen: Erst verbotene Praktik, dann Anhang I, dann Anhang III, dann die Ausnahme, dann Transparenz. Wer bei Anhang III gar nicht ankommt, braucht über Artikel 6 Absatz 3 nicht nachzudenken — die Ausnahme ist nur für Systeme da, die sonst hochriskant wären. Diese Unterscheidung spart in der Praxis viel Arbeit, weil die weitaus meisten betrieblichen Werkzeuge schon an der Bereichsfrage ausscheiden.\n"
+      en: "The check follows a fixed order, and it should not be skipped: first prohibited practice, then Annex I, then Annex III, then the derogation, then transparency. Anyone who never reaches Annex III does not need to think about Article 6(3) — the derogation exists only for systems that would otherwise be high-risk. In practice this distinction saves a great deal of work, because by far most workplace tools drop out already at the question of the area.\n"
+    pitfall:
+      de: "Aus der Terminplanung wird eine Auswertung, wer wie viele Besprechungen versäumt hat. Damit wechselt das System in die Verhaltensbeobachtung von Beschäftigten und fällt unter Anhang III Nummer 4.\n"
+      en: "Scheduling turns into an evaluation of who has missed how many meetings. The system thereby moves into monitoring the behaviour of employees and falls under Annex III, point 4.\n"
+    related_cases: [reliability-based-shift-planning, inbound-mail-routing, employee-training-recommendations]
+
+  - id: inbound-mail-routing
+    title:
+      de: "Sortierung des Posteingangs nach Zuständigkeit"
+      en: "Sorting incoming mail by responsibility"
+    scenario:
+      de: "Eine Versicherung lässt den täglichen Posteingang von einem KI-System lesen und nach Art des Schreibens sortieren: Schadenmeldung, Vertragsänderung, Beschwerde, Rechnung. Das System legt jedes Schreiben in den Ordner der zuständigen Abteilung. Es bewertet nicht, wie der Fall ausgeht, und vergibt keine Dringlichkeit.\n"
+      en: "An insurance company has an AI system read the daily incoming mail and sort it by type of letter: claim notification, contract change, complaint, invoice. The system files each letter in the folder of the responsible department. It does not assess how the case will turn out and does not assign urgency.\n"
+    roles: [deployer]
+    classification: high_risk_exemption
+    rationale:
+      de: "Weil die Versicherung auch Kranken- und Lebensversicherungen betreibt, berührt die Vorsortierung einen Bereich, der nach Anhang III Nummer 5 Buchstabe c erfasst sein kann. Die Ausnahme nach Artikel 6 Absatz 3 greift aber: Die Einordnung nach Schreibensart ist eine eng gefasste Verfahrensaufgabe nach Buchstabe a und zugleich eine vorbereitende Aufgabe nach Buchstabe d; sie beeinflusst das Ergebnis der Entscheidungsfindung nicht wesentlich, und ein Profiling findet nicht statt. Nach Artikel 6 Absatz 4 ist die Bewertung zu dokumentieren.\n"
+      en: "Because the insurer also provides health and life insurance, the pre-sorting touches an area that may be covered by Annex III, point 5(c). The derogation under Article 6(3) does apply, however: classification by type of letter is a narrow procedural task under point (a) and at the same time a preparatory task under point (d); it does not materially influence the outcome of decision-making, and no profiling takes place. Under Article 6(4), the assessment must be documented.\n"
+    legal_basis: [AI-Act/art-6/para-3, AI-Act/art-6/para-3-a, AI-Act/art-6/para-3-d, AI-Act/art-6/para-4, AI-Act/annex-III/pt-5, AI-Act/art-4]
+    obligations:
+      - de: "Die Bewertung, dass die Ausnahme greift, vor der Inbetriebnahme dokumentieren."
+        en: "Document the assessment that the derogation applies before putting the system into use."
+      - de: "Technisch und organisatorisch dafür sorgen, dass das System keine Dringlichkeit und keine Erfolgsaussicht vergibt."
+        en: "Ensure by technical and organisational means that the system assigns no urgency and no prospect of success."
+      - de: "Falsch sortierte Schreiben auffangen, damit keine Fristen verloren gehen."
+        en: "Catch wrongly sorted letters so that no deadlines are missed."
+      - de: "Für die KI-Kompetenz der Posteingangsbearbeitung sorgen."
+        en: "Ensure AI literacy of the staff handling incoming mail."
+    learning_note:
+      de: "Vorbereitend ist eine Aufgabe nur, wenn die eigentliche Bewertung danach noch wirklich stattfindet. Sortieren nach Art des Schreibens ist vorbereitend; Sortieren nach Erfolgsaussicht ist es nicht mehr, weil damit die Richtung der Entscheidung schon gesetzt wird. An dieser Grenze entscheidet sich bei vielen Dokumentenwerkzeugen die Einstufung — und sie liegt oft nur eine Produktfunktion entfernt.\n"
+      en: "A task is preparatory only if the actual assessment really still takes place afterwards. Sorting by type of letter is preparatory; sorting by prospect of success no longer is, because it already sets the direction of the decision. For many document tools, the classification is decided at this boundary — and it is often only one product feature away.\n"
+    pitfall:
+      de: "Der Anbieter liefert mit dem nächsten Stand eine Dringlichkeitsbewertung mit, die als Komfortfunktion eingeschaltet wird. Damit fällt die Grundlage der Ausnahme weg, ohne dass jemand die Bewertung erneuert.\n"
+      en: "With its next release, the provider supplies an urgency rating that is switched on as a convenience feature. The basis of the derogation thereby falls away without anyone renewing the assessment.\n"
+    related_cases: [municipal-application-prescreening, public-sector-writing-assistant, code-completion]
+
+  - id: code-completion
+    title:
+      de: "Code-Vervollständigung in der Softwareentwicklung"
+      en: "Code completion in software development"
+    scenario:
+      de: "Ein Softwarehaus stellt seinen Entwicklern ein KI-System zur Verfügung, das beim Programmieren den nächsten Abschnitt Programmtext vorschlägt. Die Entwickler übernehmen, ändern oder verwerfen die Vorschläge. Das System bewertet keine Menschen und erzeugt keine Ausgaben für Kunden.\n"
+      en: "A software house provides its developers with an AI system that suggests the next section of program code while they program. The developers adopt, change or discard the suggestions. The system evaluates no people and generates no outputs for customers.\n"
+    roles: [deployer]
+    classification: minimal
+    rationale:
+      de: "Das System fällt in keinen Bereich von Anhang III und berührt keine verbotene Praktik. Die Kennzeichnungspflicht nach Artikel 50 Absatz 2 zielt auf synthetische Audio-, Bild-, Video- oder Textinhalte, die als Inhalte in Umlauf kommen; erzeugter Programmtext in einem internen Entwicklungswerkzeug ist davon nicht betroffen. Es bleibt bei der Pflicht zur KI-Kompetenz nach Artikel 4.\n"
+      en: "The system falls into no area of Annex III and touches no prohibited practice. The marking obligation under Article 50(2) targets synthetic audio, image, video or text content that is put into circulation as content; generated program code in an internal development tool is not affected by it. This leaves the AI literacy obligation under Article 4.\n"
+    legal_basis: [AI-Act/annex-III, AI-Act/art-50/para-2, AI-Act/art-4]
+    obligations:
+      - de: "Für die KI-Kompetenz der Entwickler sorgen."
+        en: "Ensure AI literacy of the developers."
+      - de: "Regeln, welcher Programmtext und welche Zugangsdaten in das System eingegeben werden dürfen."
+        en: "Lay down which program code and which access credentials may be entered into the system."
+      - de: "Lizenzlage des vorgeschlagenen Programmtextes beachten."
+        en: "Observe the licensing situation of the suggested program code."
+      - de: "Die Einstufung des Ergebnisses prüfen, wenn mit dem System ein Hochrisiko-KI-System gebaut wird — dann gelten dort die Anbieterpflichten."
+        en: "Check the classification of the result if a high-risk AI system is built with the tool — the provider obligations then apply there."
+    learning_note:
+      de: "Das Werkzeug und das damit gebaute Erzeugnis werden getrennt eingestuft. Eine Code-Vervollständigung ist unkritisch, auch wenn damit ein Hochrisiko-KI-System programmiert wird; die Pflichten hängen dann am gebauten System, nicht am Werkzeug. Diese Trennung hilft bei vielen Entwicklungs- und Bürowerkzeugen: Man muss sie nicht einstufen, sondern das, was am Ende in Betrieb geht.\n"
+      en: "The tool and the product built with it are classified separately. Code completion is uncritical, even if a high-risk AI system is programmed with it; the obligations then attach to the system built, not to the tool. This separation helps with many development and office tools: you do not have to classify them, but rather what ultimately goes into operation.\n"
+    pitfall:
+      de: "In die Eingaben wandern Kundendaten oder Zugangsschlüssel aus Testdateien. Das ist kein Problem der Einstufung, aber ein Datenschutz- und Geheimnisproblem — und der häufigste reale Schaden bei diesen Werkzeugen.\n"
+      en: "Customer data or access keys from test files end up in the inputs. That is not a classification problem, but a data protection and confidentiality problem — and the most common real harm with these tools.\n"
+    related_cases: [inbound-mail-routing, domain-fine-tuning, model-vendor-processing-agreement]
+
+  - id: grading-pattern-deviation
+    title:
+      de: "Prüfung, ob Lehrkräfte von ihrem Notenmuster abweichen"
+      en: "Checking whether teachers deviate from their grading pattern"
+    scenario:
+      de: "Ein Schulamt lässt ein KI-System die Notenverteilung der zurückliegenden Jahre auswerten. Es meldet, wenn eine Lehrkraft in einem Kurs deutlich anders bewertet als in ihren übrigen Kursen. Die Meldung geht an die Schulaufsicht, die daraufhin das Gespräch mit der Lehrkraft sucht. Noten einzelner Schüler ändert das System nicht und bewertet es nicht.\n"
+      en: "A school authority has an AI system evaluate the grade distribution of past years. It reports when a teacher grades markedly differently in one course than in their other courses. The report goes to the school inspectorate, which then seeks a conversation with the teacher. The system does not change or assess the grades of individual pupils.\n"
+    roles: [deployer]
+    classification: high_risk_exemption
+    rationale:
+      de: "Der Bildungsbereich ist nach Anhang III Nummer 3 erfasst, deshalb ist die Ausnahme zu prüfen. Sie greift nach Artikel 6 Absatz 3 Buchstabe c: Das System erkennt Entscheidungsmuster und Abweichungen von früheren Mustern und soll die abgeschlossene menschliche Bewertung nicht ohne angemessene menschliche Überprüfung ersetzen oder beeinflussen. Die Noten der Schüler bleiben unberührt. Zugleich zeigt der Fall die Doppelseitigkeit: Gegenüber den Lehrkräften ist das System eine Beobachtung und Bewertung von Arbeitsleistung und kann damit unter Anhang III Nummer 4 fallen — für sie ist die Ausnahme nicht selbstverständlich.\n"
+      en: "The education area is covered by Annex III, point 3, so the derogation must be checked. It applies under Article 6(3)(c): the system detects decision-making patterns and deviations from prior patterns and is not meant to replace or influence the previously completed human assessment without proper human review. The pupils' grades remain untouched. At the same time, the case shows the double-sidedness: towards the teachers, the system is monitoring and evaluation of work performance and can thus fall under Annex III, point 4 — for them, the derogation cannot be taken for granted.\n"
+    legal_basis: [AI-Act/art-6/para-3, AI-Act/art-6/para-3-c, AI-Act/art-6/para-4, AI-Act/annex-III/pt-3, AI-Act/annex-III/pt-4, AI-Act/art-26/para-7]
+    obligations:
+      - de: "Die Bewertung, dass die Ausnahme für den Bildungsteil greift, dokumentieren."
+        en: "Document the assessment that the derogation applies for the education part."
+      - de: "Für die Lehrkräfte gesondert prüfen, ob es sich um eine Leistungsbeobachtung von Beschäftigten handelt, und die Pflichten daraus erfüllen."
+        en: "For the teachers, check separately whether this is performance monitoring of employees, and fulfil the resulting obligations."
+      - de: "Personalvertretung und Lehrkräfte über den Einsatz informieren."
+        en: "Inform the staff council and teachers about the use."
+      - de: "Sicherstellen, dass eine Meldung nur Anlass für ein Gespräch ist und nicht selbst eine Bewertung der Lehrkraft."
+        en: "Ensure that a report is only an occasion for a conversation and not itself an evaluation of the teacher."
+    learning_note:
+      de: "Ein System kann aus zwei Richtungen zugleich geprüft werden müssen, weil es zwei Gruppen von Menschen berührt. Für die Schüler ist es eine Musterprüfung und fällt unter die Ausnahme; für die Lehrkräfte ist es Beobachtung von Arbeitsleistung. Wer bei einem eigenen Fall nur an die offensichtlich Betroffenen denkt, verliert die zweite Gruppe aus dem Blick — und die hat eigene Rechte, oft sogar weitergehende.\n"
+      en: "A system may need to be checked from two directions at once, because it affects two groups of people. For the pupils it is a pattern check and falls under the derogation; for the teachers it is monitoring of work performance. Anyone who thinks only of the obviously affected persons in a case of their own loses sight of the second group — and it has rights of its own, often even more extensive ones.\n"
+    pitfall:
+      de: "Das Schulamt prüft nur den Bildungsbereich und übersieht den Beschäftigtenbezug ganz. Dass die Lehrkräfte vorab zu informieren sind, fällt dann mit aus.\n"
+      en: "The school authority checks only the education area and entirely overlooks the employee dimension. That the teachers must be informed in advance then falls by the wayside too.\n"
+    related_cases: [sales-performance-rating, free-text-exam-grading, municipal-application-prescreening]
+  - id: cv-to-structured-data
+    title:
+      de: "Lebensläufe in ein einheitliches Datenfeldformat bringen"
+      en: "Converting CVs into a uniform data-field format"
+    scenario:
+      de: "Ein Softwarehaus bietet Personalabteilungen ein Werkzeug an, das eingereichte Lebensläufe aus Textdateien einliest und die Angaben in feste Felder überträgt: Name, Abschluss, frühere Arbeitgeber, Zeiträume. Es bewertet nichts, ordnet nicht ein und sortiert nicht. Die Personalabteilung liest die Bewerbungen danach selbst.\n"
+      en: "A software house offers HR departments a tool that reads submitted CVs from text files and transfers the information into fixed fields: name, qualification, previous employers, periods. It assesses nothing, classifies nothing and sorts nothing. The HR department then reads the applications itself.\n"
+    roles: [provider]
+    classification: high_risk_exemption
+    rationale:
+      de: "Der Einsatz liegt im Bereich Einstellung und Auswahl und damit in Anhang III Nummer 4, deshalb ist die Ausnahme zu prüfen. Sie greift nach Artikel 6 Absatz 3 Buchstabe a: Das Überführen unstrukturierter Angaben in ein festes Format ist eine eng gefasste Verfahrensaufgabe. Das System birgt kein erhebliches Risiko und beeinflusst das Ergebnis der Entscheidungsfindung nicht wesentlich, weil es keine Aussage über die Bewerber bildet; ein Profiling findet nicht statt. Als Anbieter muss das Softwarehaus diese Bewertung nach Artikel 6 Absatz 4 dokumentieren, bevor das System in Verkehr gebracht wird, und sich samt System nach Artikel 49 Absatz 2 in der EU-Datenbank registrieren.\n"
+      en: "The use lies in the area of recruitment and selection and thus in Annex III, point 4, so the derogation must be checked. It applies under Article 6(3)(a): converting unstructured information into a fixed format is a narrow procedural task. The system poses no significant risk and does not materially influence the outcome of decision-making, because it forms no statement about the applicants; no profiling takes place. As provider, the software house must document this assessment under Article 6(4) before the system is placed on the market, and register itself and the system in the EU database under Article 49(2).\n"
+    legal_basis: [AI-Act/art-6/para-3, AI-Act/art-6/para-3-a, AI-Act/art-6/para-4, AI-Act/art-49/para-2, AI-Act/annex-III/pt-4, AI-Act/art-4]
+    obligations:
+      - de: "Die Bewertung, dass die Ausnahme greift, dokumentieren, bevor das System in Verkehr gebracht wird."
+        en: "Document the assessment that the derogation applies before the system is placed on the market."
+      - de: "Sich und das System in der EU-Datenbank registrieren."
+        en: "Register yourself and the system in the EU database."
+      - de: "Die Bewertung den zuständigen Behörden auf Verlangen vorlegen."
+        en: "Provide the assessment to the competent authorities upon request."
+      - de: "In der Produktbeschreibung klarstellen, dass das Werkzeug nicht bewertet und nicht sortiert."
+        en: "Make clear in the product description that the tool does not assess and does not sort."
+      - de: "Die Bewertung erneut anstellen, sobald eine Funktion zur Einordnung oder Rangfolge hinzukommt."
+        en: "Carry out the assessment again as soon as a function for classification or ranking is added."
+    learning_note:
+      de: "Wer sich auf die Ausnahme beruft, hat gerade deshalb Pflichten: Die Ausnahme nimmt das System aus den schweren Anforderungen heraus, nicht aus der Verordnung. Nach Artikel 6 Absatz 4 ist die Bewertung vor dem Inverkehrbringen zu dokumentieren, und nach Artikel 49 Absatz 2 kommt die Registrierung hinzu. Der Gesetzgeber hat die Ausnahme damit bewusst zu einer nachprüfbaren Entscheidung gemacht — niemand soll sie stillschweigend für sich in Anspruch nehmen können.\n"
+      en: "Anyone relying on the derogation has obligations precisely for that reason: the derogation takes the system out of the heavy requirements, not out of the Regulation. Under Article 6(4) the assessment must be documented before placing on the market, and under Article 49(2) registration is added. The legislator thus deliberately made the derogation a verifiable decision — nobody is to be able to claim it for themselves tacitly.\n"
+    pitfall:
+      de: "Das Softwarehaus betrachtet das Werkzeug als reine Datenaufbereitung ohne Bezug zur KI-Verordnung und dokumentiert und registriert nichts. Weil der Einsatzbereich in Anhang III liegt, ist genau diese Dokumentation aber verlangt.\n"
+      en: "The software house regards the tool as mere data preparation with no connection to the AI Act and documents and registers nothing. But because the area of use lies in Annex III, exactly this documentation is required.\n"
+    related_cases: [application-screening-llm, inbound-mail-routing, public-sector-writing-assistant]

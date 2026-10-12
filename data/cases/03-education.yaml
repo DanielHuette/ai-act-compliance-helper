@@ -1,0 +1,130 @@
+topic:
+  de: "Allgemeine und berufliche Bildung"
+  en: "Education and vocational training"
+hint:
+  de: "Die Fälle sind Beispiele zum Lernen, keine Rechtsberatung. Ob eine Einstufung im Einzelfall trägt, hängt von Umständen ab, die hier nicht alle stehen können. Wo es darauf ankommt, ist es im Fall vermerkt.\n"
+  en: "The cases are examples for learning, not legal advice. Whether a classification holds in an individual case depends on circumstances that cannot all be stated here. Where it matters, this is noted in the case.\n"
+cases:
+  - id: free-text-exam-grading
+    title:
+      de: "Automatische Bewertung von Freitextantworten in einer Klausur"
+      en: "Automated grading of free-text answers in an exam"
+    scenario:
+      de: "Eine Berufsakademie lässt die Freitextantworten ihrer Abschlussklausuren von einem KI-System bewerten. Das System vergibt Punkte je Antwort und schlägt eine Note vor. Die Prüferin sieht die Vorschläge und korrigiert stichprobenweise rund jede zehnte Arbeit; die übrigen Noten übernimmt sie.\n"
+      en: "A vocational academy has the free-text answers of its final exams graded by an AI system. The system awards points per answer and proposes a grade. The examiner sees the proposals and corrects about every tenth paper by sampling; she adopts the remaining grades.\n"
+    roles: [deployer]
+    classification: high_risk_annex_iii
+    rationale:
+      de: "Anhang III Nummer 3 Buchstabe b nennt KI-Systeme, die für die Bewertung von Lernergebnissen verwendet werden sollen. Die Notenvergabe in einer Abschlussklausur ist genau das. Die Ausnahme nach Artikel 6 Absatz 3 greift nicht: Die Bewertung ist keine eng gefasste Verfahrensaufgabe und beeinflusst das Ergebnis wesentlich, zumal neun von zehn Noten unverändert übernommen werden.\n"
+      en: "Annex III, point 3(b) lists AI systems intended to be used to evaluate learning outcomes. Awarding grades in a final exam is exactly that. The derogation under Article 6(3) does not apply: the grading is not a narrow procedural task and materially influences the outcome, especially as nine out of ten grades are adopted unchanged.\n"
+    legal_basis: [AI-Act/annex-III/pt-3, AI-Act/art-6/para-2, AI-Act/art-6/para-3, AI-Act/art-26/para-1, AI-Act/art-26/para-2, AI-Act/art-26/para-11, AI-Act/art-4]
+    obligations:
+      - de: "Prüflinge darüber informieren, dass ein Hochrisiko-KI-System an der Bewertung mitwirkt."
+        en: "Inform examinees that a high-risk AI system takes part in the grading."
+      - de: "Die menschliche Aufsicht so ausgestalten, dass Noten nicht nur stichprobenweise, sondern belastbar überprüft werden können."
+        en: "Design human oversight so that grades can be reviewed reliably, not only by sampling."
+      - de: "Ein Verfahren bereitstellen, mit dem Prüflinge die Bewertung beanstanden und eine Prüfung durch einen Menschen erhalten."
+        en: "Provide a procedure through which examinees can challenge the grading and obtain a review by a human."
+      - de: "Das System nach der Betriebsanleitung des Anbieters verwenden und seine Treffsicherheit laufend beobachten."
+        en: "Use the system according to the provider's instructions for use and monitor its accuracy on an ongoing basis."
+      - de: "Für die Prüfer ausreichende Schulung im Umgang mit dem System sicherstellen."
+        en: "Ensure sufficient training for the examiners in handling the system."
+    learning_note:
+      de: "Eine Stichprobe ist eine Qualitätskontrolle, aber keine menschliche Aufsicht über die Einzelentscheidung. Wer bei neun von zehn Arbeiten die Note ungesehen übernimmt, hat für diese neun keine eigene Bewertung vorgenommen. Menschliche Aufsicht im Sinne der Verordnung heißt, dass die aufsichtführende Person den Einzelfall prüfen kann, dafür Zeit und Zugang hat und das Ergebnis ändern darf — nicht, dass sie irgendwo im Verfahren vorkommt.\n"
+      en: "A sample is a quality check, but not human oversight of the individual decision. Anyone who adopts the grade unseen for nine out of ten papers has made no assessment of their own for those nine. Human oversight within the meaning of the Regulation means that the person exercising oversight can examine the individual case, has the time and access to do so and may change the result — not that they appear somewhere in the procedure.\n"
+    pitfall:
+      de: "Die Hochschule hält sich für sicher, weil formal die Prüferin die Note erteilt. Wer die Klausur nie gelesen hat, erteilt die Note aber nicht, sondern gibt sie weiter.\n"
+      en: "The institution considers itself safe because the examiner formally awards the grade. But someone who has never read the exam does not award the grade; they pass it on.\n"
+    related_cases: [grading-pattern-deviation, university-admission-screening, public-sector-writing-assistant]
+
+  - id: university-admission-screening
+    title:
+      de: "Vorauswahl der Bewerber für einen zulassungsbeschränkten Studiengang"
+      en: "Pre-selection of applicants for a degree programme with restricted admission"
+    scenario:
+      de: "Eine Fachhochschule hat für einen Studiengang mehr Bewerber als Plätze. Ein KI-System wertet Zeugnisse, Motivationsschreiben und Praktikumsnachweise aus und erstellt eine Rangliste. Die Auswahlkommission lädt die oberen 60 Bewerber zum Gespräch ein.\n"
+      en: "A university of applied sciences has more applicants than places for a degree programme. An AI system evaluates certificates, motivation letters and internship records and draws up a ranking. The selection committee invites the top 60 applicants to an interview.\n"
+    roles: [deployer]
+    classification: high_risk_annex_iii
+    rationale:
+      de: "Anhang III Nummer 3 Buchstabe a nennt KI-Systeme zur Feststellung des Zugangs oder der Zulassung oder zur Zuweisung von Menschen zu Bildungseinrichtungen. Eine Rangliste, die den Kreis der Eingeladenen bestimmt, wirkt bei der Zulassung mit. Da das System einzelne Bewerber anhand ihrer Unterlagen bewertet und einordnet, nimmt es ein Profiling vor; damit ist die Ausnahme nach Artikel 6 Absatz 3 nach deren letztem Satz ausgeschlossen.\n"
+      en: "Annex III, point 3(a) lists AI systems intended to be used to determine access or admission or to assign natural persons to educational institutions. A ranking that determines who is invited takes part in admission. Since the system evaluates and classifies individual applicants on the basis of their documents, it performs profiling; the derogation under Article 6(3) is thus excluded under its last sentence.\n"
+    legal_basis: [AI-Act/annex-III/pt-3, AI-Act/art-6/para-2, AI-Act/art-6/para-3, AI-Act/art-26/para-2, AI-Act/art-26/para-11, AI-Act/art-27/para-1, GDPR/art-22]
+    obligations:
+      - de: "Als öffentliche Einrichtung vor der Inbetriebnahme eine Abschätzung der Auswirkungen auf die Grundrechte durchführen."
+        en: "As a public institution, carry out a fundamental rights impact assessment before putting the system into use."
+      - de: "Bewerber über die Mitwirkung des Systems an der Zulassung informieren."
+        en: "Inform applicants that the system takes part in admission."
+      - de: "Die Rangkriterien offenlegen können und auf unzulässige Benachteiligung prüfen."
+        en: "Be able to disclose the ranking criteria and check them for unlawful discrimination."
+      - de: "Der Auswahlkommission ermöglichen, von der Rangliste abzuweichen, und solche Abweichungen festhalten."
+        en: "Enable the selection committee to deviate from the ranking, and record such deviations."
+    learning_note:
+      de: "Eine Rangliste wirkt neutraler als eine Entscheidung, ist aber eine, weil sie die Grenze zieht. Für die Einstufung zählt die Wirkung im Verfahren, nicht die Form der Ausgabe. Zugleich zeigt der Fall, dass öffentliche Einrichtungen bei Systemen aus Anhang III zusätzlich die Abschätzung der Auswirkungen auf die Grundrechte schulden — unabhängig davon, welcher Bereich des Anhangs betroffen ist.\n"
+      en: "A ranking appears more neutral than a decision, but it is one, because it draws the line. What counts for the classification is the effect in the procedure, not the form of the output. At the same time, the case shows that public institutions additionally owe the fundamental rights impact assessment for systems from Annex III — regardless of which area of the Annex is concerned.\n"
+    pitfall:
+      de: "Die Hochschule sieht in der Rangliste eine vorbereitende Aufgabe nach Artikel 6 Absatz 3 Buchstabe d. Der letzte Satz dieses Absatzes schließt die Ausnahme bei Profiling aber ausdrücklich aus, und eine Bewertung einzelner Bewerber ist Profiling.\n"
+      en: "The institution sees the ranking as a preparatory task under Article 6(3)(d). But the last sentence of that paragraph expressly excludes the derogation where profiling takes place, and an evaluation of individual applicants is profiling.\n"
+    related_cases: [free-text-exam-grading, application-screening-llm, school-learning-assessment]
+
+  - id: remote-exam-proctoring
+    title:
+      de: "Kameraaufsicht bei einer Fernprüfung"
+      en: "Camera proctoring in a remote exam"
+    scenario:
+      de: "Eine Weiterbildungseinrichtung lässt Abschlussprüfungen zu Hause am eigenen Rechner schreiben. Ein KI-System überwacht dabei das Kamerabild und meldet dem Prüfungsamt, wenn der Blick wiederholt vom Bildschirm abweicht, eine zweite Person im Bild ist oder Geräusche auf Absprachen hindeuten. Gemeldete Fälle werden als Täuschungsversuch geprüft.\n"
+      en: "A further-education institution lets candidates take final exams at home on their own computer. An AI system monitors the camera image and reports to the examination office if the gaze repeatedly moves away from the screen, a second person is in the picture or sounds suggest collusion. Reported cases are examined as attempted cheating.\n"
+    roles: [deployer]
+    classification: high_risk_annex_iii
+    rationale:
+      de: "Anhang III Nummer 3 Buchstabe d nennt KI-Systeme zur Überwachung und Erkennung von verbotenem Verhalten von Prüflingen bei Prüfungen. Das System tut genau das. Wichtig ist die Grenze zum Verbot: Würde das System aus dem Kamerabild auf Gefühlslagen wie Nervosität oder Stress schließen, wäre es nach Artikel 5 Absatz 1 Buchstabe f verboten, weil die Ableitung von Emotionen in Bildungseinrichtungen untersagt ist. Die Beobachtung von Blickrichtung und Anwesenheit weiterer Personen bleibt davor, ist aber nahe an dieser Grenze.\n"
+      en: "Annex III, point 3(d) lists AI systems intended to be used for monitoring and detecting prohibited behaviour of students during tests. The system does exactly that. The line to the prohibition is important: if the system inferred emotional states such as nervousness or stress from the camera image, it would be prohibited under Article 5(1)(f), because inferring emotions in education institutions is prohibited. Observing gaze direction and the presence of other persons stays short of that, but is close to this line.\n"
+    legal_basis: [AI-Act/annex-III/pt-3, AI-Act/art-6/para-2, AI-Act/art-5/para-1-f, AI-Act/art-26/para-2, AI-Act/art-26/para-11, GDPR/art-35, GDPR/art-5]
+    obligations:
+      - de: "Vertraglich und technisch ausschließen, dass das System Emotionen oder Gefühlszustände auswertet."
+        en: "Exclude contractually and technically that the system evaluates emotions or emotional states."
+      - de: "Prüflinge vor der Prüfung über den Einsatz und die ausgewerteten Merkmale informieren."
+        en: "Inform examinees before the exam about the use and the characteristics evaluated."
+      - de: "Jede Meldung von einem Menschen prüfen lassen, bevor von einem Täuschungsversuch ausgegangen wird."
+        en: "Have every report examined by a human before attempted cheating is assumed."
+      - de: "Eine Datenschutz-Folgenabschätzung prüfen; die Beobachtung in der Wohnung ist ein schwerer Eingriff."
+        en: "Consider a data protection impact assessment; observation inside the home is a serious intrusion."
+      - de: "Eine Rückfallmöglichkeit anbieten für Prüflinge, bei denen die Technik nicht zuverlässig funktioniert."
+        en: "Offer a fallback option for examinees for whom the technology does not work reliably."
+    learning_note:
+      de: "Zwischen hohem Risiko und Verbot liegt bei Emotionen nur ein kleiner Schritt. Dasselbe Kamerabild ist erlaubt auszuwerten, wenn es um Blickrichtung und Anwesenheit geht, und verboten, wenn daraus auf Gefühle geschlossen wird — und zwar am Arbeitsplatz wie in Bildungseinrichtungen. Wer solche Systeme einkauft, muss sich die ausgewerteten Merkmale im Einzelnen nennen lassen, denn der Unterschied steckt nicht im Produktnamen, sondern in den Merkmalen.\n"
+      en: "With emotions, only a small step lies between high risk and prohibition. Evaluating the same camera image is permitted when it is about gaze direction and presence, and prohibited when emotions are inferred from it — in the workplace as in education institutions. Anyone buying such systems must have the evaluated characteristics named in detail, because the difference lies not in the product name but in the characteristics.\n"
+    pitfall:
+      de: "Der Anbieter bewirbt eine Erkennung von Auffälligkeiten, die unausgesprochen Anzeichen von Nervosität einbezieht. Damit rutscht der Einsatz in Bildungseinrichtungen ins Verbot, ohne dass die Einrichtung das bemerkt.\n"
+      en: "The provider advertises a detection of anomalies that tacitly includes signs of nervousness. With that, the use in education institutions slips into the prohibition without the institution noticing.\n"
+    related_cases: [call-center-emotion-recognition, employee-activity-monitoring, free-text-exam-grading]
+
+  - id: school-learning-assessment
+    title:
+      de: "Lernstandserhebung, die den Förderweg bestimmt"
+      en: "Learning-level assessment that determines the support track"
+    scenario:
+      de: "Ein Schulträger setzt eine Lernplattform ein, die Übungsaufgaben auswertet. Ein KI-System schätzt daraus das Leistungsniveau jedes Schülers in Mathematik und empfiehlt eine von drei Förderschienen. Die Schulleitung weist die Schüler anhand der Empfehlung den Schienen zu.\n"
+      en: "A school authority uses a learning platform that evaluates practice exercises. From these, an AI system estimates each pupil's level of performance in mathematics and recommends one of three support tracks. The school management assigns the pupils to the tracks on the basis of the recommendation.\n"
+    roles: [deployer]
+    classification: high_risk_annex_iii
+    rationale:
+      de: "Anhang III Nummer 3 Buchstabe c nennt KI-Systeme zur Bewertung des angemessenen Bildungsniveaus, das eine Person erhalten wird oder zu dem sie Zugang erhält. Die Zuweisung zu Förderschienen ist eine solche Bewertung. Hinzu kommt Buchstabe b, weil das System Lernergebnisse bewertet und damit den Lernprozess steuert. Die Ausnahme nach Artikel 6 Absatz 3 greift nicht, weil das System einzelne Schüler einordnet und die Zuweisung der Empfehlung folgt.\n"
+      en: "Annex III, point 3(c) lists AI systems intended to be used for assessing the appropriate level of education that an individual will receive or will be able to access. Assignment to support tracks is such an assessment. Point (b) is added, because the system evaluates learning outcomes and thereby steers the learning process. The derogation under Article 6(3) does not apply, because the system classifies individual pupils and the assignment follows the recommendation.\n"
+    legal_basis: [AI-Act/annex-III/pt-3, AI-Act/art-6/para-2, AI-Act/art-6/para-3, AI-Act/art-26/para-2, AI-Act/art-26/para-11, AI-Act/art-27/para-1, GDPR/art-22]
+    obligations:
+      - de: "Als öffentliche Einrichtung eine Abschätzung der Auswirkungen auf die Grundrechte durchführen."
+        en: "As a public institution, carry out a fundamental rights impact assessment."
+      - de: "Eltern und Schüler über die Mitwirkung des Systems an der Zuweisung informieren."
+        en: "Inform parents and pupils that the system takes part in the assignment."
+      - de: "Lehrkräften ermöglichen, von der Empfehlung abzuweichen, und dies nicht begründungspflichtig erschweren."
+        en: "Enable teachers to deviate from the recommendation, and do not make this harder by requiring them to justify it."
+      - de: "Die Empfehlungen daraufhin auswerten, ob bestimmte Gruppen regelmäßig in der unteren Schiene landen."
+        en: "Evaluate the recommendations to see whether certain groups regularly end up in the lower track."
+    learning_note:
+      de: "Eine Empfehlung an eine Lehrkraft und eine Weichenstellung im Bildungsweg sind oft dasselbe. Bei Minderjährigen wiegt eine solche Festlegung besonders schwer, weil sie den weiteren Weg lange prägt und sich kaum korrigieren lässt. Für eigene Fälle ist die Frage hilfreich: Wie leicht kann der Betroffene das Ergebnis später noch umkehren? Je schwerer, desto weniger trägt das Argument, es sei ja nur ein Vorschlag.\n"
+      en: "A recommendation to a teacher and a turning point in someone's educational path are often the same thing. For minors, such a determination weighs particularly heavily, because it shapes the further path for a long time and can hardly be corrected. For your own cases, the question is helpful: how easily can the person concerned still reverse the result later? The harder it is, the less weight the argument carries that it is only a proposal.\n"
+    pitfall:
+      de: "Die Schule hält die Erhebung für eine neutrale Messung. Was gemessen wird, hängt aber von den Aufgaben und ihrer Gewichtung ab, und eine Zuweisung nach dieser Messung ist eine Entscheidung über den Bildungsweg.\n"
+      en: "The school considers the assessment a neutral measurement. But what is measured depends on the exercises and their weighting, and an assignment based on this measurement is a decision about the educational path.\n"
+    related_cases: [employee-training-recommendations, university-admission-screening, grading-pattern-deviation]

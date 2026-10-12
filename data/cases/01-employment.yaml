@@ -1,0 +1,222 @@
+topic:
+  de: "Beschäftigung und Personalmanagement"
+  en: "Employment and workers management"
+hint:
+  de: "Die Fälle sind Beispiele zum Lernen, keine Rechtsberatung. Ob eine Einstufung im Einzelfall trägt, hängt von Umständen ab, die hier nicht alle stehen können. Wo es darauf ankommt, ist es im Fall vermerkt.\n"
+  en: "The cases are examples for learning, not legal advice. Whether a classification holds in an individual case depends on circumstances that cannot all be stated here. Where it matters, this is noted in the case.\n"
+cases:
+  - id: application-screening-llm
+    title:
+      de: "Vorauswahl von Bewerbungen mit einem Sprachmodell"
+      en: "Pre-selection of job applications with a language model"
+    scenario:
+      de: "Ein Maschinenbauunternehmen mit 400 Beschäftigten erhält auf jede ausgeschriebene Stelle 150 bis 300 Bewerbungen. Die Personalabteilung lässt ein Sprachmodell — ein KI-System, das Texte liest und Texte erzeugt — jede Bewerbung lesen und auf einer Skala von 1 bis 10 einordnen, wie gut sie zur Stellenbeschreibung passt. Wer unter 6 landet, wird nicht weiter angesehen. Das Modell ist ein zugekaufter Dienst, der über eine Programmierschnittstelle angesprochen wird.\n"
+      en: "A mechanical engineering company with 400 employees receives 150 to 300 applications for every advertised position. The HR department has a language model — an AI system that reads texts and generates texts — read every application and rate on a scale of 1 to 10 how well it matches the job description. Anyone who scores below 6 is not looked at any further. The model is a purchased service accessed through an application programming interface.\n"
+    roles: [deployer]
+    classification: high_risk_annex_iii
+    rationale:
+      de: "Anhang III Nummer 4 Buchstabe a der KI-Verordnung nennt ausdrücklich KI-Systeme, die für die Einstellung oder Auswahl von Menschen bestimmt sind, und zählt dabei das Sichten und Filtern von Bewerbungen und das Bewerten von Bewerbern auf. Genau das tut das System. Die Ausnahme nach Artikel 6 Absatz 3 greift nicht: Das System führt keine eng gefasste Verfahrensaufgabe aus, sondern beeinflusst das Ergebnis der Entscheidungsfindung wesentlich, weil eine Punktzahl unter 6 die Bewerbung aus dem Verfahren nimmt.\n"
+      en: "Annex III, point 4(a) of the AI Act expressly lists AI systems intended to be used for the recruitment or selection of natural persons, and in doing so names the analysing and filtering of job applications and the evaluation of candidates. That is exactly what the system does. The derogation under Article 6(3) does not apply: the system does not perform a narrow procedural task but materially influences the outcome of decision-making, because a score below 6 removes the application from the procedure.\n"
+    legal_basis: [AI-Act/annex-III/pt-4, AI-Act/art-6/para-2, AI-Act/art-6/para-3, AI-Act/art-26/para-1, AI-Act/art-26/para-2, AI-Act/art-26/para-7, AI-Act/art-26/para-11, AI-Act/art-4, GDPR/art-22, BDSG/sec-26]
+    obligations:
+      - de: "Das System nur so verwenden, wie es die Betriebsanleitung des Anbieters vorsieht, und die Anleitung vorher tatsächlich lesen."
+        en: "Use the system only as the provider's instructions for use provide, and actually read the instructions beforehand."
+      - de: "Die menschliche Aufsicht einer benannten Person übertragen, die fachlich dazu in der Lage ist und die Befugnis hat, dem Ergebnis zu widersprechen."
+        en: "Assign human oversight to a named person who has the necessary competence and the authority to overrule the result."
+      - de: "Betriebsrat und betroffene Beschäftigte vor der Inbetriebnahme informieren, dass das System eingesetzt wird."
+        en: "Inform the works council and affected employees before putting the system into service that it is being used."
+      - de: "Bewerber darüber informieren, dass über sie ein Hochrisiko-KI-System mitentscheidet."
+        en: "Inform applicants that a high-risk AI system takes part in decisions about them."
+      - de: "Prüfen, ob die Ablehnung am Ende von einem Menschen getragen wird; eine reine Durchwinke-Unterschrift genügt dafür nicht."
+        en: "Check whether the rejection is ultimately borne by a human; a mere rubber-stamp signature is not enough for this."
+      - de: "Für die Mitarbeiter, die mit dem System arbeiten, ausreichende Schulung sicherstellen."
+        en: "Ensure sufficient training for the staff who work with the system."
+      - de: "Die Verarbeitung der Bewerberdaten auf eine Rechtsgrundlage stützen und die Bewerber nach Datenschutzrecht informieren."
+        en: "Base the processing of applicants' data on a legal basis and inform applicants in accordance with data protection law."
+    learning_note:
+      de: "Wer ein KI-System nur einkauft und benutzt, ist Betreiber und nicht Anbieter — aber Betreiber zu sein ist keine Entlastung, sondern ein eigener Pflichtenkatalog. Entscheidend für die Einstufung ist nicht, wie fortgeschritten die Technik ist, sondern wozu das System im Verfahren dient. Eine Zahl, die darüber entscheidet, wer überhaupt angesehen wird, ist eine Auswahlentscheidung, auch wenn am Ende formal ein Mensch unterschreibt. Diese Frage — beeinflusst das Ergebnis die Entscheidung wesentlich? — ist auf fast jeden eigenen Fall übertragbar.\n"
+      en: "Anyone who merely buys and uses an AI system is a deployer and not a provider — but being a deployer is no relief; it is a catalogue of obligations of its own. What determines the classification is not how advanced the technology is, but what purpose the system serves in the procedure. A number that decides who is looked at at all is a selection decision, even if a human formally signs at the end. This question — does the result materially influence the decision? — can be applied to almost any case of your own.\n"
+    pitfall:
+      de: "Der häufigste Fehler ist die Annahme, der Einsatz sei unbedenklich, weil \"am Ende ja ein Mensch entscheidet\". Wenn der Mensch nur die Vorauswahl des Systems bestätigt und die ausgefilterten Bewerbungen nie zu sehen bekommt, ist die menschliche Aufsicht nur auf dem Papier vorhanden.\n"
+      en: "The most common mistake is assuming the use is harmless because \"a human decides in the end anyway\". If the human only confirms the system's pre-selection and never gets to see the filtered-out applications, human oversight exists only on paper.\n"
+    related_cases: [sales-performance-rating, cv-to-structured-data, targeted-job-ads]
+
+  - id: sales-performance-rating
+    title:
+      de: "Automatische Leistungsbewertung im Vertriebsinnendienst"
+      en: "Automated performance evaluation in inside sales"
+    scenario:
+      de: "Ein Großhändler wertet die Telefon- und Angebotsdaten seines Vertriebsinnendienstes monatlich mit einem KI-System aus. Das System erzeugt für jeden Beschäftigten eine Kennzahl aus Gesprächsdauer, Abschlussquote und Antwortzeiten und ordnet die Beschäftigten in drei Gruppen ein. Die Gruppeneinteilung geht an die Teamleitung und ist Grundlage für die Jahresgespräche und die variable Vergütung.\n"
+      en: "A wholesaler evaluates the telephone and quotation data of its inside sales team every month with an AI system. The system generates a score for each employee from call duration, closing rate and response times and sorts the employees into three groups. The grouping goes to the team leaders and is the basis for the annual reviews and variable pay.\n"
+    roles: [deployer]
+    classification: high_risk_annex_iii
+    rationale:
+      de: "Anhang III Nummer 4 Buchstabe b nennt KI-Systeme für die Beobachtung und Bewertung der Leistung und des Verhaltens von Beschäftigten und ebenso Systeme für Entscheidungen, die die Bedingungen von Arbeitsverhältnissen beeinflussen. Beides trifft zu, da die Einteilung in die variable Vergütung einfließt. Die Ausnahme nach Artikel 6 Absatz 3 scheidet aus, weil das System die Beschäftigten anhand persönlicher Merkmale einordnet und damit ein Profiling vornimmt — bei einem Profiling gilt ein System aus Anhang III nach dem letzten Satz von Artikel 6 Absatz 3 immer als hochriskant.\n"
+      en: "Annex III, point 4(b) lists AI systems for monitoring and evaluating the performance and behaviour of workers, as well as systems for making decisions affecting the terms of work-related relationships. Both apply, since the grouping feeds into variable pay. The derogation under Article 6(3) is ruled out because the system sorts the employees on the basis of personal traits and thereby performs profiling — where profiling takes place, a system from Annex III is always considered high-risk under the last sentence of Article 6(3).\n"
+    legal_basis: [AI-Act/annex-III/pt-4, AI-Act/art-6/para-2, AI-Act/art-6/para-3, AI-Act/art-26/para-2, AI-Act/art-26/para-7, AI-Act/art-26/para-11, BDSG/sec-26, GDPR/art-22]
+    obligations:
+      - de: "Eine Person mit der menschlichen Aufsicht betrauen, die die Einteilung ändern darf und nicht nur weitergibt."
+        en: "Entrust human oversight to a person who may change the grouping and does not merely pass it on."
+      - de: "Arbeitnehmervertretung und die bewerteten Beschäftigten vor dem Start informieren."
+        en: "Inform the workers' representatives and the evaluated employees before the start."
+      - de: "Den bewerteten Beschäftigten sagen, dass ein Hochrisiko-KI-System an der Bewertung mitwirkt."
+        en: "Tell the evaluated employees that a high-risk AI system takes part in the evaluation."
+      - de: "Prüfen, ob für die Dauerüberwachung eine Rechtsgrundlage besteht und ob eine Vereinbarung mit dem Betriebsrat nötig ist."
+        en: "Check whether there is a legal basis for the continuous monitoring and whether an agreement with the works council is needed."
+      - de: "Beschäftigten einen Weg geben, der Bewertung zu widersprechen und ihren Standpunkt darzulegen."
+        en: "Give employees a way to object to the evaluation and to state their point of view."
+    learning_note:
+      de: "Profiling ist der Riegel vor der Ausnahme. Sobald ein System Menschen anhand persönlicher Merkmale oder ihres Verhaltens einordnet, bewertet oder vorhersagt, nützt es nichts mehr, auf die Ausnahme nach Artikel 6 Absatz 3 zu zeigen — die Verordnung schließt sie für diesen Fall ausdrücklich aus. Wer prüfen will, ob die Ausnahme in Frage kommt, prüft deshalb zuerst: Wird hier über einzelne Menschen eine Aussage gebildet? Wenn ja, ist die Prüfung beendet.\n"
+      en: "Profiling is the bolt across the derogation. As soon as a system classifies, evaluates or predicts people on the basis of personal traits or their behaviour, it no longer helps to point to the derogation under Article 6(3) — the Regulation expressly excludes it in this case. Anyone who wants to check whether the derogation might apply therefore checks first: is a statement being formed here about individual people? If so, the check is over.\n"
+    pitfall:
+      de: "Betriebe behandeln solche Kennzahlensysteme als bloße Auswertung schon vorhandener Daten und übersehen, dass die Zusammenfassung zu einer Personenkennzahl selbst der Schritt ist, der die Einstufung auslöst.\n"
+      en: "Businesses treat such scoring systems as a mere evaluation of data that already exists and overlook that condensing it into a score per person is itself the step that triggers the classification.\n"
+    related_cases: [application-screening-llm, employee-activity-monitoring, grading-pattern-deviation]
+
+  - id: reliability-based-shift-planning
+    title:
+      de: "Schichtplanung, die nach Zuverlässigkeit sortiert"
+      en: "Shift planning that ranks by reliability"
+    scenario:
+      de: "Ein Logistikzentrum plant seine Schichten mit einem KI-System. Bis vor kurzem rechnete das System nur mit Qualifikationen, Arbeitszeitkonten und gesetzlichen Ruhezeiten. Nun hat der Betrieb es erweitert: Es berücksichtigt auch, wie oft jemand in der Vergangenheit kurzfristig ausgefallen ist, und weist die Beschäftigten mit den wenigsten Ausfällen bevorzugt den gut bezahlten Nachtschichten zu.\n"
+      en: "A logistics centre plans its shifts with an AI system. Until recently, the system only worked with qualifications, working-time accounts and statutory rest periods. Now the company has extended it: it also takes into account how often someone has been absent at short notice in the past, and preferentially assigns the employees with the fewest absences to the well-paid night shifts.\n"
+    roles: [deployer]
+    classification: high_risk_annex_iii
+    rationale:
+      de: "Anhang III Nummer 4 Buchstabe b erfasst die Zuweisung von Aufgaben aufgrund des individuellen Verhaltens oder persönlicher Merkmale. Vor der Erweiterung rechnete das System nur mit festen Vorgaben und blieb damit außerhalb dieses Falls; mit dem Ausfallverhalten als Kriterium wird aus der Planung eine verhaltensbezogene Aufgabenzuweisung. Da die Zuweisung auch die Verdienstmöglichkeit beeinflusst, berührt sie zudem die Bedingungen des Arbeitsverhältnisses.\n"
+      en: "Annex III, point 4(b) covers the allocation of tasks based on individual behaviour or personal traits. Before the extension, the system only worked with fixed requirements and thus stayed outside this case; with absence behaviour as a criterion, planning becomes a behaviour-based allocation of tasks. Since the allocation also affects earning opportunities, it additionally touches on the terms of the work-related relationship.\n"
+    legal_basis: [AI-Act/annex-III/pt-4, AI-Act/art-6/para-2, AI-Act/art-26/para-2, AI-Act/art-26/para-7, AI-Act/art-26/para-11, BDSG/sec-26]
+    obligations:
+      - de: "Vor der Erweiterung prüfen, ob die neue Rechenregel die Einstufung ändert — und das Ergebnis dieser Prüfung festhalten."
+        en: "Before the extension, check whether the new calculation rule changes the classification — and record the result of this check."
+      - de: "Arbeitnehmervertretung und Beschäftigte über den Einsatz informieren."
+        en: "Inform the workers' representatives and employees about the use."
+      - de: "Eine Person benennen, die Schichtzuweisungen des Systems überstimmen kann."
+        en: "Name a person who can overrule the system's shift assignments."
+      - de: "Prüfen, ob Ausfalldaten für diesen Zweck überhaupt verwendet werden dürfen; Krankheitsdaten sind besonders geschützt."
+        en: "Check whether absence data may be used for this purpose at all; health data are specially protected."
+    learning_note:
+      de: "Ein System kann durch eine einzige neue Rechengröße die Risikoklasse wechseln, ohne dass sich an der Oberfläche etwas ändert. Die Einstufung hängt am Zweck und an den Kriterien, nicht am Namen des Werkzeugs. Darum gehört zu jeder Änderung an einem eingesetzten System die Frage, ob sie die Einstufung verschiebt — und wer die Frage nie stellt, merkt den Wechsel nicht.\n"
+      en: "A single new variable in the calculation can move a system into a different risk class without anything changing on the surface. The classification depends on the purpose and the criteria, not on the name of the tool. That is why every change to a system in use must come with the question whether it shifts the classification — and anyone who never asks the question does not notice the shift.\n"
+    pitfall:
+      de: "Die Erweiterung wird als kleine Verbesserung eines seit Jahren unbedenklichen Planungswerkzeugs behandelt und läuft deshalb ohne jede neue Prüfung mit.\n"
+      en: "The extension is treated as a small improvement to a planning tool that has been harmless for years and therefore goes live without any new check.\n"
+    related_cases: [sales-performance-rating, meeting-scheduler, white-labeled-system]
+
+  - id: layoff-shortlist
+    title:
+      de: "Vorschlagsliste für den Personalabbau"
+      en: "Proposal list for staff reductions"
+    scenario:
+      de: "Eine Handelskette muss in der Verwaltung Stellen abbauen. Die Personalabteilung lässt ein KI-System die Personalakten auswerten und eine nach Kriterien sortierte Liste erzeugen, welche Arbeitsverhältnisse sich aus Sicht des Systems am ehesten beenden lassen. Die Liste geht in die Verhandlung mit dem Betriebsrat.\n"
+      en: "A retail chain has to cut positions in its administration. The HR department has an AI system evaluate the personnel files and generate a list, sorted by criteria, of which employment relationships the system considers easiest to terminate. The list goes into the negotiations with the works council.\n"
+    roles: [deployer]
+    classification: high_risk_annex_iii
+    rationale:
+      de: "Anhang III Nummer 4 Buchstabe b nennt KI-Systeme für Entscheidungen, die Kündigungen von Arbeitsvertragsverhältnissen beeinflussen. Dass das System nicht selbst kündigt, ändert nichts: Die Verordnung setzt beim Beeinflussen der Entscheidung an, und eine Vorschlagsliste, die zur Verhandlungsgrundlage wird, beeinflusst sie. Die Ausnahme nach Artikel 6 Absatz 3 greift nicht, da das System einzelne Beschäftigte bewertet und damit ein Profiling vornimmt.\n"
+      en: "Annex III, point 4(b) lists AI systems for making decisions affecting the termination of work-related contractual relationships. That the system does not itself give notice changes nothing: the Regulation starts from influencing the decision, and a proposal list that becomes the basis for negotiations influences it. The derogation under Article 6(3) does not apply, since the system evaluates individual employees and thereby performs profiling.\n"
+    legal_basis: [AI-Act/annex-III/pt-4, AI-Act/art-6/para-2, AI-Act/art-6/para-3, AI-Act/art-26/para-2, AI-Act/art-26/para-7, AI-Act/art-26/para-11, BDSG/sec-26]
+    obligations:
+      - de: "Die menschliche Aufsicht so einrichten, dass die Liste geprüft und nicht nur übernommen wird."
+        en: "Set up human oversight so that the list is reviewed and not simply adopted."
+      - de: "Arbeitnehmervertretung und betroffene Beschäftigte über den Einsatz informieren."
+        en: "Inform the workers' representatives and affected employees about the use."
+      - de: "Nachvollziehbar festhalten, nach welchen Kriterien sortiert wurde, und die Kriterien auf unzulässige Benachteiligung prüfen."
+        en: "Record in a traceable way the criteria used for sorting, and check the criteria for unlawful discrimination."
+      - de: "Prüfen, ob die Auswertung der Personalakten zu diesem Zweck zulässig ist."
+        en: "Check whether evaluating the personnel files for this purpose is permissible."
+    learning_note:
+      de: "\"Das System entscheidet nicht, es schlägt nur vor\" ist rechtlich kein Unterschied, wenn der Vorschlag den Gang der Entscheidung prägt. Die Verordnung erfasst die Mitwirkung an der Entscheidung, nicht nur die Entscheidung selbst. Für eigene Fälle heißt das: Nicht fragen, ob das System den letzten Schritt tut, sondern ob sein Ergebnis die Richtung vorgibt, in die der letzte Schritt dann geht.\n"
+      en: "\"The system does not decide, it only proposes\" makes no legal difference if the proposal shapes the course of the decision. The Regulation covers taking part in the decision, not only the decision itself. For your own cases, this means: do not ask whether the system takes the last step, but whether its result sets the direction the last step then takes.\n"
+    pitfall:
+      de: "Sortierkriterien, die neutral aussehen, können mittelbar benachteiligen — etwa wenn Teilzeit, Elternzeit oder Krankheitstage einfließen und damit bestimmte Gruppen regelmäßig oben auf der Liste landen.\n"
+      en: "Sorting criteria that look neutral can discriminate indirectly — for example when part-time work, parental leave or sick days feed in and certain groups therefore regularly end up at the top of the list.\n"
+    related_cases: [sales-performance-rating, application-screening-llm, fully-automated-rejection]
+
+  - id: employee-activity-monitoring
+    title:
+      de: "Dauerhafte Auswertung der Rechnernutzung im Büro"
+      en: "Continuous evaluation of computer use in the office"
+    scenario:
+      de: "Ein Dienstleister installiert auf allen Bürorechnern eine Software, die Tastaturaktivität, Programmwechsel und Pausenzeiten aufzeichnet. Ein KI-System wertet die Aufzeichnungen aus und meldet der Leitung wöchentlich, bei welchen Beschäftigten die Aktivität auffällig vom Teamdurchschnitt abweicht.\n"
+      en: "A service provider installs software on all office computers that records keyboard activity, application switches and break times. An AI system evaluates the recordings and reports to management every week which employees' activity deviates noticeably from the team average.\n"
+    roles: [deployer]
+    classification: high_risk_annex_iii
+    rationale:
+      de: "Anhang III Nummer 4 Buchstabe b erfasst KI-Systeme zur Beobachtung und Bewertung von Leistung und Verhalten von Beschäftigten. Die laufende Auswertung mit Meldung an die Leitung ist genau das. Unabhängig von der KI-Verordnung ist die datenschutzrechtliche Zulässigkeit einer solchen Dauerüberwachung eine eigene und sehr enge Frage; ob eine lückenlose Aufzeichnung verhältnismäßig ist, hängt von Zweck und Ausgestaltung ab und ist hier nicht entschieden.\n"
+      en: "Annex III, point 4(b) covers AI systems for monitoring and evaluating the performance and behaviour of workers. Ongoing evaluation with reports to management is exactly that. Independently of the AI Act, whether such continuous monitoring is permissible under data protection law is a separate and very narrow question; whether seamless recording is proportionate depends on purpose and design and is not decided here.\n"
+    legal_basis: [AI-Act/annex-III/pt-4, AI-Act/art-6/para-2, AI-Act/art-26/para-2, AI-Act/art-26/para-7, AI-Act/art-26/para-11, BDSG/sec-26, GDPR/art-5, GDPR/art-35]
+    obligations:
+      - de: "Vor allem anderen klären, ob die Überwachung in dieser Tiefe datenschutzrechtlich überhaupt zulässig ist."
+        en: "Before anything else, clarify whether monitoring at this depth is permissible under data protection law at all."
+      - de: "Eine Datenschutz-Folgenabschätzung prüfen — bei systematischer Überwachung von Beschäftigten liegt sie nahe."
+        en: "Consider a data protection impact assessment — with systematic monitoring of employees it is the obvious step."
+      - de: "Arbeitnehmervertretung und Beschäftigte informieren; Mitbestimmungsrechte klären."
+        en: "Inform the workers' representatives and employees; clarify co-determination rights."
+      - de: "Menschliche Aufsicht benennen und den Beschäftigten einen Weg zur Gegendarstellung geben."
+        en: "Name a person for human oversight and give employees a way to present their side."
+    learning_note:
+      de: "Zwei Regelwerke prüfen nebeneinander, und das strengere entscheidet über die Praxis. Die KI-Verordnung sagt, welche Pflichten beim Einsatz gelten; sie erlaubt den Einsatz nicht. Ein System kann alle Pflichten der KI-Verordnung erfüllen und datenschutzrechtlich trotzdem unzulässig sein. Die Reihenfolge der Prüfung ist daher: Darf ich überhaupt? Und erst dann: Was muss ich dabei beachten?\n"
+      en: "Two sets of rules apply side by side, and the stricter one decides practice. The AI Act says which obligations apply to the use; it does not permit the use. A system can meet all obligations of the AI Act and still be impermissible under data protection law. The order of the check is therefore: am I allowed to at all? And only then: what must I observe in doing so?\n"
+    pitfall:
+      de: "Der Einsatz wird mit der Einwilligung der Beschäftigten begründet. Im Arbeitsverhältnis ist eine Einwilligung wegen der Abhängigkeit nur unter engen Bedingungen freiwillig — wer nicht zustimmen kann, ohne Nachteile zu fürchten, willigt nicht freiwillig ein.\n"
+      en: "The use is justified with the employees' consent. In an employment relationship, because of the dependency, consent is freely given only under narrow conditions — anyone who cannot refuse without fearing disadvantages does not consent freely.\n"
+    related_cases: [call-center-emotion-recognition, sales-performance-rating, remote-exam-proctoring]
+
+  - id: employee-training-recommendations
+    title:
+      de: "Weiterbildungsvorschläge für Beschäftigte"
+      en: "Training suggestions for employees"
+    scenario:
+      de: "Ein Industriebetrieb bietet seinen Beschäftigten im Intranet eine Lernplattform an. Ein KI-System schlägt jedem Beschäftigten Kurse vor, ausgehend von seiner Tätigkeit und den bereits besuchten Kursen. Die Vorschläge sind unverbindlich, werden nicht an die Vorgesetzten gemeldet und spielen bei Beurteilung und Beförderung keine Rolle.\n"
+      en: "An industrial company offers its employees a learning platform on the intranet. An AI system suggests courses to each employee based on their job and the courses they have already attended. The suggestions are non-binding, are not reported to supervisors and play no role in appraisals or promotions.\n"
+    roles: [deployer]
+    classification: minimal
+    rationale:
+      de: "Die Empfehlung berührt keinen der Fälle in Anhang III Nummer 4: Sie wirkt nicht bei Einstellung, Beförderung, Kündigung, Vertragsbedingungen, Aufgabenzuweisung oder Leistungsbewertung mit, weil sie den Beschäftigten allein angezeigt wird und keine Folgen im Arbeitsverhältnis hat. Damit bleibt es bei der Pflicht zur KI-Kompetenz nach Artikel 4. Die Einstufung kippt, sobald die Vorschläge oder ihre Annahme in Beurteilungen einfließen oder der Leitung gemeldet werden.\n"
+      en: "The recommendation touches none of the cases in Annex III, point 4: it takes no part in recruitment, promotion, termination, contractual terms, allocation of tasks or performance evaluation, because it is shown to the employee alone and has no consequences in the employment relationship. This leaves the AI literacy obligation under Article 4. The classification flips as soon as the suggestions or whether they are taken up feed into appraisals or are reported to management.\n"
+    legal_basis: [AI-Act/annex-III/pt-4, AI-Act/art-4, BDSG/sec-26]
+    obligations:
+      - de: "Dafür sorgen, dass die mit dem System arbeitenden Personen ausreichend geschult sind."
+        en: "Ensure that the people working with the system are sufficiently trained."
+      - de: "Festhalten und einhalten, dass Vorschläge und deren Annahme nicht in Beurteilungen einfließen."
+        en: "Record and observe that suggestions and whether they are taken up do not feed into appraisals."
+      - de: "Beschäftigte darüber informieren, welche Daten die Plattform verwendet."
+        en: "Inform employees which data the platform uses."
+    learning_note:
+      de: "Dieselbe Technik an derselben Stelle im Betrieb kann in zwei Risikoklassen fallen — es kommt darauf an, wer das Ergebnis zu sehen bekommt und was damit geschieht. Der Weg zur unkritischen Einstufung führt hier nicht über eine schwächere Technik, sondern über eine bewusste Grenze im Verfahren: Die Empfehlung bleibt beim Beschäftigten. Solche Grenzen sind der wirksamste und billigste Hebel, den ein Betrieb hat — aber nur, wenn sie verbindlich sind und eingehalten werden.\n"
+      en: "The same technology at the same place in the company can fall into two risk classes — it depends on who gets to see the result and what happens with it. The route to an uncritical classification here does not lead through weaker technology but through a deliberate boundary in the procedure: the recommendation stays with the employee. Such boundaries are the most effective and cheapest lever a company has — but only if they are binding and observed.\n"
+    pitfall:
+      de: "Nach einem Jahr will die Personalentwicklung eine Auswertung, wer die Vorschläge annimmt. Damit wandert das Ergebnis in die Leistungsbetrachtung und der Fall ist ein anderer — die Grenze fällt beiläufig, ohne dass jemand die Einstufung neu prüft.\n"
+      en: "After a year, HR development wants an evaluation of who takes up the suggestions. The result thereby moves into performance assessment and the case is a different one — the boundary falls in passing, without anyone re-checking the classification.\n"
+    related_cases: [sales-performance-rating, school-learning-assessment, inbound-mail-routing]
+
+  - id: targeted-job-ads
+    title:
+      de: "Stellenanzeigen, die das System gezielt ausspielt"
+      en: "Job advertisements that the system targets"
+    scenario:
+      de: "Ein Pflegedienst schaltet seine Stellenanzeigen über ein Werbenetzwerk. Ein KI-System des Netzwerks entscheidet, welchen Nutzern die Anzeige gezeigt wird, und optimiert dabei auf möglichst viele Bewerbungen je ausgegebenem Euro. Der Pflegedienst gibt nur Budget und Region vor und bekommt eine Auswertung der Einblendungen.\n"
+      en: "A care service places its job advertisements through an advertising network. An AI system of the network decides which users are shown the advertisement, optimising for as many applications as possible per euro spent. The care service only sets budget and region and receives an evaluation of the impressions.\n"
+    roles: [deployer]
+    classification: high_risk_annex_iii
+    rationale:
+      de: "Anhang III Nummer 4 Buchstabe a nennt neben dem Sichten von Bewerbungen ausdrücklich das Schalten gezielter Stellenanzeigen. Wer Anzeigen über ein optimierendes System ausspielen lässt, verwendet ein KI-System für die Auswahl in diesem Sinne, weil die Vorauswahl schon darüber entscheidet, wer von der Stelle überhaupt erfährt. Wer im Einzelfall Anbieter und wer Betreiber ist, hängt davon ab, wie das Werbenetzwerk das System bereitstellt; der Pflegedienst verwendet es jedenfalls in eigener Verantwortung.\n"
+      en: "Besides analysing applications, Annex III, point 4(a) expressly names placing targeted job advertisements. Anyone who has advertisements delivered through an optimising system uses an AI system for selection in this sense, because the pre-selection already decides who learns of the position at all. Who is provider and who is deployer in the individual case depends on how the advertising network makes the system available; the care service in any event uses it under its own authority.\n"
+    legal_basis: [AI-Act/annex-III/pt-4, AI-Act/art-6/para-2, AI-Act/art-26/para-1, AI-Act/art-26/para-2, AI-Act/art-4]
+    obligations:
+      - de: "Beim Werbenetzwerk erfragen, nach welchen Merkmalen die Ausspielung optimiert wird, und die Antwort dokumentieren."
+        en: "Ask the advertising network which characteristics the delivery is optimised for, and document the answer."
+      - de: "Prüfen, ob die Ausspielung Gruppen systematisch ausschließt — etwa nach Alter oder Geschlecht."
+        en: "Check whether the delivery systematically excludes groups — for example by age or gender."
+      - de: "Die Auswertung der Einblendungen auf Schieflagen ansehen, statt nur die Zahl der Bewerbungen zu betrachten."
+        en: "Examine the evaluation of the impressions for imbalances instead of only looking at the number of applications."
+      - de: "Eine Person benennen, die den Einsatz beaufsichtigt und abschalten kann."
+        en: "Name a person who oversees the use and can switch it off."
+    learning_note:
+      de: "Auswahl beginnt vor der ersten Bewerbung. Ein System, das nur bestimmt, wer eine Anzeige sieht, trifft keine Entscheidung über eine Person — und fällt doch unter die Auswahl, weil es den Bewerberkreis zuschneidet. Wer seine eigenen Prozesse prüft, sollte deshalb am Anfang der Kette anfangen und nicht erst dort, wo offensichtlich entschieden wird. Optimierung auf Klickerfolg führt dabei oft von allein zu Schieflagen, ohne dass jemand sie gewollt hat.\n"
+      en: "Selection begins before the first application. A system that only determines who sees an advertisement makes no decision about a person — and still falls under selection, because it shapes the pool of applicants. Anyone checking their own processes should therefore start at the beginning of the chain and not only where a decision is obviously made. Optimising for click success often leads to imbalances by itself, without anyone having intended them.\n"
+    pitfall:
+      de: "Der Betrieb hält sich für unbeteiligt, weil er nur Budget und Region vorgibt und die Technik fremd ist. Verantwortlich für die Verwendung bleibt dennoch er, und Auskünfte über die Optimierungskriterien muss er beim Anbieter einholen, statt sie nicht zu haben.\n"
+      en: "The company considers itself uninvolved because it only sets budget and region and the technology belongs to someone else. It nonetheless remains responsible for the use, and it must obtain information about the optimisation criteria from the provider rather than simply not having it.\n"
+    related_cases: [application-screening-llm, customer-social-scoring, white-labeled-system]

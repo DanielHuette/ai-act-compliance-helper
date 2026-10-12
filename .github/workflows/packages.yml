@@ -1,0 +1,136 @@
+name: Build packages
+
+# One runner per OS: PyInstaller bundles the runtime of the build system and cannot cross-compile.
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+# Read-only for the build jobs; only the release job below may write to the repository.
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: ${{ matrix.name }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            name: Windows
+            package: ComplianceHelper-Windows
+          - os: macos-latest
+            name: Mac
+            package: ComplianceHelper-Mac
+          - os: ubuntu-latest
+            name: Linux
+            package: ComplianceHelper-Linux
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        shell: bash
+        run: |
+          python -m pip install --upgrade pip
+          pip install --constraint constraints.txt -e .
+          pip install pyinstaller
+
+      - name: Export question flow
+        shell: bash
+        run: python scripts/export_question_flow.py --output web/question_flow.json
+
+      - name: Check Python/browser parity
+        shell: bash
+        # Never ship a package whose two classification paths can give one case two answers.
+        run: python scripts/check_parity.py --runs 400
+
+      - name: Build package
+        shell: bash
+        run: python -m PyInstaller packaging/compliance_helper.spec --noconfirm
+
+      - name: Smoke-test package start
+        shell: bash
+        run: python packaging/launch_check.py
+
+      - name: Windows archive
+        if: matrix.os == 'windows-latest'
+        shell: pwsh
+        # Created before the installer so a runnable fallback exists even if Inno Setup fails.
+        run: |
+          Compress-Archive -Path dist\ComplianceHelper\* `
+            -DestinationPath dist\${{ matrix.package }}.zip -Force
+
+      - name: Install Inno Setup
+        if: matrix.os == 'windows-latest'
+        shell: pwsh
+        # No longer preinstalled on GitHub-hosted runners.
+        run: choco install innosetup --no-progress -y
+
+      - name: Windows installer
+        if: matrix.os == 'windows-latest'
+        shell: pwsh
+        run: |
+          # Braces required: PowerShell reads "$env:ProgramFiles(x86)" as "$env:ProgramFiles" + "(x86)".
+          $iscc = (Get-Command ISCC -ErrorAction SilentlyContinue).Source
+          if (-not $iscc) {
+            $iscc = Get-ChildItem -Path `
+              "${env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe", `
+              "${env:ProgramFiles}\Inno Setup 6\ISCC.exe" `
+              -ErrorAction SilentlyContinue |
+              Select-Object -First 1 -ExpandProperty FullName
+          }
+          if (-not $iscc) { throw "ISCC.exe not found" }
+          & $iscc packaging\windows.iss
+          Get-ChildItem packaging\output
+
+      - name: macOS disk image
+        if: matrix.os == 'macos-latest'
+        shell: bash
+        run: |
+          mkdir -p dmg
+          cp -R "dist/ComplianceHelper.app" dmg/ 2>/dev/null || cp -R dist/ComplianceHelper dmg/
+          ln -s /Applications dmg/Applications
+          hdiutil create -volname "ComplianceHelper" -srcfolder dmg \
+            -ov -format UDZO "dist/${{ matrix.package }}.dmg"
+
+      - name: Linux archive
+        if: matrix.os == 'ubuntu-latest'
+        shell: bash
+        run: |
+          cp packaging/linux-starter.desktop dist/ComplianceHelper/
+          tar -C dist -czf "dist/${{ matrix.package }}.tar.gz" ComplianceHelper
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.package }}
+          path: |
+            dist/*.dmg
+            dist/*.tar.gz
+            dist/*.zip
+            packaging/output/*.exe
+          if-no-files-found: error
+
+  release:
+    name: Attach to release
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: packages
+
+      # Third-party action pinned by commit (tag v2.6.2), so a moved tag cannot change what runs.
+      - uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65
+        with:
+          files: packages/**/*

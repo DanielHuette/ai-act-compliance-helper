@@ -1,0 +1,870 @@
+area: "AI-Act/annex-III/pt-4"
+title:
+  de: "Beschäftigung und Personalmanagement"
+  en: "Employment and workers management"
+source:
+  de: "Entwurf der Leitlinien der Kommission vom 19.05.2026, Anhang III, Abschnitt 3.4"
+  en: "Draft Commission guidelines of 19 May 2026, Annex III, section 3.4"
+provisions:
+  - citation: "AI-Act/annex-III/pt-4"
+    main_question:
+      de: "Hat Ihr System mit Menschen zu tun, die arbeiten oder Arbeit suchen - also mit Beschäftigung, mit der Steuerung von Arbeitskräften oder mit dem Zugang zu selbstständiger Tätigkeit?"
+      en: "Does your system deal with people who work or are looking for work - that is, with employment, with workers management or with access to self-employment?"
+    follow_up_questions:
+      - question:
+          de: "Geht es um Menschen, die für eine bestimmte Zeit Leistungen für einen anderen und nach dessen Weisung gegen Bezahlung erbringen?"
+          en: "Is it about people who, for a certain period of time, perform services for and under the direction of another person in return for remuneration?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(239)"
+      - question:
+          de: "Setzen Sie voraus, dass die betroffene Person einen förmlichen Arbeitsvertrag hat, damit Ihr System sie betrifft?"
+          en: "Do you assume that the person concerned must have a formal employment contract for your system to affect them?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(239)"
+      - question:
+          de: "Sind die betroffenen Personen Selbstständige, freie Mitarbeiter, unabhängige Berufsträger, Dienstleister oder Plattformarbeiter?"
+          en: "Are the persons concerned self-employed persons, freelancers, independent professionals, service providers or platform workers?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(241)"
+      - question:
+          de: "Vermittelt oder bedingt Ihr System den Zugang dieser Selbstständigen oder Plattformarbeiter zu Arbeitsgelegenheiten?"
+          en: "Does your system mediate or condition the access of these self-employed persons or platform workers to work opportunities?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(241)"
+      - question:
+          de: "Sind die betroffenen Personen zwar selbstständig - aus eigener Entscheidung oder weil Vorschriften es verlangen -, aber fest in eine Organisation eingebunden, für die sie ihre Leistungen erbringen?"
+          en: "Are the persons concerned self-employed - by their own choice or because rules require it - but firmly integrated into an organisation for which they perform their services?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(239)"
+      - question:
+          de: "Betrifft Ihr System eine Leitungsaufgabe, nämlich Einstellungsverfahren, Arbeitszuweisung, Überwachung, Bewertung von Mitarbeitern oder Entscheidungen über Beförderung, Bezahlung oder Beendigung?"
+          en: "Does your system concern a management function, namely recruitment procedures, allocation of work, monitoring, evaluation of employees or decisions on promotion, pay or termination?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(240)"
+      - question:
+          de: "Soll Ihr System den Gefühlszustand von Menschen am Arbeitsplatz erkennen oder daraus Schlüsse ziehen?"
+          en: "Is your system intended to recognise the emotional state of people in the workplace or to draw inferences from it?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(242)"
+    covered:
+      - text:
+          de: "Der persönliche Anwendungsbereich umfasst Beschäftigung, Steuerung von Arbeitskräften und Zugang zu selbstständiger Tätigkeit."
+          en: "The personal scope covers employment, workers management and access to self-employment."
+        source_ref: "(238)"
+      - text:
+          de: "Kennzeichen eines Arbeitnehmers ist, dass eine Person für eine bestimmte Zeit Leistungen für einen anderen und nach dessen Weisung gegen Bezahlung erbringt."
+          en: "The characteristic feature of a worker is that a person, for a certain period of time, performs services for and under the direction of another person in return for remuneration."
+        source_ref: "(239)"
+      - text:
+          de: "Erfasst ist nicht nur der förmliche Arbeitsvertrag, sondern das breitere Spektrum von Vereinbarungen, die Arbeit, Beschäftigung und selbstständige Tätigkeit ausmachen - etwa Selbstständige, die fest in eine Organisation eingebunden sind, für die sie Leistungen erbringen."
+          en: "Not only the formal employment contract is covered, but the broader range of arrangements that make up work, employment and self-employment - for example self-employed persons who are firmly integrated into an organisation for which they perform services."
+        source_ref: "(239)"
+      - text:
+          de: "Leitungsaufgaben wie Einstellungsverfahren, Arbeitszuweisung, Überwachung und Mitarbeiterbewertung sowie Entscheidungen über Beförderung, Bezahlung oder Beendigung sind von Nummer 4 erfasst."
+          en: "Management functions such as recruitment procedures, allocation of work, monitoring and evaluation of employees, as well as decisions on promotion, pay or termination, are covered by point 4."
+        source_ref: "(240)"
+      - text:
+          de: "Freie Mitarbeiter, unabhängige Berufsträger, Dienstleister und Plattformarbeiter fallen unabhängig von ihrem Vertragsstatus in den persönlichen Anwendungsbereich, soweit KI-Systeme ihren Zugang zu Arbeitsgelegenheiten vermitteln oder bedingen."
+          en: "Freelancers, independent professionals, service providers and platform workers fall within the personal scope irrespective of their contractual status, insofar as AI systems mediate or condition their access to work opportunities."
+        source_ref: "(241)"
+      - text:
+          de: "Zugang zu selbstständiger Tätigkeit ist weiter als Plattformarbeit und umfasst auch Alleinselbstständige, die sich in einer mit Arbeitnehmern vergleichbaren Lage befinden."
+          en: "Access to self-employment is broader than platform work and also includes solo self-employed persons who are in a situation comparable to that of workers."
+        source_ref: "(241)"
+      - text:
+          de: "Arbeitsplatz ist weit zu verstehen: jeder bestimmte körperliche oder virtuelle Raum, in dem Menschen Aufgaben und Verantwortlichkeiten erfüllen, die ihnen ihr Arbeitgeber oder die Organisation, der sie angehören, zugewiesen hat - auch bei Selbstständigkeit."
+          en: "Workplace is to be understood broadly: any specific physical or virtual space in which people perform tasks and responsibilities assigned to them by their employer or by the organisation to which they belong - also in the case of self-employment."
+        source_ref: "(241)"
+    not_covered:
+      - text:
+          de: "Nicht jedes KI-System, das bei Auswahl, Einstellung oder am Arbeitsplatz eingesetzt wird, ist hochriskant; nur Systeme, die für die Anwendungsfälle in Nummer 4 Buchstabe a oder b bestimmt sind und nicht unter die Ausnahmen des Artikels 6 Absatz 3 fallen (Fußnote 34 zu diesem Absatz)."
+          en: "Not every AI system used in selection, recruitment or in the workplace is high-risk; only systems intended for the use cases in point 4(a) or (b) that do not fall under the exemptions of Article 6(3) (footnote 34 to this paragraph)."
+        source_ref: "(238)"
+      - text:
+          de: "Fällt ein System unter ein Verbot des Artikels 5 - insbesondere das Ableiten von Gefühlen am Arbeitsplatz nach Artikel 5 Absatz 1 Buchstabe f -, gilt nicht die Einstufung als hochriskant, sondern das Verbot: Inverkehrbringen, Inbetriebnahme und Verwendung sind unzulässig, gleichgültig welche Schutzmaßnahmen getroffen wurden."
+          en: "If a system falls under a prohibition of Article 5 - in particular inferring emotions in the workplace under Article 5(1)(f) - it is not the high-risk classification that applies but the prohibition: placing on the market, putting into service and use are not permitted, regardless of what safeguards have been taken."
+        source_ref: "(242)"
+    examples: []
+
+  - citation: "AI-Act/annex-III/pt-4-a"
+    main_question:
+      de: "Soll Ihr System dazu dienen, Menschen für eine Stelle oder einen Auftrag zu gewinnen oder auszuwählen - gleichgültig ob es Angestellte oder Selbstständige sind?"
+      en: "Is your system intended to be used to recruit or select people for a job or an assignment - regardless of whether they are employees or self-employed?"
+    follow_up_questions:
+      - question:
+          de: "Betrifft die Tätigkeit, für die Ihr System bestimmt ist, die Substanz des Einstellungsverfahrens - also vorbereitende Schritte wie gezielte Werbung, Ansprache möglicher Bewerber oder Vorprüfung vor der Bewerbung?"
+          en: "Does the activity for which your system is intended concern the substance of the recruitment procedure - that is, preparatory steps such as targeted advertising, approaching potential candidates or pre-screening before the application?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(245)"
+      - question:
+          de: "Betrifft die Tätigkeit das Auswahlverfahren selbst - engere Auswahl, Benotung, Rangfolge oder Testung von Bewerbern?"
+          en: "Does the activity concern the selection procedure itself - shortlisting, grading, ranking or testing of candidates?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(245)"
+      - question:
+          de: "Sucht Ihr System mögliche Bewerber in Datenbanken oder spricht es sie auf anderem Weg an, bevor ein förmliches Verfahren begonnen hat?"
+          en: "Does your system search for potential candidates in databases or approach them in other ways before a formal procedure has begun?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(246)"
+      - question:
+          de: "Sichtet Ihr System Lebensläufe, sucht es Bewerber oder bildet es eine Rangfolge der Bewerber?"
+          en: "Does your system screen CVs, search for candidates or rank candidates?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(246)"
+      - question:
+          de: "Werden mit Ihrem System Selbstständige durch ihren Auftraggeber ausgewählt, bevor sie beauftragt werden?"
+          en: "Is your system used by clients to select self-employed persons before they are engaged?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(249)"
+      - question:
+          de: "Erzeugt Ihr System Eignungswerte, prüft es die Passung des Profils oder der Erfahrung eines Bewerbers zu den Auswahlkriterien oder zur Stellenbeschreibung, oder erstellt es Kompetenzprofile, die über die engere Auswahl mitentscheiden?"
+          en: "Does your system generate suitability scores, assess the match between a candidate's profile or experience and the selection criteria or the job description, or create competence profiles that help decide on shortlisting?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(253)"
+      - question:
+          de: "Analysiert Ihr System Bewerbungen nur beschreibend - etwa Dateiformate umwandeln oder Abschlüsse in Standardkategorien einordnen -, ohne dabei zu bewerten?"
+          en: "Does your system analyse applications only descriptively - for example converting file formats or sorting qualifications into standard categories - without evaluating them?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(253)"
+      - question:
+          de: "Schätzt Ihr System Eignung, Verdienst oder Potenzial eines Bewerbers ein - durch Punktwerte, Rangfolge, Vorhersagemodelle oder beschreibende Urteile aus Daten?"
+          en: "Does your system assess the suitability, merit or potential of a candidate - through scores, rankings, predictive models or descriptive judgements derived from data?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(254)"
+      - question:
+          de: "Beeinflusst die Ausgabe Ihres Systems die Entscheidung merklich - etwa indem sie engere Listen aufstellt, bestimmte Bewerber vorzieht oder Beurteilungen mit Punktwerten versieht -, auch wenn sie die Einstellung nicht unmittelbar bestimmt?"
+          en: "Does the output of your system noticeably influence the decision - for example by drawing up shortlists, favouring certain candidates or attaching scores to assessments - even if it does not directly determine the hiring?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(254)"
+      - question:
+          de: "Zeigt Ihr System ausschließlich Tatsachen ohne eigene Bewertung an, etwa den unveränderten Beschäftigungsverlauf, und erzeugt es keine Einschätzung der Eignung?"
+          en: "Does your system display only facts without its own evaluation, for example the unaltered employment history, and does it not generate any assessment of suitability?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(254)"
+      - question:
+          de: "Platziert Ihr System Stellenanzeigen gezielt bei bestimmten Personen oder Personengruppen?"
+          en: "Does your system place job advertisements in a targeted way with specific persons or groups of persons?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(250)"
+      - question:
+          de: "Stützt sich Ihr System bei der gezielten Platzierung von Stellenanzeigen auf Profilbildung, also auf die Auswertung persönlicher Merkmale einzelner Personen?"
+          en: "In the targeted placement of job advertisements, does your system rely on profiling, that is, on the evaluation of personal characteristics of individual persons?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(250)"
+      - question:
+          de: "Bestimmt Ihr System - auch ohne Profilbildung - in erheblicher Weise, wer Zugang zu Beschäftigungsmöglichkeiten erhält, oder kann es zu einem Diskriminierungsrisiko führen?"
+          en: "Does your system - even without profiling - determine to a significant extent who gains access to employment opportunities, or can it lead to a risk of discrimination?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(250)"
+      - question:
+          de: "Zeigt die Anzeige aktiv an, dass ein Arbeitgeber Bewerber für eine konkrete offene Stelle sucht?"
+          en: "Does the advertisement actively indicate that an employer is looking for candidates for a specific vacancy?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(251)"
+      - question:
+          de: "Ergibt sich die Auswahl der Personen, denen die Anzeige gezeigt wird, unmittelbar aus nicht diskriminierenden, sachlichen und vernünftigen Kriterien, die der Stellenbeschreibung selbst innewohnen?"
+          en: "Does the selection of the persons to whom the advertisement is shown follow directly from non-discriminatory, objective and reasonable criteria inherent in the job description itself?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(252)"
+      - question:
+          de: "Platziert Ihr System Stellenanzeigen ausschließlich nach dem Umfeld - etwa nach dem Inhalt der Internetseite, auf der die Anzeige erscheint -, ohne Bezug zu bestimmten Personen oder Personengruppen, und kann die Anzeige jeder sehen, der diese Seite aufruft?"
+          en: "Does your system place job advertisements solely according to the context - for example according to the content of the website on which the advertisement appears - without reference to specific persons or groups of persons, and can anyone who visits this page see the advertisement?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(252)"
+      - question:
+          de: "Wird Ihr System im Rahmen der Einarbeitung eingesetzt und ist diese Einarbeitung noch ein maßgeblicher Teil des Einstellungsverfahrens - etwa weil der Arbeitgeber vorläufig eingestellte Mitarbeiter noch überprüft?"
+          en: "Is your system used as part of onboarding, and is this onboarding still a decisive part of the recruitment procedure - for example because the employer is still reviewing provisionally hired employees?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(248)"
+      - question:
+          de: "Wird Ihr System erst eingesetzt, nachdem die Person als eingestellt gilt und eine Trennung nur noch über die dafür vorgesehenen Wege möglich wäre?"
+          en: "Is your system only used after the person is considered hired and a separation would only be possible through the channels provided for that purpose?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(248)"
+      - question:
+          de: "Wird Ihr System vom Bewerber selbst gestartet und geführt, außerhalb der Einflussmöglichkeit des möglichen Arbeitgebers, und gehen die Empfehlungen ausschließlich an den Bewerber?"
+          en: "Is your system started and operated by the candidate themselves, outside the sphere of influence of the potential employer, and do the recommendations go exclusively to the candidate?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(254)"
+      - question:
+          de: "Bewertet oder wählt Ihr System Angebote oder Antworten auf Ausschreibungen aus, und führt dieser Einsatz tatsächlich dazu, dass die selbstständige Person selbst ausgewählt, ausgeschlossen oder bewertet wird statt nur ihr Angebot?"
+          en: "Does your system evaluate or select offers or responses to calls for tender, and does this use actually result in the self-employed person themselves being selected, excluded or evaluated rather than merely their offer?"
+        on_yes: "covered"
+        on_no: "not_covered"
+        source_ref: "(250)"
+    covered:
+      - text:
+          de: "Erfasst sind Systeme, deren Tätigkeit die Substanz des Einstellungsverfahrens betrifft oder beeinflusst: vorbereitende Schritte - gezielte Werbung, Ansprache möglicher Bewerber, Vorprüfung vor der Bewerbung - und das Auswahlverfahren - engere Auswahl, Benotung, Rangfolge, Testung."
+          en: "Covered are systems whose activity concerns or influences the substance of the recruitment procedure: preparatory steps - targeted advertising, approaching potential candidates, pre-screening before the application - and the selection procedure - shortlisting, grading, ranking, testing."
+        source_ref: "(245)"
+      - text:
+          de: "Personalgewinnung ist der Vorgang, mit dem ein neues Arbeitsverhältnis vorbereitet wird; er beginnt bereits mit dem Auffinden und Ansprechen möglicher Bewerber und dauert bis zum Vertragsschluss, falls es dazu kommt."
+          en: "Recruitment is the process by which a new employment relationship is prepared; it already begins with finding and approaching potential candidates and lasts until the conclusion of the contract, if it comes to that."
+        source_ref: "(246)"
+      - text:
+          de: "Erfasst sind frühe Schritte wie das Auffinden möglicher Bewerber in Datenbanken und andere informelle Ansprachen vor dem Beginn eines förmlichen Verfahrens, ebenso die Sichtung von Lebensläufen, die Bewerbersuche und die Rangfolgebildung."
+          en: "Covered are early steps such as finding potential candidates in databases and other informal approaches before a formal procedure begins, as well as the screening of CVs, the search for candidates and ranking."
+        source_ref: "(246)"
+      - text:
+          de: "Systeme, die Einstellungsdaten auswerten, um vorherzusagen, welche Bewerber am erfolgreichsten sein werden, oder die Stellenbeschreibungen erzeugen helfen, fallen unter Nummer 4, wenn sie wirklich zum Bereich der Personalgewinnung gehören und dabei die Berufsaussichten oder Arbeitnehmerrechte in der Substanz beeinflussen."
+          en: "Systems that analyse recruitment data to predict which candidates will be most successful, or that help generate job descriptions, fall under point 4 if they genuinely belong to the area of recruitment and in doing so substantively influence career prospects or workers' rights."
+        source_ref: "(247)"
+      - text:
+          de: "Einarbeitung ist erfasst, soweit das Ergebnis des Systems den Zugang zur Arbeit beeinflussen kann und die Einarbeitung ein maßgeblicher Teil des Einstellungsverfahrens ist und nicht erst der erste Schritt danach."
+          en: "Onboarding is covered insofar as the output of the system can influence access to work and the onboarding is a decisive part of the recruitment procedure and not merely the first step after it."
+        source_ref: "(248)"
+      - text:
+          de: "Die Auswahl von Selbstständigen durch ihre Auftraggeber fällt unter Nummer 4 Buchstabe a, auch wenn es sich nicht um Personalgewinnung im engen Sinn handelt."
+          en: "The selection of self-employed persons by their clients falls under point 4(a), even if it is not recruitment in the narrow sense."
+        source_ref: "(249)"
+      - text:
+          de: "Auswahl erfasst die Prüfung von Bewerbungen, die automatische engere Auswahl, Punktbewertung, Rangfolge und das Zuweisen von Vorhersagewerten zur Eignung für eine Stelle."
+          en: "Selection covers the screening of applications, automatic shortlisting, scoring, ranking and the assignment of predictive scores on suitability for a job."
+        source_ref: "(249)"
+      - text:
+          de: "Die in Nummer 4 Buchstabe a genannten Beispiele sind nicht abschließend."
+          en: "The examples given in point 4(a) are not exhaustive."
+        source_ref: "(250)"
+      - text:
+          de: "Stützt sich ein System zur gezielten Platzierung von Stellenanzeigen auf Profilbildung, ist es stets hochriskant, weil Artikel 6 Absatz 3 letzter Unterabsatz Systeme mit Profilbildung von den Ausnahmen ausschließt."
+          en: "If a system for the targeted placement of job advertisements relies on profiling, it is always high-risk, because the last subparagraph of Article 6(3) excludes systems that perform profiling from the exemptions."
+        source_ref: "(250)"
+      - text:
+          de: "Auch ohne Profilbildung ist ein solches System hochriskant, wenn es den Zugang zu Beschäftigungsmöglichkeiten in erheblicher Weise bedingt oder zu einem Diskriminierungsrisiko führen kann."
+          en: "Even without profiling, such a system is high-risk if it significantly conditions access to employment opportunities or can lead to a risk of discrimination."
+        source_ref: "(250)"
+      - text:
+          de: "Die Wörter Bewerbungen prüfen und filtern sind weit zu verstehen; ein System muss nicht beides gleichzeitig tun."
+          en: "The words analysing and filtering applications are to be understood broadly; a system does not have to do both at the same time."
+        source_ref: "(253)"
+      - text:
+          de: "Erfasst sind Systeme, deren Prüfung von Bewerbungen dazu führen kann, dass der Bewerber beim Zugang zu bestimmten Stellen beschränkt wird - etwa durch Eignungswerte, Passungsbewertung von Profil oder Erfahrung zu Auswahlkriterien oder Stellenbeschreibung oder Kompetenzprofile, die über die engere Auswahl mitentscheiden."
+          en: "Covered are systems whose analysis of applications can result in the candidate being restricted in access to certain jobs - for example through suitability scores, assessment of the match of profile or experience with selection criteria or job description, or competence profiles that help decide on shortlisting."
+        source_ref: "(253)"
+      - text:
+          de: "Prüfung und Filterung bilden ein Kontinuum: eine Prüfung, die den Zugang zu späteren Stufen beeinflusst, wirkt tatsächlich als Filter."
+          en: "Analysing and filtering form a continuum: an analysis that influences access to later stages in fact acts as a filter."
+        source_ref: "(253)"
+      - text:
+          de: "Bewerten von Bewerbern ist jede Einschätzung von Eignung, Verdienst oder Potenzial - durch Punktwerte, Rangfolge, Vorhersagemodelle oder beschreibende Urteile aus Daten; auch Selbstständige sind einbezogen."
+          en: "Evaluating candidates is any assessment of suitability, merit or potential - through scores, rankings, predictive models or descriptive judgements derived from data; self-employed persons are also included."
+        source_ref: "(254)"
+      - text:
+          de: "Es genügt, dass die Bewertung die Entscheidung merklich beeinflusst, etwa durch Aufstellen engerer Listen, Vorziehen bestimmter Bewerber oder Punktbewertung von Beurteilungen; sie muss das Einstellungsergebnis nicht unmittelbar bestimmen."
+          en: "It is sufficient that the evaluation noticeably influences the decision, for example by drawing up shortlists, favouring certain candidates or scoring assessments; it does not have to directly determine the hiring outcome."
+        source_ref: "(254)"
+    not_covered:
+      - text:
+          de: "Arbeitgeberwerbung oder allgemeine Werbung für das Unternehmen, die sich praktisch nicht auf eine offene Stelle bezieht, fällt nicht unter Nummer 4 Buchstabe a; eine Stellenanzeige muss aktiv anzeigen, dass ein Arbeitgeber Bewerber für eine konkrete offene Stelle sucht."
+          en: "Employer branding or general advertising for the company that does not in practice relate to a vacancy does not fall under point 4(a); a job advertisement must actively indicate that an employer is looking for candidates for a specific vacancy."
+        source_ref: "(251)"
+      - text:
+          de: "Ergibt sich die Auswahl der angesprochenen Personen unmittelbar aus nicht diskriminierenden, sachlichen und vernünftigen Kriterien, die der Stellenbeschreibung innewohnen, kann sie von den gezielten Stellenanzeigen ausgenommen sein."
+          en: "If the selection of the persons addressed follows directly from non-discriminatory, objective and reasonable criteria inherent in the job description, it may be exempt from targeted job advertisements."
+        source_ref: "(252)"
+      - text:
+          de: "Das Platzieren von Stellenanzeigen ausschließlich nach Umfeldmerkmalen - etwa dem Inhalt des Ortes, an dem die Anzeige erscheint - ohne unmittelbaren Bezug zu bestimmten Personen oder Personengruppen fällt nicht unter Nummer 4 Buchstabe a; die Anzeige bleibt für jeden sichtbar, der den Ort aufruft, es gibt also keinen Ausschluss."
+          en: "Placing job advertisements solely according to contextual characteristics - for example the content of the place where the advertisement appears - without direct reference to specific persons or groups of persons does not fall under point 4(a); the advertisement remains visible to anyone who visits the place, so there is no exclusion."
+        source_ref: "(252)"
+      - text:
+          de: "Prüft ein System Bewerbungen nur beschreibend, etwa durch Umwandeln von Dateiformaten oder Einordnen von Abschlüssen in Standardkategorien ohne bewertendes Gewicht, kann es als vorbereitende Aufgabe im Sinne des Artikels 6 Absatz 3 Buchstabe d gelten."
+          en: "If a system analyses applications only descriptively, for example by converting file formats or sorting qualifications into standard categories without evaluative weight, it may count as a preparatory task within the meaning of Article 6(3)(d)."
+        source_ref: "(253)"
+      - text:
+          de: "Werkzeuge, die nur Tatsachen ohne bewertendes Gewicht darstellen - etwa Software, die den unveränderten Beschäftigungsverlauf anzeigt -, können außerhalb des Anwendungsfalls liegen, wenn sie keine Einschätzung der Eignung erzeugen."
+          en: "Tools that only present facts without evaluative weight - for example software that displays the unaltered employment history - may lie outside the use case if they do not generate an assessment of suitability."
+        source_ref: "(254)"
+      - text:
+          de: "Die Personalgewinnung ist abgeschlossen, wenn die Person als eingestellt gilt und eine Trennung nur über die dafür vorgesehenen Wege möglich ist."
+          en: "Recruitment is completed when the person is considered hired and a separation is only possible through the channels provided for that purpose."
+        source_ref: "(248)"
+      - text:
+          de: "Systeme, die Angebote oder Antworten auf Ausschreibungen auswählen oder bewerten sollen, sind nicht allein deshalb hochriskant, weil sie theoretisch auch das Angebot eines selbstständigen Einzelunternehmers auswählen oder bewerten könnten; dies gilt aber nur, solange der Einsatz nicht tatsächlich zur Auswahl oder zum Ausschluss der selbstständigen Person selbst oder zu deren Bewertung statt der des Angebots führt (Fußnote 44 zu diesem Absatz)."
+          en: "Systems intended to select or evaluate offers or responses to calls for tender are not high-risk merely because they could theoretically also select or evaluate the offer of a self-employed sole trader; however, this applies only as long as the use does not actually lead to the selection or exclusion of the self-employed person themselves or to their evaluation instead of that of the offer (footnote 44 to this paragraph)."
+        source_ref: "(250)"
+      - text:
+          de: "Systeme, deren Einsatz der Bewerber selbst beginnt und führt, außerhalb der Einflussmöglichkeit des möglichen Arbeitgebers und außerhalb des Einstellungs- und Auswahlverfahrens, fallen nicht unter Nummer 4 Buchstabe a, wenn die Empfehlungen ausschließlich an den Bewerber gehen."
+          en: "Systems whose use the candidate starts and operates themselves, outside the sphere of influence of the potential employer and outside the recruitment and selection procedure, do not fall under point 4(a) if the recommendations go exclusively to the candidate."
+        source_ref: "(254)"
+    examples:
+      - scenario:
+          de: "Ein System erzeugt Stellenbeschreibungen ausschließlich aus einer Liste von Aufgaben und einer Liste notwendiger Qualifikationen und Fähigkeiten, die zuvor ein Mensch festgelegt hat."
+          en: "A system generates job descriptions solely from a list of tasks and a list of necessary qualifications and skills previously defined by a human."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es erfüllt eine enge Verfahrensaufgabe nach Artikel 6 Absatz 3 Buchstabe a, birgt nur begrenzte Risiken und beeinflusst das Bewerbungsverfahren nicht in bedeutsamer Weise."
+          en: "It performs a narrow procedural task under Article 6(3)(a), poses only limited risks and does not significantly influence the application procedure."
+        source_ref: "(247)"
+      - scenario:
+          de: "Dasselbe System erzeugt die notwendigen Qualifikationen und Fähigkeiten selbst aus einer groben Beschreibung der Stelle, oder es bewertet zusätzlich die Lebensläufe der Bewerber an der von ihm erstellten Stellenbeschreibung und empfiehlt daraufhin, wer geeignet ist."
+          en: "The same system generates the necessary qualifications and skills itself from a rough description of the job, or it additionally evaluates the candidates' CVs against the job description it has created and then recommends who is suitable."
+        verdict: "high_risk"
+        rationale:
+          de: "Es kann das Bewerbungsverfahren wesentlich beeinflussen und fällt deshalb nicht unter die Ausnahmen."
+          en: "It can substantially influence the application procedure and therefore does not fall under the exemptions."
+        source_ref: "(247)"
+      - scenario:
+          de: "Ein Werkzeug gleicht Bewerber automatisch mit Stellen ab und bildet eine Rangfolge; es verarbeitet Lebensläufe, Fähigkeiten, Bildung, frühere Einsätze sowie kognitive, soziale und emotionale Kompetenzen, vergleicht sie mit Stellenbeschreibungen oder früheren Einstellungsdaten und erzeugt Punktwerte, Ranglisten wie Top 5 und Passungskategorien wie hohe oder geringe Passung. Interne und externe Personalverantwortliche dürfen übersteuern, aber die Rangfolge ist die wichtigste Eingangsgröße der Entscheidung."
+          en: "A tool automatically matches candidates with jobs and ranks them; it processes CVs, skills, education, previous assignments as well as cognitive, social and emotional competences, compares them with job descriptions or previous hiring data and generates scores, rankings such as top 5 and match categories such as high or low match. Internal and external HR managers may override, but the ranking is the most important input to the decision."
+        verdict: "high_risk"
+        rationale:
+          de: "Das System prüft und filtert Bewerber; es könnte etwa zu einer niedrigen Einordnung oder zum Ausschluss von Bewerbern eines bestimmten Geschlechts oder von Bewerbern mit Behinderungen führen."
+          en: "The system analyses and filters candidates; it could, for example, lead to a low ranking or the exclusion of candidates of a particular gender or of candidates with disabilities."
+        source_ref: "(254)"
+      - scenario:
+          de: "Eine Personalvermittlung sucht mit einem Werkzeug in sozialen Netzwerken, Berufsportalen, Stellenbörsen und eigenen Lebenslaufdatenbanken nach Personen, die vorgegebenen Kriterien wie Berufsjahren, technischen Fähigkeiten oder Bildungsweg entsprechen, und erzeugt eine engere Liste möglicher Bewerber oder Auftragnehmer."
+          en: "A recruitment agency uses a tool to search social networks, professional portals, job boards and its own CV databases for persons who meet predefined criteria such as years of professional experience, technical skills or educational background, and generates a shortlist of potential candidates or contractors."
+        verdict: "high_risk"
+        rationale:
+          de: "Es wirkt unmittelbar und bedeutsam auf Gewinnung und Auswahl von Menschen, indem es Bewerber filtert und auffindet; keine der Ausnahmen des Artikels 6 Absatz 3 greift."
+          en: "It has a direct and significant effect on the recruitment and selection of people by filtering and finding candidates; none of the exemptions of Article 6(3) applies."
+        source_ref: "(254)"
+      - scenario:
+          de: "Eine Internetplattform, über die Verbraucher selbstständige Dienstleister für verschiedene Aufgaben finden, bildet mit einem Abgleichwerkzeug eine Rangfolge der Dienstleister und bestimmt, welche den Verbrauchern gezeigt werden."
+          en: "An online platform through which consumers find self-employed service providers for various tasks uses a matching tool to rank the service providers and determine which ones are shown to consumers."
+        verdict: "high_risk"
+        rationale:
+          de: "Die Ausgabe bestimmt den Zugang zu künftigen Aufträgen und kann über Laufbahn, Lebensunterhalt und Rechte der Selbstständigen entscheiden."
+          en: "The output determines access to future assignments and can decide on the careers, livelihoods and rights of the self-employed persons."
+        source_ref: "(254)"
+      - scenario:
+          de: "Ein System prüft mit Kameras und Sensoren das Sehvermögen von Pilotenbewerbern, misst etwa Sehschärfe und Reaktionsgeschwindigkeit und bewertet, ob die Schwellenwerte für den Passagierflug erreicht werden; das Ergebnis entscheidet unmittelbar über die Eignung für bestimmte Rollen."
+          en: "A system uses cameras and sensors to test the eyesight of pilot candidates, measuring for example visual acuity and reaction speed, and evaluates whether the thresholds for passenger flights are met; the result directly decides on suitability for certain roles."
+        verdict: "high_risk"
+        rationale:
+          de: "Es wird in Gewinnung und Auswahl eingesetzt, um die Eignung von Bewerbern zu bewerten."
+          en: "It is used in recruitment and selection to evaluate the suitability of candidates."
+        source_ref: "(254)"
+      - scenario:
+          de: "Ein System bewertet schriftliche oder mündliche Antworten von Bewerbern in einer Online-Prüfung, gibt jedem eine Punktzahl nach sprachlichen und inhaltlichen Kriterien und erzeugt daraus eine Rangfolge, die bestimmt, wer zum Gespräch eingeladen wird."
+          en: "A system evaluates written or oral answers of candidates in an online test, gives each a score according to linguistic and content criteria and generates a ranking from this that determines who is invited to an interview."
+        verdict: "high_risk"
+        rationale:
+          de: "Es übernimmt eine zentrale bewertende Aufgabe und beeinflusst die Substanz von Gewinnung und Auswahl in bedeutsamer Weise."
+          en: "It takes on a central evaluative task and significantly influences the substance of recruitment and selection."
+        source_ref: "(254)"
+      - scenario:
+          de: "Ein Wirtschaftsunternehmen setzt ein System zur Unterstützung der Gewinnung von Auszubildenden ein; es verwaltet und bearbeitet Bewerbungen, sichtet Lebensläufe, ordnet Bewerber Rollen zu oder erzeugt engere Listen anhand vorgegebener Kriterien wie Qualifikation oder Alter."
+          en: "A commercial company uses a system to support the recruitment of apprentices; it manages and processes applications, screens CVs, assigns candidates to roles or generates shortlists based on predefined criteria such as qualification or age."
+        verdict: "high_risk"
+        rationale:
+          de: "Obwohl eine Ausbildung Lernanteile hat, wird das System im Rahmen der Einstellung für ein förmliches Arbeitsverhältnis eingesetzt."
+          en: "Although an apprenticeship has learning components, the system is used in the context of hiring for a formal employment relationship."
+        source_ref: "(254)"
+      - scenario:
+          de: "Ein System platziert Stellenanzeigen gezielt bei bestimmten Nutzern sozialer Medien; es sammelt und analysiert Nutzungsmuster und Nutzermerkmale, erhält von den Werbenden Zielkriterien wie Alter, Bildung, Berufserfahrung oder Branche und bestimmt und priorisiert daraufhin mögliche Zielgruppen - über ein blosses Abgleichen von Anforderungen wie Berufszulassung oder Ort hinaus."
+          en: "A system places job advertisements in a targeted way with specific social media users; it collects and analyses usage patterns and user characteristics, receives targeting criteria from advertisers such as age, education, professional experience or industry and on that basis identifies and prioritises potential target groups - beyond a mere matching of requirements such as professional licence or location."
+        verdict: "high_risk"
+        rationale:
+          de: "Es bestimmt über gezielte Werbung den Zugang zu Beschäftigungsmöglichkeiten und kann wesentlich beeinflussen, welche Bewerber überhaupt von offenen Stellen erfahren."
+          en: "Through targeted advertising it determines access to employment opportunities and can substantially influence which candidates learn about vacancies at all."
+        source_ref: "(254)"
+      - scenario:
+          de: "Eine Arbeitsvermittlung ordnet mit einem System Bewerber offenen Stellen zu: es verarbeitet Bewerberdaten aus Lebensläufen wie Fähigkeiten, Bildungsweg und frühere Berufserfahrung sowie auf Arbeitgeberseite Stellenanforderungen, Berufsklassifikationen und Arbeitsmarktdaten und erzeugt Empfehlungen, indem es Bewerber für bestimmte Stellen in eine Rangfolge bringt oder Jobsuchenden passende Stellen vorschlägt; die Sachbearbeiter stützen sich bei großen Bewerbermengen stark darauf."
+          en: "An employment agency uses a system to match candidates with vacancies: it processes candidate data from CVs such as skills, educational background and previous professional experience and, on the employer side, job requirements, occupational classifications and labour market data, and generates recommendations by ranking candidates for specific jobs or suggesting suitable jobs to jobseekers; caseworkers rely heavily on it when dealing with large numbers of candidates."
+        verdict: "high_risk"
+        rationale:
+          de: "Die Empfehlungen wirken sich unmittelbar darauf aus, welche Bewerber Arbeitgebern vorgeschlagen und welche Stellen Jobsuchenden gezeigt werden."
+          en: "The recommendations have a direct effect on which candidates are proposed to employers and which jobs are shown to jobseekers."
+        source_ref: "(254)"
+      - scenario:
+          de: "Ein System führt Hintergrundprüfungen von Bewerbern durch: es bündelt amtliche Nachweise, Beschäftigungsverlauf, Verlauf in sozialen Netzwerken sowie - soweit rechtlich zulässig - Kredit- und Finanzdaten mit offen zugänglichen Internetinformationen und gibt zusammengesetzte Risikowerte, Kategorien wie geringes, mittleres oder hohes Risiko oder Hinweise auf auffällige Punkte aus; in Verfahren mit hohen Bewerberzahlen werden damit Bewerber vor der menschlichen Prüfung zurückgestellt oder ausgeschlossen."
+          en: "A system carries out background checks on candidates: it combines official records, employment history, social network history and - where legally permissible - credit and financial data with publicly available internet information and outputs composite risk scores, categories such as low, medium or high risk, or flags for notable points; in procedures with high numbers of candidates, it is used to defer or exclude candidates before human review."
+        verdict: "high_risk"
+        rationale:
+          de: "Die Ausgabe beeinflusst in der Praxis stark, wer weiterkommt, und damit die Berufsaussichten wesentlich; weil das System Profilbildung vornimmt, kann es die Ausnahmen des Artikels 6 Absatz 3 nicht nutzen."
+          en: "In practice the output strongly influences who progresses, and thus substantially affects career prospects; because the system performs profiling, it cannot rely on the exemptions of Article 6(3)."
+        source_ref: "(254)"
+      - scenario:
+          de: "Ein System erkennt ausschließlich nicht inklusive oder diskriminierende Formulierungen in Anzeigentexten; die Erkennungslogik beruht auf Mustern und Begriffen, die Menschen festgelegt und geprüft haben, und das System markiert mögliche problematische Wendungen."
+          en: "A system solely detects non-inclusive or discriminatory wording in advertisement texts; the detection logic is based on patterns and terms defined and checked by humans, and the system flags potentially problematic phrases."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es ist nicht dazu bestimmt, Menschen zu gewinnen oder auszuwählen, auch wenn es im weiten Beschäftigungsbereich arbeitet."
+          en: "It is not intended to recruit or select people, even though it operates in the broad area of employment."
+        source_ref: "(254)"
+      - scenario:
+          de: "Ein System platziert Arbeitgeberwerbung, die das Unternehmen als attraktiven Arbeitsplatz darstellt - etwa Unternehmenskultur, Zusatzleistungen oder Entwicklungsmöglichkeiten -, ist an keine konkrete offene Stelle gebunden, ist nicht diskriminierend und optimiert die Platzierung nach Kennzahlen wie Seitenaufrufen, Beteiligungsraten oder allgemeiner Bevölkerungsstruktur."
+          en: "A system places employer branding that presents the company as an attractive workplace - for example corporate culture, additional benefits or development opportunities -, is not tied to any specific vacancy, is not discriminatory and optimises placement according to metrics such as page views, engagement rates or general population structure."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es beschränkt sich auf Arbeitgeberwerbung und betrifft keine bestimmten offenen Stellen."
+          en: "It is limited to employer branding and does not concern any specific vacancies."
+        source_ref: "(254)"
+      - scenario:
+          de: "Ein Unternehmen durchsucht mit einem System Internetplattformen und soziale Medien nach Äußerungen über sich als Arbeitgeber, um das eigene Ansehen zu verfolgen und allgemeine Entwicklungen in der Wahrnehmung durch mögliche Bewerber zu erkennen; einzelne Beiträge oder einzelne Nutzer werden nicht ausgewertet oder verfolgt, die Daten werden bei der Erhebung anonymisiert."
+          en: "A company uses a system to search online platforms and social media for statements about itself as an employer in order to track its own reputation and to identify general trends in how it is perceived by potential candidates; individual posts or individual users are not analysed or tracked, and the data are anonymised at the time of collection."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Das System ist nicht dazu bestimmt, Menschen unmittelbar zu gewinnen oder auszuwählen, auch wenn das Ansehen des Arbeitgebers mittelbar mit der Personalgewinnung zusammenhängt."
+          en: "The system is not intended to directly recruit or select people, even though the employer's reputation is indirectly connected with recruitment."
+        source_ref: "(254)"
+      - scenario:
+          de: "Ein System unterstützt die Einarbeitung neuer Mitarbeiter mit persönlich zugeschnittenen Hinweisen zu Unternehmensregeln und Schulungsplänen und beantwortet häufige Fragen."
+          en: "A system supports the onboarding of new employees with personalised information on company rules and training plans and answers frequently asked questions."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es unterstützt interne Personalabläufe nach der Einstellung und beeinflusst weder Gewinnung oder Auswahl noch in irgendeiner Weise den Zugang zur Arbeit; es kann jedoch unter Nummer 4 Buchstabe b fallen, wenn es die Bedingungen des Arbeitsverhältnisses betrifft, in Leistungsbewertungen einfließt oder Mitarbeiter überwacht."
+          en: "It supports internal HR processes after hiring and influences neither recruitment or selection nor access to work in any way; however, it may fall under point 4(b) if it concerns the terms of the employment relationship, feeds into performance evaluations or monitors employees."
+        source_ref: "(254)"
+      - scenario:
+          de: "Ein System hilft Bewerbern, ihren Lebenslauf auf eine bestimmte offene Stelle zuzuschneiden: es prüft den Lebenslauf und die vom Bewerber selbst bereitgestellte Stellenbeschreibung und empfiehlt Änderungen, um die Einladungschance zu erhöhen; die Empfehlungen gehen ausschließlich an den Bewerber."
+          en: "A system helps candidates tailor their CV to a specific vacancy: it analyses the CV and the job description provided by the candidate themselves and recommends changes to increase the chance of an invitation; the recommendations go exclusively to the candidate."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Der Einsatz wird vom Bewerber begonnen und geführt, liegt außerhalb der Einflussmöglichkeit des möglichen Arbeitgebers und findet außerhalb des Einstellungs- und Auswahlverfahrens statt."
+          en: "The use is started and operated by the candidate, lies outside the sphere of influence of the potential employer and takes place outside the recruitment and selection procedure."
+        source_ref: "(254)"
+      - scenario:
+          de: "Ein System hilft Bewerbern, die beste verfügbare Stelle zu finden: es prüft offene Stellen und die vom Bewerber angegebenen Fähigkeiten, Erfahrungen und Erwartungen, bildet daraus eine Rangfolge der Stellen und empfiehlt die passendsten; die Empfehlungen gehen ausschließlich an den Bewerber."
+          en: "A system helps candidates find the best available job: it analyses vacancies and the skills, experience and expectations stated by the candidate, ranks the jobs on that basis and recommends the most suitable ones; the recommendations go exclusively to the candidate."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Der Einsatz wird vom Bewerber begonnen und geführt, liegt außerhalb der Einflussmöglichkeit des möglichen Arbeitgebers und findet außerhalb des Einstellungs- und Auswahlverfahrens statt."
+          en: "The use is started and operated by the candidate, lies outside the sphere of influence of the potential employer and takes place outside the recruitment and selection procedure."
+        source_ref: "(254)"
+      - scenario:
+          de: "Ein System prüft Berufszulassungen von Bewerbern gegen amtliche Register, etwa die vom Bewerber angegebene Kammermitgliedsnummer gegen die Register der Kammern; die Ausgabe ist tatsächlich und lautet bestätigt oder nicht bestätigt, Auffälligkeiten gehen zur Nachprüfung an die Personalabteilung oder die Rechtsabteilung."
+          en: "A system checks candidates' professional licences against official registers, for example the chamber membership number stated by the candidate against the registers of the chambers; the output is factual and reads confirmed or not confirmed, and anomalies go to the HR department or the legal department for verification."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es fällt in den Anwendungsfall, prägt aber die Auswahl über die tatsächliche Bestätigung hinaus nicht wesentlich und erfüllt eine klar umschriebene, begrenzte Funktion; es ist deshalb eine enge Verfahrensaufgabe nach Artikel 6 Absatz 3 Buchstabe a."
+          en: "It falls within the use case but does not substantially shape the selection beyond the factual confirmation and performs a clearly defined, limited function; it is therefore a narrow procedural task under Article 6(3)(a)."
+        source_ref: "(254)"
+      - scenario:
+          de: "Ein System erkennt Angaben in eingegangenen Lebensläufen und ordnet sie in einer internen Datenbank, die Personalverantwortliche durchsuchen können."
+          en: "A system recognises information in received CVs and organises it in an internal database that HR managers can search."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es erfüllt eine klar umschriebene, begrenzte Funktion und wirkt sich nicht wesentlich auf Gewinnung oder Auswahl des Bewerbers aus; es fällt unter die Ausnahme des Artikels 6 Absatz 3 Buchstabe d."
+          en: "It performs a clearly defined, limited function and has no substantial effect on the recruitment or selection of the candidate; it falls under the exemption of Article 6(3)(d)."
+        source_ref: "(254)"
+      - scenario:
+          de: "Ein System plant Vorstellungsgespräche: es greift auf die Kalenderwerkzeuge des Unternehmens und die von den Bewerbern angegebenen Zeitwünsche zu, schlägt Termine nach gegenseitiger Verfügbarkeit und Randbedingungen wie Zeitzonen oder maximaler Zahl täglicher Gespräche vor, versendet Erinnerungen und nimmt angegebene Barrierefreiheitsbedarfe wie Gebärdensprachdolmetschung, verlängerte Gesprächsdauer oder andere Kommunikationsformen auf."
+          en: "A system schedules job interviews: it accesses the company's calendar tools and the time preferences stated by the candidates, proposes appointments based on mutual availability and constraints such as time zones or maximum number of daily interviews, sends reminders and records stated accessibility needs such as sign language interpretation, extended interview duration or other forms of communication."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Der Zweck ist rein organisatorisch; das System trägt nicht zur Auswahl bei und löst oder beeinflusst keine beschäftigungsbezogene Bewertung; enge Verfahrensaufgabe nach Artikel 6 Absatz 3 Buchstabe a."
+          en: "The purpose is purely organisational; the system does not contribute to the selection and does not trigger or influence any employment-related evaluation; narrow procedural task under Article 6(3)(a)."
+        source_ref: "(254)"
+      - scenario:
+          de: "Ein System prüft menschliche Muster bei früheren Einstellungsentscheidungen: es wertet anonymisierte Daten wie Lebenslaufbewertungen, Gesprächsnotizen und Einstellungsergebnisse statistisch aus, um mögliche Verzerrungen oder Widersprüche zu erkennen; es nimmt an laufenden Verfahren nicht teil, beeinflusst keine aktuellen Bewerberbewertungen und bewertet oder entscheidet nicht anhand bestimmbarer persönlicher Merkmale von Personalverantwortlichen oder Bewerbern."
+          en: "A system examines human patterns in previous hiring decisions: it statistically analyses anonymised data such as CV evaluations, interview notes and hiring outcomes in order to identify possible biases or inconsistencies; it does not take part in ongoing procedures, does not influence any current candidate evaluations and does not evaluate or decide on the basis of identifiable personal characteristics of HR managers or candidates."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es fällt in den Anwendungsfall, nutzt aber die Ausnahme des Artikels 6 Absatz 3 Buchstabe c für Systeme, die Entscheidungsmuster oder Abweichungen davon erkennen sollen, ohne abgeschlossene menschliche Bewertungen zu ersetzen oder zu beeinflussen."
+          en: "It falls within the use case but relies on the exemption of Article 6(3)(c) for systems intended to detect decision-making patterns or deviations from them without replacing or influencing completed human assessments."
+        source_ref: "(254)"
+      - scenario:
+          de: "Ein System versendet persönlich zugeschnittene Eingangsbestätigungen per E-Mail mit Namen und Anrede der Person, die sich beworben hat."
+          en: "A system sends personalised acknowledgements of receipt by e-mail with the name and form of address of the person who has applied."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es beeinflusst die Aussicht auf Auswahl in keiner Weise; enge Verfahrensaufgabe nach Artikel 6 Absatz 3 Buchstabe a."
+          en: "It does not influence the prospect of selection in any way; narrow procedural task under Article 6(3)(a)."
+        source_ref: "(254)"
+
+  - citation: "AI-Act/annex-III/pt-4-b"
+    main_question:
+      de: "Soll Ihr System in einem bereits bestehenden Arbeits- oder Auftragsverhältnis eingesetzt werden - um über die Bedingungen, über Beförderung oder Beendigung zu entscheiden, Aufgaben zuzuweisen oder Leistung und Verhalten zu überwachen oder zu bewerten?"
+      en: "Is your system intended to be used in an already existing employment or contractual relationship - to make decisions on its terms, on promotion or termination, to allocate tasks or to monitor or evaluate performance and behaviour?"
+    follow_up_questions:
+      - question:
+          de: "Wird Ihr System erst nach Gewinnung und Auswahl eingesetzt, also während des laufenden Arbeits- oder Auftragsverhältnisses bis zu seinem Ende?"
+          en: "Is your system only used after recruitment and selection, that is, during the ongoing employment or contractual relationship until its end?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(256)"
+      - question:
+          de: "Entscheidet Ihr System selbst, oder trifft ein Mensch die Entscheidung förmlich, stützt sich dabei aber erheblich auf die Ausgabe Ihres Systems?"
+          en: "Does your system decide itself, or does a human formally take the decision but rely substantially on the output of your system in doing so?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(258)"
+      - question:
+          de: "Betrifft die Entscheidung grundlegende Bestandteile des Arbeitsvertrags oder Arbeitsverhältnisses, also Bedingungen wie Entgeltansprüche, Arbeitszeitgestaltung, Urlaubsansprüche oder Ruhezeiten?"
+          en: "Does the decision concern essential elements of the employment contract or employment relationship, that is, terms such as pay entitlements, working time arrangements, leave entitlements or rest periods?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(259)"
+      - question:
+          de: "Berührt die Entscheidung in erheblicher Weise, ob der Arbeitnehmer wesentliche Rechte und Pflichten aus dem Vertrag oder Verhältnis wahrnehmen kann - etwa die Ablehnung eines Urlaubsantrags oder eine erhebliche Änderung der regelmäßigen Arbeitszeit?"
+          en: "Does the decision significantly affect whether the worker can exercise essential rights and obligations under the contract or relationship - for example the refusal of a leave request or a significant change in regular working hours?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(259)"
+      - question:
+          de: "Ist es eine alltägliche Betriebs- oder Organisationsentscheidung innerhalb der bestehenden Bedingungen, die die Rechte und Pflichten aus dem Vertrag nicht wesentlich verändert - etwa die Zuteilung von Büroräumen oder die Lage von Pause und Mittagszeit innerhalb einer zugeteilten Schicht, ohne dass sich die Gesamtdauer von Pause und Mittagszeit ändert?"
+          en: "Is it an everyday operational or organisational decision within the existing terms that does not substantially change the rights and obligations under the contract - for example the allocation of office space or the timing of breaks and lunch within an assigned shift, without the total duration of breaks and lunch changing?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(262)"
+      - question:
+          de: "Betrifft Ihr System eine Beförderung, also das Heben von Stufe, Verantwortung, Entgelt oder Zugang zur beruflichen Entwicklung - oder ein Unterlassen, das im Zusammenhang einer Beförderung gleichkommt?"
+          en: "Does your system concern a promotion, that is, raising grade, responsibility, pay or access to career development - or an omission that is equivalent to a promotion in that context?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(263)"
+      - question:
+          de: "Betrifft Ihr System die Beendigung, also einen Akt oder ein Unterlassen des Arbeitgebers, der das Verhältnis beendet oder die Person der wesentlichen damit verbundenen Rechte und Vorteile beraubt?"
+          en: "Does your system concern termination, that is, an act or omission of the employer that ends the relationship or deprives the person of the essential rights and benefits associated with it?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(263)"
+      - question:
+          de: "Geht es um Kündigung, Stellenabbau oder die Nichtverlängerung eines befristeten Vertrags, wobei die Entscheidung zur Nichtverlängerung von Ihrem System getrieben wird?"
+          en: "Is it about dismissal, redundancy or the non-renewal of a fixed-term contract, where the decision not to renew is driven by your system?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(264)"
+      - question:
+          de: "Sperrt Ihr System ein Plattformkonto endgültig, oder führt es zu langen oder häufigen Sperrungen des Zugangs zur Plattform?"
+          en: "Does your system permanently block a platform account, or does it lead to long or frequent suspensions of access to the platform?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(265)"
+      - question:
+          de: "Hält Ihr System lediglich fest, dass ein befristeter Vertrag demnächst ausläuft, und meldet dies der zuständigen Führungskraft - ohne Ermessen, ohne eigene Bewertung und ohne eine Entscheidung vorzuschlagen?"
+          en: "Does your system merely record that a fixed-term contract is about to expire and report this to the responsible manager - without discretion, without its own evaluation and without proposing a decision?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(266)"
+      - question:
+          de: "Weist Ihr System einzelne Aufgaben zu?"
+          en: "Does your system allocate individual tasks?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(269)"
+      - question:
+          de: "Stützt sich die Aufgabenzuweisung auf individuelles Verhalten oder persönliche Eigenschaften oder Merkmale - etwa Daten aus Persönlichkeitstests, Verhaltensbewertungen oder abgeleitete Produktivitätsmerkmale?"
+          en: "Is the allocation of tasks based on individual behaviour or personal traits or characteristics - for example data from personality tests, behavioural assessments or inferred productivity characteristics?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(269)"
+      - question:
+          de: "Verwendet Ihr System bei der Aufgabenzuweisung Verhaltenskennzahlen wie Pünktlichkeit, Reaktionsbereitschaft auf Kundenanfragen, Zuverlässigkeitswerte oder Leistungsbewertungen?"
+          en: "In allocating tasks, does your system use behavioural metrics such as punctuality, responsiveness to customer requests, reliability scores or performance ratings?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(270)"
+      - question:
+          de: "Betrifft das verwendete Merkmal persönliche Eigenschaften oder die soziale Identität des Arbeitenden - statt neutraler, sachlicher und äußerer Umstände, die die Ausführung der verlangten Aufgaben unmöglich machen, etwa Nichtverfügbarkeit oder ein unpassender Ort?"
+          en: "Does the characteristic used concern personal traits or the social identity of the worker - rather than neutral, objective and external circumstances that make it impossible to perform the required tasks, such as unavailability or an unsuitable location?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(271)"
+      - question:
+          de: "Stützt sich Ihr System bei der Aufgabenzuweisung ausschließlich auf sachliche, neutrale und äußere Kriterien, die unmittelbar an die Anforderungen der Arbeit gebunden sind - etwa die von den Arbeitenden selbst in Planungswerkzeugen angegebene Verfügbarkeit, eine erforderliche Berufsberechtigung wie einen Gabelstaplerschein oder eine Kammerzulassung, oder die räumliche Nähe zum Lieferort?"
+          en: "In allocating tasks, does your system rely exclusively on objective, neutral and external criteria directly linked to the requirements of the work - for example the availability stated by the workers themselves in scheduling tools, a required professional qualification such as a forklift licence or admission to a professional chamber, or physical proximity to the delivery location?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(272)"
+      - question:
+          de: "Können diese sachlichen Kriterien in Ihrem Fall als Ersatzmerkmal für Staatsangehörigkeit oder ethnische Herkunft wirken?"
+          en: "In your case, can these objective criteria act as a proxy for nationality or ethnic origin?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(272)"
+      - question:
+          de: "Überwacht oder bewertet Ihr System die Leistung oder das Verhalten von Arbeitenden regelmäßig und planmäßig - auch während einer Probezeit und auch dann, wenn damit keine förmlich vereinbarte Vertragsbedingung wie Entgelt oder Arbeitszeit berührt wird?"
+          en: "Does your system monitor or evaluate the performance or behaviour of workers regularly and systematically - also during a probationary period and also where no formally agreed contractual term such as pay or working time is affected?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(274)"
+      - question:
+          de: "Misst Ihr System Leistung in Mengen - etwa die Zahl erledigter Aufgaben oder die Ausgabegeschwindigkeit - oder in Qualität, etwa die Güte der Arbeit?"
+          en: "Does your system measure performance in quantities - for example the number of completed tasks or the output speed - or in quality, for example the standard of the work?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(275)"
+      - question:
+          de: "Erzeugt Ihr System Rückmeldungswerte, Leistungseinschätzungen, Beurteilungen oder Ranglisten, die unmittelbar in die Personalakte einfließen?"
+          en: "Does your system generate feedback scores, performance assessments, appraisals or rankings that feed directly into the personnel file?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(275)"
+      - question:
+          de: "Erfasst Ihr System Verhalten wie Pünktlichkeit, die tatsächliche oder voraussichtliche Einhaltung von Regeln am Arbeitsplatz, die Reaktionsbereitschaft gegenüber Kunden, Umgangsmuster mit Kollegen oder gewerkschaftliches Engagement?"
+          en: "Does your system record behaviour such as punctuality, actual or anticipated compliance with workplace rules, responsiveness towards customers, patterns of interaction with colleagues or trade union involvement?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(276)"
+      - question:
+          de: "Bewertet Ihr System Arbeitende - gegebenenfalls herabstufend - dafür, dass sie Schichten selten annehmen oder Aufgaben ablehnen?"
+          en: "Does your system evaluate workers - where appropriate downgrading them - for rarely accepting shifts or for refusing tasks?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(276)"
+      - question:
+          de: "Setzt der Arbeitgeber Ihr System ausschließlich ein, um äußere rechtliche oder aufsichtsrechtliche Pflichten zu erfüllen - etwa die Protokollierung von Geschäften wegen der Regeln gegen Marktmissbrauch - und wird es auch nicht zur Leistungs- oder Verhaltensbewertung genutzt?"
+          en: "Does the employer use your system exclusively to comply with external legal or regulatory obligations - for example the recording of transactions under the rules against market abuse - and is it also not used to evaluate performance or behaviour?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(277)"
+      - question:
+          de: "Setzen Sie Ihr System rein und ausschließlich aus medizinischen Gründen, aus Sicherheitsgründen oder zum Schutz von Eigentum und Firmenvermögen ein?"
+          en: "Do you use your system purely and exclusively for medical reasons, for safety reasons or to protect property and company assets?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(277)"
+      - question:
+          de: "Unterstützt Ihr System die Arbeitenden bei der Erledigung ihrer Aufgaben, ohne darauf ausgelegt zu sein, sie zu zusätzlicher Produktivität zu drängen - etwa durch automatische Hinweise, damit Angaben oder Waren nicht an falsche Empfänger gehen -, und gehen diese Hinweise ausschließlich an die Arbeitenden selbst und nicht an den Arbeitgeber oder an andere Personen in dessen Organisation?"
+          en: "Does your system support workers in carrying out their tasks without being designed to push them to additional productivity - for example through automatic alerts so that information or goods do not go to the wrong recipients - and do these alerts go exclusively to the workers themselves and not to the employer or to other persons in its organisation?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(278)"
+      - question:
+          de: "Teilt Ihr System Leistungsdaten - etwa zusammengefasste Verkaufszahlen im Vergleich zum Firmendurchschnitt - ausschließlich den Arbeitenden selbst mit?"
+          en: "Does your system share performance data - for example aggregated sales figures compared with the company average - exclusively with the workers themselves?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(278)"
+      - question:
+          de: "Bewertet Ihr System die Leistung in Schulungen, und fließt diese Bewertung in Leistungsbeurteilungen, in die weitere Beschäftigungsfähigkeit oder in die Eignung für höhere Stufen ein?"
+          en: "Does your system evaluate performance in training, and does this evaluation feed into performance appraisals, into continued employability or into eligibility for higher grades?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(261)"
+      - question:
+          de: "Geht es um freiwillige oder zusätzliche Schulung, auf die kein Anspruch besteht und für die keine gesetzliche oder tarifliche Pflicht gilt?"
+          en: "Is it about voluntary or additional training to which there is no entitlement and for which there is no statutory or collectively agreed obligation?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(261)"
+      # This question names an ADDITIONAL case of performance monitoring,
+      # not an exemption: paragraph (275) lists everything that counts as
+      # performance. When on_no was set to not_covered here, a No threw every
+      # case of worker monitoring out of the point - as measured, point 4(b)
+      # therefore practically never matched, even though five other
+      # questions had previously resulted in covered.
+      - question:
+          de: "Misst Ihr System körperliche Werte wie Muskelbewegung, Ermüdung, Hirnwellen oder Herzfrequenz, und werden diese Werte zur Überwachung oder Bewertung der Leistung verwendet?"
+          en: "Does your system measure physical values such as muscle movement, fatigue, brain waves or heart rate, and are these values used to monitor or evaluate performance?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(275)"
+    covered:
+      - text:
+          de: "Erfasst sind Systeme, die nach Gewinnung und Auswahl eingesetzt werden und die Ausübung bestimmter Leitungsrechte sowie die Organisation der Arbeit über die gesamte Dauer des Arbeits- oder - bei Selbstständigen - Vertragsverhältnisses bis zu seiner Beendigung betreffen."
+          en: "Covered are systems that are used after recruitment and selection and that concern the exercise of certain managerial rights and the organisation of work over the entire duration of the employment relationship or - in the case of self-employed persons - the contractual relationship until its termination."
+        source_ref: "(256)"
+      - text:
+          de: "Entscheidung ist funktional zu verstehen: jeder dem Arbeitgeber zurechenbare Akt oder jedes Unterlassen, das wesentliche Wirkungen auf die vertragliche Stellung des Arbeitenden, auf das Verhältnis oder auf die Art und Weise seiner Arbeit hat; sie ist nicht auf einseitige Vertragsänderungen im engen Sinn beschränkt."
+          en: "Decision is to be understood functionally: any act or omission attributable to the employer that has substantial effects on the contractual position of the worker, on the relationship or on the manner in which the work is performed; it is not limited to unilateral contract changes in the narrow sense."
+        source_ref: "(258)"
+      - text:
+          de: "Zum Entscheiden gehören sowohl Fälle, in denen das System selbst automatisiert entscheidet, als auch Fälle, in denen ein Mensch förmlich entscheidet, sich dabei aber erheblich auf die Ausgabe des Systems stützt."
+          en: "Making decisions includes both cases in which the system itself decides in an automated way and cases in which a human formally decides but relies substantially on the output of the system in doing so."
+        source_ref: "(258)"
+      - text:
+          de: "Bedingungen des Arbeitsverhältnisses sind die grundlegenden Bestandteile des Vertrags oder Verhältnisses, ohne die oder bei deren anderer Gestaltung eine oder beide Seiten möglicherweise nicht zugestimmt hätten; dazu gehören Arbeitsbedingungen wie Entgeltansprüche, Arbeitszeitgestaltung, Urlaubsansprüche und Ruhezeiten."
+          en: "Terms of the employment relationship are the essential elements of the contract or relationship without which, or if they had been arranged differently, one or both parties might not have agreed; they include working conditions such as pay entitlements, working time arrangements, leave entitlements and rest periods."
+        source_ref: "(259)"
+      - text:
+          de: "Erfasst sind auch Festlegungen, die die Wahrnehmung der Rechte und Pflichten aus diesen grundlegenden Bestandteilen wesentlich berühren, etwa die Ablehnung eines Urlaubsantrags oder eine erhebliche Änderung der regelmäßigen Arbeitszeit."
+          en: "Also covered are determinations that substantially affect the exercise of the rights and obligations arising from these essential elements, for example the refusal of a leave request or a significant change in regular working hours."
+        source_ref: "(259)"
+      - text:
+          de: "Arbeitsverhältnisse umfassen auch selbstständige Tätigkeit, einschließlich der Vertragsverhältnisse von Selbstständigen, die Leistungen über Plattformen erbringen, und anderer Alleinselbstständiger in einer mit Arbeitnehmern vergleichbaren Lage."
+          en: "Employment relationships also include self-employment, including the contractual relationships of self-employed persons who provide services via platforms and of other solo self-employed persons in a situation comparable to that of workers."
+        source_ref: "(260)"
+      - text:
+          de: "Schulung wird rechtlich bedeutsam, wenn Abschluss oder Bewertung zur Bedingung für Aufstieg oder Beförderung gemacht wird oder anderweitig mit Entgelt, Stufe oder weiterer Beschäftigungsfähigkeit und dem Erhalt des Arbeitsplatzes verknüpft ist; bewertet ein System die Leistung in Schulungsmodulen und fließt diese Bewertung in Leistungsbeurteilungen, die weitere Beschäftigungsfähigkeit oder die Eignung für höhere Stufen ein, fällt es unter Nummer 4 Buchstabe b."
+          en: "Training becomes legally relevant if completion or evaluation is made a condition for advancement or promotion or is otherwise linked to pay, grade or continued employability and job retention; if a system evaluates performance in training modules and this evaluation feeds into performance appraisals, continued employability or eligibility for higher grades, it falls under point 4(b)."
+        source_ref: "(261)"
+      - text:
+          de: "Beförderung ist jeder dem Arbeitgeber zurechenbare Akt oder jedes Unterlassen, der die Stellung des Arbeitenden durch Heben von Stufe, Verantwortung, Entgelt oder Zugang zur beruflichen Entwicklung berührt, sowie jedes Element, das im Zusammenhang einer tatsächlichen Beförderung gleichkommt."
+          en: "Promotion is any act or omission attributable to the employer that affects the position of the worker by raising grade, responsibility, pay or access to career development, as well as any element that in context amounts to an actual promotion."
+        source_ref: "(263)"
+      - text:
+          de: "Beendigung ist jeder dem Arbeitgeber zurechenbare Akt oder jedes Unterlassen, der das Arbeitsverhältnis oder ein anderes Vertragsverhältnis beendet oder die Person der wesentlichen damit verbundenen Rechte und Vorteile beraubt."
+          en: "Termination is any act or omission attributable to the employer that ends the employment relationship or another contractual relationship or deprives the person of the essential rights and benefits associated with it."
+        source_ref: "(263)"
+      - text:
+          de: "Beendigung ist der endgültige, unwiderrufliche Endpunkt des Verhältnisses; sie umfasst Kündigung, Stellenabbau und die Nichtverlängerung befristeter Verträge, wenn die Entscheidung zur Nichtverlängerung vom System getrieben ist, sowie jeden Akt mit gleichwertiger Wirkung; nicht endgültige Formen der Entfernung von der Arbeit können wesentliche Änderungen der Bedingungen sein und damit ebenfalls erfasst werden."
+          en: "Termination is the final, irrevocable end point of the relationship; it includes dismissal, redundancy and the non-renewal of fixed-term contracts where the decision not to renew is driven by the system, as well as any act with equivalent effect; non-final forms of removal from work can be substantial changes to the terms and thus also be covered."
+        source_ref: "(264)"
+      - text:
+          de: "Sperrt ein System ein Plattformkonto endgültig, nimmt es der Person den Zugang zu ihrer beruflichen Tätigkeit, unabhängig von der Vertragsform; lange oder häufige Sperrungen des Zugangs können gleiche Wirkungen haben."
+          en: "If a system permanently blocks a platform account, it deprives the person of access to their professional activity, regardless of the form of contract; long or frequent suspensions of access can have the same effects."
+        source_ref: "(265)"
+      - text:
+          de: "Erfasst ist jede einzelne Aufgabenzuweisung, die auf individuellem Verhalten oder persönlichen Eigenschaften oder Merkmalen beruht; dazu können Daten aus Persönlichkeitstests, Verhaltensbewertungen oder abgeleitete Produktivitätsmerkmale gehören."
+          en: "Covered is any individual allocation of tasks based on individual behaviour or personal traits or characteristics; this can include data from personality tests, behavioural assessments or inferred productivity characteristics."
+        source_ref: "(269)"
+      - text:
+          de: "Verhaltenskennzahlen wie Pünktlichkeit, Reaktionsbereitschaft auf Kundenanfragen, Zuverlässigkeitswerte oder Leistungsbewertungen fallen unter persönliche Eigenschaften oder Merkmale."
+          en: "Behavioural metrics such as punctuality, responsiveness to customer requests, reliability scores or performance ratings count as personal traits or characteristics."
+        source_ref: "(270)"
+      - text:
+          de: "Die Trennlinie verläuft danach, ob das Merkmal die persönlichen Eigenschaften oder die soziale Identität des Arbeitenden betrifft oder aber neutrale, sachliche und äußere Umstände, die die Ausführung der verlangten Aufgaben unmöglich machen, etwa Nichtverfügbarkeit oder ein unpassender Ort."
+          en: "The dividing line is whether the characteristic concerns the personal traits or the social identity of the worker or rather neutral, objective and external circumstances that make it impossible to perform the required tasks, such as unavailability or an unsuitable location."
+        source_ref: "(271)"
+      - text:
+          de: "Überwachen und Bewerten sind eine eigenständige Hochrisikokategorie; die Voraussetzungen stehen alternativ zueinander und erfassen Systeme, die Leistung oder Verhalten planmäßig überwachen oder bewerten sollen - auch während einer Probezeit und unabhängig davon, ob dies eine förmlich vereinbarte Vertragsbedingung wie Entgelt oder Arbeitszeit berührt."
+          en: "Monitoring and evaluating are a separate high-risk category; the conditions are alternatives to each other and cover systems intended to systematically monitor or evaluate performance or behaviour - also during a probationary period and irrespective of whether this affects a formally agreed contractual term such as pay or working time."
+        source_ref: "(274)"
+      - text:
+          de: "Leistung umfasst Mengenmaße wie die Zahl erledigter Aufgaben oder die Ausgabegeschwindigkeit sowie Qualitätsmaße wie die Güte der Arbeit; erfasst sind auch Rückmeldungswerte, Leistungseinschätzungen, Beurteilungen und Ranglisten, die unmittelbar in die Personalakte einfließen; Systeme, die körperliche Werte wie Muskelbewegung, Ermüdung, Hirnwellen oder Herzfrequenz messen, können hochriskant sein, wenn diese Werte zur Überwachung oder Bewertung der Leistung verwendet werden (Fußnote 56 zu diesem Absatz)."
+          en: "Performance includes quantitative measures such as the number of completed tasks or the output speed as well as qualitative measures such as the standard of the work; also covered are feedback scores, performance assessments, appraisals and rankings that feed directly into the personnel file; systems that measure physical values such as muscle movement, fatigue, brain waves or heart rate can be high-risk if these values are used to monitor or evaluate performance (footnote 56 to this paragraph)."
+        source_ref: "(275)"
+      - text:
+          de: "Verhalten kann Pünktlichkeit, die tatsächliche oder voraussichtliche Einhaltung von Regeln am Arbeitsplatz einschließlich Risikoprofilen von Beschäftigten, die Reaktionsbereitschaft gegenüber Kunden, Umgangsmuster mit Kollegen und gewerkschaftliches Engagement umfassen; ein System, das Arbeitende für niedrige Annahmeraten von Schichten oder für das Ablehnen von Aufgaben bewertet und gegebenenfalls herabstuft, bewertet Verhalten."
+          en: "Behaviour can include punctuality, actual or anticipated compliance with workplace rules including risk profiles of employees, responsiveness towards customers, patterns of interaction with colleagues and trade union involvement; a system that evaluates workers for low shift acceptance rates or for refusing tasks and, where appropriate, downgrades them evaluates behaviour."
+        source_ref: "(276)"
+    not_covered:
+      - text:
+          de: "Nicht jede alltägliche Leitungs- oder Organisationsanpassung ist eine Entscheidung über die Bedingungen des Arbeitsverhältnisses; die Entscheidung muss eine Schwelle der Erheblichkeit erreichen, und Festlegungen, die die Rechte oder Pflichten aus dem zugrunde liegenden Vertrag oder Verhältnis nicht wesentlich verändern, sind nicht erfasst - dazu gehören einzelne Betriebsentscheidungen von Führungskräften im Rahmen dieser Bedingungen, etwa die Zuteilung von Büroräumen sowie die Lage von Pause und Mittagszeit innerhalb einer zugeteilten Schicht, solange sich die Gesamtdauer von Pause und Mittagszeit nicht ändert."
+          en: "Not every everyday managerial or organisational adjustment is a decision on the terms of the employment relationship; the decision must reach a threshold of significance, and determinations that do not substantially change the rights or obligations under the underlying contract or relationship are not covered - these include individual operational decisions by managers within these terms, for example the allocation of office space and the timing of breaks and lunch within an assigned shift, as long as the total duration of breaks and lunch does not change."
+        source_ref: "(262)"
+      - text:
+          de: "Freiwillige oder zusätzliche Schulung ohne Anspruch und ohne gesetzliche oder tarifliche Pflicht fällt nicht ohne weiteres unter Nummer 4 Buchstabe b."
+          en: "Voluntary or additional training without entitlement and without a statutory or collectively agreed obligation does not automatically fall under point 4(b)."
+        source_ref: "(261)"
+      - text:
+          de: "Hält ein System lediglich fest, dass ein befristeter Vertrag demnächst ausläuft, und meldet dies der zuständigen Führungskraft - ohne Ermessen, ohne eigene Bewertung und ohne eine Entscheidung vorzuschlagen -, folgt das Ergebnis aus dem Vertrag selbst und nicht aus einer Entscheidung des Systems; es verändert die Rechte des Arbeitenden nicht in der Substanz und ist nicht als hochriskant anzusehen."
+          en: "If a system merely records that a fixed-term contract is about to expire and reports this to the responsible manager - without discretion, without its own evaluation and without proposing a decision -, the outcome follows from the contract itself and not from a decision of the system; it does not substantively change the rights of the worker and is not to be regarded as high-risk."
+        source_ref: "(266)"
+      - text:
+          de: "Aufgabenzuweisungssysteme, die sich ausschließlich auf sachliche, neutrale und äußere Kriterien stützen, die unmittelbar an die Anforderungen der Arbeit gebunden sind, fallen nicht unter Nummer 4 Buchstabe b - etwa Zuweisung nach der von den Arbeitenden selbst in Planungswerkzeugen angegebenen Verfügbarkeit, nach dem Besitz einer erforderlichen Berufsberechtigung wie eines Gabelstaplerscheins oder einer Kammerzulassung, oder nach räumlicher Nähe zum Lieferort; solche Kriterien dürfen kein Ersatzmerkmal für Staatsangehörigkeit oder ethnische Herkunft sein."
+          en: "Task allocation systems that rely exclusively on objective, neutral and external criteria directly linked to the requirements of the work do not fall under point 4(b) - for example allocation according to the availability stated by the workers themselves in scheduling tools, according to possession of a required professional qualification such as a forklift licence or admission to a professional chamber, or according to physical proximity to the delivery location; such criteria must not be a proxy for nationality or ethnic origin."
+        source_ref: "(272)"
+      - text:
+          de: "Systeme, die der Arbeitgeber ausschließlich einsetzt, um äußere rechtliche oder aufsichtsrechtliche Pflichten zu erfüllen - etwa die Protokollierung von Geschäften wegen der Regeln gegen Marktmissbrauch -, überwachen oder bewerten nicht die Leistung oder das Verhalten einer Person zu Beschäftigungszwecken, solange sie auch nicht zu diesem Zweck verwendet werden."
+          en: "Systems that the employer uses exclusively to comply with external legal or regulatory obligations - for example the recording of transactions under the rules against market abuse - do not monitor or evaluate the performance or behaviour of a person for employment purposes, as long as they are also not used for that purpose."
+        source_ref: "(277)"
+      - text:
+          de: "Ebenfalls außerhalb liegen Systeme, die rein und ausschließlich aus medizinischen Gründen, aus Sicherheitsgründen oder zum Schutz von Eigentum und Firmenvermögen eingesetzt werden."
+          en: "Also outside are systems used purely and exclusively for medical reasons, for safety reasons or to protect property and company assets."
+        source_ref: "(277)"
+      - text:
+          de: "Systeme, die Verhalten oder Leistung überwachen, um die Arbeitenden bei ihren Aufgaben zu unterstützen, ohne darauf ausgelegt zu sein, sie zu zusätzlicher Produktivität zu drängen - etwa indem sie durch automatische Hinweise verhindern, dass Angaben oder Waren an falsche Empfänger gehen -, sind nicht hochriskant, sofern die Hinweise ausschließlich an die Arbeitenden selbst gehen und nicht an den Arbeitgeber oder an andere Personen in dessen Organisation."
+          en: "Systems that monitor behaviour or performance in order to support workers in their tasks, without being designed to push them to additional productivity - for example by using automatic alerts to prevent information or goods from going to the wrong recipients - are not high-risk, provided that the alerts go exclusively to the workers themselves and not to the employer or to other persons in its organisation."
+        source_ref: "(278)"
+      - text:
+          de: "Ebenso sind Systeme nicht hochriskant, die Leistungsdaten übermitteln - etwa zusammengefasste Daten erfolgreicher Verkaufsgeschäfte im Vergleich zum Firmendurchschnitt - und sie ausschließlich den Arbeitenden selbst mitteilen."
+          en: "Likewise, systems are not high-risk that transmit performance data - for example aggregated data on successful sales transactions compared with the company average - and communicate them exclusively to the workers themselves."
+        source_ref: "(278)"
+    examples:
+      - scenario:
+          de: "Ein Handels- und Logistikunternehmen setzt einen Planer ein, der Schichten, Ruhezeiten und Rufbereitschaftsfenster zuweist; Eingangsgrößen sind unter anderem Verhaltens- und Leistungssignale wie Pünktlichkeit, Nichterscheinen in der Vergangenheit, Annahme- und Ablehnungsraten angebotener Schichten sowie Bewertungen von Kunden und Führungskräften. Der Planer bringt die Arbeitenden für jeden Platz in eine Rangfolge und weist Schichten selbst zu, wobei die leistungsstärksten Personen die wichtigsten Schichten erhalten; niedriger eingeordnete Personen erhalten weniger wichtige und möglicherweise weniger Schichten, geringeres veränderliches Entgelt und unbeständigere Muster, und wer vorrangige Angebote ablehnt, wird in der Priorität herabgestuft."
+          en: "A retail and logistics company uses a scheduler that assigns shifts, rest periods and on-call windows; inputs include behavioural and performance signals such as punctuality, past no-shows, acceptance and rejection rates of offered shifts and ratings by customers and managers. The scheduler ranks the workers for each slot and assigns shifts itself, with the highest-performing persons receiving the most important shifts; lower-ranked persons receive less important and possibly fewer shifts, lower variable pay and more irregular patterns, and anyone who declines priority offers is downgraded in priority."
+        verdict: "high_risk"
+        rationale:
+          de: "Das System bewertet Leistung und Verhalten der Arbeitenden und weist auf dieser Grundlage Aufgaben zu; der Einsatz berührt Entgelt, Zugang zu vorrangigen Aufgaben und möglicherweise den Aufstieg, so dass die Ausnahmen des Artikels 6 Absatz 3 nicht greifen."
+          en: "The system evaluates the performance and behaviour of the workers and allocates tasks on that basis; the use affects pay, access to priority tasks and possibly advancement, so that the exemptions of Article 6(3) do not apply."
+        source_ref: "(278)"
+      - scenario:
+          de: "Eine Nachhilfeplattform verwaltet mit einem System die Konten selbstständiger Lehrkräfte; Eingangsgrößen sind Zufriedenheitsbewertungen der Schüler, Abschlussquoten der Stunden und Pünktlichkeitsprotokolle aus dem Videosystem. Daraus bildet das System einen Leistungswert; fällt er drei Wochen hintereinander unter vier von fünf, sperrt das System das Konto automatisch für einen Monat, halten die niedrigen Bewertungen in einem weiteren Prüfzeitraum an, wird das Konto dauerhaft abgeschaltet - die Lehrkräfte können dann keine Stunden mehr annehmen."
+          en: "A tutoring platform uses a system to manage the accounts of self-employed teachers; inputs are students' satisfaction ratings, lesson completion rates and punctuality logs from the video system. From these the system forms a performance score; if it falls below four out of five for three consecutive weeks, the system automatically suspends the account for one month, and if the low ratings persist in a further review period, the account is permanently deactivated - the teachers can then no longer accept lessons."
+        verdict: "high_risk"
+        rationale:
+          de: "Die Wirkung ist die tatsächliche Beendigung des Arbeitsverhältnisses; Beendigung ist inhaltlich zu verstehen und umfasst jede Entscheidung, die den Arbeitenden die weitere Beschäftigung nimmt."
+          en: "The effect is the actual termination of the employment relationship; termination is to be understood in substance and includes any decision that deprives workers of further employment."
+        source_ref: "(278)"
+      - scenario:
+          de: "Eine Anwaltskanzlei verteilt mit einem System die Arbeitslast unter den angestellten Anwälten; es verarbeitet Daten zu abgerechneten Stunden, Bearbeitungszeiten früherer Mandate, Reaktionsbereitschaft auf E-Mails und freiwilliger Teilnahme an Kanzleiaktivitäten wie Schulungen oder Mandantengewinnung und fasst diese Verhaltensdaten zu einem Wert zusammen, der die Grundlage für die Zuweisung von Mandaten bildet."
+          en: "A law firm uses a system to distribute the workload among the employed lawyers; it processes data on billed hours, processing times of previous mandates, responsiveness to e-mails and voluntary participation in firm activities such as training or client acquisition, and combines this behavioural data into a score that forms the basis for allocating mandates."
+        verdict: "high_risk"
+        rationale:
+          de: "Das System weist Aufgaben anhand des individuellen Verhaltens zu und berührt damit wesentlich sowohl die gegenwärtigen Arbeitsbedingungen als auch die langfristigen Berufswege."
+          en: "The system allocates tasks on the basis of individual behaviour and thus substantially affects both current working conditions and long-term career paths."
+        source_ref: "(278)"
+      - scenario:
+          de: "Eine Fahrdienstplattform setzt ein System ein, um die Vergütung der Fahrer laufend festzulegen; Eingangsgrößen sind die aktuelle Nachfrage, Annahmeraten der Fahrer, Bewertungen der Fahrgäste und durchschnittliche Fahrtzeiten. Das System berechnet Fahrtpreise und verändert die Entgeltfaktoren einzelner Fahrer: wer dauerhaft schlechter bewertet wird oder langsamer fährt, erhält einen geringeren Faktor, hoch bewertete Fahrer erhalten Zuschläge. Die Anpassungen erfolgen automatisch in Echtzeit; eine menschliche Aufsicht besteht förmlich, in der Praxis bestimmt aber allein der Algorithmus die Entgelthöhe, und Beschwerden ändern die Ergebnisse selten."
+          en: "A ride-hailing platform uses a system to set drivers' pay on an ongoing basis; inputs are current demand, drivers' acceptance rates, passengers' ratings and average journey times. The system calculates fares and changes the pay factors of individual drivers: those who are persistently rated lower or drive more slowly receive a lower factor, highly rated drivers receive bonuses. The adjustments are made automatically in real time; human oversight formally exists, but in practice the algorithm alone determines the level of pay, and complaints rarely change the results."
+        verdict: "high_risk"
+        rationale:
+          de: "Entscheidungen über die Vergütung gehören zu den Bedingungen eines Arbeitsverhältnisses."
+          en: "Decisions on pay are among the terms of an employment relationship."
+        source_ref: "(278)"
+      - scenario:
+          de: "Eine öffentliche Verwaltung weist mit einem System erfolgreiche Bewerber wie Lehrkräfte oder Ärzte nach einem bestandenen Auswahlverfahren bestimmten Stellen zu; es berücksichtigt Prüfungsergebnisse, Ortswünsche, freie Stellen und Dienstalter und erzeugt endgültige Zuweisungslisten, die bestimmen, wer welche Stelle erhält. Beschwerden sind möglich, in der Praxis ist die Zuweisung des Systems aber entscheidend, weil die Verwaltung sich bei der endgültigen Besetzung darauf stützt."
+          en: "A public administration uses a system to assign successful candidates such as teachers or doctors to specific posts after a passed selection procedure; it takes into account examination results, location preferences, vacant posts and seniority and generates final assignment lists that determine who gets which post. Complaints are possible, but in practice the system's assignment is decisive because the administration relies on it for the final appointment."
+        verdict: "high_risk"
+        rationale:
+          de: "Das System wird zur Zuweisung von Rollen im öffentlichen Dienst eingesetzt und bestimmt unmittelbar und bedeutsam die Arbeitsbedingungen und Berufswege der Bediensteten."
+          en: "The system is used to assign roles in the public service and directly and significantly determines the working conditions and career paths of the staff."
+        source_ref: "(278)"
+      - scenario:
+          de: "Ein Kurier- und Versandunternehmen verfolgt mit einem System Versanddaten und erkennt mögliche Fehler bei der Beschriftung oder Störungen in der Verteilung; es prüft Inhalte von Etiketten, beobachtet Pakete auf dem Weg und erkennt Abweichungen zwischen erwarteter und tatsächlicher Route. Erkennt es eine Abweichung, benachrichtigt es ausschließlich den zuständigen Mitarbeiter, der dann die nötigen Schritte zur Berichtigung einleitet."
+          en: "A courier and shipping company uses a system to track shipping data and detect possible labelling errors or disruptions in distribution; it checks the contents of labels, observes parcels in transit and detects deviations between expected and actual routes. If it detects a deviation, it notifies exclusively the responsible employee, who then takes the necessary steps to correct it."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Zweck ist ein störungsfreier Arbeitsablauf und die Einhaltung vertraglicher Pflichten; das System unterstützt die Arbeitenden bei ihren Aufgaben statt ihre Leistung zu bewerten, die Überwachung ist nur beiläufig - vorausgesetzt, es ist nicht auch zur Leistungsbeurteilung bestimmt."
+          en: "The purpose is a smooth workflow and compliance with contractual obligations; the system supports the workers in their tasks instead of evaluating their performance, and the monitoring is only incidental - provided that it is not also intended for performance appraisal."
+        source_ref: "(278)"
+      - scenario:
+          de: "Ein Unternehmen bewertet mit einem System den Fortschritt der Beschäftigten in freiwilligen Schulungsmodulen anhand von Testergebnissen und Abschlussdaten; es gibt ausschließlich Rückmeldungen und Lernempfehlungen an die Beschäftigten selbst, um deren persönliche Entwicklung zu unterstützen."
+          en: "A company uses a system to evaluate employees' progress in voluntary training modules on the basis of test results and completion data; it gives feedback and learning recommendations exclusively to the employees themselves in order to support their personal development."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Die Funktion beschränkt sich darauf, Lernergebnisse in einem Schulungszusammenhang zu messen; sie beurteilt nicht die Arbeitsleistung, bestimmt keine Beförderungen und prägt keine Leitungsentscheidungen."
+          en: "The function is limited to measuring learning outcomes in a training context; it does not assess work performance, does not determine promotions and does not shape management decisions."
+        source_ref: "(278)"
+      - scenario:
+          de: "Ein Unternehmen optimiert mit einem Buchungswerkzeug die Verteilung von Arbeitsplätzen in einem gemischt genutzten Büro, indem es Reservierungen der Beschäftigten mit freien Schreibtischen oder Besprechungsräumen zusammenbringt."
+          en: "A company uses a booking tool to optimise the distribution of workplaces in a shared office by matching employees' reservations with free desks or meeting rooms."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es organisiert körperliche Arbeitsmittel, weist aber keine Aufgaben zu, bestimmt keine Beförderungen, bewertet die Arbeitenden nicht und berührt keine Beschäftigungsrechte."
+          en: "It organises physical work equipment but does not allocate tasks, does not determine promotions, does not evaluate the workers and does not affect any employment rights."
+        source_ref: "(278)"
+      - scenario:
+          de: "Ein Unternehmen optimiert mit einer Anwendung Geschäftsreisen und schlägt kostengünstige Flüge, Hotels und Reisewege für Beschäftigte vor, die Termine oder Tagungen besuchen müssen; die Vorschläge hindern die Beschäftigten nicht daran, anders zu wählen oder vollständig selbst zu buchen, solange sie nicht gegen sachliche Regeln der Unternehmensrichtlinie wie Höchstpreise verstoßen."
+          en: "A company uses an application to optimise business travel and proposes low-cost flights, hotels and routes for employees who have to attend appointments or conferences; the proposals do not prevent employees from choosing differently or booking entirely on their own, as long as they do not violate objective rules of the company policy such as maximum prices."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Das System unterstützt Abwicklung und Budgetierung, bestimmt aber nicht die Verteilung der Arbeit, keine Leistungsbewertungen, keinen Aufstieg und keine Beendigungsentscheidungen."
+          en: "The system supports processing and budgeting but does not determine the distribution of work, performance evaluations, advancement or termination decisions."
+        source_ref: "(278)"
+      - scenario:
+          de: "Eine Essenslieferplattform empfiehlt mit einem System Gebiete, in denen nach Wetter, früheren Bestellungen und aktuellen Verkehrsdaten höhere Nachfrage erwartet wird; die Kuriere erhalten Hinweise wie hohe Nachfrage in Gebiet X zwischen 13 und 14 Uhr, können sie aber frei übergehen. Es gibt keine Nachteile für das Ablehnen, kein Verzeichnis darüber, wer Empfehlungen angenommen oder abgelehnt hat, und das System verringert den Zugang zu künftigen Aufträgen nicht."
+          en: "A food delivery platform uses a system to recommend areas where higher demand is expected based on weather, previous orders and current traffic data; couriers receive notices such as high demand in area X between 1 p.m. and 2 p.m., but are free to ignore them. There are no disadvantages for declining, no record of who accepted or declined recommendations, and the system does not reduce access to future assignments."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Das Empfehlungswerkzeug liefert nur freiwillige, nicht bindende Hilfsinformationen und stellt keine Aufgabenzuweisung auf der Grundlage individuellen Verhaltens dar."
+          en: "The recommendation tool provides only voluntary, non-binding supporting information and does not constitute an allocation of tasks based on individual behaviour."
+        source_ref: "(278)"
+      - scenario:
+          de: "Ein Industrieunternehmen sammelt mit einem System die monatlichen Anwesenheitsdaten der Beschäftigten automatisch aus der Zeiterfassungsanwendung, ordnet sie in gegliederte Berichte und Übersichten und schickt diese zu einem festen Termin an die Führungskräfte; es überwacht die Anwesenheit nicht, erzeugt keine Leistungswerte, gibt keine Empfehlungen und markiert keine Beschäftigten, sondern fasst nur die Angaben zusammen, die die Beschäftigten selbst in der Zeiterfassung eingetragen haben. Die Führungskräfte nehmen ihre inhaltlichen Bewertungen weiterhin selbst vor."
+          en: "An industrial company uses a system to automatically collect employees' monthly attendance data from the time recording application, organise it into structured reports and overviews and send these to managers on a fixed date; it does not monitor attendance, does not generate performance scores, does not make recommendations and does not flag employees, but only summarises the information that the employees themselves have entered in the time recording. The managers continue to make their substantive evaluations themselves."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Das System fällt in den Anwendungsfall, überwacht aber nicht und trifft keine bewertenden Urteile; es fällt unter die Ausnahme für vorbereitende Aufgaben nach Artikel 6 Absatz 3 Buchstabe d."
+          en: "The system falls within the use case, but does not monitor and does not make evaluative judgements; it falls under the exemption for preparatory tasks under Article 6(3)(d)."
+        source_ref: "(278)"
+      - scenario:
+          de: "Eine Beratungsgesellschaft verbessert mit einem Schreibhilfssystem die Beförderungsberichte der Führungskräfte, nachdem die Bewertungen vollständig abgeschlossen sind; die Führungskräfte entscheiden über die Empfehlungen, verfassen die Begründungen und setzen die Bewertungen nach den Unternehmenskriterien selbst, bevor das System die Sprache klarer macht, die Einheitlichkeit mit dem Hausstil sichert und möglicherweise voreingenommene Formulierungen markiert; am Ende muss die Führungskraft die überarbeiteten Bewertungen nach interner Vorgabe noch einmal prüfen. Das System ändert keine Ergebnisse oder Bewertungen und erzeugt keine neuen Inhalte."
+          en: "A consulting firm uses a writing assistance system to improve managers' promotion reports after the evaluations have been fully completed; the managers decide on the recommendations, write the justifications and set the ratings themselves according to the company criteria before the system makes the language clearer, ensures consistency with the house style and flags potentially biased wording; at the end, the manager must review the revised evaluations once more according to internal rules. The system does not change any results or ratings and does not generate new content."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Das System betrifft Beförderungsentscheidungen, beeinflusst aber die Entscheidungsfindung nicht; es fällt unter die Ausnahme für Systeme, die das Ergebnis einer bereits abgeschlossenen menschlichen Tätigkeit verbessern sollen, nach Artikel 6 Absatz 3 Buchstabe b."
+          en: "The system concerns promotion decisions but does not influence the decision-making; it falls under the exemption for systems intended to improve the result of a previously completed human activity under Article 6(3)(b)."
+        source_ref: "(278)"

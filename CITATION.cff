@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this tool, please cite it as below."
+title: "AI Act Compliance Helper"
+abstract: >-
+  Classification tool for Regulation (EU) 2024/1689 laying down harmonised rules on artificial
+  intelligence (Artificial Intelligence Act) and for Regulation (EU) 2016/679 (General Data
+  Protection Regulation), in German and English. Users answer a question flow taken from the
+  draft Commission guidelines of 19 May 2026 on high-risk AI systems and receive the risk class
+  with the exact provision it rests on, plus the obligations per role. The classification is
+  computed deterministically from plain-text rule files, not by a language model; a language model
+  at most phrases the fixed result. Measured against the Commission's official examples, 207 of
+  217 are classified as the Commission does. Full-text search over the legal corpus combines
+  four retrieval routes by reciprocal rank fusion and runs with local embedding models, without
+  a key for any external service and without network access. Not legal advice.
+type: software
+version: 2.0.0
+date-released: '2026-10-09'
+license: Apache-2.0
+repository-code: "https://github.com/DanielHuette/ai-act-compliance-helper"
+authors:
+  - family-names: "Hütte"
+    given-names: "Daniel"
+keywords:
+  - "EU AI Act"
+  - "Artificial Intelligence Act"
+  - "Regulation (EU) 2024/1689"
+  - "KI-Verordnung"
+  - "General Data Protection Regulation"
+  - "GDPR"
+  - "DSGVO"
+  - "Bundesdatenschutzgesetz"
+  - "high-risk AI system"
+  - "compliance"
+  - "Reciprocal Rank Fusion"

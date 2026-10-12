@@ -1,0 +1,3 @@
+{
+  "missing": "The corpus is missing ({language_name}): {path}. Build it first: {command}"
+}

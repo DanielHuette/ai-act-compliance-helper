@@ -1,0 +1,5 @@
+{
+  "index_missing": "Kein abgelegter Bestand ({language_name}) bei {path}. Erst bauen: {command}",
+  "language_de": "Deutsch",
+  "language_en": "Englisch"
+}

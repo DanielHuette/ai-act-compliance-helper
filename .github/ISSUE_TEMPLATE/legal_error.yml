@@ -1,0 +1,180 @@
+name: Legal error / Rechtsfehler
+description: An article reference, deadline, classification or obligation text is wrong / Ein Artikelverweis, eine Frist, eine Einstufung oder ein Pflichttext ist falsch
+title: "[Legal] "
+labels: ["legal error / Rechtsfehler", "priority / Vorrang"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Thank you.** A wrong reference affects everyone who uses the tool, not only you. These
+        reports are handled before all others.
+        **Danke.** Ein falscher Verweis trifft jeden, der das Werkzeug benutzt, nicht nur Sie.
+        Diese Meldungen werden vor allen anderen bearbeitet.
+
+        Two things are essential: the input that led to the answer, and the provision you rely
+        on. Without the input the error cannot be reproduced; without the provision no
+        correction can be made.
+        Zwei Dinge gehören unbedingt dazu: die Eingabe, die zu der Auskunft geführt hat, und die
+        Fundstelle, auf die Sie sich stützen. Ohne die Eingabe lässt sich der Fehler nicht
+        nachstellen; ohne die Fundstelle lässt sich daraus keine Berichtigung machen.
+
+        A security vulnerability does not belong here but in SECURITY.md.
+        Eine Sicherheitslücke gehört nicht hierher, sondern nach SECURITY.de.md.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is wrong? / Was ist falsch?
+      options:
+        - Wrong reference, the obligation is elsewhere / Falscher Verweis, die Pflicht steht an einer anderen Stelle
+        - Wrong deadline, the start date is not right / Falsche Frist, der Geltungsbeginn stimmt nicht
+        - Wrong obligation content, it requires something else / Falscher Pflichtinhalt, die Pflicht verlangt etwas anderes
+        - Wrong classification, the risk class is not right / Falsche Einstufung, die Risikoklasse stimmt nicht
+        - Missing obligation, it applies but does not appear / Fehlende Pflicht, sie gilt, erscheint aber nicht
+        - Obligation too many, it appears but does not apply here / Pflicht zu viel, sie erscheint, gilt hier aber nicht
+        - Wrong question or citation in the question flow / Falsche Frage oder Fundstelle in der Fragefolge
+        - Error in the legal text itself, the bundled wording is wrong / Fehler im Gesetzestext selbst, der mitgelieferte Wortlaut stimmt nicht
+        - Error in the English or German translation / Fehler in der englischen oder deutschen Fassung
+        - Something else / Etwas anderes
+    validations:
+      required: true
+
+  - type: dropdown
+    id: legal_act
+    attributes:
+      label: Which legal act? / Welcher Rechtsakt?
+      options:
+        - AI Act, Regulation (EU) 2024/1689 / KI-Verordnung (EU) 2024/1689
+        - General Data Protection Regulation (EU) 2016/679 / Datenschutz-Grundverordnung (EU) 2016/679
+        - Federal Data Protection Act / Bundesdatenschutzgesetz
+        - Draft Commission guidelines of 19 May 2026 / Entwurf der Leitlinien der Kommission vom 19.05.2026
+        - Several or unclear / Mehrere oder unklar
+    validations:
+      required: true
+
+  - type: textarea
+    id: input
+    attributes:
+      label: What did you enter? / Was haben Sie eingegeben?
+      description: >-
+        Your answers in the question flow, or the description that led to the wrong answer, as
+        literally as possible. Leave out business secrets, but keep what triggers the
+        classification. / Ihre Antworten in der Fragefolge oder die Beschreibung, die zu der
+        falschen Auskunft geführt hat, möglichst wörtlich. Lassen Sie weg, was Betriebsgeheimnis
+        ist, aber behalten Sie das, was die Einstufung auslöst.
+      placeholder: |
+        We are a haulage company with 300 employees and want to use purchased software that
+        pre-sorts job applications automatically.
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: output
+    attributes:
+      label: What does the tool say? / Was sagt das Werkzeug?
+      description: >-
+        The answer, as far as it concerns the error, as text rather than a screenshot. / Die
+        Auskunft, soweit sie den Fehler betrifft, als Text statt als Bild.
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: correct
+    attributes:
+      label: What would be right? / Was wäre richtig?
+      description: >-
+        The correct statement, not only that the current one is wrong. / Die richtige Angabe,
+        nicht nur dass die vorhandene falsch ist.
+      placeholder: >-
+        The deployer's duty of human oversight is in Article 26(2), not in Article 14. Article 14
+        addresses the provider.
+    validations:
+      required: true
+
+  - type: textarea
+    id: provision
+    attributes:
+      label: Which provision do you rely on? / Auf welche Fundstelle stützen Sie sich?
+      description: >-
+        Article, paragraph, point, letter, or section and act. And where from: Official Journal,
+        Federal Law Gazette, a court decision with case number, a guideline with date. A blog
+        post is not enough, because no correction can be based on it. / Artikel, Absatz, Nummer,
+        Buchstabe, oder Paragraf samt Gesetz. Und woher: Amtsblatt, Bundesgesetzblatt,
+        Entscheidung eines Gerichts mit Aktenzeichen, Leitlinie mit Datum. Ein Blogbeitrag
+        genügt nicht, weil daraus keine Berichtigung werden kann.
+      placeholder: |
+        Article 26(2) of Regulation (EU) 2024/1689,
+        Official Journal L of 12.7.2024, version of …
+    validations:
+      required: true
+
+  - type: input
+    id: file
+    attributes:
+      label: Which file is affected? / Welche Datei ist betroffen?
+      description: If you know; otherwise leave empty. / Falls Sie es wissen; sonst leer lassen.
+      placeholder: data/rules/ai_act_obligations.yaml
+
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where did you notice it? / Wo ist Ihnen das aufgefallen?
+      options:
+        - Web page / Webseite
+        - Desktop package / Paket auf dem Rechner
+        - Command line or web service, without a language model / Kommandozeile oder Webdienst, ohne Sprachmodell
+        - Command line or web service, with Claude or GPT / Kommandozeile oder Webdienst, mit Claude oder GPT
+        - Reading the rule files / Beim Lesen der Regeldateien
+        - In the documentation / In der Dokumentation
+    validations:
+      required: true
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language of the tool / Sprache des Werkzeugs
+      options:
+        - English / Englisch
+        - German / Deutsch
+        - Both / Beide
+    validations:
+      required: true
+
+  - type: input
+    id: as_of
+    attributes:
+      label: Which date does the rule set show? / Welchen Stand hat das Regelwerk bei Ihnen?
+      description: >-
+        Shown in every answer, otherwise in the field `as_of` of the files under data/rules. /
+        Steht in jeder Auskunft, sonst im Feld `as_of` der Dateien unter data/rules.
+      placeholder: "2026-05-31"
+
+  - type: textarea
+    id: dispute
+    attributes:
+      label: Is the legal position disputed? / Ist die Rechtslage umstritten?
+      description: >-
+        If so, please say who sees it differently. A disputed question is not simply reversed;
+        the rule then gets a note on the dispute and a lower confidence. Presenting a disputed
+        question as settled would be the bigger error. / Wenn ja, bitte sagen, wer es anders
+        sieht. Eine strittige Frage wird nicht einfach umgedreht; dann bekommt die Regel einen
+        Hinweis auf den Streitstand und eine niedrigere Sicherheit. Eine strittige Frage als
+        entschieden darzustellen wäre der größere Fehler.
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Finally / Zum Schluss
+      options:
+        - label: >-
+            I have read the provision myself and did not take it from a summary or a language
+            model. / Ich habe die Fundstelle selbst nachgelesen und sie nicht aus einer
+            Zusammenfassung oder von einem Sprachmodell übernommen.
+          required: true
+        - label: >-
+            I understand that this tool is not legal advice and that my report is not either
+            (see docs/liability.md). / Mir ist klar, dass dieses Werkzeug keine Rechtsberatung
+            ist und dass meine Meldung keine ist (siehe docs/liability.de.md).
+          required: true

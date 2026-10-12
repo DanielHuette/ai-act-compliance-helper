@@ -1,0 +1,676 @@
+# Preliminary questions and filter - apply to all eight areas of Annex III
+#
+# This file contains the questions to be asked BEFORE any area-by-area
+# assessment, and the question sequence for the filter of Article 6(3) of the
+# AI Act, which takes a system back out of high risk.
+#
+# Every statement comes from the official text. The number in brackets is the
+# paragraph number of the draft guidelines. No line here is without a
+# paragraph number. No interpretation of our own is included.
+#
+# Meaning of the fields:
+#   id            unique name, appears in the reasoning
+#   question      asked of the user, to be answered yes or no
+#   effect_note   what the answer changes in the classification
+#   covered       what the criterion captures
+#   not_covered   what the criterion does not capture
+#   source_ref    paragraph number in the draft guidelines
+#
+# Meaning of the verdict in the examples:
+#   high_risk         remains or becomes high-risk
+#   not_high_risk     does not fall under the use case in the first place
+#   exemption_applies falls under the use case, but comes back out through the
+#                     filter of Article 6(3), or the
+#                     filter is not blocked by profiling
+
+source:
+  de: "Entwurf der Leitlinien der Kommission vom 19.05.2026, allgemeine Grundsätze und Anhang III, Abschnitte 2.1 bis 2.7.4"
+  en: "Draft Commission guidelines of 19 May 2026, general principles and Annex III, sections 2.1 to 2.7.4"
+
+version_note:
+  de: "Der Entwurf ist noch kein beschlossener Text und nicht bindend; eine verbindliche Auslegung der KI-Verordnung kann nur der Gerichtshof der Europäischen Union geben (6). Die Beispiele im Entwurf sind nicht abschließend und können sich ändern (3)."
+  en: "The draft is not yet an adopted text and is not binding; an authoritative interpretation of the AI Act can only be given by the Court of Justice of the European Union (6). The examples in the draft are not exhaustive and may change (3)."
+preliminary_questions:
+
+  - id: "is-ai-system"
+    question:
+      de: "Ist Ihr System eine maschinengestützte Anwendung, die aus Eingaben selbst ableitet, welche Ausgaben sie erzeugt - also Vorhersagen, Inhalte, Empfehlungen oder Entscheidungen - und nicht nur festgelegte Rechenschritte abarbeitet?"
+      en: "Is your system a machine-based application that itself infers from its inputs which outputs it generates - that is, predictions, content, recommendations or decisions - rather than merely executing fixed calculation steps?"
+    effect_note:
+      de: "Nur wenn das zutrifft, ist es überhaupt ein KI-System im Sinne des Artikels 3 Nummer 1 und kann eingestuft werden. Lautet die Antwort Nein, endet die Prüfung hier."
+      en: "Only if this applies is it an AI system within the meaning of Article 3(1) at all and can it be classified. If the answer is no, the assessment ends here."
+    source_ref: "(8)"
+    covered:
+      - text:
+          de: "Ein maschinengestütztes System, das mit unterschiedlichem Grad an Eigenständigkeit arbeitet, nach dem Einsatz anpassungsfähig sein kann und für ausdrückliche oder stillschweigende Ziele aus den Eingaben ableitet, wie es Ausgaben erzeugt, die physische oder virtuelle Umgebungen beeinflussen können."
+          en: "A machine-based system that operates with varying levels of autonomy, may exhibit adaptiveness after deployment and, for explicit or implicit objectives, infers from the input it receives how to generate outputs that can influence physical or virtual environments."
+        source_ref: "(8)"
+    not_covered:
+      - text:
+          de: "Nicht jede Software und nicht jedes automatisierte Entscheidungssystem fallen darunter; nur Systeme, die diese Begriffsbestimmung erfüllen."
+          en: "Not all software and not every automated decision-making system is covered; only systems that meet this definition."
+        source_ref: "(9)"
+
+  - id: "human-involvement"
+    question:
+      de: "Wollen Sie das System allein deswegen als nicht hochriskant einstufen, weil am Ende immer ein Mensch mitwirkt oder prüft?"
+      en: "Do you want to classify the system as not high-risk solely because a human is always involved or reviews it at the end?"
+    effect_note:
+      de: "Das genügt nicht. Menschliche Beteiligung kann den Zweck und das Gebiet, in dem das System verwendet werden soll, nicht ändern und hat deshalb keine Wirkung auf die Einstufung nach Artikel 6 Absatz 2. Ein Anbieter kann ein System nicht einfach dadurch zu geringem Risiko erklären, dass er menschliche Beteiligung vorschreibt."
+      en: "That is not enough. Human involvement cannot change the purpose and the area in which the system is intended to be used and therefore has no effect on the classification under Article 6(2). A provider cannot simply declare a system low-risk by prescribing human involvement."
+    source_ref: "(70)"
+    covered:
+      - text:
+          de: "Art und Grad der menschlichen Beteiligung beim Einsatz können nur dazu dienen, zu zeigen, dass die Aufgaben des Systems enge Verfahrensaufgaben oder vorbereitender Natur sind oder dass das System nur ein bereits fertiges menschliches Ergebnis verbessern soll."
+          en: "The nature and degree of human involvement during use can only serve to show that the system's tasks are narrow procedural tasks or of a preparatory nature, or that the system is only intended to improve an already completed human result."
+        source_ref: "(71)"
+      - text:
+          de: "Um zu klären, ob eine der vier Bedingungen des Filters erfüllt ist, muss der Anbieter betrachten, welche Aufgaben das System erfüllen soll; das hängt wieder an der Zweckbestimmung samt Zusammenhang und Einsatzbedingungen."
+          en: "To determine whether one of the four conditions of the filter is met, the provider must consider which tasks the system is intended to perform; this again depends on the intended purpose, including its context and conditions of use."
+        source_ref: "(71)"
+    not_covered:
+      - text:
+          de: "Menschliche Aufsicht ist keine Entlastung, sondern Voraussetzung: Sie ist Bedingung für die Einhaltung der Regeln für hochriskante KI-Systeme nach Artikel 14 und notwendige Anforderung an Systeme, die als hochriskant eingestuft sind."
+          en: "Human oversight is not a relief but a prerequisite: it is a condition for compliance with the rules for high-risk AI systems under Article 14 and a necessary requirement for systems classified as high-risk."
+        source_ref: "(70)"
+      - text:
+          de: "Für die Frage, ob ein System nach Artikel 6 Absatz 2 hochriskant ist, zählt allein, ob die Zweckbestimmung einen der im Anhang III aufgeführten Anwendungsfälle umfasst."
+          en: "For the question whether a system is high-risk under Article 6(2), all that counts is whether its intended purpose covers one of the use cases listed in Annex III."
+        source_ref: "(70)"
+      - text:
+          de: "Der Anbieter kann das System nicht ausnehmen und als geringes Risiko einordnen, indem er ihm eine Pflicht zur menschlichen Beteiligung hinzufügt."
+          en: "The provider cannot exempt the system and classify it as low-risk by adding an obligation of human involvement to it."
+        source_ref: "(71)"
+
+  - id: "natural-persons"
+    question:
+      de: "Soll Ihr System nach Ihrer Zweckbestimmung auch Menschen bewerten - unmittelbar oder mittelbar - und nicht nur Firmen? Arbeitet es allein mit Betriebs- und Firmendaten, bewertet es keinen Menschen - auch dann nicht, wenn der Betrieb einem einzelnen Menschen gehört und keine Rechtsperson ist."
+      en: "According to your intended purpose, is your system also meant to assess people - directly or indirectly - and not only companies? If it works solely with business and company data, it does not assess any person - even if the business belongs to a single individual and is not a legal person."
+    effect_note:
+      de: "Mehrere Anwendungsfälle des Anhangs III setzen voraus, dass das System Menschen bewertet. Soll das System ausschließlich Rechtspersonen oder Firmen bewerten, liegt es außen vor und ist in diesen Anwendungsfällen nicht hochriskant. Bewertet es auch Menschen, ist es erfasst, selbst wenn es zusätzlich Firmen bewertet. Ein Betrieb bleibt ein Betrieb, auch wenn er einem einzelnen Menschen gehört: wer allein Bilanzen, Umsätze und Zahlungsverhalten des Betriebs auswertet, bewertet damit keinen Menschen."
+      en: "Several use cases in Annex III presuppose that the system assesses people. If the system is intended to assess exclusively legal persons or companies, it falls outside and is not high-risk in these use cases. If it also assesses people, it is covered, even if it additionally assesses companies. A business remains a business even if it belongs to a single individual: anyone who evaluates only the balance sheets, turnover and payment behaviour of the business does not thereby assess a person."
+    source_ref: "(73), (74)"
+    covered:
+      - text:
+          de: "Eine natürliche Person ist von einer Rechtsperson zu unterscheiden; der Begriff umfasst auch, aber nicht nur, Verbraucher."
+          en: "A natural person is to be distinguished from a legal person; the term includes, but is not limited to, consumers."
+        source_ref: "(73)"
+      - text:
+          de: "Einzelunternehmer, freie Berufe und andere Selbstständige gelten als natürliche Personen, auch in Bezug auf ihre gewerbliche Tätigkeit."
+          en: "Sole traders, liberal professions and other self-employed persons count as natural persons, also in relation to their commercial activity."
+        source_ref: "(73)"
+      - text:
+          de: "Dazu gehören Menschen, die beruflich handeln, zum Beispiel Berater, Gestalter und Journalisten."
+          en: "This includes people acting in a professional capacity, for example consultants, designers and journalists."
+        source_ref: "(73)"
+      - text:
+          de: "Es kommt nicht darauf an, ob die Anwendung auf Menschen der einzige Zweck des Systems ist oder nur einer von mehreren."
+          en: "It does not matter whether the application to people is the system's only purpose or just one of several."
+        source_ref: "(72)"
+      - text:
+          de: "Ein System, das Menschen bewerten soll, ist erfasst, auch wenn es zugleich Rechtspersonen oder Firmen bewertet."
+          en: "A system intended to assess people is covered even if it also assesses legal persons or companies."
+        source_ref: "(74)"
+    not_covered:
+      - text:
+          de: "Systeme, die ausschließlich Rechtspersonen oder Firmen bewerten sollen, ohne Menschen bewerten zu wollen, liegen außen vor und sind deshalb keine hochriskanten KI-Systeme in diesen Anwendungsfällen."
+          en: "Systems intended to assess exclusively legal persons or companies, without intending to assess people, fall outside and are therefore not high-risk AI systems in these use cases."
+        source_ref: "(74)"
+      - text:
+          de: "Ein System zur Bonitätsbewertung des Inhabers eines Kleinbetriebs oder einer Firma, die keine Rechtsperson ist, bewertet keine natürliche Person, solange es nur Betriebs- oder Firmendaten verwendet."
+          en: "A system for assessing the creditworthiness of the owner of a small business or of a company that is not a legal person does not assess a natural person as long as it uses only business or company data."
+        source_ref: "(73)"
+      - text:
+          de: "Wird der Inhaber einer Rechtsperson zur Besicherung eines Firmenkredits auf Bonität geprüft, fällt er nicht unter Nummer 5 Buchstabe b, obwohl er als natürliche Person handelt, weil der Kredit vorrangig der Firma zugutekommt."
+          en: "If the owner of a legal person is checked for creditworthiness to secure a company loan, he or she does not fall under point 5(b), even though acting as a natural person, because the loan primarily benefits the company."
+        source_ref: "(74)"
+
+  - id: "part-of-composite-product"
+    question:
+      de: "Ist Ihre KI-Funktion Teil eines Zusammenspiels mehrerer KI-Systeme, deren gemeinsame Zweckbestimmung oder gemeinsame Ausgaben eine Entscheidung über einen Einzelfall wesentlich beeinflussen?"
+      en: "Is your AI function part of an interplay of several AI systems whose common intended purpose or combined outputs materially influence a decision on an individual case?"
+    effect_note:
+      de: "Dann wird das Zusammenspiel für die Einstufung als ein einziges KI-System behandelt und als Ganzes geprüft. Sind die Bestandteile so eingerichtet, dass sie für einen Anwendungsfall des Anhangs III verwendet werden sollen, ist das zusammengesetzte System nach Artikel 6 Absatz 2 hochriskant. Ausnahmen, die einzelne Bausteine für sich genommen hätten, gelten dann nicht."
+      en: "Then the interplay is treated as a single AI system for classification and assessed as a whole. If the components are set up to be used for a use case in Annex III, the composite system is high-risk under Article 6(2). Exemptions that individual building blocks would have had on their own then do not apply."
+    source_ref: "(75)"
+    covered:
+      - text:
+          de: "Aufgeteilte Bauweisen werden als Ganzes bewertet, damit die Einstufungsregeln nicht durch die Gestaltung des Systems umgangen werden."
+          en: "Distributed architectures are assessed as a whole so that the classification rules are not circumvented through the design of the system."
+        source_ref: "(75)"
+      - text:
+          de: "Ausnahmen für einzelne Bausteine gelten nicht, wenn Aufbau und Arbeitsweise des Gesamtsystems wesentliche Teile der Entscheidungen beeinflussen, die mit Unterstützung des Systems im hochriskanten Anwendungsfall getroffen werden."
+          en: "Exemptions for individual building blocks do not apply if the structure and operation of the overall system influence material parts of the decisions taken with the support of the system in the high-risk use case."
+        source_ref: "(75)"
+      - text:
+          de: "Das gilt auch für verflochtene Anordnungen wie handelnde KI-Systeme, die sich durch verkettete Handlungen abstimmen und austauschen, solange diese verketteten Handlungen oder Bestandteile zusammen einem hochriskanten Zweck dienen."
+          en: "This also applies to interconnected arrangements such as agentic AI systems that coordinate and communicate through chained actions, as long as these chained actions or components together serve a high-risk purpose."
+        source_ref: "(75)"
+      - text:
+          de: "Auch wenn ein System eine der vier Filterbedingungen erfüllt, zum Beispiel eine enge Verfahrensaufgabe, kann es den Filter nicht nutzen und bleibt hochriskant, wenn es Teil eines zusammengesetzten Systems ist, dessen gemeinsame Zweckbestimmung oder gemeinsame Ausgaben eine Einzelfallentscheidung in einem hochriskanten Anwendungsfall wesentlich beeinflussen, oder wenn es Teil verflochtener Systeme wie handelnder KI-Systeme ist."
+          en: "Even if a system meets one of the four filter conditions, for example a narrow procedural task, it cannot use the filter and remains high-risk if it is part of a composite system whose common intended purpose or combined outputs materially influence a decision on an individual case in a high-risk use case, or if it is part of interconnected systems such as agentic AI systems."
+        source_ref: "(90)"
+    not_covered:
+      - text:
+          de: "Rein verfahrensmäßige oder vorbereitende Funktionen, die mit einem hochriskanten System verbunden sind, bleiben für die Ausnahme nach Artikel 6 Absatz 3 geeignet, wenn sie echt abtrennbar sind und keine Ausgaben gliedern oder zuliefern, die die Prüfung eines Einzelfalls wesentlich beeinflussen - etwa die Prüfung eines Antrags auf wesentliche öffentliche Leistungen."
+          en: "Purely procedural or preparatory functions connected to a high-risk system remain eligible for the derogation under Article 6(3) if they are genuinely separable and do not structure or supply outputs that materially influence the assessment of an individual case - for example the assessment of an application for essential public services."
+        source_ref: "(76)"
+      - text:
+          de: "KI-gestützte Funktionen und Bestandteile, die echt abtrennbar sind, unabhängig von diesem System in Betrieb genommen werden und nicht zu einem hochriskanten Zweck beitragen, liegen außen vor."
+          en: "AI-based functions and components that are genuinely separable, are put into service independently of that system and do not contribute to a high-risk purpose fall outside."
+        source_ref: "(76)"
+
+  - id: "intended-purpose"
+    question:
+      de: "Umfasst die von Ihnen festgelegte Zweckbestimmung - also das, was in Gebrauchsanweisung, Werbe- und Verkaufsunterlagen, Aussagen und technischer Dokumentation steht - einen der Anwendungsfälle des Anhangs III?"
+      en: "Does the intended purpose you have determined - that is, what is stated in the instructions for use, promotional and sales materials, statements and technical documentation - cover one of the use cases in Annex III?"
+    effect_note:
+      de: "Die Formulierung soll bestimmungsgemäß verwendet werden entspricht der vom Anbieter festgelegten Zweckbestimmung. Umfasst die Zweckbestimmung keinen der Anwendungsfälle des Anhangs III, soll das System nicht für einen solchen Fall verwendet werden und kann nach Artikel 6 Absatz 2 nicht hochriskant sein."
+      en: "The wording \"intended to be used\" corresponds to the intended purpose determined by the provider. If the intended purpose does not cover any of the use cases in Annex III, the system is not intended to be used for such a case and cannot be high-risk under Article 6(2)."
+    source_ref: "(77)"
+    covered:
+      - text:
+          de: "Zur Zweckbestimmung gehören die Verwendung samt dem besonderen Zusammenhang und den Einsatzbedingungen, wie sie in Gebrauchsanweisung, Werbe- oder Verkaufsunterlagen, Aussagen und technischer Dokumentation angegeben sind."
+          en: "The intended purpose includes the use together with the specific context and conditions of use, as specified in the instructions for use, promotional or sales materials, statements and technical documentation."
+        source_ref: "(10)"
+      - text:
+          de: "Die Beschreibung soll die Funktionen des Systems nennen und darf keinen Zweifel über Umfang und vorgesehene Verwendung lassen; ist das System für verschiedene Zusammenhänge gedacht, sind diese zu beschreiben."
+          en: "The description should state the functions of the system and must leave no doubt about the scope and intended use; if the system is meant for different contexts, these must be described."
+        source_ref: "(11)"
+      - text:
+          de: "Stellen Gebrauchsanweisung, Verträge, Nutzungsbedingungen, Nutzungsregeln, Werbe- und Verkaufsunterlagen oder die technische Dokumentation das System als breit einsetzbar dar und begrenzen die Anwendung nicht durchgängig oder nehmen hochriskante Verwendungen nicht aus, gilt die Zweckbestimmung als auch hochriskante Anwendungsfälle umfassend - das System ist dann hochriskant."
+          en: "If the instructions for use, contracts, terms of use, usage policies, promotional and sales materials or the technical documentation present the system as broadly usable and do not consistently limit its application or exclude high-risk uses, the intended purpose is deemed to also cover high-risk use cases - the system is then high-risk."
+        source_ref: "(12)"
+      - text:
+          de: "Das gilt besonders, wenn solche Verwendungen angesichts der Funktionen und Fähigkeiten des Systems machbar und vernünftigerweise vorhersehbar sind."
+          en: "This applies in particular where such uses are feasible and reasonably foreseeable in view of the system's functions and capabilities."
+        source_ref: "(12)"
+      - text:
+          de: "Die bloße Behauptung, etwa in den Nutzungsbedingungen, hochriskante Verwendungen seien ausgeschlossen, genügt nicht, wenn die Gesamtdarstellung, die Beispiele oder die Produktaufstellung des Anbieters solche Verwendungen tatsächlich vorsehen oder bewerben; Nutzungsgrenzen müssen klar, konkret und über alle Unterlagen hinweg einheitlich beschrieben sein."
+          en: "A mere statement, for example in the terms of use, that high-risk uses are excluded is not sufficient if the provider's overall presentation, examples or product line-up actually provide for or promote such uses; usage limits must be described clearly, specifically and consistently across all documents."
+        source_ref: "(12)"
+      - text:
+          de: "Das System muss nicht tatsächlich im Einsatz sein; der Anbieter muss die vorgesehene Verwendung bewerten, bevor er das System in der Europäischen Union in Verkehr bringt oder in Betrieb nimmt - in diesem Augenblick müssen die Anforderungen erfüllt sein."
+          en: "The system does not have to be actually in use; the provider must assess the intended use before placing the system on the market or putting it into service in the European Union - at that moment the requirements must be met."
+        source_ref: "(78)"
+    not_covered:
+      - text:
+          de: "Die vorgesehene Verwendung ist von der vernünftigerweise vorhersehbaren Fehlanwendung zu unterscheiden; eine Fehlanwendung liegt begriffsnotwendig außerhalb der Zweckbestimmung."
+          en: "The intended use is to be distinguished from reasonably foreseeable misuse; misuse by definition lies outside the intended purpose."
+        source_ref: "(10)"
+      - text:
+          de: "Bei Nummer 1 Buchstabe a und Nummer 5 Buchstabe d des Anhangs III gilt das Erfordernis soll bestimmungsgemäß verwendet werden nicht in gleicher Weise; dort sind Ausnahmen vorgesehen."
+          en: "For Annex III, points 1(a) and 5(d), the requirement \"intended to be used\" does not apply in the same way; exceptions are provided for there."
+        source_ref: "(77)"
+
+  - id: "on-behalf-of-authority"
+    question:
+      de: "Soll Ihr System Aufgaben erledigen, die eine Behörde Ihnen übertragen hat oder bei denen eine Behörde Sie im Einzelfall um Unterstützung gebeten hat?"
+      en: "Is your system intended to perform tasks that a public authority has delegated to you, or for which a public authority has asked you for support in an individual case?"
+    effect_note:
+      de: "Die Anwendungsfälle des Anhangs III, die den Einsatz durch Behörden betreffen, erfassen mit der Wendung im Namen von auch Dritte, also private Stellen, an die eine Behörde solche Tätigkeiten auslagert. Lautet die Antwort Ja, zählt das wie ein Einsatz durch die Behörde selbst."
+      en: "The use cases in Annex III that concern use by public authorities also cover, through the wording \"on behalf of\", third parties, that is private entities to which a public authority outsources such activities. If the answer is yes, this counts like use by the authority itself."
+    source_ref: "(79)"
+    covered:
+      - text:
+          de: "Eine private Stelle handelt im Namen einer Behörde, wenn die Behörde ihr die Durchführung bestimmter Tätigkeiten oder Teile davon überträgt."
+          en: "A private entity acts on behalf of a public authority if the authority delegates to it the performance of certain activities or parts of them."
+        source_ref: "(81)"
+      - text:
+          de: "Sie handelt auch dann im Namen der Behörde, wenn die Behörde sie in bestimmten Fällen um Unterstützung solcher Tätigkeiten gebeten hat."
+          en: "It also acts on behalf of the authority if the authority has asked it in certain cases to support such activities."
+        source_ref: "(81)"
+      - text:
+          de: "Die Wendung soll verhindern, dass die Einstufung umgangen wird, indem ein System nur an bestimmte Personen oder Stellen vermarktet wird, obwohl das Risiko für die Grundrechte dasselbe ist wie bei Beteiligung der Behörde, weil die Tätigkeit in deren Namen erfolgt."
+          en: "The wording is intended to prevent the classification from being circumvented by marketing a system only to certain persons or entities, although the risk to fundamental rights is the same as when the authority is involved, because the activity is carried out on its behalf."
+        source_ref: "(80)"
+    not_covered:
+      - text:
+          de: "Eine private Stelle handelt nicht im Namen einer Behörde, wenn sie im eigenen Namen handelt - freiwillig oder zur Erfüllung einer eigenen Rechtspflicht."
+          en: "A private entity does not act on behalf of a public authority if it acts in its own name - voluntarily or to fulfil its own legal obligation."
+        source_ref: "(81)"
+      - text:
+          de: "Eine Buchhaltungsfirma, die ein System zur Erkennung von Geldwäsche einsetzt, um ihre Pflichten aus dem Geldwäscherecht der Europäischen Union zu erfüllen, handelt im eigenen Namen und nicht im Namen der Strafverfolgungsbehörden; das System ist deshalb im Bereich Strafverfolgung nach Nummer 6 des Anhangs III nicht hochriskant."
+          en: "An accounting firm that uses a system to detect money laundering in order to fulfil its obligations under Union anti-money laundering law acts in its own name and not on behalf of the law enforcement authorities; the system is therefore not high-risk in the area of law enforcement under point 6 of Annex III."
+        source_ref: "(81)"
+
+  - id: "where-permitted-by-law"
+    question:
+      de: "Soll Ihr System in einem Anwendungsfall der Nummern 1, 6 oder 7 des Anhangs III eingesetzt werden?"
+      en: "Is your system intended to be used in a use case under points 1, 6 or 7 of Annex III?"
+    effect_note:
+      de: "Dort steht die Wendung soweit ihr Einsatz nach einschlägigem Unionsrecht oder nationalem Recht zugelassen ist. Dass ein System unter einen dieser Anwendungsfälle fällt, bedeutet nicht, dass es in diesen Fällen rechtmäßig eingesetzt werden darf. Die Einstufung beantwortet nur die Frage nach dem hohen Risiko, nicht die Frage nach der Zulässigkeit."
+      en: "These contain the wording \"in so far as their use is permitted under relevant Union or national law\". That a system falls under one of these use cases does not mean that it may lawfully be used in these cases. The classification answers only the question of high risk, not the question of permissibility."
+    source_ref: "(82)"
+    covered:
+      - text:
+          de: "Ein solcher Einsatz darf nur im Einklang mit den Anforderungen aus der Charta der Grundrechte und aus dem einschlägigen abgeleiteten Unionsrecht und nationalen Recht erfolgen."
+          en: "Such use may only take place in accordance with the requirements of the Charter of Fundamental Rights and of the relevant secondary Union law and national law."
+        source_ref: "(82)"
+      - text:
+          de: "Neben den Verboten kann der Einsatz eines KI-Systems auch durch andere Vorschriften des Unionsrechts oder des nationalen Rechts eingeschränkt sein."
+          en: "Besides the prohibitions, the use of an AI system may also be restricted by other provisions of Union law or national law."
+        source_ref: "(83)"
+      - text:
+          de: "Nach Artikel 2 Absatz 9 gilt die KI-Verordnung unbeschadet der Regeln anderer Rechtsakte der Union zu Verbraucherschutz, Produktsicherheit und Datenschutz."
+          en: "Under Article 2(9), the AI Act applies without prejudice to the rules laid down by other Union legal acts on consumer protection, product safety and data protection."
+        source_ref: "(83)"
+    not_covered:
+      - text:
+          de: "Dass ein System in diesen Leitlinien als Beispiel genannt wird, bedeutet nicht, dass sein Einsatz ohne Weiteres rechtmäßig ist; er muss weiterhin dem übrigen anwendbaren Recht entsprechen."
+          en: "The fact that a system is mentioned as an example in these guidelines does not mean that its use is lawful without further ado; it must still comply with the other applicable law."
+        source_ref: "(3)"
+
+filter:
+  introduction:
+    de: "Artikel 6 Absatz 3 erlaubt Anbietern von Systemen, die nach Anhang III aufgeführt sind, diese Systeme von der Einstufung als hochriskant auszunehmen, obwohl die Voraussetzungen nach der Zweckbestimmung erfüllt sind; dieser Filter sorgt für Verhältnismäßigkeit im Einzelfall (84). Nach Artikel 6 Absatz 3 darf ein Anbieter ein System ausnehmen, wenn eine der folgenden Bedingungen erfüllt ist: das System soll eine enge Verfahrensaufgabe erfüllen; es soll das Ergebnis einer zuvor abgeschlossenen menschlichen Tätigkeit verbessern; es soll Entscheidungsmuster oder Abweichungen von früheren Entscheidungsmustern erkennen und ist nicht dazu bestimmt, die zuvor abgeschlossene menschliche Beurteilung ohne ordentliche menschliche Nachprüfung zu ersetzen oder zu beeinflussen; oder es soll eine vorbereitende Aufgabe zu einer Beurteilung erfüllen, die für die im Anhang III aufgeführten Anwendungsfälle erheblich ist (86). Der Filter kann angewandt werden, wenn das System eine der Bedingungen der Buchstaben a bis d erfüllt; der Gedanke dahinter ist, dass ein System, das eine dieser Bedingungen erfüllt, das Ergebnis der Entscheidungsfindung üblicherweise nicht wesentlich beeinflusst und deshalb kein erhebliches Schadensrisiko begründet (85). Der Filter gilt nur für Systeme, die überhaupt nach Artikel 6 Absatz 2 hochriskant wären, nicht für Systeme, die nach Artikel 6 Absatz 1 hochriskant sind (87). Die vier Bedingungen sind abschließend, stehen aber als Alternativen nebeneinander: Erfüllt das System mindestens eine, darf angenommen werden, dass es kein erhebliches Risiko für Gesundheit, Sicherheit oder Grundrechte begründet, auch wenn Restrisiken bleiben; eine gesonderte Risikoprüfung daneben gibt es nicht (88). Die Entscheidung beruht auf einer Selbstbewertung des Anbieters, und weil Artikel 6 Absatz 3 eine Ausnahme von Regeln ist, die unter anderem die Grundrechte schützen, sind die Bedingungen eng auszulegen und im Licht des ersten Unterabsatzes zu verstehen, dass das System das Ergebnis der Entscheidung nicht wesentlich beeinflussen soll (88). Ein System nach Anhang III ist immer hochriskant, wenn es Profiling vornimmt (89). Und selbst wenn eine Bedingung erfüllt ist, kann das System den Filter nicht nutzen, wenn es Teil eines zusammengesetzten oder verflochtenen Systems ist, dessen gemeinsame Zweckbestimmung oder gemeinsame Ausgaben eine Einzelfallentscheidung in einem hochriskanten Anwendungsfall wesentlich beeinflussen (90)."
+    en: "Article 6(3) allows providers of systems listed in Annex III to exempt these systems from classification as high-risk, even though the conditions are met according to the intended purpose; this filter ensures proportionality in the individual case (84). Under Article 6(3), a provider may exempt a system if one of the following conditions is met: the system is intended to perform a narrow procedural task; it is intended to improve the result of a previously completed human activity; it is intended to detect decision-making patterns or deviations from prior decision-making patterns and is not meant to replace or influence the previously completed human assessment without proper human review; or it is intended to perform a preparatory task to an assessment relevant for the purposes of the use cases listed in Annex III (86). The filter can be applied if the system meets one of the conditions in points (a) to (d); the idea behind it is that a system meeting one of these conditions usually does not materially influence the outcome of decision-making and therefore does not pose a significant risk of harm (85). The filter applies only to systems that would be high-risk under Article 6(2) in the first place, not to systems that are high-risk under Article 6(1) (87). The four conditions are exhaustive but stand side by side as alternatives: if the system meets at least one, it may be assumed that it does not pose a significant risk to health, safety or fundamental rights, even if residual risks remain; there is no separate risk assessment alongside (88). The decision is based on a self-assessment by the provider, and because Article 6(3) is an exception to rules that protect, among other things, fundamental rights, the conditions are to be interpreted narrowly and understood in the light of the first subparagraph, namely that the system is not intended to materially influence the outcome of the decision (88). A system listed in Annex III is always high-risk if it performs profiling (89). And even if a condition is met, the system cannot use the filter if it is part of a composite or interconnected system whose common intended purpose or combined outputs materially influence a decision on an individual case in a high-risk use case (90)."
+  order:
+    de: "Erst prüfen, ob eine der vier Bedingungen zutrifft; dann die Gegenausnahme Profiling. Nimmt das System Profiling vor, bleibt es hochriskant, auch wenn eine Bedingung zutrifft (89)."
+    en: "First check whether one of the four conditions applies; then the counter-exception for profiling. If the system performs profiling, it remains high-risk even if a condition applies (89)."
+  conditions:
+
+    - id: "narrow-procedural-task"
+      question:
+        de: "Beschränkt sich die Aufgabe des Systems darauf, Daten einzuordnen oder ihre Form, ihren Aufbau, ihre Darstellung oder ihre beschreibenden Angaben zu ändern, ohne den Inhalt zu bewerten?"
+        en: "Is the system's task limited to classifying data or changing their form, structure, presentation or descriptive information, without assessing the content?"
+      legal_basis:
+        de: "Artikel 6 Absatz 3 Buchstabe a"
+        en: "Article 6(3)(a)"
+      source_ref: "(91)"
+      covered:
+        - text:
+            de: "Ein System, das unstrukturierte Daten in strukturierte Daten umwandelt."
+            en: "A system that transforms unstructured data into structured data."
+          source_ref: "(91)"
+        - text:
+            de: "Ein System, das eingehende Dokumente in Kategorien einordnet."
+            en: "A system that classifies incoming documents into categories."
+          source_ref: "(91)"
+        - text:
+            de: "Ein System, das Doppeleinträge erkennt."
+            en: "A system that detects duplicate entries."
+          source_ref: "(91)"
+        - text:
+            de: "Systeme, die Daten einordnen, das Format, den Aufbau oder die Darstellung von Daten ändern oder deren beschreibende Angaben ändern."
+            en: "Systems that classify data, change the format, structure or presentation of data, or change their descriptive information."
+          source_ref: "(92)"
+        - text:
+            de: "Ein System, das eingehende Bewerbungen für die Aufnahme an einer Schule oder Hochschule nach der angestrebten Klassenstufe oder Bildungsstufe sortiert und sie in vorab festgelegte Kategorien einordnet, ohne die Geeignetheit der Bewerber zu bewerten oder Aufnahmeentscheidungen zu treffen."
+            en: "A system that sorts incoming applications for admission to a school or university by the intended grade or level of education and classifies them into predefined categories, without assessing the applicants' suitability or making admission decisions."
+          source_ref: "(92)"
+        - text:
+            de: "Ein System, das unvollständige Formulare erkennt und kennzeichnet, damit sie zur richtigen Ergänzung an den Antragsteller zurückgehen."
+            en: "A system that detects and flags incomplete forms so that they are returned to the applicant for proper completion."
+          source_ref: "(93)"
+      not_covered:
+        - text:
+            de: "Nicht jedes System, das einordnet, erfüllt diese Bedingung."
+            en: "Not every system that classifies meets this condition."
+          source_ref: "(93)"
+        - text:
+            de: "Systeme, die ein Werturteil über Daten treffen, die für die Entscheidung erheblich sind - zum Beispiel Eingangsdaten als nützlich oder weniger nützlich für die menschliche Beurteilung einordnen - haben voraussichtlich eine breitere Wirkung auf den Beurteilungsvorgang und erfüllen die Bedingung nicht."
+            en: "Systems that make a value judgement on data relevant to the decision - for example classifying input data as useful or less useful for the human assessment - are likely to have a broader effect on the assessment process and do not meet the condition."
+          source_ref: "(93)"
+        - text:
+            de: "Systeme, die Eingangsdaten eine Bewertungszahl oder eine Rangfolge zuweisen, erfüllen die Bedingung nicht."
+            en: "Systems that assign a score or a ranking to input data do not meet the condition."
+          source_ref: "(93)"
+        - text:
+            de: "Eine Rangfolge, die Dokumente bewertet, aussortiert oder verbirgt, eine Kennzeichnung von Material als nützlich oder weniger nützlich sowie Vorschläge zu nächsten Schritten oder Einschätzungen der Glaubwürdigkeit nehmen das System aus dieser Bedingung heraus."
+            en: "A ranking that assesses, filters out or hides documents, a labelling of material as useful or less useful, and suggestions of next steps or assessments of credibility take the system out of this condition."
+          source_ref: "(93)"
+
+    - id: "improves-human-activity"
+      question:
+        de: "Setzt das System erst ein, nachdem ein Mensch seine Tätigkeit abgeschlossen hat, und verfeinert es dieses fertige Ergebnis, ohne es inhaltlich umzustoßen?"
+        en: "Does the system only come into play after a human has completed their activity, and does it refine this finished result without overturning its substance?"
+      legal_basis:
+        de: "Artikel 6 Absatz 3 Buchstabe b"
+        en: "Article 6(3)(b)"
+      source_ref: "(94)"
+      covered:
+        - text:
+            de: "Erstes von drei zugleich erforderlichen Merkmalen: Eine menschliche Tätigkeit ist abgeschlossen worden, zum Beispiel eine menschliche Beurteilung oder Entscheidung."
+            en: "First of three features required at the same time: a human activity has been completed, for example a human assessment or decision."
+          source_ref: "(94)"
+        - text:
+            de: "Zweites Merkmal: Der Abschluss der Tätigkeit hat zu einem Ergebnis geführt."
+            en: "Second feature: the completion of the activity has led to a result."
+          source_ref: "(94)"
+        - text:
+            de: "Drittes Merkmal: Das Ergebnis wird durch das System verbessert, zum Beispiel klarer gefasst, ohne das Ergebnis oder die Schlussfolgerung zu ändern."
+            en: "Third feature: the result is improved by the system, for example worded more clearly, without changing the result or the conclusion."
+          source_ref: "(94)"
+        - text:
+            de: "Das System legt nur eine zusätzliche Schicht über eine menschliche Tätigkeit, mit entsprechend verringertem Risiko; als Beispiel nennt der Text ein System, das nachträglich einen zuvor verfassten Text verbessert."
+            en: "The system only adds an additional layer to a human activity, with a correspondingly reduced risk; as an example, the text names a system that subsequently improves a previously written text."
+          source_ref: "(95)"
+        - text:
+            de: "Hilfsfunktionen zur Verbesserung: Systeme, die Fehler oder Widersprüche in abgeschlossener menschlicher Arbeit kennzeichnen und damit die Qualitätssicherung übernehmen."
+            en: "Auxiliary improvement functions: systems that flag errors or inconsistencies in completed human work and thus take on quality assurance."
+          source_ref: "(96)"
+        - text:
+            de: "Systeme, die Schlussfolgerungen den Beweisunterlagen zuordnen, um die Nachvollziehbarkeit einer Entscheidung zu stützen, ohne das menschliche Urteil zu ersetzen."
+            en: "Systems that map conclusions to the evidence in order to support the traceability of a decision, without replacing human judgement."
+          source_ref: "(96)"
+        - text:
+            de: "Systeme, die von Menschen geprüften Inhalt für die Zusammenarbeit zwischen Systemen oder für die Zugänglichkeit umwandeln und damit die menschliche Ausgabe umformen, aber nicht ersetzen."
+            en: "Systems that transform human-reviewed content for interoperability between systems or for accessibility, thus reshaping the human output but not replacing it."
+          source_ref: "(96)"
+      not_covered:
+        - text:
+            de: "Das System darf die menschliche Tätigkeit nicht ersetzen und nicht selbstständig ausführen."
+            en: "The system must not replace the human activity or carry it out independently."
+          source_ref: "(95)"
+        - text:
+            de: "Verbessern bedeutet, dass Änderungen möglich sind, diese aber die zuvor abgeschlossene menschliche Tätigkeit nicht umkehren und nicht zu einer vollständigen Überarbeitung oder Ersetzung führen dürfen."
+            en: "Improving means that changes are possible, but they must not reverse the previously completed human activity or lead to a complete revision or replacement."
+          source_ref: "(96)"
+        - text:
+            de: "Der Gesetzgeber hat bewusst verbessern und nicht überprüfen gewählt: Das System darf kein wesentlich anderes Ergebnis liefern als das zuvor menschlich erarbeitete, sondern dieses nur bestätigen oder verfeinern."
+            en: "The legislator deliberately chose \"improve\" and not \"review\": the system must not deliver a substantially different result from the one previously produced by a human, but may only confirm or refine it."
+          source_ref: "(96)"
+        - text:
+            de: "Eine Verbesserung durch das System darf die Rechte, den Schutz sowie die rechtliche oder wirtschaftliche Stellung der Personen nicht ändern, die von der Ausgabe oder von darauf gestützten Entscheidungen betroffen sein können."
+            en: "An improvement by the system must not change the rights, the protection or the legal or economic position of the persons who may be affected by the output or by decisions based on it."
+          source_ref: "(96)"
+        - text:
+            de: "Prüft ein System eine von einem Menschen getroffene Entscheidung, einen Plan oder eine Konstruktion und liefert eine wesentlich andere Lösung, ist das kein Verbessern im Sinne des Buchstabens b, weil es sich nicht auf Verfeinern oder Aufwerten beschränkt."
+            en: "If a system reviews a decision, plan or design made by a human and delivers a substantially different solution, this is not improving within the meaning of point (b), because it is not limited to refining or enhancing."
+          source_ref: "(96)"
+
+    - id: "detects-decision-patterns"
+      question:
+        de: "Soll das System ausschließlich im Nachhinein feststellen, ob eine abgeschlossene menschliche Beurteilung zu früheren Entscheidungsmustern passt oder davon abweicht, und das Ergebnis nur einer ordentlichen menschlichen Nachprüfung mitteilen?"
+        en: "Is the system intended exclusively to determine after the fact whether a completed human assessment fits or deviates from prior decision-making patterns, and to report the result only to a proper human review?"
+      legal_basis:
+        de: "Artikel 6 Absatz 3 Buchstabe c"
+        en: "Article 6(3)(c)"
+      source_ref: "(97)"
+      covered:
+        - text:
+            de: "Als Beispiel nennt der Text ein System, das Unstimmigkeiten oder Auffälligkeiten im Bewertungsmuster einer Lehrkraft erkennt."
+            en: "As an example, the text names a system that detects inconsistencies or anomalies in a teacher's grading pattern."
+          source_ref: "(97)"
+        - text:
+            de: "Entscheidungsmuster sind eng auszulegen: Muster oder Entwicklungen, die aus vergangenen Daten abgeleitet werden und vorhersagen oder untersuchen, wie Entscheidungen zu einem bestimmten Gegenstand im Laufe der Zeit getroffen werden."
+            en: "Decision-making patterns are to be interpreted narrowly: patterns or trends derived from past data that predict or examine how decisions on a particular subject are made over time."
+          source_ref: "(98)"
+        - text:
+            de: "Anders als die übrigen Bedingungen lässt Buchstabe c dem System eine inhaltlich größere Rolle: Es darf die menschliche Beurteilung mit früheren Entscheidungen vergleichen und dieser Vergleich darf eine menschliche Nachprüfung anstoßen, die die zuvor abgeschlossene Beurteilung beeinflusst oder ersetzt."
+            en: "Unlike the other conditions, point (c) leaves the system a substantively larger role: it may compare the human assessment with prior decisions, and this comparison may trigger a human review that influences or replaces the previously completed assessment."
+          source_ref: "(99)"
+        - text:
+            de: "Erste Grenze: Die menschliche Beurteilung muss abgeschlossen sein, das heißt alle notwendigen Schritte des Beurteilungsvorgangs müssen getan sein."
+            en: "First limit: the human assessment must be completed, that is, all necessary steps of the assessment process must have been taken."
+          source_ref: "(100)"
+        - text:
+            de: "Zweite Grenze: Das System darf nur einen nachträglichen Vergleich vornehmen, also feststellen, ob eine jetzige Entscheidung zu früheren Mustern oder Entscheidungen passt."
+            en: "Second limit: the system may only make an ex post comparison, that is, determine whether a current decision fits prior patterns or decisions."
+          source_ref: "(101)"
+        - text:
+            de: "Dritte Grenze: Das System darf die zuvor abgeschlossene menschliche Beurteilung nicht ohne ordentliche menschliche Nachprüfung ersetzen oder beeinflussen. Ordentlich heißt, dass die Nachprüfung nach dem Lauf des Systems gehaltvoll und umfassend ist und zusammen mit dem Ergebnis des Systems die verschiedenen Punkte berücksichtigt, die bei der zuvor abgeschlossenen Beurteilung eine Rolle gespielt haben."
+            en: "Third limit: the system must not replace or influence the previously completed human assessment without proper human review. Proper means that the review after the system has run is meaningful and comprehensive and, together with the system's result, takes into account the various points that played a role in the previously completed assessment."
+          source_ref: "(102)"
+        - text:
+            de: "Damit eine ordentliche Nachprüfung möglich ist, darf das System nicht nur kennzeichnen, sondern muss auch Angaben zu den Abweichungen liefern; es soll lediglich unterrichten, zum Beispiel durch Auswertungswerkzeuge für Qualitätssicherung und Statistik."
+            en: "For a proper review to be possible, the system must not merely flag but must also provide information on the deviations; it is only meant to inform, for example through analysis tools for quality assurance and statistics."
+          source_ref: "(102)"
+      not_covered:
+        - text:
+            de: "Das System darf aus früheren Entscheidungen keine erheblichen Maßstäbe ableiten und auf dieser Grundlage keine neue Beurteilung vorschlagen."
+            en: "The system must not derive material criteria from prior decisions and must not propose a new assessment on that basis."
+          source_ref: "(101)"
+        - text:
+            de: "Die Ausgabe darf auf Abweichungen von früher getroffenen Entscheidungen hinweisen, aber die Eingaben nicht ändern und die zugrunde liegende Begründung nicht umstellen."
+            en: "The output may point to deviations from previously taken decisions, but must not change the inputs or rearrange the underlying reasoning."
+          source_ref: "(102)"
+        - text:
+            de: "Das System darf die menschliche Beurteilung nicht ersetzen."
+            en: "The system must not replace the human assessment."
+          source_ref: "(102)"
+
+    - id: "preparatory-task"
+      question:
+        de: "Findet die Aufgabe des Systems vor dem eigentlichen Beurteilungsvorgang statt und liefert sie nur allgemeines Material oder Struktur dafür, keine Bewertung und keine Empfehlung zum Einzelfall?"
+        en: "Does the system's task take place before the actual assessment process, and does it only provide general material or structure for it, no assessment and no recommendation on the individual case?"
+      legal_basis:
+        de: "Artikel 6 Absatz 3 Buchstabe d"
+        en: "Article 6(3)(d)"
+      source_ref: "(103)"
+      covered:
+        - text:
+            de: "Vorbereitend meint Aufgaben, die vor dem eigentlichen Beurteilungsvorgang anfallen; darin unterscheidet sich Buchstabe d von Buchstabe a, dessen enge Verfahrensaufgabe auch während des Beurteilungsvorgangs anfallen kann, solange sie klar umschrieben und im Umfang begrenzt ist. Fällt eine enge Verfahrensaufgabe vor die Beurteilung und ist sie vorbereitender Natur, können beide Buchstaben zugleich zutreffen."
+            en: "Preparatory means tasks that occur before the actual assessment process; in this, point (d) differs from point (a), whose narrow procedural task may also occur during the assessment process as long as it is clearly defined and limited in scope. If a narrow procedural task comes before the assessment and is of a preparatory nature, both points can apply at the same time."
+          source_ref: "(104)"
+        - text:
+            de: "Die vorbereitende Natur muss so ausgeprägt sein, dass die mögliche Wirkung der Ausgabe für die nachfolgende Beurteilung ein sehr geringes Risiko darstellt."
+            en: "The preparatory nature must be so pronounced that the possible impact of the output on the subsequent assessment represents a very low risk."
+          source_ref: "(105)"
+        - text:
+            de: "Ein System beeinflusst das Ergebnis der Entscheidungsfindung nicht wesentlich, wenn es keine Wirkung auf den Inhalt und damit auf das Ergebnis der Entscheidung hat, gleich ob diese menschlich oder maschinell getroffen wird."
+            en: "A system does not materially influence the outcome of decision-making if it has no effect on the substance and thus on the outcome of the decision, whether that decision is taken by a human or by a machine."
+          source_ref: "(105)"
+        - text:
+            de: "Als Beispiele nennt der Text Verzeichnen, Suchen, Verarbeiten und Verknüpfen: Solche Aufgaben geben den Eingaben für die spätere Beurteilung Struktur, liefern aber selbst keine Beurteilung, die zu einem Ergebnis führt."
+            en: "As examples, the text names indexing, searching, processing and linking: such tasks give structure to the inputs for the later assessment but do not themselves provide an assessment that leads to a result."
+          source_ref: "(106)"
+        - text:
+            de: "Entscheidend ist die Rolle der Aufgabe im Entscheidungsvorgang und ihre Nähe zur endgültigen menschlichen Entscheidung; ist eine Aufgabe vorbereitend, kann Buchstabe d unabhängig vom Fachgebiet des Einsatzes greifen."
+            en: "What matters is the role of the task in the decision-making process and its proximity to the final human decision; if a task is preparatory, point (d) can apply regardless of the field in which the system is used."
+          source_ref: "(107)"
+        - text:
+            de: "Soll die Ausgabe die Beurteilung eines menschlichen Bearbeiters unterstützen, ist die Aufgabe nur dann vorbereitend, wenn die Ausgabe eine allgemeine Eingabe oder ein allgemeiner Umstand ist, zum Beispiel ergänzende Angaben, die den Entscheidungsvorgang des Bearbeiters stützen."
+            en: "If the output is meant to support the assessment of a human case handler, the task is only preparatory if the output is a general input or a general circumstance, for example supplementary information that supports the case handler's decision-making process."
+          source_ref: "(108)"
+      not_covered:
+        - text:
+            de: "Soll das System eine bestimmte Empfehlung oder eine Bewertung des Einzelfalls erzeugen, spielt es eine ausschlaggebende Rolle in der Beurteilung oder Entscheidung und erfüllt die Bedingung nicht."
+            en: "If the system is intended to produce a specific recommendation or an assessment of the individual case, it plays a decisive role in the assessment or decision and does not meet the condition."
+          source_ref: "(108)"
+        - text:
+            de: "Aufgaben, die während des Beurteilungsvorgangs anfallen, sind nicht vorbereitend; sie können allenfalls als enge Verfahrensaufgabe nach Buchstabe a in Betracht kommen."
+            en: "Tasks that occur during the assessment process are not preparatory; at most they may qualify as a narrow procedural task under point (a)."
+          source_ref: "(104)"
+
+  profiling_counter_exemption:
+    question:
+      de: "Verarbeitet das System personenbezogene Daten mit dem Ziel, persönliche Aspekte eines Menschen zu bewerten - also etwas vorherzusagen, einzuschätzen oder zu beurteilen?"
+      en: "Does the system process personal data with the aim of evaluating personal aspects of a person - that is, predicting, estimating or judging something?"
+    source_ref: "(110)"
+
+    explanation:
+      de: "Lautet die Antwort Ja, nimmt das System Profiling vor: Ein im Anhang III genanntes System ist immer als hochriskant einzustufen, wenn es Profiling vornimmt, der Filter ist dann gesperrt, auch wenn eine der vier Bedingungen zutrifft (89). Artikel 6 Absatz 3 lässt den Filter nicht zu, wenn ein KI-System Profiling natürlicher Personen vornimmt; Artikel 3 Nummer 52 verweist für den Begriff auf Artikel 4 Nummer 4 der Datenschutz-Grundverordnung (109). Profiling ist jede selbsttätige Form der Verarbeitung, die an personenbezogenen Daten vorgenommen wird mit dem Ziel, bestimmte persönliche Aspekte einer natürlichen Person zu bewerten; die Begriffsbestimmung hat drei Merkmale, die zugleich vorliegen müssen: erstens eine selbsttätige Form der Verarbeitung, zweitens Verarbeitung personenbezogener Daten, drittens das Ziel, persönliche Aspekte einer natürlichen Person zu bewerten (110). Nur wenn alle drei Merkmale erfüllt sind, entfallen die Ausnahmen des Artikels 6 Absatz 3; das Merkmal der selbsttätigen Verarbeitung ist bei KI-Systemen immer erfüllt, deshalb müssen Anbieter prüfen, ob die Eingabedaten personenbezogene Daten umfassen und ob das System persönliche Aspekte einer Person bewerten soll (111). Eine solche Bewertung erfolgt üblicherweise, um persönliche Aspekte zu untersuchen oder vorherzusagen, etwa Arbeitsleistung, wirtschaftliche Lage, Gesundheit, persönliche Vorlieben, Interessen, Zuverlässigkeit, Verhalten, Aufenthaltsort oder Bewegungen; Profiling bedeutet also, Angaben über eine Person oder Gruppe zu nutzen und deren Merkmale oder Verhaltensmuster zu bewerten, um sie einer Kategorie oder Gruppe zuzuordnen, insbesondere um etwa ihre Fähigkeit zur Erfüllung einer Aufgabe, ihre Interessen oder ihr wahrscheinliches Verhalten zu untersuchen, daraus zu folgern oder vorherzusagen (111). Werden personenbezogene Daten nicht dazu genutzt, persönliche Merkmale zu bewerten - wobei eine Bewertung immer eine Form von Vorhersage, Einschätzung oder Urteil enthalten muss -, liegt kein Profiling vor; eine einfache Einordnung von Personen nach persönlichen Merkmalen wie Alter, Geschlecht und Körpergröße führt nicht zwangsläufig zu Profiling, und ob eine Bewertung Vorhersagen oder Schlussfolgerungen enthält, hängt vom Zweck der Einordnung ab (112)."
+      en: "If the answer is yes, the system performs profiling: a system listed in Annex III is always to be classified as high-risk if it performs profiling; the filter is then blocked, even if one of the four conditions applies (89). Article 6(3) does not allow the filter where an AI system performs profiling of natural persons; for the definition, Article 3(52) refers to Article 4(4) of the General Data Protection Regulation (109). Profiling is any form of automated processing of personal data with the aim of evaluating certain personal aspects relating to a natural person; the definition has three elements that must be present at the same time: first, an automated form of processing, second, processing of personal data, third, the aim of evaluating personal aspects of a natural person (110). Only if all three elements are met do the derogations of Article 6(3) cease to apply; the element of automated processing is always met in the case of AI systems, so providers must check whether the input data include personal data and whether the system is intended to evaluate personal aspects of a person (111). Such an evaluation is usually carried out to analyse or predict personal aspects, such as performance at work, economic situation, health, personal preferences, interests, reliability, behaviour, location or movements; profiling therefore means using information about a person or group and evaluating their characteristics or behaviour patterns in order to place them in a category or group, in particular to analyse, draw conclusions about or predict, for example, their ability to perform a task, their interests or their likely behaviour (111). If personal data are not used to evaluate personal characteristics - an evaluation must always contain some form of prediction, estimate or judgement - there is no profiling; a simple classification of people by personal characteristics such as age, sex and height does not necessarily lead to profiling, and whether an evaluation contains predictions or conclusions depends on the purpose of the classification (112)."
+examples:
+
+  - scenario:
+      de: "Ein Anbieter entwickelt ein System, das die Bonität des Inhabers eines Kleinbetriebs oder einer Firma bestimmen soll, die keine Rechtsperson ist."
+      en: "A provider develops a system intended to determine the creditworthiness of the owner of a small business or of a company that is not a legal person."
+    verdict: "not_high_risk"
+    rationale:
+      de: "Ein solches System soll keine natürliche Person bewerten, wenn es nur Betriebs- oder Firmendaten verwendet."
+      en: "Such a system is not intended to assess a natural person if it uses only business or company data."
+    source_ref: "(73)"
+
+  - scenario:
+      de: "Ein Anbieter entwickelt ein System, das die Kreditwürdigkeit von Firmen anhand ihrer Daten, Bilanzen und Abschlüsse bewertet."
+      en: "A provider develops a system that assesses the creditworthiness of companies on the basis of their data, balance sheets and financial statements."
+    verdict: "not_high_risk"
+    rationale:
+      de: "Solange das System nicht die persönlichen Finanzen natürlicher Personen bewerten soll, ist seine vorgesehene Verwendung keine Bewertung natürlicher Personen und das System deshalb nicht hochriskant."
+      en: "As long as the system is not intended to assess the personal finances of natural persons, its intended use is not an assessment of natural persons and the system is therefore not high-risk."
+    source_ref: "(74)"
+
+  - scenario:
+      de: "Der Inhaber einer Rechtsperson wird auf Kreditwürdigkeit geprüft, weil er einen Firmenkredit besichert."
+      en: "The owner of a legal person is checked for creditworthiness because he or she secures a company loan."
+    verdict: "not_high_risk"
+    rationale:
+      de: "Der Inhaber fällt nicht unter Nummer 5 Buchstabe b, obwohl er als natürliche Person handelt, weil der Kredit vorrangig der Firma und nicht der Einzelperson zugutekommt."
+      en: "The owner does not fall under point 5(b), even though acting as a natural person, because the loan primarily benefits the company and not the individual."
+    source_ref: "(74)"
+
+  - scenario:
+      de: "Eine Buchhaltungsfirma setzt ein System ein, das Geldwäsche erkennt, um ihre Pflichten aus dem Geldwäscherecht der Europäischen Union zu erfüllen."
+      en: "An accounting firm uses a system that detects money laundering in order to fulfil its obligations under Union anti-money laundering law."
+    verdict: "not_high_risk"
+    rationale:
+      de: "Die Firma handelt nicht im Namen der Strafverfolgungsbehörden, sondern im eigenen Namen; das System ist deshalb im Bereich Strafverfolgung nach Nummer 6 des Anhangs III nicht hochriskant."
+      en: "The firm does not act on behalf of the law enforcement authorities but in its own name; the system is therefore not high-risk in the area of law enforcement under point 6 of Annex III."
+    source_ref: "(81)"
+
+  - scenario:
+      de: "Ein System sortiert eingehende Bewerbungen für die Aufnahme an einer Schule oder Hochschule nach der angestrebten Klassenstufe oder Bildungsstufe und ordnet sie in vorab festgelegte Kategorien ein, etwa Grundschule, weiterführende Schule, Oberstufe oder bestimmte Klassenstufen, auf Grundlage der Angaben in der Bewerbung."
+      en: "A system sorts incoming applications for admission to a school or university by the intended grade or level of education and classifies them into predefined categories, such as primary school, secondary school, upper secondary level or particular grades, on the basis of the information in the application."
+    verdict: "exemption_applies"
+    rationale:
+      de: "Das System erfüllt eine enge Verfahrensaufgabe, weil es die Geeignetheit der Bewerber nicht bewertet und keine Aufnahmeentscheidungen trifft."
+      en: "The system performs a narrow procedural task because it does not assess the applicants' suitability and does not make admission decisions."
+    source_ref: "(92)"
+
+  - scenario:
+      de: "Ein System im Bereich Migration, Grenzkontrolle und Grenzverwaltung durchsucht jede eingereichte Visumsakte, wandelt eingelesene Dokumente in Text zum Verzeichnen um, legt Bestandteile selbsttätig in feste, vorab bestimmte Ordner wie Ausweispapiere, Reiseverlauf, Nachweise und Übersetzungen ab und erkennt vollständig gleiche Doppelanlagen und kennzeichnet sie als Doppel."
+      en: "A system in the area of migration, border control and border management searches every submitted visa file, converts scanned documents into text for indexing, automatically files components into fixed, predefined folders such as identity documents, travel history, supporting evidence and translations, and detects exact duplicate attachments and flags them as duplicates."
+    verdict: "exemption_applies"
+    rationale:
+      de: "Solche engen Verfahrensaufgaben können den Filter nutzen, sofern das System keine Rangfolge bildet, die Dokumente bewertet, aussortiert oder verbirgt, kein Material als nützlich oder weniger nützlich kennzeichnet und keine nächsten Schritte oder Einschätzungen der Glaubwürdigkeit vorschlägt."
+      en: "Such narrow procedural tasks can use the filter, provided that the system does not create a ranking that assesses, filters out or hides documents, does not label material as useful or less useful, and does not suggest next steps or assessments of credibility."
+    source_ref: "(93)"
+
+  - scenario:
+      de: "Ein System erkennt unvollständige Formulare und kennzeichnet sie, damit sie zur richtigen Ergänzung an den Antragsteller zurückgehen."
+      en: "A system detects incomplete forms and flags them so that they are returned to the applicant for proper completion."
+    verdict: "exemption_applies"
+    rationale:
+      de: "Das kann als enge Verfahrensaufgabe eingeordnet werden und den Filter nutzen."
+      en: "This can be classified as a narrow procedural task and use the filter."
+    source_ref: "(93)"
+
+  - scenario:
+      de: "Ein System prüft eine von einem Menschen getroffene Entscheidung, einen Plan oder eine Konstruktion und liefert eine wesentlich andere Lösung."
+      en: "A system reviews a decision, plan or design made by a human and delivers a substantially different solution."
+    verdict: "high_risk"
+    rationale:
+      de: "Das ist kein Verbessern eines zuvor abgeschlossenen menschlichen Ergebnisses im Sinne des Artikels 6 Absatz 3 Buchstabe b, weil es sich nicht auf Verfeinern oder Aufwerten des Ergebnisses beschränkt; die Bedingung trägt die Ausnahme nicht."
+      en: "This is not improving a previously completed human result within the meaning of Article 6(3)(b), because it is not limited to refining or enhancing the result; the condition does not support the exemption."
+    source_ref: "(96)"
+
+  - scenario:
+      de: "Ein System kennzeichnet Fehler oder Widersprüche in abgeschlossener menschlicher Arbeit und übernimmt damit eine Aufgabe der Qualitätssicherung."
+      en: "A system flags errors or inconsistencies in completed human work and thus takes on a quality assurance task."
+    verdict: "exemption_applies"
+    rationale:
+      de: "Der Text nennt das als Beispiel einer unterstützenden Verbesserungsfunktion nach Artikel 6 Absatz 3 Buchstabe b."
+      en: "The text names this as an example of an auxiliary improvement function under Article 6(3)(b)."
+    source_ref: "(96)"
+
+  - scenario:
+      de: "Ein System ordnet Schlussfolgerungen den Beweisunterlagen zu, um die Nachvollziehbarkeit einer Entscheidung zu stützen, ohne das menschliche Urteil zu ersetzen."
+      en: "A system maps conclusions to the evidence in order to support the traceability of a decision, without replacing human judgement."
+    verdict: "exemption_applies"
+    rationale:
+      de: "Der Text nennt das als Beispiel einer unterstützenden Verbesserungsfunktion nach Artikel 6 Absatz 3 Buchstabe b."
+      en: "The text names this as an example of an auxiliary improvement function under Article 6(3)(b)."
+    source_ref: "(96)"
+
+  - scenario:
+      de: "Ein System wandelt von Menschen geprüften Inhalt für die Zusammenarbeit zwischen Systemen oder für die Zugänglichkeit um."
+      en: "A system transforms human-reviewed content for interoperability between systems or for accessibility."
+    verdict: "exemption_applies"
+    rationale:
+      de: "Das System formt die menschliche Ausgabe um, ersetzt sie aber nicht; der Text nennt es als Beispiel einer unterstützenden Verbesserungsfunktion nach Artikel 6 Absatz 3 Buchstabe b."
+      en: "The system reshapes the human output but does not replace it; the text names it as an example of an auxiliary improvement function under Article 6(3)(b)."
+    source_ref: "(96)"
+
+  - scenario:
+      de: "Ein System soll früher abgeschlossene Prüfungen der Anspruchsberechtigung durch Bedienstete einer öffentlichen Verwaltung auswerten, um Entscheidungsmuster oder Abweichungen für Qualitätssicherung und Berichtswesen zu erkennen, ohne Ergebnisse für laufende Fälle vorzuschlagen und ohne die Leistung der Beschäftigten zu bewerten, etwa im Rahmen der jährlichen Beurteilung."
+      en: "A system is intended to analyse eligibility checks previously completed by officials of a public administration in order to detect decision-making patterns or deviations for quality assurance and reporting, without proposing results for ongoing cases and without assessing the performance of the staff, for example as part of the annual appraisal."
+    verdict: "exemption_applies"
+    rationale:
+      de: "Wird das System erst eingesetzt, nachdem die Bediensteten ihre Beurteilungen getroffen haben, kann es für die Ausnahme nach Artikel 6 Absatz 3 Buchstabe c in Betracht kommen und ist kein Profiling. Der Vergleich erlaubt dem Bediensteten, vom System erkannte Abweichungen von früheren Entscheidungsmustern in ähnlichen Fällen zu sehen, samt allen Punkten und Nachweisen, die bei der ersten Beurteilung berücksichtigt wurden; der Beurteiler oder eine Qualitätssicherung entscheidet nach ordentlicher menschlicher Nachprüfung, ob die erkannten Abweichungen für die abgeschlossene Beurteilung erheblich sind."
+      en: "If the system is only used after the officials have made their assessments, it may qualify for the derogation under Article 6(3)(c) and is not profiling. The comparison allows the official to see deviations detected by the system from prior decision-making patterns in similar cases, together with all points and evidence taken into account in the first assessment; the assessor or a quality assurance function decides, after proper human review, whether the detected deviations are relevant to the completed assessment."
+    source_ref: "(102)"
+
+  - scenario:
+      de: "Ein System soll Daten bewerten, die für eine Entscheidung erheblich sind, zum Beispiel über öffentliche Leistungen, und liefert dem menschlichen Bearbeiter Hinweise auf die einschlägigen Rechtsvorschriften, Angaben zur Zuständigkeit und möglicherweise bestehende interne Leitlinien, die für den Entscheidungsvorgang erheblich sind."
+      en: "A system is intended to assess data relevant to a decision, for example on public benefits, and provides the human case handler with references to the relevant legislation, information on competence and possibly existing internal guidelines that are relevant to the decision-making process."
+    verdict: "exemption_applies"
+    rationale:
+      de: "Die Aufgaben können als vorbereitend im Sinne des Artikels 6 Absatz 3 Buchstabe d gelten, weil sie den konkreten Fall weder untersuchen noch bewerten und keine Ausgabe erzeugen, die die Entscheidung wesentlich beeinflusst; das System verweist auf allgemeine Angaben als ergänzende Information für den menschlichen Beurteiler."
+      en: "The tasks may count as preparatory within the meaning of Article 6(3)(d), because they neither analyse nor assess the specific case and do not produce an output that materially influences the decision; the system refers to general information as supplementary information for the human assessor."
+    source_ref: "(108)"
+
+  - scenario:
+      de: "Ein System der Zollbehörden bewertet das Risiko, dass in die Europäische Union eingehende Waren dem an der Grenze anwendbaren Recht nicht entsprechen, auf Grundlage von Angaben zu den Wirtschaftsbeteiligten der Waren, etwa Behälternummer, Warenbeschreibung, Streckenführung, Transport und Zahlungsweise."
+      en: "A customs authorities' system assesses the risk that goods entering the European Union do not comply with the law applicable at the border, on the basis of information on the economic operators of the goods, such as container number, description of goods, routing, transport and method of payment."
+    verdict: "exemption_applies"
+    rationale:
+      de: "Die Verarbeitung bewertet keine persönlichen Aspekte einer natürlichen Person, sondern das Risiko nicht vorschriftsmäßiger Sendungen; eine solche Bewertung ist deshalb kein Profiling und sperrt den Filter nicht."
+      en: "The processing does not evaluate personal aspects of a natural person but the risk of non-compliant consignments; such an assessment is therefore not profiling and does not block the filter."
+    source_ref: "(111)"
+
+  - scenario:
+      de: "Ein System soll bei der Einstellung von Beschäftigten eingesetzt werden. Es erkennt Abweichungen von früheren Entscheidungsmustern bei der Einstellung, bevor die Einstellung abgeschlossen ist, um mögliche Unstimmigkeiten und Abweichungen von den Einstellungsregeln des Unternehmens zu erkennen, und bewertet dabei die persönlichen Merkmale der Personen, die die Bewerbungsgespräche führen."
+      en: "A system is intended to be used in the recruitment of employees. It detects deviations from prior decision-making patterns in recruitment before the recruitment is completed, in order to detect possible inconsistencies and deviations from the company's recruitment rules, and in doing so evaluates the personal characteristics of the persons conducting the job interviews."
+    verdict: "high_risk"
+    rationale:
+      de: "Die Bewertung der Entscheidungen der Gesprächsführenden und ihrer persönlichen Merkmale zur Untersuchung möglicher Abweichungen von früheren Entscheidungsmustern ist Profiling. Die Verwendung könnte unter Artikel 6 Absatz 3 Buchstabe c fallen, aber weil das System personenbezogene Daten verarbeitet, um die Gesprächsführenden zu profilieren, ist der Filter nicht anwendbar."
+      en: "Evaluating the decisions of the interviewers and their personal characteristics in order to examine possible deviations from prior decision-making patterns is profiling. The use could fall under Article 6(3)(c), but because the system processes personal data in order to profile the interviewers, the filter is not applicable."
+    source_ref: "(112)"
+
+  - scenario:
+      de: "Ein System ordnet Personen einfach nach persönlichen Merkmalen wie Alter, Geschlecht und Körpergröße ein."
+      en: "A system simply classifies people by personal characteristics such as age, sex and height."
+    verdict: "exemption_applies"
+    rationale:
+      de: "Eine solche einfache Einordnung führt nicht zwangsläufig zu Profiling; ob eine Bewertung Vorhersagen oder Schlussfolgerungen enthält, hängt vom Zweck der Einordnung ab. Ohne Vorhersage, Einschätzung oder Urteil über persönliche Merkmale liegt kein Profiling vor und der Filter ist nicht gesperrt."
+      en: "Such a simple classification does not necessarily lead to profiling; whether an evaluation contains predictions or conclusions depends on the purpose of the classification. Without a prediction, estimate or judgement about personal characteristics there is no profiling and the filter is not blocked."
+    source_ref: "(112)"
+
+obligations_when_filter_applies:
+  - text:
+      de: "Ob ein System den Filter nutzen darf, hängt von einer Selbstbewertung des Anbieters ab."
+      en: "Whether a system may use the filter depends on a self-assessment by the provider."
+    source_ref: "(113)"
+  - text:
+      de: "Greift der Filter, ist das System nicht hochriskant, und weder die Pflichten der Anbieter noch die der Betreiber aus Kapitel III gelten dafür; Artikel 6 Absatz 4 sieht aber eigene Pflichten vor."
+      en: "If the filter applies, the system is not high-risk, and neither the obligations of providers nor those of deployers under Chapter III apply to it; Article 6(4), however, provides for obligations of its own."
+    source_ref: "(114)"
+  - text:
+      de: "Erste eigene Pflicht: die Bewertung dokumentieren, bevor das System in Verkehr gebracht oder in Betrieb genommen wird."
+      en: "First obligation of its own: document the assessment before the system is placed on the market or put into service."
+    source_ref: "(114)"
+  - text:
+      de: "Zweite eigene Pflicht: das System in der Datenbank der Europäischen Union nach Artikel 71 eintragen, damit ausgenommene Systeme nachvollziehbar bleiben."
+      en: "Second obligation of its own: register the system in the EU database referred to in Article 71, so that exempted systems remain traceable."
+    source_ref: "(114)"
+  - text:
+      de: "Die Bewertung muss die Zweckbestimmung des Systems beschreiben."
+      en: "The assessment must describe the intended purpose of the system."
+    source_ref: "(115)"
+  - text:
+      de: "Die Bewertung muss beschreiben, warum das System nach Artikel 6 Absatz 2 als hochriskant gilt."
+      en: "The assessment must describe why the system is considered high-risk under Article 6(2)."
+    source_ref: "(115)"
+  - text:
+      de: "Die Bewertung muss beschreiben, welche Bedingung oder Bedingungen des Artikels 6 Absatz 3 als erfüllt angesehen werden und warum."
+      en: "The assessment must describe which condition or conditions of Article 6(3) are considered to be met and why."
+    source_ref: "(115)"
+  - text:
+      de: "Die Bewertung muss beschreiben, warum das System kein Profiling vornimmt; andernfalls darf der Filter nicht angewandt werden."
+      en: "The assessment must describe why the system does not perform profiling; otherwise the filter must not be applied."
+    source_ref: "(115)"
+  - text:
+      de: "Die Bewertung ist so festzuhalten, dass sie der Marktaufsichtsbehörde jederzeit auf Verlangen vorgelegt werden kann; Betreiber, die Systeme beschaffen, sollen die Nutzung der Ausnahme in der Datenbank nach Artikel 71 zur eigenen Sorgfalt prüfen."
+      en: "The assessment is to be recorded in such a way that it can be provided to the market surveillance authority at any time upon request; deployers procuring systems should check the use of the derogation in the database referred to in Article 71 as part of their own due diligence."
+    source_ref: "(116)"
+  - text:
+      de: "Marktaufsichtsbehörden können nach Artikel 80 die Einstufung eines Systems bewerten, den Anbieter auffordern, das System mit den Anforderungen für hochriskante Systeme in Einklang zu bringen, und Abhilfemaßnahmen verlangen."
+      en: "Under Article 80, market surveillance authorities can evaluate the classification of a system, require the provider to bring the system into compliance with the requirements for high-risk systems, and demand corrective action."
+    source_ref: "(117)"
+  - text:
+      de: "Stellt die Marktaufsichtsbehörde fest, dass ein System falsch als nicht hochriskant eingestuft wurde, um die Anforderungen und Pflichten zu umgehen, kann sie dem Anbieter nach Artikel 99 Geldbußen auferlegen."
+      en: "If the market surveillance authority finds that a system was wrongly classified as not high-risk in order to circumvent the requirements and obligations, it can impose fines on the provider under Article 99."
+    source_ref: "(117)"

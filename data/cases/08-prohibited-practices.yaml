@@ -1,0 +1,156 @@
+topic:
+  de: "Verbotene Praktiken"
+  en: "Prohibited practices"
+hint:
+  de: "In diesem Gebiet lautet die Antwort nicht \"mit Auflagen\", sondern \"so nicht\". Ein Verbot lässt sich nicht durch Dokumentation, Aufsicht oder Einwilligung ausgleichen. Die Fälle sind Beispiele zum Lernen, keine Rechtsberatung.\n"
+  en: "In this area the answer is not \"subject to conditions\" but \"not like this\". A prohibition cannot be offset by documentation, oversight or consent. The cases are examples for learning, not legal advice.\n"
+cases:
+  - id: call-center-emotion-recognition
+    title:
+      de: "Stimmungsmessung der Beschäftigten im Kundendienst"
+      en: "Mood measurement of customer service employees"
+    scenario:
+      de: "Ein Kundendienstzentrum will die Belastung seiner Beschäftigten beobachten. Ein KI-System hört die Telefongespräche mit und schließt aus Stimmlage, Sprechgeschwindigkeit und Pausen auf die Gefühlslage des Beschäftigten: ruhig, gereizt, erschöpft. Die Teamleitung erhält eine Tagesübersicht und soll Beschäftigte mit auffälliger Stimmungslage ansprechen. Der Betriebsrat hat zugestimmt, die Beschäftigten haben eingewilligt.\n"
+      en: "A customer service centre wants to monitor the strain on its employees. An AI system listens in on the telephone calls and infers the employee's emotional state from pitch of voice, speaking rate and pauses: calm, irritated, exhausted. The team leaders receive a daily overview and are to approach employees whose mood stands out. The works council has agreed, and the employees have given their consent.\n"
+    roles: [deployer]
+    classification: prohibited
+    rationale:
+      de: "Nach Artikel 5 Absatz 1 Buchstabe f ist das Inverkehrbringen, die Inbetriebnahme und die Verwendung von KI-Systemen zur Ableitung von Emotionen einer Person am Arbeitsplatz untersagt. Ausgenommen ist allein die Verwendung aus medizinischen Gründen oder aus Sicherheitsgründen — etwa die Müdigkeitserkennung bei einem Piloten. Die Fürsorge für die Belastung der Beschäftigten ist weder ein medizinischer Grund in diesem Sinne noch ein Sicherheitsgrund. Zustimmung des Betriebsrats und Einwilligung der Beschäftigten ändern daran nichts: Das Verbot steht nicht zur Verfügung der Beteiligten.\n"
+      en: "Under Article 5(1)(f), the placing on the market, the putting into service and the use of AI systems to infer emotions of a natural person in the workplace are prohibited. The only exception is use for medical or safety reasons — for example fatigue detection for a pilot. Caring about the strain on employees is neither a medical reason in this sense nor a safety reason. Agreement of the works council and consent of the employees change nothing: the prohibition is not at the disposal of the parties involved.\n"
+    legal_basis: [AI-Act/art-5/para-1-f, AI-Act/art-5, AI-Act/art-99, BDSG/sec-26]
+    obligations:
+      - de: "Das Vorhaben nicht umsetzen; ein laufender Einsatz ist einzustellen."
+        en: "Do not implement the project; an ongoing use must be stopped."
+      - de: "Bereits erhobene Gefühlsdaten löschen."
+        en: "Delete emotion data already collected."
+      - de: "Wenn Belastung gemessen werden soll, auf Mittel ohne Emotionsableitung ausweichen, etwa anonyme Befragungen oder Auswertung der Arbeitsmenge."
+        en: "If strain is to be measured, switch to means without emotion inference, such as anonymous surveys or evaluation of the workload."
+      - de: "Beschaffungsunterlagen daraufhin prüfen, ob eingekaufte Systeme Emotionsmerkmale enthalten."
+        en: "Check procurement documents for whether purchased systems include emotion features."
+    learning_note:
+      de: "Ein Verbot kennt keine Ausgleichsmaßnahmen. Bei hohem Risiko lautet die Frage \"Was muss ich dafür tun?\", bei einem Verbot \"Wie erreiche ich das Ziel anders?\". Einwilligung, Betriebsvereinbarung und gute Absicht tragen nicht, denn die Verordnung verbietet hier die Praktik selbst. Für Arbeitsplatz und Bildungseinrichtung ist die Emotionsableitung die wichtigste dieser Grenzen, weil sie in vielen Produkten als Zusatzfunktion mitgeliefert wird.\n"
+      en: "A prohibition knows no compensating measures. With high risk the question is \"What do I have to do for it?\", with a prohibition \"How do I reach the goal differently?\". Consent, a works agreement and good intentions do not hold, because here the Regulation prohibits the practice itself. For the workplace and education institutions, emotion inference is the most important of these limits, because it is supplied as an add-on feature in many products.\n"
+    pitfall:
+      de: "Die Funktion heißt im Angebot nicht Emotionserkennung, sondern Belastungsanzeige, Gesprächsqualität oder Stimmungsbarometer. Wer nur nach dem Wort sucht, findet das Verbotene nicht — es kommt darauf an, ob aus Merkmalen eines Menschen auf seine Gefühlslage geschlossen wird.\n"
+      en: "In the offer, the feature is not called emotion recognition but strain indicator, conversation quality or mood barometer. Anyone who searches only for the word does not find what is prohibited — what matters is whether a person's emotional state is inferred from their characteristics.\n"
+    related_cases: [remote-exam-proctoring, employee-activity-monitoring, customer-social-scoring]
+
+  - id: customer-social-scoring
+    title:
+      de: "Allgemeiner Vertrauenswert für Kunden"
+      en: "General trust score for customers"
+    scenario:
+      de: "Ein Onlinehändler legt für jeden Kunden einen Vertrauenswert an. Er entsteht aus Zahlungsverhalten, Rücksendequote, Tonfall in den Nachrichten an den Kundendienst und Bewertungen, die der Kunde hinterlassen hat. Der Wert entscheidet nicht nur über Vorkasse, sondern wird einer Tochtergesellschaft weitergegeben, die Mietwohnungen vermittelt und Bewerber mit niedrigem Wert nicht an Vermieter weiterreicht.\n"
+      en: "An online retailer creates a trust score for every customer. It is derived from payment behaviour, return rate, tone in messages to customer service and reviews the customer has left. The score not only decides on payment in advance but is passed on to a subsidiary that brokers rental flats and does not pass on applicants with a low score to landlords.\n"
+    roles: [deployer]
+    classification: prohibited
+    rationale:
+      de: "Artikel 5 Absatz 1 Buchstabe c verbietet die Bewertung oder Einstufung von Menschen über einen bestimmten Zeitraum anhand ihres Sozialverhaltens oder persönlicher Eigenschaften, wenn die Bewertung zu einer Benachteiligung in einem Zusammenhang führt, der nichts mit dem Entstehungszusammenhang der Daten zu tun hat, oder zu einer Benachteiligung, die nicht verhältnismäßig ist. Beides liegt hier nahe: Tonfall gegenüber dem Kundendienst und Rücksendequote aus dem Onlinehandel bestimmen über den Zugang zu einer Wohnung.\n"
+      en: "Article 5(1)(c) prohibits the evaluation or classification of natural persons over a certain period of time based on their social behaviour or personal characteristics, where the evaluation leads to detrimental treatment in a context unrelated to the context in which the data were originally generated, or to detrimental treatment that is disproportionate. Both are likely here: tone towards customer service and the return rate from online retail determine access to a flat.\n"
+    legal_basis: [AI-Act/art-5/para-1-c, AI-Act/art-5, AI-Act/art-99, GDPR/art-22, GDPR/art-5]
+    obligations:
+      - de: "Die Weitergabe des Werts an die Wohnungsvermittlung beenden."
+        en: "Stop passing the score on to the flat brokerage."
+      - de: "Die Zusammenfassung von Verhaltensmerkmalen zu einem allgemeinen Vertrauenswert aufgeben."
+        en: "Abandon condensing behavioural characteristics into a general trust score."
+      - de: "Zahlungsausfallrisiko, wenn es gebraucht wird, zweckgebunden und getrennt bewerten statt als allgemeine Personenbewertung."
+        en: "Where it is needed, assess the risk of payment default for a specific purpose and separately, instead of as a general assessment of the person."
+      - de: "Prüfen, welche Entscheidungen bereits auf dem Wert beruhen, und sie korrigieren."
+        en: "Check which decisions are already based on the score, and correct them."
+    learning_note:
+      de: "Der Kern des Verbots liegt nicht im Bewerten, sondern im Übertragen in einen fremden Zusammenhang. Eine Risikobewertung für den eigenen, sachlich zusammenhängenden Zweck ist nicht dasselbe wie ein allgemeiner Wert über einen Menschen, der ihn überall begleitet. Die brauchbare Frage für eigene Fälle ist deshalb: Woher kommen die Daten, und wo wirken sie? Je weiter diese beiden Punkte auseinanderliegen, desto näher ist man am Verbot.\n"
+      en: "The core of the prohibition does not lie in evaluating, but in transferring into an unrelated context. A risk assessment for one's own, factually connected purpose is not the same as a general score about a person that follows them everywhere. The useful question for your own cases is therefore: where do the data come from, and where do they take effect? The further apart these two points are, the closer you are to the prohibition.\n"
+    pitfall:
+      de: "Der Wert wird als Betrugsvorsorge gerechtfertigt. Die Ausnahme für Betrugsaufdeckung aus Anhang III Nummer 5 ist aber eine Regel über die Hochrisiko-Einstufung und hebt das Verbot der Sozialbewertung nach Artikel 5 nicht auf.\n"
+      en: "The score is justified as fraud prevention. But the exception for fraud detection in Annex III, point 5 is a rule about the high-risk classification and does not lift the prohibition of social scoring under Article 5.\n"
+    related_cases: [payment-fraud-detection, consumer-loan-credit-scoring, debt-vulnerability-targeting]
+
+  - id: scraped-face-database
+    title:
+      de: "Aufbau einer Gesichtsdatenbank aus Bildern im Netz"
+      en: "Building a facial database from images on the internet"
+    scenario:
+      de: "Ein Sicherheitsdienstleister will seine Zugangskontrolle verbessern. Er lädt massenhaft öffentlich zugängliche Profilbilder aus sozialen Netzwerken herunter und baut daraus mit einem KI-System eine Gesichtsdatenbank auf, um später Besucher abgleichen zu können. Zusätzlich speist er Aufnahmen aus den Überwachungskameras seiner Objekte ein.\n"
+      en: "A security services company wants to improve its access control. It downloads publicly accessible profile pictures from social networks en masse and uses an AI system to build a facial database from them, so that it can match visitors later. In addition, it feeds in footage from the surveillance cameras at its sites.\n"
+    roles: [provider, deployer]
+    classification: prohibited
+    rationale:
+      de: "Artikel 5 Absatz 1 Buchstabe e verbietet das Inverkehrbringen, die Inbetriebnahme für diesen Zweck und die Verwendung von KI-Systemen, die Datenbanken zur Gesichtserkennung durch ungezieltes Auslesen von Gesichtsbildern aus dem Internet oder aus Überwachungsaufnahmen erstellen oder erweitern. Beide Quellen sind hier betroffen. Dass die Bilder öffentlich zugänglich waren, ist unerheblich — das Verbot knüpft am ungezielten Auslesen an, nicht an der Zugänglichkeit.\n"
+      en: "Article 5(1)(e) prohibits the placing on the market, the putting into service for this specific purpose and the use of AI systems that create or expand facial recognition databases through the untargeted scraping of facial images from the internet or CCTV footage. Both sources are concerned here. That the images were publicly accessible is irrelevant — the prohibition attaches to untargeted scraping, not to accessibility.\n"
+    legal_basis: [AI-Act/art-5/para-1-e, AI-Act/art-5, AI-Act/art-99, GDPR/art-9, GDPR/art-5]
+    obligations:
+      - de: "Den Aufbau einstellen und die so erstellte Datenbank löschen."
+        en: "Stop building it and delete the database created in this way."
+      - de: "Für die Zugangskontrolle auf Verfahren ausweichen, bei denen sich die Betroffenen bewusst erfassen lassen."
+        en: "For access control, switch to methods in which the persons concerned knowingly allow themselves to be enrolled."
+      - de: "Beachten, dass eine biometrische Zugangskontrolle auch dann noch hochriskant nach Anhang III Nummer 1 sein kann."
+        en: "Bear in mind that biometric access control can still be high-risk under Annex III, point 1 even then."
+      - de: "Datenschutzrechtlich prüfen: Gesichtsbilder zur Identifizierung sind biometrische Daten einer besonders geschützten Kategorie."
+        en: "Check under data protection law: facial images used for identification are biometric data of a specially protected category."
+    learning_note:
+      de: "Öffentlich zugänglich heißt nicht frei verwendbar. Das Verbot richtet sich gegen das ungezielte Sammeln — also gegen das Abgreifen ohne Bezug zu einem bestimmten Zweck oder einer bestimmten Person. Wer biometrisch arbeiten will, muss die Daten bei den Betroffenen selbst und für den konkreten Zweck erheben. Und selbst dann ist man nicht fertig: Erlaubte biometrische Systeme sind häufig hochriskant nach Anhang III Nummer 1.\n"
+      en: "Publicly accessible does not mean freely usable. The prohibition is directed against untargeted collection — that is, against harvesting without connection to a specific purpose or a specific person. Anyone wanting to work biometrically must collect the data from the persons concerned themselves and for the specific purpose. And even then you are not done: permitted biometric systems are frequently high-risk under Annex III, point 1.\n"
+    pitfall:
+      de: "Das Unternehmen meint, mit dem Kauf eines fertigen Datensatzes auf der sicheren Seite zu sein. Das Verbot erfasst neben dem Erstellen auch das Erweitern und die Verwendung solcher Systeme — und wer kauft, verwendet.\n"
+      en: "The company believes it is on the safe side by buying a ready-made data set. Besides creating, the prohibition also covers expanding and using such systems — and whoever buys, uses.\n"
+    related_cases: [deepfake-actor-advert, call-center-emotion-recognition, third-country-model-vendor]
+
+  - id: debt-vulnerability-targeting
+    title:
+      de: "Werbung, die auf finanzielle Notlagen zielt"
+      en: "Advertising that targets financial hardship"
+    scenario:
+      de: "Ein Anbieter kurzfristiger Kleinkredite wirbt im Netz. Ein KI-System erkennt an Suchverhalten und Nutzungsmustern, welche Nutzer sich wahrscheinlich in einer akuten finanziellen Notlage befinden, und spielt genau diesen Nutzern nachts wiederholt Anzeigen mit Dringlichkeitshinweisen aus. Das System lernt dabei, welche Ansprache bei dieser Gruppe am häufigsten zum Abschluss führt.\n"
+      en: "A provider of short-term small loans advertises online. An AI system recognises from search behaviour and usage patterns which users are probably in acute financial hardship, and repeatedly shows precisely these users advertisements with urgency messages at night. In doing so, the system learns which approach most often leads to a contract with this group.\n"
+    roles: [deployer]
+    classification: prohibited
+    rationale:
+      de: "Artikel 5 Absatz 1 Buchstabe b verbietet KI-Systeme, die eine Schutzbedürftigkeit aufgrund des Alters, einer Behinderung oder einer bestimmten sozialen oder wirtschaftlichen Situation mit dem Ziel oder der Wirkung ausnutzen, das Verhalten dieser Personen wesentlich zu verändern, wenn dadurch ein erheblicher Schaden entsteht oder hinreichend wahrscheinlich entsteht. Die wirtschaftliche Notlage ist eine solche Situation, das gezielte Ausspielen nutzt sie aus, und weitere Verschuldung ist ein erheblicher Schaden. Dass die Nutzer formal frei entscheiden, trägt nicht — das Verbot setzt gerade dort an, wo die Entscheidungsfreiheit untergraben wird.\n"
+      en: "Article 5(1)(b) prohibits AI systems that exploit any of the vulnerabilities of persons due to their age, disability or a specific social or economic situation, with the objective or the effect of materially distorting the behaviour of those persons, in a manner that causes or is reasonably likely to cause significant harm. Economic hardship is such a situation, the targeted delivery exploits it, and further indebtedness is significant harm. That users formally decide freely does not hold — the prohibition applies precisely where freedom of decision is undermined.\n"
+    legal_basis: [AI-Act/art-5/para-1-b, AI-Act/art-5/para-1-a, AI-Act/art-5, AI-Act/art-99]
+    obligations:
+      - de: "Die Ausspielung nach Merkmalen einer Notlage beenden."
+        en: "Stop delivery based on characteristics of hardship."
+      - de: "Keine Zielgruppenbildung, die wirtschaftliche Bedrängnis, Alter oder Behinderung als Ansatz nimmt."
+        en: "No target-group formation that takes economic distress, age or disability as its starting point."
+      - de: "Prüfen, ob die Gestaltung der Anzeigen zusätzlich unter das Verbot manipulativer oder täuschender Techniken nach Buchstabe a fällt."
+        en: "Check whether the design of the advertisements additionally falls under the prohibition of manipulative or deceptive techniques under point (a)."
+      - de: "Werbeoptimierung darauf begrenzen, dass sie nicht selbständig auf Schutzbedürftigkeit zuläuft."
+        en: "Limit advertising optimisation so that it does not drift on its own towards vulnerability."
+    learning_note:
+      de: "Optimierende Systeme finden Schwächen von allein, auch wenn niemand das vorgegeben hat. Wer ein System auf Abschlussquote optimiert, bekommt als Ergebnis unter Umständen genau die Ansprache, die bedrängte Menschen am wenigsten abwehren können. Deshalb genügt es nicht, keine verbotene Absicht zu haben: Artikel 5 Absatz 1 Buchstabe b erfasst das Ziel und die Wirkung. Wer solche Systeme einsetzt, muss prüfen, worauf sie tatsächlich zulaufen.\n"
+      en: "Optimising systems find weaknesses by themselves, even if nobody specified that. Anyone who optimises a system for closing rate may get as a result precisely the approach that people in distress are least able to resist. That is why it is not enough to have no prohibited intention: Article 5(1)(b) covers the objective and the effect. Anyone using such systems must check what they actually drift towards.\n"
+    pitfall:
+      de: "Das Unternehmen hält sich für unbeteiligt, weil es die Zielgruppe nicht beschrieben, sondern das System sie gefunden hat. Die Wirkung genügt für das Verbot.\n"
+      en: "The company considers itself uninvolved because it did not describe the target group; the system found it. The effect is sufficient for the prohibition.\n"
+    related_cases: [customer-social-scoring, targeted-job-ads, call-center-emotion-recognition]
+
+  - id: interview-emotion-recognition
+    title:
+      de: "Gefühlsauswertung im Video-Bewerbungsgespräch"
+      en: "Emotion analysis in a video job interview"
+    scenario:
+      de: "Ein Unternehmen führt Erstgespräche als aufgezeichnetes Videointerview. Ein KI-System wertet Mimik und Stimme aus und gibt Hinweise auf Begeisterung, Unsicherheit und Belastbarkeit des Bewerbers, die neben der fachlichen Einschätzung in die Auswahl einfließen.\n"
+      en: "A company conducts first interviews as recorded video interviews. An AI system evaluates facial expressions and voice and gives indications of the applicant's enthusiasm, insecurity and resilience, which feed into the selection alongside the professional assessment.\n"
+    roles: [deployer]
+    classification: prohibited
+    rationale:
+      de: "Artikel 5 Absatz 1 Buchstabe f verbietet die Ableitung von Emotionen am Arbeitsplatz. Das Bewerbungsverfahren gehört zu diesem Bereich; die Vorschrift schützt nicht erst die Beschäftigten, sondern den Arbeitsplatzzusammenhang. Die Ausnahme für medizinische oder Sicherheitsgründe liegt nicht vor. Damit ist nicht nur der Teil mit der Gefühlsauswertung unzulässig — er ist verboten, während die Vorauswahl als solche nach Anhang III Nummer 4 lediglich hochriskant wäre. Zu beachten ist auch Artikel 50 Absatz 3, der für erlaubte Emotionserkennungssysteme eine Informationspflicht vorsieht; er erlaubt keinen Einsatz, der nach Artikel 5 verboten ist.\n"
+      en: "Article 5(1)(f) prohibits inferring emotions in the workplace. The application procedure belongs to this area; the provision protects not only employees but the workplace context. The exception for medical or safety reasons does not apply. This means the emotion analysis part is not merely impermissible — it is prohibited, whereas the pre-selection as such would merely be high-risk under Annex III, point 4. Article 50(3) must also be borne in mind, which provides for an information obligation for permitted emotion recognition systems; it does not permit any use that is prohibited under Article 5.\n"
+    legal_basis: [AI-Act/art-5/para-1-f, AI-Act/art-5, AI-Act/art-50/para-3, AI-Act/annex-III/pt-4, AI-Act/art-99]
+    obligations:
+      - de: "Die Gefühlsauswertung abschalten; die Aufzeichnungen der ausgewerteten Merkmale löschen."
+        en: "Switch off the emotion analysis; delete the records of the evaluated characteristics."
+      - de: "Die verbleibende fachliche Vorauswahl als Hochrisiko-Einsatz behandeln und deren Pflichten erfüllen."
+        en: "Treat the remaining professional pre-selection as a high-risk use and fulfil its obligations."
+      - de: "Bewerber über den Einsatz des verbleibenden Systems informieren."
+        en: "Inform applicants about the use of the remaining system."
+      - de: "Im Einkauf künftig ausschließen lassen, dass Auswertungen von Mimik und Stimme enthalten sind."
+        en: "In future procurement, have it excluded that evaluations of facial expressions and voice are included."
+    learning_note:
+      de: "Ein Vorhaben kann aus mehreren Teilen bestehen, die verschieden einzustufen sind — und der verbotene Teil macht nicht das Ganze verboten, sondern muss heraus. Danach bleibt der Rest zu prüfen, hier als Hochrisiko-Einsatz. Diese Zerlegung ist der richtige Umgang mit zusammengesetzten Systemen: Nicht das Produkt einstufen, sondern seine Funktionen, und dann die unzulässige entfernen statt das Ganze zu verteidigen.\n"
+      en: "A project can consist of several parts that are to be classified differently — and the prohibited part does not make the whole prohibited, but has to come out. After that, the rest remains to be checked, here as a high-risk use. This decomposition is the right way to deal with composite systems: classify not the product but its functions, and then remove the impermissible one instead of defending the whole.\n"
+    pitfall:
+      de: "Das Unternehmen verlässt sich darauf, dass Artikel 50 Absatz 3 eine Informationspflicht für Emotionserkennung vorsieht, und schließt daraus, der Einsatz sei mit Information zulässig. Diese Vorschrift gilt nur für Einsätze, die nicht schon nach Artikel 5 verboten sind.\n"
+      en: "The company relies on Article 50(3) providing an information obligation for emotion recognition, and concludes from this that the use is permissible with information. This provision applies only to uses that are not already prohibited under Article 5.\n"
+    related_cases: [call-center-emotion-recognition, application-screening-llm, remote-exam-proctoring]

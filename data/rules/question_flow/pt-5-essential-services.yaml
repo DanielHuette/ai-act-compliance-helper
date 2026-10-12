@@ -1,0 +1,1116 @@
+area: "AI-Act/annex-III/pt-5"
+title:
+  de: "Zugang zu grundlegenden privaten und öffentlichen Diensten"
+  en: "Access to essential private and public services"
+source:
+  de: "Entwurf der Leitlinien der Kommission vom 19.05.2026, Anhang III, Abschnitt 3.5"
+  en: "Draft Commission guidelines of 19 May 2026, Annex III, section 3.5"
+source_ref_hint:
+  de: "Die amtlichen Absätze sind durchnummeriert und werden so zitiert, etwa (283). Die Beispiellisten im amtlichen Text tragen keine eigene Nummer; sie werden mit der letzten davorstehenden Absatznummer zitiert, etwa (nach 293)."
+  en: "The official paragraphs are numbered consecutively and are cited as such, for example (283). The lists of examples in the official text have no number of their own; they are cited with the last preceding paragraph number, for example (after 293)."
+provisions:
+  - citation: "AI-Act/annex-III/pt-5-a"
+    main_question:
+      de: "Soll Ihr System von einer Behörde oder in deren Auftrag eingesetzt werden, um zu prüfen, ob einzelne Menschen Anspruch auf staatliche Unterstützungsleistungen haben, oder um solche Leistungen zu gewähren, zu kürzen, zu entziehen oder zurückzufordern?"
+      en: "Is your system intended to be used by a public authority or on its behalf to evaluate whether individual persons are eligible for public assistance benefits, or to grant, reduce, revoke or reclaim such benefits?"
+    follow_up_questions:
+      - question:
+          de: "Wird Ihr System von einer Behörde selbst oder von einem Dienstleister im Auftrag einer Behörde eingesetzt?"
+          en: "Is your system used by a public authority itself or by a service provider on behalf of a public authority?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(283)"
+      - question:
+          de: "Gehört die Stelle, die das System einsetzt, zur staatlichen Verwaltung - oder erfüllt sie Aufgaben im öffentlichen Interesse mit besonderen Befugnissen, die ein gewöhnliches Privatunternehmen nicht hat?"
+          en: "Does the body using the system belong to the state administration - or does it perform tasks in the public interest with special powers that an ordinary private company does not have?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(286)"
+      - question:
+          de: "Geht es um Leistungen, die Menschen brauchen, um am gesellschaftlichen Leben voll teilzunehmen oder ihren Lebensstandard zu verbessern - etwa Gesundheitsleistungen, Sozialleistungen oder soziale Dienste?"
+          en: "Is it about benefits that people need in order to participate fully in society or to improve their standard of living - for example healthcare services, social security benefits or social services?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(288)"
+      - question:
+          de: "Geht es ausschließlich um einen Steuererlass oder eine Steuervergünstigung und nicht um eine Leistung oder einen Dienst als solchen?"
+          en: "Is it exclusively about a tax relief or a tax advantage and not about a benefit or a service as such?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(289)"
+      - question:
+          de: "Prüft Ihr System ausschließlich Anträge oder Kostenerstattungen von Firmen und nicht von einzelnen Menschen?"
+          en: "Does your system examine exclusively applications or reimbursement claims from companies and not from individual persons?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(nach 293)"
+      - question:
+          de: "Prüft Ihr System, ob ein einzelner Mensch die Leistung bekommen kann - oder in welcher Höhe er sie bekommt?"
+          en: "Does your system evaluate whether an individual person can receive the benefit - or in what amount they receive it?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(290)"
+      - question:
+          de: "Entscheidet oder empfiehlt Ihr System, eine Leistung zu gewähren, abzulehnen, zu kürzen, zu entziehen oder zurückzufordern?"
+          en: "Does your system decide or recommend to grant, refuse, reduce, revoke or reclaim a benefit?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(291)"
+      - question:
+          de: "Legt Ihr System eine Reihenfolge oder Dringlichkeit fest, wer eine knappe Leistung zuerst oder überhaupt bekommt?"
+          en: "Does your system determine an order or urgency for who receives a scarce benefit first or at all?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(nach 293)"
+      - question:
+          de: "Markiert Ihr System Anträge wegen Unstimmigkeiten, Fehlern oder Betrugshinweisen, damit ein Mensch sie genauer prüft?"
+          en: "Does your system flag applications for inconsistencies, errors or indications of fraud so that a human examines them more closely?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(nach 293)"
+      - question:
+          de: "Beantwortet Ihr System rechtliche Fragen eines Sachbearbeiters, die auf den einzelnen Fall zugeschnitten sind und auf die sich dessen Entscheidung stützt?"
+          en: "Does your system answer a caseworker's legal questions that are tailored to the individual case and on which the caseworker's decision is based?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(nach 293)"
+      - question:
+          de: "Bewertet Ihr System die Zahlungsfähigkeit eines Menschen, um damit dessen Anspruch auf eine staatliche Unterstützungsleistung zu prüfen?"
+          en: "Does your system evaluate a person's creditworthiness in order to assess their eligibility for a public assistance benefit?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(296)"
+      - question:
+          de: "Teilt Ihr System lediglich mit, welche Stelle oder welche Person den Antrag weiter bearbeiten soll, ohne den Anspruch selbst zu bewerten?"
+          en: "Does your system merely indicate which body or which person should further process the application, without evaluating the eligibility itself?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(nach 293)"
+      - question:
+          de: "Benennt Ihr System nur Menschen mit Vorsorgebedarf, ohne deren Anspruch zu prüfen, und wird das Ergebnis auch nicht genutzt, um Zugang zu priorisieren oder auszuschließen?"
+          en: "Does your system merely identify people in need of preventive care, without evaluating their eligibility, and is the result also not used to prioritise or exclude access?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(nach 293)"
+      - question:
+          de: "Schlägt Ihr System nur passende Hilfsangebote vor und füllt Anträge vor, ohne einen Anspruch zu bewerten?"
+          en: "Does your system merely suggest suitable support offers and pre-fill applications, without evaluating any eligibility?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(nach 293)"
+    covered:
+      - text:
+          de: "Einsatz durch eine Behörde oder in ihrem Auftrag, um den Anspruch einzelner Menschen auf grundlegende öffentliche Unterstützungsleistungen und -dienste einschließlich Gesundheitsleistungen zu prüfen."
+          en: "Use by a public authority or on its behalf to evaluate the eligibility of individual persons for essential public assistance benefits and services, including healthcare services."
+        source_ref: "(283)"
+      - text:
+          de: "Einsatz durch eine Behörde oder in ihrem Auftrag, um solche Leistungen zu gewähren, zu kürzen, zu entziehen oder zurückzufordern."
+          en: "Use by a public authority or on its behalf to grant, reduce, revoke or reclaim such benefits and services."
+        source_ref: "(283)"
+      - text:
+          de: "Auch die Ablehnung einer Leistung gehört dazu, obwohl sie in Nummer 5 Buchstabe a nicht ausdrücklich genannt ist."
+          en: "The refusal of a benefit is also included, even though it is not expressly mentioned in point 5(a)."
+        source_ref: "(291)"
+      - text:
+          de: "Behörden sind Stellen der öffentlichen Verwaltung oder Vollziehung auf jeder Ebene, ebenso durch den Staat gegründete juristische Personen des öffentlichen Rechts, ferner Stellen privaten oder öffentlichen Rechts, die Dienste im öffentlichen Interesse erbringen und dafür mit besonderen Befugnissen ausgestattet sind, sowie Einrichtungen und Agenturen der Europäischen Union."
+          en: "Public authorities are bodies of public administration or enforcement at any level, as well as legal persons governed by public law established by the state, furthermore bodies governed by private or public law that provide services in the public interest and are vested with special powers for that purpose, as well as Union institutions, bodies, offices and agencies."
+        source_ref: "(286)"
+      - text:
+          de: "Grundlegende öffentliche Unterstützungsleistungen sind Leistungen, für die Menschen sich bewerben oder die sie erhalten und die notwendig sind, um voll an der Gesellschaft teilzunehmen oder den Lebensstandard zu verbessern."
+          en: "Essential public assistance benefits are benefits for which people apply or which they receive and which are necessary to participate fully in society or to improve their standard of living."
+        source_ref: "(288)"
+      - text:
+          de: "Dazu zählen Gesundheitsleistungen einschließlich Langzeitpflege."
+          en: "These include healthcare services including long-term care."
+        source_ref: "(288)"
+      - text:
+          de: "Dazu zählen Leistungen der sozialen Sicherheit: Krankengeld, Mutterschafts- und entsprechende Vaterschaftsleistungen, Invaliditätsleistungen, Altersleistungen, Leistungen an Hinterbliebene, Leistungen bei Arbeitsunfall und Berufskrankheit, Sterbegeld, Leistungen bei Arbeitslosigkeit, Vorruhestandsleistungen, Familienleistungen, Leistungen bei Pflegebedarf, Mindesteinkommensleistungen, Wohngeld sowie Leistungen für den Zugang zu Wasser, Energie und digitaler Kommunikation."
+          en: "These include social security benefits: sickness benefits, maternity and equivalent paternity benefits, invalidity benefits, old-age benefits, survivors' benefits, benefits in respect of accidents at work and occupational diseases, death grants, unemployment benefits, pre-retirement benefits, family benefits, long-term care benefits, minimum income benefits, housing benefit and benefits for access to water, energy and digital communications."
+        source_ref: "(288)"
+      - text:
+          de: "Dazu zählen soziale Dienste: Sozialhilfedienste, Arbeits- und Weiterbildungsdienste, Wohnhilfe und Sozialwohnungen, Kinderbetreuung."
+          en: "These include social services: social assistance services, employment and training services, housing support and social housing, childcare."
+        source_ref: "(288)"
+      - text:
+          de: "Die Anspruchsprüfung umfasst auch die Höhe der Leistung und kann vor oder nach einer vorläufigen Entscheidung erfolgen."
+          en: "The eligibility evaluation also covers the amount of the benefit and can take place before or after a provisional decision."
+        source_ref: "(290)"
+      - text:
+          de: "Ein System, das ausschließlich den Anspruch prüft, ist auch dann erfasst, wenn es über das Gewähren oder Ablehnen nicht entscheidet."
+          en: "A system that exclusively evaluates eligibility is covered even if it does not decide on granting or refusing."
+        source_ref: "(292)"
+      - text:
+          de: "Ein System, das ausschließlich gewährt, ablehnt, kürzt, entzieht oder zurückfordert, ist auch dann erfasst, wenn es den Anspruch nicht vorher geprüft hat."
+          en: "A system that exclusively grants, refuses, reduces, revokes or reclaims is covered even if it has not previously evaluated eligibility."
+        source_ref: "(292)"
+      - text:
+          de: "Auch das Gewähren nach positiver Anspruchsprüfung ist erfasst, und ebenso, wenn die Prüfung falsch war."
+          en: "Granting after a positive eligibility evaluation is also covered, as is the case where the evaluation was wrong."
+        source_ref: "(293)"
+      - text:
+          de: "Wird die Zahlungsfähigkeit geprüft, um den Anspruch auf eine öffentliche Unterstützungsleistung zu bewerten, gehört das System zu Nummer 5 Buchstabe a."
+          en: "If creditworthiness is evaluated in order to assess eligibility for a public assistance benefit, the system belongs to point 5(a)."
+        source_ref: "(296)"
+    not_covered:
+      - text:
+          de: "Öffentliche Fördermaßnahmen, die selbst keine Leistung oder kein Dienst sind - zum Beispiel ein Steuererlass, auch wenn er Geld bringt."
+          en: "Public support measures that are not themselves a benefit or a service - for example a tax relief, even if it brings money."
+        source_ref: "(289)"
+      - text:
+          de: "Prüfung von Anträgen oder Kostenerstattungen von Firmen, weil keine Anträge einzelner Menschen bewertet werden."
+          en: "Examination of applications or reimbursement claims from companies, because no applications from individual persons are evaluated."
+        source_ref: "(nach 293)"
+      - text:
+          de: "Reine Zuweisung, welche Stelle oder welcher Mitarbeiter einen Antrag weiter bearbeitet, ohne Bewertung des Anspruchs."
+          en: "Mere assignment of which body or which employee further processes an application, without evaluation of eligibility."
+        source_ref: "(nach 293)"
+      - text:
+          de: "Benennen von Menschen mit Vorsorgebedarf ohne Anspruchsprüfung, sofern das Ergebnis nicht genutzt wird, um Zugang zu priorisieren, auszuschließen oder sonst zu beeinflussen."
+          en: "Identifying people in need of preventive care without eligibility evaluation, provided that the result is not used to prioritise, exclude or otherwise influence access."
+        source_ref: "(nach 293)"
+      - text:
+          de: "Zuordnen von Menschen zu passenden öffentlichen Hilfsangeboten mit anonymisierten Daten samt Vorschlag und Vorbefüllen von Anträgen, ohne Anspruchsprüfung."
+          en: "Matching people with suitable public support offers using anonymised data, including suggesting and pre-filling applications, without eligibility evaluation."
+        source_ref: "(nach 293)"
+    examples:
+      - scenario:
+          de: "Ein System entscheidet im Einzelfall über Arbeitslosengeld, prüft wer wie lange und in welcher Höhe Anspruch hat und empfiehlt das dem Sachbearbeiter."
+          en: "A system decides in individual cases on unemployment benefit, evaluates who is eligible, for how long and in what amount, and recommends this to the caseworker."
+        verdict: "high_risk"
+        rationale:
+          de: "Es prüft den Anspruch und empfiehlt Gewähren oder Ablehnen."
+          en: "It evaluates eligibility and recommends granting or refusal."
+        source_ref: "(nach 293)"
+      - scenario:
+          de: "Ein System verarbeitet Sozialleistungsanträge, gleicht sie mit externen Datenbanken ab und erzeugt daraus eine Entscheidung über den Anspruch."
+          en: "A system processes social benefit applications, cross-checks them against external databases and generates a decision on eligibility from them."
+        verdict: "high_risk"
+        rationale:
+          de: "Es prüft den Anspruch und erzeugt die Entscheidung darüber."
+          en: "It evaluates eligibility and generates the decision on it."
+        source_ref: "(nach 293)"
+      - scenario:
+          de: "Ein Punktesystem einer Verwaltung sagt aus demografischen, Verhaltens- und Finanzdaten die Wahrscheinlichkeit von Betrug oder dauerhafter Abhängigkeit voraus und wird für Sozialwohnungen oder Arbeitslosengeld genutzt."
+          en: "A scoring system of an administration predicts the likelihood of fraud or long-term dependency from demographic, behavioural and financial data and is used for social housing or unemployment benefit."
+        verdict: "high_risk"
+        rationale:
+          de: "Es hilft bei der Anspruchsprüfung und beeinflusst die Entscheidung über den Erhalt wesentlich."
+          en: "It assists in the eligibility evaluation and substantially influences the decision on receipt."
+        source_ref: "(nach 293)"
+      - scenario:
+          de: "Ein System bewertet Bewerbungen um Sozialwohnungen nach Einkommen, Haushaltsgröße, Alter, Erwerbsstatus und Wohnort und bildet daraus Dringlichkeit und Reihenfolge."
+          en: "A system evaluates applications for social housing according to income, household size, age, employment status and place of residence and derives urgency and order from them."
+        verdict: "high_risk"
+        rationale:
+          de: "Es wirkt sich unmittelbar auf den Zugang zu grundlegenden Wohnleistungen aus."
+          en: "It has a direct effect on access to essential housing benefits."
+        source_ref: "(nach 293)"
+      - scenario:
+          de: "Ein System verteilt begrenzte Stunden häuslicher Pflege unter anspruchsberechtigten Menschen und legt die Reihenfolge fest."
+          en: "A system distributes limited hours of home care among eligible persons and determines the order."
+        verdict: "high_risk"
+        rationale:
+          de: "Es beeinflusst den Zugang zu grundlegenden Pflegeleistungen wesentlich."
+          en: "It substantially influences access to essential care benefits."
+        source_ref: "(nach 293)"
+      - scenario:
+          de: "Ein System durchsucht Anträge auf Krankengeld nach Unstimmigkeiten und Betrugshinweisen und markiert einzelne zur Prüfung durch einen Sachbearbeiter."
+          en: "A system searches applications for sickness benefit for inconsistencies and indications of fraud and flags individual ones for examination by a caseworker."
+        verdict: "high_risk"
+        rationale:
+          de: "Die Markierung entscheidet über genauere Prüfung, Verzögerung, Aussetzung oder möglicherweise Ablehnung und wirkt damit auf den Zugang."
+          en: "The flag decides on closer examination, delay, suspension or possibly refusal and thus affects access."
+        source_ref: "(nach 293)"
+      - scenario:
+          de: "Ein Chatbot beantwortet rechtliche Fragen eines Sachbearbeiters, zugeschnitten auf den einzelnen Pflegeleistungsfall; der Sachbearbeiter entscheidet weiter selbst."
+          en: "A chatbot answers a caseworker's legal questions, tailored to the individual case of a care benefit; the caseworker still takes the decision personally."
+        verdict: "high_risk"
+        rationale:
+          de: "Die Entscheidung über den Anspruch wird durch die rechtlichen Antworten wesentlich beeinflusst."
+          en: "The decision on eligibility is substantially influenced by the legal answers."
+        source_ref: "(nach 293)"
+      - scenario:
+          de: "Ein System bewertet Anträge auf Gesundheitsleistungen vor und bestimmt damit, ob eine externe Stelle sie vertieft prüft; die Weiterleitung spricht ein Sachbearbeiter aus."
+          en: "A system pre-assesses applications for healthcare services and thereby determines whether an external body examines them in depth; the referral is made by a caseworker."
+        verdict: "high_risk"
+        rationale:
+          de: "Die Vorbewertung ist der entscheidende Schritt für die weitere Prüfung und damit für den Zugang zu Gesundheitsleistungen."
+          en: "The pre-assessment is the decisive step for further examination and thus for access to healthcare services."
+        source_ref: "(nach 293)"
+      - scenario:
+          de: "Ein System einer Behörde lädt Menschen auf Grundlage von Bevölkerungsgruppen zur Vorsorgeuntersuchung ein, etwa zur Mammographie, und prüft dabei auch den Anspruch darauf."
+          en: "A system of a public authority invites people to screening examinations on the basis of population groups, for example mammography, and in doing so also evaluates eligibility for them."
+        verdict: "high_risk"
+        rationale:
+          de: "Es prüft den Anspruch auf eine Gesundheitsleistung, auch wenn das über eine Einladung von sich aus geschieht."
+          en: "It evaluates eligibility for a healthcare service, even if this happens on its own initiative by way of an invitation."
+        source_ref: "(nach 293)"
+      - scenario:
+          de: "Ein System benennt Menschen mit Bedarf an Vorsorge, prüft aber keinen Anspruch, und sein Ergebnis wird nicht zur Priorisierung oder zum Ausschluss genutzt."
+          en: "A system identifies people in need of preventive care but does not evaluate eligibility, and its result is not used for prioritisation or exclusion."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es bestimmt keinen Anspruch der benannten Menschen."
+          en: "It does not determine any eligibility of the identified persons."
+        source_ref: "(nach 293)"
+      - scenario:
+          de: "Ein System teilt nur mit, welche Stelle einen Antrag auf grundlegende Unterstützungsleistungen weiter bearbeiten soll."
+          en: "A system merely indicates which body should further process an application for essential assistance benefits."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es empfiehlt nur den Bearbeiter, ohne den Anspruch zu bewerten."
+          en: "It only recommends the person handling the case, without evaluating eligibility."
+        source_ref: "(nach 293)"
+      - scenario:
+          de: "Ein System prüft Kostenerstattungsanträge von Firmen, nicht von einzelnen Menschen."
+          en: "A system examines reimbursement claims from companies, not from individual persons."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es bewertet keine Anträge einzelner Menschen."
+          en: "It does not evaluate applications from individual persons."
+        source_ref: "(nach 293)"
+      - scenario:
+          de: "Ein Chatbot beantwortet Sachfragen eines Sachbearbeiters zum Antrag auf Gesundheitsleistungen, etwa das Alter der Person, und gibt vorhandene Angaben nur geordnet wieder; der Sachbearbeiter muss sie prüfen."
+          en: "A chatbot answers a caseworker's factual questions about an application for healthcare services, for example the person's age, and merely reproduces existing information in an organised form; the caseworker has to check it."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Der Fall gehört in den Anwendungsfall, ist aber als enge Verfahrensaufgabe nach Artikel 6 Absatz 3 Buchstaben a und d ausgenommen."
+          en: "The case falls within the use case but is exempt as a narrow procedural task under Article 6(3)(a) and (d)."
+        source_ref: "(nach 293)"
+      - scenario:
+          de: "Ein System fasst Arztberichte zusammen, die Grundlage der Entscheidung über Gesundheitsleistungen sind; der Sachbearbeiter muss die Berichte selbst durchsehen."
+          en: "A system summarises medical reports on which the decision on healthcare services is based; the caseworker has to review the reports themselves."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Der Fall gehört in den Anwendungsfall, ist aber als enge Verfahrensaufgabe nach Artikel 6 Absatz 3 Buchstaben a und d ausgenommen."
+          en: "The case falls within the use case but is exempt as a narrow procedural task under Article 6(3)(a) and (d)."
+        source_ref: "(nach 293)"
+      - scenario:
+          de: "Ein System übersetzt fremdsprachige Anträge auf öffentliche Unterstützungsdienste."
+          en: "A system translates applications for public assistance services written in foreign languages."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Der Fall gehört in den Anwendungsfall, doch die Übersetzung ist ein unvermeidlicher, aber für die Anspruchsprüfung nicht entscheidender Schritt und nach Artikel 6 Absatz 3 Buchstaben a und d ausgenommen."
+          en: "The case falls within the use case, but translation is an unavoidable step that is not decisive for the eligibility evaluation and is exempt under Article 6(3)(a) and (d)."
+        source_ref: "(nach 293)"
+      - scenario:
+          de: "Ein System wandelt das Gespräch zwischen Sachbearbeiter und Antragsteller in Text um und fasst es zusammen; der Sachbearbeiter ist dabei und kann die Zusammenfassung prüfen."
+          en: "A system converts the conversation between caseworker and applicant into text and summarises it; the caseworker is present and can check the summary."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Der Fall gehört in den Anwendungsfall, doch das Ergebnis ist nur unterstützend und nicht entscheidend und nach Artikel 6 Absatz 3 Buchstaben a und d ausgenommen."
+          en: "The case falls within the use case, but the result is only supportive and not decisive and is exempt under Article 6(3)(a) and (d)."
+        source_ref: "(nach 293)"
+
+  - citation: "AI-Act/annex-III/pt-5-b"
+    main_question:
+      de: "Soll Ihr System bewerten, ob ein einzelner Mensch seine Zahlungen leisten kann und will, oder dafür einen Punktwert bilden?"
+      en: "Is your system intended to evaluate whether an individual person is able and willing to make their payments, or to establish a credit score for this?"
+    follow_up_questions:
+      # What matters is not WHO is evaluated but WHICH data
+      # are used. Paragraph (73) expressly exempts the credit score for the owner
+      # of a small business if the system uses only business
+      # and company data - even though the owner is a natural
+      # person. Without this question, exactly this official case was
+      # output as high-risk.
+      - question:
+          de: "Verwendet Ihr System ausschliesslich Betriebs- und Firmendaten - Bilanzen, Jahresabschluesse, Umsaetze - und nicht die persoenlichen Finanzen eines Menschen?"
+          en: "Does your system use exclusively business and company data - balance sheets, annual financial statements, turnover - and not the personal finances of a person?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(73)"
+      - question:
+          de: "Bewertet Ihr System die Fähigkeit und Bereitschaft eines einzelnen Menschen, für Leistungen zu zahlen oder einen Kredit zurückzuzahlen?"
+          en: "Does your system evaluate the ability and willingness of an individual person to pay for services or to repay a loan?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(296)"
+      - question:
+          de: "Bildet Ihr System eine Zahl, eine Rangfolge oder ein Etikett, das die Zahlungsfähigkeit eines einzelnen Menschen abbildet?"
+          en: "Does your system produce a number, a ranking or a label that reflects the creditworthiness of an individual person?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(297)"
+      - question:
+          de: "Bewertet Ihr System ausschließlich Firmen und keine einzelnen Menschen?"
+          en: "Does your system evaluate exclusively companies and no individual persons?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(298)"
+      - question:
+          de: "Ist die Aufdeckung von Finanzbetrug der Hauptzweck Ihres Systems, der allen anderen Zwecken vorgeht - etwa weil es vor allem Muster und Auffälligkeiten erkennt und nicht die Rückzahlungsfähigkeit beurteilt?"
+          en: "Is the detection of financial fraud the main purpose of your system, taking precedence over all other purposes - for example because it mainly detects patterns and anomalies and does not assess the ability to repay?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(307)"
+      - question:
+          de: "Dient Ihr System der Bekämpfung von Geldwäsche oder Terrorismusfinanzierung und ist es zugleich funktional verbunden dafür gedacht, die Zahlungsfähigkeit zu bewerten oder einen Punktwert zu bilden?"
+          en: "Is your system used to combat money laundering or terrorist financing and is it at the same time, in a functionally connected way, intended to evaluate creditworthiness or to establish a credit score?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(309)"
+      - question:
+          de: "Berechnet Ihr System ausschließlich Preise oder Zinssätze, ohne selbst die Zahlungsfähigkeit zu bewerten oder einen Punktwert zu bilden?"
+          en: "Does your system calculate exclusively prices or interest rates, without itself evaluating creditworthiness or establishing a credit score?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(300)"
+      - question:
+          de: "Vereint Ihr System beides in einem durchgehenden Vorgang - die Bewertung der Zahlungsfähigkeit und die Preisbildung für den Kredit?"
+          en: "Does your system combine both in one continuous process - the evaluation of creditworthiness and the pricing of the loan?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(300)"
+      - question:
+          de: "Soll das Ergebnis darüber mitentscheiden, ob ein Mensch an Geldmittel oder an grundlegende Dienste wie Wohnen, Strom oder Telekommunikation kommt?"
+          en: "Is the result intended to help decide whether a person gets access to financial resources or to essential services such as housing, electricity or telecommunications?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(297)"
+      - question:
+          de: "Geht es um einen Bankkontozugang, um Zahlungsdienste, um Kredite und Darlehen, um die Erhöhung einer Kreditlinie oder eines Kartenlimits, um eine Hypothek oder um öffentliche Finanzdienste?"
+          en: "Is it about access to a bank account, payment services, loans and credit, an increase in a credit line or a card limit, a mortgage or public financial services?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(302)"
+      - question:
+          de: "Geht es ausschließlich um Aktien und Wertpapiere, um Wertpapierkredite, um komplexe Finanzinstrumente, um Premium-Kreditkarten oder um Sonderdarlehen wie Urlaubs- und Reisekredite?"
+          en: "Is it exclusively about shares and securities, margin lending, complex financial instruments, premium credit cards or special loans such as holiday and travel loans?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(304)"
+      - question:
+          de: "Soll Ihr System sowohl für grundlegende als auch für nicht grundlegende private Dienste eingesetzt werden?"
+          en: "Is your system intended to be used for both essential and non-essential private services?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(305)"
+      - question:
+          de: "Wird Ihr Punktwert an Dritte weitergegeben, die damit über Kredit, Hypothek, Wohnung, Gesundheitsversorgung oder Telekommunikation entscheiden?"
+          en: "Is your credit score passed on to third parties who use it to decide on credit, a mortgage, housing, healthcare or telecommunications?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(nach 309)"
+      - question:
+          de: "Überwacht Ihr System ausschließlich bereits vergebene Kredite für innerbetriebliche Aufsichtszwecke, also um Risiken zu verfolgen und früh Zahlungsschwierigkeiten zu erkennen?"
+          en: "Does your system exclusively monitor loans already granted for internal supervisory purposes, that is, to track risks and to detect payment difficulties early?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(nach 309)"
+      - question:
+          de: "Bewertet Ihr System ausschließlich die Sicherheit für einen Kredit, also deren Eigenschaften, Risiken oder Verkäuflichkeit?"
+          en: "Does your system evaluate exclusively the collateral for a loan, that is, its characteristics, risks or marketability?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(nach 309)"
+      - question:
+          de: "Hilft Ihr System den Antragstellern ausschließlich beim Verstehen und Ausfüllen des Kreditantrags, ohne Teil der eigentlichen Bewertung zu sein?"
+          en: "Does your system help applicants exclusively to understand and fill in the loan application, without being part of the actual evaluation?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(nach 309)"
+      - question:
+          de: "Bearbeitet Ihr System ausschließlich Beschwerden nach einer Entscheidung über Kredit, Lebens- oder Krankenversicherung, ohne dabei selbst die Zahlungsfähigkeit zu bewerten?"
+          en: "Does your system exclusively handle complaints after a decision on credit, life or health insurance, without itself evaluating creditworthiness?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(nach 309)"
+      - question:
+          de: "Teilt Ihr System Kunden nur ein, um zu informieren, Eignung von Produkten zu prüfen oder Werbung zuzuschneiden, ohne an der Bewertung der Zahlungsfähigkeit mitzuwirken?"
+          en: "Does your system segment customers only in order to inform them, to check the suitability of products or to tailor advertising, without taking part in the evaluation of creditworthiness?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(nach 309)"
+      - question:
+          de: "Berechnet Ihr System ausschließlich die Eigenmittelanforderungen der Bank oder des Versicherers nach dem auf internen Beurteilungen beruhenden Ansatz, ohne auch für die Bewertung der Zahlungsfähigkeit oder für Punktwerte einzelner Menschen gedacht zu sein?"
+          en: "Does your system calculate exclusively the own funds requirements of the bank or insurer under the Internal Ratings-Based Approach, without also being intended for the evaluation of creditworthiness or for credit scores of individual persons?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(323)"
+    covered:
+      - text:
+          de: "Systeme, die die Zahlungsfähigkeit einzelner Menschen bewerten, also ihre Fähigkeit und Bereitschaft, vertragliche Zahlungspflichten für erbrachte Leistungen oder einen gewährten Kredit zu erfüllen."
+          en: "Systems that evaluate the creditworthiness of individual persons, that is, their ability and willingness to meet contractual payment obligations for services rendered or a loan granted."
+        source_ref: "(296)"
+      - text:
+          de: "Systeme, die einen Punktwert bilden, also die Zahlungsfähigkeit eines Menschen abbilden; die Form kann eine Zahl, eine Rangfolge oder ein Etikett sein."
+          en: "Systems that establish a credit score, that is, reflect the creditworthiness of a person; the form can be a number, a ranking or a label."
+        source_ref: "(297)"
+      - text:
+          de: "Einer der beiden Zwecke genügt; das System muss keinen Preis und keinen Zinssatz berechnen."
+          en: "One of the two purposes is sufficient; the system does not have to calculate a price or an interest rate."
+        source_ref: "(299)"
+      - text:
+          de: "Wird ein Punktwert gebildet, um Zugang zu Geldmitteln oder zu grundlegenden Diensten wie Wohnen, Strom und Telekommunikation zu bestimmen, ist das System unabhängig von weiteren Zwecken erfasst; die Prüfung der Anforderungen beschränkt sich dann auf diesen Zweck."
+          en: "If a credit score is established in order to determine access to financial resources or to essential services such as housing, electricity and telecommunications, the system is covered regardless of further purposes; the examination of the requirements is then limited to this purpose."
+        source_ref: "(297)"
+      - text:
+          de: "Grundlegende Finanzdienste sind nur solche, die den folgenden gleich oder ähnlich sind: Bereitstellung eines Bankkontos, Zahlungsdienste einschließlich eines Kredits als Nebenleistung zur Abwicklung wie eine vorübergehende Überziehung, Angebot von Darlehen und Krediten, Angebot der Erhöhung einer Kreditlinie oder eines Kreditkartenlimits, Angebot einer Hypothek sowie öffentliche Finanzdienste."
+          en: "Essential financial services are only those that are the same as or similar to the following: provision of a bank account, payment services including credit as an ancillary service to the execution such as a temporary overdraft, offering of loans and credit, offering of an increase in a credit line or a credit card limit, offering of a mortgage and public financial services."
+        source_ref: "(302)"
+      - text:
+          de: "Öffentliche Finanzdienste mit Kreditbestandteil gelten ebenfalls als grundlegende private Dienste - etwa geförderte zinsgünstige oder zinsfreie Darlehen für Ersterwerber von Wohneigentum oder für Sanierungen, Darlehen für von Ausschluss bedrohte Gruppen, Studienförderung und soziale Kleinstkredite, Garantien und rückzahlbare Vorschüsse."
+          en: "Public financial services with a credit component are also considered essential private services - for example subsidised low-interest or interest-free loans for first-time home buyers or for renovations, loans for groups at risk of exclusion, student financing and social microcredit, guarantees and repayable advances."
+        source_ref: "(303)"
+      - text:
+          de: "Ist das System für grundlegende und für nicht grundlegende private Dienste gedacht, ist es erfasst; der Anbieter muss gegenüber der Marktaufsicht belegen, dass es ausschließlich für nicht grundlegende Dienste gedacht ist."
+          en: "If the system is intended for essential and for non-essential private services, it is covered; the provider must demonstrate to the market surveillance authority that it is intended exclusively for non-essential services."
+        source_ref: "(305)"
+      - text:
+          de: "Ein System, das die Bewertung der Zahlungsfähigkeit und die Kreditpreisbildung in einem durchgehenden Vorgang vereint, ist erfasst."
+          en: "A system that combines the evaluation of creditworthiness and credit pricing in one continuous process is covered."
+        source_ref: "(300)"
+      - text:
+          de: "Der Betreiber des Systems muss nicht derselbe sein wie die Stelle, die den Punktwert für ihre Entscheidung verwendet."
+          en: "The deployer of the system does not have to be the same as the body that uses the credit score for its decision."
+        source_ref: "(nach 309)"
+      - text:
+          de: "Ein System zur Bekämpfung von Geldwäsche oder Terrorismusfinanzierung ist erfasst, wenn es funktional verbunden und zugleich für die Bewertung der Zahlungsfähigkeit oder für einen Punktwert gedacht ist."
+          en: "A system for combating money laundering or terrorist financing is covered if it is functionally connected and at the same time intended for the evaluation of creditworthiness or for a credit score."
+        source_ref: "(309)"
+      - text:
+          de: "Ein System, das zugleich für aufsichtsrechtliche Zwecke zur Berechnung der Eigenmittelanforderungen gedacht ist, bleibt erfasst, denn ausgenommen ist allein die Aufdeckung von Finanzbetrug."
+          en: "A system that is also intended for prudential purposes to calculate own funds requirements remains covered, because only the detection of financial fraud is excluded."
+        source_ref: "(322)"
+      - text:
+          de: "Für die Einstufung kommt es nicht auf den Hauptzweck an; genügt einer der Zwecke dem Anwendungsfall, ist das System erfasst."
+          en: "For the classification, the main purpose is not decisive; if one of the purposes meets the use case, the system is covered."
+        source_ref: "(324)"
+    not_covered:
+      - text:
+          de: "Ausnahme Finanzbetrug: Systeme, die zur Aufdeckung von Finanzbetrug eingesetzt werden, gelten nicht als hochriskant - etwa Werkzeuge, die missbrauchte, gefälschte oder veränderte Ausweispapiere wie Personalausweise und Führerscheine oder gefälschte Einkommens- und Kontonachweise erkennen, oder die auffälliges Verhalten und verdächtige Muster in Kreditanträgen finden."
+          en: "Financial fraud exception: systems used to detect financial fraud are not considered high-risk - for example tools that detect misused, forged or altered identity documents such as identity cards and driving licences or forged proof of income and bank statements, or that find anomalous behaviour and suspicious patterns in loan applications."
+        source_ref: "(306)"
+      - text:
+          de: "Ausnahme Finanzbetrug: Sie greift nur, wenn die Betrugsaufdeckung der Hauptzweck ist und allen anderen Zwecken vorgeht - etwa wenn das System überwiegend Muster und Auffälligkeiten erkennt und nicht die Fähigkeit oder Bereitschaft zur Rückzahlung beurteilt."
+          en: "Financial fraud exception: it applies only if fraud detection is the main purpose and takes precedence over all other purposes - for example if the system predominantly detects patterns and anomalies and does not assess the ability or willingness to repay."
+        source_ref: "(307)"
+      - text:
+          de: "Ausnahme Finanzbetrug: Ist das System für die Betrugsaufdeckung gedacht, fällt es aus dem Anwendungsfall heraus, selbst wenn sein Ergebnis anschließend für die Bewertung der Zahlungsfähigkeit oder für den Punktwert genutzt wird."
+          en: "Financial fraud exception: if the system is intended for fraud detection, it falls outside the use case, even if its result is subsequently used for the evaluation of creditworthiness or for the credit score."
+        source_ref: "(308)"
+      - text:
+          de: "Die Ausnahme gilt nicht für Systeme gegen Geldwäsche und Terrorismusfinanzierung, denn diese Tätigkeiten sind in anderem Unionsrecht geregelt und betreffen keinen Finanzbetrug; solche Systeme sind nur insoweit außerhalb, als ihr vorgesehener Zweck die Bewertung der Zahlungsfähigkeit nicht umfasst."
+          en: "The exception does not apply to systems against money laundering and terrorist financing, because these activities are regulated in other Union law and do not concern financial fraud; such systems are only outside insofar as their intended purpose does not include the evaluation of creditworthiness."
+        source_ref: "(309)"
+      - text:
+          de: "Der Anwendungsfall erfasst nur die Bewertung der Zahlungsfähigkeit und den Punktwert einzelner Menschen; der Text stellt ausschließlich auf einzelne Menschen ab."
+          en: "The use case covers only the evaluation of creditworthiness and the credit score of individual persons; the text refers exclusively to individual persons."
+        source_ref: "(298)"
+      - text:
+          de: "Reine Preisbildung ist nicht erfasst, auch wenn sie Daten aus einer Bewertung der Zahlungsfähigkeit oder einem Punktwert verwendet."
+          en: "Mere pricing is not covered, even if it uses data from an evaluation of creditworthiness or a credit score."
+        source_ref: "(300)"
+      - text:
+          de: "Nicht grundlegende Finanzdienste: Erwerb von Aktien und Wertpapieren, Zugang zum Wertpapierkredit, Zugang zu komplexen Finanzinstrumenten, Premium-Kreditkarten und Sonderdarlehen wie Urlaubs- und Reisekredite."
+          en: "Non-essential financial services: acquisition of shares and securities, access to margin lending, access to complex financial instruments, premium credit cards and special loans such as holiday and travel loans."
+        source_ref: "(304)"
+      - text:
+          de: "Kundeneinteilung und zugeschnittene Werbung, solange die Einteilung nicht Teil der Bewertung der Zahlungsfähigkeit ist."
+          en: "Customer segmentation and tailored advertising, as long as the segmentation is not part of the evaluation of creditworthiness."
+        source_ref: "(nach 309)"
+      - text:
+          de: "Feine Kundensegmentierung zum Verständnis von Kundengruppen sowie Preissimulationen, sofern sie von dem System getrennt sind, das die Zahlungsfähigkeit bewertet."
+          en: "Fine-grained customer segmentation to understand customer groups as well as price simulations, provided that they are separate from the system that evaluates creditworthiness."
+        source_ref: "(nach 309)"
+      - text:
+          de: "Unterstützung der Antragsteller beim Verstehen oder Ausfüllen des Kreditantrags, einschließlich Rückmeldungen dazu, wie Angaben die Genehmigungsaussicht beeinflussen, sofern nicht Teil der Bewertung."
+          en: "Supporting applicants in understanding or filling in the loan application, including feedback on how information affects the prospects of approval, provided that it is not part of the evaluation."
+        source_ref: "(nach 309)"
+      - text:
+          de: "Bearbeitung von Beschwerden nach einer Entscheidung über Darlehen oder über Kranken- und Lebensversicherung, solange darin keine Bewertung der Zahlungsfähigkeit und kein Punktwert liegt."
+          en: "Handling of complaints after a decision on loans or on health and life insurance, as long as this does not involve an evaluation of creditworthiness or a credit score."
+        source_ref: "(nach 309)"
+      - text:
+          de: "Überwachung bereits vergebener Kredite allein für innerbetriebliche Aufsichtszwecke, also Verfolgen der Kreditentwicklung, Einschätzen des Kreditnehmerrisikos und frühes Erkennen von Zahlungsausfall oder finanzieller Not."
+          en: "Monitoring of loans already granted solely for internal supervisory purposes, that is, tracking credit performance, assessing borrower risk and detecting payment default or financial distress early."
+        source_ref: "(nach 309)"
+      - text:
+          de: "Bewertung der Sicherheit für einen Kredit, solange sich das System allein auf den Sicherungsgegenstand bezieht, etwa Eigenschaften, Risikofaktoren und Verkäuflichkeit."
+          en: "Evaluation of the collateral for a loan, as long as the system relates solely to the collateral asset, for example its characteristics, risk factors and marketability."
+        source_ref: "(nach 309)"
+      - text:
+          de: "Bewertung der Gewährung oder Erhöhung eines Wertpapierkredits für gehebelte Produkte, sofern allein für diesen nicht grundlegenden privaten Dienst gedacht, obwohl damit Zugang zu Geldmitteln bestimmt wird."
+          en: "Evaluation of the granting or increase of a margin loan for leveraged products, provided that it is intended solely for this non-essential private service, even though it determines access to financial resources."
+        source_ref: "(nach 309)"
+      - text:
+          de: "Ein System, das allein die risikogewichteten Forderungsbeträge von Darlehensbeständen einzelner Menschen nach dem auf internen Beurteilungen beruhenden Ansatz berechnet und nicht auch für Punktwerte oder die Bewertung der Zahlungsfähigkeit gedacht ist."
+          en: "A system that solely calculates the risk-weighted exposure amounts of loan portfolios of individual persons under the Internal Ratings-Based Approach and is not also intended for credit scores or the evaluation of creditworthiness."
+        source_ref: "(323)"
+      - text:
+          de: "Nutzt ein Haus für beide Aufgaben verschiedene Systeme, ist das System für die Eigenmittelberechnung nicht erfasst; erfasst ist dann allein das System für den Punktwert. Dasselbe gilt für interne Modelle von Versicherungsunternehmen."
+          en: "If an institution uses different systems for the two tasks, the system for calculating own funds is not covered; only the system for the credit score is then covered. The same applies to internal models of insurance undertakings."
+        source_ref: "(325)"
+    examples:
+      - scenario:
+          de: "Ein System bildet aus Zahlungsverhalten und Einkommen eine Kennzahl der Zahlungsfähigkeit und unterstützt damit die Entscheidung über einen Verbraucherkredit oder eine Hypothek."
+          en: "A system forms an indicator of creditworthiness from payment behaviour and income and thereby supports the decision on a consumer loan or a mortgage."
+        verdict: "high_risk"
+        rationale:
+          de: "Verbraucherkredit und Hypothek sind grundlegende private Dienste."
+          en: "Consumer credit and mortgages are essential private services."
+        source_ref: "(nach 309)"
+      - scenario:
+          de: "Eine Auskunftei betreibt ein System, das Punktwerte bildet und an Dritte weitergibt, die damit über Darlehen, Hypothek oder Zugang zu Wohnung, Gesundheitsversorgung und Telekommunikation entscheiden."
+          en: "A credit bureau operates a system that establishes credit scores and passes them on to third parties who use them to decide on loans, mortgages or access to housing, healthcare and telecommunications."
+        verdict: "high_risk"
+        rationale:
+          de: "Der Betreiber muss nicht derselbe sein wie die entscheidende Stelle."
+          en: "The deployer does not have to be the same as the deciding body."
+        source_ref: "(nach 309)"
+      - scenario:
+          de: "Ein System erkennt vor allem gefälschte Ausweise, Einkommensnachweise und Kontoauszüge in Kreditanträgen; die Betrugsaufdeckung geht allen anderen Zwecken vor."
+          en: "A system mainly detects forged identity documents, proof of income and bank statements in loan applications; fraud detection takes precedence over all other purposes."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Die Ausnahme für die Aufdeckung von Finanzbetrug greift, weil die Betrugsaufdeckung der vorrangige Zweck ist."
+          en: "The exception for the detection of financial fraud applies because fraud detection is the overriding purpose."
+        source_ref: "(307)"
+      - scenario:
+          de: "Ein System zur Betrugsaufdeckung liefert ein Ergebnis, das danach in die Bewertung der Zahlungsfähigkeit oder in den Punktwert einfließt."
+          en: "A fraud detection system delivers a result that subsequently feeds into the evaluation of creditworthiness or into the credit score."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es fällt aus dem Anwendungsfall heraus, obwohl sein Ergebnis weiterverwendet wird."
+          en: "It falls outside the use case even though its result is used further."
+        source_ref: "(308)"
+      - scenario:
+          de: "Ein System gegen Geldwäsche und Terrorismusfinanzierung ist funktional verbunden und zugleich dafür gedacht, die Zahlungsfähigkeit zu bewerten."
+          en: "A system against money laundering and terrorist financing is functionally connected and at the same time intended to evaluate creditworthiness."
+        verdict: "high_risk"
+        rationale:
+          de: "Die Betrugsausnahme gilt hier nicht, und der Zweck der Bewertung der Zahlungsfähigkeit ist mitumfasst."
+          en: "The fraud exception does not apply here, and the purpose of evaluating creditworthiness is included."
+        source_ref: "(309)"
+      - scenario:
+          de: "Ein System berechnet allein Zinssätze und Preise und greift dafür auf Daten aus einer Bewertung der Zahlungsfähigkeit zurück."
+          en: "A system solely calculates interest rates and prices and draws on data from an evaluation of creditworthiness to do so."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Reine Preisbildung gehört nicht zum Anwendungsfall."
+          en: "Mere pricing does not belong to the use case."
+        source_ref: "(300)"
+      - scenario:
+          de: "Ein System bewertet die Zahlungsfähigkeit und bildet im selben durchgehenden Vorgang den Kreditpreis."
+          en: "A system evaluates creditworthiness and sets the credit price in the same continuous process."
+        verdict: "high_risk"
+        rationale:
+          de: "Beide Funktionen sind in einem System zusammengeführt."
+          en: "Both functions are combined in one system."
+        source_ref: "(300)"
+      - scenario:
+          de: "Ein Finanzintermediär bewertet mit einem System, ob bestehenden oder künftigen Kunden ein Wertpapierkredit für gehebelte Produkte gewährt oder erhöht wird, und nur das."
+          en: "A financial intermediary uses a system to evaluate whether existing or future customers are granted or given an increase in a margin loan for leveraged products, and nothing else."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es ist allein für einen nicht grundlegenden privaten Dienst gedacht."
+          en: "It is intended solely for a non-essential private service."
+        source_ref: "(nach 309)"
+      - scenario:
+          de: "Ein System überwacht nach der Kreditvergabe nur noch die Kreditrisiken des Hauses und erkennt früh Zahlungsschwierigkeiten."
+          en: "After the loan has been granted, a system only monitors the institution's credit risks and detects payment difficulties early."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es dient allein innerbetrieblichen Aufsichtszwecken nach der Vergabe."
+          en: "It serves solely internal supervisory purposes after the granting."
+        source_ref: "(nach 309)"
+      - scenario:
+          de: "Ein System einer Bank berechnet nur die risikogewichteten Forderungsbeträge von Darlehensbeständen nach dem auf internen Beurteilungen beruhenden Ansatz und ist nicht für Punktwerte oder die Bewertung der Zahlungsfähigkeit gedacht."
+          en: "A bank's system only calculates the risk-weighted exposure amounts of loan portfolios under the Internal Ratings-Based Approach and is not intended for credit scores or the evaluation of creditworthiness."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Der Zweck des Anwendungsfalls fehlt."
+          en: "The purpose of the use case is missing."
+        source_ref: "(323)"
+      - scenario:
+          de: "Dasselbe System wird sowohl für den Punktwert einzelner Menschen als auch für interne Beurteilungen und Ausfallschätzungen zur Eigenmittelberechnung genutzt."
+          en: "The same system is used both for the credit score of individual persons and for internal ratings and default estimates for calculating own funds."
+        verdict: "high_risk"
+        rationale:
+          de: "Es kommt nicht auf den Hauptzweck an; einer der Zwecke erfüllt den Anwendungsfall."
+          en: "The main purpose is not decisive; one of the purposes meets the use case."
+        source_ref: "(324)"
+
+  - citation: "AI-Act/annex-III/pt-5-c"
+    main_question:
+      de: "Soll Ihr System bei einer Lebens- oder Krankenversicherung das Risiko einzelner Menschen bewerten oder deren Beitrag festlegen?"
+      en: "Is your system intended to assess the risk of individual persons or to set their premium in the case of life or health insurance?"
+    follow_up_questions:
+      - question:
+          de: "Bewertet Ihr System das Risikoprofil eines einzelnen Menschen, um zu bestimmen, ob Versicherungsschutz angeboten, verweigert, widerrufen oder erbracht wird - einschließlich Festlegung oder Änderung von Vertragsbedingungen wie Deckung, Ausschlüssen, Selbstbehalten und Höchstgrenzen?"
+          en: "Does your system assess the risk profile of an individual person in order to determine whether insurance cover is offered, refused, withdrawn or provided - including setting or changing contract terms such as coverage, exclusions, deductibles and limits?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(312)"
+      - question:
+          de: "Legt Ihr System die Beiträge fest, also die Methoden und Maßstäbe, nach denen die Prämie als Teil der Vertragsbedingungen bestimmt wird?"
+          en: "Does your system set the premiums, that is, the methods and criteria by which the premium is determined as part of the contract terms?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(313)"
+      - question:
+          de: "Geht es um eine Lebensversicherung oder um eine Krankenversicherung?"
+          en: "Is it about life insurance or health insurance?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(314)"
+      - question:
+          de: "Geht es ausschließlich um andere Versicherungen, etwa Kraftfahrzeug- oder Hausratversicherung?"
+          en: "Is it exclusively about other insurance, for example motor vehicle or household contents insurance?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(314)"
+      - question:
+          de: "Geht es ausschließlich um ein versicherungsbasiertes Anlageprodukt im Sinne von Artikel 4 Absatz 2 der Verordnung (EU) Nr. 1286/2014?"
+          en: "Is it exclusively about an insurance-based investment product within the meaning of Article 4(2) of Regulation (EU) No 1286/2014?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(314)"
+      - question:
+          de: "Geht es um Unfall einschließlich Arbeitsunfall und Berufskrankheit oder um Krankheit, also um die Klassen nach Anhang I Abschnitt A Nummern 1 und 2 der Richtlinie 2009/138/EG, die üblicherweise Behandlungskosten abdecken?"
+          en: "Is it about accident, including accidents at work and occupational diseases, or about sickness, that is, the classes under Annex I, Part A, points 1 and 2 of Directive 2009/138/EC, which usually cover treatment costs?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(316)"
+      - question:
+          de: "Geht es um eine private Pflegeversicherung?"
+          en: "Is it about private long-term care insurance?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(317)"
+      - question:
+          de: "Geht es um ein persönliches Altersvorsorgeprodukt, das den Lebensstandard im Alter erheblich beeinflussen kann?"
+          en: "Is it about a personal pension product that can significantly affect the standard of living in old age?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(317)"
+      - question:
+          de: "Geht es um eine Kreditlebensversicherung, die den Kredit beim Tod des Kreditnehmers ablöst?"
+          en: "Is it about credit life insurance that pays off the loan on the death of the borrower?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(318)"
+      - question:
+          de: "Wird die Versicherung von einem öffentlich-rechtlichen Träger angeboten und deshalb für nicht erfasst gehalten?"
+          en: "Is the insurance offered by a public-law body and therefore considered not to be covered?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(319)"
+      - question:
+          de: "Handelt es sich um eine private Krankenversicherung in einem Land mit staatlicher Gesundheitsversorgung für alle, die diese Versorgung nur ergänzt?"
+          en: "Is it private health insurance in a country with state healthcare for all, which only supplements that healthcare?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(320)"
+      - question:
+          de: "Enthält Ihr System neben der Risikobewertung oder Beitragsfestlegung auch eine Funktion zur Betrugsaufdeckung und soll es deshalb nicht erfasst sein?"
+          en: "In addition to risk assessment or pricing, does your system also contain a fraud detection function and is it supposed not to be covered for that reason?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(321)"
+      - question:
+          de: "Ist die Betrugsaufdeckung ein eigenständiges System für sich?"
+          en: "Is the fraud detection a separate system in its own right?"
+        on_yes: "not_covered"
+        on_no: "covered"
+        source_ref: "(321)"
+      - question:
+          de: "Bearbeitet Ihr System ausschließlich Leistungsfälle einer Krankenversicherung nach Eintritt des Versicherungsfalls, prüft also die Berechtigung des Anspruchs nach den Vertragsbedingungen oder die Höhe der Zahlung?"
+          en: "Does your system exclusively handle health insurance claims after the insured event has occurred, that is, does it check the entitlement to the claim under the contract terms or the amount of the payment?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(nach 321)"
+      - question:
+          de: "Dient Ihr System ausschließlich der Produktgestaltung für Lebensversicherungen, ohne im Einzelfall Risiko zu bewerten oder Beiträge festzulegen?"
+          en: "Is your system used exclusively for product design for life insurance, without assessing risk or setting premiums in individual cases?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(nach 321)"
+    covered:
+      - text:
+          de: "Systeme zur Risikobewertung und Systeme zur Beitragsfestlegung in Bezug auf einzelne Menschen bei Kranken- und Lebensversicherung; eines von beiden genügt, und das System muss nicht ausschließlich dafür gedacht sein."
+          en: "Systems for risk assessment and systems for pricing in relation to individual persons in health and life insurance; one of the two is sufficient, and the system does not have to be intended exclusively for this."
+        source_ref: "(311)"
+      - text:
+          de: "Risikobewertung bedeutet das Bewerten des Risikoprofils eines Menschen, um zu bestimmen, ob Leistungen der Kranken- und Lebensversicherung angeboten, verweigert, widerrufen oder erbracht werden, insbesondere der vollständige oder teilweise Versicherungsschutz einschließlich der Festlegung oder Änderung von Vertragsbedingungen wie Deckung, Ausschlüssen, Selbstbehalten und Höchstgrenzen."
+          en: "Risk assessment means assessing the risk profile of a person in order to determine whether health and life insurance benefits are offered, refused, withdrawn or provided, in particular full or partial insurance cover including the setting or changing of contract terms such as coverage, exclusions, deductibles and limits."
+        source_ref: "(312)"
+      - text:
+          de: "Beitragsfestlegung bedeutet die Methoden und Maßstäbe, nach denen die Prämie als fester Teil der Vertragsbedingungen bestimmt wird."
+          en: "Pricing means the methods and criteria by which the premium is determined as an integral part of the contract terms."
+        source_ref: "(313)"
+      - text:
+          de: "Erfasst sind alle Schritte, die zum Abschluss oder zur Ablehnung einer Police führen, einschließlich Widerruf und Änderung der Vertragsbedingungen; ein Abschluss muss nicht zustande kommen."
+          en: "Covered are all steps leading to the conclusion or refusal of a policy, including withdrawal and changes to the contract terms; a contract does not have to be concluded."
+        source_ref: "(315)"
+      - text:
+          de: "Lebensversicherung umfasst die Versicherungsklassen nach Anhang II der Richtlinie 2009/138/EG."
+          en: "Life insurance includes the classes of insurance under Annex II of Directive 2009/138/EC."
+        source_ref: "(316)"
+      - text:
+          de: "Aus den Nichtlebensversicherungsklassen sind die Klassen nach Anhang I Abschnitt A Nummern 1 und 2 der Richtlinie 2009/138/EG erfasst - Unfall einschließlich Arbeitsunfall und Berufskrankheit sowie Krankheit -, weil sie üblicherweise Behandlungskosten abdecken und damit als Krankenversicherung gelten."
+          en: "Of the non-life insurance classes, the classes under Annex I, Part A, points 1 and 2 of Directive 2009/138/EC are covered - accident, including accidents at work and occupational diseases, and sickness - because they usually cover treatment costs and therefore count as health insurance."
+        source_ref: "(316)"
+      - text:
+          de: "Private Pflegeversicherung gilt als Krankenversicherung und ist erfasst."
+          en: "Private long-term care insurance counts as health insurance and is covered."
+        source_ref: "(317)"
+      - text:
+          de: "Persönliche Altersvorsorgeprodukte sind erfasst, soweit sie den Lebensstandard im Alter erheblich beeinflussen können."
+          en: "Personal pension products are covered insofar as they can significantly affect the standard of living in old age."
+        source_ref: "(317)"
+      - text:
+          de: "Kreditlebensversicherung ist erfasst, weil sie eine Lebensversicherung ist, unabhängig von ihrer Funktion als Zahlungsausfallschutz; die Risikobewertung kann dort die Form einer Bewertung der Zahlungsfähigkeit oder eines Punktwerts annehmen."
+          en: "Credit life insurance is covered because it is life insurance, irrespective of its function as protection against payment default; risk assessment there can take the form of an evaluation of creditworthiness or a credit score."
+        source_ref: "(318)"
+      - text:
+          de: "Die Versicherung kann privat oder öffentlich angeboten werden; auch ein System einer öffentlich-rechtlichen Krankenversicherung ist erfasst, sofern es Risiko bewertet oder Beiträge festlegt."
+          en: "The insurance can be offered privately or publicly; a system of a public-law health insurance is also covered, provided that it assesses risk or sets premiums."
+        source_ref: "(319)"
+      - text:
+          de: "Private Krankenversicherung ist ein grundlegender privater Dienst, auch wenn das Land eine staatliche Gesundheitsversorgung für alle hat; sie ergänzt diese dann, etwa um weitere Behandlungen oder privaten Zugang."
+          en: "Private health insurance is an essential private service even if the country has state healthcare for all; it then supplements that healthcare, for example with further treatments or private access."
+        source_ref: "(320)"
+      - text:
+          de: "Es gibt hier keine Ausnahme für Betrugsaufdeckung; ein System zur Risikobewertung oder Beitragsfestlegung bleibt erfasst, auch wenn es zusätzlich eine Funktion zur Betrugsaufdeckung hat."
+          en: "There is no exception for fraud detection here; a system for risk assessment or pricing remains covered even if it additionally has a fraud detection function."
+        source_ref: "(321)"
+      - text:
+          de: "Ein System, das zugleich für aufsichtsrechtliche Zwecke zur Berechnung der Eigenmittelanforderungen gedacht ist, bleibt erfasst."
+          en: "A system that is also intended for prudential purposes to calculate own funds requirements remains covered."
+        source_ref: "(322)"
+    not_covered:
+      - text:
+          de: "Andere Versicherungen als Lebens- und Krankenversicherung, etwa Kraftfahrzeug- oder Hausratversicherung."
+          en: "Insurance other than life and health insurance, for example motor vehicle or household contents insurance."
+        source_ref: "(314)"
+      - text:
+          de: "Versicherungsbasierte Anlageprodukte im Sinne von Artikel 4 Absatz 2 der Verordnung (EU) Nr. 1286/2014 gelten nicht als Lebens- oder Krankenversicherung."
+          en: "Insurance-based investment products within the meaning of Article 4(2) of Regulation (EU) No 1286/2014 do not count as life or health insurance."
+        source_ref: "(314)"
+      - text:
+          de: "Die Klassen der Nichtlebensversicherung nach Anhang I der Richtlinie 2009/138/EG sind nicht erfasst, ausgenommen die Nummern 1 und 2 des Abschnitts A."
+          en: "The non-life insurance classes under Annex I of Directive 2009/138/EC are not covered, with the exception of points 1 and 2 of Part A."
+        source_ref: "(316)"
+      - text:
+          de: "Eine Funktion zur Betrugsaufdeckung fällt nur dann heraus, wenn sie ein eigenständiges System für sich ist; das System zur Risikobewertung und Beitragsfestlegung bleibt dann erfasst."
+          en: "A fraud detection function falls outside only if it is a separate system in its own right; the system for risk assessment and pricing then remains covered."
+        source_ref: "(321)"
+      - text:
+          de: "Bearbeitung von Leistungsfällen bei Krankenversicherungsprodukten nach Eintritt des Versicherungsfalls, also Prüfung der Berechtigung nach den Vertragsbedingungen oder Bestimmung der Zahlungshöhe, auch wenn das Ergebnis die Nutzung der Versicherung berührt."
+          en: "Claims handling for health insurance products after the insured event has occurred, that is, checking entitlement under the contract terms or determining the amount of payment, even if the result affects the use of the insurance."
+        source_ref: "(nach 321)"
+      - text:
+          de: "Systeme in der Leistungsfallbearbeitung, die nur die Güte der Bearbeitung und die Genauigkeit verbessern, etwa durch Abgleich der Angaben des Anspruchstellers mit verschiedenen Datenbanken."
+          en: "Systems in claims handling that only improve the quality of processing and accuracy, for example by cross-checking the claimant's information against various databases."
+        source_ref: "(nach 321)"
+      - text:
+          de: "Produktgestaltung für Lebensversicherungen, sofern nicht für Risikobewertung und Beitragsfestlegung im Einzelfall gedacht; dort wird kein Risikoprofil eines Menschen bewertet."
+          en: "Product design for life insurance, unless intended for risk assessment and pricing in individual cases; no risk profile of a person is assessed there."
+        source_ref: "(nach 321)"
+    examples:
+      - scenario:
+          de: "Ein System eines Versicherers prüft Anträge auf Lebensversicherung, verarbeitet Alter, Gesundheitszustand, Familiengeschichte, Lebensgewohnheiten und Beruf und nutzt Sterbetafeln; daraus folgt, ob der Antrag angenommen wird und zu welchen Bedingungen."
+          en: "An insurer's system examines applications for life insurance, processes age, state of health, family history, lifestyle habits and occupation and uses mortality tables; this determines whether the application is accepted and on what terms."
+        verdict: "high_risk"
+        rationale:
+          de: "Es handelt sich um eine Risikobewertung."
+          en: "It is a risk assessment."
+        source_ref: "(nach 321)"
+      - scenario:
+          de: "Ein System eines Versicherers schätzt die erwarteten Behandlungskosten einer Risikogruppe, rechnet Verwaltungsaufwand und Gewinnspanne hinzu, und daraus wird der Beitrag der Gruppenmitglieder."
+          en: "An insurer's system estimates the expected treatment costs of a risk group and adds administrative costs and profit margin, and this results in the premium for the group members."
+        verdict: "high_risk"
+        rationale:
+          de: "Es legt den Beitrag fest."
+          en: "It sets the premium."
+        source_ref: "(nach 321)"
+      - scenario:
+          de: "Ein System bearbeitet Leistungsfälle einer Krankenversicherung, prüft die Berechtigung nach den Vertragsbedingungen und bestimmt die Zahlungshöhe."
+          en: "A system handles health insurance claims, checks the entitlement under the contract terms and determines the amount of payment."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Leistungsfallbearbeitung ist von Risikobewertung und Beitragsfestlegung zu unterscheiden."
+          en: "Claims handling is to be distinguished from risk assessment and pricing."
+        source_ref: "(nach 321)"
+      - scenario:
+          de: "Ein System untersucht große Mengen demografischer, verhaltensbezogener und sozioökonomischer Daten, um Bedarfslücken zu finden und neue Lebensversicherungsprodukte samt Preisrahmen zu gestalten, ohne Einzelfälle zu bewerten."
+          en: "A system examines large amounts of demographic, behavioural and socio-economic data in order to find gaps in needs and design new life insurance products including price ranges, without assessing individual cases."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es wird kein Risikoprofil eines Menschen bewertet; die Produktgestaltung ist eine frühere und eigene Stufe."
+          en: "No risk profile of a person is assessed; product design is an earlier and separate stage."
+        source_ref: "(nach 321)"
+      - scenario:
+          de: "Ein System bewertet Risiko und Beitrag einer Krankenversicherung und hat zusätzlich eine Funktion zur Betrugsaufdeckung, die kein eigenes System für sich ist."
+          en: "A system assesses risk and premium of a health insurance and additionally has a fraud detection function that is not a separate system in its own right."
+        verdict: "high_risk"
+        rationale:
+          de: "Für die Lebens- und Krankenversicherung gibt es keine Ausnahme für Betrugsaufdeckung."
+          en: "For life and health insurance there is no exception for fraud detection."
+        source_ref: "(321)"
+      - scenario:
+          de: "Ein System einer öffentlich-rechtlichen Krankenversicherung bewertet das Risiko einzelner Menschen und legt Beiträge fest."
+          en: "A system of a public-law health insurance assesses the risk of individual persons and sets premiums."
+        verdict: "high_risk"
+        rationale:
+          de: "Die Versicherung kann privat oder öffentlich angeboten werden."
+          en: "The insurance can be offered privately or publicly."
+        source_ref: "(319)"
+
+  - citation: "AI-Act/annex-III/pt-5-d"
+    main_question:
+      de: "Soll Ihr System Notrufe von Menschen bewerten oder einstufen, Rettungskräfte losschicken, die Reihenfolge des Losschickens bestimmen oder Patienten im Notfall vorsortieren?"
+      en: "Is your system intended to evaluate or classify emergency calls by people, to dispatch emergency first response services, to establish the priority of dispatching or to triage patients in an emergency?"
+    follow_up_questions:
+      - question:
+          de: "Bewertet oder stuft Ihr System Notrufe von Menschen ein?"
+          en: "Does your system evaluate or classify emergency calls by people?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(330)"
+      - question:
+          de: "Schickt Ihr System Rettungskräfte los, also Polizei, Feuerwehr, medizinische Hilfe oder vergleichbare Dienste?"
+          en: "Does your system dispatch emergency first response services, that is, police, firefighters, medical aid or comparable services?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(330)"
+      - question:
+          de: "Bestimmt Ihr System die Reihenfolge, in der Rettungskräfte losgeschickt werden?"
+          en: "Does your system establish the priority in which emergency first response services are dispatched?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(330)"
+      - question:
+          de: "Setzt Ihr System Systeme zur Vorsortierung von Notfallpatienten in Gang oder bestimmt deren Reihenfolge?"
+          en: "Does your system trigger emergency healthcare patient triage systems or establish their priority?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(330)"
+      - question:
+          de: "Erreichen Sie die Meldungen auch als Textnachricht oder Video und nicht nur als Anruf, und halten Sie Ihr System deshalb für nicht erfasst?"
+          en: "Do the reports also reach you as a text message or video and not only as a call, and do you therefore consider your system not to be covered?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(332)"
+      - question:
+          de: "Sagt Ihr System Lagen voraus, in denen Rettungskräfte gebraucht werden, und ist es dabei ausdrücklich dafür gedacht, über Zeitpunkt oder Ort des Losschickens zu entscheiden?"
+          en: "Does your system predict situations in which emergency first response services are needed, and is it expressly intended to decide on the time or place of dispatch?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(336)"
+      - question:
+          de: "Sagt Ihr System nur allgemein mögliche Katastrophen voraus, ohne über Zeitpunkt oder Ort des Losschickens zu entscheiden?"
+          en: "Does your system only predict possible disasters in general, without deciding on the time or place of dispatch?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(336)"
+      - question:
+          de: "Schreibt Ihr System Notrufe nur mit und hebt Schlüsselwörter hervor, ohne den Anruf zu bewerten oder einzustufen?"
+          en: "Does your system only transcribe emergency calls and highlight keywords, without evaluating or classifying the call?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(nach 336)"
+      - question:
+          de: "Dient Ihr System ausschließlich der Ausbildung und dem Üben in nachgestellten Lagen, ohne echte Anrufe zu bewerten und ohne wirklich Kräfte loszuschicken oder zu priorisieren?"
+          en: "Is your system used exclusively for training and practice in simulated situations, without evaluating real calls and without actually dispatching or prioritising services?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(nach 336)"
+      - question:
+          de: "Erkennt Ihr System ausschließlich Patienten anhand körperlicher Merkmale, um sie vor medizinischen Eingriffen sicher zu identifizieren?"
+          en: "Does your system exclusively recognise patients by physical characteristics in order to identify them safely before medical procedures?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(nach 336)"
+      - question:
+          de: "Steuert Ihr System ausschließlich den Netzverkehr eingehender Notrufe oder meldet fehlende Verbindung?"
+          en: "Does your system exclusively manage the network traffic of incoming emergency calls or report a missing connection?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(nach 336)"
+      - question:
+          de: "Schätzt Ihr System ausschließlich die Heilungsdauer für die Belegung von Zimmern und Betten im Krankenhaus?"
+          en: "Does your system exclusively estimate the recovery time for the allocation of rooms and beds in hospital?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(nach 336)"
+      - question:
+          de: "Plant Ihr System ausschließlich Arzttermine und hat keinen Bezug zu lebensbedrohlichen Notlagen?"
+          en: "Does your system exclusively schedule medical appointments and have no connection to life-threatening emergencies?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(nach 336)"
+      - question:
+          de: "Ist Ihr System ein Medizinprodukt nach Artikel 2 Absatz 1 der Verordnung (EU) 2017/745 oder Funkanlage nach Artikel 2 Absatz 1 Nummer 1 der Funkanlagenrichtlinie?"
+          en: "Is your system a medical device within the meaning of Article 2(1) of Regulation (EU) 2017/745 or radio equipment within the meaning of Article 2(1), point (1), of the Radio Equipment Directive?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(331)"
+    covered:
+      - text:
+          de: "Systeme, die Notrufe von Menschen bewerten und einstufen."
+          en: "Systems that evaluate and classify emergency calls by people."
+        source_ref: "(330)"
+      - text:
+          de: "Systeme, die Rettungskräfte losschicken."
+          en: "Systems that dispatch emergency first response services."
+        source_ref: "(330)"
+      - text:
+          de: "Systeme, die die Reihenfolge beim Losschicken von Rettungskräften bestimmen."
+          en: "Systems that establish priority in the dispatching of emergency first response services."
+        source_ref: "(330)"
+      - text:
+          de: "Systeme, die Systeme zur Vorsortierung von Notfallpatienten in Gang setzen."
+          en: "Systems that trigger emergency healthcare patient triage systems."
+        source_ref: "(330)"
+      - text:
+          de: "Systeme, die die Reihenfolge beim Ingangsetzen von Vorsortierungssystemen für Notfallpatienten bestimmen."
+          en: "Systems that establish priority in the triggering of emergency healthcare patient triage systems."
+        source_ref: "(330)"
+      - text:
+          de: "Ein Notruf ist nicht auf Anrufe beschränkt; gemeint ist die Verbindung zwischen einem Endnutzer und der Notrufabfragestelle mit dem Ziel, Hilfe zu erbitten und zu erhalten, also auch Textnachricht und Video."
+          en: "An emergency call is not limited to calls; what is meant is the connection between an end user and the public safety answering point with the aim of requesting and receiving help, so also text message and video."
+        source_ref: "(332)"
+      - text:
+          de: "Rettungsdienste sind die von einem Mitgliedstaat anerkannten Dienste, die unmittelbar und schnell helfen, wenn Leben, Gesundheit, Sicherheit, Eigentum oder Umwelt unmittelbar bedroht sind; genannt sind Polizei, Feuerwehr und medizinische Hilfe, dazu können Rettungswagendienste, Leitstellen für Lageinformation etwa zum Katastrophenmanagement und zur Vorhersage sowie Organisationen für Suche, Rettung und Evakuierung zählen."
+          en: "Emergency services are the services recognised by a Member State that provide immediate and rapid assistance where there is a direct threat to life, health, safety, property or the environment; police, firefighters and medical aid are named, and ambulance services, control centres for situational information, for example on disaster management and forecasting, and search, rescue and evacuation organisations may also be included."
+        source_ref: "(333)"
+      - text:
+          de: "Vorsortierungssysteme für Notfallpatienten, die keine Medizinprodukte sind, sind nach Artikel 6 Absatz 2 und Nummer 5 Buchstabe d erfasst."
+          en: "Emergency healthcare patient triage systems that are not medical devices are covered under Article 6(2) and point 5(d)."
+        source_ref: "(335)"
+      - text:
+          de: "Systeme, die Lagen vorhersagen, sind nur erfasst, wenn sie ausdrücklich dafür gedacht sind, über Zeitpunkt oder Ort des Losschickens von Rettungskräften zu entscheiden."
+          en: "Systems that predict situations are only covered if they are expressly intended to decide on the time or place of dispatching emergency first response services."
+        source_ref: "(336)"
+      - text:
+          de: "Ist das System zugleich Medizinprodukt nach Artikel 2 Absatz 1 der Verordnung (EU) 2017/745 oder Funkanlage nach Artikel 2 Absatz 1 Nummer 1 der Funkanlagenrichtlinie, fällt es unter Anhang I und ist nach Artikel 6 Absatz 1 hochriskant, wenn dessen Voraussetzungen erfüllt sind; andernfalls nach Artikel 6 Absatz 2 und Anhang III."
+          en: "If the system is at the same time a medical device within the meaning of Article 2(1) of Regulation (EU) 2017/745 or radio equipment within the meaning of Article 2(1), point (1), of the Radio Equipment Directive, it falls under Annex I and is high-risk under Article 6(1) if the conditions of that provision are met; otherwise under Article 6(2) and Annex III."
+        source_ref: "(331)"
+    not_covered:
+      - text:
+          de: "Reines Mitschreiben von Notrufen schlechter Qualität oder von Anrufen panischer Menschen samt Hervorheben von Schlüsselwörtern, weil der Anruf dabei nicht bewertet oder eingestuft wird."
+          en: "Mere transcription of poor-quality emergency calls or of calls from panicked people, including highlighting of keywords, because the call is not evaluated or classified in the process."
+        source_ref: "(nach 336)"
+      - text:
+          de: "Allgemeine Vorhersage möglicher Katastrophen ohne Bezug zum Losschicken von Rettungskräften, etwa das Erkennen hochwassergefährdeter Gebiete, das Modellieren der Ausbreitung von Waldbränden, das Auswerten sozialer Netzwerke sowie die Beobachtung von Wetter und Erdbebentätigkeit."
+          en: "General prediction of possible disasters without reference to the dispatching of emergency first response services, for example identifying flood-prone areas, modelling the spread of forest fires, analysing social networks and monitoring weather and seismic activity."
+        source_ref: "(nach 336)"
+      - text:
+          de: "Übungs- und Ausbildungsplattformen mit nachgestellten Lagen samt automatischer Nachbesprechung, weil sie keine echten eingehenden Anrufe bewerten und keine Kräfte losschicken oder priorisieren."
+          en: "Practice and training platforms with simulated situations including automatic debriefing, because they do not evaluate real incoming calls and do not dispatch or prioritise services."
+        source_ref: "(nach 336)"
+      - text:
+          de: "Sichere Identifizierung von Patienten vor medizinischen Eingriffen anhand körperlicher Merkmale."
+          en: "Safe identification of patients before medical procedures on the basis of physical characteristics."
+        source_ref: "(nach 336)"
+      - text:
+          de: "Steuerung des Netzverkehrs eingehender Notrufe oder Meldung fehlender Verbindung, weil davon nicht selbst der Schaden ausgeht, auch wenn die Verfügbarkeit des Dienstes berührt sein kann."
+          en: "Management of the network traffic of incoming emergency calls or reporting of a missing connection, because the harm does not itself originate from this, even if the availability of the service may be affected."
+        source_ref: "(nach 336)"
+      - text:
+          de: "Schätzung der Heilungsdauer für die Belegung von Zimmern und Betten im Krankenhaus."
+          en: "Estimation of the recovery time for the allocation of rooms and beds in hospital."
+        source_ref: "(nach 336)"
+      - text:
+          de: "Planung von Arztterminen, weil kein Bezug zu lebensbedrohlichen Notlagen besteht."
+          en: "Scheduling of medical appointments, because there is no connection to life-threatening emergencies."
+        source_ref: "(nach 336)"
+    examples:
+      - scenario:
+          de: "Ein System in einer Notrufzentrale stuft Anrufe an die 112 mit Sprachverarbeitung nach Dringlichkeit ein und lenkt die Einsatzkräfte."
+          en: "A system in an emergency call centre uses speech processing to classify calls to 112 by urgency and directs the emergency services."
+        verdict: "high_risk"
+        rationale:
+          de: "Es bewertet und stuft Anrufe ein, bestimmt die Reihenfolge und schickt die Kräfte los."
+          en: "It evaluates and classifies calls, establishes the priority and dispatches the services."
+        source_ref: "(nach 336)"
+      - scenario:
+          de: "Ein System wertet Notrufe bei der Polizei aus, zieht Schlüsselwörter heraus, bewertet die Dringlichkeit und bestimmt die Reihenfolge der Einsätze."
+          en: "A system analyses emergency calls to the police, extracts keywords, evaluates the urgency and establishes the priority of the operations."
+        verdict: "high_risk"
+        rationale:
+          de: "Es ist unmittelbar an Bewertung, Reihenfolge und Veranlassung der eingehenden Anrufe beteiligt."
+          en: "It is directly involved in the evaluation, prioritisation and initiation of action on incoming calls."
+        source_ref: "(nach 336)"
+      - scenario:
+          de: "Ein System hört während des Gesprächs mit, schreibt mit und vergleicht mit früheren Notrufen, um dem Mitarbeiter Anzeichen lebensbedrohlicher Lagen anzuzeigen."
+          en: "A system listens in during the conversation, transcribes and compares with previous emergency calls in order to show the operator signs of life-threatening situations."
+        verdict: "high_risk"
+        rationale:
+          de: "Es bewertet den Anruf und hilft, ihn nach Schwere einzustufen."
+          en: "It evaluates the call and helps to classify it by severity."
+        source_ref: "(nach 336)"
+      - scenario:
+          de: "Ein System erkennt bei wartenden Anrufen in der Warteschlange Art und Schwere der Notlage und weist den Mitarbeiter auf vorzuziehende Anrufe hin; die Entscheidung bleibt beim Menschen."
+          en: "For calls waiting in the queue, a system recognises the type and severity of the emergency and alerts the operator to calls that should be given priority; the decision remains with the human."
+        verdict: "high_risk"
+        rationale:
+          de: "Es bewertet und stuft Notrufe in lebensbedrohliche und nicht lebensbedrohliche ein."
+          en: "It evaluates emergency calls and classifies them into life-threatening and non-life-threatening."
+        source_ref: "(nach 336)"
+      - scenario:
+          de: "Ein System in einer Notaufnahme sortiert Patienten nach Vorrang, ohne ärztliche Untersuchung oder Diagnose."
+          en: "A system in an emergency department sorts patients by priority, without medical examination or diagnosis."
+        verdict: "high_risk"
+        rationale:
+          de: "Es bestimmt die Reihenfolge beim Ingangsetzen der Vorsortierung von Notfallpatienten."
+          en: "It establishes the priority in triggering emergency healthcare patient triage."
+        source_ref: "(nach 336)"
+      - scenario:
+          de: "Ein Chatbot löst in einer medizinischen Einrichtung den Notfalldienst aus, ohne ärztliche Untersuchung oder Diagnose."
+          en: "In a medical facility, a chatbot triggers the emergency service, without medical examination or diagnosis."
+        verdict: "high_risk"
+        rationale:
+          de: "Es gehört zu den in Nummer 5 Buchstabe d genannten Zwecken."
+          en: "It belongs to the purposes mentioned in point 5(d)."
+        source_ref: "(nach 336)"
+      - scenario:
+          de: "Ein System sagt Wahrscheinlichkeit und Richtung von Waldbränden voraus und löst zugleich das Losschicken der Kräfte aus oder empfiehlt klar die Verteilung des Personals; der Mensch entscheidet weiter."
+          en: "A system predicts the likelihood and direction of forest fires and at the same time triggers the dispatch of services or clearly recommends the deployment of personnel; the human continues to decide."
+        verdict: "high_risk"
+        rationale:
+          de: "Es ist ausdrücklich dafür gedacht, Rettungskräfte auszulösen und über Zeitpunkt und Ort des Losschickens zu entscheiden."
+          en: "It is expressly intended to trigger emergency first response services and to decide on the time and place of dispatch."
+        source_ref: "(nach 336)"
+      - scenario:
+          de: "Ein Chatbot zur Vorsortierung in der seelischen Krise bewertet über Textkontakt Schwere und Dringlichkeit, ohne ärztliche Untersuchung oder Diagnose."
+          en: "A triage chatbot for mental health crises evaluates severity and urgency via text contact, without medical examination or diagnosis."
+        verdict: "high_risk"
+        rationale:
+          de: "Es steuert die Reaktion und nimmt eine erste Vorsortierung im Notfall vor."
+          en: "It steers the response and carries out an initial emergency triage."
+        source_ref: "(nach 336)"
+      - scenario:
+          de: "Ein System schreibt Notrufe schlechter Qualität mit und hebt Schlüsselwörter hervor, bewertet und stuft den Anruf aber nicht ein."
+          en: "A system transcribes poor-quality emergency calls and highlights keywords, but does not evaluate or classify the call."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es bewertet und stuft den Anruf nicht ein."
+          en: "It does not evaluate or classify the call."
+        source_ref: "(nach 336)"
+      - scenario:
+          de: "Ein System erkennt hochwassergefährdete Gebiete, modelliert die Ausbreitung von Waldbränden und beobachtet Wetter und Erdbebentätigkeit, ohne über Zeitpunkt oder Ort des Losschickens zu entscheiden."
+          en: "A system identifies flood-prone areas, models the spread of forest fires and monitors weather and seismic activity, without deciding on the time or place of dispatch."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es fehlt der Bezug zum Losschicken von Rettungskräften."
+          en: "There is no connection to the dispatching of emergency first response services."
+        source_ref: "(nach 336)"
+      - scenario:
+          de: "Ein System deutet Wetterrisikodaten vor einer wahrscheinlichen Notlage und liefert Vorarbeit für die Verteilung von Mitteln, etwa vorverlegte Feuerwehrkräfte; Fachleute und der zuständige Einsatzleiter prüfen und bestätigen das."
+          en: "A system interprets weather risk data before a likely emergency and provides groundwork for the allocation of resources, for example pre-positioned firefighting units; experts and the responsible incident commander review and confirm this."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Der Fall gehört in den Anwendungsfall, ist aber als vorbereitende Aufgabe nach Artikel 6 Absatz 3 Buchstabe d ausgenommen."
+          en: "The case falls within the use case but is exempt as a preparatory task under Article 6(3)(d)."
+        source_ref: "(nach 336)"
+      - scenario:
+          de: "Ein System gibt den Einsatzkräften ein Lagebild der Unfallstelle, etwa Aufenthaltsort und Körpertemperatur von Verletzten, aus Daten von Helfern, Rettungsrobotern, Drohnen und Sensoren, und gibt vorhandene Angaben nur geordnet wieder."
+          en: "A system gives the emergency services a situational picture of the accident site, for example the location and body temperature of injured persons, from data from helpers, rescue robots, drones and sensors, and merely reproduces existing information in an organised form."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Der Fall gehört in den Anwendungsfall, ist aber als enge Verfahrens- und vorbereitende Aufgabe nach Artikel 6 Absatz 3 Buchstaben a und d ausgenommen."
+          en: "The case falls within the use case but is exempt as a narrow procedural and preparatory task under Article 6(3)(a) and (d)."
+        source_ref: "(nach 336)"

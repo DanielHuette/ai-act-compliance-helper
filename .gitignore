@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Secrets and local settings
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Raw downloads (> 7 MB, re-fetch with scripts/fetch_*.py); the processed corpus is committed.
+data/raw/
+
+# The search indexes (about 14 MB per language) are committed so a fresh clone searches well at
+# once; only the build checkpoints and logs of each language are ignored.
+data/processed/_index_checkpoints*/
+data/processed/_index_build*.log
+
+# Purpose vectors are computed on first use and rebuilt when the purpose catalog changes.
+data/rules/_purpose_vectors.json.gz
+
+# Model caches
+models/
+*.safetensors
+*.bin
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Manual backups
+*.bak
+*.orig
+*.tmp
+~$*

@@ -1,0 +1,42 @@
+# Keeps the build context small and private data out of the image. Docker matches each pattern
+# from the context root only, so patterns meant for every depth start with **/.
+
+# Raw sources (about 8 MB HTML/XML), only needed to build the corpus
+data/raw/
+
+# Build checkpoints, logs and the purpose-vector cache
+data/processed/_*
+data/rules/_*
+
+# Local tooling and build output
+.git/
+.github/
+.venv/
+venv/
+build/
+dist/
+**/__pycache__/
+**/*.py[cod]
+**/*.egg-info/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.idea/
+.vscode/
+**/*.swp
+
+# Secrets: never in the image (.env.example is not needed there either)
+.env
+.env.*
+**/*.pem
+**/*.key
+
+# Not needed at runtime
+tests/
+docs/
+scripts/
+presentation/
+packaging/
+*.md
+!README.md
+!AUTHORS.md

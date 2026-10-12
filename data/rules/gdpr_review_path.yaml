@@ -1,0 +1,720 @@
+# Review path under the General Data Protection Regulation (Regulation (EU) 2016/679)
+# and the Federal Data Protection Act (BDSG), in the order in which it is worked through.
+as_of: 2026-05-31
+legal_act: GDPR
+version_note:
+  de: "Erfasst ist der Wortlaut der Datenschutz-Grundverordnung und des Bundesdatenschutzgesetzes; Beschlüsse der Aufsichtsbehörden, Leitlinien des Europäischen Datenschutzausschusses, Angemessenheitsbeschlüsse der Kommission und Rechtsprechung nach dem 31.05.2026 sind hier nicht berücksichtigt."
+  en: "Covered is the wording of the General Data Protection Regulation and of the Federal Data Protection Act (BDSG); decisions of the supervisory authorities, guidelines of the European Data Protection Board, adequacy decisions of the Commission and case law after 31.05.2026 are not taken into account here."
+
+bdsg_note:
+  de: "Zitiert werden nur Paragrafen aus Teil 1 und Teil 2 des Bundesdatenschutzgesetzes, also die Durchführungsbestimmungen zur Datenschutz-Grundverordnung. Teil 3 des Gesetzes (Paragrafen 45 bis 84) gilt nach Paragraf 45 nur für Verarbeitungen durch Behörden zur Verhütung, Ermittlung, Aufdeckung, Verfolgung oder Ahndung von Straftaten und Ordnungswidrigkeiten und ist hier daher nicht herangezogen, auch wo er zu einzelnen Abschnitten inhaltlich parallele Vorschriften enthält."
+  en: "Only sections from Part 1 and Part 2 of the Federal Data Protection Act (BDSG) are cited, that is, the provisions implementing the General Data Protection Regulation. Part 3 of the Act (Sections 45 to 84) applies under Section 45 only to processing by authorities for the prevention, investigation, detection, prosecution or punishment of criminal offences and administrative offences and is therefore not drawn on here, even where it contains provisions parallel in substance to individual sections."
+
+granularity_note:
+  de: "Die Datenschutz-Grundverordnung und das Bundesdatenschutzgesetz liegen im Korpus je Artikel beziehungsweise je Paragraf vor, nicht nach Absätzen getrennt. Die Kennungen unter legal_basis verweisen daher stets auf die ganze Vorschrift; der genaue Absatz steht im Feld citation_text."
+  en: "The General Data Protection Regulation and the Federal Data Protection Act (BDSG) are held in the corpus per Article and per Section respectively, not split into paragraphs. The identifiers under legal_basis therefore always refer to the whole provision; the exact paragraph is given in the field citation_text."
+
+sections:
+
+  # ---------------------------------------------------------------
+  - id: a-personal-data
+    title:
+      de: "Personenbezug"
+      en: "Personal data"
+    question:
+      de: "Verarbeitet das System Daten, die sich auf bestimmte oder bestimmbare Menschen beziehen lassen?"
+      en: "Does your system process data that can be related to identified or identifiable people?"
+    legal_basis:
+      - GDPR/art-4
+      - GDPR/art-2
+      - GDPR/art-11
+    citation_text:
+      de: "Artikel 4 Nummer 1 und Nummer 2 DSGVO, dazu Artikel 2 und Artikel 11 DSGVO"
+      en: "Article 4(1) and (2) GDPR, together with Articles 2 and 11 GDPR"
+    action_required:
+      de: "Zu tun ist: Alle Datenfelder durchgehen und prüfen, ob eine natürliche Person darüber identifiziert werden kann, direkt oder indirekt. Indirekt heisst: auch über einen Namen, eine Kennnummer, Standortdaten, eine Online-Kennung oder besondere Merkmale, die die körperliche, physiologische, genetische, psychische, wirtschaftliche, kulturelle oder soziale Identität ausdrücken. Verarbeitung ist dabei jeder Vorgang mit solchen Daten, vom Erheben über Speichern und Abfragen bis zum Löschen, auch ohne Automatisierung. Fällt die Antwort nein, endet der Prüfpfad hier; dann aber bitte begründen, warum ein Personenbezug auch nicht indirekt hergestellt werden kann. Pseudonymisierte Daten bleiben personenbezogen, weil der Bezug mit Zusatzwissen wiederherstellbar ist. Fällt die Antwort ja, gehen Sie weiter zu Abschnitt b."
+      en: "What to do: Go through all data fields and check whether a natural person can be identified through them, directly or indirectly. Indirectly means: also by reference to a name, an identification number, location data, an online identifier or specific factors expressing the physical, physiological, genetic, mental, economic, cultural or social identity. Processing means any operation on such data, from collection through storage and retrieval to erasure, even without automation. If the answer is no, the review path ends here; but then please state why a link to a person cannot be established indirectly either. Pseudonymised data remain personal data, because the link can be restored with additional information. If the answer is yes, go on to section b."
+    evidence_of_compliance:
+      de: "Eine Datenfeldliste je System mit Bewertung des Personenbezugs und einer schriftlichen Begründung bei verneintem Personenbezug."
+      en: "A list of data fields per system with an assessment of whether they are personal data and a written justification where this is denied."
+    on_infringement:
+
+  # ---------------------------------------------------------------
+      de: "Wird ein Personenbezug zu Unrecht verneint, bleiben alle folgenden Pflichten gleichwohl anwendbar; Verstösse dagegen fallen je nach betroffener Vorschrift unter Artikel 83 Absatz 4 oder Absatz 5 DSGVO."
+      en: "If the personal nature of the data is wrongly denied, all of the following obligations nevertheless remain applicable; infringements of them fall, depending on the provision concerned, under Article 83(4) or (5) GDPR."
+  - id: b-role
+    title:
+      de: "Rolle: Verantwortlicher, Auftragsverarbeiter oder gemeinsam Verantwortliche"
+      en: "Role: controller, processor or joint controllers"
+    question:
+      de: "Entscheiden Sie selbst über Zwecke und Mittel der Verarbeitung, handeln Sie nur auf Weisung eines anderen, oder legen Sie die Zwecke gemeinsam mit einem anderen fest?"
+      en: "Do you yourself decide on the purposes and means of the processing, do you act only on the instructions of someone else, or do you determine the purposes jointly with someone else?"
+    legal_basis:
+      - GDPR/art-4
+      - GDPR/art-26
+      - GDPR/art-28
+      - GDPR/art-24
+      - GDPR/art-29
+    citation_text:
+      de: "Artikel 4 Nummern 7 und 8 DSGVO, dazu Artikel 24, 26, 28 und 29 DSGVO"
+      en: "Article 4(7) and (8) GDPR, together with Articles 24, 26, 28 and 29 GDPR"
+    action_required:
+      de: "Zu tun ist: Die Rolle je Verarbeitung festlegen und schriftlich festhalten. Verantwortlicher ist, wer allein oder gemeinsam mit anderen über Zwecke und Mittel der Verarbeitung entscheidet; Auftragsverarbeiter ist, wer personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet. Legen zwei oder mehr Stellen die Zwecke und Mittel gemeinsam fest, sind sie gemeinsam Verantwortliche und müssen in einer transparenten Vereinbarung festlegen, wer welche Pflicht erfüllt, insbesondere bei den Rechten der betroffenen Personen und bei den Informationspflichten; das Wesentliche dieser Vereinbarung ist den betroffenen Personen zur Verfügung zu stellen. Beachten Sie: Betroffene können ihre Rechte unabhängig von der Aufteilung bei jedem einzelnen Verantwortlichen geltend machen. Wer auf Weisung verarbeitet, darf nur im Rahmen dieser Weisung handeln."
+      en: "What to do: Determine the role for each processing operation and record it in writing. The controller is whoever, alone or jointly with others, determines the purposes and means of the processing; the processor is whoever processes personal data on behalf of the controller. Where two or more parties jointly determine the purposes and means, they are joint controllers and must set out in a transparent arrangement who fulfils which obligation, in particular as regards the rights of the data subjects and the duties to provide information; the essence of this arrangement must be made available to the data subjects. Note: data subjects may exercise their rights against each of the controllers regardless of how the obligations are divided. Whoever processes on instructions may act only within those instructions."
+    evidence_of_compliance:
+      de: "Eine Rollenzuordnung je Verarbeitung, die Vereinbarung nach Artikel 26 DSGVO bei gemeinsamer Verantwortung und der Nachweis, dass deren Wesentliches veröffentlicht ist."
+      en: "An allocation of roles per processing operation, the arrangement under Article 26 GDPR where there is joint control and proof that its essence has been published."
+    on_infringement:
+
+  # ---------------------------------------------------------------
+      de: "Artikel 83 Absatz 4 Buchstabe a DSGVO: Geldbussen von bis zu 10 000 000 Euro oder, bei einem Unternehmen, bis zu 2 Prozent des gesamten weltweit erzielten Jahresumsatzes des vorangegangenen Geschäftsjahres, je nachdem welcher Betrag höher ist."
+      en: "Article 83(4)(a) GDPR: administrative fines of up to EUR 10 000 000 or, in the case of an undertaking, up to 2 % of the total worldwide annual turnover of the preceding financial year, whichever is higher."
+  - id: c-legal-basis
+    title:
+      de: "Rechtsgrundlage"
+      en: "Legal basis"
+    question:
+      de: "Auf welche der sechs Erlaubnistatbestände stützen Sie die Verarbeitung, und sind besondere Datenkategorien oder strafrechtliche Daten betroffen?"
+      en: "On which of the six lawful bases do you rely for the processing, and are special categories of personal data or criminal offence data involved?"
+    legal_basis:
+      - GDPR/art-6
+      - GDPR/art-7
+      - GDPR/art-9
+      - GDPR/art-10
+      - BDSG/sec-22
+      - BDSG/sec-24
+
+    also_cited:
+      - GDPR/art-6/para-1
+      - GDPR/art-9/para-1
+    citation_text:
+      de: "Artikel 6, 7, 9 und 10 DSGVO, dazu Paragraf 22 und Paragraf 24 BDSG"
+      en: "Articles 6, 7, 9 and 10 GDPR, together with Section 22 and Section 24 BDSG"
+    action_required:
+      de: "Zu tun ist: Je Verarbeitungszweck genau eine Rechtsgrundlage nach Artikel 6 Absatz 1 benennen und begründen. Zur Wahl stehen: Einwilligung; Erfüllung eines Vertrags mit der betroffenen Person oder vorvertragliche Massnahmen auf ihre Anfrage; Erfüllung einer rechtlichen Verpflichtung; Schutz lebenswichtiger Interessen; Wahrnehmung einer Aufgabe im öffentlichen Interesse oder in Ausübung öffentlicher Gewalt; und berechtigte Interessen, sofern nicht die Interessen oder Grundrechte der betroffenen Person überwiegen, was besonders bei Kindern gilt. Behörden können sich bei ihrer Aufgabenerfüllung nicht auf berechtigte Interessen stützen. Stützen Sie sich auf Einwilligung, müssen die Bedingungen des Artikels 7 erfüllt und nachweisbar sein. Gehen aus den Daten rassische oder ethnische Herkunft, politische Meinungen, religiöse oder weltanschauliche Überzeugungen oder Gewerkschaftszugehörigkeit hervor, oder handelt es sich um genetische Daten, um biometrische Daten zur eindeutigen Identifizierung, um Gesundheitsdaten oder um Daten zum Sexualleben oder zur sexuellen Orientierung, ist die Verarbeitung nach Artikel 9 Absatz 1 grundsätzlich untersagt und nur bei einer der Ausnahmen des Artikels 9 Absatz 2 erlaubt; dann ist diese Ausnahme ausdrücklich zu benennen. Daten über strafrechtliche Verurteilungen und Straftaten dürfen nach Artikel 10 nur unter behördlicher Aufsicht oder auf besonderer Rechtsgrundlage verarbeitet werden."
+      en: "What to do: Name and justify exactly one legal basis under Article 6(1) for each processing purpose. The options are: consent; performance of a contract with the data subject or pre-contractual steps at their request; compliance with a legal obligation; protection of vital interests; performance of a task carried out in the public interest or in the exercise of official authority; and legitimate interests, unless the interests or fundamental rights of the data subject override them, which applies in particular where the data subject is a child. Public authorities cannot rely on legitimate interests in the performance of their tasks. If you rely on consent, the conditions of Article 7 must be met and demonstrable. If the data reveal racial or ethnic origin, political opinions, religious or philosophical beliefs or trade union membership, or if they are genetic data, biometric data for the purpose of uniquely identifying a person, data concerning health or data concerning sex life or sexual orientation, processing is in principle prohibited under Article 9(1) and permitted only under one of the exceptions of Article 9(2); that exception must then be named expressly. Under Article 10, data relating to criminal convictions and offences may be processed only under the control of official authority or on a specific legal basis."
+    evidence_of_compliance:
+      de: "Eine Zweck-Rechtsgrundlagen-Zuordnung je Verarbeitung mit Begründung, bei berechtigten Interessen die dokumentierte Abwägung, bei Einwilligung der Einwilligungsnachweis und bei besonderen Kategorien die benannte Ausnahme des Artikels 9 Absatz 2."
+      en: "An allocation of purposes to legal bases per processing operation with justification, for legitimate interests the documented balancing test, for consent the proof of consent and for special categories the named exception under Article 9(2)."
+    on_infringement:
+
+  # ---------------------------------------------------------------
+      de: "Artikel 83 Absatz 5 Buchstabe a DSGVO: Geldbussen von bis zu 20 000 000 Euro oder, bei einem Unternehmen, bis zu 4 Prozent des gesamten weltweit erzielten Jahresumsatzes des vorangegangenen Geschäftsjahres, je nachdem welcher Betrag höher ist."
+      en: "Article 83(5)(a) GDPR: administrative fines of up to EUR 20 000 000 or, in the case of an undertaking, up to 4 % of the total worldwide annual turnover of the preceding financial year, whichever is higher."
+  - id: d1-principle-lawfulness
+    title:
+      de: "Grundsatz: Rechtmässigkeit, Verarbeitung nach Treu und Glauben, Transparenz"
+      en: "Principle: lawfulness, fairness and transparency"
+    question:
+      de: "Ist die Verarbeitung rechtmässig, fair und für die betroffene Person nachvollziehbar?"
+      en: "Is the processing lawful, fair and transparent to the data subject?"
+    legal_basis:
+      - GDPR/art-5
+    citation_text:
+      de: "Artikel 5 Absatz 1 Buchstabe a DSGVO"
+      en: "Article 5(1)(a) GDPR"
+    action_required:
+      de: "Zu tun ist: Sicherstellen, dass für jede Verarbeitung eine Rechtsgrundlage vorliegt, dass die Verarbeitung die betroffene Person nicht übervorteilt und dass sie für sie nachvollziehbar ist. Nachvollziehbar heisst: Die Person kann aus Ihren Informationen erkennen, wer ihre Daten zu welchem Zweck verarbeitet."
+      en: "What to do: Make sure that there is a legal basis for each processing operation, that the processing does not take unfair advantage of the data subject and that it is transparent to them. Transparent means: from your information the person can see who processes their data and for what purpose."
+    evidence_of_compliance:
+      de: "Die Zweck-Rechtsgrundlagen-Zuordnung aus Abschnitt c zusammen mit den Datenschutzhinweisen aus Abschnitt e."
+      en: "The allocation of purposes to legal bases from section c together with the privacy notices from section e."
+    on_infringement:
+      de: "Artikel 83 Absatz 5 Buchstabe a DSGVO: bis zu 20 000 000 Euro oder bis zu 4 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 83(5)(a) GDPR: up to EUR 20 000 000 or up to 4 % of worldwide annual turnover, whichever is higher."
+
+  - id: d2-principle-purpose-limitation
+    title:
+      de: "Grundsatz: Zweckbindung"
+      en: "Principle: purpose limitation"
+    question:
+      de: "Sind die Zwecke vorab festgelegt, eindeutig und legitim, und bleibt jede Weiterverarbeitung mit ihnen vereinbar?"
+      en: "Are the purposes specified in advance, explicit and legitimate, and does any further processing remain compatible with them?"
+    legal_basis:
+      - GDPR/art-5
+      - GDPR/art-89
+    citation_text:
+      de: "Artikel 5 Absatz 1 Buchstabe b DSGVO, dazu Artikel 89 Absatz 1 DSGVO"
+      en: "Article 5(1)(b) GDPR, together with Article 89(1) GDPR"
+    action_required:
+      de: "Zu tun ist: Die Zwecke vor der Erhebung schriftlich festlegen, eindeutig formulieren und nicht nachträglich ausweiten. Wollen Sie die Daten später für etwas anderes nutzen, prüfen Sie zuerst, ob der neue Zweck mit dem ursprünglichen vereinbar ist. Eine Weiterverarbeitung für im öffentlichen Interesse liegende Archivzwecke, für wissenschaftliche oder historische Forschungszwecke oder für statistische Zwecke gilt unter den Garantien des Artikels 89 Absatz 1 nicht als unvereinbar."
+      en: "What to do: Specify the purposes in writing before collection, word them explicitly and do not extend them afterwards. If you want to use the data for something else later, first check whether the new purpose is compatible with the original one. Further processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes is, subject to the safeguards of Article 89(1), not considered incompatible."
+    evidence_of_compliance:
+      de: "Die Zweckliste je Verarbeitung mit Festlegungsdatum und, bei Weiterverarbeitung, die dokumentierte Vereinbarkeitsprüfung."
+      en: "The list of purposes per processing operation with the date they were specified and, for further processing, the documented compatibility assessment."
+    on_infringement:
+      de: "Artikel 83 Absatz 5 Buchstabe a DSGVO: bis zu 20 000 000 Euro oder bis zu 4 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 83(5)(a) GDPR: up to EUR 20 000 000 or up to 4 % of worldwide annual turnover, whichever is higher."
+
+  - id: d3-principle-data-minimisation
+    title:
+      de: "Grundsatz: Datenminimierung"
+      en: "Principle: data minimisation"
+    question:
+      de: "Sind die Daten dem Zweck angemessen und erheblich und auf das notwendige Mass beschränkt?"
+      en: "Are the data adequate, relevant and limited to what is necessary for the purpose?"
+    legal_basis:
+      - GDPR/art-5
+    citation_text:
+      de: "Artikel 5 Absatz 1 Buchstabe c DSGVO"
+      en: "Article 5(1)(c) GDPR"
+    action_required:
+      de: "Zu tun ist: Je Datenfeld begründen, warum es für den Zweck nötig ist, und alles streichen, was nur vorsorglich mitgesammelt wird. Das gilt auch für Trainings- und Testdaten: Der Umfang eines Datensatzes ist kein Selbstzweck."
+      en: "What to do: Justify for each data field why it is needed for the purpose, and remove everything that is only collected just in case. This also applies to training and test data: the size of a dataset is not an end in itself."
+    evidence_of_compliance:
+      de: "Die Datenfeldliste mit Erforderlichkeitsbegründung je Feld und dem Nachweis, welche Felder gestrichen wurden."
+      en: "The list of data fields with a justification of necessity per field and proof of which fields were removed."
+    on_infringement:
+      de: "Artikel 83 Absatz 5 Buchstabe a DSGVO: bis zu 20 000 000 Euro oder bis zu 4 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 83(5)(a) GDPR: up to EUR 20 000 000 or up to 4 % of worldwide annual turnover, whichever is higher."
+
+  - id: d4-principle-accuracy
+    title:
+      de: "Grundsatz: Richtigkeit"
+      en: "Principle: accuracy"
+    question:
+      de: "Sind die Daten sachlich richtig und, soweit nötig, auf dem neuesten Stand?"
+      en: "Are the data accurate and, where necessary, kept up to date?"
+    legal_basis:
+      - GDPR/art-5
+      - GDPR/art-16
+    citation_text:
+      de: "Artikel 5 Absatz 1 Buchstabe d DSGVO, dazu Artikel 16 DSGVO"
+      en: "Article 5(1)(d) GDPR, together with Article 16 GDPR"
+    action_required:
+      de: "Zu tun ist: Angemessene Massnahmen treffen, damit unrichtige Daten unverzüglich gelöscht oder berichtigt werden. In der Praxis heisst das: ein Verfahren für Korrekturen einrichten, Pflegezyklen festlegen und bei Datenbeständen, die als Entscheidungsgrundlage dienen, die Aktualität regelmässig prüfen."
+      en: "What to do: Take reasonable steps to ensure that inaccurate data are erased or rectified without delay. In practice this means: set up a procedure for corrections, define maintenance cycles and, for datasets that serve as a basis for decisions, check regularly that they are up to date."
+    evidence_of_compliance:
+      de: "Das Korrekturverfahren mit Zuständigkeit und Fristen sowie ein Register der durchgeführten Berichtigungen."
+      en: "The correction procedure with responsibilities and deadlines, and a register of the rectifications carried out."
+    on_infringement:
+      de: "Artikel 83 Absatz 5 Buchstabe a DSGVO: bis zu 20 000 000 Euro oder bis zu 4 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 83(5)(a) GDPR: up to EUR 20 000 000 or up to 4 % of worldwide annual turnover, whichever is higher."
+
+  - id: d5-principle-storage-limitation
+    title:
+      de: "Grundsatz: Speicherbegrenzung"
+      en: "Principle: storage limitation"
+    question:
+      de: "Wie lange bleiben die Daten identifizierbar gespeichert, und ist diese Frist festgelegt?"
+      en: "How long are the data kept in identifiable form, and is this period specified?"
+    legal_basis:
+      - GDPR/art-5
+      - GDPR/art-89
+    citation_text:
+      de: "Artikel 5 Absatz 1 Buchstabe e DSGVO, dazu Artikel 89 Absatz 1 DSGVO"
+      en: "Article 5(1)(e) GDPR, together with Article 89(1) GDPR"
+    action_required:
+      de: "Zu tun ist: Die Daten nur so lange in einer Form speichern, die die Identifizierung der betroffenen Personen ermöglicht, wie es für die Zwecke erforderlich ist. Legen Sie je Datenkategorie eine Löschfrist fest und setzen Sie sie technisch um. Eine längere Speicherung ist möglich, wenn die Daten ausschliesslich für Archivzwecke im öffentlichen Interesse, für wissenschaftliche oder historische Forschung oder für Statistik verarbeitet werden und die Garantien des Artikels 89 Absatz 1 eingehalten sind."
+      en: "What to do: Keep the data in a form which permits identification of the data subjects for no longer than is necessary for the purposes. Set an erasure period for each category of data and implement it technically. Longer storage is possible if the data are processed solely for archiving purposes in the public interest, for scientific or historical research or for statistics and the safeguards of Article 89(1) are complied with."
+    evidence_of_compliance:
+      de: "Ein Löschkonzept mit Frist je Datenkategorie und Protokollen der durchgeführten Löschläufe."
+      en: "An erasure concept with a period per category of data and logs of the erasure runs carried out."
+    on_infringement:
+      de: "Artikel 83 Absatz 5 Buchstabe a DSGVO: bis zu 20 000 000 Euro oder bis zu 4 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 83(5)(a) GDPR: up to EUR 20 000 000 or up to 4 % of worldwide annual turnover, whichever is higher."
+
+  - id: d6-principle-integrity-confidentiality
+    title:
+      de: "Grundsatz: Integrität und Vertraulichkeit"
+      en: "Principle: integrity and confidentiality"
+    question:
+      de: "Sind die Daten gegen unbefugte Verarbeitung, Verlust, Zerstörung und Schädigung angemessen gesichert?"
+      en: "Are the data appropriately secured against unauthorised processing, loss, destruction and damage?"
+    legal_basis:
+      - GDPR/art-5
+      - GDPR/art-32
+    citation_text:
+      de: "Artikel 5 Absatz 1 Buchstabe f DSGVO, dazu Artikel 32 DSGVO"
+      en: "Article 5(1)(f) GDPR, together with Article 32 GDPR"
+    action_required:
+      de: "Zu tun ist: Durch geeignete technische und organisatorische Massnahmen eine angemessene Sicherheit gewährleisten, einschliesslich Schutz vor unbefugter oder unrechtmässiger Verarbeitung und vor unbeabsichtigtem Verlust, Zerstörung oder Schädigung. Die Einzelheiten stehen in Abschnitt k."
+      en: "What to do: Ensure appropriate security by appropriate technical and organisational measures, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage. The details are in section k."
+    evidence_of_compliance:
+      de: "Das Sicherheitskonzept mit Massnahmenliste und Wirksamkeitsprüfung, siehe Abschnitt k."
+      en: "The security concept with a list of measures and an effectiveness review, see section k."
+    on_infringement:
+      de: "Artikel 83 Absatz 5 Buchstabe a DSGVO für den Grundsatz selbst (bis zu 20 000 000 Euro oder 4 Prozent); für Artikel 32 greift Artikel 83 Absatz 4 Buchstabe a mit bis zu 10 000 000 Euro oder 2 Prozent des weltweiten Jahresumsatzes."
+      en: "Article 83(5)(a) GDPR for the principle itself (up to EUR 20 000 000 or 4 %); for Article 32, Article 83(4)(a) applies, with up to EUR 10 000 000 or 2 % of worldwide annual turnover."
+
+  - id: d7-principle-accountability
+    title:
+      de: "Grundsatz: Rechenschaftspflicht"
+      en: "Principle: accountability"
+    question:
+      de: "Können Sie die Einhaltung aller vorstehenden Grundsätze belegen?"
+      en: "Can you demonstrate compliance with all of the principles above?"
+    legal_basis:
+      - GDPR/art-5
+      - GDPR/art-24
+    citation_text:
+      de: "Artikel 5 Absatz 2 DSGVO, dazu Artikel 24 DSGVO"
+      en: "Article 5(2) GDPR, together with Article 24 GDPR"
+    action_required:
+      de: "Zu tun ist: Der Verantwortliche ist nicht nur zur Einhaltung verpflichtet, er muss sie auch nachweisen können. Führen Sie deshalb die Unterlagen so, dass sich jede Entscheidung mit Datum und Begründung wiederfinden lässt: Zweckfestlegungen, Rechtsgrundlagen, Abwägungen, Löschfristen, Sicherheitsmassnahmen und Schulungen. Ein nachträglich erstelltes Papier belegt nichts."
+      en: "What to do: The controller is not only obliged to comply but must also be able to demonstrate compliance. Keep your records therefore so that every decision can be traced with its date and justification: specifications of purposes, legal bases, balancing tests, erasure periods, security measures and training. A document drawn up after the fact proves nothing."
+    evidence_of_compliance:
+      de: "Ein Datenschutzmanagement mit Dokumentenlenkung, Versionsständen und Freigabedaten, aus dem zu jedem Grundsatz der Belegweg hervorgeht."
+      en: "A data protection management system with document control, version states and approval dates, showing for each principle how compliance is evidenced."
+    on_infringement:
+
+  # ---------------------------------------------------------------
+      de: "Artikel 83 Absatz 5 Buchstabe a DSGVO: bis zu 20 000 000 Euro oder bis zu 4 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 83(5)(a) GDPR: up to EUR 20 000 000 or up to 4 % of worldwide annual turnover, whichever is higher."
+  - id: e-data-subject-information
+    title:
+      de: "Information der betroffenen Personen"
+      en: "Information to data subjects"
+    question:
+      de: "Werden die betroffenen Personen vollständig und rechtzeitig informiert, und zwar auch dann, wenn die Daten nicht bei ihnen selbst erhoben wurden?"
+      en: "Are the data subjects informed completely and in good time, including where the data were not collected from them?"
+    legal_basis:
+      - GDPR/art-12
+      - GDPR/art-13
+      - GDPR/art-14
+      - BDSG/sec-32
+      - BDSG/sec-33
+    citation_text:
+      de: "Artikel 12, 13 und 14 DSGVO, dazu Paragraf 32 und Paragraf 33 BDSG"
+      en: "Articles 12, 13 and 14 GDPR, together with Section 32 and Section 33 BDSG"
+    action_required:
+      de: "Zu tun ist: Bei Erhebung direkt von der Person diese zum Zeitpunkt der Erhebung informieren über: Name und Kontaktdaten des Verantwortlichen und gegebenenfalls seines Vertreters; Kontaktdaten des Datenschutzbeauftragten; die Zwecke und die Rechtsgrundlage; bei berechtigten Interessen welche das sind; Empfänger oder Empfängerkategorien; eine geplante Übermittlung in ein Drittland samt Angemessenheitsbeschluss oder Garantien; die Speicherdauer; die Betroffenenrechte; das Beschwerderecht bei der Aufsichtsbehörde; ob die Bereitstellung verpflichtend ist; und das Bestehen einer automatisierten Entscheidungsfindung samt Logik und Folgen. Wurden die Daten nicht bei der Person erhoben, informieren Sie nach Artikel 14 zusätzlich über die Herkunft der Daten, und zwar innerhalb der dort vorgesehenen Fristen. Die Information muss nach Artikel 12 in präziser, transparenter, verständlicher und leicht zugänglicher Form in klarer und einfacher Sprache erfolgen. Das Bundesdatenschutzgesetz sieht in Paragraf 32 und Paragraf 33 Ausnahmen vor; wer sich darauf stützt, muss sie je Fall begründen."
+      en: "What to do: When collecting data directly from the person, inform them at the time of collection of: the name and contact details of the controller and, where applicable, of its representative; the contact details of the data protection officer; the purposes and the legal basis; for legitimate interests, which interests these are; the recipients or categories of recipients; any intended transfer to a third country together with the adequacy decision or safeguards; the storage period; the rights of the data subject; the right to lodge a complaint with a supervisory authority; whether providing the data is mandatory; and the existence of automated decision-making together with the logic involved and its consequences. If the data were not collected from the person, under Article 14 also inform them of the source of the data, within the time limits laid down there. Under Article 12, the information must be provided in a concise, transparent, intelligible and easily accessible form, using clear and plain language. The Federal Data Protection Act (BDSG) provides exceptions in Section 32 and Section 33; anyone relying on them must justify them case by case."
+    evidence_of_compliance:
+      de: "Die Datenschutzhinweise in der ausgelieferten Fassung, abgeglichen gegen die Kataloge der Artikel 13 und 14, mit Angabe, wo und wann sie bereitgestellt werden."
+      en: "The privacy notices in the version as delivered, checked against the lists in Articles 13 and 14, stating where and when they are provided."
+    on_infringement:
+
+  # ---------------------------------------------------------------
+      de: "Artikel 83 Absatz 5 Buchstabe b DSGVO: bis zu 20 000 000 Euro oder bis zu 4 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 83(5)(b) GDPR: up to EUR 20 000 000 or up to 4 % of worldwide annual turnover, whichever is higher."
+  - id: f-data-subject-rights
+    title:
+      de: "Betroffenenrechte"
+      en: "Rights of the data subject"
+    question:
+      de: "Können Sie Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch tatsächlich und fristgerecht bedienen?"
+      en: "Can you actually handle access, rectification, erasure, restriction, data portability and objection, and within the time limits?"
+    legal_basis:
+      - GDPR/art-12
+      - GDPR/art-15
+      - GDPR/art-16
+      - GDPR/art-17
+      - GDPR/art-18
+      - GDPR/art-19
+      - GDPR/art-20
+      - GDPR/art-21
+      - BDSG/sec-34
+      - BDSG/sec-35
+      - BDSG/sec-36
+    citation_text:
+      de: "Artikel 15 bis 21 DSGVO, dazu Artikel 12 DSGVO und Paragrafen 34 bis 36 BDSG"
+      en: "Articles 15 to 21 GDPR, together with Article 12 GDPR and Sections 34 to 36 BDSG"
+    action_required:
+      de: "Zu tun ist: Für jedes der Rechte einen Bearbeitungsweg mit benannter Zuständigkeit und Frist einrichten. Die Rechte sind: Auskunft über die verarbeiteten Daten samt Zwecken, Empfängern, Speicherdauer und Herkunft (Artikel 15); Berichtigung unrichtiger und Vervollständigung unvollständiger Daten (Artikel 16); Löschung, wenn die Daten für den Zweck nicht mehr nötig sind, die Einwilligung widerrufen wurde, ein Widerspruch durchgreift, die Verarbeitung unrechtmässig war oder eine Rechtspflicht zur Löschung besteht (Artikel 17); Einschränkung der Verarbeitung (Artikel 18); Mitteilung an Empfänger über Berichtigung, Löschung oder Einschränkung (Artikel 19); Datenübertragbarkeit in einem strukturierten, gängigen und maschinenlesbaren Format (Artikel 20); und Widerspruch gegen Verarbeitungen auf Grundlage öffentlichen Interesses oder berechtigter Interessen sowie jederzeit und ohne Begründung gegen Direktwerbung (Artikel 21). Hat der Verantwortliche Daten öffentlich gemacht und ist zur Löschung verpflichtet, muss er unter Berücksichtigung der verfügbaren Technologie und der Kosten angemessene Massnahmen treffen, um andere Verantwortliche über das Löschverlangen zu informieren. Die Ausnahmen der Paragrafen 34 bis 36 BDSG sind je Fall zu begründen."
+      en: "What to do: For each of the rights, set up a handling procedure with named responsibility and a deadline. The rights are: access to the data processed, together with the purposes, recipients, storage period and source (Article 15); rectification of inaccurate data and completion of incomplete data (Article 16); erasure where the data are no longer necessary for the purpose, consent has been withdrawn, an objection succeeds, the processing was unlawful or there is a legal obligation to erase (Article 17); restriction of processing (Article 18); notification to recipients of rectification, erasure or restriction (Article 19); data portability in a structured, commonly used and machine-readable format (Article 20); and objection to processing based on the public interest or legitimate interests, and to direct marketing at any time and without giving reasons (Article 21). Where the controller has made data public and is obliged to erase them, it must, taking account of available technology and the cost, take reasonable steps to inform other controllers of the erasure request. The exceptions in Sections 34 to 36 BDSG must be justified case by case."
+    evidence_of_compliance:
+      de: "Ein Antragsregister mit Eingangsdatum, Fristende, Bearbeiter und Ergebnis je Recht, dazu die Verfahrensbeschreibung und Antwortvorlagen."
+      en: "A register of requests with date of receipt, end of the time limit, person handling it and outcome per right, together with the procedure description and reply templates."
+    on_infringement:
+      de: "Artikel 83 Absatz 5 Buchstabe b DSGVO: bis zu 20 000 000 Euro oder bis zu 4 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist. Betroffene können zudem nach Artikel 82 DSGVO Schadenersatz verlangen."
+      en: "Article 83(5)(b) GDPR: up to EUR 20 000 000 or up to 4 % of worldwide annual turnover, whichever is higher. Data subjects may also claim compensation under Article 82 GDPR."
+
+  - id: g-automated-decision-making
+    title:
+      de: "Automatisierte Entscheidung im Einzelfall einschliesslich Profiling"
+      en: "Automated individual decision-making, including profiling"
+    question:
+      de: "Trifft das System eine Entscheidung ausschliesslich automatisiert, die rechtliche Wirkung entfaltet oder die Person in ähnlicher Weise erheblich beeinträchtigt?"
+      en: "Does your system take a decision based solely on automated processing that produces legal effects concerning the person or similarly significantly affects them?"
+    legal_basis:
+      - GDPR/art-22
+      - GDPR/art-4
+      - GDPR/art-9
+      - BDSG/sec-37
+      - BDSG/sec-31
+      - BDSG/sec-30
+
+    also_cited:
+      - GDPR/art-9/para-1
+      - GDPR/art-9/para-2-a
+    citation_text:
+      de: "Artikel 22 DSGVO, dazu Artikel 4 Nummer 4 und Artikel 9 DSGVO sowie Paragrafen 30, 31 und 37 BDSG"
+      en: "Article 22 GDPR, together with Article 4(4) and Article 9 GDPR and Sections 30, 31 and 37 BDSG"
+    action_required:
+      de: "Zu tun ist: Zuerst feststellen, ob die Entscheidung ausschliesslich automatisiert ergeht. Eine Freigabe durch einen Menschen, die faktisch nur abnickt, macht die Entscheidung nicht zu einer menschlichen. Liegt eine solche Entscheidung vor, ist sie grundsätzlich untersagt und nur in drei Fällen zulässig: wenn sie für Abschluss oder Erfüllung eines Vertrags mit der Person erforderlich ist; wenn sie durch Unionsrecht oder mitgliedstaatliches Recht mit angemessenen Schutzmassnahmen zugelassen ist; oder mit ausdrücklicher Einwilligung der Person. Im ersten und dritten Fall müssen Sie mindestens drei Rechte einräumen: das Eingreifen einer Person auf Ihrer Seite zu erwirken, den eigenen Standpunkt darzulegen und die Entscheidung anzufechten. Auf besondere Datenkategorien nach Artikel 9 Absatz 1 darf eine solche Entscheidung nur beruhen, wenn Artikel 9 Absatz 2 Buchstabe a oder g greift und angemessene Schutzmassnahmen getroffen sind. Profiling im Sinne der Verordnung ist jede automatisierte Verarbeitung, die persönliche Aspekte bewertet, etwa Arbeitsleistung, wirtschaftliche Lage, Gesundheit, Vorlieben, Zuverlässigkeit, Verhalten oder Aufenthaltsort. Für Scoring und Bonitätsauskünfte sowie für Verbraucherkredite enthält das Bundesdatenschutzgesetz in Paragraf 30 und Paragraf 31 eigene Vorgaben."
+      en: "What to do: First establish whether the decision is based solely on automated processing. Approval by a human who in fact only rubber-stamps it does not make the decision a human one. If there is such a decision, it is in principle prohibited and permitted only in three cases: where it is necessary for entering into or performing a contract with the person; where it is authorised by Union or Member State law with suitable safeguards; or with the explicit consent of the person. In the first and third cases you must grant at least three rights: to obtain human intervention on your side, to express their own point of view and to contest the decision. Such a decision may be based on special categories of personal data under Article 9(1) only where Article 9(2)(a) or (g) applies and suitable safeguards are in place. Profiling within the meaning of the Regulation is any automated processing that evaluates personal aspects, such as performance at work, economic situation, health, preferences, reliability, behaviour or location. For scoring and credit reports and for consumer credit, the Federal Data Protection Act (BDSG) contains its own requirements in Section 30 and Section 31."
+    evidence_of_compliance:
+      de: "Eine dokumentierte Einstufung je Entscheidungsprozess, die Darlegung der Ausnahme nach Artikel 22 Absatz 2, die Beschreibung der eingeräumten Rechte und der Nachweis, dass die menschliche Prüfung inhaltlich erfolgt."
+      en: "A documented classification per decision process, the statement of the exception under Article 22(2), the description of the rights granted and proof that the human review takes place in substance."
+    on_infringement:
+
+  # ---------------------------------------------------------------
+      de: "Artikel 83 Absatz 5 Buchstabe b DSGVO: bis zu 20 000 000 Euro oder bis zu 4 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 83(5)(b) GDPR: up to EUR 20 000 000 or up to 4 % of worldwide annual turnover, whichever is higher."
+  - id: h-processor
+    title:
+      de: "Auftragsverarbeitung mit Vertrag"
+      en: "Processing by a processor under a contract"
+    question:
+      de: "Setzen Sie Dienstleister ein, die in Ihrem Auftrag personenbezogene Daten verarbeiten, und liegt dafür der vorgeschriebene Vertrag vor?"
+      en: "Do you use service providers that process personal data on your behalf, and is the required contract in place for this?"
+    legal_basis:
+      - GDPR/art-28
+      - GDPR/art-29
+      - GDPR/art-32
+    citation_text:
+      de: "Artikel 28 DSGVO, dazu Artikel 29 und Artikel 32 DSGVO"
+      en: "Article 28 GDPR, together with Article 29 and Article 32 GDPR"
+    action_required:
+      de: "Zu tun ist: Nur mit Auftragsverarbeitern arbeiten, die hinreichend Garantien für geeignete technische und organisatorische Massnahmen bieten, und mit jedem einen Vertrag oder ein anderes Rechtsinstrument abschliessen. Darin festzulegen sind: Gegenstand und Dauer der Verarbeitung, Art und Zweck, die Art der Daten, die Kategorien betroffener Personen und die Pflichten und Rechte des Verantwortlichen. Der Vertrag muss insbesondere vorsehen, dass der Auftragsverarbeiter nur auf dokumentierte Weisung verarbeitet, die zugriffsberechtigten Personen zur Vertraulichkeit verpflichtet sind, die Sicherheitsmassnahmen nach Artikel 32 getroffen werden, weitere Auftragsverarbeiter nur mit Ihrer vorherigen schriftlichen Genehmigung hinzugezogen werden, Sie bei den Betroffenenrechten unterstützt werden, die Daten am Ende gelöscht oder zurückgegeben werden und Nachweise sowie Überprüfungen möglich sind. Bei allgemeiner Genehmigung muss der Auftragsverarbeiter Sie über jede geplante Änderung bei Unterauftragnehmern informieren, damit Sie Einspruch erheben können. Prüfen Sie das auch bei Anbietern von KI-Diensten, die Ihre Eingabedaten verarbeiten."
+      en: "What to do: Work only with processors that provide sufficient guarantees of appropriate technical and organisational measures, and conclude a contract or other legal act with each of them. It must set out: the subject matter and duration of the processing, its nature and purpose, the type of data, the categories of data subjects and the obligations and rights of the controller. The contract must in particular stipulate that the processor processes only on documented instructions, that the persons authorised to access the data are bound by confidentiality, that the security measures under Article 32 are taken, that further processors are engaged only with your prior written authorisation, that you are assisted with the rights of the data subject, that the data are deleted or returned at the end and that evidence and audits are possible. Under a general authorisation, the processor must inform you of any intended change concerning sub-processors so that you can object. Check this also for providers of AI services that process your input data."
+    evidence_of_compliance:
+      de: "Der abgeschlossene Vertrag je Dienstleister mit allen Pflichtinhalten, die Liste der genehmigten Unterauftragnehmer und die eingeholten Garantienachweise."
+      en: "The contract concluded with each service provider with all mandatory content, the list of authorised sub-processors and the evidence of guarantees obtained."
+    on_infringement:
+
+  # ---------------------------------------------------------------
+      de: "Artikel 83 Absatz 4 Buchstabe a DSGVO: bis zu 10 000 000 Euro oder bis zu 2 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 83(4)(a) GDPR: up to EUR 10 000 000 or up to 2 % of worldwide annual turnover, whichever is higher."
+  - id: i-records-of-processing
+    title:
+      de: "Verzeichnis von Verarbeitungstätigkeiten"
+      en: "Records of processing activities"
+    question:
+      de: "Führen Sie ein vollständiges Verzeichnis Ihrer Verarbeitungstätigkeiten?"
+      en: "Do you keep complete records of your processing activities?"
+    legal_basis:
+      - GDPR/art-30
+    citation_text:
+      de: "Artikel 30 DSGVO"
+      en: "Article 30 GDPR"
+    action_required:
+      de: "Zu tun ist: Ein schriftliches, auch elektronisches Verzeichnis aller Verarbeitungstätigkeiten in Ihrer Zuständigkeit führen. Als Verantwortlicher gehören hinein: Name und Kontaktdaten des Verantwortlichen, gegebenenfalls gemeinsam Verantwortlicher, des Vertreters und des Datenschutzbeauftragten; die Zwecke; die Kategorien betroffener Personen und der Daten; die Empfängerkategorien einschliesslich Empfänger in Drittländern; gegebenenfalls Übermittlungen in Drittländer mit Angabe des Landes und der Garantien; wenn möglich die Löschfristen; und wenn möglich eine allgemeine Beschreibung der Sicherheitsmassnahmen. Als Auftragsverarbeiter führen Sie ein Verzeichnis der im Auftrag durchgeführten Verarbeitungskategorien. Das Verzeichnis ist der Aufsichtsbehörde auf Anfrage vorzulegen. Von der Pflicht befreit sind Unternehmen und Einrichtungen mit weniger als 250 Mitarbeitern, aber nur dann, wenn die Verarbeitung kein Risiko für die Rechte und Freiheiten der betroffenen Personen birgt, nicht nur gelegentlich erfolgt und keine besonderen Datenkategorien oder strafrechtlichen Daten betrifft. In der Praxis greift diese Befreiung bei laufendem KI-Einsatz selten."
+      en: "What to do: Keep written records, which may be in electronic form, of all processing activities under your responsibility. As controller, they must contain: the name and contact details of the controller and, where applicable, of the joint controller, of the representative and of the data protection officer; the purposes; the categories of data subjects and of data; the categories of recipients, including recipients in third countries; where applicable, transfers to third countries, stating the country and the safeguards; where possible, the erasure periods; and where possible, a general description of the security measures. As processor, you keep records of the categories of processing carried out on behalf of controllers. The records must be made available to the supervisory authority on request. Enterprises and organisations employing fewer than 250 persons are exempt from this obligation, but only if the processing is not likely to result in a risk to the rights and freedoms of data subjects, is only occasional and does not include special categories of data or criminal offence data. In practice this exemption rarely applies where AI is in ongoing use."
+    evidence_of_compliance:
+      de: "Das Verzeichnis selbst mit Stand und Fortschreibungsdatum, bei Berufung auf die Befreiung die dokumentierte Prüfung aller drei Bedingungen."
+      en: "The records themselves with their version date and date of last update and, where the exemption is relied on, the documented check of all three conditions."
+    on_infringement:
+
+  # ---------------------------------------------------------------
+      de: "Artikel 83 Absatz 4 Buchstabe a DSGVO: bis zu 10 000 000 Euro oder bis zu 2 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 83(4)(a) GDPR: up to EUR 10 000 000 or up to 2 % of worldwide annual turnover, whichever is higher."
+  - id: j-data-protection-by-design
+    title:
+      de: "Datenschutz durch Technikgestaltung und datenschutzfreundliche Voreinstellungen"
+      en: "Data protection by design and by default"
+    question:
+      de: "Sind die Datenschutzgrundsätze schon in der Technik und in den Voreinstellungen verankert?"
+      en: "Are the data protection principles already built into the technology and the default settings?"
+    legal_basis:
+      - GDPR/art-25
+    citation_text:
+      de: "Artikel 25 DSGVO"
+      en: "Article 25 GDPR"
+    action_required:
+      de: "Zu tun ist: Bereits bei der Festlegung der Mittel für die Verarbeitung und dann auch im Betrieb geeignete technische und organisatorische Massnahmen treffen, die die Datenschutzgrundsätze wirksam umsetzen, etwa Pseudonymisierung zur Umsetzung der Datenminimierung. Die Voreinstellungen müssen so gesetzt sein, dass ohne Zutun der Person nur die für den jeweiligen Zweck erforderlichen Daten verarbeitet werden; das betrifft Menge, Verarbeitungsumfang, Speicherfrist und Zugänglichkeit. Insbesondere dürfen Daten durch Voreinstellung nicht ohne Eingreifen der Person einer unbestimmten Zahl von Menschen zugänglich werden. Entscheiden Sie das vor der Beschaffung, nicht nachträglich: Nachrüsten ist hier regelmässig teurer als richtig einkaufen."
+      en: "What to do: Already when determining the means for the processing, and then also during operation, implement appropriate technical and organisational measures that put the data protection principles into effect, such as pseudonymisation to implement data minimisation. The default settings must be such that, without any action by the person, only the data necessary for each specific purpose are processed; this concerns the amount, the extent of processing, the storage period and accessibility. In particular, by default the data must not be made accessible to an indefinite number of people without the person's intervention. Decide this before procurement, not afterwards: retrofitting is regularly more expensive here than buying the right thing."
+    evidence_of_compliance:
+      de: "Ein Architektur- und Einstellungsnachweis mit der Zuordnung je Grundsatz zur umsetzenden Massnahme, dazu die dokumentierten Voreinstellungen im Auslieferungszustand."
+      en: "Evidence of architecture and settings mapping each principle to the measure implementing it, together with the documented default settings as delivered."
+    on_infringement:
+      de: "Artikel 83 Absatz 4 Buchstabe a DSGVO: bis zu 10 000 000 Euro oder bis zu 2 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 83(4)(a) GDPR: up to EUR 10 000 000 or up to 2 % of worldwide annual turnover, whichever is higher."
+
+  - id: k-security-of-processing
+    title:
+      de: "Sicherheit der Verarbeitung"
+      en: "Security of processing"
+    question:
+      de: "Gewährleisten Ihre Massnahmen ein dem Risiko angemessenes Schutzniveau, und prüfen Sie das regelmässig nach?"
+      en: "Do your measures ensure a level of protection appropriate to the risk, and do you review this regularly?"
+    legal_basis:
+      - GDPR/art-32
+    citation_text:
+      de: "Artikel 32 DSGVO"
+      en: "Article 32 GDPR"
+    action_required:
+      de: "Zu tun ist: Unter Berücksichtigung des Stands der Technik, der Umsetzungskosten und der Art, des Umfangs, der Umstände und der Zwecke der Verarbeitung sowie der Eintrittswahrscheinlichkeit und Schwere des Risikos ein angemessenes Schutzniveau herstellen. Ausdrücklich genannt sind: Pseudonymisierung und Verschlüsselung; die Fähigkeit, Vertraulichkeit, Integrität, Verfügbarkeit und Belastbarkeit der Systeme dauerhaft sicherzustellen; die Fähigkeit, Verfügbarkeit und Zugang nach einem Zwischenfall rasch wiederherzustellen; und ein Verfahren zur regelmässigen Überprüfung, Bewertung und Evaluierung der Wirksamkeit dieser Massnahmen. Zu bewerten sind besonders die Risiken durch Vernichtung, Verlust, Veränderung, unbefugte Offenlegung und unbefugten Zugang. Sorgen Sie ausserdem dafür, dass unterstellte Personen mit Datenzugang nur auf Ihre Anweisung verarbeiten."
+      en: "What to do: Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of the processing as well as the likelihood and severity of the risk, establish an appropriate level of protection. Expressly mentioned are: pseudonymisation and encryption; the ability to ensure the ongoing confidentiality, integrity, availability and resilience of the systems; the ability to restore availability and access in a timely manner after an incident; and a process for regularly testing, assessing and evaluating the effectiveness of these measures. Particular account must be taken of the risks from destruction, loss, alteration, unauthorised disclosure and unauthorised access. Also ensure that persons acting under your authority who have access to the data process them only on your instructions."
+    evidence_of_compliance:
+      de: "Das Sicherheitskonzept mit Risikobewertung, Massnahmenliste, Wiederherstellungsplan und den Berichten der regelmässigen Wirksamkeitsprüfung mit Datum."
+      en: "The security concept with risk assessment, list of measures, recovery plan and the dated reports of the regular effectiveness reviews."
+    on_infringement:
+
+  # ---------------------------------------------------------------
+      de: "Artikel 83 Absatz 4 Buchstabe a DSGVO: bis zu 10 000 000 Euro oder bis zu 2 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 83(4)(a) GDPR: up to EUR 10 000 000 or up to 2 % of worldwide annual turnover, whichever is higher."
+  - id: l-data-protection-impact-assessment
+    title:
+      de: "Datenschutz-Folgenabschätzung"
+      en: "Data protection impact assessment"
+    question:
+      de: "Hat die Verarbeitung voraussichtlich ein hohes Risiko für die Rechte und Freiheiten natürlicher Personen zur Folge?"
+      en: "Is the processing likely to result in a high risk to the rights and freedoms of natural persons?"
+    legal_basis:
+      - GDPR/art-35
+      - GDPR/art-9
+      - GDPR/art-10
+    citation_text:
+      de: "Artikel 35 DSGVO, dazu Artikel 9 und Artikel 10 DSGVO"
+      en: "Article 35 GDPR, together with Article 9 and Article 10 GDPR"
+    action_required:
+      de: "Zu tun ist: Vorab abschätzen, welche Folgen die geplante Verarbeitung für den Schutz personenbezogener Daten hat, wenn sie voraussichtlich ein hohes Risiko für die Rechte und Freiheiten natürlicher Personen bedeutet; die Verwendung neuer Technologien ist dabei ausdrücklich als Anlass genannt. Erforderlich ist die Abschätzung insbesondere in drei Fällen: bei systematischer und umfassender Bewertung persönlicher Aspekte, die auf automatisierter Verarbeitung einschliesslich Profiling beruht und Grundlage von Entscheidungen mit Rechtswirkung oder ähnlich erheblicher Beeinträchtigung ist; bei umfangreicher Verarbeitung besonderer Datenkategorien oder strafrechtlicher Daten; und bei systematischer umfangreicher Überwachung öffentlich zugänglicher Bereiche. Ist ein Datenschutzbeauftragter benannt, holen Sie dessen Rat ein. Prüfen Sie zusätzlich die Liste Ihrer Aufsichtsbehörde, welche Verarbeitungen sie für abschätzungspflichtig hält. Mehrere ähnliche Vorgänge mit ähnlich hohen Risiken dürfen in einer Abschätzung zusammengefasst werden."
+      en: "What to do: Assess in advance the impact of the envisaged processing on the protection of personal data where it is likely to result in a high risk to the rights and freedoms of natural persons; the use of new technologies is expressly named as a trigger. The assessment is required in particular in three cases: a systematic and extensive evaluation of personal aspects which is based on automated processing, including profiling, and on which decisions are based that produce legal effects or similarly significantly affect the person; processing on a large scale of special categories of data or criminal offence data; and systematic monitoring of a publicly accessible area on a large scale. If a data protection officer has been designated, seek their advice. Also check your supervisory authority's list of the processing operations it considers to require an assessment. Several similar processing operations that present similar high risks may be addressed in a single assessment."
+    evidence_of_compliance:
+      de: "Die Abschätzung mit Beschreibung der Verarbeitung, Notwendigkeits- und Verhältnismässigkeitsprüfung, Risikobewertung und Abhilfemassnahmen, dazu der dokumentierte Rat des Datenschutzbeauftragten und das Datum vor Beginn der Verarbeitung."
+      en: "The assessment with a description of the processing, an assessment of necessity and proportionality, a risk assessment and remedial measures, together with the documented advice of the data protection officer and a date before the start of processing."
+    on_infringement:
+      de: "Artikel 83 Absatz 4 Buchstabe a DSGVO: bis zu 10 000 000 Euro oder bis zu 2 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 83(4)(a) GDPR: up to EUR 10 000 000 or up to 2 % of worldwide annual turnover, whichever is higher."
+
+  - id: m-prior-consultation
+    title:
+      de: "Vorherige Konsultation der Aufsichtsbehörde"
+      en: "Prior consultation of the supervisory authority"
+    question:
+      de: "Bleibt nach der Datenschutz-Folgenabschätzung ein hohes Risiko bestehen, weil Sie es nicht eindämmen können?"
+      en: "After the data protection impact assessment, does a high risk remain because you cannot mitigate it?"
+    legal_basis:
+      - GDPR/art-36
+      - GDPR/art-35
+    citation_text:
+      de: "Artikel 36 DSGVO, dazu Artikel 35 DSGVO"
+      en: "Article 36 GDPR, together with Article 35 GDPR"
+    action_required:
+      de: "Zu tun ist: Ergibt die Datenschutz-Folgenabschätzung ein hohes Risiko und treffen Sie keine Massnahmen zu seiner Eindämmung, konsultieren Sie vor der Verarbeitung die Aufsichtsbehörde. Legen Sie dabei vor: gegebenenfalls die Zuständigkeitsverteilung zwischen Verantwortlichem, gemeinsam Verantwortlichen und Auftragsverarbeitern; Zwecke und Mittel der geplanten Verarbeitung; die vorgesehenen Schutzmassnahmen und Garantien; gegebenenfalls die Kontaktdaten des Datenschutzbeauftragten; die Datenschutz-Folgenabschätzung; und alles Weitere, was die Behörde anfordert. Die Behörde antwortet innerhalb von bis zu acht Wochen nach Erhalt des Ersuchens mit schriftlichen Empfehlungen; diese Frist kann wegen Komplexität um sechs Wochen verlängert werden, worüber die Behörde innerhalb eines Monats nach Eingang unterrichtet. Rechnen Sie diese Zeit in Ihren Zeitplan ein, statt den Start zu planen und die Konsultation nachzuschieben."
+      en: "What to do: If the data protection impact assessment indicates a high risk and you take no measures to mitigate it, consult the supervisory authority before the processing. Provide: where applicable, the respective responsibilities of the controller, joint controllers and processors; the purposes and means of the intended processing; the measures and safeguards provided; where applicable, the contact details of the data protection officer; the data protection impact assessment; and anything else the authority requests. The authority responds within a period of up to eight weeks of receipt of the request with written advice; this period may be extended by six weeks owing to complexity, of which the authority informs you within one month of receipt. Build this time into your schedule instead of planning the launch and adding the consultation afterwards."
+    evidence_of_compliance:
+      de: "Das Konsultationsersuchen mit Datum und Anlagen, die Antwort der Aufsichtsbehörde und die Dokumentation, wie die Empfehlungen umgesetzt wurden."
+      en: "The consultation request with date and annexes, the reply of the supervisory authority and the documentation of how the advice was implemented."
+    on_infringement:
+
+  # ---------------------------------------------------------------
+      de: "Artikel 83 Absatz 4 Buchstabe a DSGVO: bis zu 10 000 000 Euro oder bis zu 2 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 83(4)(a) GDPR: up to EUR 10 000 000 or up to 2 % of worldwide annual turnover, whichever is higher."
+  - id: n-data-protection-officer
+    title:
+      de: "Datenschutzbeauftragter"
+      en: "Data protection officer"
+    question:
+      de: "Müssen Sie einen Datenschutzbeauftragten benennen, und ist er mit den vorgeschriebenen Aufgaben und Rechten ausgestattet?"
+      en: "Must you designate a data protection officer, and are they provided with the prescribed tasks and rights?"
+    legal_basis:
+      - GDPR/art-37
+      - GDPR/art-38
+      - GDPR/art-39
+      - BDSG/sec-38
+      - BDSG/sec-5
+      - BDSG/sec-6
+
+    also_cited:
+      - GDPR/art-37/para-1
+    citation_text:
+      de: "Artikel 37 bis 39 DSGVO, dazu Paragraf 38 BDSG und, für öffentliche Stellen des Bundes, Paragrafen 5 und 6 BDSG"
+      en: "Articles 37 to 39 GDPR, together with Section 38 BDSG and, for federal public bodies, Sections 5 and 6 BDSG"
+    action_required:
+      de: "Zu tun ist: Zuerst prüfen, ob eine Benennungspflicht besteht. Nach Artikel 37 Absatz 1 ist sie in drei Fällen gegeben: die Verarbeitung erfolgt durch eine Behörde oder öffentliche Stelle, ausgenommen Gerichte im Rahmen ihrer justiziellen Tätigkeit; die Kerntätigkeit besteht in Verarbeitungen, die eine umfangreiche regelmässige und systematische Überwachung betroffener Personen erforderlich machen; oder die Kerntätigkeit besteht in der umfangreichen Verarbeitung besonderer Datenkategorien oder strafrechtlicher Daten. Für nichtöffentliche Stellen in Deutschland kommt die Schwelle des Paragrafen 38 BDSG hinzu: zu benennen ist, wer in der Regel mindestens 20 Personen ständig mit der automatisierten Verarbeitung personenbezogener Daten beschäftigt. Unabhängig von dieser Zahl ist zu benennen, wenn Verarbeitungen einer Datenschutz-Folgenabschätzung unterliegen oder wenn personenbezogene Daten geschäftsmässig zum Zweck der Übermittlung, der anonymisierten Übermittlung oder für Markt- oder Meinungsforschung verarbeitet werden. Die Benennung erfolgt nach beruflicher Qualifikation und Fachwissen; die Person kann Beschäftigter oder externer Dienstleister sein. Veröffentlichen Sie die Kontaktdaten und teilen Sie sie der Aufsichtsbehörde mit. Stellen Sie die Unabhängigkeit und die Einbindung nach Artikel 38 sicher und übertragen Sie die Aufgaben nach Artikel 39."
+      en: "What to do: First check whether there is an obligation to designate one. Under Article 37(1) it exists in three cases: the processing is carried out by a public authority or body, except for courts acting in their judicial capacity; the core activities consist of processing operations which require regular and systematic monitoring of data subjects on a large scale; or the core activities consist of processing on a large scale of special categories of data or criminal offence data. For non-public bodies in Germany, the threshold of Section 38 BDSG is added: a data protection officer must be designated by anyone who as a rule constantly employs at least 20 persons in the automated processing of personal data. Regardless of this number, one must be designated where processing operations are subject to a data protection impact assessment or where personal data are processed commercially for the purpose of transfer, of anonymised transfer or for market or opinion research. The designation is based on professional qualities and expert knowledge; the person may be an employee or an external service provider. Publish the contact details and communicate them to the supervisory authority. Ensure independence and involvement under Article 38 and assign the tasks under Article 39."
+    evidence_of_compliance:
+      de: "Die Prüfung der Benennungspflicht mit Zählung der betroffenen Personen, das Benennungsschreiben, der Qualifikationsnachweis, die Veröffentlichung der Kontaktdaten und die Meldung an die Aufsichtsbehörde."
+      en: "The check of the obligation to designate with a count of the persons concerned, the letter of designation, proof of qualifications, the publication of the contact details and the notification to the supervisory authority."
+    on_infringement:
+
+  # ---------------------------------------------------------------
+      de: "Artikel 83 Absatz 4 Buchstabe a DSGVO: bis zu 10 000 000 Euro oder bis zu 2 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist. Das Bundesdatenschutzgesetz enthält in Paragraf 43 eigene Bussgeldvorschriften."
+      en: "Article 83(4)(a) GDPR: up to EUR 10 000 000 or up to 2 % of worldwide annual turnover, whichever is higher. The Federal Data Protection Act (BDSG) contains its own provisions on fines in Section 43."
+  - id: o-breach-notification-authority
+    title:
+      de: "Meldung von Datenschutzverletzungen binnen 72 Stunden"
+      en: "Notification of personal data breaches within 72 hours"
+    question:
+      de: "Ist eine Verletzung des Schutzes personenbezogener Daten eingetreten, und wann haben Sie davon Kenntnis erlangt?"
+      en: "Has a personal data breach occurred, and when did you become aware of it?"
+    legal_basis:
+      - GDPR/art-33
+      - GDPR/art-4
+    citation_text:
+      de: "Artikel 33 DSGVO, dazu Artikel 4 Nummer 12 DSGVO"
+      en: "Article 33 GDPR, together with Article 4(12) GDPR"
+    action_required:
+      de: "Zu tun ist: Die Verletzung unverzüglich und möglichst binnen 72 Stunden, nachdem sie Ihnen bekannt wurde, der zuständigen Aufsichtsbehörde melden. Die Meldung entfällt nur, wenn die Verletzung voraussichtlich nicht zu einem Risiko für die Rechte und Freiheiten natürlicher Personen führt; diese Einschätzung ist zu dokumentieren. Dauert es länger als 72 Stunden, ist eine Begründung für die Verzögerung beizufügen. Die Meldung enthält mindestens: eine Beschreibung der Art der Verletzung mit, soweit möglich, Kategorien und ungefährer Zahl der betroffenen Personen und Datensätze; Name und Kontaktdaten des Datenschutzbeauftragten oder einer anderen Anlaufstelle; eine Beschreibung der wahrscheinlichen Folgen; und eine Beschreibung der ergriffenen oder vorgeschlagenen Abhilfe- und Abmilderungsmassnahmen. Liegen nicht alle Informationen gleichzeitig vor, dürfen Sie ohne unangemessene weitere Verzögerung schrittweise nachreichen. Unabhängig von der Meldung dokumentieren Sie jede Verletzung mit allen Fakten, Auswirkungen und Abhilfemassnahmen so, dass die Aufsichtsbehörde die Einhaltung prüfen kann. Erfährt ein Auftragsverarbeiter von einer Verletzung, meldet er sie unverzüglich dem Verantwortlichen; nehmen Sie das in den Vertrag aus Abschnitt h auf. Richten Sie den Meldeweg vorher ein: 72 Stunden sind keine Frist, in der sich Zuständigkeiten noch klären lassen."
+      en: "What to do: Notify the breach to the competent supervisory authority without undue delay and, where feasible, within 72 hours after having become aware of it. Notification may be omitted only if the breach is unlikely to result in a risk to the rights and freedoms of natural persons; this assessment must be documented. If it takes longer than 72 hours, reasons for the delay must accompany the notification. The notification contains at least: a description of the nature of the breach including, where possible, the categories and approximate number of data subjects and records concerned; the name and contact details of the data protection officer or another contact point; a description of the likely consequences; and a description of the measures taken or proposed to address and mitigate the breach. Where not all information is available at the same time, you may provide it in phases without undue further delay. Regardless of the notification, document every breach with all facts, effects and remedial action so that the supervisory authority can verify compliance. Where a processor becomes aware of a breach, it notifies the controller without undue delay; include this in the contract from section h. Set up the notification route in advance: 72 hours is not a period in which responsibilities can still be sorted out."
+    evidence_of_compliance:
+      de: "Ein Verletzungsregister mit Kenntniszeitpunkt nach Datum und Uhrzeit, Meldezeitpunkt, Risikobewertung, Meldetext und, bei Verzögerung, der Begründung."
+      en: "A breach register with the time of awareness by date and hour, time of notification, risk assessment, notification text and, in case of delay, the reasons."
+    on_infringement:
+      de: "Artikel 83 Absatz 4 Buchstabe a DSGVO: bis zu 10 000 000 Euro oder bis zu 2 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 83(4)(a) GDPR: up to EUR 10 000 000 or up to 2 % of worldwide annual turnover, whichever is higher."
+
+  - id: p-breach-communication-data-subjects
+    title:
+      de: "Benachrichtigung der betroffenen Personen"
+      en: "Communication to the data subjects"
+    question:
+      de: "Hat die Verletzung voraussichtlich ein hohes Risiko für die persönlichen Rechte und Freiheiten natürlicher Personen zur Folge?"
+      en: "Is the breach likely to result in a high risk to the personal rights and freedoms of natural persons?"
+    legal_basis:
+      - GDPR/art-34
+      - GDPR/art-33
+    citation_text:
+      de: "Artikel 34 DSGVO, dazu Artikel 33 Absatz 3 DSGVO"
+      en: "Article 34 GDPR, together with Article 33(3) GDPR"
+    action_required:
+      de: "Zu tun ist: Bei hohem Risiko die betroffenen Personen unverzüglich benachrichtigen. Die Benachrichtigung beschreibt in klarer und einfacher Sprache die Art der Verletzung und enthält mindestens die Kontaktdaten der Anlaufstelle, die wahrscheinlichen Folgen und die ergriffenen oder vorgeschlagenen Massnahmen. Sie ist in drei Fällen nicht erforderlich: Sie hatten geeignete technische und organisatorische Sicherheitsvorkehrungen getroffen und auf die betroffenen Daten angewandt, durch die diese für Unbefugte unzugänglich sind, etwa Verschlüsselung; Sie haben durch nachfolgende Massnahmen sichergestellt, dass das hohe Risiko aller Wahrscheinlichkeit nach nicht mehr besteht; oder die Benachrichtigung wäre mit unverhältnismässigem Aufwand verbunden, dann tritt eine öffentliche Bekanntmachung oder eine ähnliche Massnahme an ihre Stelle."
+      en: "What to do: Where there is a high risk, communicate the breach to the data subjects without undue delay. The communication describes in clear and plain language the nature of the breach and contains at least the contact details of the contact point, the likely consequences and the measures taken or proposed. It is not required in three cases: you had implemented appropriate technical and organisational protection measures, and applied them to the data affected, that render the data unintelligible to anyone not authorised to access them, such as encryption; you have taken subsequent measures which ensure that the high risk is no longer likely to materialise; or the communication would involve disproportionate effort, in which case a public communication or similar measure takes its place."
+    evidence_of_compliance:
+      de: "Der Benachrichtigungstext mit Versanddatum und Empfängerkreis oder, bei Verzicht, die dokumentierte Begründung des herangezogenen Ausnahmefalls."
+      en: "The text of the communication with dispatch date and group of recipients or, where it is omitted, the documented justification of the exception relied on."
+    on_infringement:
+
+  # ---------------------------------------------------------------
+      de: "Artikel 83 Absatz 4 Buchstabe a DSGVO: bis zu 10 000 000 Euro oder bis zu 2 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 83(4)(a) GDPR: up to EUR 10 000 000 or up to 2 % of worldwide annual turnover, whichever is higher."
+  - id: q-third-country-transfers
+    title:
+      de: "Übermittlung in Drittländer"
+      en: "Transfers to third countries"
+    question:
+      de: "Werden Daten in ein Land ausserhalb der Europäischen Union oder an eine internationale Organisation übermittelt, auch nur durch Zugriffsmöglichkeit?"
+      en: "Are data transferred to a country outside the European Union or to an international organisation, even if only through the possibility of access?"
+    legal_basis:
+      - GDPR/art-44
+      - GDPR/art-45
+      - GDPR/art-46
+      - GDPR/art-47
+      - GDPR/art-48
+      - GDPR/art-49
+    citation_text:
+      de: "Artikel 44 bis 49 DSGVO"
+      en: "Articles 44 to 49 GDPR"
+    action_required:
+      de: "Zu tun ist: Zuerst feststellen, ob überhaupt eine Übermittlung vorliegt; dazu zählt auch, wenn Beschäftigte oder Dienstleister aus einem Drittland auf die Daten zugreifen können. Dann die Grundlage bestimmen, in dieser Reihenfolge: liegt für das Land ein Angemessenheitsbeschluss der Kommission nach Artikel 45 vor, genügt dieser; liegt keiner vor, brauchen Sie geeignete Garantien nach Artikel 46, und es müssen den betroffenen Personen durchsetzbare Rechte und wirksame Rechtsbehelfe zur Verfügung stehen. Als Garantien ohne eigene Genehmigung der Aufsichtsbehörde nennt Artikel 46 unter anderem: ein rechtlich bindendes und durchsetzbares Dokument zwischen Behörden; verbindliche interne Datenschutzvorschriften nach Artikel 47; Standarddatenschutzklauseln der Kommission; von einer Aufsichtsbehörde angenommene und von der Kommission genehmigte Standarddatenschutzklauseln; genehmigte Verhaltensregeln mit rechtsverbindlichen Verpflichtungen im Drittland; und einen genehmigten Zertifizierungsmechanismus mit solchen Verpflichtungen. Liegt beides nicht vor, kommt nur eine der engen Ausnahmen des Artikels 49 in Betracht. Beachten Sie zudem Artikel 48: Ein Urteil oder eine Behördenentscheidung eines Drittlands ist allein keine zulässige Grundlage für eine Offenlegung. Alle übrigen Vorschriften der Verordnung gelten daneben weiter."
+      en: "What to do: First establish whether there is a transfer at all; this includes where staff or service providers from a third country can access the data. Then determine the basis, in this order: if there is an adequacy decision of the Commission under Article 45 for the country, it suffices; if there is none, you need appropriate safeguards under Article 46, and enforceable rights and effective legal remedies must be available to the data subjects. As safeguards not requiring any specific authorisation from a supervisory authority, Article 46 names among others: a legally binding and enforceable instrument between public authorities; binding corporate rules under Article 47; standard data protection clauses of the Commission; standard data protection clauses adopted by a supervisory authority and approved by the Commission; an approved code of conduct with binding and enforceable commitments in the third country; and an approved certification mechanism with such commitments. If neither is available, only one of the narrow derogations of Article 49 comes into consideration. Note also Article 48: a judgment or decision of an authority of a third country is not in itself a lawful basis for disclosure. All other provisions of the Regulation continue to apply alongside."
+    evidence_of_compliance:
+      de: "Eine Übermittlungsliste mit Empfänger, Land, Rechtsgrundlage und den abgeschlossenen Klauseln oder Garantien, dazu bei Artikel 46 die Prüfung, ob im Zielland durchsetzbare Rechte und Rechtsbehelfe bestehen."
+      en: "A list of transfers with recipient, country, legal basis and the clauses or safeguards concluded, and for Article 46 the check whether enforceable rights and legal remedies exist in the destination country."
+    on_infringement:
+
+  # ---------------------------------------------------------------
+      de: "Artikel 83 Absatz 5 Buchstabe c DSGVO: bis zu 20 000 000 Euro oder bis zu 4 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 83(5)(c) GDPR: up to EUR 20 000 000 or up to 4 % of worldwide annual turnover, whichever is higher."
+  - id: r-employee-data
+    title:
+      de: "Beschäftigtendaten"
+      en: "Employee data"
+    question:
+      de: "Werden Daten von Beschäftigten oder Bewerbern verarbeitet?"
+      en: "Are data of employees or job applicants processed?"
+    legal_basis:
+      - BDSG/sec-26
+      - GDPR/art-88
+      - GDPR/art-9
+    citation_text:
+      de: "Paragraf 26 BDSG, dazu Artikel 88 und Artikel 9 DSGVO"
+      en: "Section 26 BDSG, together with Article 88 and Article 9 GDPR"
+    action_required:
+      de: "Zu tun ist: Daten von Beschäftigten dürfen für Zwecke des Beschäftigungsverhältnisses verarbeitet werden, soweit das erforderlich ist für die Entscheidung über die Begründung des Verhältnisses, für dessen Durchführung oder Beendigung oder zur Erfüllung von Rechten und Pflichten der Interessenvertretung der Beschäftigten aus Gesetz, Tarifvertrag, Betriebs- oder Dienstvereinbarung. Zur Aufdeckung von Straftaten ist die Verarbeitung nur zulässig, wenn zu dokumentierende tatsächliche Anhaltspunkte den Verdacht begründen, die Verarbeitung zur Aufdeckung erforderlich ist und das schutzwürdige Interesse der Beschäftigten nicht überwiegt, insbesondere Art und Ausmass nicht unverhältnismässig sind. Stützen Sie sich auf eine Einwilligung, berücksichtigen Sie bei der Freiwilligkeit ausdrücklich die Abhängigkeit im Beschäftigungsverhältnis und die Umstände der Erteilung. Prüfen Sie vor dem Einsatz von KI im Beschäftigungskontext ausserdem die Mitbestimmungsrechte nach nationalem Recht und die Informationspflicht gegenüber Beschäftigten und ihren Vertretungen aus der KI-Verordnung, siehe Abschnitt t."
+      en: "What to do: Employee data may be processed for the purposes of the employment relationship where this is necessary for the decision on establishing the relationship, for carrying it out or terminating it, or for exercising or fulfilling the rights and obligations of employee representation laid down by law, collective agreements or works or service agreements. For the detection of criminal offences, processing is permitted only if documented actual indications give rise to the suspicion, the processing is necessary for detection and the legitimate interest of the employees does not prevail, in particular the type and extent are not disproportionate. If you rely on consent, take expressly into account, when assessing whether it is freely given, the dependence in the employment relationship and the circumstances in which consent was given. Before using AI in the employment context, also check the co-determination rights under national law and the duty under the AI Act to inform workers and their representatives, see section t."
+    evidence_of_compliance:
+      de: "Eine Erforderlichkeitsbegründung je Verarbeitungszweck im Beschäftigungsverhältnis, bei Verdachtsverarbeitungen die dokumentierten tatsächlichen Anhaltspunkte, bei Einwilligungen die Freiwilligkeitsprüfung und die einschlägigen Kollektivvereinbarungen."
+      en: "A justification of necessity per processing purpose in the employment relationship, for processing on suspicion the documented actual indications, for consent the check that it was freely given and the relevant collective agreements."
+    on_infringement:
+
+  # ---------------------------------------------------------------
+      de: "Je nach betroffener Vorschrift Artikel 83 Absatz 5 Buchstabe a oder d DSGVO mit bis zu 20 000 000 Euro oder bis zu 4 Prozent des weltweiten Jahresumsatzes; Paragraf 26 BDSG ist eine Vorschrift im Rahmen des Kapitels IX der Verordnung. Das Bundesdatenschutzgesetz enthält in Paragraf 42 ausserdem Strafvorschriften."
+      en: "Depending on the provision concerned, Article 83(5)(a) or (d) GDPR with up to EUR 20 000 000 or up to 4 % of worldwide annual turnover; Section 26 BDSG is a provision within the framework of Chapter IX of the Regulation. The Federal Data Protection Act (BDSG) also contains criminal provisions in Section 42."
+  - id: s-training-on-personal-data
+    title:
+      de: "Training mit personenbezogenen Daten"
+      en: "Training on personal data"
+    question:
+      de: "Werden personenbezogene Daten verwendet, um ein Modell zu trainieren, zu validieren oder zu testen?"
+      en: "Are personal data used to train, validate or test a model?"
+    legal_basis:
+      - GDPR/art-5
+      - GDPR/art-6
+      - GDPR/art-9
+      - GDPR/art-13
+      - GDPR/art-14
+      - GDPR/art-15
+      - GDPR/art-17
+      - GDPR/art-21
+      - GDPR/art-22
+      - GDPR/art-25
+      - GDPR/art-35
+      - GDPR/art-89
+      - AI-Act/art-10
+      - AI-Act/art-10/para-5
+      - AI-Act/art-59
+
+    also_cited:
+      - GDPR/art-5/para-1-b
+      - GDPR/art-9/para-2
+      - GDPR/art-10
+    citation_text:
+      de: "Artikel 5, 6, 9, 13, 14, 15, 17, 21, 22, 25, 35 und 89 DSGVO, dazu Artikel 10 und Artikel 59 KI-VO"
+      en: "Articles 5, 6, 9, 13, 14, 15, 17, 21, 22, 25, 35 and 89 GDPR, together with Article 10 and Article 59 AI Act"
+    action_required:
+      de: "Zu tun ist: Das Training ist eine Verarbeitung im Sinne des Artikels 4 Nummer 2 und braucht daher eine eigene Rechtsgrundlage nach Artikel 6. Nicht ausreichend ist, dass die Daten für einen anderen Zweck rechtmässig erhoben wurden: Prüfen Sie nach Artikel 5 Absatz 1 Buchstabe b, ob das Training mit dem ursprünglichen Erhebungszweck vereinbar ist, und halten Sie die Prüfung schriftlich fest. Sind besondere Datenkategorien betroffen, brauchen Sie zusätzlich eine Ausnahme nach Artikel 9 Absatz 2. Informieren Sie die betroffenen Personen nach Artikel 13 oder, wenn die Daten nicht bei ihnen erhoben wurden, nach Artikel 14 einschliesslich der Herkunft der Daten. Prüfen Sie nach Artikel 35, ob eine Datenschutz-Folgenabschätzung erforderlich ist; die Verwendung neuer Technologien ist dort ausdrücklich als Anlass genannt. Setzen Sie Datenminimierung und Pseudonymisierung nach Artikel 25 bereits bei der Zusammenstellung der Datensätze um. Erfolgt das Training zu wissenschaftlichen oder historischen Forschungszwecken oder zu statistischen Zwecken, gelten die Garantien des Artikels 89 Absatz 1, und Unionsrecht oder mitgliedstaatliches Recht kann dort Ausnahmen von den Rechten aus den Artikeln 15, 16, 18 und 21 vorsehen; eine solche Ausnahme muss Sie also benennen können, sie ergibt sich nicht aus dem Forschungszweck allein. Die KI-Verordnung tritt daneben: Artikel 10 verlangt Daten-Governance für Trainings-, Validierungs- und Testdatensätze, und Artikel 10 Absatz 5 erlaubt die Verarbeitung besonderer Datenkategorien ausnahmsweise zur Erkennung und Korrektur von Verzerrungen, aber nur unter sechs zusätzlichen Bedingungen und ausdrücklich zusätzlich zu den Vorgaben der Datenschutz-Grundverordnung. Für KI-Reallabore regelt Artikel 59 KI-VO eine eigene, eng begrenzte Weiterverarbeitung rechtmässig erhobener Daten im öffentlichen Interesse."
+      en: "What to do: Training is processing within the meaning of Article 4(2) and therefore needs its own legal basis under Article 6. It is not sufficient that the data were lawfully collected for another purpose: check under Article 5(1)(b) whether the training is compatible with the original purpose of collection, and record the check in writing. If special categories of data are involved, you additionally need an exception under Article 9(2). Inform the data subjects under Article 13 or, if the data were not collected from them, under Article 14, including the source of the data. Check under Article 35 whether a data protection impact assessment is required; the use of new technologies is expressly named there as a trigger. Implement data minimisation and pseudonymisation under Article 25 already when compiling the datasets. If the training is carried out for scientific or historical research purposes or for statistical purposes, the safeguards of Article 89(1) apply, and Union or Member State law may provide there for derogations from the rights under Articles 15, 16, 18 and 21; you must therefore be able to name such a derogation, it does not follow from the research purpose alone. The AI Act applies alongside: Article 10 requires data governance for training, validation and testing datasets, and Article 10(5) exceptionally permits the processing of special categories of data to detect and correct bias, but only under six additional conditions and expressly in addition to the requirements of the General Data Protection Regulation. For AI regulatory sandboxes, Article 59 AI Act lays down a separate, narrowly limited further processing of lawfully collected data in the public interest."
+    open_issue_erasure_from_models:
+      de: "Ausdrückliche Regelung fehlt. Artikel 17 DSGVO gibt ein Recht auf Löschung personenbezogener Daten, trifft aber keine Aussage darüber, wie mit einem bereits trainierten Modell zu verfahren ist, in dessen Parametern sich Trainingsdaten niedergeschlagen haben; der Verordnungstext enthält dazu keine Vorschrift. Die KI-Verordnung ordnet eine Löschung nur für den Sonderfall des Artikels 10 Absatz 5 Buchstabe e an, nämlich für die zur Verzerrungskorrektur verarbeiteten besonderen Datenkategorien, sobald die Verzerrung korrigiert ist oder die Speicherfrist endet. Eine Pflicht, ein Modell neu zu trainieren oder Modellgewichte anzupassen, lässt sich aus dem hier erfassten Normtext nicht belegen. Was gesichert aus dem Text folgt: Der Trainingsdatensatz selbst unterliegt Artikel 17 und der Speicherbegrenzung nach Artikel 5 Absatz 1 Buchstabe e, und ein Löschverlangen ist jedenfalls insoweit umzusetzen. Wie weit es darüber hinaus reicht, ist im Normtext nicht entschieden und hier daher nicht beantwortet."
+      en: "There is no express rule. Article 17 GDPR grants a right to erasure of personal data but says nothing about how to deal with a model that has already been trained and whose parameters reflect training data; the text of the Regulation contains no provision on this. The AI Act orders erasure only for the special case of Article 10(5)(e), namely for the special categories of data processed to correct bias, once the bias has been corrected or the retention period has ended. An obligation to retrain a model or to adjust model weights cannot be established from the legal text covered here. What follows reliably from the text: the training dataset itself is subject to Article 17 and to storage limitation under Article 5(1)(e), and an erasure request must in any case be implemented to that extent. How far it reaches beyond that is not decided in the legal text and is therefore not answered here."
+    evidence_of_compliance:
+      de: "Je Datensatz: benannte Rechtsgrundlage, dokumentierte Vereinbarkeitsprüfung des Zwecks, bei besonderen Kategorien die Ausnahme nach Artikel 9 Absatz 2, die erteilten Informationen nach Artikel 13 oder 14, die Datenschutz-Folgenabschätzung oder die Begründung ihres Entfallens, die Massnahmen zur Minimierung und Pseudonymisierung und die Löschfrist für den Datensatz."
+      en: "Per dataset: the named legal basis, the documented compatibility assessment of the purpose, for special categories the exception under Article 9(2), the information provided under Article 13 or 14, the data protection impact assessment or the justification for not carrying one out, the measures for minimisation and pseudonymisation and the erasure period for the dataset."
+    on_infringement:
+
+  # ---------------------------------------------------------------
+      de: "Für Grundsätze und Rechtsgrundlage Artikel 83 Absatz 5 Buchstabe a DSGVO und für die Betroffenenrechte Artikel 83 Absatz 5 Buchstabe b DSGVO, jeweils bis zu 20 000 000 Euro oder bis zu 4 Prozent des weltweiten Jahresumsatzes; für Datenschutz-Folgenabschätzung und Technikgestaltung Artikel 83 Absatz 4 Buchstabe a DSGVO mit bis zu 10 000 000 Euro oder bis zu 2 Prozent. Verstösse gegen Artikel 10 KI-VO werden über die Anbieterpflichten des Artikels 16 KI-VO von Artikel 99 Absatz 4 Buchstabe a KI-VO erfasst."
+      en: "For the principles and the legal basis, Article 83(5)(a) GDPR, and for the rights of the data subject, Article 83(5)(b) GDPR, each with up to EUR 20 000 000 or up to 4 % of worldwide annual turnover; for the data protection impact assessment and data protection by design, Article 83(4)(a) GDPR with up to EUR 10 000 000 or up to 2 %. Infringements of Article 10 AI Act are covered via the provider obligations of Article 16 AI Act by Article 99(4)(a) AI Act."
+  - id: t-ai-act-interplay
+    title:
+      de: "Zusammenspiel mit der KI-Verordnung"
+      en: "Interplay with the AI Act"
+    question:
+      de: "Welche Pflichten erfüllen Sie doppelt, und wo verweist die KI-Verordnung ausdrücklich auf das Datenschutzrecht?"
+      en: "Which obligations do you fulfil twice, and where does the AI Act expressly refer to data protection law?"
+    legal_basis:
+      - AI-Act/art-2
+      - AI-Act/art-2/para-7
+      - AI-Act/art-10/para-5
+      - AI-Act/art-26/para-9
+      - AI-Act/art-27
+      - AI-Act/art-27/para-4
+      - AI-Act/art-50/para-3
+      - AI-Act/art-59/para-1
+      - AI-Act/art-26/para-10
+      - AI-Act/art-5/para-1
+      - GDPR/art-35
+      - GDPR/art-22
+      - GDPR/art-13
+      - GDPR/art-32
+
+    also_cited:
+      - GDPR/art-10
+      - AI-Act/art-59
+      - GDPR/art-26
+      - AI-Act/art-13
+      - GDPR/art-27/para-4
+      - GDPR/art-50
+      - GDPR/art-9
+      - GDPR/art-59
+      - AI-Act/art-50
+      - GDPR/art-22/para-3
+      - AI-Act/art-86
+      - AI-Act/art-15
+      - GDPR/art-12
+    citation_text:
+      de: "Artikel 2 Absatz 7, Artikel 10 Absatz 5, Artikel 26 Absätze 9 und 10, Artikel 27 Absatz 4, Artikel 50 Absatz 3 und Artikel 59 Absatz 1 KI-VO, dazu Artikel 13, 22, 32 und 35 DSGVO"
+      en: "Article 2(7), Article 10(5), Article 26(9) and (10), Article 27(4), Article 50(3) and Article 59(1) AI Act, together with Articles 13, 22, 32 and 35 GDPR"
+    action_required:
+      de: "Zu tun ist: Beide Regelwerke nebeneinander erfüllen, nicht eines statt des anderen. Artikel 2 Absatz 7 KI-VO stellt klar: Das Unionsrecht zum Schutz personenbezogener Daten gilt für die Verarbeitung im Zusammenhang mit den Rechten und Pflichten der KI-Verordnung weiter, und die KI-Verordnung berührt die Datenschutz-Grundverordnung nicht, mit Ausnahme von Artikel 10 Absatz 5 und Artikel 59 KI-VO. Wo die KI-Verordnung ausdrücklich auf das Datenschutzrecht verweist: Artikel 10 Absatz 5 erlaubt Anbietern von Hochrisikosystemen die Verarbeitung besonderer Datenkategorien zur Verzerrungskorrektur zusätzlich zu den Vorgaben der Datenschutz-Grundverordnung und verlangt unter Buchstabe f einen entsprechenden Eintrag in den Aufzeichnungen über Verarbeitungstätigkeiten; Artikel 26 Absatz 9 verpflichtet Betreiber, die Anbieterinformationen aus Artikel 13 KI-VO für ihre Datenschutz-Folgenabschätzung nach Artikel 35 DSGVO zu verwenden; Artikel 27 Absatz 4 bestimmt, dass die Grundrechte-Folgenabschätzung eine bereits durchgeführte Datenschutz-Folgenabschätzung ergänzt, sie also nicht ersetzt und nicht von ihr ersetzt wird; Artikel 50 Absatz 3 verlangt bei Emotionserkennung und biometrischer Kategorisierung die Verarbeitung nach der Datenschutz-Grundverordnung; Artikel 26 Absatz 10 lässt für die Verarbeitung biometrischer Daten Artikel 9 DSGVO ausdrücklich unberührt; und Artikel 59 Absatz 1 regelt die Weiterverarbeitung rechtmässig erhobener Daten im KI-Reallabor. Doppelt auftretende Pflichten, die Sie sinnvoll zusammen bearbeiten: die Folgenabschätzungen aus Artikel 35 DSGVO und Artikel 27 KI-VO; die Transparenz gegenüber Betroffenen aus Artikel 13 und 14 DSGVO und aus Artikel 26 Absatz 11 und Artikel 50 KI-VO; die Erläuterung von Entscheidungen aus Artikel 22 Absatz 3 DSGVO und Artikel 86 KI-VO; die Sicherheitsmassnahmen aus Artikel 32 DSGVO und Artikel 15 KI-VO; und die Protokollierung aus Artikel 12, 19 und 26 Absatz 6 KI-VO, deren Aufbewahrungsfristen unter dem Vorbehalt des Datenschutzrechts stehen. Führen Sie diese Unterlagen in einem Vorgang, aber halten Sie die Fundstellen beider Rechtsakte getrennt auseinander, damit jede Behörde ihre Pflicht darin wiederfindet."
+      en: "What to do: Comply with both sets of rules side by side, not one instead of the other. Article 2(7) AI Act makes clear: Union law on the protection of personal data continues to apply to processing in connection with the rights and obligations of the AI Act, and the AI Act does not affect the General Data Protection Regulation, with the exception of Article 10(5) and Article 59 AI Act. Where the AI Act expressly refers to data protection law: Article 10(5) permits providers of high-risk systems to process special categories of data to correct bias in addition to the requirements of the General Data Protection Regulation and, under point (f), requires a corresponding entry in the records of processing activities; Article 26(9) obliges deployers to use the provider information under Article 13 AI Act for their data protection impact assessment under Article 35 GDPR; Article 27(4) provides that the fundamental rights impact assessment complements a data protection impact assessment already carried out, so it neither replaces it nor is replaced by it; Article 50(3) requires processing in accordance with the General Data Protection Regulation for emotion recognition and biometric categorisation; Article 26(10) expressly leaves Article 9 GDPR unaffected for the processing of biometric data; and Article 59(1) governs the further processing of lawfully collected data in the AI regulatory sandbox. Obligations that occur twice and that you can sensibly handle together: the impact assessments under Article 35 GDPR and Article 27 AI Act; transparency towards data subjects under Articles 13 and 14 GDPR and under Article 26(11) and Article 50 AI Act; the explanation of decisions under Article 22(3) GDPR and Article 86 AI Act; the security measures under Article 32 GDPR and Article 15 AI Act; and the logging under Article 12, Article 19 and Article 26(6) AI Act, whose retention periods are subject to data protection law. Keep these records in one file, but keep the citations of the two legal acts clearly apart, so that each authority finds its own obligation in it."
+    evidence_of_compliance:
+      de: "Eine Gegenüberstellung je System, die zu jeder Pflicht die Fundstelle in beiden Rechtsakten, das gemeinsam genutzte Dokument und die zuständige Behörde nennt."
+      en: "A comparison per system that names for each obligation the citation in both legal acts, the shared document and the competent authority."
+    on_infringement:
+      de: "Die Sanktionen laufen getrennt: Verstösse gegen die Datenschutz-Grundverordnung nach Artikel 83 DSGVO mit bis zu 20 000 000 Euro oder 4 Prozent beziehungsweise bis zu 10 000 000 Euro oder 2 Prozent des weltweiten Jahresumsatzes, Verstösse gegen die KI-Verordnung nach Artikel 99 KI-VO mit bis zu 35 000 000 Euro oder 7 Prozent bei verbotenen Praktiken und bis zu 15 000 000 Euro oder 3 Prozent bei den in Artikel 99 Absatz 4 genannten Pflichten. Dieselbe Handlung kann beide Rahmen auslösen."
+      en: "The penalties run separately: infringements of the General Data Protection Regulation under Article 83 GDPR with up to EUR 20 000 000 or 4 %, or up to EUR 10 000 000 or 2 %, of worldwide annual turnover; infringements of the AI Act under Article 99 AI Act with up to EUR 35 000 000 or 7 % for prohibited practices and up to EUR 15 000 000 or 3 % for the obligations listed in Article 99(4). The same act can trigger both frameworks."

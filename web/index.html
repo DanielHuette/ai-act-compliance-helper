@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.title">EU AI Act Einstufung: Ist Ihre KI ein Hochrisiko-System? | Konformitätshelfer</title>
+<meta name="description" data-i18n-attr="content:meta.description" content="Kostenlos und ohne Anmeldung prüfen, ob Ihr KI-System nach der KI-Verordnung (EU) 2024/1689 als Hochrisiko-System gilt. Sechs Fragen, Ergebnis mit Fundstelle in Anhang I oder III und 187 amtlichen Beispielen der EU-Kommission.">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://konformitaetshelfer.speedofthespirit.dev/">
+<link rel="alternate" hreflang="de" href="https://konformitaetshelfer.speedofthespirit.dev/?lang=de">
+<link rel="alternate" hreflang="en" href="https://konformitaetshelfer.speedofthespirit.dev/?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://konformitaetshelfer.speedofthespirit.dev/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:locale" data-i18n-attr="content:meta.ogLocale" content="de_DE">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:site_name" data-i18n-attr="content:meta.siteName" content="EU AI Act Konformitätshelfer">
+<meta property="og:title" data-i18n-attr="content:meta.ogTitle" content="EU AI Act Einstufung: Ist Ihre KI ein Hochrisiko-System?">
+<meta property="og:description" data-i18n-attr="content:meta.ogDescription" content="Sechs Fragen, und Sie wissen, in welche Risikoklasse der KI-Verordnung Ihr System fällt — mit der genauen Stelle im Gesetz.">
+<meta property="og:url" content="https://konformitaetshelfer.speedofthespirit.dev/">
+<meta property="og:image" content="https://konformitaetshelfer.speedofthespirit.dev/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" data-i18n-attr="content:meta.ogImageAlt" content="Fällt Ihre KI unter die EU-Verordnung? Sechs Schritte, jede Antwort mit der Stelle im Gesetz.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://konformitaetshelfer.speedofthespirit.dev/preview.jpg">
+<meta name="author" content="Daniel Hütte">
+<style>
+/* Design: an assessment form, not a brochure. Dark frame, light working sheet,
+ * yellow only for what is live (current phase, chosen answer). Each question carries
+ * its citation in the margin. System fonts only; nothing is loaded from outside. */
+:root{
+  color-scheme: light dark;
+  --ink:#061634; --blue:#0b3fa8; --blue-deep:#092f80; --blue-light:#3c78f0;
+  --yellow:#ffcc00;
+  --sheet:#ffffff; --background:#e8edf6; --rail:#f4f7fc;
+  --line:#dde4ef; --line-strong:#b7c4da;
+  --text:#0e1b33; --text-muted:#5a6a86; --text-faint:#8794ab;
+  --good:#15663a; --good-surface:#e9f4ed;
+  --warn:#8a5a00; --warn-surface:#fff6dc;
+  --stop:#8c1d1d; --stop-surface:#fbeaea;
+  --cool:#2c3f63; --cool-surface:#eef2f9;
+  --serif:"Source Serif 4",ui-serif,Georgia,"Times New Roman",serif;
+  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --round:10px; --radius-large:18px;
+  --shadow:0 1px 2px rgba(6,22,52,.05), 0 18px 40px -24px rgba(6,22,52,.35);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --ink:#040d1f;
+  --sheet:#101a30; --background:#080f1f; --rail:#0c1526;
+  --line:#223150; --line-strong:#3b4e73;
+  --text:#e8edf8; --text-muted:#a3b1cc; --text-faint:#7b8aa8;
+  --blue:#2f6bff; --blue-deep:#2258db; --blue-light:#7aa4ff;
+  --good:#7fcf9d; --good-surface:#112a1c;
+  --warn:#ffcc00; --warn-surface:#2b2410;
+  --stop:#f0a0a0; --stop-surface:#2e1616;
+  --cool:#c2cde3; --cool-surface:#16203a;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 18px 40px -24px rgba(0,0,0,.8);
+}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--background);color:var(--text);font-family:var(--sans);
+  font-size:16.5px;line-height:1.6;font-feature-settings:"tnum" 0}
+:focus-visible{outline:2px solid var(--blue-light);outline-offset:2px;border-radius:4px}
+@media (prefers-reduced-motion: reduce){*{transition:none !important;animation:none !important}}
+
+.masthead{background:var(--ink);color:#fff;
+  padding:clamp(56px,8vw,104px) 20px calc(clamp(74px,10vw,128px) + 56px)}
+.masthead-inner{max-width:1140px;margin:0 auto}
+.masthead h1{font-family:var(--serif);font-weight:400;
+  font-size:clamp(2.1rem,5.2vw,3.4rem);line-height:1.04;letter-spacing:-.015em;
+  margin:0 0 .6rem;max-width:17ch;color:#fff}
+.masthead .lede{font-size:clamp(1.02rem,2.2vw,1.18rem);line-height:1.5;
+  color:#aec0e2;max-width:56ch;margin:0}
+.figures{display:grid;grid-template-columns:repeat(auto-fit,minmax(142px,1fr));
+  gap:clamp(14px,2.4vw,30px);margin:clamp(26px,4vw,40px) 0 0;padding-top:clamp(20px,3vw,26px);
+  border-top:1px solid rgba(255,255,255,.16);list-style:none}
+.figures b{display:block;font-family:var(--serif);font-weight:400;
+  font-size:clamp(1.35rem,3vw,1.75rem);line-height:1.1;color:#fff;
+  font-variant-numeric:tabular-nums}
+.figures b.highlight{color:var(--yellow)}
+.figures span{display:block;font-size:.8rem;line-height:1.4;color:#93a7cc;margin-top:.25rem}
+
+.app{max-width:1140px;margin:-56px auto 0;padding:0 20px 72px}
+.workspace{background:var(--sheet);border:1px solid var(--line);border-radius:var(--radius-large);
+  box-shadow:var(--shadow);overflow:hidden;
+  display:grid;grid-template-columns:238px minmax(0,1fr)}
+.progress{grid-column:1/-1;display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:5;
+  padding:13px 22px;background:var(--sheet);border-bottom:1px solid var(--line);
+  font-size:.84rem;color:var(--text-muted);position:relative}
+.progress .dot{width:7px;height:7px;border-radius:50%;background:var(--yellow);flex:none}
+.progress .right{margin-left:auto;font-variant-numeric:tabular-nums}
+.progress::after{content:"";position:absolute;left:0;bottom:-1px;height:2px;width:var(--progress,0%);
+  background:var(--yellow);transition:width .35s cubic-bezier(.4,0,.2,1)}
+
+.progress-steps{background:var(--rail);border-right:1px solid var(--line);padding:22px 0 26px}
+@media (min-width:901px){.progress-steps ol{position:sticky;top:70px}}
+.progress-steps ol{list-style:none;margin:0;padding:0}
+.progress-steps li{display:flex;gap:12px;align-items:flex-start;padding:9px 22px;
+  font-size:.88rem;line-height:1.35;color:var(--text-faint)}
+.progress-steps .num{flex:none;width:23px;height:23px;border-radius:50%;background:transparent;
+  border:1px solid var(--line-strong);color:var(--text-faint);
+  display:grid;place-items:center;font-size:.72rem;font-weight:600;margin-top:-1px;
+  transition:background .2s,border-color .2s,color .2s}
+.progress-steps li.current{color:var(--text);font-weight:600}
+.progress-steps li.current .num{background:var(--blue);border-color:var(--blue);color:#fff;
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--blue) 18%,transparent)}
+.progress-steps li.done{color:var(--text-muted)}
+.progress-steps li.done .num{background:var(--yellow);border-color:var(--yellow);color:var(--ink)}
+
+.sheet{padding:clamp(22px,3.6vw,42px) clamp(20px,3.6vw,44px) clamp(26px,4vw,44px);min-width:0}
+.sheet h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.45rem,3.4vw,2rem);
+  line-height:1.15;letter-spacing:-.01em;margin:0 0 .5rem}
+.sheet p{margin:0 0 1rem;max-width:64ch}
+.muted{color:var(--text-muted);font-size:.93rem}
+.source{color:var(--text-faint);font-size:.85rem;max-width:58ch;
+  margin:1.8rem 0 0 !important;padding-top:1.3rem;border-top:1px solid var(--line)}
+.hint{color:var(--text-muted);font-size:.93rem;max-width:62ch;
+  border-left:2px solid var(--line-strong);padding-left:14px;margin:0 0 1.4rem !important}
+
+.questions{list-style:none;margin:1.6rem 0 0;padding:0}
+.question{display:grid;grid-template-columns:116px minmax(0,1fr);gap:26px;
+  padding:26px 0;border-top:1px solid var(--line)}
+.question:last-child{border-bottom:1px solid var(--line)}
+.margin-note{font-size:.76rem;line-height:1.45;color:var(--text-faint);text-align:right;
+  padding-top:.35rem;font-variant-numeric:tabular-nums}
+.margin-note b{display:block;font-weight:600;color:var(--text-muted)}
+.question-text{font-size:1.06rem;line-height:1.5;margin:0 0 1rem !important;max-width:58ch}
+.effect-note{font-size:.86rem;color:var(--text-muted);margin:.85rem 0 0 !important;max-width:58ch}
+.section-label{grid-column:1/-1;font-family:var(--serif);font-size:1.08rem;
+  color:var(--text);margin:1.4rem 0 -.6rem}
+
+.choice{display:inline-flex;background:var(--cool-surface);border:1px solid var(--line);
+  border-radius:999px;padding:3px;gap:2px;max-width:100%;flex-wrap:wrap}
+.choice button{font:inherit;font-size:.9rem;border:0;background:transparent;color:var(--text-muted);
+  border-radius:999px;padding:9px 19px;cursor:pointer;white-space:nowrap;
+  transition:background .16s,color .16s}
+.choice button:hover{color:var(--text);background:color-mix(in srgb,var(--blue) 7%,transparent)}
+.choice button[aria-pressed="true"]{background:var(--blue);color:#fff;font-weight:600;
+  box-shadow:0 1px 3px rgba(6,22,52,.25)}
+.choice button[aria-pressed="true"]:hover{background:var(--blue-deep)}
+
+.actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:1.9rem}
+.button{font:inherit;font-size:.97rem;font-weight:600;padding:12px 24px;border:1px solid var(--blue);
+  background:var(--blue);color:#fff;border-radius:var(--round);cursor:pointer;
+  transition:background .16s,border-color .16s,transform .06s}
+.button:hover{background:var(--blue-deep);border-color:var(--blue-deep)}
+.button:active{transform:translateY(1px)}
+.button[disabled]{opacity:.4;cursor:not-allowed}
+.button.outline{background:transparent;color:var(--text);border-color:var(--line-strong);font-weight:500}
+.button.outline:hover{background:var(--cool-surface);border-color:var(--line-strong)}
+.open{margin-left:auto;font-size:.84rem;color:var(--text-faint)}
+
+.start-figures{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:20px;margin:1.8rem 0 0;padding-top:1.4rem;border-top:1px solid var(--line);list-style:none}
+.start-figures b{display:block;font-family:var(--serif);font-weight:400;font-size:1.5rem;
+  line-height:1.1;font-variant-numeric:tabular-nums}
+.start-figures span{display:block;font-size:.84rem;color:var(--text-muted);margin-top:.2rem;line-height:1.4}
+
+.finding{border-radius:var(--radius-large);padding:clamp(24px,4vw,40px);
+  background:var(--cool-surface);border:1px solid var(--line);
+  border-left:5px solid var(--cool);margin-bottom:1.6rem}
+.finding.high{background:var(--warn-surface);border-left-color:var(--yellow);border-color:var(--warn-surface)}
+.finding.prohibited{background:var(--stop-surface);border-left-color:var(--stop);border-color:var(--stop-surface)}
+.finding.minimal{background:var(--good-surface);border-left-color:var(--good);border-color:var(--good-surface)}
+.finding .kicker{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:600;
+  letter-spacing:.02em;color:var(--text-muted);margin:0 0 .7rem}
+.finding .verdict{font-family:var(--serif);font-weight:400;font-size:clamp(1.8rem,4.6vw,2.7rem);
+  line-height:1.06;letter-spacing:-.018em;margin:0 0 .7rem}
+.finding p{font-size:1.04rem;max-width:62ch;margin:0}
+.block{margin-top:2rem}
+.block h3{font-family:var(--serif);font-weight:400;font-size:1.25rem;margin:0 0 .9rem}
+dl{margin:0}
+dt{font-weight:600;margin-top:1.1rem}
+dd{margin:.15rem 0 0}
+.location{font-size:.84rem;color:var(--blue);font-weight:600}
+details{border:1px solid var(--line);border-radius:var(--round);background:var(--sheet);
+  padding:.8rem 1.1rem;margin:.7rem 0}
+summary{cursor:pointer;font-weight:500;font-size:.95rem}
+.example{border-top:1px solid var(--line);padding:.9rem 0}
+.example:first-of-type{border-top:0}
+.assessment{font-size:.76rem;font-weight:700;letter-spacing:.02em}
+.assessment.yes{color:var(--warn)} .assessment.no{color:var(--good)}
+.source-ref{font-size:.8rem;color:var(--text-faint);margin:.4rem 0 0 !important}
+
+footer.footer{max-width:1140px;margin:0 auto;padding:0 20px 56px;color:var(--text-muted);font-size:.85rem}
+footer.footer p{max-width:70ch;margin:0 0 .6rem}
+
+.reading{background:var(--sheet);border-top:1px solid var(--line);padding:clamp(40px,6vw,72px) 20px}
+.reading-inner{max-width:760px;margin:0 auto}
+.reading h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.5rem,3.4vw,2rem);
+  margin:0 0 1.2rem;letter-spacing:-.01em}
+.reading h2+p{color:var(--text-muted)}
+.reading h3{font-family:var(--sans);font-size:1rem;font-weight:600;margin:0;display:inline}
+details.knowledge{border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;
+  padding:0;margin:0}
+details.knowledge summary{padding:1rem 0;list-style:none;display:flex;gap:12px;align-items:baseline}
+details.knowledge summary::-webkit-details-marker{display:none}
+details.knowledge summary::before{content:"+";color:var(--blue);font-weight:700;flex:none;width:12px}
+details.knowledge[open] summary::before{content:"\2212"}
+details.knowledge p{padding:0 0 1.1rem 24px;margin:0;max-width:66ch}
+.area-list{padding-left:1.2rem;max-width:66ch}
+.area-list li{margin-bottom:.55rem}
+a{color:var(--blue)}
+
+@media (max-width:900px){
+  .workspace{grid-template-columns:1fr}
+  .progress-steps{border-right:0;border-bottom:1px solid var(--line);padding:14px 0;overflow-x:auto}
+  .progress-steps ol{display:flex;gap:4px;padding:0 16px;min-width:max-content}
+  .progress-steps li{padding:4px 10px;white-space:nowrap;align-items:center}
+  .question{grid-template-columns:1fr;gap:0}
+  .margin-note{text-align:left;order:2;padding-top:1rem}
+  .margin-note b{display:inline}
+}
+@media (max-width:480px){
+  body{font-size:16px}
+  .app{padding-left:12px;padding-right:12px}
+  .choice{width:100%}
+  .choice button{flex:1 1 auto}
+}
+
+:root{
+  --elevation: 0 1px 0 rgba(255,255,255,.85) inset, 0 -1px 0 rgba(10,30,70,.05) inset,
+            0 1px 2px rgba(8,22,52,.05), 0 12px 26px -14px rgba(8,22,52,.22),
+            0 34px 68px -38px rgba(8,22,52,.34);
+  --elevation-small: 0 1px 0 rgba(255,255,255,.75) inset,
+            0 1px 2px rgba(8,22,52,.08), 0 6px 14px -8px rgba(8,22,52,.22);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --elevation: 0 1px 0 rgba(255,255,255,.06) inset, 0 -1px 0 rgba(0,0,0,.4) inset,
+            0 2px 4px rgba(0,0,0,.4), 0 30px 64px -34px rgba(0,0,0,.9);
+  --elevation-small: 0 1px 0 rgba(255,255,255,.07) inset, 0 4px 12px -6px rgba(0,0,0,.6);
+}}
+
+.masthead{position:relative;overflow:hidden;background:var(--ink)}
+.masthead .image{position:absolute;inset:0}
+.masthead .image img{width:100%;height:100%;object-fit:cover;object-position:72% 34%}
+.masthead .veil{position:absolute;inset:0;
+  background:linear-gradient(100deg,
+    rgba(4,13,33,.97) 0%, rgba(4,13,33,.94) 38%,
+    rgba(4,13,33,.58) 60%, rgba(4,13,33,.18) 80%, rgba(4,13,33,.06) 100%),
+    linear-gradient(to top, rgba(4,13,33,.9) 0%, rgba(4,13,33,0) 34%)}
+.masthead-inner{position:relative}
+.warning-note{display:inline-flex;align-items:center;gap:10px;margin:clamp(24px,4vw,34px) 0 0;
+  padding:9px 16px 9px 14px;border-radius:999px;
+  background:rgba(255,204,0,.12);border:1px solid rgba(255,204,0,.42);
+  color:#ffdf66;font-size:.85rem;font-weight:600}
+.warning-note::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--yellow);flex:none}
+
+.workspace{box-shadow:var(--elevation)}
+.choice{box-shadow:0 1px 0 rgba(255,255,255,.6) inset, 0 1px 3px rgba(8,22,52,.07) inset}
+.choice button[aria-pressed="true"]{
+  background:linear-gradient(180deg, color-mix(in srgb,var(--blue) 88%,white) 0%, var(--blue) 100%);
+  box-shadow:0 1px 0 rgba(255,255,255,.35) inset, 0 2px 5px rgba(8,22,52,.3)}
+.button{background:linear-gradient(180deg, color-mix(in srgb,var(--blue) 88%,white) 0%, var(--blue) 100%);
+  box-shadow:0 1px 0 rgba(255,255,255,.3) inset, 0 2px 6px rgba(8,22,52,.26)}
+.button:hover{background:linear-gradient(180deg, var(--blue) 0%, var(--blue-deep) 100%)}
+.button.outline{background:linear-gradient(180deg,#fff 0%, var(--cool-surface) 100%);
+  box-shadow:var(--elevation-small)}
+.finding{box-shadow:var(--elevation)}
+details{box-shadow:var(--elevation-small)}
+
+.image-block{max-width:1140px;margin:0 auto;padding:clamp(44px,6vw,80px) 20px;
+  display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);
+  gap:clamp(28px,5vw,64px);align-items:center}
+.image-block .framed-image{margin:0;border-radius:var(--radius-large);overflow:hidden;
+  box-shadow:var(--elevation);line-height:0;background:var(--sheet)}
+.image-block .framed-image img{width:100%;height:auto;display:block}
+.image-block h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.5rem,3.4vw,2.1rem);
+  line-height:1.14;letter-spacing:-.012em;margin:0 0 1rem}
+.image-block p{max-width:52ch;margin:0 0 1rem}
+.image-block ul{margin:0;padding-left:1.15rem;max-width:52ch;color:var(--text-muted)}
+.image-block li{margin-bottom:.5rem}
+@media (max-width:880px){.image-block{grid-template-columns:1fr}}
+
+.language-switch{position:absolute;top:clamp(14px,2.4vw,24px);right:clamp(16px,2.4vw,28px);z-index:2;
+  display:flex;align-items:center;gap:2px;padding:3px;border-radius:999px;
+  background:rgba(4,13,33,.72);border:1px solid rgba(255,255,255,.22);font-size:.8rem;font-weight:600}
+.language-switch a{color:#d5e0f5;text-decoration:none;padding:5px 11px;border-radius:999px;letter-spacing:.04em}
+.language-switch a:hover{color:#fff}
+.language-switch a[aria-current="true"]{background:var(--yellow);color:var(--ink)}
+.language-switch .separator{color:rgba(255,255,255,.35)}
+</style>
+<script type="application/ld+json" id="structured-data">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://konformitaetshelfer.speedofthespirit.dev/#webpage",
+   "url": "https://konformitaetshelfer.speedofthespirit.dev/",
+   "name": "EU AI Act Konformitätshelfer",
+   "inLanguage": "de-DE",
+   "description": "Einstufung von KI-Systemen nach der KI-Verordnung (EU) 2024/1689 in sechs Schritten."
+  },
+  {
+   "@type": "SoftwareApplication",
+   "name": "EU AI Act Konformitätshelfer",
+   "applicationCategory": "BusinessApplication",
+   "operatingSystem": "Web, Windows, macOS, Linux",
+   "inLanguage": "de-DE",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+   },
+   "license": "https://www.apache.org/licenses/LICENSE-2.0",
+   "author": {
+    "@type": "Person",
+    "name": "Daniel Hütte"
+   },
+   "description": "Prüft in sechs Schritten, ob ein KI-System nach der KI-Verordnung (EU) 2024/1689 als Hochrisiko-System gilt, und nennt die Fundstelle in Anhang I oder Anhang III.",
+   "featureList": [
+    "Einstufung nach Artikel 6 Absatz 1 und Anhang I",
+    "Einstufung nach Artikel 6 Absatz 2 und Anhang III",
+    "Ausnahme nach Artikel 6 Absatz 3",
+    "187 amtliche Beispiele der Europäischen Kommission",
+    "Fundstelle mit Absatznummer zu jeder Antwort"
+   ]
+  },
+  {
+   "@type": "HowTo",
+   "name": "KI-System nach der KI-Verordnung einstufen",
+   "inLanguage": "de-DE",
+   "totalTime": "PT5M",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "name": "Ist es ein KI-System?",
+     "text": "Prüfen, ob die Anwendung nach Artikel 3 Nummer 1 ein KI-System ist: leitet sie aus Eingaben selbst ab, welche Ausgaben sie erzeugt?"
+    },
+    {
+     "@type": "HowToStep",
+     "name": "Produkt nach Anhang I?",
+     "text": "Prüfen, ob das System Sicherheitsbauteil eines Produkts aus Anhang I ist und für dieses Produkt eine Konformitätsbewertung durch eine dritte Stelle verlangt wird."
+    },
+    {
+     "@type": "HowToStep",
+     "name": "Bereich nach Anhang III?",
+     "text": "Prüfen, ob der Zweck in einen der acht Bereiche des Anhangs III fällt."
+    },
+    {
+     "@type": "HowToStep",
+     "name": "Genau welche Stelle?",
+     "text": "Im gewählten Bereich die Fragen zum einzelnen Buchstaben beantworten."
+    },
+    {
+     "@type": "HowToStep",
+     "name": "Greift eine Ausnahme?",
+     "text": "Prüfen, ob eine der vier Bedingungen des Artikels 6 Absatz 3 vorliegt und ob das System Profiling vornimmt."
+    },
+    {
+     "@type": "HowToStep",
+     "name": "Ergebnis und Fundstelle",
+     "text": "Die Risikoklasse mit der Fundstelle in Anhang I oder III und den amtlichen Beispielen zum Vergleich."
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "de-DE",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Fällt unser Recruiting-Tool unter den EU AI Act?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ja, sobald es Bewerbungen sichtet, filtert, Bewerber bewertet oder eine Rangfolge bildet. Anhang III Nummer 4 Buchstabe a der KI-Verordnung nennt die Einstellung und Auswahl von Menschen ausdrücklich, einschließlich gezielter Stellenanzeigen. Das gilt für Angestellte wie für Selbstständige und Plattformarbeiter. Nicht erfasst ist ein Werkzeug, das Bewerbungen nur beschreibend bearbeitet, etwa Dateiformate umwandelt."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Was ist ein Hochrisiko-KI-System?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Die KI-Verordnung kennt zwei Wege dorthin. Nach Artikel 6 Absatz 1 ist ein System hochriskant, wenn es Sicherheitsbauteil eines Produkts aus Anhang I ist — Maschinen, Spielzeug, Aufzüge, Medizinprodukte, Fahrzeuge — und für dieses Produkt eine Konformitätsbewertung durch eine dritte Stelle verlangt wird. Nach Artikel 6 Absatz 2 ist es hochriskant, wenn sein Zweck in einen der acht Bereiche des Anhangs III fällt: Biometrie, kritische Infrastruktur, Bildung, Beschäftigung, grundlegende Dienste, Strafverfolgung, Migration, Rechtspflege."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Sind wir Anbieter oder Betreiber?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Anbieter ist, wer ein KI-System entwickelt und unter eigenem Namen in Verkehr bringt. Betreiber ist, wer es in eigener Verantwortung verwendet. Der Unterschied entscheidet über die Pflichten: Artikel 16 trifft den Anbieter, Artikel 26 den Betreiber. Wer ein zugekauftes System wesentlich verändert oder unter eigenem Namen anbietet, wird nach Artikel 25 selbst zum Anbieter."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Welche Fristen gelten für den EU AI Act?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Die Verordnung (EU) 2024/1689 gilt seit dem 1. August 2024. Die verbotenen Praktiken nach Artikel 5 und die Pflicht zur KI-Kompetenz nach Artikel 4 gelten seit dem 2. Februar 2025. Die Pflichten für KI-Modelle mit allgemeinem Verwendungszweck gelten seit dem 2. August 2025. Die Pflichten für Hochrisiko-Systeme nach Anhang III gelten ab dem 2. August 2026, die für Hochrisiko-Systeme nach Anhang I ab dem 2. August 2027."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Wie hoch sind die Bußgelder?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Artikel 99 staffelt sie. Für verbotene Praktiken nach Artikel 5 bis zu 35 Millionen Euro oder 7 Prozent des weltweiten Jahresumsatzes, je nachdem, was höher ist. Für Verstöße gegen die Pflichten für Hochrisiko-Systeme bis zu 15 Millionen Euro oder 3 Prozent. Für falsche Angaben gegenüber Behörden bis zu 7,5 Millionen Euro oder 1 Prozent."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Ist Emotionserkennung am Arbeitsplatz erlaubt?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nein. Artikel 5 Absatz 1 Buchstabe f verbietet KI-Systeme, die Emotionen von Menschen am Arbeitsplatz oder in Bildungseinrichtungen ableiten. Ausgenommen sind medizinische Gründe und Sicherheitsgründe, etwa die Müdigkeitserkennung bei Fahrern oder Piloten. Ein Verbot wiegt schwerer als eine Einstufung: das System darf so nicht betrieben werden."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Wir nutzen ChatGPT im Unternehmen. Was müssen wir tun?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Als Betreiber eines zugekauften Systems treffen Sie die Pflicht zur KI-Kompetenz nach Artikel 4 und, falls das System für einen Zweck des Anhangs III eingesetzt wird, die Betreiberpflichten nach Artikel 26. Die Kennzeichnungspflicht für erzeugte Inhalte nach Artikel 50 Absatz 2 trifft den Anbieter des Modells, nicht Sie. Als Betreiber müssen Sie nach Artikel 50 Absatz 4 offenlegen, wenn Sie Deepfakes veröffentlichen oder Texte zu Themen von öffentlichem Interesse ungeprüft veröffentlichen."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Was ist die Ausnahme nach Artikel 6 Absatz 3?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ein System, das in einen Bereich des Anhangs III fällt, gilt ausnahmsweise nicht als hochriskant, wenn es nur eine eng gefasste Verfahrensaufgabe erfüllt, nur das Ergebnis einer abgeschlossenen menschlichen Tätigkeit verbessert, nur Entscheidungsmuster erkennt oder nur eine vorbereitende Aufgabe erfüllt. Die Ausnahme greift nie, wenn das System Profiling natürlicher Personen vornimmt. Wer sich darauf beruft, muss die Bewertung dokumentieren und das System trotzdem registrieren."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Fällt Kreditscoring unter den EU AI Act?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Die Bewertung der Kreditwürdigkeit natürlicher Personen fällt unter Anhang III Nummer 5 Buchstabe b. Ausgenommen sind Systeme, deren Hauptzweck die Aufdeckung von Finanzbetrug ist. Die Bonitätsprüfung von Unternehmen ist nicht erfasst, solange nicht zugleich die persönlichen Finanzen eines Menschen bewertet werden."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Brauchen wir eine Datenschutz-Folgenabschätzung?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Die KI-Verordnung und die Datenschutz-Grundverordnung gelten nebeneinander. Verarbeitet Ihr System personenbezogene Daten und ist es hochriskant, liegt eine Datenschutz-Folgenabschätzung nach Artikel 35 der Datenschutz-Grundverordnung meist nahe. Trifft das System automatisierte Entscheidungen mit rechtlicher Wirkung, gilt zusätzlich Artikel 22 der Datenschutz-Grundverordnung."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<header class="masthead">
+  <div class="image"><img src="images/eu-flag.jpg" alt="" aria-hidden="true" fetchpriority="high"></div>
+  <div class="veil"></div>
+  <nav class="language-switch" aria-label="Sprache" data-i18n-attr="aria-label:language.label">
+    <a href="?lang=de" hreflang="de" lang="de" data-language="de" aria-current="true" title="Deutsch" data-i18n-attr="title:language.de">DE</a>
+    <span class="separator" aria-hidden="true">|</span>
+    <a href="?lang=en" hreflang="en" lang="en" data-language="en" title="Englisch" data-i18n-attr="title:language.en">EN</a>
+  </nav>
+  <div class="masthead-inner">
+    <h1 data-i18n="hero.heading">Fällt Ihre KI unter die EU-Verordnung?</h1>
+    <p class="lede" data-i18n="hero.lede">Beantworten Sie die Fragen, die ein Jurist stellen würde. Am Ende steht die
+    Einstufung — mit der Stelle im Gesetz, auf der sie beruht.</p>
+    <p class="warning-note" data-i18n="hero.notLegalAdvice">Keine Rechtsberatung</p>
+  </div>
+</header>
+
+<div class="app">
+  <div class="workspace">
+    <div class="progress" id="progress">
+      <span class="dot"></span>
+      <span id="progress-text" data-i18n="progress.ready">Bereit</span>
+      <span class="right" id="progress-right"></span>
+    </div>
+    <nav class="progress-steps" aria-label="Ablauf der Prüfung" data-i18n-attr="aria-label:progress.navLabel">
+      <ol id="progress-steps">
+        <li data-phase="1"><span class="num">1</span><span data-i18n="phase.1">System</span></li>
+        <li data-phase="2"><span class="num">2</span><span data-i18n="phase.2">Einsatzgebiet</span></li>
+        <li data-phase="3"><span class="num">3</span><span data-i18n="phase.3">Nachfragen</span></li>
+        <li data-phase="4"><span class="num">4</span><span data-i18n="phase.4">Ausnahme</span></li>
+        <li data-phase="5"><span class="num">5</span><span data-i18n="phase.5">Befund</span></li>
+      </ol>
+    </nav>
+    <main class="sheet" id="stage" aria-live="polite"></main>
+  </div>
+</div>
+
+
+<section class="image-block">
+  <figure class="framed-image"><img src="images/meeting.jpg" width="1400" height="935"
+    alt="Besprechung an einem Konferenztisch, auf dem Bildschirm eine Auswertung zu Europa"
+    data-i18n-attr="alt:story.imageAlt" loading="lazy"></figure>
+  <div>
+    <h2 data-i18n="story.heading">Die Frage kommt immer im selben Moment</h2>
+    <p data-i18n="story.situation">Ein Vorhaben ist beschlossen, das Geld steht, der Termin steht — und jemand fragt, ob
+    das unter die KI-Verordnung fällt. Dann sucht die Runde nach einer Antwort, die niemand
+    im Raum belegen kann.</p>
+    <p data-i18n="story.tool">Dieses Werkzeug führt die Runde durch dieselben Fragen, die ein Anwalt stellen würde,
+    und legt neben jede Antwort die Stelle im Gesetz. Was dabei herauskommt, lässt sich in
+    der nächsten Sitzung zeigen.</p>
+    <ul>
+      <li data-i18n="story.point1">Niemand muss die Verordnung gelesen haben.</li>
+      <li data-i18n="story.point2">Jede Frage nennt den Absatz der amtlichen Auslegung, auf dem sie beruht.</li>
+      <li data-i18n="story.point3">Keine Angabe verlässt das Gerät: kein Server, keine Anmeldung, keine Speicherung.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer">
+  <p id="version"></p>
+  <p data-i18n="footer.images">Bilder: Dušan Cvetanović und Kampus Production, Pexels.</p>
+  <p data-i18n="footer.disclaimer">Keine Rechtsberatung. Die Einstufung folgt dem Verordnungstext und dem Entwurf der
+  Leitlinien der Europäischen Kommission vom 19. Mai 2026. Der Entwurf ist nicht bindend;
+  eine endgültige Fassung lag bei Abschluss dieser Arbeit nicht vor.</p>
+</footer>
+
+<div class="reading"><div class="reading-inner">
+<section id="knowledge">
+  <h2 data-i18n="faq.heading">Häufige Fragen zur KI-Verordnung</h2>
+  <details class="knowledge">
+    <summary><h3 data-i18n="faq.1.question">Fällt unser Recruiting-Tool unter den EU AI Act?</h3></summary>
+    <p data-i18n="faq.1.answer">Ja, sobald es Bewerbungen sichtet, filtert, Bewerber bewertet oder eine Rangfolge bildet. Anhang III Nummer 4 Buchstabe a der KI-Verordnung nennt die Einstellung und Auswahl von Menschen ausdrücklich, einschließlich gezielter Stellenanzeigen. Das gilt für Angestellte wie für Selbstständige und Plattformarbeiter. Nicht erfasst ist ein Werkzeug, das Bewerbungen nur beschreibend bearbeitet, etwa Dateiformate umwandelt.</p>
+  </details>
+  <details class="knowledge">
+    <summary><h3 data-i18n="faq.2.question">Was ist ein Hochrisiko-KI-System?</h3></summary>
+    <p data-i18n="faq.2.answer">Die KI-Verordnung kennt zwei Wege dorthin. Nach Artikel 6 Absatz 1 ist ein System hochriskant, wenn es Sicherheitsbauteil eines Produkts aus Anhang I ist — Maschinen, Spielzeug, Aufzüge, Medizinprodukte, Fahrzeuge — und für dieses Produkt eine Konformitätsbewertung durch eine dritte Stelle verlangt wird. Nach Artikel 6 Absatz 2 ist es hochriskant, wenn sein Zweck in einen der acht Bereiche des Anhangs III fällt: Biometrie, kritische Infrastruktur, Bildung, Beschäftigung, grundlegende Dienste, Strafverfolgung, Migration, Rechtspflege.</p>
+  </details>
+  <details class="knowledge">
+    <summary><h3 data-i18n="faq.3.question">Sind wir Anbieter oder Betreiber?</h3></summary>
+    <p data-i18n="faq.3.answer">Anbieter ist, wer ein KI-System entwickelt und unter eigenem Namen in Verkehr bringt. Betreiber ist, wer es in eigener Verantwortung verwendet. Der Unterschied entscheidet über die Pflichten: Artikel 16 trifft den Anbieter, Artikel 26 den Betreiber. Wer ein zugekauftes System wesentlich verändert oder unter eigenem Namen anbietet, wird nach Artikel 25 selbst zum Anbieter.</p>
+  </details>
+  <details class="knowledge">
+    <summary><h3 data-i18n="faq.4.question">Welche Fristen gelten für den EU AI Act?</h3></summary>
+    <p data-i18n="faq.4.answer">Die Verordnung (EU) 2024/1689 gilt seit dem 1. August 2024. Die verbotenen Praktiken nach Artikel 5 und die Pflicht zur KI-Kompetenz nach Artikel 4 gelten seit dem 2. Februar 2025. Die Pflichten für KI-Modelle mit allgemeinem Verwendungszweck gelten seit dem 2. August 2025. Die Pflichten für Hochrisiko-Systeme nach Anhang III gelten ab dem 2. August 2026, die für Hochrisiko-Systeme nach Anhang I ab dem 2. August 2027.</p>
+  </details>
+  <details class="knowledge">
+    <summary><h3 data-i18n="faq.5.question">Wie hoch sind die Bußgelder?</h3></summary>
+    <p data-i18n="faq.5.answer">Artikel 99 staffelt sie. Für verbotene Praktiken nach Artikel 5 bis zu 35 Millionen Euro oder 7 Prozent des weltweiten Jahresumsatzes, je nachdem, was höher ist. Für Verstöße gegen die Pflichten für Hochrisiko-Systeme bis zu 15 Millionen Euro oder 3 Prozent. Für falsche Angaben gegenüber Behörden bis zu 7,5 Millionen Euro oder 1 Prozent.</p>
+  </details>
+  <details class="knowledge">
+    <summary><h3 data-i18n="faq.6.question">Ist Emotionserkennung am Arbeitsplatz erlaubt?</h3></summary>
+    <p data-i18n="faq.6.answer">Nein. Artikel 5 Absatz 1 Buchstabe f verbietet KI-Systeme, die Emotionen von Menschen am Arbeitsplatz oder in Bildungseinrichtungen ableiten. Ausgenommen sind medizinische Gründe und Sicherheitsgründe, etwa die Müdigkeitserkennung bei Fahrern oder Piloten. Ein Verbot wiegt schwerer als eine Einstufung: das System darf so nicht betrieben werden.</p>
+  </details>
+  <details class="knowledge">
+    <summary><h3 data-i18n="faq.7.question">Wir nutzen ChatGPT im Unternehmen. Was müssen wir tun?</h3></summary>
+    <p data-i18n="faq.7.answer">Als Betreiber eines zugekauften Systems treffen Sie die Pflicht zur KI-Kompetenz nach Artikel 4 und, falls das System für einen Zweck des Anhangs III eingesetzt wird, die Betreiberpflichten nach Artikel 26. Die Kennzeichnungspflicht für erzeugte Inhalte nach Artikel 50 Absatz 2 trifft den Anbieter des Modells, nicht Sie. Als Betreiber müssen Sie nach Artikel 50 Absatz 4 offenlegen, wenn Sie Deepfakes veröffentlichen oder Texte zu Themen von öffentlichem Interesse ungeprüft veröffentlichen.</p>
+  </details>
+  <details class="knowledge">
+    <summary><h3 data-i18n="faq.8.question">Was ist die Ausnahme nach Artikel 6 Absatz 3?</h3></summary>
+    <p data-i18n="faq.8.answer">Ein System, das in einen Bereich des Anhangs III fällt, gilt ausnahmsweise nicht als hochriskant, wenn es nur eine eng gefasste Verfahrensaufgabe erfüllt, nur das Ergebnis einer abgeschlossenen menschlichen Tätigkeit verbessert, nur Entscheidungsmuster erkennt oder nur eine vorbereitende Aufgabe erfüllt. Die Ausnahme greift nie, wenn das System Profiling natürlicher Personen vornimmt. Wer sich darauf beruft, muss die Bewertung dokumentieren und das System trotzdem registrieren.</p>
+  </details>
+  <details class="knowledge">
+    <summary><h3 data-i18n="faq.9.question">Fällt Kreditscoring unter den EU AI Act?</h3></summary>
+    <p data-i18n="faq.9.answer">Die Bewertung der Kreditwürdigkeit natürlicher Personen fällt unter Anhang III Nummer 5 Buchstabe b. Ausgenommen sind Systeme, deren Hauptzweck die Aufdeckung von Finanzbetrug ist. Die Bonitätsprüfung von Unternehmen ist nicht erfasst, solange nicht zugleich die persönlichen Finanzen eines Menschen bewertet werden.</p>
+  </details>
+  <details class="knowledge">
+    <summary><h3 data-i18n="faq.10.question">Brauchen wir eine Datenschutz-Folgenabschätzung?</h3></summary>
+    <p data-i18n="faq.10.answer">Die KI-Verordnung und die Datenschutz-Grundverordnung gelten nebeneinander. Verarbeitet Ihr System personenbezogene Daten und ist es hochriskant, liegt eine Datenschutz-Folgenabschätzung nach Artikel 35 der Datenschutz-Grundverordnung meist nahe. Trifft das System automatisierte Entscheidungen mit rechtlicher Wirkung, gilt zusätzlich Artikel 22 der Datenschutz-Grundverordnung.</p>
+  </details>
+</section>
+
+<section id="areas">
+  <h2 data-i18n="areas.heading">Die acht Bereiche des Anhangs III</h2>
+  <p data-i18n="areas.intro">Fällt der Zweck Ihres Systems in einen dieser Bereiche, ist es nach Artikel 6 Absatz 2 ein Hochrisiko-KI-System — vorbehaltlich der Ausnahme des Artikels 6 Absatz 3.</p>
+  <ol class="area-list">
+    <li><strong data-i18n="areas.1.name">Biometrie</strong> <span data-i18n="areas.1.text">— biometrische Fernidentifizierung, biometrische Kategorisierung nach geschützten Merkmalen, Emotionserkennung.</span></li>
+    <li><strong data-i18n="areas.2.name">Kritische Infrastruktur</strong> <span data-i18n="areas.2.text">— Sicherheitsbauteile bei Strom, Gas, Wärme, Wasser, Straßenverkehr und kritischer digitaler Infrastruktur.</span></li>
+    <li><strong data-i18n="areas.3.name">Allgemeine und berufliche Bildung</strong> <span data-i18n="areas.3.text">— Zugang und Zulassung, Bewertung von Lernergebnissen, Einstufung des Bildungsniveaus, Prüfungsaufsicht.</span></li>
+    <li><strong data-i18n="areas.4.name">Beschäftigung und Personalmanagement</strong> <span data-i18n="areas.4.text">— Einstellung und Auswahl, Beförderung, Kündigung, Aufgabenzuweisung, Leistungs- und Verhaltensüberwachung.</span></li>
+    <li><strong data-i18n="areas.5.name">Grundlegende private und öffentliche Dienste</strong> <span data-i18n="areas.5.text">— Sozialleistungen, Kreditwürdigkeit, Risikobewertung und Preisbildung bei Lebens- und Krankenversicherung, Notrufe und Triage.</span></li>
+    <li><strong data-i18n="areas.6.name">Strafverfolgung</strong> <span data-i18n="areas.6.text">— Opfer- und Täterrisiko, Lügendetektoren, Beweiswürdigung, Profiling.</span></li>
+    <li><strong data-i18n="areas.7.name">Migration, Asyl und Grenzkontrolle</strong> <span data-i18n="areas.7.text">— Lügendetektoren, Risikobewertung Einreisender, Prüfung von Anträgen, Identifizierung.</span></li>
+    <li><strong data-i18n="areas.8.name">Rechtspflege und demokratische Prozesse</strong> <span data-i18n="areas.8.text">— Unterstützung von Gerichten, Beeinflussung von Wahlen und Abstimmungen.</span></li>
+  </ol>
+</section>
+
+<section id="sources">
+  <h2 data-i18n="sources.heading">Woher die Antworten stammen</h2>
+  <p data-i18n="sources.intro">Jede Frage dieses Werkzeugs und jedes Beispiel trägt die Absatznummer der Stelle, auf der sie beruht. Gearbeitet wird mit drei Quellen:</p>
+  <ul>
+    <li><strong data-i18n="sources.aiAct.name">Verordnung (EU) 2024/1689</strong>
+      <span data-i18n="sources.aiAct.text">über künstliche Intelligenz, amtlicher Wortlaut aus dem Amtsblatt vom 12. Juli 2024 auf Deutsch und Englisch — 1386 einzeln ansprechbare Textstellen.</span></li>
+    <li><strong data-i18n="sources.gdpr.name">Verordnung (EU) 2016/679</strong><span
+      data-i18n="sources.gdpr.text">, die Datenschutz-Grundverordnung, amtlicher Wortlaut auf Deutsch und Englisch — 1024 Textstellen.</span></li>
+    <li><strong data-i18n="sources.guidelines.name">Entwurf der Leitlinien der Europäischen Kommission vom 19. Mai 2026</strong>
+      <span data-i18n="sources.guidelines.text">zur Einstufung von Hochrisiko-KI-Systemen — 148 Seiten zu Anhang III, 13 Seiten zu Anhang I, 6 Seiten allgemeine Grundsätze. Daraus stammen 379 Fragen, 214 ausdrückliche Ausschlüsse und 187 amtliche Beispiele.</span></li>
+  </ul>
+  <p class="muted" data-i18n="sources.caveat">Der Entwurf der Leitlinien ist nicht bindend. Die öffentliche Anhörung lief bis zum 23. Juni 2026; eine endgültige Fassung lag bei Abschluss dieser Arbeit nicht vor. Dieses Werkzeug ersetzt keine Rechtsberatung.</p>
+</section>
+
+<section id="software">
+  <h2 data-i18n="software.heading">Für den eigenen Rechner</h2>
+  <p data-i18n="software.text">Dieselbe Einstufung gibt es als Programm für Windows, Mac und Linux. Dort kommt die Volltextsuche im Verordnungstext dazu: eine Frage in eigenen Worten, und der Helfer zeigt die Stellen der Verordnung, die sie beantworten. Installieren, starten, fertig — kein Python, keine Einrichtung, keine Anmeldung.</p>
+  <p><a href="https://github.com/DanielHuette/ai-act-compliance-helper/releases"
+    data-i18n="software.link">Programm und Quellcode auf GitHub</a>
+    <span data-i18n="software.license">— Apache-Lizenz 2.0.</span></p>
+</section>
+
+</div></div>
+
+<script type="module" src="./page.js"></script>
+</body>
+</html>

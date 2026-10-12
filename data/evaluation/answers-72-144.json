@@ -1,0 +1,735 @@
+[
+ {
+  "index": 72,
+  "expected": "exemption_applies",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 3,
+  "questions": 12,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "(d) Die Lage nennt keinen Anwendungsfall des Anhangs III. Der Filter des Artikels 6 Absatz 3 wird erst nach einem getroffenen Punkt gefragt, also hier nie erreicht; das Beispiel zeigt nur, dass die Bewertung von Warenrisiko kein Profiling ist.",
+   "en": "(d) The scenario names no Annex III use case. The Article 6(3) filter is only asked after a point has been met, so it is never reached here; the example only shows that assessing goods risk is not profiling."
+  }
+ },
+ {
+  "index": 73,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 4,
+  "questions": 14,
+  "citations": []
+ },
+ {
+  "index": 74,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 3,
+  "questions": 12,
+  "citations": []
+ },
+ {
+  "index": 75,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 25,
+  "citations": []
+ },
+ {
+  "index": 76,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 30,
+  "citations": []
+ },
+ {
+  "index": 77,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 22,
+  "citations": []
+ },
+ {
+  "index": 78,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 34,
+  "citations": [
+   "AI-Act/annex-III/pt-5-a"
+  ]
+ },
+ {
+  "index": 79,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 26,
+  "citations": [
+   "AI-Act/annex-III/pt-1-a"
+  ]
+ },
+ {
+  "index": 80,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 54,
+  "citations": [
+   "AI-Act/annex-III/pt-4-b"
+  ]
+ },
+ {
+  "index": 81,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 54,
+  "citations": [
+   "AI-Act/annex-III/pt-4-b"
+  ]
+ },
+ {
+  "index": 82,
+  "expected": "high_risk",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 6,
+  "questions": 38,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "(c) Der Verbund zu Anhang III Nummer 2 verlangt zwingend eine foermlich benannte kritische Einrichtung. Bereich Strassenverkehr und Schutzaufgabe tragen; wird allein diese Frage mit Ja beantwortet, ergibt der Durchlauf high_risk_annex_iii. Anhang III Nummer 2 verlangt keine solche Benennung.",
+   "en": "(c) The combined condition for Annex III, point 2 strictly requires a formally designated critical entity. The road traffic area and the safety function are established; if this question alone is answered yes, the walkthrough results in high_risk_annex_iii. Annex III, point 2 requires no such designation."
+  }
+ },
+ {
+  "index": 83,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 30,
+  "citations": []
+ },
+ {
+  "index": 84,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 34,
+  "citations": [
+   "AI-Act/annex-III/pt-5-d"
+  ]
+ },
+ {
+  "index": 85,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 34,
+  "citations": []
+ },
+ {
+  "index": 86,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 34,
+  "citations": []
+ },
+ {
+  "index": 87,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 30,
+  "citations": []
+ },
+ {
+  "index": 88,
+  "expected": "high_risk",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 6,
+  "questions": 38,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "(c) Derselbe Verbundfehler: Bereich Trinkwasser und Schutzaufgabe tragen, nur die verlangte Benennung als kritische Einrichtung steht nicht in der Lage. Mit Ja darauf ergibt der Durchlauf high_risk_annex_iii.",
+   "en": "(c) The same combined-condition error: the drinking water area and the safety function are established, only the required designation as a critical entity is not in the scenario. With a yes to it, the walkthrough results in high_risk_annex_iii."
+  }
+ },
+ {
+  "index": 89,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 25,
+  "citations": [
+   "AI-Act/annex-III/pt-1-c"
+  ]
+ },
+ {
+  "index": 90,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 3,
+  "questions": 12,
+  "citations": []
+ },
+ {
+  "index": 91,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 3,
+  "questions": 12,
+  "citations": []
+ },
+ {
+  "index": 92,
+  "expected": "not_high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": false,
+  "steps": 6,
+  "questions": 38,
+  "citations": [
+   "AI-Act/annex-III/pt-5-b"
+  ],
+  "mismatch_reason": {
+   "de": "(a) Es fehlt die Frage, ob das System ausschliesslich Betriebs- oder Firmendaten verwendet. Der Inhaber ist eine natuerliche Person, darum traegt pt-5-b; amtlich entscheidet aber die Herkunft der Daten.",
+   "en": "(a) The question whether the system uses exclusively business or company data is missing. The owner is a natural person, so pt-5-b is established; officially, however, the origin of the data is decisive."
+  }
+ },
+ {
+  "index": 93,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 6,
+  "questions": 41,
+  "citations": []
+ },
+ {
+  "index": 94,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 46,
+  "citations": [
+   "AI-Act/annex-III/pt-4-a"
+  ]
+ },
+ {
+  "index": 95,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 54,
+  "citations": [
+   "AI-Act/annex-III/pt-4-b"
+  ]
+ },
+ {
+  "index": 96,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 3,
+  "questions": 12,
+  "citations": []
+ },
+ {
+  "index": 97,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 34,
+  "citations": []
+ },
+ {
+  "index": 98,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 34,
+  "citations": [
+   "AI-Act/annex-III/pt-5-d"
+  ]
+ },
+ {
+  "index": 99,
+  "expected": "high_risk",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 6,
+  "questions": 38,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "(c) und (b) Erstens derselbe Verbundfehler. Zweitens nimmt die Frage nach Schaeden, die Dritte verursachen, den Umfeldschutz einer Stromanlage heraus, obwohl er amtlich erfasst ist; mit Nein darauf und bejahter Benennung ergibt der Durchlauf high_risk_annex_iii.",
+   "en": "(c) and (b) First, the same combined-condition error. Second, the question on damage caused by third parties removes the protection of the surroundings of a power installation, although it is officially covered; with a no to it and the designation affirmed, the walkthrough results in high_risk_annex_iii."
+  }
+ },
+ {
+  "index": 100,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 25,
+  "citations": []
+ },
+ {
+  "index": 101,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 38,
+  "citations": []
+ },
+ {
+  "index": 102,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 6,
+  "questions": 48,
+  "citations": []
+ },
+ {
+  "index": 103,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 4,
+  "questions": 16,
+  "citations": []
+ },
+ {
+  "index": 104,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 22,
+  "citations": []
+ },
+ {
+  "index": 105,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 6,
+  "questions": 42,
+  "citations": []
+ },
+ {
+  "index": 106,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 3,
+  "questions": 12,
+  "citations": []
+ },
+ {
+  "index": 107,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 31,
+  "citations": []
+ },
+ {
+  "index": 108,
+  "expected": "high_risk",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 4,
+  "questions": 16,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "(d) Die Lage nennt nicht, dass eine Strafverfolgungsbehoerde das System einsetzt. Ohne diesen Bereich ist pt-6-e nicht erreichbar.",
+   "en": "(d) The scenario does not state that a law enforcement authority uses the system. Without this area pt-6-e cannot be reached."
+  }
+ },
+ {
+  "index": 109,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 46,
+  "citations": [
+   "AI-Act/annex-III/pt-4-a"
+  ]
+ },
+ {
+  "index": 110,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 6,
+  "questions": 38,
+  "citations": []
+ },
+ {
+  "index": 111,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 3,
+  "questions": 12,
+  "citations": []
+ },
+ {
+  "index": 112,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 27,
+  "citations": []
+ },
+ {
+  "index": 113,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 52,
+  "citations": [
+   "AI-Act/annex-III/pt-1-a"
+  ]
+ },
+ {
+  "index": 114,
+  "expected": "exemption_applies",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 3,
+  "questions": 12,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "(d) Die Lage nennt keinen Anwendungsfall des Anhangs III. Die enge Verfahrensaufgabe wird erst nach einem getroffenen Punkt gefragt.",
+   "en": "(d) The scenario names no Annex III use case. The narrow procedural task is only asked after a point has been met."
+  }
+ },
+ {
+  "index": 115,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 35,
+  "citations": []
+ },
+ {
+  "index": 116,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 34,
+  "citations": [
+   "AI-Act/annex-III/pt-5-a"
+  ]
+ },
+ {
+  "index": 117,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 38,
+  "citations": [
+   "AI-Act/annex-III/pt-5-b"
+  ]
+ },
+ {
+  "index": 118,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 38,
+  "citations": []
+ },
+ {
+  "index": 119,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 6,
+  "questions": 50,
+  "citations": []
+ },
+ {
+  "index": 120,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 32,
+  "citations": []
+ },
+ {
+  "index": 121,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 6,
+  "questions": 46,
+  "citations": []
+ },
+ {
+  "index": 122,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 25,
+  "citations": [
+   "AI-Act/annex-III/pt-1-c"
+  ]
+ },
+ {
+  "index": 123,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 35,
+  "citations": [
+   "AI-Act/annex-III/pt-5-c"
+  ]
+ },
+ {
+  "index": 124,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 35,
+  "citations": [
+   "AI-Act/annex-III/pt-5-c"
+  ]
+ },
+ {
+  "index": 125,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 30,
+  "citations": []
+ },
+ {
+  "index": 126,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 46,
+  "citations": [
+   "AI-Act/annex-III/pt-4-a"
+  ]
+ },
+ {
+  "index": 127,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 38,
+  "citations": [
+   "AI-Act/annex-III/pt-5-b"
+  ]
+ },
+ {
+  "index": 128,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 6,
+  "questions": 38,
+  "citations": []
+ },
+ {
+  "index": 129,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 3,
+  "questions": 12,
+  "citations": []
+ },
+ {
+  "index": 130,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 21,
+  "citations": []
+ },
+ {
+  "index": 131,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 21,
+  "citations": []
+ },
+ {
+  "index": 132,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 38,
+  "citations": [
+   "AI-Act/annex-III/pt-5-b"
+  ]
+ },
+ {
+  "index": 133,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 25,
+  "citations": []
+ },
+ {
+  "index": 134,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 6,
+  "questions": 42,
+  "citations": []
+ },
+ {
+  "index": 135,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 6,
+  "questions": 37,
+  "citations": []
+ },
+ {
+  "index": 136,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 6,
+  "questions": 38,
+  "citations": []
+ },
+ {
+  "index": 137,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 30,
+  "citations": []
+ },
+ {
+  "index": 138,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 22,
+  "citations": []
+ },
+ {
+  "index": 139,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 6,
+  "questions": 38,
+  "citations": []
+ },
+ {
+  "index": 140,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 34,
+  "citations": [
+   "AI-Act/annex-III/pt-5-d"
+  ]
+ },
+ {
+  "index": 141,
+  "expected": "high_risk",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 3,
+  "questions": 12,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "(d) Die Lage nennt keinen Anwendungsfall des Anhangs III. Das Beispiel ist ein Gegenbeispiel zum Filter, der ohne getroffenen Punkt nie gefragt wird.",
+   "en": "(d) The scenario names no Annex III use case. The example is a counter-example to the filter, which is never asked without a point having been met."
+  }
+ },
+ {
+  "index": 142,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 6,
+  "questions": 38,
+  "citations": []
+ },
+ {
+  "index": 143,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 6,
+  "questions": 38,
+  "citations": []
+ },
+ {
+  "index": 144,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 41,
+  "citations": [
+   "AI-Act/annex-III/pt-3-d"
+  ]
+ }
+]

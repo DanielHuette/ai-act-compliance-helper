@@ -1,0 +1,60 @@
+# LF in the repository; without this, switching between Windows and Linux creates phantom diffs.
+* text=auto eol=lf
+
+*.bat text eol=crlf
+*.cmd text eol=crlf
+gradlew.bat text eol=crlf
+
+# A shell script with CRLF fails at its shebang line, even when checked out on Windows.
+*.sh text eol=lf
+gradlew text eol=lf
+Dockerfile text eol=lf
+.dockerignore text eol=lf
+
+*.ps1 text eol=crlf
+
+*.py text diff=python
+*.kt text
+*.kts text
+*.md text
+*.yaml text
+*.yml text
+*.toml text
+*.json text
+*.jsonl text
+*.cff text
+*.xml text
+*.pro text
+*.properties text
+*.html text
+
+# One line per legal unit, so a change in the legal text shows up as a one-line diff.
+data/processed/corpus.jsonl text
+data/processed/corpus.en.jsonl text
+
+# Binary: line-ending conversion would corrupt these.
+*.onnx binary
+*.db binary
+*.npy binary
+*.gz binary
+*.pkl binary
+*.jar binary
+*.png binary
+*.jpg binary
+*.pdf binary
+*.apk binary
+*.so binary
+*.zip binary
+
+# 17 MB single-line JSON vocabulary; a diff would be unreadable.
+android/app/src/main/assets/tokenizer.json -diff -text
+
+# Not part of source archives
+.github/ export-ignore
+.gitattributes export-ignore
+.gitignore export-ignore
+data/raw/ export-ignore
+
+# Keep data directories out of GitHub's language statistics.
+data/** linguist-documentation
+docs/** linguist-documentation

@@ -1,0 +1,871 @@
+# Question flow for Article 6(1) in conjunction with Annex I of the AI Act.
+#
+# The sole source is the English draft text of the Commission guidelines of
+# 19 May 2026, section III. Every line carries in source_ref the paragraph number as
+# it appears in brackets in the text. Footnotes are referenced under the paragraph number
+# to which they belong. The box with the examples of safety functions
+# appears in the text without its own number between paragraphs (37) and (38) and is therefore
+# referenced under (37).
+#
+# verdict in the examples has three values:
+#   high_risk         - the text classifies the situation as high-risk
+#   not_high_risk     - the text excludes the situation
+#   possible          - the text says: a safety component exists or the
+#                       situation is not excluded; the second condition
+#                       (third-party assessment) has thus not yet
+#                       been answered
+#
+# Annex I lists legal acts, not individual products (23). Which
+# number a legal act has in Annex I is not stated in the guidelines text;
+# therefore only "AI-Act/annex-I" is given as the citation and the category is made
+# distinguishable via id.
+
+area: "AI-Act/annex-I"
+title:
+  de: "Hohes Risiko über das Produktsicherheitsrecht"
+  en: "High risk through product safety law"
+
+source:
+  de: "Entwurf der Leitlinien der Kommission vom 19.05.2026, Anhang I"
+  en: "Draft Commission guidelines of 19 May 2026, Annex I"
+questions:
+  - id: "product-under-annex-i"
+    question:
+      de: "Fällt das Produkt, in dem Ihr KI-System steckt oder stecken soll, unter eine der Produktvorschriften, die Anhang I der KI-Verordnung aufzählt?"
+      en: "Does the product in which your AI system is or is to be embedded fall under one of the product rules listed in Annex I of the AI Act?"
+    source_ref: "(15)"
+    covered:
+      - text:
+          de: "Anhang I zählt keine einzelnen Produkte auf, sondern Rechtsvorschriften, die die Sicherheit bestimmter Produkte regeln. Es zählt also, ob Ihr Produkt in den sachlichen Geltungsbereich einer dieser Vorschriften fällt."
+          en: "Annex I does not list individual products but legal acts that regulate the safety of certain products. What counts, therefore, is whether your product falls within the material scope of one of these legal acts."
+        source_ref: "(23)"
+      - text:
+          de: "Erfasst sind die Vorschriften des Neuen Rechtsrahmens, das ist Abschnitt A von Anhang I, und die übrigen Vorschriften, das ist Abschnitt B."
+          en: "Covered are the rules of the New Legislative Framework, that is Section A of Annex I, and the other rules, that is Section B."
+        source_ref: "(15)"
+      - text:
+          de: "Dass ein Produkt für Verbraucher oder für den Haushalt bestimmt ist, nimmt es für sich allein nicht aus."
+          en: "The fact that a product is intended for consumers or for household use does not on its own exclude it."
+        source_ref: "(23)"
+      - text:
+          de: "Verbraucherprodukte sind nicht vom Anwendungsbereich ausgenommen. Sind alle Bedingungen erfüllt, können gewerbliche wie Verbraucherprodukte hochriskant sein."
+          en: "Consumer products are not excluded from the scope. If all conditions are met, both professional and consumer products can be high-risk."
+        source_ref: "(21)"
+      - text:
+          de: "Artikel 6 Absatz 1 gilt für ein KI-System, das als Sicherheitsbauteil eines solchen Produkts verwendet werden soll, und für ein KI-System, das selbst ein solches Produkt ist."
+          en: "Article 6(1) applies to an AI system intended to be used as a safety component of such a product and to an AI system that is itself such a product."
+        source_ref: "(15)"
+    not_covered:
+      - text:
+          de: "Produkte, die nicht schon ohne die KI-Verordnung unter eine dieser Vorschriften fallen. Artikel 6 Absatz 1 erweitert das Produktrecht nicht auf neue oder weitere Produkte."
+          en: "Products that do not already fall under one of these rules without the AI Act. Article 6(1) does not extend product legislation to new or additional products."
+        source_ref: "(26)"
+      - text:
+          de: "Die Liste der Rechtsvorschriften in Anhang I ist abschließend. Produkte kommen nur hinzu, wenn der Geltungsbereich einer dort genannten Vorschrift geändert wird oder eine neue Vorschrift in Anhang I aufgenommen wird."
+          en: "The list of legal acts in Annex I is exhaustive. Products are only added if the scope of a legal act listed there is amended or a new legal act is included in Annex I."
+        source_ref: "(24)"
+      - text:
+          de: "Die KI-Verordnung bestimmt oder ändert das Risikoprofil eines Produkts nicht. Sie baut auf der Risikoeinstufung des Fachrechts auf."
+          en: "The AI Act does not determine or change the risk profile of a product. It builds on the risk classification of the sectoral legislation."
+        source_ref: "(26)"
+
+  - id: "ai-system-is-product"
+    question:
+      de: "Wird Ihr KI-System eigenständig verkauft, hat es einen eigenen Verwendungszweck und ist es von einer Vorschrift aus Anhang I unmittelbar geregelt?"
+      en: "Is your AI system sold on its own, does it have its own intended purpose, and is it directly regulated by a rule from Annex I?"
+    source_ref: "(30)"
+    covered:
+      - text:
+          de: "Für sich stehende KI-Systeme."
+          en: "Stand-alone AI systems."
+        source_ref: "(30)"
+      - text:
+          de: "KI-Systeme, die in andere Produkte eingebaut sind."
+          en: "AI systems embedded in other products."
+        source_ref: "(30)"
+      - text:
+          de: "Software, die die Maschinenverordnung (EU) 2023/1230 ausdrücklich in die Begriffsbestimmung der Maschinenprodukte einbezieht. Sie ist dann hochriskant, sofern für sie eine Bewertung durch eine dritte Stelle verlangt ist."
+          en: "Software that the Machinery Regulation (EU) 2023/1230 expressly includes in the definition of machinery products. It is then high-risk, provided that a third-party assessment is required for it."
+        source_ref: "(30)"
+      - text:
+          de: "Artikel 6 Absatz 1 unterscheidet zwei Lagen: Ihr KI-System ist selbst das geregelte Produkt, oder es ist Sicherheitsbauteil eines geregelten Produkts."
+          en: "Article 6(1) distinguishes two situations: your AI system is itself the regulated product, or it is a safety component of a regulated product."
+        source_ref: "(29)"
+
+  - id: "supplied-separately"
+    question:
+      de: "Liefern Sie Ihr KI-System getrennt vom Produkt, etwa als Aktualisierung der Software, als Zusatzteil oder als Dienst aus der Ferne?"
+      en: "Do you supply your AI system separately from the product, for example as a software update, an add-on or a remote service?"
+    source_ref: "(22)"
+    covered:
+      - text:
+          de: "Artikel 6 Absatz 1 gilt unabhängig davon, ob das KI-System in das Produkt eingebaut ist oder eigenständig verkauft oder in Betrieb genommen wird. Die Art der Lieferung nimmt Ihr System also nicht aus."
+          en: "Article 6(1) applies irrespective of whether the AI system is embedded in the product or sold or put into service independently. The way it is supplied therefore does not exclude your system."
+        source_ref: "(22)"
+      - text:
+          de: "Eine Aktualisierung der Software, ein Zusatzteil oder ein Dienst aus der Ferne kann hochriskant sein, sofern alle Bedingungen erfüllt sind."
+          en: "A software update, an add-on or a remote service can be high-risk, provided that all conditions are met."
+        source_ref: "(22)"
+      - text:
+          de: "Ein KI-System bleibt Sicherheitsbauteil, auch wenn Sie es zusätzlich getrennt vom Produkt verkaufen. Es ist dann Teil der Sicherheitsbewertung des Produkts nach der einschlägigen Vorschrift."
+          en: "An AI system remains a safety component even if you additionally sell it separately from the product. It is then part of the safety assessment of the product under the relevant rule."
+        source_ref: "(31)"
+
+  - id: "part-of-regulated-product"
+    question:
+      de: "Ist Ihr KI-System Teil eines Produkts, das unter eine Vorschrift aus Anhang I fällt, oder soll es Teil eines solchen Produkts werden?"
+      en: "Is your AI system part of a product that falls under a rule from Annex I, or is it to become part of such a product?"
+    source_ref: "(31)"
+    covered:
+      - text:
+          de: "Ein KI-System ist Sicherheitsbauteil, wenn es Teil eines geregelten Produkts ist oder sein soll, selbst wenn es auch getrennt von diesem Produkt verkauft wird."
+          en: "An AI system is a safety component if it is or is to be part of a regulated product, even if it is also sold separately from that product."
+        source_ref: "(31)"
+      - text:
+          de: "Nach der Begriffsbestimmung kann Ihr KI-System auch Bauteil eines anderen KI-Systems sein, nicht nur Bauteil eines Produkts."
+          en: "According to the definition, your AI system can also be a component of another AI system, not only a component of a product."
+        source_ref: "(32)"
+
+  - id: "safety-component"
+    question:
+      de: "Erfüllt Ihr KI-System eine Sicherheitsaufgabe für das Produkt, oder gefährdet sein Ausfall oder Fehlverhalten Gesundheit und Sicherheit von Menschen oder Sachen?"
+      en: "Does your AI system perform a safety function for the product, or does its failure or malfunction endanger the health and safety of persons or property?"
+    source_ref: "(32)"
+    covered:
+      - text:
+          de: "Die Begriffsbestimmung in Artikel 3 Nummer 14 der KI-Verordnung lautet: ein Bauteil eines Produkts oder eines KI-Systems, das eine Sicherheitsfunktion für dieses Produkt oder KI-System erfüllt, oder dessen Ausfall oder Fehlfunktion die Gesundheit und Sicherheit von Personen oder Eigentum gefährdet."
+          en: "The definition in Article 3(14) of the AI Act reads: a component of a product or of an AI system which fulfils a safety function for that product or AI system, or the failure or malfunctioning of which endangers the health and safety of persons or property."
+        source_ref: "(32)"
+      - text:
+          de: "Die Bestimmung legt zwei Fälle fest, die als Alternative zueinander stehen. Einer genügt: entweder das System erfüllt eine Sicherheitsaufgabe, oder sein Ausfall beziehungsweise Fehlverhalten würde Gesundheit und Sicherheit gefährden."
+          en: "The provision sets out two cases that stand as alternatives to each other. One is enough: either the system performs a safety function, or its failure or malfunction would endanger health and safety."
+        source_ref: "(34)"
+      - text:
+          de: "Die Bestimmung gilt eigenständig für die KI-Verordnung und ist von Begriffsbestimmungen in anderen Produktvorschriften unabhängig. Für die Einstufung zählt allein Artikel 3 Nummer 14 der KI-Verordnung, nicht der Begriff des Sicherheitsbauteils in einer der Vorschriften aus Anhang I."
+          en: "The provision applies autonomously for the AI Act and is independent of definitions in other product rules. For the classification, only Article 3(14) of the AI Act counts, not the notion of safety component in one of the rules from Annex I."
+        source_ref: "(33)"
+      - text:
+          de: "Ist Ihr KI-System Sicherheitsbauteil eines geregelten Produkts, wird es als Teil der Sicherheitsbewertung des gesamten Produkts bewertet."
+          en: "If your AI system is a safety component of a regulated product, it is assessed as part of the safety assessment of the entire product."
+        source_ref: "(31)"
+    not_covered:
+      - text:
+          de: "KI-Systeme, die in ein geregeltes Produkt eingebaut sind, aber weder eine Sicherheitsaufgabe erfüllen sollen noch bei Ausfall oder Fehlverhalten Gesundheit, Sicherheit oder Eigentum gefährden, sind keine Sicherheitsbauteile."
+          en: "AI systems embedded in a regulated product that are neither intended to perform a safety function nor endanger health, safety or property in the event of failure or malfunction are not safety components."
+        source_ref: "(47)"
+      - text:
+          de: "Öffentliche Belange, die über Gesundheit, Sicherheit und Grundrechte hinausgehen, bleiben außer Betracht, etwa Risiken aus der Nutzung von Funkfrequenzen oder aus der elektromagnetischen Verträglichkeit."
+          en: "Public interests going beyond health, safety and fundamental rights are not taken into account, such as risks arising from the use of radio spectrum or from electromagnetic compatibility."
+        source_ref: "(25)"
+      - text:
+          de: "Kein Produkt im Anwendungsbereich des Artikels 6 Absatz 1 ist von sich aus hochriskant."
+          en: "No product within the scope of Article 6(1) is high-risk in and of itself."
+        source_ref: "(48)"
+
+  - id: "safety-function"
+    question:
+      de: "Haben Sie als Anbieter in der Bedienungsanleitung, in den technischen Unterlagen oder in Werbe- und Verkaufsunterlagen festgelegt, dass Ihr KI-System Gefahren für Gesundheit und Sicherheit von Menschen oder Sachen verhindern oder abmildern soll?"
+      en: "Have you as the provider specified in the instructions for use, in the technical documentation or in promotional and sales materials that your AI system is intended to prevent or mitigate hazards to the health and safety of persons or property?"
+    source_ref: "(35)"
+    covered:
+      - text:
+          de: "Die Sicherheitsaufgabe muss ein Verwendungszweck des Systems sein, und diesen Zweck legen Sie als Anbieter fest. Er ergibt sich aus der Bedienungsanleitung, den technischen Unterlagen und den Werbe- oder Verkaufsunterlagen."
+          en: "The safety function must be an intended purpose of the system, and you as the provider determine this purpose. It follows from the instructions for use, the technical documentation and the promotional or sales materials."
+        source_ref: "(35)"
+      - text:
+          de: "Eine Sicherheitsaufgabe liegt vor, wenn der von Ihnen festgelegte Verwendungszweck darin besteht, Gefahren für Gesundheit und Sicherheit von Menschen oder Sachen zu verhindern oder abzumildern."
+          en: "A safety function exists if the intended purpose you have determined consists in preventing or mitigating hazards to the health and safety of persons or property."
+        source_ref: "(37)"
+      - text:
+          de: "Vorbeugen: Überwachen und Erkennen von Lagen, die zu körperlichem Schaden an Menschen oder Sachen führen können, etwa ein KI-System, das untypisches Verhalten einer Anlage erkennt."
+          en: "Prevention: monitoring and detecting situations that can lead to physical harm to persons or property, for example an AI system that detects abnormal behaviour of a machine."
+        source_ref: "(37)"
+      - text:
+          de: "Vorbeugen: Überwachen und Erkennen eines Wartungs- oder Prüfbedarfs, wenn unterbliebene Wartung zu körperlichem Schaden führen kann, etwa ein KI-System, das erkennt, ob sicherheitsrelevante Teile abgenutzt sind und ersetzt oder gewartet werden müssen."
+          en: "Prevention: monitoring and detecting a need for maintenance or inspection where lack of maintenance can lead to physical harm, for example an AI system that detects whether safety-relevant parts are worn and need to be replaced or serviced."
+        source_ref: "(37)"
+      - text:
+          de: "Vorbeugen: Verhindern körperlichen Schadens an Menschen oder Sachen, etwa ein KI-System, das den Start der Anlage unterbindet, wenn es untypisches Verhalten erkennt."
+          en: "Prevention: preventing physical harm to persons or property, for example an AI system that stops the machine from starting if it detects abnormal behaviour."
+        source_ref: "(37)"
+      - text:
+          de: "Vorbeugen: Überwachen eines anderen Systems, das eine Sicherheitsaufgabe erfüllt, etwa ein KI-System, das über Messfühler den laufenden Betrieb eines Sicherheitsbauteils in Echtzeit überwacht."
+          en: "Prevention: monitoring another system that performs a safety function, for example an AI system that uses sensors to monitor the ongoing operation of a safety component in real time."
+        source_ref: "(37)"
+      - text:
+          de: "Abmildern: Begrenzen oder Steuern körperlichen Schadens an Menschen oder Sachen, etwa ein KI-System, das das Verhalten einer Anlage überwacht und ihre Funktion entsprechend nachstellt."
+          en: "Mitigation: limiting or controlling physical harm to persons or property, for example an AI system that monitors the behaviour of a machine and adjusts its function accordingly."
+        source_ref: "(37)"
+      - text:
+          de: "Abmildern: Verringern der Folgen eines möglichen körperlichen Schadens, etwa ein KI-System, das bei gefährlichen Zuständen ein sicheres Anhalten auslöst."
+          en: "Mitigation: reducing the consequences of possible physical harm, for example an AI system that triggers a safe stop in hazardous conditions."
+        source_ref: "(37)"
+      - text:
+          de: "Abmildern: Steuern eines anderen Systems, das eine Sicherheitsaufgabe erfüllt."
+          en: "Mitigation: controlling another system that performs a safety function."
+        source_ref: "(37)"
+      - text:
+          de: "Diese Prüfung richtet sich nach der Absicht. Sie als Anbieter haben sie in der Hand, und Nachweis sind Bedienungsanleitung, technische Unterlagen und Werbematerial."
+          en: "This test is based on intent. You as the provider control it, and the evidence is the instructions for use, the technical documentation and promotional material."
+        source_ref: "(44)"
+    not_covered:
+      - text:
+          de: "Dass ein KI-System in ein sicherheitsrechtlich geregeltes Produkt eingebaut ist oder darin arbeitet, macht daraus für sich allein keine Sicherheitsaufgabe."
+          en: "The fact that an AI system is embedded in or operates within a product regulated by safety law does not on its own make it a safety function."
+        source_ref: "(35)"
+      - text:
+          de: "Zwecke, die sich auf Effizienzsteigerung, Leistungssteigerung, Komfort, Bequemlichkeit, das Automatisieren von Nutzerentscheidungen oder Qualitätsverbesserung beschränken, sind keine Sicherheitsaufgabe."
+          en: "Purposes limited to increasing efficiency, increasing performance, comfort, convenience, automating user decisions or improving quality are not a safety function."
+        source_ref: "(42)"
+      - text:
+          de: "Verbessern der Produktleistung, etwa Wirkungsgrad oder Anpassung an Nutzervorlieben, wenn ein Ausfall nicht unmittelbar zu Gefahren für Gesundheit oder Sicherheit von Menschen oder Sachen führt."
+          en: "Improving product performance, for example efficiency or adaptation to user preferences, where a failure does not directly lead to hazards to the health or safety of persons or property."
+        source_ref: "(37)"
+      - text:
+          de: "Verbessern der Wirtschaftlichkeit eines Dienstes oder der Arbeitsweise eines Produkts, etwa KI-Systeme für die Rechnungsprüfung oder für die Bearbeitung von Kundenansprüchen."
+          en: "Improving the cost-effectiveness of a service or the way a product works, for example AI systems for invoice checking or for handling customer claims."
+        source_ref: "(37)"
+      - text:
+          de: "Qualitätskontrolle von Funktionen oder Diensten ohne Sicherheitsbezug, etwa KI-Systeme zur Überwachung der Dienstgüte."
+          en: "Quality control of functions or services without a safety link, for example AI systems for monitoring quality of service."
+        source_ref: "(37)"
+      - text:
+          de: "Alle übrigen Funktionen eines KI-Systems, die Sie als Anbieter nicht dazu bestimmt haben, Sicherheitsrisiken zu verhindern oder abzumildern. Dazu gehören Leistungsoptimierung, Wirtschaftlichkeit eines Dienstes, Automatisierung, Komfort, Bequemlichkeit und Qualitätskontrolle nicht sicherheitsbezogener Gesichtspunkte."
+          en: "All other functions of an AI system that you as the provider have not intended to prevent or mitigate safety risks. These include performance optimisation, cost-effectiveness of a service, automation, comfort, convenience and quality control of non-safety-related aspects."
+        source_ref: "(37)"
+      - text:
+          de: "Öffentliche Belange jenseits von Gesundheit, Sicherheit und Grundrechten, etwa die Nutzung von Funkfrequenzen oder die elektromagnetische Verträglichkeit."
+          en: "Public interests beyond health, safety and fundamental rights, for example the use of radio spectrum or electromagnetic compatibility."
+        source_ref: "(25)"
+
+  - id: "failure-endangers-safety"
+    question:
+      de: "Kann ein Ausfall oder ein Fehlverhalten Ihres KI-Systems Gesundheit und Sicherheit von Menschen oder Sachen gefährden?"
+      en: "Can a failure or malfunction of your AI system endanger the health and safety of persons or property?"
+    source_ref: "(38)"
+    covered:
+      - text:
+          de: "Diese Prüfung fragt nicht nach Ihrer Absicht, sondern nach den Gefahren des Produkts und danach, wie stark Ihr KI-System auf diese Gefahren einwirkt. Erfasst werden KI-Systeme, die gefährliche Vorgänge steuern oder beeinflussen und bei Ausfall oder Fehlverhalten Risiken schaffen oder verstärken können."
+          en: "This test does not ask about your intent, but about the hazards of the product and how strongly your AI system affects these hazards. It covers AI systems that control or influence hazardous processes and can create or increase risks in the event of failure or malfunction."
+        source_ref: "(38)"
+      - text:
+          de: "Als Ausfall oder Fehlverhalten gelten falsche Ausgaben, also auch falsch-negative und falsch-positive Ergebnisse."
+          en: "Failure or malfunction includes incorrect outputs, that is also false negative and false positive results."
+        source_ref: "(39)"
+      - text:
+          de: "Als Ausfall oder Fehlverhalten gilt der Verlust der Funktion oder der Verfügbarkeit."
+          en: "Failure or malfunction includes loss of function or availability."
+        source_ref: "(39)"
+      - text:
+          de: "Als Ausfall oder Fehlverhalten gelten unstetes Leistungsverhalten und ein Abdriften der Leistung."
+          en: "Failure or malfunction includes erratic performance and performance drift."
+        source_ref: "(39)"
+      - text:
+          de: "Als Ausfall oder Fehlverhalten gelten Zeit- und Verzögerungsfehler."
+          en: "Failure or malfunction includes timing and latency errors."
+        source_ref: "(39)"
+      - text:
+          de: "Als Ausfall oder Fehlverhalten gelten Fehlzuordnungen, die zu gefährlichen Steuerentscheidungen führen."
+          en: "Failure or malfunction includes misclassifications that lead to hazardous control decisions."
+        source_ref: "(39)"
+      - text:
+          de: "Die Ursache kann im Produkt selbst liegen, etwa ein Programmierfehler, oder von außen kommen, etwa ein unvorhergesehenes Format der Eingabedaten."
+          en: "The cause can lie in the product itself, for example a programming error, or come from outside, for example an unforeseen format of the input data."
+        source_ref: "(39)"
+      - text:
+          de: "Gefährdung bedeutet eine Zunahme der Gefahr. Sie liegt zum Beispiel vor, wenn das KI-System das Produkt in einen unsicheren Zustand bringt oder darin hält, eine Schutzreaktion verhindert oder einen gefährlichen Betrieb ermöglicht, den das Recht verhindern will."
+          en: "Endangering means an increase in hazard. It exists, for example, where the AI system brings or keeps the product in an unsafe state, prevents a protective response or enables hazardous operation that the law seeks to prevent."
+        source_ref: "(40)"
+      - text:
+          de: "Gesundheitsschaden umfasst unter anderem Krankheit und Verletzung, die vorübergehende oder dauerhafte Beeinträchtigung einer Körperstruktur oder einer Körperfunktion sowie chronische Erkrankung."
+          en: "Harm to health includes, among other things, illness and injury, temporary or permanent impairment of a body structure or body function, and chronic disease."
+        source_ref: "(41)"
+      - text:
+          de: "Gesundheitsschaden umfasst auch Schaden an der seelischen Gesundheit, etwa ein seelisches Trauma, das die Fähigkeit zu gewöhnlichen Aufgaben und Tätigkeiten erheblich beeinträchtigt."
+          en: "Harm to health also includes harm to mental health, for example a psychological trauma that significantly impairs the ability to perform ordinary tasks and activities."
+        source_ref: "(41)"
+      - text:
+          de: "Sachschaden umfasst unter anderem Verlust oder Beschädigung von Eigentum."
+          en: "Damage to property includes, among other things, loss of or damage to property."
+        source_ref: "(41)"
+      - text:
+          de: "Erfasst sein können auch KI-Bestandteile, die für Zwecke der Cybersicherheit verwendet werden sollen, wenn ihr Ausfall oder Fehlverhalten Gesundheit und Sicherheit von Menschen oder Sachen gefährden könnte."
+          en: "AI components intended to be used for cybersecurity purposes may also be covered if their failure or malfunction could endanger the health and safety of persons or property."
+        source_ref: "(38)"
+      - text:
+          de: "Auch ein KI-System, dessen Zweck sich auf Effizienz, Leistung, Komfort, Bequemlichkeit, Automatisierung oder Qualität beschränkt, kann Sicherheitsbauteil sein, wenn die Folge seines Ausfalls oder Fehlverhaltens für die Sicherheit des Produkts von Bedeutung ist."
+          en: "Even an AI system whose purpose is limited to efficiency, performance, comfort, convenience, automation or quality can be a safety component if the consequence of its failure or malfunction is relevant to the safety of the product."
+        source_ref: "(42)"
+      - text:
+          de: "Diese Prüfung richtet sich nach Folgen und Risiko. Sie haben sie weniger in der Hand, denn es zählt das Verhalten des Systems und seine Risikolage. Nachweis sind Aufbau des Systems, Fehlerarten und ihre Wirkungen."
+          en: "This test is based on consequences and risk. You control it less, because what counts is the behaviour of the system and its risk profile. The evidence is the system architecture, failure modes and their effects."
+        source_ref: "(44)"
+    not_covered:
+      - text:
+          de: "Eine bloß theoretische Möglichkeit des Ausfalls genügt nicht. Der Ausfall oder das Fehlverhalten muss im Zusammenhang des Produkts tatsächlich zu einer Gefährdung von Menschen oder Eigentum führen."
+          en: "A merely theoretical possibility of failure is not enough. The failure or malfunction must actually lead to a danger to persons or property in the context of the product."
+        source_ref: "(39)"
+      - text:
+          de: "Schaden am Ansehen zählt nicht als Gefährdung von Gesundheit, Sicherheit und Eigentum."
+          en: "Reputational damage does not count as endangering health, safety and property."
+        source_ref: "(40)"
+      - text:
+          de: "Ein rein finanzieller Verlust zählt nicht als Gefährdung von Gesundheit, Sicherheit und Eigentum."
+          en: "A purely financial loss does not count as endangering health, safety and property."
+        source_ref: "(40)"
+      - text:
+          de: "Eine geringe Verschlechterung des Dienstes zählt nicht als Gefährdung von Gesundheit, Sicherheit und Eigentum."
+          en: "A minor degradation of service does not count as endangering health, safety and property."
+        source_ref: "(40)"
+      - text:
+          de: "Eine Unannehmlichkeit, die keine Sicherheitsgefahr mit sich bringt, zählt nicht als Gefährdung von Gesundheit, Sicherheit und Eigentum."
+          en: "An inconvenience that does not entail a safety hazard does not count as endangering health, safety and property."
+        source_ref: "(40)"
+      - text:
+          de: "Bestandteile, die ausschließlich für Zwecke der Cybersicherheit verwendet werden sollen, nimmt Erwägungsgrund 55 der KI-Verordnung ausdrücklich von den Sicherheitsbauteilen aus, dies aber nur im Zusammenhang mit Sicherheitsbauteilen in kritischer Infrastruktur."
+          en: "Components intended to be used exclusively for cybersecurity purposes are expressly excluded from safety components by recital 55 of the AI Act, but only in the context of safety components in critical infrastructure."
+        source_ref: "(38)"
+
+  - id: "comfort-or-efficiency-only"
+    question:
+      de: "Beschränkt sich der von Ihnen festgelegte Verwendungszweck auf Effizienz, Leistungssteigerung, Komfort, Bequemlichkeit, das Automatisieren von Nutzerentscheidungen oder Qualitätsverbesserung?"
+      en: "Is the intended purpose you have determined limited to efficiency, increased performance, comfort, convenience, automating user decisions or improving quality?"
+    source_ref: "(42)"
+    covered:
+      - text:
+          de: "Ein solcher Zweck ist keine Sicherheitsaufgabe. Die zweite Prüfung bleibt aber zu machen: Ist die Folge eines Ausfalls oder Fehlverhaltens für die Sicherheit des Produkts von Bedeutung, liegt trotzdem ein Sicherheitsbauteil vor."
+          en: "Such a purpose is not a safety function. The second test must still be carried out, however: if the consequence of a failure or malfunction is relevant to the safety of the product, it is nevertheless a safety component."
+        source_ref: "(42)"
+      - text:
+          de: "Beispiel: Ein KI-System, das die Verbrennung in einem Haushaltsgasgerät wirtschaftlicher machen soll, hat den Zweck Energieeffizienz und damit keine Sicherheitsaufgabe. Ist das Gerät aber so gebaut, dass ein Ausfall oder Fehlverhalten des KI-Systems zur Bildung von Kohlenmonoxid, zu einer Explosion oder zu einem Brand führen kann, ist das KI-System Sicherheitsbauteil."
+          en: "Example: an AI system intended to make combustion in a household gas appliance more economical has energy efficiency as its purpose and therefore no safety function. If, however, the appliance is designed in such a way that a failure or malfunction of the AI system can lead to the formation of carbon monoxide, an explosion or a fire, the AI system is a safety component."
+        source_ref: "(43)"
+    not_covered:
+      - text:
+          de: "Ein KI-System, das lediglich Heizzeiten anhand der Gewohnheiten des Haushalts verbessert, um Energie zu sparen, erfüllt weder eine Sicherheitsaufgabe noch das Merkmal der Gefährdung durch Ausfall, wenn ein Ausfall nur zu Unbehagen oder höheren Energiekosten führt. Es ist dann kein Sicherheitsbauteil."
+          en: "An AI system that merely improves heating times based on the household's habits in order to save energy performs neither a safety function nor meets the criterion of endangerment through failure if a failure only leads to discomfort or higher energy costs. It is then not a safety component."
+        source_ref: "(43)"
+
+  - id: "connected-home-appliance"
+    question:
+      de: "Ist Ihr Produkt ein vernetztes Haushaltsgerät, etwa ein Thermostat, eine Waschmaschine, ein Luftreiniger, ein Kühlschrank oder ein Fernsehgerät?"
+      en: "Is your product a connected household appliance, for example a thermostat, a washing machine, an air purifier, a refrigerator or a television set?"
+    source_ref: "(48)"
+    covered:
+      - text:
+          de: "Auch bei einem Haushaltsgerät liegt ein Sicherheitsbauteil vor, wenn das KI-System eine Sicherheitsaufgabe erfüllt oder sein Ausfall oder Fehlverhalten Gesundheit und Sicherheit von Menschen oder Eigentum gefährdet. Der Text nennt dafür smarte Türschlösser, Thermostate und Kindersicherungen in Geräten, abhängig von der Bauart des Produkts und den vernünftigerweise vorhersehbaren Verwendungsbedingungen, besonders dort, wo Kinder und schutzbedürftige Nutzer betroffen sind."
+          en: "In a household appliance too, there is a safety component if the AI system performs a safety function or its failure or malfunction endangers the health and safety of persons or property. The text names smart door locks, thermostats and child safety locks in appliances for this, depending on the design of the product and the reasonably foreseeable conditions of use, especially where children and vulnerable users are affected."
+        source_ref: "(48)"
+      - text:
+          de: "Ein smartes Thermostat ist Sicherheitsbauteil, wenn ein Verwendungszweck eine Sicherheitsaufgabe ist oder wenn ein Ausfall oder Fehlverhalten über bloßes Unbehagen und höhere Energiekosten hinausgeht und Gesundheit und Sicherheit gefährden kann."
+          en: "A smart thermostat is a safety component if an intended purpose is a safety function or if a failure or malfunction goes beyond mere discomfort and higher energy costs and can endanger health and safety."
+        source_ref: "(49)"
+    not_covered:
+      - text:
+          de: "Die meisten KI-Systeme in vernetzten Haushaltsgeräten fallen nicht unter den Begriff des Sicherheitsbauteils, weil ihr Verwendungszweck Komfort, Bequemlichkeit oder Optimierung ist, etwa von Energieverbrauch, Luftgüte, Helligkeit oder Ton, und weil ein Ausfall oder Fehlverhalten Gesundheit und Sicherheit voraussichtlich nicht gefährdet, sondern zu Unannehmlichkeit, Unbehagen, falschen Vorschlägen oder schwächerer Leistung führt."
+          en: "Most AI systems in connected household appliances do not fall under the notion of safety component, because their intended purpose is comfort, convenience or optimisation, for example of energy consumption, air quality, brightness or sound, and because a failure or malfunction is unlikely to endanger health and safety but rather leads to inconvenience, discomfort, incorrect suggestions or weaker performance."
+        source_ref: "(48)"
+      - text:
+          de: "Ein smartes Thermostat, das unter die Funkanlagen-Richtlinie fällt, ist kein Sicherheitsbauteil, wenn sein Verwendungszweck darin besteht, durch Erlernen der Haushaltsabläufe und Anpassen der Temperatur Komfort und Energieeffizienz zu steigern, und ein Ausfall oder Fehlverhalten nur zu Unbehagen oder höheren Energiekosten führt."
+          en: "A smart thermostat that falls under the Radio Equipment Directive is not a safety component if its intended purpose is to increase comfort and energy efficiency by learning the household's routines and adjusting the temperature, and a failure or malfunction only leads to discomfort or higher energy costs."
+        source_ref: "(49)"
+      - text:
+          de: "Viele KI-Systeme für Verbraucher, etwa in intelligenten Haushaltsgeräten, erfüllen eine oder mehrere der zusammen verlangten Bedingungen des Artikels 6 Absatz 1 nicht und sind deshalb nicht hochriskant."
+          en: "Many AI systems for consumers, for example in smart household appliances, do not meet one or more of the cumulative conditions of Article 6(1) and are therefore not high-risk."
+        source_ref: "(21)"
+
+  - id: "third-party-assessment-required"
+    question:
+      de: "Verlangt die Produktvorschrift, die für Ihr Produkt gilt, vor dem Verkauf eine Konformitätsbewertung durch eine dritte Stelle, also die Einschaltung einer unabhängigen, staatlich benannten Prüfstelle, im Recht notifizierte Stelle genannt?"
+      en: "Does the product rule that applies to your product require, before the product is sold, a third-party conformity assessment, that is the involvement of an independent, state-designated testing body, called a notified body in the legislation?"
+    source_ref: "(50)"
+    covered:
+      - text:
+          de: "Verlangt sein muss diese Bewertung für das Produkt, dessen Sicherheitsbauteil Ihr KI-System ist, oder für Ihr KI-System selbst, wenn dieses das Produkt ist."
+          en: "This assessment must be required for the product of which your AI system is a safety component, or for your AI system itself if it is the product."
+        source_ref: "(50)"
+      - text:
+          de: "Hintergrund ist, dass die Produktvorschrift das Erzeugnis als von komplexer Bauart oder mit höherem Risiko der Nichtkonformität ansieht und den Schutz öffentlicher Belange über ein Bewertungsverfahren mit dritter Stelle sichert."
+          en: "The background is that the product rule regards the product as being of complex design or as having a higher risk of non-conformity and safeguards the protection of public interests through an assessment procedure involving a third party."
+        source_ref: "(50)"
+      - text:
+          de: "Konformitätsbewertung ist der Vorgang, mit dem der Hersteller nachweist, dass die für ein Produkt festgelegten Anforderungen erfüllt sind."
+          en: "Conformity assessment is the process by which the manufacturer demonstrates that the requirements specified for a product have been fulfilled."
+        source_ref: "(51)"
+      - text:
+          de: "Die KI-Verordnung legt die anwendbaren Bewertungsverfahren nicht selbst fest. Sie stützt sich auf die Wahl der Verfahren, die in den Produktvorschriften aus Anhang I getroffen ist."
+          en: "The AI Act does not itself lay down the applicable assessment procedures. It relies on the choice of procedures made in the product rules from Annex I."
+        source_ref: "(52)"
+
+  - id: "where-is-assessment-procedure"
+    question:
+      de: "Finden Sie in der Produktvorschrift, die für Ihr Produkt gilt, den Abschnitt über das Konformitätsbewertungsverfahren, das Sie vor dem Verkauf oder der Inbetriebnahme einhalten müssen?"
+      en: "Can you find, in the product rule that applies to your product, the section on the conformity assessment procedure that you must follow before selling the product or putting it into service?"
+    source_ref: "(51)"
+    covered:
+      - text:
+          de: "Jede in Anhang I genannte Vorschrift enthält Bestimmungen darüber, welche Bewertungsverfahren der Hersteller einhalten muss, bevor er das Produkt verkauft oder in Betrieb nimmt. Dort ist nachzusehen."
+          en: "Every rule listed in Annex I contains provisions on which assessment procedures the manufacturer must follow before selling the product or putting it into service. That is where to look."
+        source_ref: "(51)"
+      - text:
+          de: "Der Beschluss 768/2008/EG legt für alle Vorschriften des Neuen Rechtsrahmens in Anhang I einen einheitlichen Aufbau der Verfahren fest: acht Hauptbausteine, im Recht Module genannt, mit den Buchstaben A bis H, dazu Untervarianten und Verbindungen."
+          en: "Decision No 768/2008/EC lays down a uniform structure of the procedures for all New Legislative Framework rules in Annex I: eight main building blocks, called modules in the legislation, with the letters A to H, plus sub-variants and combinations."
+        source_ref: "(53)"
+      - text:
+          de: "Bei allen Bausteinen außer Baustein A ist eine notifizierte Stelle zu beteiligen."
+          en: "For all modules except module A, a notified body must be involved."
+        source_ref: "(54)"
+      - text:
+          de: "Baustein C verlangt selbst keine notifizierte Stelle, wird aber immer mit Bausteinen verbunden, die eine verlangen."
+          en: "Module C does not itself require a notified body, but is always combined with modules that do."
+        source_ref: "(54)"
+      - text:
+          de: "Bei den Bausteinen A1 und A2 ist eine notifizierte Stelle oder eine zugelassene betriebseigene Stelle zu beteiligen, aber nur in der Fertigung, nicht im Entwurf."
+          en: "For modules A1 and A2, a notified body or an accredited in-house body must be involved, but only in production, not in design."
+        source_ref: "(54)"
+      - text:
+          de: "Baustein B bringt die notifizierte Stelle in den Entwurf und wird immer von einem Baustein für die Fertigung gefolgt, also von C1, C2, D, E oder F. Das ist das Verfahren aus zwei Bausteinen."
+          en: "Module B brings the notified body into the design and is always followed by a module for production, that is C1, C2, D, E or F. This is the two-module procedure."
+        source_ref: "(54)"
+      - text:
+          de: "Bei den Bausteinen D1, E1, F1, G, H und H1 ist die notifizierte Stelle in Entwurf und Fertigung beteiligt."
+          en: "For modules D1, E1, F1, G, H and H1, the notified body is involved in both design and production."
+        source_ref: "(54)"
+      - text:
+          de: "Die Schwierigkeit des gewählten Bausteins soll dem Risiko des Produkts, seiner Bauartkomplexität und der Art seiner Fertigung angemessen sein."
+          en: "The stringency of the chosen module should be proportionate to the risk of the product, its design complexity and the nature of its production."
+        source_ref: "(54)"
+    not_covered:
+      - text:
+          de: "Baustein A ist die innerbetriebliche Kontrolle ohne dritte Stelle. Er ist für Produkte geringer Komplexität mit einfachem Entwurf und einfacher Fertigung gedacht, die ein geringes Risiko für öffentliche Belange darstellen."
+          en: "Module A is internal production control without a third party. It is intended for products of low complexity with simple design and simple production that pose a low risk to public interests."
+        source_ref: "(55)"
+      - text:
+          de: "Für einen Teil der Produkte lassen die Produktvorschriften Baustein A zu, ohne harmonisierte Normen und ohne Beteiligung einer notifizierten Stelle zwingend zu verlangen. Der Text nennt dafür Artikel 3 Absatz 1 Buchstabe a der Funkanlagen-Richtlinie 2014/53/EU für den Gesichtspunkt der Sicherheit."
+          en: "For some products, the product rules allow module A without mandatorily requiring harmonised standards and without the involvement of a notified body. As an example, the text names Article 3(1)(a) of the Radio Equipment Directive 2014/53/EU for the safety aspect."
+        source_ref: "(56)"
+
+  - id: "module-a-with-standards-only"
+    question:
+      de: "Dürfen Sie die innerbetriebliche Kontrolle, also Baustein A, nur dann nutzen, wenn Sie die im Amtsblatt veröffentlichten harmonisierten Normen anwenden, die alle einschlägigen Gesundheits- und Sicherheitsanforderungen abdecken?"
+      en: "May you use internal production control, that is module A, only if you apply the harmonised standards published in the Official Journal that cover all relevant health and safety requirements?"
+    source_ref: "(56)"
+    covered:
+      - text:
+          de: "Diese Bedingung nennt der Text für die Spielzeugverordnung (EU) 2025/2509, für die Maschinenverordnung und für die Funkanlagenrichtlinie. Dort ist Baustein A für bestimmte Produkte oder bestimmte Gesichtspunkte nur zulässig, wenn der Hersteller die veröffentlichten harmonisierten Normen anwendet."
+          en: "The text names this condition for the Toy Safety Regulation (EU) 2025/2509, for the Machinery Regulation and for the Radio Equipment Directive. There, module A is permitted for certain products or certain aspects only if the manufacturer applies the published harmonised standards."
+        source_ref: "(56)"
+      - text:
+          de: "Die zwingende Anwendung solcher Normen als Bedingung für Baustein A stellt sicher, dass diese Produkte angemessen geprüft werden und dass man sich nicht allein auf innerbetriebliche Kontrolle verlässt, wo weitere Absicherungen öffentlicher Belange nötig sind."
+          en: "The mandatory application of such standards as a condition for module A ensures that these products are adequately tested and that reliance is not placed solely on internal production control where further safeguards for public interests are needed."
+        source_ref: "(56)"
+      - text:
+          de: "Auch die innerbetriebliche Kontrolle mit zwingender Anwendung veröffentlichter harmonisierter Normen gilt als gleichwertiger Mechanismus und erfüllt damit die zweite Bedingung des Artikels 6 Absatz 1."
+          en: "Internal production control with mandatory application of published harmonised standards also counts as an equivalent mechanism and thus meets the second condition of Article 6(1)."
+        source_ref: "(58)"
+      - text:
+          de: "Dass eine Produktvorschrift Ihnen erlaubt, sich als eine der Verfahrensmöglichkeiten auf innerbetriebliche Kontrolle auf Grundlage harmonisierter Normen zu stützen, ändert die Einstufung als hochriskant nicht."
+          en: "The fact that a product rule allows you, as one of the procedural options, to rely on internal production control on the basis of harmonised standards does not change the classification as high-risk."
+        source_ref: "(57)"
+      - text:
+          de: "Die Wahl des Bewertungsverfahrens gibt Ihnen Spielraum beim Nachweis der Konformität, aber kein Ermessen darüber, wie Ihr KI-System nach der KI-Verordnung eingestuft wird."
+          en: "The choice of assessment procedure gives you leeway in demonstrating conformity, but no discretion over how your AI system is classified under the AI Act."
+        source_ref: "(57)"
+      - text:
+          de: "Für Spielzeug bestätigt das Erwägungsgrund 15 der Spielzeugverordnung ausdrücklich. KI-Systeme, die Sicherheitsbauteile von Spielzeug im Sinne der Artikel 26 Absatz 2 und Absatz 3 jener Verordnung sind oder selbst solche Produkte, sind nach Artikel 6 Absatz 1 hochriskant."
+          en: "For toys, recital 15 of the Toy Safety Regulation expressly confirms this. AI systems that are safety components of toys within the meaning of Article 26(2) and (3) of that Regulation, or are themselves such products, are high-risk under Article 6(1)."
+        source_ref: "(59)"
+      - text:
+          de: "Ebenso sind KI-Systeme hochriskant, die Sicherheitsbauteile von Produkten nach Anhang I der Maschinenverordnung im Sinne der Artikel 25 Absatz 2 und Absatz 3 jener Verordnung sind oder selbst solche Produkte."
+          en: "Likewise, AI systems are high-risk that are safety components of products under Annex I of the Machinery Regulation within the meaning of Article 25(2) and (3) of that Regulation, or are themselves such products."
+        source_ref: "(59)"
+
+  - id: "enhanced-pre-market-control"
+    question:
+      de: "Unterliegt Ihr Produkt nach seiner Produktvorschrift vor dem Verkauf oder der Inbetriebnahme einer verstärkten behördlichen Kontrolle, weil es öffentliche Belange wie Gesundheit, Sicherheit und Umwelt berühren kann?"
+      en: "Is your product, under its product rule, subject to enhanced regulatory control before it is sold or put into service, because it may affect public interests such as health, safety and the environment?"
+    source_ref: "(58)"
+    covered:
+      - text:
+          de: "Das ist der entscheidende Punkt für die zweite Bedingung. Diese verstärkte Kontrolle wird durch das Erfordernis einer Bewertung durch eine dritte Stelle gesichert oder durch gleichwertige Mechanismen, zu denen die innerbetriebliche Kontrolle mit zwingender Anwendung im Amtsblatt veröffentlichter harmonisierter Normen gehört."
+          en: "This is the decisive point for the second condition. This enhanced control is ensured by the requirement of a third-party assessment or by equivalent mechanisms, which include internal production control with mandatory application of harmonised standards published in the Official Journal."
+        source_ref: "(58)"
+      - text:
+          de: "Der Schutz öffentlicher Belange ist der maßgebliche Gesichtspunkt für die Konformitätsbewertung und für die Auswahl der Verfahrensbausteine durch den Unionsgesetzgeber."
+          en: "The protection of public interests is the decisive consideration for conformity assessment and for the choice of procedural modules by the Union legislator."
+        source_ref: "(58)"
+
+  - id: "both-conditions-met"
+    question:
+      de: "Haben Sie beides mit Ja beantwortet, also erstens Sicherheitsbauteil eines Produkts aus Anhang I oder selbst ein solches Produkt, und zweitens Bewertung durch eine dritte Stelle verlangt?"
+      en: "Have you answered yes to both, that is, first, safety component of a product from Annex I or itself such a product, and second, third-party assessment required?"
+    source_ref: "(27)"
+    covered:
+      - text:
+          de: "Artikel 6 Absatz 1 stellt zwei Bedingungen auf, die zusammen erfüllt sein müssen. Erstens muss das KI-System als Sicherheitsbauteil eines Produkts verwendet werden sollen oder selbst ein Produkt sein, das unter eine Vorschrift aus Anhang I fällt. Zweitens muss für dieses Produkt oder für das KI-System selbst eine Konformitätsbewertung durch eine dritte Stelle verlangt sein."
+          en: "Article 6(1) sets out two conditions that must be met together. First, the AI system must be intended to be used as a safety component of a product, or must itself be a product, that falls under a rule from Annex I. Second, a third-party conformity assessment must be required for that product or for the AI system itself."
+        source_ref: "(27)"
+      - text:
+          de: "Nur KI-Systeme, die erhebliche Risiken für Gesundheit, Sicherheit oder Grundrechte mit sich bringen, sind hochriskant. Artikel 6 Absatz 1 verknüpft die Einstufung mit dem Risiko, mit der Sicherheitsbedeutung des Systems und mit dem Erfordernis der Bewertung durch eine dritte Stelle."
+          en: "Only AI systems that pose significant risks to health, safety or fundamental rights are high-risk. Article 6(1) links the classification to the risk, to the safety relevance of the system and to the requirement of third-party assessment."
+        source_ref: "(20)"
+      - text:
+          de: "Ziel ist ein verhältnismäßiger, gezielter und sicherheitsbezogener Einstufungsmechanismus, der nur KI-Systeme erfasst, die die Sicherheit bereits geregelter Produkte betreffen, und unnötige Lasten für KI-Produkte mit geringem Risiko vermeidet."
+          en: "The aim is a proportionate, targeted and safety-related classification mechanism that captures only AI systems affecting the safety of already regulated products and avoids unnecessary burdens for low-risk AI products."
+        source_ref: "(19)"
+    not_covered:
+      - text:
+          de: "Nicht alle KI-Systeme, die Bestandteile geregelter Produkte sind oder selbst geregelte Produkte sind, sind hochriskant. Nur die Teilmenge, die die Kriterien des Artikels 6 Absatz 1 erfüllt, ist es, und nur diese unterliegt den Anforderungen für hochriskante Systeme."
+          en: "Not all AI systems that are components of regulated products or are themselves regulated products are high-risk. Only the subset that meets the criteria of Article 6(1) is, and only this subset is subject to the requirements for high-risk systems."
+        source_ref: "(21)"
+      - text:
+          de: "Die KI-Verordnung stuft kein Produkt im Anwendungsbereich des Artikels 6 Absatz 1 selbsttätig als hochriskant ein."
+          en: "The AI Act does not automatically classify any product within the scope of Article 6(1) as high-risk."
+        source_ref: "(48)"
+
+product_categories:
+  - id: "machinery"
+    citation: "AI-Act/annex-I"
+    common_name:
+      de: "Maschinen und Anlagen"
+      en: "Machinery and installations"
+    question:
+      de: "Ist Ihr Produkt eine Maschine oder eine maschinelle Anlage?"
+      en: "Is your product a machine or a machinery installation?"
+    source_ref: "(23)"
+  - id: "toys"
+    citation: "AI-Act/annex-I"
+    common_name:
+      de: "Spielzeug"
+      en: "Toys"
+    question:
+      de: "Ist Ihr Produkt Spielzeug?"
+      en: "Is your product a toy?"
+    source_ref: "(23)"
+  - id: "lifts"
+    citation: "AI-Act/annex-I"
+    common_name:
+      de: "Aufzüge"
+      en: "Lifts"
+    question:
+      de: "Ist Ihr Produkt ein Aufzug?"
+      en: "Is your product a lift?"
+    source_ref: "(23)"
+  - id: "explosive-atmospheres"
+    citation: "AI-Act/annex-I"
+    common_name:
+      de: "Geräte und Schutzsysteme für explosionsgefährdete Bereiche"
+      en: "Equipment and protective systems for potentially explosive atmospheres"
+    question:
+      de: "Ist Ihr Produkt ein Gerät oder ein Schutzsystem, das in Bereichen mit Explosionsgefahr verwendet werden soll?"
+      en: "Is your product equipment or a protective system intended for use in potentially explosive atmospheres?"
+    source_ref: "(23)"
+  - id: "radio-equipment"
+    citation: "AI-Act/annex-I"
+    common_name:
+      de: "Funkanlagen"
+      en: "Radio equipment"
+    question:
+      de: "Ist Ihr Produkt eine Funkanlage, also ein Gerät, das zum Senden oder Empfangen von Funkwellen gebaut ist?"
+      en: "Is your product radio equipment, that is a device built to transmit or receive radio waves?"
+    source_ref: "(23)"
+  - id: "pressure-equipment"
+    citation: "AI-Act/annex-I"
+    common_name:
+      de: "Druckgeräte"
+      en: "Pressure equipment"
+    question:
+      de: "Ist Ihr Produkt ein Druckgerät, also ein Behälter, eine Rohrleitung oder ein Gerät, das unter Druck steht?"
+      en: "Is your product pressure equipment, that is a vessel, piping or device that is under pressure?"
+    source_ref: "(23)"
+  - id: "recreational-craft"
+    citation: "AI-Act/annex-I"
+    common_name:
+      de: "Sportboote und Wasserfahrzeuge für die Freizeit"
+      en: "Recreational craft and personal watercraft"
+    question:
+      de: "Ist Ihr Produkt ein Sportboot oder ein Wasserfahrzeug für die Freizeit?"
+      en: "Is your product a recreational craft or a personal watercraft?"
+    source_ref: "(23)"
+  - id: "cableways"
+    citation: "AI-Act/annex-I"
+    common_name:
+      de: "Seilbahnen"
+      en: "Cableways"
+    question:
+      de: "Ist Ihr Produkt eine Seilbahnanlage oder ein Teil davon?"
+      en: "Is your product a cableway installation or part of one?"
+    source_ref: "(23)"
+  - id: "gas-appliances"
+    citation: "AI-Act/annex-I"
+    common_name:
+      de: "Geräte, die gasförmige Brennstoffe verbrennen"
+      en: "Appliances burning gaseous fuels"
+    question:
+      de: "Verbrennt Ihr Produkt Gas, etwa eine Gasheizung, ein Gasherd oder ein Gasdurchlauferhitzer?"
+      en: "Does your product burn gas, for example a gas heater, a gas cooker or a gas instantaneous water heater?"
+    source_ref: "(23)"
+  - id: "medical-devices"
+    citation: "AI-Act/annex-I"
+    common_name:
+      de: "Medizinprodukte"
+      en: "Medical devices"
+    question:
+      de: "Ist Ihr Produkt ein Medizinprodukt?"
+      en: "Is your product a medical device?"
+    source_ref: "(23)"
+  - id: "in-vitro-diagnostics"
+    citation: "AI-Act/annex-I"
+    common_name:
+      de: "Medizinprodukte für Untersuchungen außerhalb des Körpers"
+      en: "In vitro diagnostic medical devices"
+    question:
+      de: "Ist Ihr Produkt ein Medizinprodukt für Untersuchungen von Proben außerhalb des menschlichen Körpers, etwa ein Labortest?"
+      en: "Is your product a medical device for examining samples outside the human body, for example a laboratory test?"
+    source_ref: "(23)"
+  - id: "motor-vehicles"
+    citation: "AI-Act/annex-I"
+    common_name:
+      de: "Kraftfahrzeuge und ihre Technik"
+      en: "Motor vehicles and their technology"
+    question:
+      de: "Ist Ihr Produkt ein Kraftfahrzeug oder ein Erzeugnis aus dem Bereich der Kraftfahrzeugtechnik?"
+      en: "Is your product a motor vehicle or a product from the field of motor vehicle technology?"
+    source_ref: "(23)"
+  - id: "civil-aviation"
+    citation: "AI-Act/annex-I"
+    common_name:
+      de: "Luftfahrt"
+      en: "Civil aviation"
+    question:
+      de: "Ist Ihr Produkt ein Erzeugnis aus dem Bereich der Luftfahrt?"
+      en: "Is your product a product from the field of aviation?"
+    source_ref: "(23)"
+  - id: "rail"
+    citation: "AI-Act/annex-I"
+    common_name:
+      de: "Eisenbahnen und ihr Zusammenwirken"
+      en: "Railways and their interoperability"
+    question:
+      de: "Ist Ihr Produkt für Eisenbahnen bestimmt, etwa ein Erzeugnis, das für das Zusammenwirken der Eisenbahnsysteme geregelt ist?"
+      en: "Is your product intended for railways, for example a product regulated for the interoperability of the rail systems?"
+    source_ref: "(45)"
+  - id: "other-annex-i-legislation"
+    citation: "AI-Act/annex-I"
+    common_name:
+      de: "Weitere Produktvorschriften in Anhang I"
+      en: "Other product rules in Annex I"
+    question:
+      de: "Haben Sie Ihr Produkt in keiner der genannten Gattungen gefunden und trotzdem einen Hinweis darauf, dass eine Vorschrift aus Anhang I für es gilt?"
+      en: "Have you not found your product in any of the categories listed, but still have an indication that a rule from Annex I applies to it?"
+    source_ref: "(23)"
+
+examples:
+  - scenario:
+      de: "Maschinen: ein KI-gestütztes Bildverarbeitungssystem erkennt, dass sich ein Mensch in der Zelle eines Roboters befindet, und löst ein sicheres Anhalten oder eine Geschwindigkeitsreduzierung aus. Der Verwendungszweck ist, Verletzungen zu verhindern."
+      en: "Machinery: an AI-based image processing system detects that a person is inside a robot cell and triggers a safe stop or a speed reduction. The intended purpose is to prevent injuries."
+    verdict: "possible"
+    rationale:
+      de: "Der Text führt dieses System unter denjenigen auf, die eine Sicherheitsaufgabe erfüllen sollen und daher Sicherheitsbauteile im Sinne des Artikels 3 Nummer 14 sind. Ob hohes Risiko vorliegt, hängt zusätzlich davon ab, dass für das Produkt eine Bewertung durch eine dritte Stelle verlangt ist."
+      en: "The text lists this system among those intended to perform a safety function and which are therefore safety components within the meaning of Article 3(14). Whether there is high risk additionally depends on a third-party assessment being required for the product."
+    source_ref: "(45)"
+  - scenario:
+      de: "Geräte für explosionsgefährdete Bereiche: ein KI-System soll Gaskonzentrationen überwachen und das Abschalten befehlen."
+      en: "Equipment for potentially explosive atmospheres: an AI system is intended to monitor gas concentrations and command a shutdown."
+    verdict: "possible"
+    rationale:
+      de: "Der Text führt dieses System unter denjenigen auf, die eine Sicherheitsaufgabe erfüllen sollen und daher Sicherheitsbauteile sind."
+      en: "The text lists this system among those intended to perform a safety function and which are therefore safety components."
+    source_ref: "(45)"
+  - scenario:
+      de: "Druckgeräte: ein KI-System soll einen außer Kontrolle geratenden Druckanstieg vorhersagen und Schutzmaßnahmen auslösen, etwa eine Abschaltung über Sicherheitsausrüstung."
+      en: "Pressure equipment: an AI system is intended to predict a runaway pressure increase and trigger protective measures, for example a shutdown via safety equipment."
+    verdict: "possible"
+    rationale:
+      de: "Der Text führt dieses System unter denjenigen auf, die eine Sicherheitsaufgabe erfüllen sollen und daher Sicherheitsbauteile sind."
+      en: "The text lists this system among those intended to perform a safety function and which are therefore safety components."
+    source_ref: "(45)"
+  - scenario:
+      de: "Eisenbahn: ein KI-System im Zug soll Geschwindigkeitsgrenzen überwachen und Zusammenstöße und Entgleisungen verhindern."
+      en: "Railways: an AI system on the train is intended to monitor speed limits and prevent collisions and derailments."
+    verdict: "possible"
+    rationale:
+      de: "Der Text führt dieses System unter denjenigen auf, die eine Sicherheitsaufgabe erfüllen sollen und daher Sicherheitsbauteile sind."
+      en: "The text lists this system among those intended to perform a safety function and which are therefore safety components."
+    source_ref: "(45)"
+  - scenario:
+      de: "Aufzüge: ein KI-System steuert die Schließzeit der Türen und erkennt Hindernisse. Der Anbieter hat als Zweck den wirtschaftlichen Betrieb des Aufzugs festgelegt."
+      en: "Lifts: an AI system controls the closing time of the doors and detects obstacles. The provider has determined the economical operation of the lift as its purpose."
+    verdict: "possible"
+    rationale:
+      de: "Obwohl der Anbieter keine Sicherheitsaufgabe festgelegt hat, kann ein Fehlverhalten des Systems Verletzungen verursachen und so Gesundheit und Sicherheit von Menschen gefährden. Deshalb ist es Sicherheitsbauteil."
+      en: "Although the provider has not determined a safety function, a malfunction of the system can cause injuries and thus endanger the health and safety of persons. It is therefore a safety component."
+    source_ref: "(46)"
+  - scenario:
+      de: "Fahrzeuge: ein KI-System hält die Fahrspur. Der Anbieter hat als Zweck ein besseres Nutzungserlebnis festgelegt."
+      en: "Vehicles: an AI system keeps the vehicle in its lane. The provider has determined a better user experience as its purpose."
+    verdict: "possible"
+    rationale:
+      de: "Lenkt das System unerwartet und führt dadurch zu einem Zusammenstoß, kann es Verletzungen verursachen und so Gesundheit und Sicherheit von Menschen und Eigentum gefährden. Deshalb ist es Sicherheitsbauteil."
+      en: "If the system steers unexpectedly and thereby causes a collision, it can cause injuries and thus endanger the health and safety of persons and property. It is therefore a safety component."
+    source_ref: "(46)"
+  - scenario:
+      de: "Landwirtschaft: ein KI-System bestimmt die Flächen, auf denen Chemikalien ausgebracht werden. Der Anbieter hat als Zweck einen sparsameren Einsatz der Chemikalien festgelegt."
+      en: "Agriculture: an AI system determines the areas on which chemicals are applied. The provider has determined a more economical use of the chemicals as its purpose."
+    verdict: "possible"
+    rationale:
+      de: "Berücksichtigt das System die Anwesenheit von Personen in der Nähe nicht ausreichend, kann es deren Gesundheit und Sicherheit gefährden. Deshalb ist es Sicherheitsbauteil."
+      en: "If the system does not sufficiently take into account the presence of people nearby, it can endanger their health and safety. It is therefore a safety component."
+    source_ref: "(46)"
+  - scenario:
+      de: "Haushaltsgasgerät: ein KI-System soll die Verbrennung wirtschaftlicher machen, und das Gerät ist so gebaut, dass ein Ausfall oder Fehlverhalten des Systems zur Bildung von Kohlenmonoxid, zu einer Explosion oder zu einem Brand führen kann."
+      en: "Household gas appliance: an AI system is intended to make combustion more economical, and the appliance is designed in such a way that a failure or malfunction of the system can lead to the formation of carbon monoxide, an explosion or a fire."
+    verdict: "possible"
+    rationale:
+      de: "Der Verwendungszweck Energieeffizienz ist keine Sicherheitsaufgabe. Das System ist dennoch Sicherheitsbauteil, weil die Folgen seines Ausfalls Gesundheit und Sicherheit von Menschen und Eigentum gefährden können."
+      en: "The intended purpose of energy efficiency is not a safety function. The system is nevertheless a safety component, because the consequences of its failure can endanger the health and safety of persons and property."
+    source_ref: "(43)"
+  - scenario:
+      de: "Ein KI-System verbessert lediglich die Heizzeiten anhand der Gewohnheiten des Haushalts, um Energie zu sparen. Ein Ausfall führt nur zu Unbehagen oder höheren Energiekosten."
+      en: "An AI system merely improves heating times based on the household's habits in order to save energy. A failure only leads to discomfort or higher energy costs."
+    verdict: "not_high_risk"
+    rationale:
+      de: "Das System erfüllt weder eine Sicherheitsaufgabe noch das Merkmal, dass Ausfall oder Fehlverhalten Gesundheit und Sicherheit gefährden. Es ist daher kein Sicherheitsbauteil."
+      en: "The system performs neither a safety function nor meets the criterion that failure or malfunction endangers health and safety. It is therefore not a safety component."
+    source_ref: "(43)"
+  - scenario:
+      de: "Spielzeug: ein KI-System empfiehlt Musik in einem vernetzten Spielzeug."
+      en: "Toys: an AI system recommends music in a connected toy."
+    verdict: "not_high_risk"
+    rationale:
+      de: "Das System erfüllt keine Sicherheitsaufgabe, und seine Fehlfunktion würde Gesundheit, Sicherheit oder Eigentum nicht gefährden. Es fällt daher nicht unter den Begriff des Sicherheitsbauteils."
+      en: "The system does not perform a safety function, and its malfunction would not endanger health, safety or property. It therefore does not fall under the notion of safety component."
+    source_ref: "(47)"
+  - scenario:
+      de: "Landwirtschaft: ein KI-System in einer Drohne oder einem Roboter dient Zwecken des Anbaus, etwa der Ertragsvorhersage oder einer besseren Bewässerung."
+      en: "Agriculture: an AI system in a drone or a robot serves cultivation purposes, for example yield prediction or better irrigation."
+    verdict: "not_high_risk"
+    rationale:
+      de: "Das System erfüllt keine Sicherheitsaufgabe, und seine Fehlfunktion würde Gesundheit, Sicherheit oder Eigentum nicht gefährden. Könnte sein Ausfall oder Fehlverhalten im Zusammenhang des Produkts Gesundheit und Sicherheit von Menschen oder Eigentum gefährden, kann es dennoch Sicherheitsbauteil sein, sofern die übrigen Bedingungen des Artikels 6 Absatz 1 erfüllt sind."
+      en: "The system does not perform a safety function, and its malfunction would not endanger health, safety or property. If its failure or malfunction could endanger the health and safety of persons or property in the context of the product, it can nevertheless be a safety component, provided that the other conditions of Article 6(1) are met."
+    source_ref: "(47)"
+  - scenario:
+      de: "Ein smartes Thermostat fällt unter die Funkanlagen-Richtlinie. Sein Verwendungszweck ist, durch Erlernen der Haushaltsabläufe und Anpassen der Temperatur Komfort und Energieeffizienz zu steigern."
+      en: "A smart thermostat falls under the Radio Equipment Directive. Its intended purpose is to increase comfort and energy efficiency by learning the household's routines and adjusting the temperature."
+    verdict: "not_high_risk"
+    rationale:
+      de: "Das System soll keine Sicherheitsaufgabe erfüllen, und ein Ausfall oder Fehlverhalten führt nur zu Unbehagen oder höheren Energiekosten, ohne Gesundheit und Sicherheit von Menschen oder Eigentum zu gefährden."
+      en: "The system is not intended to perform a safety function, and a failure or malfunction only leads to discomfort or higher energy costs, without endangering the health and safety of persons or property."
+    source_ref: "(49)"
+  - scenario:
+      de: "Ein smartes Thermostat, bei dem ein Verwendungszweck eine Sicherheitsaufgabe ist, oder bei dem ein Ausfall oder Fehlverhalten über bloßes Unbehagen und höhere Energiekosten hinausgeht und Gesundheit und Sicherheit gefährdet."
+      en: "A smart thermostat where an intended purpose is a safety function, or where a failure or malfunction goes beyond mere discomfort and higher energy costs and endangers health and safety."
+    verdict: "possible"
+    rationale:
+      de: "In dieser Lage ist das KI-System Sicherheitsbauteil."
+      en: "In this situation, the AI system is a safety component."
+    source_ref: "(49)"
+  - scenario:
+      de: "KI-Systeme in vernetzten Haushaltsgeräten wie Thermostaten, Waschmaschinen, Luftreinigern, Kühlschränken und Fernsehgeräten, deren Zweck Komfort, Bequemlichkeit oder Optimierung ist, etwa von Energieverbrauch, Luftgüte, Helligkeit oder Ton."
+      en: "AI systems in connected household appliances such as thermostats, washing machines, air purifiers, refrigerators and television sets whose purpose is comfort, convenience or optimisation, for example of energy consumption, air quality, brightness or sound."
+    verdict: "not_high_risk"
+    rationale:
+      de: "Die meisten dieser Systeme fallen nicht unter den Begriff des Sicherheitsbauteils, weil ein Ausfall oder Fehlverhalten Gesundheit und Sicherheit voraussichtlich nicht gefährdet, sondern zu Unannehmlichkeit, Unbehagen, falschen Vorschlägen oder schwächerer Leistung führt."
+      en: "Most of these systems do not fall under the notion of safety component, because a failure or malfunction is unlikely to endanger health and safety but rather leads to inconvenience, discomfort, incorrect suggestions or weaker performance."
+    source_ref: "(48)"
+  - scenario:
+      de: "Smarte Türschlösser, Thermostate oder Kindersicherungen in Haushaltsgeräten, je nach Bauart des Produkts und je nach den vernünftigerweise vorhersehbaren Verwendungsbedingungen, besonders wenn Kinder und schutzbedürftige Nutzer betroffen sind."
+      en: "Smart door locks, thermostats or child safety locks in household appliances, depending on the design of the product and on the reasonably foreseeable conditions of use, especially where children and vulnerable users are affected."
+    verdict: "possible"
+    rationale:
+      de: "Die Freistellung der Haushaltsgeräte gilt nur, solange das KI-Erzeugnis keine Sicherheitsaufgabe erfüllt und sein Ausfall oder Fehlverhalten Gesundheit und Sicherheit von Menschen oder Eigentum nicht gefährdet. Bei diesen Geräten kann der Fall anders liegen."
+      en: "The exemption for household appliances applies only as long as the AI product does not perform a safety function and its failure or malfunction does not endanger the health and safety of persons or property. For these devices, the case may be different."
+    source_ref: "(48)"
+  - scenario:
+      de: "Spielzeug mit einem KI-System als Sicherheitsbauteil, für das eine Konformitätsbewertung durch eine dritte Stelle verlangt ist, nach Artikel 26 Absatz 2 und Absatz 3 der Spielzeugverordnung (EU) 2025/2509."
+      en: "Toy with an AI system as a safety component for which a third-party conformity assessment is required, under Article 26(2) and (3) of the Toy Safety Regulation (EU) 2025/2509."
+    verdict: "high_risk"
+    rationale:
+      de: "Erwägungsgrund 15 der Spielzeugverordnung bestätigt diese Einstufung ausdrücklich. KI-Systeme, die Sicherheitsbauteile von Spielzeug sind oder selbst solche Produkte, sind nach Artikel 6 Absatz 1 hochriskant."
+      en: "Recital 15 of the Toy Safety Regulation expressly confirms this classification. AI systems that are safety components of toys or are themselves such products are high-risk under Article 6(1)."
+    source_ref: "(59)"
+  - scenario:
+      de: "Spielzeug mit einem KI-System als Sicherheitsbauteil, bei dem der Hersteller auf die Bewertung durch eine dritte Stelle verzichten darf, weil er harmonisierte Normen anwendet."
+      en: "Toy with an AI system as a safety component where the manufacturer may dispense with the third-party assessment because it applies harmonised standards."
+    verdict: "high_risk"
+    rationale:
+      de: "Die Wahl des Bewertungsverfahrens durch den Hersteller soll die Einstufung als hochriskantes KI-System nach Artikel 6 Absatz 1 nicht berühren, auch wenn ein Verzicht auf die Bewertung durch eine dritte Stelle bei Anwendung harmonisierter Normen möglich ist."
+      en: "The manufacturer's choice of assessment procedure is not intended to affect the classification as a high-risk AI system under Article 6(1), even if it is possible to dispense with the third-party assessment when harmonised standards are applied."
+    source_ref: "(59)"
+  - scenario:
+      de: "Ein KI-System ist Sicherheitsbauteil eines Produkts nach Anhang I der Maschinenverordnung oder selbst ein solches Produkt, nach Artikel 25 Absatz 2 und Absatz 3 jener Verordnung."
+      en: "An AI system is a safety component of a product under Annex I of the Machinery Regulation or is itself such a product, under Article 25(2) and (3) of that Regulation."
+    verdict: "high_risk"
+    rationale:
+      de: "Der Text stuft diese KI-Systeme ebenso wie die der Spielzeugverordnung nach Artikel 6 Absatz 1 als hochriskant ein."
+      en: "The text classifies these AI systems, like those under the Toy Safety Regulation, as high-risk under Article 6(1)."
+    source_ref: "(59)"
+  - scenario:
+      de: "Software, die die Maschinenverordnung (EU) 2023/1230 ausdrücklich in die Begriffsbestimmung der Maschinenprodukte einbezieht und die für eine Konformitätsbewertung durch eine dritte Stelle vorgesehen ist."
+      en: "Software that the Machinery Regulation (EU) 2023/1230 expressly includes in the definition of machinery products and for which a third-party conformity assessment is provided."
+    verdict: "high_risk"
+    rationale:
+      de: "Solche Software kann selbst ein geregeltes Produkt nach der Maschinenverordnung sein und ist dann nach Artikel 6 Absatz 1 hochriskant, sofern für sie eine Bewertung durch eine dritte Stelle verlangt ist."
+      en: "Such software can itself be a regulated product under the Machinery Regulation and is then high-risk under Article 6(1), provided that a third-party assessment is required for it."
+    source_ref: "(30)"
+  - scenario:
+      de: "Ein KI-System wird nachträglich als Aktualisierung der Software, als Zusatzteil oder als Dienst aus der Ferne geliefert."
+      en: "An AI system is supplied subsequently as a software update, an add-on or a remote service."
+    verdict: "possible"
+    rationale:
+      de: "Artikel 6 Absatz 1 gilt unabhängig davon, ob das KI-System im Produkt eingebaut ist oder eigenständig verkauft oder in Betrieb genommen wird. Eine solche Lieferung kann hochriskant sein, sofern alle Bedingungen jener Vorschrift erfüllt sind."
+      en: "Article 6(1) applies irrespective of whether the AI system is embedded in the product or sold or put into service independently. Such a supply can be high-risk, provided that all conditions of that provision are met."
+    source_ref: "(22)"
+  - scenario:
+      de: "Ein Verbraucher- oder Haushaltsprodukt fällt unter eine der Produktvorschriften aus Anhang I."
+      en: "A consumer or household product falls under one of the product rules from Annex I."
+    verdict: "possible"
+    rationale:
+      de: "Verbraucherprodukte sind nicht vom Anwendungsbereich des Artikels 6 Absatz 1 ausgenommen. Sind alle Bedingungen erfüllt, können gewerbliche wie Verbraucherprodukte hochriskant sein. Dass ein Produkt für den Haushalt bestimmt ist, nimmt es für sich allein nicht aus."
+      en: "Consumer products are not excluded from the scope of Article 6(1). If all conditions are met, both professional and consumer products can be high-risk. The fact that a product is intended for household use does not on its own exclude it."
+    source_ref: "(21)"
+  - scenario:
+      de: "Das Risiko des KI-Systems betrifft allein öffentliche Belange jenseits von Gesundheit, Sicherheit und Grundrechten, etwa die Nutzung von Funkfrequenzen oder die elektromagnetische Verträglichkeit."
+      en: "The risk of the AI system concerns solely public interests beyond health, safety and fundamental rights, for example the use of radio spectrum or electromagnetic compatibility."
+    verdict: "not_high_risk"
+    rationale:
+      de: "Für die Einstufung nach Artikel 6 Absatz 1 ist der Begriff des Sicherheitsbauteils so zu verstehen, dass solche Belange ausgenommen sind."
+      en: "For the classification under Article 6(1), the notion of safety component is to be understood as excluding such interests."
+    source_ref: "(25)"
+  - scenario:
+      de: "Ein Ausfall oder Fehlverhalten des KI-Systems führt nur zu Schaden am Ansehen, zu rein finanziellem Verlust, zu einer geringen Verschlechterung des Dienstes oder zu einer Unannehmlichkeit ohne Sicherheitsgefahr."
+      en: "A failure or malfunction of the AI system only leads to reputational damage, purely financial loss, a minor degradation of service or an inconvenience without a safety hazard."
+    verdict: "not_high_risk"
+    rationale:
+      de: "Diese Folgen zählen nicht zur Gefährdung von Gesundheit, Sicherheit und Eigentum."
+      en: "These consequences do not count as endangering health, safety and property."
+    source_ref: "(40)"
+  - scenario:
+      de: "Ein Bestandteil soll ausschließlich Zwecken der Cybersicherheit dienen, im Zusammenhang mit Sicherheitsbauteilen in kritischer Infrastruktur."
+      en: "A component is intended to serve exclusively cybersecurity purposes, in the context of safety components in critical infrastructure."
+    verdict: "not_high_risk"
+    rationale:
+      de: "Erwägungsgrund 55 der KI-Verordnung nimmt Bestandteile, die ausschließlich für Zwecke der Cybersicherheit verwendet werden sollen, ausdrücklich von den Sicherheitsbauteilen aus, dies aber nur im Zusammenhang mit Sicherheitsbauteilen in kritischer Infrastruktur. Außerhalb dieses Zusammenhangs können KI-Bestandteile für die Cybersicherheit Sicherheitsbauteile sein, wenn ihr Ausfall oder Fehlverhalten Gesundheit und Sicherheit von Menschen oder Eigentum gefährden könnte."
+      en: "Recital 55 of the AI Act expressly excludes components intended to be used exclusively for cybersecurity purposes from safety components, but only in the context of safety components in critical infrastructure. Outside that context, AI components for cybersecurity can be safety components if their failure or malfunction could endanger the health and safety of persons or property."
+    source_ref: "(38)"
+  - scenario:
+      de: "Das Produkt fällt nicht unter eine der in Anhang I genannten Rechtsvorschriften."
+      en: "The product does not fall under any of the legal acts listed in Annex I."
+    verdict: "not_high_risk"
+    rationale:
+      de: "Artikel 6 Absatz 1 erweitert das Produktrecht nicht auf neue oder weitere Produkte, die diesem Recht nicht schon unterliegen, und die Liste der Rechtsvorschriften in Anhang I ist abschließend."
+      en: "Article 6(1) does not extend product legislation to new or additional products that are not already subject to that legislation, and the list of legal acts in Annex I is exhaustive."
+    source_ref: "(26)"
+  - scenario:
+      de: "Das KI-System ist zwar Ausfall-kritisch, aber die Gefährdung von Menschen oder Eigentum ist nur theoretisch denkbar und tritt im Zusammenhang des Produkts nicht ein."
+      en: "The AI system is admittedly failure-critical, but the danger to persons or property is only theoretically conceivable and does not materialise in the context of the product."
+    verdict: "not_high_risk"
+    rationale:
+      de: "Die Wahrscheinlichkeit eines Ausfalls oder Fehlverhaltens darf nicht nur eine theoretische Möglichkeit sein, sondern muss im Zusammenhang des Produkts zu einer Gefährdung von Personen oder Eigentum führen."
+      en: "The probability of a failure or malfunction must not be merely a theoretical possibility, but must lead to a danger to persons or property in the context of the product."
+    source_ref: "(39)"

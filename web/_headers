@@ -1,0 +1,25 @@
+# Cloudflare Pages reads this file and sets these headers when serving the page.
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'self'
+
+/question_flow.json
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/walkthrough.js
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/page.js
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/locales/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# Other sites may load the preview image: it exists to appear when the page is shared,
+# and without this line browsers refuse the request.
+/preview.jpg
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
