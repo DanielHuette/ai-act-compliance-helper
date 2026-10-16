@@ -304,6 +304,10 @@ details{box-shadow:var(--elevation-small)}
 .language-switch a:hover{color:#fff}
 .language-switch a[aria-current="true"]{background:var(--yellow);color:var(--ink)}
 .language-switch .separator{color:rgba(255,255,255,.35)}
+.source-link{position:absolute;top:clamp(14px,2.4vw,24px);left:clamp(16px,2.4vw,28px);z-index:2;
+  padding:8px 14px;border-radius:999px;background:rgba(4,13,33,.72);border:1px solid rgba(255,255,255,.22);
+  color:#d5e0f5;font-size:.8rem;font-weight:600;letter-spacing:.04em;text-decoration:none}
+.source-link:hover{color:#fff;border-color:rgba(255,255,255,.5)}
 </style>
 <script type="application/ld+json" id="structured-data">
 {
@@ -474,6 +478,7 @@ details{box-shadow:var(--elevation-small)}
 <header class="masthead">
   <div class="image"><img src="images/eu-flag.jpg" alt="" aria-hidden="true" fetchpriority="high"></div>
   <div class="veil"></div>
+  <a class="source-link" href="https://github.com/DanielHuette/ai-act-compliance-helper">GitHub</a>
   <nav class="language-switch" aria-label="Sprache" data-i18n-attr="aria-label:language.label">
     <a href="?lang=de" hreflang="de" lang="de" data-language="de" aria-current="true" title="Deutsch" data-i18n-attr="title:language.de">DE</a>
     <span class="separator" aria-hidden="true">|</span>
