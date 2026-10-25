@@ -6,6 +6,7 @@
  * final finding with citations and official examples.
  */
 import {Walkthrough, NOT_APPLICABLE, pick} from "./walkthrough.js";
+import {publishLanguage} from "./language.js";
 
 const SUPPORTED_LANGUAGES = ["de", "en"];
 const DEFAULT_LANGUAGE = "de";
@@ -583,6 +584,7 @@ function applyLanguage() {
   updateDocumentLinks();
   updateStructuredData();
   updateVersion();
+  publishLanguage({language, t});
 }
 
 async function switchLanguage(code) {

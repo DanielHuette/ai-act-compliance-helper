@@ -4,7 +4,7 @@
 
 **Kontext:** was das Werkzeug tut und wo man anfängt | **Eingabe:** eine Beschreibung Ihres KI-Systems, gegeben als Antworten auf Fragen | **Ergebnis:** seine Risikoklasse nach der KI-Verordnung, mit der genauen Stelle im Gesetz
 
-Rund sechs Fragen, und Sie wissen, in welche Risikoklasse Ihr System der künstlichen
+Rund sechs Schritte, und Sie wissen, in welche Risikoklasse Ihr System der künstlichen
 Intelligenz (KI) nach der Verordnung (EU) 2024/1689 zur Festlegung harmonisierter Vorschriften
 für künstliche Intelligenz (KI-Verordnung) fällt, mit der genauen Stelle im Gesetz, auf der die
 Einstufung beruht. Nicht „Anhang III", sondern „Anhang III Nummer 4 Buchstabe a". Das Werkzeug
@@ -85,7 +85,7 @@ wahrscheinlich, sondern richtig, soweit seine Angaben stimmen. Und er sieht, wor
 | Belegt | Jede Frage, jeder Ausschluss, jedes Beispiel trägt die Absatznummer der amtlichen Auslegung |
 | Zwei Sprachen | Deutsch und Englisch für Webseite, Kommandozeile, Webdienst, Rechtsbestand und Suchbestand; beide Rechtsbestände nutzen dieselben Kennungen |
 | Zwei Wege, ein Ergebnis | Webseite und Programm rechnen nachweislich gleich: 400 von 400 Prüfläufen |
-| Prüfungen | 670 Prüfungen, davon laufen 639 bei jedem Hochladen ohne Modelle und ohne Netz |
+| Prüfungen | 679 Prüfungen, davon laufen 648 bei jedem Hochladen ohne Modelle und ohne Netz |
 
 Die Fragen stammen Zeile für Zeile aus dem Entwurf der Leitlinien der Europäischen Kommission
 vom 19. Mai 2026. Nichts darin ist ausgedacht.
@@ -119,9 +119,14 @@ erzwungenes Nein warf nachweislich genau solche Fälle aus der Einstufung.
 
 <https://konformitaetshelfer.speedofthespirit.dev/>: nichts zu installieren. Die Seite in
 `web/` besteht aus einer HTML-Datei (Hypertext Markup Language, die Auszeichnungssprache von
-Webseiten), zwei JavaScript-Dateien, den Fragedaten und einem Textkatalog je Sprache. Keine
-Anmeldung, kein Server, keine Übertragung Ihrer Angaben. Der Schalter **DE | EN** oben rechts
-wechselt die Sprache; `?lang=en` in der Adresse öffnet die Seite gleich auf Englisch.
+Webseiten), ihren JavaScript-Modulen, den Fragedaten, den Messwerten und einem Textkatalog je
+Sprache. Keine Anmeldung, kein Server, keine Übertragung Ihrer Angaben. Der Schalter **DE | EN**
+oben rechts wechselt die Sprache; `?lang=en` in der Adresse öffnet die Seite gleich auf Englisch.
+
+Eine Reiterleiste am unteren Rand hält vier Ansichten, jede mit eigener Adresse: `#projekt` (der
+Durchlauf), `#organigramm` (wie die Teile zusammenhängen), `#benchmarks` (die Messung, gezeichnet
+aus `web/benchmarks.json`, die `scripts/export_benchmarks.py` aus den Messprotokollen schreibt) und
+`#praesentation` (eine Präsentation, die von selbst abläuft).
 
 ### Als Programm
 

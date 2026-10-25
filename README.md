@@ -4,7 +4,7 @@
 
 **Context:** what the tool does and where to start | **Input:** a description of your AI system, given as answers to questions | **Output:** its risk class under the AI Act, with the exact legal provision behind it
 
-About six questions, and you know which risk class your artificial intelligence (AI) system
+About six steps, and you know which risk class your artificial intelligence (AI) system
 falls into under Regulation (EU) 2024/1689 laying down harmonised rules on artificial
 intelligence (Artificial Intelligence Act, AI Act), together with the exact provision the
 classification rests on. Not "Annex III", but "Annex III point 4(a)". The tool works in German
@@ -84,7 +84,7 @@ probable but correct, as far as the answers are. And the user sees what it depen
 | Sourced | Every question, exclusion and example carries the paragraph number of the official interpretation |
 | Two languages | German and English for the web page, the command-line interface (CLI), the web service, the legal corpus and the search index; both corpora use the same unit ids |
 | Two code paths, one result | Web page and program provably compute the same: 400 of 400 test runs |
-| Tests | 670 tests, of which 639 run on every push without models or network |
+| Tests | 679 tests, of which 648 run on every push without models or network |
 
 The questions are taken line by line from the draft guidelines of the European Commission of
 19 May 2026. None of them is invented.
@@ -117,10 +117,15 @@ exactly such cases from the classification.
 ### In the browser
 
 <https://konformitaetshelfer.speedofthespirit.dev/>: nothing to install. The page in `web/`
-consists of one HyperText Markup Language (HTML) file, two JavaScript files, the question data
-and one text catalogue per language. No sign-up, no server, your answers are not transmitted.
-The switch **DE | EN** in the top right corner changes the language; `?lang=en` in the address
-opens the page in English directly.
+consists of one HyperText Markup Language (HTML) file, its JavaScript modules, the question data,
+the measurement figures and one text catalogue per language. No sign-up, no server, your answers
+are not transmitted. The switch **DE | EN** in the top right corner changes the language;
+`?lang=en` in the address opens the page in English directly.
+
+A tab bar at the bottom holds four views, each with its own address: `#projekt` (the
+walkthrough), `#organigramm` (how the parts connect), `#benchmarks` (the measurement, drawn from
+`web/benchmarks.json`, which `scripts/export_benchmarks.py` writes from the run logs) and
+`#praesentation` (a self-playing presentation).
 
 ### As a program
 

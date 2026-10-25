@@ -30,8 +30,8 @@ die Pflichten ab.
 <https://konformitaetshelfer.speedofthespirit.dev/>
 
 Sie beantworten Fragen über Ihr System und bekommen die Einstufung mit der genauen Stelle im
-Gesetz. Keine Anmeldung, kein Konto, kein Server: die Seite besteht aus `index.html`, zwei
-JavaScript-Dateien, den Fragedaten und je Sprache einer Textdatei. Ihre Angaben werden im Browser
+Gesetz. Keine Anmeldung, kein Konto, kein Server: die Seite besteht aus `index.html`, ihren
+JavaScript-Modulen, den Fragedaten und je Sprache einer Textdatei. Ihre Angaben werden im Browser
 verrechnet und nicht übertragen.
 
 Ein Durchlauf dauert im Schnitt 5,3 Schritte. Jede Frage hat drei Antworten: **Ja**, **Nein** und

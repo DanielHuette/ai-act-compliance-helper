@@ -87,6 +87,7 @@ compliance_helper = ["webui/**/*", "locales/**/*.json", "py.typed"]
 ]
 "share/ai-act-compliance-helper/web" = ["web/*.html", "web/*.js", "web/*.json", "web/*.svg", "web/*.jpg", "web/*.txt", "web/*.xml"]
 "share/ai-act-compliance-helper/web/images" = ["web/images/*"]
+"share/ai-act-compliance-helper/web/fonts" = ["web/fonts/*"]
 "share/ai-act-compliance-helper/web/locales" = ["web/locales/*.json"]
 
 [tool.ruff]

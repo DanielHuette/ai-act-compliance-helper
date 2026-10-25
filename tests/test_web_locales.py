@@ -102,3 +102,28 @@ def test_english_page_does_not_call_the_sources_german_only(root: Path) -> None:
     english = json.loads((root / "web" / "locales" / "en.json").read_text("utf-8"))
     assert "German-language" not in english["sources.aiAct.text"]
     assert "German-language" not in english["sources.gdpr.text"]
+
+
+def test_check_reads_every_script_of_the_page(root: Path, tmp_path: Path) -> None:
+    """The tab modules translate too; a key typo there must fail like one in page.js."""
+    web = tmp_path / "web"
+    shutil.copytree(root / "web", web, ignore=shutil.ignore_patterns("images", "*.jpg", "fonts"))
+    script = web / "benchmarks.js"
+    script.write_text(
+        script.read_text(encoding="utf-8").replace('"bench.error"', '"bench.errorr"'),
+        encoding="utf-8",
+    )
+
+    completed = run_check(root, web)
+
+    assert completed.returncode == 1
+    assert "benchmarks.js: key 'bench.errorr' not in the catalog" in completed.stdout
+
+
+def test_masthead_names_the_measured_hit_rate(root: Path) -> None:
+    """The strongest figure of the project stands in the first view, recounted from the logs."""
+    recorded = json.loads((root / "data" / "evaluation" / "figures.json").read_text("utf-8"))
+    for language in ("de", "en"):
+        catalog = json.loads((root / "web" / "locales" / f"{language}.json").read_text("utf-8"))
+        figure = catalog["hero.measuredFigure"]
+        assert _numbers(figure) == {recorded["matched"], recorded["total"]}, (language, figure)

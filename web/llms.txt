@@ -24,6 +24,13 @@ The classification does NOT come from a language model but from the user's answe
 published rule set. Every question carries the paragraph number of the official provision it
 rests on. The result names the provision: not "Annex III" but "Annex III point 4(a)".
 
+## How accurate it is
+
+Measured against the European Commission: 207 of 217 official examples from the draft
+guidelines are classified as the Commission does, in 5.3 steps per case on average. Seven of the
+ten mismatches name no area of use in their description. Method and every mismatch:
+https://github.com/DanielHuette/ai-act-compliance-helper/blob/main/data/evaluation/MEASUREMENT.md
+
 ## Sources
 
 - Regulation (EU) 2024/1689 (AI Act), official text from the Official Journal of
@@ -57,4 +64,5 @@ Quellen: KI-Verordnung, amtlicher Wortlaut aus dem Amtsblatt vom 12. Juli 2024 a
 Englisch, 1386 einzeln ansprechbare Textstellen; Datenschutz-Grundverordnung, 1024 Textstellen;
 Entwurf der Leitlinien der Europäischen Kommission vom 19. Mai 2026, daraus 379 Fragen,
 214 ausdrückliche Ausschlüsse und 187 amtliche Beispiele. Stand der Fragefolge: 4. Oktober 2026.
+Gemessen an der EU-Kommission: 207 von 217 amtlichen Beispielen richtig eingestuft.
 Der Entwurf der Leitlinien ist nicht bindend. Das Werkzeug ersetzt keine Rechtsberatung.

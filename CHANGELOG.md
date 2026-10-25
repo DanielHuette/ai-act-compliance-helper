@@ -28,6 +28,30 @@ The rule set still stands on **31 May 2026**; no question, rule or legal text ch
   `web/showcase.json` and refuses to write a case that misses the Commission's verdict.
 - `scripts/check_parity.py` also replays the 20 worked examples in Python and in the browser
   code and requires identical results.
+- Web page: a tab bar at the bottom with four deep-linkable views, `#projekt` (the walkthrough),
+  `#organigramm` (the stations from legal text to finding, with the skills applied at each),
+  `#benchmarks` (the measurement as charts) and `#praesentation` (eight self-playing scenes).
+  Browser back and forward move between tabs; reduced motion stops autoplay and moving signals.
+- `scripts/export_benchmarks.py` writes `web/benchmarks.json` from the run logs, figures and
+  corpus report; `tests/test_benchmarks.py` keeps it current and checks that every chart adds up.
+- The masthead names the measured figure, 207 of 217 official examples.
+
+### Changed
+
+- Web page in the RepoCity design: night blue, solid gold for everything chosen, self-hosted
+  Archivo, Source Serif 4 and Syncopate (`web/fonts/`, licences in `web/fonts/LICENSE`).
+- `scripts/check_web_locales.py` checks the catalog keys of every script in `web/`, not only
+  `page.js`.
+
+### Fixed
+
+- Web page on phones: the step rail no longer runs off the right edge, the heading no longer
+  touches the GitHub and language buttons, the text over the flag photo has a darker veil, and
+  the 20 worked examples scroll sideways instead of filling four screen heights.
+- Web page: the 187 examples shown beside a finding and the 217 examples of the measurement are
+  told apart; "six questions" now reads "about six steps", as measured (5.3 on average).
+- Web page: the footer stands at the end of the page instead of between the examples and the
+  frequently asked questions; questions, Annex III areas and sources are laid out in columns.
 
 ## [2.0.0] - 2026-10-09
 

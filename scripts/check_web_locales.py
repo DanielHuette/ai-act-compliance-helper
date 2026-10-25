@@ -2,8 +2,8 @@
 
 Context: web/index.html keeps German as the no-JavaScript fallback and page.js swaps every
 marked text for the catalog entry of the chosen language, so catalogs, markup and script must
-name the same keys. | Input: web/locales/de.json, web/locales/en.json, web/index.html,
-web/page.js (folder set by --web) | Output: one line per problem; exit code 1 if any.
+name the same keys. | Input: web/locales/de.json, web/locales/en.json, web/index.html and
+every script in web/ (folder set by --web) | Output: one line per problem; exit code 1 if any.
 """
 
 from __future__ import annotations
@@ -223,7 +223,11 @@ def main(argv: list[str] | None = None) -> int:
         catalog_problems(catalogs)
         + markup_problems(page, source)
         + structured_data_problems(page, source)
-        + script_problems(args.web / "page.js", source)
+        + [
+            problem
+            for script in sorted(args.web.glob("*.js"))
+            for problem in script_problems(script, source)
+        ]
     )
     for problem in problems:
         print(problem)

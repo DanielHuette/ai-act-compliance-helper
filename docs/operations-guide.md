@@ -29,7 +29,7 @@ searchable by meaning; the **rule set** derives obligations from a risk class.
 <https://konformitaetshelfer.speedofthespirit.dev/>
 
 You answer questions about your system and get the classification with the exact place in the law.
-No sign-in, no account, no server: the page consists of `index.html`, two JavaScript files, the
+No sign-in, no account, no server: the page consists of `index.html`, its JavaScript modules, the
 question data and one text file per language. Your answers are computed in the browser and not
 transmitted.
 

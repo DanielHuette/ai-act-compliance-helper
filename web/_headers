@@ -18,6 +18,30 @@
 /page.js
   Cache-Control: public, max-age=3600, must-revalidate
 
+/benchmarks.json
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/tabs-start.js
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/tabs.js
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/language.js
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/organigramm.js
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/benchmarks.js
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/film.js
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/fonts/*
+  Cache-Control: public, max-age=2592000
+
 /locales/*
   Cache-Control: public, max-age=3600, must-revalidate
 
