@@ -1,0 +1,1654 @@
+# Obligations matrix of the AI Act (Regulation (EU) 2024/1689)
+# Each obligation is derived from the text of the legal units listed
+# under "legal_basis" as corpus ids.
+as_of: 2026-05-31
+legal_act: AI-Act
+version_note:
+  de: "Erfasst ist der Wortlaut der Verordnung selbst; delegierte Rechtsakte, Durchführungsrechtsakte, harmonisierte Normen, Praxisleitfäden und Leitlinien der Kommission, die nach dem 31.05.2026 ergangen sind, sind hier nicht berücksichtigt."
+  en: "Covered is the wording of the Regulation itself; delegated acts, implementing acts, harmonised standards, codes of practice and Commission guidelines issued after 31.05.2026 are not taken into account here."
+
+field_explanations:
+  roles:
+    de: "provider = wer ein KI-System entwickelt und unter eigenem Namen bereitstellt. deployer = wer ein KI-System in eigener Verantwortung einsetzt (im Verordnungstext auch 'Deployer'). importer = wer ein System aus einem Nicht-EU-Land erstmals in die Europäische Union bringt. distributor = wer ein System weiterverkauft, ohne Anbieter oder Einführer zu sein. product_manufacturer = wer ein Produkt herstellt, in dem das KI-System als Sicherheitsbauteil steckt. authorised_representative = die in der Europäischen Union sitzende Person, die ein Anbieter aus einem Drittland schriftlich benennt."
+    en: "provider = whoever develops an AI system and makes it available under its own name. deployer = whoever uses an AI system under its own authority (the term used in the text of the Regulation). importer = whoever brings a system from a non-EU country into the European Union for the first time. distributor = whoever resells a system without being the provider or importer. product_manufacturer = whoever manufactures a product in which the AI system is a safety component. authorised_representative = the person established in the European Union whom a provider from a third country appoints in writing."
+  risk_classes:
+    de: "prohibited = Praktiken nach Artikel 5. high_risk_annex_i = Systeme, die Sicherheitsbauteil eines Produkts nach Anhang I sind. high_risk_annex_iii = Systeme aus den Einsatzfeldern des Anhangs III. high_risk_exemption = ein System aus Anhang III, das der Anbieter nach Artikel 6 Absatz 3 als nicht hochriskant einstuft. transparency = Systeme mit Offenlegungspflicht nach Artikel 50. gpai = KI-Modelle mit allgemeinem Verwendungszweck. gpai_systemic_risk = solche Modelle mit systemischem Risiko. minimal = alles übrige."
+    en: "prohibited = practices under Article 5. high_risk_annex_i = systems that are a safety component of a product under Annex I. high_risk_annex_iii = systems from the areas of use in Annex III. high_risk_exemption = a system from Annex III that the provider classifies as not high-risk under Article 6(3). transparency = systems with a disclosure obligation under Article 50. gpai = general-purpose AI models. gpai_systemic_risk = such models with systemic risk. minimal = everything else."
+  applies_from:
+    de: "Datum, ab dem die Vorschrift nach Artikel 113 anzuwenden ist."
+    en: "Date from which the provision applies under Article 113."
+
+application_dates_article_113:
+  legal_basis:
+    - AI-Act/art-113
+    - AI-Act/art-113/para-1-a
+    - AI-Act/art-113/para-1-b
+    - AI-Act/art-113/para-1-c
+  citation_text:
+    de: "Artikel 113 KI-VO"
+    en: "Article 113 AI Act"
+  action_required:
+    de: "Die Verordnung gilt im Grundsatz ab dem 2. August 2026. Früher gelten die Kapitel I und II (darunter die KI-Kompetenz nach Artikel 4 und die Verbote nach Artikel 5) ab dem 2. Februar 2025 sowie die Regeln für KI-Modelle mit allgemeinem Verwendungszweck und die Sanktionsvorschriften ab dem 2. August 2025. Später, nämlich ab dem 2. August 2027, gelten Artikel 6 Absatz 1 und die daran hängenden Pflichten; das betrifft Systeme, die Sicherheitsbauteil eines Produkts nach Anhang I sind."
+    en: "In principle, the Regulation applies from 2 August 2026. Earlier, Chapters I and II (including AI literacy under Article 4 and the prohibitions under Article 5) apply from 2 February 2025, and the rules for general-purpose AI models and the provisions on penalties apply from 2 August 2025. Later, namely from 2 August 2027, Article 6(1) and the obligations attached to it apply; this concerns systems that are a safety component of a product under Annex I."
+  hint:
+    de: "Bei den einzelnen Pflichten unten steht im Feld applies_from das Datum für Systeme aus Anhang III. Für Systeme, die als Sicherheitsbauteil eines Produkts nach Anhang I hochriskant sind, verschiebt Artikel 113 Absatz 1 Buchstabe c den Beginn auf den 2. August 2027."
+    en: "For the individual obligations below, the field applies_from gives the date for systems under Annex III. For systems that are high-risk as a safety component of a product under Annex I, Article 113(1)(c) moves the start to 2 August 2027."
+
+obligations:
+
+  # ---------------------------------------------------------------
+  # For everyone
+  # ---------------------------------------------------------------
+  - id: all-ai-literacy
+    title:
+      de: "Personal im Umgang mit KI schulen"
+      en: "Train staff in dealing with AI"
+    action_required:
+      de: "Zu tun ist: Allen Mitarbeitern und allen Personen, die in Ihrem Auftrag mit dem KI-System arbeiten, ein ausreichendes Verständnis dafür verschaffen, was das System kann, wo seine Grenzen liegen und welche Risiken es mitbringt. Was ausreichend ist, richtet sich nach Vorbildung, Erfahrung und dem Einsatzzweck. Planen Sie Schulungen ein und halten Sie fest, wer wann geschult wurde."
+      en: "What to do: Give all staff and all other persons who work with the AI system on your behalf a sufficient understanding of what the system can do, where its limits lie and what risks it brings. What is sufficient depends on prior knowledge, experience and the intended use. Plan training and record who was trained and when."
+    legal_basis:
+      - AI-Act/art-4
+      - AI-Act/art-4/para-1
+    citation_text:
+      de: "Artikel 4 KI-VO"
+      en: "Article 4 AI Act"
+    roles: [provider, deployer]
+    risk_classes: [prohibited, high_risk_annex_i, high_risk_annex_iii, high_risk_exemption, transparency, gpai, gpai_systemic_risk, minimal]
+    severity: obligation
+    applies_from: 2025-02-02
+    evidence_of_compliance:
+      de: "Schulungsplan, Teilnehmerlisten mit Datum und die Unterlagen, die geschult wurden."
+      en: "Training plan, attendance lists with dates and the training materials used."
+    on_infringement:
+      de: "Artikel 4 ist in Artikel 99 Absatz 4 nicht eigens aufgeführt. Es greifen die Sanktionen, die die Mitgliedstaaten nach Artikel 99 Absatz 1 festlegen; diese müssen wirksam, verhältnismässig und abschreckend sein."
+      en: "Article 4 is not specifically listed in Article 99(4). The penalties laid down by the Member States under Article 99(1) apply; these must be effective, proportionate and dissuasive."
+
+  # ---------------------------------------------------------------
+  # Prohibitions
+  # ---------------------------------------------------------------
+  - id: prohibition-no-prohibited-practices
+    title:
+      de: "Verbotene Praktiken weder anbieten noch einsetzen"
+      en: "Neither offer nor use prohibited practices"
+    action_required:
+      de: "Zu tun ist: Prüfen, ob Ihr System unter eines der Verbote fällt, und es in diesem Fall nicht in Verkehr bringen, nicht in Betrieb nehmen und nicht verwenden. Verboten sind unter anderem: unterschwellige oder täuschende Beeinflussung, die erheblichen Schaden anrichtet; das Ausnutzen von Alter, Behinderung oder einer sozialen oder wirtschaftlichen Notlage; soziale Bewertung von Menschen (Social Scoring); die Vorhersage von Straftaten allein aus Persönlichkeitsmerkmalen; das ungezielte Absammeln von Gesichtsbildern aus dem Internet oder aus Überwachungsaufnahmen zum Aufbau von Gesichtserkennungsdatenbanken; Emotionserkennung am Arbeitsplatz und in Bildungseinrichtungen (ausser aus medizinischen oder Sicherheitsgründen); biometrische Kategorisierung, um Rasse, politische Einstellung, Gewerkschaftszugehörigkeit, Religion, Weltanschauung, Sexualleben oder sexuelle Ausrichtung abzuleiten; sowie biometrische Echtzeit-Fernidentifizierung in öffentlich zugänglichen Räumen zu Strafverfolgungszwecken ausserhalb der engen Ausnahmen des Artikels 5."
+      en: "What to do: Check whether your system falls under one of the prohibitions and, if so, do not place it on the market, do not put it into service and do not use it. Prohibited are, among others: subliminal or deceptive manipulation that causes significant harm; exploiting age, disability or a social or economic situation of hardship; social scoring of people; predicting criminal offences solely from personality traits; untargeted scraping of facial images from the internet or from CCTV footage to build facial recognition databases; emotion recognition in the workplace and in education institutions (except for medical or safety reasons); biometric categorisation to infer race, political opinions, trade union membership, religious or philosophical beliefs, sex life or sexual orientation; and real-time remote biometric identification in publicly accessible spaces for the purposes of law enforcement outside the narrow exceptions of Article 5."
+    legal_basis:
+      - AI-Act/art-5
+      - AI-Act/art-5/para-1
+      - AI-Act/art-5/para-1-a
+      - AI-Act/art-5/para-1-b
+      - AI-Act/art-5/para-1-c
+      - AI-Act/art-5/para-1-d
+      - AI-Act/art-5/para-1-e
+      - AI-Act/art-5/para-1-f
+      - AI-Act/art-5/para-1-g
+      - AI-Act/art-5/para-1-h
+    citation_text:
+      de: "Artikel 5 KI-VO"
+      en: "Article 5 AI Act"
+    roles: [provider, deployer, importer, distributor, product_manufacturer, authorised_representative]
+    risk_classes: [prohibited]
+    severity: obligation
+    applies_from: 2025-02-02
+    evidence_of_compliance:
+      de: "Eine dokumentierte Prüfung je System, in der die Zweckbestimmung den Verbotstatbeständen des Artikels 5 gegenübergestellt wird, samt Begründung des Ergebnisses."
+      en: "A documented assessment for each system that compares its intended purpose with the prohibited practices of Article 5, together with the reasons for the result."
+    on_infringement:
+      de: "Artikel 99 Absatz 3: Geldbussen von bis zu 35 000 000 Euro oder, bei Unternehmen, bis zu 7 Prozent des gesamten weltweiten Jahresumsatzes des vorangegangenen Geschäftsjahres, je nachdem welcher Betrag höher ist. Für kleine und mittlere Unternehmen einschliesslich Start-ups gilt nach Artikel 99 Absatz 6 der jeweils niedrigere Betrag."
+      en: "Article 99(3): administrative fines of up to EUR 35 000 000 or, for undertakings, up to 7 % of total worldwide annual turnover for the preceding financial year, whichever is higher. For small and medium-sized enterprises, including start-ups, the lower of the two amounts applies under Article 99(6)."
+
+  - id: prohibition-realtime-biometric-authorisation
+    title:
+      de: "Biometrische Echtzeit-Fernidentifizierung nur mit vorheriger Genehmigung"
+      en: "Real-time remote biometric identification only with prior authorisation"
+    only_when_all: [biometrics, law_enforcement_purpose]
+    on_unknown: omit
+    action_required:
+      de: "Zu tun ist: Soll ein solches System in einem der engen Ausnahmefälle zu Strafverfolgungszwecken eingesetzt werden, vorher die Genehmigung einer Justizbehörde oder einer unabhängigen Verwaltungsbehörde einholen. In begründeten Eilfällen darf begonnen werden, die Genehmigung ist dann unverzüglich, spätestens binnen 24 Stunden zu beantragen. Wird sie abgelehnt, ist der Einsatz sofort zu beenden und alle Daten, Ergebnisse und Ausgaben sind zu löschen. Vor dem Einsatz muss ausserdem die Grundrechte-Folgenabschätzung nach Artikel 27 abgeschlossen und das System nach Artikel 49 registriert sein. Jede Verwendung ist der Marktüberwachungsbehörde und der nationalen Datenschutzbehörde mitzuteilen."
+      en: "What to do: If such a system is to be used for the purposes of law enforcement in one of the narrow exceptional cases, obtain prior authorisation from a judicial authority or an independent administrative authority. In duly justified cases of urgency, use may begin, but authorisation must then be requested without undue delay, at the latest within 24 hours. If it is rejected, use must stop immediately and all data, results and outputs must be deleted. Before use, the fundamental rights impact assessment under Article 27 must also be completed and the system registered under Article 49. Each use must be notified to the market surveillance authority and the national data protection authority."
+    legal_basis:
+      - AI-Act/art-5/para-2
+      - AI-Act/art-5/para-3
+      - AI-Act/art-5/para-4
+
+    also_cited:
+      - AI-Act/art-27
+      - AI-Act/art-49
+    citation_text:
+      de: "Artikel 5 Absätze 2 bis 4 KI-VO"
+      en: "Article 5(2) to (4) AI Act"
+    roles: [deployer]
+    risk_classes: [prohibited, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2025-02-02
+    evidence_of_compliance:
+      de: "Genehmigungsantrag und Genehmigung, die abgeschlossene Grundrechte-Folgenabschätzung, der Registrierungseintrag und die Mitteilung an die beiden Behörden."
+      en: "Request for authorisation and the authorisation, the completed fundamental rights impact assessment, the registration entry and the notification to both authorities."
+    on_infringement:
+      de: "Verstösse gegen Artikel 5 sind nach Artikel 99 Absatz 3 mit Geldbussen bis zu 35 000 000 Euro oder bis zu 7 Prozent des weltweiten Jahresumsatzes bedroht, je nachdem welcher Betrag höher ist."
+      en: "Under Article 99(3), infringements of Article 5 are subject to administrative fines of up to EUR 35 000 000 or up to 7 % of worldwide annual turnover, whichever is higher."
+
+  # ---------------------------------------------------------------
+  # Providers of high-risk AI systems: requirements (Section 2)
+  # ---------------------------------------------------------------
+  - id: high-risk-provider-meet-requirements
+    title:
+      de: "Alle Anforderungen an Hochrisikosysteme erfüllen"
+      en: "Meet all requirements for high-risk systems"
+    action_required:
+      de: "Zu tun ist: Sicherstellen, dass das System die Anforderungen der Artikel 9 bis 15 erfüllt, bevor es auf den Markt kommt oder in Betrieb geht. Dabei zählt die Zweckbestimmung, also wofür Sie das System ausdrücklich vorgesehen haben, und der allgemein anerkannte Stand der Technik. Steckt das System in einem Produkt, das schon anderen Unionsvorschriften unterliegt, dürfen Sie Ihre Tests, Berichte und Unterlagen in die dort vorgeschriebenen Dokumente einbauen, statt alles doppelt zu führen."
+      en: "What to do: Ensure that the system meets the requirements of Articles 9 to 15 before it is placed on the market or put into service. What counts is the intended purpose, that is, what you expressly intended the system for, and the generally acknowledged state of the art. If the system is part of a product already subject to other Union legislation, you may integrate your tests, reports and documentation into the documents required there instead of keeping everything twice."
+    legal_basis:
+      - AI-Act/art-8
+      - AI-Act/art-16
+      - AI-Act/art-16/para-1-a
+
+    also_cited:
+      - AI-Act/art-9
+    citation_text:
+      de: "Artikel 8 und Artikel 16 Buchstabe a KI-VO"
+      en: "Article 8 and Article 16(a) AI Act"
+    roles: [provider, product_manufacturer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Die technische Dokumentation nach Artikel 11, aus der hervorgeht, wie jede einzelne Anforderung erfüllt ist."
+      en: "The technical documentation under Article 11, showing how each individual requirement is met."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe a: Geldbussen bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 99(4)(a): administrative fines of up to EUR 15 000 000 or up to 3 % of worldwide annual turnover, whichever is higher."
+
+  - id: high-risk-provider-risk-management
+    title:
+      de: "Risikomanagementsystem einrichten und laufend fortführen"
+      en: "Establish and continuously maintain a risk management system"
+    action_required:
+      de: "Zu tun ist: Ein Risikomanagementsystem einrichten, anwenden, dokumentieren und über die ganze Lebensdauer des Systems aufrechterhalten. Es ist kein einmaliger Bericht, sondern ein wiederkehrender Durchlauf: bekannte und vernünftigerweise vorhersehbare Risiken für Gesundheit, Sicherheit und Grundrechte ermitteln und analysieren, Risiken bei bestimmungsgemässem Gebrauch und bei vorhersehbarem Fehlgebrauch abschätzen, Erkenntnisse aus der Marktbeobachtung auswerten und gezielte Gegenmassnahmen ergreifen. Verbleibende Restrisiken müssen vertretbar sein. Testen Sie vorab festgelegte Messwerte und Schwellen, in jedem Fall vor dem Inverkehrbringen. Prüfen Sie ausdrücklich, ob das System Personen unter 18 Jahren oder andere schutzbedürftige Gruppen nachteilig treffen kann."
+      en: "What to do: Establish, implement, document and maintain a risk management system over the entire lifecycle of the system. It is not a one-off report but an iterative process: identify and analyse known and reasonably foreseeable risks to health, safety and fundamental rights, estimate risks under use in accordance with the intended purpose and under reasonably foreseeable misuse, evaluate findings from post-market monitoring and adopt targeted measures. Remaining residual risks must be acceptable. Test against prior defined metrics and thresholds, in any event before placing on the market. Explicitly consider whether the system may adversely affect persons under 18 or other vulnerable groups."
+    legal_basis:
+      - AI-Act/art-9
+      - AI-Act/art-9/para-1
+      - AI-Act/art-9/para-2
+      - AI-Act/art-9/para-5
+      - AI-Act/art-9/para-6
+      - AI-Act/art-9/para-8
+      - AI-Act/art-9/para-9
+    citation_text:
+      de: "Artikel 9 KI-VO"
+      en: "Article 9 AI Act"
+    roles: [provider, product_manufacturer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Schriftliche Risikoanalyse je Version mit Risikoliste, Bewertung, beschlossenen Massnahmen, Restrisikobewertung und Testprotokollen samt den vorab festgelegten Messwerten und Schwellen."
+      en: "Written risk analysis for each version with a list of risks, evaluation, adopted measures, residual risk assessment and test logs including the prior defined metrics and thresholds."
+    on_infringement:
+      de: "Die Pflicht hängt über Artikel 16 Buchstabe a an den Anbieterpflichten; Artikel 99 Absatz 4 Buchstabe a sieht Geldbussen bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes vor, je nachdem welcher Betrag höher ist."
+      en: "The obligation is attached to the provider obligations via Article 16(a); Article 99(4)(a) provides for administrative fines of up to EUR 15 000 000 or up to 3 % of worldwide annual turnover, whichever is higher."
+
+  - id: high-risk-provider-data-governance
+    title:
+      de: "Trainings-, Validierungs- und Testdaten prüfen und steuern"
+      en: "Examine and govern training, validation and testing data"
+    action_required:
+      de: "Zu tun ist: Wenn Ihr System mit Daten trainiert wird, müssen die Trainings-, Validierungs- und Testdatensätze für den Zweck passen, hinreichend repräsentativ und so weit wie möglich fehlerfrei und vollständig sein. Festzuhalten sind die Entwurfsentscheidungen, woher die Daten kommen, bei personenbezogenen Daten der ursprüngliche Erhebungszweck, wie die Daten aufbereitet wurden (Annotation, Bereinigung, Anreicherung), welche Annahmen dahinterstehen, eine Untersuchung auf Verzerrungen (im Text 'Bias', also systematische Schieflagen der Daten, die zu Benachteiligung führen können), die Massnahmen dagegen und welche Datenlücken noch offen sind. Berücksichtigen Sie die geografischen, kontextuellen und verhaltensbezogenen Besonderheiten des geplanten Einsatzortes. Wird das System nicht trainiert, gelten diese Vorgaben nur für die Testdaten."
+      en: "What to do: If your system is trained with data, the training, validation and testing data sets must be fit for the purpose, sufficiently representative and, to the best extent possible, free of errors and complete. You must record the design choices, where the data come from, for personal data the original purpose of collection, how the data were prepared (annotation, cleaning, enrichment), which assumptions underlie them, an examination for biases (systematic skews in the data that can lead to discrimination), the measures against them and which data gaps remain open. Take into account the geographical, contextual and behavioural characteristics of the intended setting of use. If the system is not trained, these requirements apply only to the testing data."
+    legal_basis:
+      - AI-Act/art-10
+      - AI-Act/art-10/para-1
+      - AI-Act/art-10/para-2
+      - AI-Act/art-10/para-3
+      - AI-Act/art-10/para-4
+      - AI-Act/art-10/para-6
+    citation_text:
+      de: "Artikel 10 KI-VO"
+      en: "Article 10 AI Act"
+    roles: [provider, product_manufacturer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Datenblätter je Datensatz mit Herkunft, Erhebungszweck, Aufbereitungsschritten, Repräsentativitätsnachweis, Verzerrungsuntersuchung und den ergriffenen Gegenmassnahmen."
+      en: "Data sheets for each data set with origin, purpose of collection, preparation steps, evidence of representativeness, bias examination and the measures taken against bias."
+    on_infringement:
+      de: "Über Artikel 16 Buchstabe a erfasst; Artikel 99 Absatz 4 Buchstabe a sieht bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes vor, je nachdem welcher Betrag höher ist."
+      en: "Covered via Article 16(a); Article 99(4)(a) provides for up to EUR 15 000 000 or up to 3 % of worldwide annual turnover, whichever is higher."
+
+  - id: high-risk-provider-special-data-for-bias
+    title:
+      de: "Besondere Datenkategorien nur zur Verzerrungskorrektur und nur unter Bedingungen"
+      en: "Special categories of data only for bias correction and only under conditions"
+    only_when: [special_categories_of_data]
+    on_unknown: with_caveat
+    caveat:
+      de: "Diese Pflicht betrifft Sie nur, wenn Sie zur Erkennung und Korrektur von Verzerrungen besondere Datenkategorien im Sinne des Artikels 9 Absatz 1 DSGVO verarbeiten - etwa Gesundheitsdaten, Angaben zur Herkunft, zur Religion oder zur sexuellen Orientierung. Tun Sie das nicht, entfaellt sie."
+      en: "This obligation concerns you only if you process special categories of personal data within the meaning of Article 9(1) GDPR to detect and correct biases - for example health data, data on ethnic origin, religion or sexual orientation. If you do not, it does not apply."
+    action_required:
+      de: "Zu tun ist: Brauchen Sie besonders geschützte personenbezogene Daten (etwa zu Herkunft, Religion, Gesundheit oder sexueller Orientierung), um Verzerrungen zu erkennen und zu korrigieren, dürfen Sie sie nur ausnahmsweise verarbeiten und nur, wenn alle folgenden Bedingungen erfüllt sind: es geht nicht mit anderen Daten, auch nicht mit synthetischen oder anonymisierten; die Daten sind technisch gegen Weiterverwendung gesperrt und nach dem Stand der Technik gesichert, einschliesslich Pseudonymisierung; der Zugriff ist streng kontrolliert und dokumentiert; die Daten werden nicht an Dritte gegeben; sie werden gelöscht, sobald die Verzerrung korrigiert ist oder die Speicherfrist endet, je nachdem was zuerst eintritt; und im Verzeichnis der Verarbeitungstätigkeiten steht, warum es ohne diese Daten nicht ging. Die Vorgaben des Datenschutzrechts gelten daneben weiter."
+      en: "What to do: If you need specially protected personal data (for example on ethnic origin, religion, health or sexual orientation) to detect and correct biases, you may process them only exceptionally and only if all of the following conditions are met: it cannot be done with other data, including synthetic or anonymised data; the data are technically restricted against re-use and secured in line with the state of the art, including pseudonymisation; access is strictly controlled and documented; the data are not passed on to third parties; they are deleted once the bias has been corrected or the retention period ends, whichever comes first; and the records of processing activities state why it could not be done without these data. The requirements of data protection law continue to apply alongside."
+    legal_basis:
+      - AI-Act/art-10/para-5
+      - AI-Act/art-10/para-5-a
+      - AI-Act/art-10/para-5-b
+      - AI-Act/art-10/para-5-c
+      - AI-Act/art-10/para-5-d
+      - AI-Act/art-10/para-5-e
+      - AI-Act/art-10/para-5-f
+    citation_text:
+      de: "Artikel 10 Absatz 5 KI-VO"
+      en: "Article 10(5) AI Act"
+    roles: [provider, product_manufacturer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Begründung der unbedingten Erforderlichkeit, Zugriffsprotokolle, Löschnachweis und der entsprechende Eintrag im Verzeichnis der Verarbeitungstätigkeiten."
+      en: "Justification of the strict necessity, access logs, evidence of deletion and the corresponding entry in the records of processing activities."
+    on_infringement:
+      de: "Über Artikel 16 Buchstabe a erfasst (Artikel 99 Absatz 4 Buchstabe a). Daneben bleibt die Datenschutz-Grundverordnung mit ihrem eigenen Bussgeldrahmen anwendbar."
+      en: "Covered via Article 16(a) (Article 99(4)(a)). In addition, the General Data Protection Regulation remains applicable with its own framework of fines."
+
+  - id: high-risk-provider-technical-documentation
+    title:
+      de: "Technische Dokumentation erstellen und aktuell halten"
+      en: "Draw up and keep technical documentation up to date"
+    action_required:
+      de: "Zu tun ist: Vor dem Inverkehrbringen oder der Inbetriebnahme eine technische Dokumentation erstellen und sie danach aktuell halten. Sie muss mindestens die Angaben aus Anhang IV enthalten und so geschrieben sein, dass Behörden und notifizierte Stellen daraus klar und verständlich erkennen können, wie die Anforderungen erfüllt werden. Dazu gehören Beschreibung und Entwicklungsweg des Systems, die Entwurfsentscheidungen samt Gründen, die Systemarchitektur, die verwendeten Rechenressourcen und die Datenblätter zu den Trainingsdaten. Kleine und mittlere Unternehmen einschliesslich Start-ups dürfen das vereinfachte Formular der Kommission verwenden; notifizierte Stellen müssen es akzeptieren. Steckt das System in einem Produkt nach Anhang I Abschnitt A, wird eine einzige gemeinsame Dokumentation erstellt."
+      en: "What to do: Draw up technical documentation before placing on the market or putting into service and keep it up to date afterwards. It must contain at least the information set out in Annex IV and be written so that authorities and notified bodies can see from it in a clear and comprehensible way how the requirements are met. This includes the description and development process of the system, the design choices together with their reasons, the system architecture, the computational resources used and the data sheets on the training data. Small and medium-sized enterprises, including start-ups, may use the Commission's simplified form; notified bodies must accept it. If the system is part of a product under Annex I, Section A, a single set of documentation is drawn up."
+    legal_basis:
+      - AI-Act/art-11
+      - AI-Act/art-11/para-1
+      - AI-Act/art-11/para-2
+      - AI-Act/annex-IV
+      - AI-Act/annex-IV/pt-1
+      - AI-Act/annex-IV/pt-2
+    citation_text:
+      de: "Artikel 11 KI-VO mit Anhang IV"
+      en: "Article 11 AI Act with Annex IV"
+    roles: [provider, product_manufacturer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Die Dokumentation selbst, mit Versionsstand und Änderungsnachweis, geordnet nach den Nummern des Anhangs IV."
+      en: "The documentation itself, with version status and change history, organised by the points of Annex IV."
+    on_infringement:
+      de: "Über Artikel 16 Buchstabe a erfasst; Artikel 99 Absatz 4 Buchstabe a: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Covered via Article 16(a); Article 99(4)(a): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover, whichever is higher."
+
+  - id: high-risk-provider-build-in-logging
+    title:
+      de: "Automatische Protokollierung in das System einbauen"
+      en: "Build automatic logging into the system"
+    action_required:
+      de: "Zu tun ist: Das System technisch so bauen, dass es Ereignisse über seine gesamte Lebensdauer selbsttätig aufzeichnet (Protokollierung). Die Aufzeichnungen müssen so weit reichen, dass sich der Betrieb nachvollziehen lässt: Situationen erkennen, in denen das System ein Risiko birgt oder wesentlich verändert wird, die Marktbeobachtung stützen und die Überwachung durch den Betreiber ermöglichen. Bei Systemen zur biometrischen Fernidentifizierung nach Anhang III Nummer 1 Buchstabe a müssen zusätzlich mindestens aufgezeichnet werden: Beginn und Ende jeder Nutzung mit Datum und Uhrzeit, die abgeglichene Referenzdatenbank, die Eingabedaten, die zu einer Übereinstimmung geführt haben, und wer die Ergebnisse geprüft hat."
+      en: "What to do: Build the system technically so that it automatically records events over its entire lifetime (logging). The records must go far enough to make the operation traceable: identify situations in which the system presents a risk or is substantially modified, support post-market monitoring and enable monitoring by the deployer. For remote biometric identification systems under Annex III, point 1(a), at least the following must also be recorded: start and end of each use with date and time, the reference database checked, the input data that led to a match, and who verified the results."
+    legal_basis:
+      - AI-Act/art-12
+      - AI-Act/art-12/para-1
+      - AI-Act/art-12/para-2
+      - AI-Act/art-12/para-3
+    citation_text:
+      de: "Artikel 12 KI-VO"
+      en: "Article 12 AI Act"
+    roles: [provider, product_manufacturer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Beschreibung der Protokollierungsfunktion in der technischen Dokumentation und Beispielprotokolle, die den vorgeschriebenen Inhalt zeigen."
+      en: "Description of the logging function in the technical documentation and sample logs showing the required content."
+    on_infringement:
+      de: "Über Artikel 16 Buchstabe a erfasst; Artikel 99 Absatz 4 Buchstabe a: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes."
+      en: "Covered via Article 16(a); Article 99(4)(a): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover."
+
+  - id: high-risk-provider-instructions-for-use
+    title:
+      de: "Betriebsanleitung mit den vorgeschriebenen Angaben beilegen"
+      en: "Provide instructions for use with the required information"
+    action_required:
+      de: "Zu tun ist: Das System so bauen, dass der Betreiber die Ausgaben richtig deuten und verwenden kann, und ihm eine Betriebsanleitung in einem geeigneten digitalen Format mitgeben, präzise, vollständig, richtig, eindeutig, barrierefrei zugänglich und verständlich. Hineingehören mindestens: Name und Kontakt des Anbieters und gegebenenfalls des Bevollmächtigten; Zweckbestimmung, Fähigkeiten und Leistungsgrenzen; das Mass an Genauigkeit, Robustheit und Cybersicherheit mit den zugehörigen Messgrössen; bekannte und vorhersehbare Umstände, die zu Risiken führen können; Hinweise zur Deutung der Ausgaben; die Leistung bei bestimmten Personengruppen; die Anforderungen an die Eingabedaten; vorab festgelegte Änderungen am System; die Massnahmen zur menschlichen Aufsicht; die benötigten Rechen- und Hardwareressourcen, die erwartete Lebensdauer und die Wartungsmassnahmen samt Häufigkeit; und wie der Betreiber die Protokolle erfassen, speichern und auswerten kann."
+      en: "What to do: Build the system so that the deployer can interpret and use its output correctly, and supply instructions for use in an appropriate digital format that are concise, complete, correct, clear, accessible and comprehensible. They must contain at least: the name and contact details of the provider and, where applicable, of the authorised representative; the intended purpose, capabilities and limitations of performance; the level of accuracy, robustness and cybersecurity with the relevant metrics; known and foreseeable circumstances that may lead to risks; guidance on interpreting the output; the performance regarding specific groups of persons; the specifications for the input data; pre-determined changes to the system; the human oversight measures; the computational and hardware resources needed, the expected lifetime and the maintenance measures including their frequency; and how the deployer can collect, store and interpret the logs."
+    legal_basis:
+      - AI-Act/art-13
+      - AI-Act/art-13/para-1
+      - AI-Act/art-13/para-2
+      - AI-Act/art-13/para-3
+    citation_text:
+      de: "Artikel 13 KI-VO"
+      en: "Article 13 AI Act"
+    roles: [provider, product_manufacturer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Die ausgelieferte Betriebsanleitung, abgeglichen gegen die Liste des Artikels 13 Absatz 3."
+      en: "The instructions for use as supplied, checked against the list in Article 13(3)."
+    on_infringement:
+      de: "Über Artikel 16 Buchstabe a erfasst; Artikel 99 Absatz 4 Buchstabe a: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes."
+      en: "Covered via Article 16(a); Article 99(4)(a): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover."
+
+  - id: high-risk-provider-human-oversight
+    title:
+      de: "Menschliche Aufsicht technisch ermöglichen"
+      en: "Enable human oversight technically"
+    action_required:
+      de: "Zu tun ist: Das System so bauen, dass Menschen es während des Betriebs wirksam beaufsichtigen können, notfalls über eine eigene Bedienoberfläche. Die Aufsichtsvorkehrungen werden vor dem Inverkehrbringen festgelegt und entweder eingebaut oder so beschrieben, dass der Betreiber sie umsetzen kann. Die aufsichtsführenden Personen müssen Fähigkeiten und Grenzen des Systems verstehen, Fehlfunktionen und unerwartetes Verhalten erkennen können, sich der Neigung zu übermässigem Vertrauen in die Ausgaben bewusst bleiben (Automatisierungsbias), die Ausgaben richtig deuten können, das System in einer bestimmten Lage nicht verwenden oder dessen Ausgabe übergehen, ausser Kraft setzen oder rückgängig machen können und mit einer Stopptaste oder einem gleichwertigen Verfahren eingreifen können, sodass das System sicher zum Stillstand kommt. Bei biometrischer Fernidentifizierung nach Anhang III Nummer 1 Buchstabe a muss das System ausserdem so gestaltet sein, dass keine Entscheidung allein auf dem Identifizierungsergebnis beruht, solange nicht zwei fachlich geeignete und befugte Personen es getrennt geprüft und bestätigt haben."
+      en: "What to do: Build the system so that people can effectively oversee it while it is in use, if necessary through a dedicated user interface. The oversight measures are defined before placing on the market and either built in or described so that the deployer can implement them. The persons assigned to oversight must understand the capabilities and limitations of the system, be able to detect malfunctions and unexpected behaviour, remain aware of the tendency to over-rely on the output (automation bias), be able to interpret the output correctly, be able to decide not to use the system in a particular situation or to disregard, override or reverse its output, and be able to intervene with a stop button or a similar procedure that brings the system to a halt in a safe state. For remote biometric identification under Annex III, point 1(a), the system must also be designed so that no decision is based solely on the identification result unless two persons with the necessary competence and authority have separately verified and confirmed it."
+    legal_basis:
+      - AI-Act/art-14
+      - AI-Act/art-14/para-1
+      - AI-Act/art-14/para-3
+      - AI-Act/art-14/para-4
+      - AI-Act/art-14/para-5
+    citation_text:
+      de: "Artikel 14 KI-VO"
+      en: "Article 14 AI Act"
+    roles: [provider, product_manufacturer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Beschreibung der Aufsichtsvorkehrungen in technischer Dokumentation und Betriebsanleitung sowie Nachweis der Stopp- und Eingriffsmöglichkeit aus Tests."
+      en: "Description of the oversight measures in the technical documentation and the instructions for use, and evidence from tests of the ability to stop and intervene."
+    on_infringement:
+      de: "Über Artikel 16 Buchstabe a erfasst; Artikel 99 Absatz 4 Buchstabe a: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes."
+      en: "Covered via Article 16(a); Article 99(4)(a): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover."
+
+  - id: high-risk-provider-accuracy-robustness-cybersecurity
+    title:
+      de: "Genauigkeit, Robustheit und Cybersicherheit sicherstellen"
+      en: "Ensure accuracy, robustness and cybersecurity"
+    action_required:
+      de: "Zu tun ist: Das System so bauen, dass es ein angemessenes Mass an Genauigkeit, Robustheit (Widerstandsfähigkeit gegen Fehler und Störungen) und Cybersicherheit erreicht und das über die gesamte Lebensdauer hält. Die erreichten Genauigkeitswerte und die verwendeten Messgrössen gehören in die Betriebsanleitung. Gegen Fehler und Unstimmigkeiten helfen technische und organisatorische Massnahmen, etwa Redundanz oder Ausfallsicherungspläne. Lernt das System nach dem Inverkehrbringen weiter, ist dafür zu sorgen, dass verzerrte Ausgaben nicht in künftige Vorgänge zurückwirken (Rückkopplungsschleifen). Gegen Angriffe sind Vorkehrungen zu treffen, insbesondere gegen Manipulation der Trainingsdaten (data poisoning), Manipulation vortrainierter Bestandteile (model poisoning), irreführende Eingaben (adversarial examples) und Angriffe auf vertrauliche Daten."
+      en: "What to do: Build the system so that it achieves an appropriate level of accuracy, robustness (resilience against errors and faults) and cybersecurity and maintains it throughout its lifecycle. The levels of accuracy achieved and the metrics used belong in the instructions for use. Technical and organisational measures help against errors and inconsistencies, for example redundancy or fail-safe plans. If the system continues to learn after being placed on the market, it must be ensured that biased outputs do not influence input for future operations (feedback loops). Measures must be taken against attacks, in particular against manipulation of the training data (data poisoning), manipulation of pre-trained components (model poisoning), misleading inputs (adversarial examples) and attacks on confidential data."
+    legal_basis:
+      - AI-Act/art-15
+      - AI-Act/art-15/para-1
+      - AI-Act/art-15/para-3
+      - AI-Act/art-15/para-4
+      - AI-Act/art-15/para-5
+    citation_text:
+      de: "Artikel 15 KI-VO"
+      en: "Article 15 AI Act"
+    roles: [provider, product_manufacturer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Testberichte mit Genauigkeits- und Robustheitswerten, die Angabe dieser Werte in der Betriebsanleitung und ein Bericht über die Sicherheitsprüfung samt Gegenmassnahmen."
+      en: "Test reports with accuracy and robustness values, the statement of these values in the instructions for use, and a report on the security testing including countermeasures."
+    on_infringement:
+      de: "Über Artikel 16 Buchstabe a erfasst; Artikel 99 Absatz 4 Buchstabe a: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes."
+      en: "Covered via Article 16(a); Article 99(4)(a): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover."
+
+  # ---------------------------------------------------------------
+  # Providers of high-risk AI systems: obligations (Section 3)
+  # ---------------------------------------------------------------
+  - id: high-risk-provider-name-and-contact
+    title:
+      de: "Eigenen Namen und Kontaktanschrift am System angeben"
+      en: "State your own name and contact address on the system"
+    action_required:
+      de: "Zu tun ist: Namen, eingetragenen Handelsnamen oder eingetragene Handelsmarke und eine Kontaktanschrift am System selbst anbringen. Geht das nicht, auf der Verpackung oder in den beigefügten Unterlagen."
+      en: "What to do: Indicate your name, registered trade name or registered trade mark and a contact address on the system itself. If that is not possible, on its packaging or in the accompanying documentation."
+    legal_basis:
+      - AI-Act/art-16/para-1-b
+    citation_text:
+      de: "Artikel 16 Buchstabe b KI-VO"
+      en: "Article 16(b) AI Act"
+    roles: [provider, product_manufacturer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Foto oder Bildschirmaufnahme der Kennzeichnung am System, an der Verpackung oder in den Begleitunterlagen."
+      en: "Photo or screenshot of the marking on the system, on the packaging or in the accompanying documentation."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe a: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 99(4)(a): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover, whichever is higher."
+
+  - id: high-risk-provider-quality-management
+    title:
+      de: "Qualitätsmanagementsystem einrichten"
+      en: "Put a quality management system in place"
+    action_required:
+      de: "Zu tun ist: Ein Qualitätsmanagementsystem einrichten, das die Einhaltung der Verordnung sicherstellt, und es in schriftlichen Regeln, Verfahren und Anweisungen festhalten. Es muss mindestens umfassen: ein Konzept zur Einhaltung der Vorschriften samt Umgang mit Änderungen am System; Verfahren für Entwurf, Entwurfskontrolle und Entwurfsprüfung; Verfahren für Entwicklung, Qualitätskontrolle und Qualitätssicherung; Untersuchungs-, Test- und Validierungsverfahren mit Angabe, wie oft sie laufen; die anzuwendenden Normen und technischen Spezifikationen; Verfahren für das Datenmanagement; das Risikomanagementsystem nach Artikel 9; die Marktbeobachtung nach Artikel 72; das Verfahren zur Meldung schwerwiegender Vorfälle nach Artikel 73; die Kommunikation mit Behörden, notifizierten Stellen und Kunden; Verfahren zur Aufzeichnung aller Unterlagen; das Ressourcenmanagement einschliesslich Versorgungssicherheit; und einen Rechenschaftsrahmen, der festlegt, wer in der Leitung und im Personal für was verantwortlich ist. Der Umfang darf zur Grösse Ihrer Organisation passen, das Schutzniveau darf dabei nicht sinken."
+      en: "What to do: Put in place a quality management system that ensures compliance with the Regulation and document it in written policies, procedures and instructions. It must include at least: a strategy for regulatory compliance, including the management of modifications to the system; procedures for design, design control and design verification; procedures for development, quality control and quality assurance; examination, test and validation procedures, stating how often they are carried out; the standards and technical specifications to be applied; procedures for data management; the risk management system under Article 9; post-market monitoring under Article 72; the procedure for reporting serious incidents under Article 73; communication with authorities, notified bodies and customers; procedures for record-keeping of all documentation; resource management, including security of supply; and an accountability framework setting out who in management and among the staff is responsible for what. The scope may be proportionate to the size of your organisation, but the level of protection must not decrease."
+    legal_basis:
+      - AI-Act/art-17
+      - AI-Act/art-17/para-1
+      - AI-Act/art-17/para-2
+      - AI-Act/art-16/para-1-c
+
+    also_cited:
+      - AI-Act/art-9
+      - AI-Act/art-72
+      - AI-Act/art-73
+    citation_text:
+      de: "Artikel 17 und Artikel 16 Buchstabe c KI-VO"
+      en: "Article 17 and Article 16(c) AI Act"
+    roles: [provider, product_manufacturer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Das schriftliche Regelwerk des Qualitätsmanagementsystems mit Verfahrensanweisungen, Zuständigkeitsmatrix und Nachweisen, dass die Verfahren gelebt werden."
+      en: "The written policies of the quality management system with procedural instructions, responsibility matrix and evidence that the procedures are actually followed."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe a: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 99(4)(a): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover, whichever is higher."
+
+  - id: high-risk-provider-keep-documentation-ten-years
+    title:
+      de: "Dokumentation zehn Jahre bereithalten"
+      en: "Keep documentation available for ten years"
+    action_required:
+      de: "Zu tun ist: Ab dem Inverkehrbringen oder der Inbetriebnahme zehn Jahre lang für die zuständigen nationalen Behörden bereithalten: die technische Dokumentation nach Artikel 11, die Unterlagen zum Qualitätsmanagementsystem, die Unterlagen zu von notifizierten Stellen genehmigten Änderungen, die Entscheidungen und sonstigen Dokumente notifizierter Stellen und die EU-Konformitätserklärung."
+      en: "What to do: For ten years after placing on the market or putting into service, keep at the disposal of the national competent authorities: the technical documentation under Article 11, the documentation on the quality management system, the documentation on changes approved by notified bodies, the decisions and other documents issued by notified bodies, and the EU declaration of conformity."
+    legal_basis:
+      - AI-Act/art-18
+      - AI-Act/art-18/para-1
+      - AI-Act/art-18/para-1-a
+      - AI-Act/art-18/para-1-b
+      - AI-Act/art-18/para-1-c
+      - AI-Act/art-18/para-1-d
+      - AI-Act/art-18/para-1-e
+      - AI-Act/art-16/para-1-d
+
+    also_cited:
+      - AI-Act/art-11
+    citation_text:
+      de: "Artikel 18 und Artikel 16 Buchstabe d KI-VO"
+      en: "Article 18 and Article 16(d) AI Act"
+    roles: [provider, product_manufacturer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Ein Aktenverzeichnis mit Ablageort und Aufbewahrungsfrist je Unterlage und dem Datum des Inverkehrbringens als Fristbeginn."
+      en: "A records index with storage location and retention period for each document, with the date of placing on the market as the start of the period."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe a: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes."
+      en: "Article 99(4)(a): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover."
+
+  - id: high-risk-provider-keep-logs
+    title:
+      de: "Automatisch erzeugte Protokolle aufbewahren"
+      en: "Keep automatically generated logs"
+    action_required:
+      de: "Zu tun ist: Die vom System selbsttätig erzeugten Protokolle aufbewahren, soweit sie in Ihrer Kontrolle liegen. Die Frist richtet sich nach der Zweckbestimmung, beträgt aber mindestens sechs Monate, sofern nicht anderes Unionsrecht oder nationales Recht etwas anderes vorschreibt; das Datenschutzrecht ist dabei ausdrücklich genannt."
+      en: "What to do: Keep the logs automatically generated by the system, to the extent that they are under your control. The period depends on the intended purpose but is at least six months, unless other Union or national law provides otherwise; data protection law is expressly mentioned in this respect."
+    legal_basis:
+      - AI-Act/art-19
+      - AI-Act/art-19/para-1
+      - AI-Act/art-16/para-1-e
+    citation_text:
+      de: "Artikel 19 und Artikel 16 Buchstabe e KI-VO"
+      en: "Article 19 and Article 16(e) AI Act"
+    roles: [provider, product_manufacturer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Das Löschkonzept mit der festgelegten Aufbewahrungsfrist und Nachweise, dass die Protokolle für diesen Zeitraum tatsächlich vorliegen."
+      en: "The deletion policy with the defined retention period and evidence that the logs are actually available for this period."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe a: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes."
+      en: "Article 99(4)(a): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover."
+
+  - id: high-risk-provider-corrective-actions
+    title:
+      de: "Bei Nichtkonformität nachbessern und informieren"
+      en: "Correct and inform in case of non-conformity"
+    action_required:
+      de: "Zu tun ist: Haben Sie Grund zu der Annahme, dass ein von Ihnen bereitgestelltes System der Verordnung nicht entspricht, unverzüglich die erforderlichen Korrekturmassnahmen ergreifen, also die Konformität herstellen oder das System zurücknehmen, deaktivieren oder zurückrufen. Informieren Sie darüber die Händler und, soweit vorhanden, Betreiber, Bevollmächtigten und Einführer. Birgt das System ein Risiko und wird Ihnen das bewusst, untersuchen Sie unverzüglich die Ursachen, gegebenenfalls gemeinsam mit dem meldenden Betreiber, und informieren die zuständigen Marktüberwachungsbehörden sowie gegebenenfalls die notifizierte Stelle, die die Bescheinigung ausgestellt hat, insbesondere über Art der Nichtkonformität und bereits ergriffene Massnahmen."
+      en: "What to do: If you have reason to consider that a system you have made available does not conform to the Regulation, immediately take the necessary corrective actions, that is, bring it into conformity or withdraw, disable or recall it. Inform the distributors and, where applicable, the deployers, the authorised representative and importers accordingly. If the system presents a risk and you become aware of it, immediately investigate the causes, where applicable in collaboration with the reporting deployer, and inform the competent market surveillance authorities and, where applicable, the notified body that issued the certificate, in particular of the nature of the non-compliance and of any corrective action already taken."
+    legal_basis:
+      - AI-Act/art-20
+      - AI-Act/art-20/para-1
+      - AI-Act/art-20/para-2
+      - AI-Act/art-16/para-1-j
+    citation_text:
+      de: "Artikel 20 und Artikel 16 Buchstabe j KI-VO"
+      en: "Article 20 and Article 16(j) AI Act"
+    roles: [provider, product_manufacturer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Ein Vorfallsregister mit Datum der Kenntnis, Ursachenuntersuchung, ergriffenen Massnahmen und den Nachrichten an Händler, Betreiber und Behörden."
+      en: "An incident register with date of awareness, root cause investigation, measures taken and the communications to distributors, deployers and authorities."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe a: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes."
+      en: "Article 99(4)(a): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover."
+
+  - id: high-risk-provider-cooperate-with-authorities
+    title:
+      de: "Behörden auf begründete Anfrage Auskunft und Protokollzugang geben"
+      en: "Provide information and access to logs to authorities upon a reasoned request"
+    action_required:
+      de: "Zu tun ist: Auf begründete Anfrage einer zuständigen Behörde alle Informationen und Unterlagen vorlegen, die den Nachweis der Konformität erlauben, und zwar in einer Sprache, die die Behörde leicht versteht und die eine der von diesem Mitgliedstaat angegebenen Amtssprachen ist. Auf begründete Anfrage ausserdem Zugang zu den automatisch erzeugten Protokollen geben, soweit diese in Ihrer Kontrolle liegen. Die Behörde behandelt die Informationen vertraulich nach Artikel 78."
+      en: "What to do: Upon a reasoned request by a competent authority, provide all the information and documentation necessary to demonstrate conformity, in a language that can be easily understood by the authority and that is one of the official languages indicated by the Member State concerned. Upon a reasoned request, also give access to the automatically generated logs, to the extent that they are under your control. The authority treats the information as confidential under Article 78."
+    legal_basis:
+      - AI-Act/art-21
+      - AI-Act/art-21/para-1
+      - AI-Act/art-21/para-2
+      - AI-Act/art-16/para-1-k
+
+    also_cited:
+      - AI-Act/art-78
+    citation_text:
+      de: "Artikel 21 und Artikel 16 Buchstabe k KI-VO"
+      en: "Article 21 and Article 16(k) AI Act"
+    roles: [provider, product_manufacturer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Ein Auskunftsregister mit Anfragen, Fristen, übermittelten Unterlagen und der verwendeten Sprache."
+      en: "A register of information requests with the requests, deadlines, documents provided and the language used."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe a. Werden auf ein Auskunftsersuchen falsche, unvollständige oder irreführende Informationen gegeben, greift Artikel 99 Absatz 5: bis zu 7 500 000 Euro oder bis zu 1 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 99(4)(a). If incorrect, incomplete or misleading information is supplied in reply to a request, Article 99(5) applies: up to EUR 7 500 000 or up to 1 % of worldwide annual turnover, whichever is higher."
+
+  - id: high-risk-provider-accessibility
+    title:
+      de: "Barrierefreiheitsanforderungen erfüllen"
+      en: "Meet accessibility requirements"
+    action_required:
+      de: "Zu tun ist: Sicherstellen, dass das System die Barrierefreiheitsanforderungen erfüllt, die sich aus der Richtlinie (EU) 2016/2102 über den barrierefreien Zugang zu Websites und mobilen Anwendungen öffentlicher Stellen und aus der Richtlinie (EU) 2019/882 über die Barrierefreiheitsanforderungen für Produkte und Dienstleistungen ergeben."
+      en: "What to do: Ensure that the system complies with the accessibility requirements arising from Directive (EU) 2016/2102 on the accessibility of the websites and mobile applications of public sector bodies and from Directive (EU) 2019/882 on the accessibility requirements for products and services."
+    legal_basis:
+      - AI-Act/art-16/para-1-l
+    citation_text:
+      de: "Artikel 16 Buchstabe l KI-VO"
+      en: "Article 16(l) AI Act"
+    roles: [provider, product_manufacturer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Ein Barrierefreiheitsbericht mit Prüfergebnis je Anforderung der beiden Richtlinien."
+      en: "An accessibility report with the test result for each requirement of the two Directives."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe a: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes. Die genannten Richtlinien haben zusätzlich eigene Durchsetzungswege."
+      en: "Article 99(4)(a): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover. The Directives mentioned also have their own enforcement mechanisms."
+
+  - id: high-risk-provider-authorised-representative
+    title:
+      de: "Als Anbieter aus einem Drittland einen Bevollmächtigten in der Union benennen"
+      en: "As a provider from a third country, appoint an authorised representative in the Union"
+    only_when: [third_country_transfer]
+    on_unknown: with_caveat
+    caveat:
+      de: "Diese Pflicht trifft Sie nur, wenn Sie als Anbieter ausserhalb der Europaeischen Union sitzen. Haben Sie Ihren Sitz in der Union, entfaellt sie."
+      en: "This obligation applies to you only if you, as the provider, are established outside the European Union. If you are established in the Union, it does not apply."
+    action_required:
+      de: "Zu tun ist: Sitzen Sie ausserhalb der Europäischen Union, benennen Sie schriftlich einen in der Union niedergelassenen Bevollmächtigten, bevor Sie das System auf dem Unionsmarkt bereitstellen, und versetzen Sie ihn in die Lage, seinen Auftrag zu erfüllen. Der Auftrag muss ihn mindestens berechtigen: zu prüfen, ob EU-Konformitätserklärung und technische Dokumentation erstellt wurden und ein angemessenes Konformitätsbewertungsverfahren durchlaufen wurde; zehn Jahre lang Ihre Kontaktdaten, ein Exemplar der Erklärung, die technische Dokumentation und gegebenenfalls die Bescheinigung der notifizierten Stelle bereitzuhalten; Behörden auf begründete Anfrage Unterlagen und Protokollzugang zu geben; mit Behörden zusammenzuarbeiten; und die Registrierungspflichten zu erfüllen oder die Richtigkeit der Registerangaben sicherzustellen. Hält der Bevollmächtigte Sie für pflichtwidrig, beendet er den Auftrag und informiert Marktüberwachungsbehörde und notifizierte Stelle."
+      en: "What to do: If you are established outside the European Union, appoint by written mandate an authorised representative established in the Union before making the system available on the Union market, and enable it to perform its tasks. The mandate must empower it at least: to verify that the EU declaration of conformity and the technical documentation have been drawn up and that an appropriate conformity assessment procedure has been carried out; to keep at the disposal of the authorities for ten years your contact details, a copy of the declaration, the technical documentation and, where applicable, the certificate issued by the notified body; to give authorities, upon a reasoned request, documentation and access to logs; to cooperate with authorities; and to comply with the registration obligations or ensure that the registration information is correct. If the authorised representative considers that you are acting contrary to your obligations, it terminates the mandate and informs the market surveillance authority and the notified body."
+    legal_basis:
+      - AI-Act/art-22
+      - AI-Act/art-22/para-1
+      - AI-Act/art-22/para-2
+      - AI-Act/art-22/para-3
+      - AI-Act/art-22/para-3-a
+      - AI-Act/art-22/para-3-b
+      - AI-Act/art-22/para-3-c
+      - AI-Act/art-22/para-3-d
+      - AI-Act/art-22/para-3-e
+      - AI-Act/art-22/para-4
+    citation_text:
+      de: "Artikel 22 KI-VO"
+      en: "Article 22 AI Act"
+    roles: [provider, authorised_representative]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Der schriftliche Auftrag mit den Mindestaufgaben, die Kopie für die Behörden und der Nachweis, dass die Unterlagen beim Bevollmächtigten liegen."
+      en: "The written mandate with the minimum tasks, the copy for the authorities and evidence that the documents are held by the authorised representative."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe b nennt die Pflichten der Bevollmächtigten nach Artikel 22 ausdrücklich: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 99(4)(b) expressly names the obligations of authorised representatives under Article 22: up to EUR 15 000 000 or up to 3 % of worldwide annual turnover, whichever is higher."
+
+  - id: high-risk-provider-conformity-assessment
+    title:
+      de: "Konformitätsbewertungsverfahren vor dem Inverkehrbringen durchlaufen"
+      en: "Undergo the conformity assessment procedure before placing on the market"
+    action_required:
+      de: "Zu tun ist: Vor dem Inverkehrbringen oder der Inbetriebnahme das passende Konformitätsbewertungsverfahren durchlaufen. Bei biometrischen Systemen nach Anhang III Nummer 1 können Sie, wenn Sie harmonisierte Normen oder gemeinsame Spezifikationen vollständig angewandt haben, zwischen der internen Kontrolle nach Anhang VI und der Bewertung durch eine notifizierte Stelle nach Anhang VII wählen; gibt es keine solchen Normen oder haben Sie sie nicht oder nur teilweise angewandt, müssen Sie den Weg über die notifizierte Stelle nach Anhang VII gehen. Bei den Systemen nach Anhang III Nummern 2 bis 8 genügt die interne Kontrolle nach Anhang VI ohne notifizierte Stelle. Fällt das System unter die Produktvorschriften des Anhangs I Abschnitt A, folgen Sie den dortigen Verfahren und beziehen die Anforderungen dieser Verordnung ein. Bei einer wesentlichen Änderung ist das Verfahren erneut zu durchlaufen; vorab festgelegte und dokumentierte Änderungen weiterlernender Systeme gelten nicht als wesentliche Änderung."
+      en: "What to do: Before placing on the market or putting into service, carry out the appropriate conformity assessment procedure. For biometric systems under Annex III, point 1, if you have fully applied harmonised standards or common specifications, you may choose between internal control under Annex VI and assessment involving a notified body under Annex VII; if no such standards exist or you have not applied them or only applied them in part, you must follow the procedure involving a notified body under Annex VII. For the systems under Annex III, points 2 to 8, internal control under Annex VI without a notified body is sufficient. If the system falls under the product legislation of Annex I, Section A, follow the procedures laid down there and include the requirements of this Regulation. In the event of a substantial modification, the procedure must be carried out again; pre-determined and documented changes to systems that continue to learn are not a substantial modification."
+    legal_basis:
+      - AI-Act/art-43
+      - AI-Act/art-43/para-1
+      - AI-Act/art-43/para-2
+      - AI-Act/art-43/para-3
+      - AI-Act/art-43/para-4
+      - AI-Act/art-16/para-1-f
+    citation_text:
+      de: "Artikel 43 und Artikel 16 Buchstabe f KI-VO"
+      en: "Article 43 and Article 16(f) AI Act"
+    roles: [provider, product_manufacturer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Der Bericht über die interne Kontrolle oder die Bescheinigung der notifizierten Stelle, jeweils mit Datum vor dem Inverkehrbringen, und bei Änderungen der erneute Nachweis."
+      en: "The report on the internal control or the certificate of the notified body, in each case dated before placing on the market, and in the event of modifications the renewed evidence."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe a: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes."
+      en: "Article 99(4)(a): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover."
+
+  - id: high-risk-provider-eu-declaration-of-conformity
+    title:
+      de: "EU-Konformitätserklärung ausstellen und zehn Jahre bereithalten"
+      en: "Draw up an EU declaration of conformity and keep it available for ten years"
+    action_required:
+      de: "Zu tun ist: Für jedes Hochrisikosystem eine schriftliche, maschinenlesbare, physisch oder elektronisch unterzeichnete EU-Konformitätserklärung ausstellen und sie zehn Jahre ab dem Inverkehrbringen oder der Inbetriebnahme für die Behörden bereithalten. Aus ihr muss hervorgehen, für welches System sie gilt, und sie muss feststellen, dass das System die Anforderungen erfüllt; der Inhalt steht in Anhang V. Sie ist in eine Sprache zu übersetzen, die die Behörden der Mitgliedstaaten, in denen das System auf den Markt kommt, leicht verstehen. Mit der Ausstellung übernehmen Sie die Verantwortung für die Einhaltung der Anforderungen und halten die Erklärung aktuell. Schreiben auch andere Unionsvorschriften eine Konformitätserklärung vor, stellen Sie eine einzige gemeinsame Erklärung aus."
+      en: "What to do: For each high-risk system, draw up a written, machine-readable, physical or electronically signed EU declaration of conformity and keep it at the disposal of the authorities for ten years after placing on the market or putting into service. It must identify the system for which it has been drawn up and state that the system meets the requirements; its content is set out in Annex V. It must be translated into a language that can be easily understood by the authorities of the Member States in which the system is placed on the market. By drawing it up, you assume responsibility for compliance with the requirements and keep the declaration up to date. If other Union legislation also requires a declaration of conformity, draw up a single joint declaration."
+    legal_basis:
+      - AI-Act/art-47
+      - AI-Act/art-47/para-1
+      - AI-Act/art-47/para-2
+      - AI-Act/art-47/para-3
+      - AI-Act/art-47/para-4
+      - AI-Act/annex-V
+      - AI-Act/art-16/para-1-g
+    citation_text:
+      de: "Artikel 47 KI-VO mit Anhang V, dazu Artikel 16 Buchstabe g"
+      en: "Article 47 AI Act with Annex V, together with Article 16(g)"
+    roles: [provider, product_manufacturer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Die unterzeichnete Erklärung mit Datum, Systembezug und den Angaben des Anhangs V, dazu die Übersetzungen und der Ablageort für die Zehnjahresfrist."
+      en: "The signed declaration with date, reference to the system and the information set out in Annex V, together with the translations and the storage location for the ten-year period."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe a: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes."
+      en: "Article 99(4)(a): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover."
+
+  - id: high-risk-provider-ce-marking
+    title:
+      de: "CE-Kennzeichnung anbringen"
+      en: "Affix the CE marking"
+    action_required:
+      de: "Zu tun ist: Die CE-Kennzeichnung gut sichtbar, leserlich und dauerhaft am System anbringen; lässt die Art des Systems das nicht zu, auf der Verpackung oder in den Begleitunterlagen. Bei digital bereitgestellten Systemen darf eine digitale CE-Kennzeichnung nur verwendet werden, wenn sie über die Zugriffsoberfläche, einen leicht zugänglichen maschinenlesbaren Code oder andere elektronische Mittel leicht erreichbar ist. War eine notifizierte Stelle beteiligt, kommt deren Identifizierungsnummer hinzu; diese muss auch in Werbematerial stehen, das auf die Erfüllung der CE-Anforderungen hinweist."
+      en: "What to do: Affix the CE marking visibly, legibly and indelibly to the system; where the nature of the system does not allow this, to its packaging or accompanying documentation. For systems provided digitally, a digital CE marking may be used only if it can be easily accessed via the interface from which the system is accessed, via an easily accessible machine-readable code or via other electronic means. Where a notified body was involved, its identification number is added; it must also appear in any promotional material that mentions that the system fulfils the requirements for CE marking."
+    legal_basis:
+      - AI-Act/art-48
+      - AI-Act/art-48/para-1
+      - AI-Act/art-48/para-2
+      - AI-Act/art-48/para-3
+      - AI-Act/art-48/para-4
+      - AI-Act/art-16/para-1-h
+    citation_text:
+      de: "Artikel 48 und Artikel 16 Buchstabe h KI-VO"
+      en: "Article 48 and Article 16(h) AI Act"
+    roles: [provider, product_manufacturer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Foto oder Bildschirmaufnahme der angebrachten Kennzeichnung samt Identifizierungsnummer der notifizierten Stelle, soweit eine beteiligt war."
+      en: "Photo or screenshot of the affixed marking, including the identification number of the notified body where one was involved."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe a: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes. Eine fehlende oder falsch angebrachte CE-Kennzeichnung kann zusätzlich als formale Nichtkonformität nach Artikel 83 behandelt werden."
+      en: "Article 99(4)(a): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover. A missing or incorrectly affixed CE marking may additionally be treated as formal non-compliance under Article 83."
+
+  - id: high-risk-provider-eu-database-registration
+    title:
+      de: "System und sich selbst in der EU-Datenbank registrieren"
+      en: "Register the system and yourself in the EU database"
+    action_required:
+      de: "Zu tun ist: Vor dem Inverkehrbringen oder der Inbetriebnahme eines Systems aus Anhang III sich selbst und das System in der EU-Datenbank registrieren. Ausgenommen sind die Systeme nach Anhang III Nummer 2 (kritische Infrastruktur); diese werden auf nationaler Ebene registriert. Haben Sie ein System aus Anhang III nach Artikel 6 Absatz 3 als nicht hochriskant eingestuft, müssen Sie sich und dieses System ebenfalls registrieren. In den Bereichen Strafverfolgung, Migration, Asyl und Grenzkontrolle erfolgt die Registrierung in einem sicheren, nicht öffentlichen Teil der Datenbank mit eingeschränktem Datensatz."
+      en: "What to do: Before placing on the market or putting into service a system under Annex III, register yourself and the system in the EU database. Excepted are the systems under Annex III, point 2 (critical infrastructure); these are registered at national level. If you have classified a system under Annex III as not high-risk under Article 6(3), you must also register yourself and that system. In the areas of law enforcement, migration, asylum and border control management, registration takes place in a secure, non-public section of the database with a restricted set of data."
+    legal_basis:
+      - AI-Act/art-49
+      - AI-Act/art-49/para-1
+      - AI-Act/art-49/para-2
+      - AI-Act/art-49/para-4
+      - AI-Act/art-49/para-5
+      - AI-Act/annex-VIII
+      - AI-Act/art-16/para-1-i
+
+    also_cited:
+      - AI-Act/art-6/para-3
+    citation_text:
+      de: "Artikel 49 KI-VO mit Anhang VIII, dazu Artikel 16 Buchstabe i"
+      en: "Article 49 AI Act with Annex VIII, together with Article 16(i)"
+    roles: [provider, authorised_representative, product_manufacturer]
+    risk_classes: [high_risk_annex_iii, high_risk_exemption]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Der Registrierungsbeleg aus der EU-Datenbank mit Datum vor dem Inverkehrbringen und den Angaben nach Anhang VIII."
+      en: "The registration confirmation from the EU database dated before placing on the market, with the information set out in Annex VIII."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe a: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes."
+      en: "Article 99(4)(a): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover."
+
+  - id: high-risk-provider-post-market-monitoring
+    title:
+      de: "Das System nach dem Inverkehrbringen weiter beobachten"
+      en: "Keep monitoring the system after placing on the market"
+    action_required:
+      de: "Zu tun ist: Ein System zur Beobachtung nach dem Inverkehrbringen einrichten und dokumentieren, das zur Art der KI-Technik und zu den Risiken des Systems passt. Damit sammeln und bewerten Sie laufend Erfahrungen aus dem tatsächlichen Einsatz; die Ergebnisse fliessen in das Risikomanagement nach Artikel 9 zurück. Die Beobachtung stützt sich auf einen Plan, der Teil der technischen Dokumentation ist."
+      en: "What to do: Establish and document a post-market monitoring system that is proportionate to the nature of the AI technology and the risks of the system. With it you continuously collect and evaluate experience from actual use; the results feed back into risk management under Article 9. The monitoring is based on a plan that forms part of the technical documentation."
+    legal_basis:
+      - AI-Act/art-72
+      - AI-Act/art-72/para-1
+      - AI-Act/art-72/para-2
+      - AI-Act/art-72/para-3
+
+    also_cited:
+      - AI-Act/art-9
+    citation_text:
+      de: "Artikel 72 KI-VO"
+      en: "Article 72 AI Act"
+    roles: [provider, product_manufacturer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Der Plan für die Beobachtung nach dem Inverkehrbringen als Teil der technischen Dokumentation und die gesammelten Auswertungen mit Datum."
+      en: "The post-market monitoring plan as part of the technical documentation and the collected evaluations with dates."
+    on_infringement:
+      de: "Artikel 72 ist in Artikel 99 Absatz 4 nicht eigens aufgeführt; es greifen die von den Mitgliedstaaten nach Artikel 99 Absatz 1 festgelegten Sanktionen. Da das Beobachtungssystem nach Artikel 17 Absatz 1 Buchstabe h Bestandteil des Qualitätsmanagementsystems ist, kann ein Mangel zugleich als Verstoss gegen Artikel 16 gewertet werden."
+      en: "Article 72 is not specifically listed in Article 99(4); the penalties laid down by the Member States under Article 99(1) apply. Since the monitoring system is part of the quality management system under Article 17(1)(h), a deficiency may at the same time be regarded as an infringement of Article 16."
+
+  - id: high-risk-provider-report-serious-incidents
+    title:
+      de: "Schwerwiegende Vorfälle den Behörden melden"
+      en: "Report serious incidents to the authorities"
+    action_required:
+      de: "Zu tun ist: Einen schwerwiegenden Vorfall der Marktüberwachungsbehörde des Mitgliedstaats melden, in dem er sich ereignet hat. Gemeldet wird, sobald Sie den Zusammenhang zwischen System und Vorfall festgestellt haben oder er naheliegend wahrscheinlich ist, in jedem Fall spätestens 15 Tage nachdem Sie oder der Betreiber davon Kenntnis erlangt haben. Bei einem weitverbreiteten Verstoss oder einem Vorfall im Sinne des Artikels 3 Nummer 49 Buchstabe b gilt eine Frist von spätestens zwei Tagen. Ist ein Mensch gestorben, ist unverzüglich zu melden, spätestens zehn Tage nach Kenntniserlangung. Eine unvollständige Erstmeldung darf nachgereicht werden."
+      en: "What to do: Report a serious incident to the market surveillance authority of the Member State where it occurred. The report is made as soon as you have established the causal link between the system and the incident or its reasonable likelihood, and in any event not later than 15 days after you or the deployer become aware of it. In the event of a widespread infringement or an incident within the meaning of Article 3, point (49)(b), the deadline is not later than two days. In the event of a person's death, the report must be made immediately, and not later than ten days after becoming aware. An incomplete initial report may be supplemented later."
+    legal_basis:
+      - AI-Act/art-73
+      - AI-Act/art-73/para-1
+      - AI-Act/art-73/para-2
+      - AI-Act/art-73/para-3
+      - AI-Act/art-73/para-4
+      - AI-Act/art-73/para-5
+    citation_text:
+      de: "Artikel 73 KI-VO"
+      en: "Article 73 AI Act"
+    roles: [provider, product_manufacturer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Das Vorfallsregister mit Datum der Kenntniserlangung, Datum der Meldung, Empfängerbehörde und Nachreichungen, aus dem die Einhaltung der Fristen hervorgeht."
+      en: "The incident register with date of awareness, date of report, receiving authority and supplements, showing that the deadlines were met."
+    on_infringement:
+      de: "Artikel 73 ist in Artikel 99 Absatz 4 nicht eigens aufgeführt; es greifen die von den Mitgliedstaaten nach Artikel 99 Absatz 1 festgelegten Sanktionen. Das Meldeverfahren ist nach Artikel 17 Absatz 1 Buchstabe i zugleich Bestandteil des Qualitätsmanagementsystems."
+      en: "Article 73 is not specifically listed in Article 99(4); the penalties laid down by the Member States under Article 99(1) apply. Under Article 17(1)(i), the reporting procedure is at the same time part of the quality management system."
+
+  # ---------------------------------------------------------------
+  # Deployers of high-risk AI systems
+  # ---------------------------------------------------------------
+  - id: high-risk-deployer-use-per-instructions
+    title:
+      de: "Das System nur nach Betriebsanleitung verwenden"
+      en: "Use the system only in accordance with the instructions for use"
+    action_required:
+      de: "Zu tun ist: Geeignete technische und organisatorische Massnahmen treffen, damit das System so eingesetzt wird, wie es die beigefügte Betriebsanleitung vorsieht. In der Praxis heisst das: die Anleitung auswerten, daraus verbindliche Arbeitsanweisungen machen und den Einsatz darauf begrenzen."
+      en: "What to do: Take appropriate technical and organisational measures to ensure that the system is used in accordance with the accompanying instructions for use. In practice this means: evaluate the instructions, turn them into binding work instructions and limit use accordingly."
+    legal_basis:
+      - AI-Act/art-26
+      - AI-Act/art-26/para-1
+      - AI-Act/art-26/para-3
+    citation_text:
+      de: "Artikel 26 Absatz 1 KI-VO"
+      en: "Article 26(1) AI Act"
+    roles: [deployer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Die Betriebsanleitung in der ausgelieferten Fassung und die daraus abgeleitete interne Arbeitsanweisung mit Freigabedatum."
+      en: "The instructions for use in the version supplied and the internal work instruction derived from them, with approval date."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe e nennt die Betreiberpflichten nach Artikel 26 ausdrücklich: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 99(4)(e) expressly names the obligations of deployers under Article 26: up to EUR 15 000 000 or up to 3 % of worldwide annual turnover, whichever is higher."
+
+  - id: high-risk-deployer-assign-oversight
+    title:
+      de: "Menschliche Aufsicht namentlich zuweisen und unterstützen"
+      en: "Assign human oversight to named persons and support them"
+    action_required:
+      de: "Zu tun ist: Die menschliche Aufsicht natürlichen Personen übertragen, die die erforderliche Kompetenz, Ausbildung und Befugnis haben, und ihnen die erforderliche Unterstützung geben. Es genügt nicht, eine Rolle zu benennen: die Personen müssen fachlich in der Lage und befugt sein, in den Betrieb einzugreifen. Wie Sie Ihre Ressourcen dafür organisieren, bleibt Ihnen überlassen."
+      en: "What to do: Assign human oversight to natural persons who have the necessary competence, training and authority, and give them the necessary support. Naming a role is not enough: the persons must be professionally able and authorised to intervene in the operation. How you organise your resources for this is up to you."
+    legal_basis:
+      - AI-Act/art-26/para-2
+      - AI-Act/art-26/para-3
+    citation_text:
+      de: "Artikel 26 Absatz 2 KI-VO"
+      en: "Article 26(2) AI Act"
+    roles: [deployer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Namentliche Benennung der aufsichtsführenden Personen mit Befugnisnachweis und Schulungsbelegen."
+      en: "Designation by name of the persons assigned to oversight, with evidence of their authority and training records."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe e: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes."
+      en: "Article 99(4)(e): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover."
+
+  - id: high-risk-deployer-control-input-data
+    title:
+      de: "Für passende und repräsentative Eingabedaten sorgen"
+      en: "Ensure relevant and representative input data"
+    action_required:
+      de: "Zu tun ist: Soweit die Eingabedaten in Ihrer Kontrolle liegen, dafür sorgen, dass sie zur Zweckbestimmung des Systems passen und ausreichend repräsentativ sind. Prüfen Sie also vor dem Einsatz, welche Daten Sie hineingeben, ob sie den Vorgaben der Betriebsanleitung entsprechen und ob sie die Fälle abdecken, auf die Sie das System anwenden wollen."
+      en: "What to do: To the extent that the input data are under your control, ensure that they are relevant to the intended purpose of the system and sufficiently representative. So before use, check which data you feed in, whether they meet the specifications in the instructions for use and whether they cover the cases to which you intend to apply the system."
+    legal_basis:
+      - AI-Act/art-26/para-4
+    citation_text:
+      de: "Artikel 26 Absatz 4 KI-VO"
+      en: "Article 26(4) AI Act"
+    roles: [deployer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Beschreibung der Datenquellen mit Abgleich gegen die Anforderungen an die Eingabedaten aus der Betriebsanleitung."
+      en: "Description of the data sources, checked against the input data specifications in the instructions for use."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe e: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes."
+      en: "Article 99(4)(e): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover."
+
+  - id: high-risk-deployer-monitor-and-report
+    title:
+      de: "Betrieb überwachen, bei Risiko aussetzen und melden"
+      en: "Monitor operation, suspend and report in case of risk"
+    action_required:
+      de: "Zu tun ist: Den Betrieb anhand der Betriebsanleitung überwachen und den Anbieter nach Artikel 72 informieren. Haben Sie Grund zu der Annahme, dass die Nutzung nach Anleitung dazu führt, dass das System ein Risiko birgt, informieren Sie unverzüglich Anbieter oder Händler und die zuständige Marktüberwachungsbehörde und setzen die Verwendung aus. Stellen Sie einen schwerwiegenden Vorfall fest, informieren Sie unverzüglich zuerst den Anbieter, dann Einführer oder Händler und die zuständigen Marktüberwachungsbehörden. Erreichen Sie den Anbieter nicht, gilt Artikel 73 entsprechend, Sie melden dann also selbst mit den dortigen Fristen."
+      en: "What to do: Monitor operation on the basis of the instructions for use and inform the provider under Article 72. If you have reason to consider that use in accordance with the instructions may result in the system presenting a risk, inform the provider or distributor and the competent market surveillance authority without undue delay and suspend the use. If you identify a serious incident, immediately inform first the provider, and then the importer or distributor and the competent market surveillance authorities. If you cannot reach the provider, Article 73 applies mutatis mutandis, so you then report yourself within the deadlines set out there."
+    legal_basis:
+      - AI-Act/art-26/para-5
+      - AI-Act/art-73
+
+    also_cited:
+      - AI-Act/art-72
+    citation_text:
+      de: "Artikel 26 Absatz 5 KI-VO, dazu Artikel 73"
+      en: "Article 26(5) AI Act, together with Article 73"
+    roles: [deployer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Überwachungsaufzeichnungen, das Vorfallsregister mit Kenntnis- und Meldedatum und der Beleg, dass die Verwendung ausgesetzt wurde."
+      en: "Monitoring records, the incident register with date of awareness and date of report, and evidence that use was suspended."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe e: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes."
+      en: "Article 99(4)(e): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover."
+
+  - id: high-risk-deployer-keep-logs-six-months
+    title:
+      de: "Protokolle mindestens sechs Monate aufbewahren"
+      en: "Keep logs for at least six months"
+    action_required:
+      de: "Zu tun ist: Die vom System selbsttätig erzeugten Protokolle aufbewahren, soweit sie in Ihrer Kontrolle liegen. Die Frist muss zur Zweckbestimmung passen und beträgt mindestens sechs Monate, sofern nicht Unionsrecht oder nationales Recht etwas anderes bestimmt; das Datenschutzrecht ist ausdrücklich genannt. Legen Sie die Frist also schriftlich fest und stimmen Sie sie mit Ihrem Löschkonzept ab."
+      en: "What to do: Keep the logs automatically generated by the system, to the extent that they are under your control. The period must be appropriate to the intended purpose and is at least six months, unless Union or national law provides otherwise; data protection law is expressly mentioned. So set the period in writing and align it with your deletion policy."
+    legal_basis:
+      - AI-Act/art-26/para-6
+    citation_text:
+      de: "Artikel 26 Absatz 6 KI-VO"
+      en: "Article 26(6) AI Act"
+    roles: [deployer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Das Löschkonzept mit der festgelegten Frist und ein Stichprobennachweis, dass Protokolle aus den letzten sechs Monaten vorliegen."
+      en: "The deletion policy with the defined period and a sample check showing that logs from the last six months are available."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe e: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes."
+      en: "Article 99(4)(e): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover."
+
+  - id: high-risk-deployer-inform-workers
+    title:
+      de: "Beschäftigte und ihre Vertretungen vor dem Einsatz informieren"
+      en: "Inform workers and their representatives before use"
+    only_when: [employee_data, workplace_or_education]
+    on_unknown: with_caveat
+    caveat:
+      de: "Diese Pflicht greift, wenn Sie das System am Arbeitsplatz einsetzen und davon Beschaeftigte betroffen sind. Richtet sich Ihr System nur an Kunden oder an die Oeffentlichkeit, entfaellt sie."
+      en: "This obligation applies if you use the system at the workplace and workers are affected by it. If your system is aimed only at customers or the public, it does not apply."
+    action_required:
+      de: "Zu tun ist: Setzen Sie als Arbeitgeber ein Hochrisikosystem am Arbeitsplatz ein, informieren Sie vor der Inbetriebnahme oder Verwendung die Arbeitnehmervertreter und die betroffenen Beschäftigten darüber, dass sie der Verwendung dieses Systems unterliegen werden. Die Information erfolgt nach den Regeln und Gepflogenheiten, die auf Unionsebene und national für die Unterrichtung von Arbeitnehmern und ihren Vertretern gelten."
+      en: "What to do: If, as an employer, you use a high-risk system at the workplace, inform the workers' representatives and the affected workers, before putting it into service or using it, that they will be subject to the use of this system. The information is provided in accordance with the rules and procedures laid down in Union and national law and practice on information of workers and their representatives."
+    legal_basis:
+      - AI-Act/art-26/para-7
+    citation_text:
+      de: "Artikel 26 Absatz 7 KI-VO"
+      en: "Article 26(7) AI Act"
+    roles: [deployer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Das Informationsschreiben mit Datum, der Nachweis der Unterrichtung der Arbeitnehmervertretung und gegebenenfalls das Protokoll der Beteiligung."
+      en: "The information letter with date, evidence that the workers' representatives were informed and, where applicable, the minutes of their involvement."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe e: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes. Mitbestimmungsrechte nach nationalem Recht bleiben daneben bestehen."
+      en: "Article 99(4)(e): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover. Co-determination rights under national law continue to exist alongside."
+
+  - id: high-risk-deployer-inform-affected-persons
+    title:
+      de: "Betroffene Personen über den Einsatz informieren"
+      en: "Inform affected persons about the use"
+    action_required:
+      de: "Zu tun ist: Setzen Sie ein System aus Anhang III ein, das Entscheidungen über Menschen trifft oder solche Entscheidungen unterstützt, informieren Sie die betroffenen Personen darüber, dass sie der Verwendung dieses Systems unterliegen. Die Transparenzpflichten aus Artikel 50 bleiben daneben bestehen. Bei Einsatz zu Strafverfolgungszwecken gilt stattdessen Artikel 13 der Richtlinie (EU) 2016/680."
+      en: "What to do: If you use a system under Annex III that makes decisions about people or assists in making such decisions, inform the affected persons that they are subject to the use of this system. The transparency obligations under Article 50 continue to apply alongside. For use for the purposes of law enforcement, Article 13 of Directive (EU) 2016/680 applies instead."
+    legal_basis:
+      - AI-Act/art-26/para-11
+
+    also_cited:
+      - AI-Act/art-50
+      - AI-Act/art-13
+    citation_text:
+      de: "Artikel 26 Absatz 11 KI-VO"
+      en: "Article 26(11) AI Act"
+    roles: [deployer]
+    risk_classes: [high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Der Text des Hinweises, der Ort seiner Bereitstellung und das Datum, ab dem er ausgegeben wird."
+      en: "The text of the notice, where it is made available and the date from which it is issued."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe e: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes."
+      en: "Article 99(4)(e): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover."
+
+  - id: high-risk-deployer-cooperate-with-authorities
+    title:
+      de: "Mit den Behörden zusammenarbeiten"
+      en: "Cooperate with the authorities"
+    action_required:
+      de: "Zu tun ist: Bei allen Massnahmen mitwirken, die zuständige Behörden im Zusammenhang mit dem Hochrisikosystem zur Umsetzung der Verordnung ergreifen. Benennen Sie dafür eine Anlaufstelle im Haus und halten Sie die Unterlagen zum System greifbar."
+      en: "What to do: Cooperate in any action the competent authorities take in relation to the high-risk system to implement the Regulation. Designate an internal contact point for this and keep the documentation on the system at hand."
+    legal_basis:
+      - AI-Act/art-26/para-12
+    citation_text:
+      de: "Artikel 26 Absatz 12 KI-VO"
+      en: "Article 26(12) AI Act"
+    roles: [deployer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Benennung der Anlaufstelle und ein Register der Behördenkontakte mit Datum und Gegenstand."
+      en: "Designation of the contact point and a register of contacts with authorities with date and subject."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe e: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes. Falsche, unvollständige oder irreführende Auskünfte auf ein Auskunftsersuchen fallen unter Artikel 99 Absatz 5 mit bis zu 7 500 000 Euro oder bis zu 1 Prozent des weltweiten Jahresumsatzes."
+      en: "Article 99(4)(e): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover. Incorrect, incomplete or misleading information in reply to a request for information falls under Article 99(5), with up to EUR 7 500 000 or up to 1 % of worldwide annual turnover."
+
+  - id: high-risk-deployer-public-body-registration
+    title:
+      de: "Als Behörde oder Unionsstelle das System registrieren und ohne Registrierung nicht nutzen"
+      en: "As a public authority or Union body, register the system and do not use it without registration"
+    only_when: [public_body]
+    on_unknown: with_caveat
+    caveat:
+      de: "Diese Pflicht trifft nur Behoerden, Einrichtungen des oeffentlichen Rechts und Organe der Union sowie die in deren Auftrag handelnden Stellen. Private Unternehmen sind davon nicht betroffen."
+      en: "This obligation applies only to public authorities, bodies governed by public law and Union institutions, as well as the entities acting on their behalf. Private companies are not affected by it."
+    action_required:
+      de: "Zu tun ist: Sind Sie eine Behörde, ein Organ, eine Einrichtung oder sonstige Stelle der Union oder handeln Sie in deren Namen, registrieren Sie sich vor der Inbetriebnahme oder Verwendung eines Systems aus Anhang III in der EU-Datenbank, wählen das System aus und registrieren es dort. Ausgenommen sind die Systeme nach Anhang III Nummer 2. Stellen Unionsstellen fest, dass das geplante System nicht in der EU-Datenbank registriert ist, dürfen sie es nicht verwenden und informieren Anbieter oder Händler."
+      en: "What to do: If you are a public authority or a Union institution, body, office or agency, or act on their behalf, register yourself in the EU database before putting into service or using a system under Annex III, select the system and register it there. Excepted are the systems under Annex III, point 2. If Union bodies find that the planned system is not registered in the EU database, they must not use it and inform the provider or distributor."
+    legal_basis:
+      - AI-Act/art-26/para-8
+      - AI-Act/art-49/para-3
+    citation_text:
+      de: "Artikel 26 Absatz 8 und Artikel 49 Absatz 3 KI-VO"
+      en: "Article 26(8) and Article 49(3) AI Act"
+    roles: [deployer]
+    risk_classes: [high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Der Registrierungsbeleg aus der EU-Datenbank mit Datum vor der ersten Verwendung."
+      en: "The registration confirmation from the EU database dated before the first use."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe e: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes. Für Organe, Einrichtungen und sonstige Stellen der Union richtet sich die Geldbusse nach Artikel 100."
+      en: "Article 99(4)(e): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover. For Union institutions, bodies, offices and agencies, the administrative fine is governed by Article 100."
+
+  - id: high-risk-deployer-post-remote-biometric-authorisation
+    title:
+      de: "Nachträgliche biometrische Fernidentifizierung nur mit Genehmigung und Dokumentation"
+      en: "Post-remote biometric identification only with authorisation and documentation"
+    only_when_all: [biometrics, law_enforcement_purpose]
+    on_unknown: omit
+    action_required:
+      de: "Zu tun ist: Verwenden Sie ein System zur nachträglichen biometrischen Fernidentifizierung bei der gezielten Suche nach einer verdächtigen oder verurteilten Person, beantragen Sie die Genehmigung vorab oder unverzüglich, spätestens binnen 48 Stunden, bei einer Justizbehörde oder einer Verwaltungsbehörde mit bindender, gerichtlich nachprüfbarer Entscheidung. Ausgenommen ist die erstmalige Identifizierung eines möglichen Verdächtigen auf Grundlage objektiver und nachprüfbarer Tatsachen mit unmittelbarem Bezug zur Straftat. Wird die Genehmigung abgelehnt, ist die Verwendung sofort einzustellen und die zugehörigen personenbezogenen Daten zu löschen. Jede Verwendung ist in der Polizeiakte zu dokumentieren und auf Anfrage der Marktüberwachungsbehörde und der nationalen Datenschutzbehörde vorzulegen; zusätzlich sind diesen Behörden Jahresberichte vorzulegen. Keine Entscheidung mit nachteiliger Rechtsfolge darf allein auf der Ausgabe eines solchen Systems beruhen."
+      en: "What to do: If you use a post-remote biometric identification system in the targeted search for a person suspected or convicted of a criminal offence, request authorisation in advance or without undue delay, at the latest within 48 hours, from a judicial authority or an administrative authority whose decision is binding and subject to judicial review. Excepted is the initial identification of a potential suspect based on objective and verifiable facts directly linked to the offence. If authorisation is rejected, use must stop immediately and the related personal data must be deleted. Each use must be documented in the relevant police file and made available to the market surveillance authority and the national data protection authority upon request; in addition, annual reports must be submitted to these authorities. No decision that produces an adverse legal effect may be taken based solely on the output of such a system."
+    legal_basis:
+      - AI-Act/art-26/para-10
+    citation_text:
+      de: "Artikel 26 Absatz 10 KI-VO"
+      en: "Article 26(10) AI Act"
+    roles: [deployer]
+    risk_classes: [high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Genehmigungsantrag und Entscheidung, der Eintrag in der Polizeiakte je Verwendung, der Löschnachweis bei Ablehnung und die Jahresberichte an die beiden Behörden."
+      en: "Request for authorisation and the decision, the entry in the police file for each use, evidence of deletion in case of rejection and the annual reports to both authorities."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe e: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes. Die Vorgaben des Datenschutzrechts zur Verarbeitung biometrischer Daten bleiben daneben anwendbar."
+      en: "Article 99(4)(e): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover. The requirements of data protection law on the processing of biometric data continue to apply alongside."
+
+  - id: high-risk-deployer-fundamental-rights-impact-assessment
+    title:
+      de: "Grundrechte-Folgenabschätzung vor der ersten Verwendung"
+      en: "Fundamental rights impact assessment before first use"
+    action_required:
+      de: "Zu tun ist: Vor der Inbetriebnahme abschätzen, welche Auswirkungen die Verwendung auf die Grundrechte haben kann. Diese Pflicht trifft nicht jeden Betreiber, sondern drei Gruppen: Einrichtungen des öffentlichen Rechts; private Einrichtungen, die öffentliche Dienste erbringen; und alle Betreiber von Systemen zur Kreditwürdigkeitsprüfung sowie zur Risikobewertung und Preisbildung bei Lebens- und Krankenversicherungen (Anhang III Nummer 5 Buchstaben b und c). Ausgenommen sind Systeme im Bereich kritische Infrastruktur (Anhang III Nummer 2). Die Abschätzung beschreibt die betroffenen Verfahren, Zeitraum und Häufigkeit der Verwendung, die betroffenen Personengruppen, die konkreten Schadensrisiken, die Umsetzung der menschlichen Aufsicht und die Massnahmen samt interner Unternehmensführung und Beschwerdewegen, falls ein Risiko eintritt. Die Pflicht gilt für die erste Verwendung; in ähnlichen Fällen dürfen Sie sich auf früher durchgeführte Abschätzungen stützen und müssen aktualisieren, wenn sich etwas ändert. Das Ergebnis ist der Marktüberwachungsbehörde mit dem Musterfragebogen des Büro für Künstliche Intelligenz mitzuteilen."
+      en: "What to do: Before putting into service, assess the impact that the use may have on fundamental rights. This obligation does not apply to every deployer but to three groups: bodies governed by public law; private entities providing public services; and all deployers of systems for evaluating creditworthiness and for risk assessment and pricing in life and health insurance (Annex III, point 5(b) and (c)). Excepted are systems in the area of critical infrastructure (Annex III, point 2). The assessment describes the processes concerned, the period of time and frequency of use, the categories of persons affected, the specific risks of harm, the implementation of human oversight, and the measures, including internal governance and complaint mechanisms, to be taken if a risk materialises. The obligation applies to the first use; in similar cases you may rely on previously conducted assessments and must update them if something changes. The result must be notified to the market surveillance authority using the questionnaire template of the AI Office."
+    legal_basis:
+      - AI-Act/art-27
+      - AI-Act/art-27/para-1
+      - AI-Act/art-27/para-1-a
+      - AI-Act/art-27/para-1-b
+      - AI-Act/art-27/para-1-c
+      - AI-Act/art-27/para-1-d
+      - AI-Act/art-27/para-1-e
+      - AI-Act/art-27/para-1-f
+      - AI-Act/art-27/para-2
+      - AI-Act/art-27/para-3
+      - AI-Act/annex-III/pt-5
+    citation_text:
+      de: "Artikel 27 KI-VO, dazu Anhang III Nummer 5"
+      en: "Article 27 AI Act, together with Annex III, point 5"
+    roles: [deployer]
+    risk_classes: [high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Die schriftliche Abschätzung mit allen sechs Bestandteilen, das Datum vor der ersten Verwendung, der ausgefüllte Musterfragebogen und die Mitteilung an die Marktüberwachungsbehörde."
+      en: "The written assessment with all six elements, dated before the first use, the completed questionnaire template and the notification to the market surveillance authority."
+    on_infringement:
+      de: "Artikel 27 ist in Artikel 99 Absatz 4 nicht eigens aufgeführt; es greifen die von den Mitgliedstaaten nach Artikel 99 Absatz 1 festgelegten Sanktionen."
+      en: "Article 27 is not specifically listed in Article 99(4); the penalties laid down by the Member States under Article 99(1) apply."
+
+  - id: high-risk-deployer-reuse-for-data-protection-impact-assessment
+    title:
+      de: "Anbieterinformationen für die Datenschutz-Folgenabschätzung verwenden"
+      en: "Use provider information for the data protection impact assessment"
+    action_required:
+      de: "Zu tun ist: Müssen Sie eine Datenschutz-Folgenabschätzung durchführen, verwenden Sie dafür die Informationen, die der Anbieter nach Artikel 13 bereitgestellt hat, also vor allem die Betriebsanleitung. Eine bereits durchgeführte Datenschutz-Folgenabschätzung kann Teile der Grundrechte-Folgenabschätzung abdecken; diese ergänzt sie dann, ersetzt sie aber nicht."
+      en: "What to do: If you have to carry out a data protection impact assessment, use the information provided by the provider under Article 13 for it, above all the instructions for use. A data protection impact assessment already conducted may cover parts of the fundamental rights impact assessment; the latter then complements it but does not replace it."
+    legal_basis:
+      - AI-Act/art-26/para-9
+      - AI-Act/art-27/para-4
+
+    also_cited:
+      - AI-Act/art-13
+    citation_text:
+      de: "Artikel 26 Absatz 9 und Artikel 27 Absatz 4 KI-VO"
+      en: "Article 26(9) and Article 27(4) AI Act"
+    roles: [deployer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Die Datenschutz-Folgenabschätzung mit nachvollziehbaren Verweisen auf die Angaben der Betriebsanleitung und die Verzahnung mit der Grundrechte-Folgenabschätzung."
+      en: "The data protection impact assessment with traceable references to the information in the instructions for use and its linkage with the fundamental rights impact assessment."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe e für die Betreiberpflichten nach Artikel 26. Für die Datenschutz-Folgenabschätzung selbst gilt der Bussgeldrahmen des Artikels 83 der Datenschutz-Grundverordnung."
+      en: "Article 99(4)(e) for the obligations of deployers under Article 26. For the data protection impact assessment itself, the framework of fines of Article 83 of the General Data Protection Regulation applies."
+
+  - id: high-risk-deployer-explanation-on-request
+    title:
+      de: "Betroffenen die Entscheidung auf Verlangen erklären"
+      en: "Explain the decision to affected persons on request"
+    action_required:
+      de: "Zu tun ist: Hat eine Person von einer Entscheidung Nachteile, die Sie auf Grundlage der Ausgabe eines Systems aus Anhang III getroffen haben, und hat diese Entscheidung rechtliche Wirkung oder beeinträchtigt sie die Person in ähnlicher Weise erheblich hinsichtlich Gesundheit, Sicherheit oder Grundrechten, dann hat die Person Anspruch auf eine klare und aussagekräftige Erläuterung. Zu erklären sind die Rolle des KI-Systems im Entscheidungsprozess und die wichtigsten Elemente der getroffenen Entscheidung. Ausgenommen sind Systeme nach Anhang III Nummer 2. Richten Sie dafür einen Antwortweg ein und halten Sie eine verständliche Erläuterung bereit."
+      en: "What to do: If a person is adversely affected by a decision you have taken on the basis of the output of a system under Annex III, and that decision produces legal effects or similarly significantly affects the person with regard to their health, safety or fundamental rights, then the person has the right to a clear and meaningful explanation. What must be explained is the role of the AI system in the decision-making procedure and the main elements of the decision taken. Excepted are systems under Annex III, point 2. Set up a response channel for this and keep an understandable explanation ready."
+    legal_basis:
+      - AI-Act/art-86
+      - AI-Act/art-86/para-1
+      - AI-Act/art-86/para-2
+      - AI-Act/art-86/para-3
+    citation_text:
+      de: "Artikel 86 KI-VO"
+      en: "Article 86 AI Act"
+    roles: [deployer]
+    risk_classes: [high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Ein Register der Erläuterungsverlangen mit Eingangsdatum, Antwortdatum und der erteilten Erläuterung, dazu die Mustererläuterung je Anwendungsfall."
+      en: "A register of requests for explanation with date of receipt, date of reply and the explanation given, together with the template explanation for each use case."
+    on_infringement:
+      de: "Artikel 86 ist in Artikel 99 Absatz 4 nicht eigens aufgeführt; es greifen die von den Mitgliedstaaten nach Artikel 99 Absatz 1 festgelegten Sanktionen. Die Betroffenen können sich ausserdem nach Artikel 85 bei einer Marktüberwachungsbehörde beschweren."
+      en: "Article 86 is not specifically listed in Article 99(4); the penalties laid down by the Member States under Article 99(1) apply. Affected persons can also lodge a complaint with a market surveillance authority under Article 85."
+
+  # ---------------------------------------------------------------
+  # Importers, distributors, change of role
+  # ---------------------------------------------------------------
+  - id: high-risk-importer-verification
+    title:
+      de: "Als Einführer vor dem Inverkehrbringen prüfen"
+      en: "As an importer, check before placing on the market"
+    action_required:
+      de: "Zu tun ist: Vor dem Inverkehrbringen prüfen, ob der Anbieter das Konformitätsbewertungsverfahren durchgeführt und die technische Dokumentation nach Artikel 11 und Anhang IV erstellt hat, ob das System die CE-Kennzeichnung trägt und ihm EU-Konformitätserklärung und Betriebsanleitung beiliegen und ob ein Anbieter aus einem Drittland einen Bevollmächtigten benannt hat. Haben Sie Grund zu der Annahme, dass das System nicht konform oder gefälscht ist oder gefälschte Unterlagen beiliegen, bringen Sie es erst nach Herstellung der Konformität in Verkehr; birgt es ein Risiko, informieren Sie Anbieter, Bevollmächtigte und Marktüberwachungsbehörden. Geben Sie Ihren Namen und eine Kontaktanschrift auf der Verpackung oder in den Begleitunterlagen an, sorgen Sie für konformitätserhaltende Lagerung und Transport, halten Sie zehn Jahre lang ein Exemplar der Bescheinigung der notifizierten Stelle sowie gegebenenfalls Betriebsanleitung und EU-Konformitätserklärung bereit und arbeiten Sie mit den Behörden zusammen."
+      en: "What to do: Before placing on the market, verify that the provider has carried out the conformity assessment procedure and drawn up the technical documentation under Article 11 and Annex IV, that the system bears the CE marking and is accompanied by the EU declaration of conformity and the instructions for use, and that a provider from a third country has appointed an authorised representative. If you have reason to consider that the system is not in conformity or is falsified or accompanied by falsified documentation, place it on the market only after it has been brought into conformity; if it presents a risk, inform the provider, the authorised representative and the market surveillance authorities. Indicate your name and a contact address on the packaging or in the accompanying documentation, ensure that storage and transport do not jeopardise conformity, keep for ten years a copy of the certificate issued by the notified body and, where applicable, the instructions for use and the EU declaration of conformity, and cooperate with the authorities."
+    legal_basis:
+      - AI-Act/art-23
+      - AI-Act/art-23/para-1
+      - AI-Act/art-23/para-1-a
+      - AI-Act/art-23/para-1-b
+      - AI-Act/art-23/para-1-c
+      - AI-Act/art-23/para-1-d
+      - AI-Act/art-23/para-2
+      - AI-Act/art-23/para-3
+      - AI-Act/art-23/para-4
+      - AI-Act/art-23/para-5
+      - AI-Act/art-23/para-6
+      - AI-Act/art-23/para-7
+
+    also_cited:
+      - AI-Act/art-11
+    citation_text:
+      de: "Artikel 23 KI-VO"
+      en: "Article 23 AI Act"
+    roles: [importer]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Eine Eingangsprüfliste je Lieferung mit den vier Prüfpunkten, der Kennzeichnungsnachweis und das Aktenverzeichnis für die zehnjährige Aufbewahrung."
+      en: "An incoming inspection checklist for each delivery with the four check points, evidence of the marking and the records index for the ten-year retention."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe c nennt die Pflichten der Einführer nach Artikel 23 ausdrücklich: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 99(4)(c) expressly names the obligations of importers under Article 23: up to EUR 15 000 000 or up to 3 % of worldwide annual turnover, whichever is higher."
+
+  - id: high-risk-distributor-verification
+    title:
+      de: "Als Händler vor der Bereitstellung prüfen"
+      en: "As a distributor, check before making available"
+    action_required:
+      de: "Zu tun ist: Vor der Bereitstellung auf dem Markt prüfen, ob das System die CE-Kennzeichnung trägt, ob eine Kopie der EU-Konformitätserklärung und die Betriebsanleitung beiliegen und ob Anbieter und gegebenenfalls Einführer ihre Kennzeichnungs- und Angabepflichten erfüllt haben. Haben Sie Grund zu der Annahme, dass das System die Anforderungen nicht erfüllt, stellen Sie es erst nach Herstellung der Konformität bereit und informieren bei Risiko Anbieter oder Einführer. Sorgen Sie für konformitätserhaltende Lagerung und Transport. Erfahren Sie nach der Bereitstellung von einer Nichtkonformität, ergreifen Sie die erforderlichen Korrekturmassnahmen oder sorgen dafür, dass Anbieter, Einführer oder ein anderer Akteur sie ergreift; birgt das System ein Risiko, informieren Sie unverzüglich Anbieter oder Einführer und die zuständigen Behörden mit ausführlichen Angaben. Auf begründete Anfrage legen Sie Ihre Unterlagen vor und arbeiten mit den Behörden zusammen."
+      en: "What to do: Before making the system available on the market, verify that it bears the CE marking, that it is accompanied by a copy of the EU declaration of conformity and the instructions for use, and that the provider and, where applicable, the importer have complied with their marking and information obligations. If you have reason to consider that the system does not meet the requirements, make it available only after it has been brought into conformity and, if it presents a risk, inform the provider or importer. Ensure that storage and transport do not jeopardise conformity. If you learn of a non-conformity after making the system available, take the necessary corrective actions or ensure that the provider, importer or another operator takes them; if the system presents a risk, immediately inform the provider or importer and the competent authorities, giving details. Upon a reasoned request, provide your documentation and cooperate with the authorities."
+    legal_basis:
+      - AI-Act/art-24
+      - AI-Act/art-24/para-1
+      - AI-Act/art-24/para-2
+      - AI-Act/art-24/para-3
+      - AI-Act/art-24/para-4
+      - AI-Act/art-24/para-5
+      - AI-Act/art-24/para-6
+    citation_text:
+      de: "Artikel 24 KI-VO"
+      en: "Article 24 AI Act"
+    roles: [distributor]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Eine Prüfliste je Produkt vor der Bereitstellung und ein Register der Korrekturmassnahmen und Behördeninformationen."
+      en: "A checklist for each product before it is made available and a register of corrective actions and information given to authorities."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe d nennt die Pflichten der Händler nach Artikel 24 ausdrücklich: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 99(4)(d) expressly names the obligations of distributors under Article 24: up to EUR 15 000 000 or up to 3 % of worldwide annual turnover, whichever is higher."
+
+  - id: role-change-to-provider
+    title:
+      de: "Erkennen, wann man selbst zum Anbieter wird"
+      en: "Recognise when you become a provider yourself"
+    action_required:
+      de: "Zu tun ist: Prüfen, ob Sie durch Ihr eigenes Handeln zum Anbieter werden und damit alle Pflichten des Artikels 16 übernehmen. Das geschieht in drei Fällen: wenn Sie ein bereits bereitgestelltes Hochrisikosystem mit Ihrem Namen oder Ihrer Handelsmarke versehen; wenn Sie es wesentlich verändern und es weiterhin ein Hochrisikosystem bleibt; oder wenn Sie die Zweckbestimmung eines Systems, auch eines Systems mit allgemeinem Verwendungszweck, so verändern, dass es dadurch zum Hochrisikosystem wird. In diesen Fällen gilt der Erstanbieter nicht mehr als Anbieter dieses Systems; er muss eng mit Ihnen zusammenarbeiten und die erforderlichen Informationen und den technischen Zugang bereitstellen, es sei denn, er hat eindeutig festgelegt, dass sein System nicht in ein Hochrisikosystem umgewandelt werden darf. Vereinbaren Sie ausserdem schriftlich mit Dritten, die Instrumente, Dienste, Komponenten oder Verfahren für Ihr Hochrisikosystem liefern, welche Informationen, Fähigkeiten und Unterstützung sie beisteuern; für Komponenten unter freier und quelloffener Lizenz, die keine Modelle mit allgemeinem Verwendungszweck sind, gilt das nicht."
+      en: "What to do: Check whether your own actions make you a provider, so that you take on all the obligations of Article 16. This happens in three cases: if you put your name or trade mark on a high-risk system already made available; if you make a substantial modification to it and it remains a high-risk system; or if you modify the intended purpose of a system, including a general-purpose system, in such a way that it becomes a high-risk system. In these cases, the initial provider is no longer considered the provider of that system; it must closely cooperate with you and make available the necessary information and technical access, unless it has clearly specified that its system is not to be changed into a high-risk system. In addition, agree in writing with third parties that supply tools, services, components or processes for your high-risk system which information, capabilities and assistance they contribute; this does not apply to components under a free and open-source licence that are not general-purpose AI models."
+    legal_basis:
+      - AI-Act/art-25
+      - AI-Act/art-25/para-1
+      - AI-Act/art-25/para-1-a
+      - AI-Act/art-25/para-1-b
+      - AI-Act/art-25/para-1-c
+      - AI-Act/art-25/para-2
+      - AI-Act/art-25/para-4
+      - AI-Act/art-16
+    citation_text:
+      de: "Artikel 25 KI-VO"
+      en: "Article 25 AI Act"
+    roles: [distributor, importer, deployer, provider]
+    risk_classes: [high_risk_annex_i, high_risk_annex_iii]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Eine dokumentierte Rollenprüfung je System und Änderung sowie die schriftlichen Vereinbarungen mit Zulieferern."
+      en: "A documented role assessment for each system and modification, and the written agreements with suppliers."
+    on_infringement:
+      de: "Wer nach Artikel 25 als Anbieter gilt, haftet für die Anbieterpflichten des Artikels 16; Artikel 99 Absatz 4 Buchstabe a sieht bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes vor, je nachdem welcher Betrag höher ist."
+      en: "Anyone who is considered a provider under Article 25 is liable for the provider obligations of Article 16; Article 99(4)(a) provides for up to EUR 15 000 000 or up to 3 % of worldwide annual turnover, whichever is higher."
+
+  - id: product-manufacturer-as-provider
+    title:
+      de: "Als Produkthersteller die Anbieterpflichten übernehmen"
+      en: "As a product manufacturer, take on the provider obligations"
+    only_when: [embedded_in_product]
+    on_unknown: with_caveat
+    caveat:
+      de: "Diese Pflicht trifft Sie nur, wenn Ihr KI-System als Sicherheitsbauteil in ein Produkt eingebaut ist, das unter eine der Rechtsvorschriften des Anhangs I faellt - etwa eine Maschine, ein Medizinprodukt oder ein Fahrzeug."
+      en: "This obligation applies to you only if your AI system is built into a product as a safety component that falls under one of the legal acts listed in Annex I - for example a machine, a medical device or a vehicle."
+    action_required:
+      de: "Zu tun ist: Ist das Hochrisikosystem ein Sicherheitsbauteil eines Produkts, das unter die Harmonisierungsrechtsvorschriften des Anhangs I Abschnitt A fällt, gelten Sie als Produkthersteller in zwei Fällen selbst als Anbieter und tragen die Pflichten des Artikels 16: wenn das System zusammen mit dem Produkt unter Ihrem Namen oder Ihrer Handelsmarke in Verkehr gebracht wird, oder wenn es unter Ihrem Namen oder Ihrer Handelsmarke in Betrieb genommen wird, nachdem das Produkt in Verkehr gebracht wurde."
+      en: "What to do: If the high-risk system is a safety component of a product covered by the Union harmonisation legislation listed in Annex I, Section A, you as the product manufacturer are yourself considered the provider in two cases and bear the obligations of Article 16: if the system is placed on the market together with the product under your name or trade mark, or if it is put into service under your name or trade mark after the product has been placed on the market."
+    legal_basis:
+      - AI-Act/art-25/para-3
+      - AI-Act/art-25/para-3-a
+      - AI-Act/art-25/para-3-b
+      - AI-Act/annex-I
+      - AI-Act/art-16
+    citation_text:
+      de: "Artikel 25 Absatz 3 KI-VO mit Anhang I"
+      en: "Article 25(3) AI Act with Annex I"
+    roles: [product_manufacturer]
+    risk_classes: [high_risk_annex_i]
+    severity: obligation
+    applies_from: 2027-08-02
+    evidence_of_compliance:
+      de: "Die Zuordnung des Produkts zu einer Rechtsvorschrift des Anhangs I und der Nachweis, dass die Anbieterpflichten des Artikels 16 für das eingebaute System erfüllt sind."
+      en: "The assignment of the product to a legal act listed in Annex I and evidence that the provider obligations of Article 16 are met for the built-in system."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe a: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 99(4)(a): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover, whichever is higher."
+
+  # ---------------------------------------------------------------
+  # Transparency obligations (Article 50)
+  # ---------------------------------------------------------------
+  - id: transparency-provider-disclose-interaction
+    title:
+      de: "Offenlegen, dass der Mensch mit einem KI-System spricht"
+      en: "Disclose that the person is talking to an AI system"
+    only_when: [interacts_with_people]
+    on_unknown: omit
+    action_required:
+      de: "Zu tun ist: Ist Ihr System für die direkte Interaktion mit Menschen gedacht, bauen Sie es so, dass die betreffenden Personen erfahren, dass sie mit einem KI-System zu tun haben. Das entfällt nur, wenn es aus Sicht einer angemessen informierten, aufmerksamen und verständigen Person nach den Umständen offensichtlich ist. Für gesetzlich zugelassene Systeme zur Aufdeckung, Verhütung, Ermittlung oder Verfolgung von Straftaten gilt die Pflicht nicht, sofern Schutzvorkehrungen für die Rechte Dritter bestehen und das System nicht der Öffentlichkeit zur Anzeige einer Straftat offensteht."
+      en: "What to do: If your system is intended to interact directly with people, build it so that the persons concerned are informed that they are interacting with an AI system. This is not required only where it is obvious from the point of view of a reasonably well-informed, observant and circumspect person, taking into account the circumstances. The obligation does not apply to systems authorised by law to detect, prevent, investigate or prosecute criminal offences, provided that safeguards for the rights of third parties are in place and the system is not available to the public to report a criminal offence."
+    legal_basis:
+      - AI-Act/art-50
+      - AI-Act/art-50/para-1
+      - AI-Act/art-50/para-5
+    citation_text:
+      de: "Artikel 50 Absatz 1 KI-VO"
+      en: "Article 50(1) AI Act"
+    roles: [provider]
+    risk_classes: [transparency]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Bildschirmaufnahme oder Tonmitschnitt des Hinweises zum Zeitpunkt der ersten Interaktion, dazu der Barrierefreiheitsnachweis."
+      en: "Screenshot or audio recording of the notice at the time of the first interaction, together with evidence of accessibility."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe g nennt die Transparenzpflichten nach Artikel 50 ausdrücklich: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 99(4)(g) expressly names the transparency obligations under Article 50: up to EUR 15 000 000 or up to 3 % of worldwide annual turnover, whichever is higher."
+
+  - id: transparency-provider-mark-synthetic-content
+    title:
+      de: "Künstlich erzeugte Inhalte maschinenlesbar kennzeichnen"
+      en: "Mark artificially generated content in a machine-readable way"
+    only_when: [generates_content, generates_deepfakes]
+    on_unknown: omit
+    action_required:
+      de: "Zu tun ist: Erzeugt Ihr System synthetische Audio-, Bild-, Video- oder Textinhalte, kennzeichnen Sie die Ausgaben in einem maschinenlesbaren Format und machen sie als künstlich erzeugt oder manipuliert erkennbar. Die technischen Lösungen müssen, soweit technisch möglich, wirksam, interoperabel, belastbar und zuverlässig sein; dabei dürfen Sie die Besonderheiten der Inhaltsart, die Umsetzungskosten und den Stand der Technik berücksichtigen. Die Pflicht entfällt, soweit das System nur eine unterstützende Funktion für die Standardbearbeitung erfüllt oder die Eingabedaten und ihre Bedeutung nicht wesentlich verändert, sowie bei gesetzlich zugelassener Verwendung zur Aufdeckung, Verhütung, Ermittlung oder Verfolgung von Straftaten."
+      en: "What to do: If your system generates synthetic audio, image, video or text content, mark the outputs in a machine-readable format and make them detectable as artificially generated or manipulated. The technical solutions must be effective, interoperable, robust and reliable as far as technically feasible; in doing so you may take into account the specificities of the type of content, the costs of implementation and the state of the art. The obligation does not apply to the extent that the system performs only an assistive function for standard editing or does not substantially alter the input data and their semantics, or where use is authorised by law to detect, prevent, investigate or prosecute criminal offences."
+    legal_basis:
+      - AI-Act/art-50/para-2
+    citation_text:
+      de: "Artikel 50 Absatz 2 KI-VO"
+      en: "Article 50(2) AI Act"
+    roles: [provider]
+    risk_classes: [transparency, gpai, gpai_systemic_risk]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Beschreibung des Kennzeichnungsverfahrens und Beispielausgaben, aus denen die maschinenlesbare Markierung auslesbar ist."
+      en: "Description of the marking procedure and sample outputs from which the machine-readable marking can be read."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe g: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes."
+      en: "Article 99(4)(g): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover."
+
+  - id: transparency-deployer-inform-emotion-biometric
+    title:
+      de: "Über Emotionserkennung und biometrische Kategorisierung informieren"
+      en: "Inform about emotion recognition and biometric categorisation"
+    only_when: [emotion_recognition, biometrics]
+    on_unknown: omit
+    action_required:
+      de: "Zu tun ist: Betreiben Sie ein System zur Emotionserkennung oder zur biometrischen Kategorisierung, informieren Sie die betroffenen Personen über den Betrieb des Systems und verarbeiten die personenbezogenen Daten nach dem Datenschutzrecht. Die Pflicht entfällt bei gesetzlich zugelassener Verwendung zur Aufdeckung, Verhütung oder Ermittlung von Straftaten, sofern geeignete Schutzvorkehrungen für die Rechte Dritter bestehen. Beachten Sie, dass Emotionserkennung am Arbeitsplatz und in Bildungseinrichtungen nach Artikel 5 grundsätzlich verboten ist."
+      en: "What to do: If you deploy an emotion recognition system or a biometric categorisation system, inform the persons affected of the operation of the system and process the personal data in accordance with data protection law. The obligation does not apply where use is authorised by law to detect, prevent or investigate criminal offences, subject to appropriate safeguards for the rights of third parties. Note that emotion recognition in the workplace and in education institutions is prohibited in principle under Article 5."
+    legal_basis:
+      - AI-Act/art-50/para-3
+      - AI-Act/art-50/para-5
+
+    also_cited:
+      - AI-Act/art-5
+    citation_text:
+      de: "Artikel 50 Absatz 3 KI-VO"
+      en: "Article 50(3) AI Act"
+    roles: [deployer]
+    risk_classes: [transparency]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Der Informationstext, der Ort seiner Bereitstellung und die datenschutzrechtliche Dokumentation der Verarbeitung."
+      en: "The information text, where it is made available and the data protection documentation of the processing."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe g: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes. Daneben gilt das Datenschutzrecht mit dem Bussgeldrahmen des Artikels 83 der Datenschutz-Grundverordnung."
+      en: "Article 99(4)(g): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover. In addition, data protection law applies with the framework of fines of Article 83 of the General Data Protection Regulation."
+
+  - id: transparency-deployer-disclose-deepfakes-and-text
+    title:
+      de: "Deepfakes und veröffentlichte KI-Texte offenlegen"
+      en: "Disclose deep fakes and published AI-generated texts"
+    only_when: [generates_deepfakes, generates_content]
+    on_unknown: omit
+    action_required:
+      de: "Zu tun ist: Erzeugen oder verändern Sie mit einem KI-System Bild-, Ton- oder Videoinhalte, die ein Deepfake sind (eine täuschend echt wirkende Nachbildung realer Personen oder Ereignisse), legen Sie offen, dass die Inhalte künstlich erzeugt oder manipuliert wurden. Ist der Inhalt Teil eines offensichtlich künstlerischen, kreativen, satirischen oder fiktionalen Werks, genügt ein Hinweis in geeigneter Weise, der den Genuss des Werks nicht beeinträchtigt. Veröffentlichen Sie KI-erzeugte oder veränderte Texte, um die Öffentlichkeit über Angelegenheiten von öffentlichem Interesse zu informieren, legen Sie das ebenfalls offen; das entfällt, wenn die Inhalte eine menschliche Überprüfung oder redaktionelle Kontrolle durchlaufen haben und eine Person die redaktionelle Verantwortung trägt. Die Hinweise sind spätestens bei der ersten Interaktion klar und eindeutig und barrierefrei zu geben."
+      en: "What to do: If you use an AI system to generate or manipulate image, audio or video content that constitutes a deep fake (a deceptively realistic imitation of real persons or events), disclose that the content has been artificially generated or manipulated. Where the content forms part of an evidently artistic, creative, satirical or fictional work, a notice in an appropriate manner that does not hamper the enjoyment of the work is sufficient. If you publish AI-generated or manipulated text with the purpose of informing the public on matters of public interest, disclose this as well; this does not apply where the content has undergone a process of human review or editorial control and a person holds editorial responsibility. The notices must be given in a clear and distinguishable manner and in an accessible way at the latest at the time of the first interaction."
+    legal_basis:
+      - AI-Act/art-50/para-4
+      - AI-Act/art-50/para-5
+    citation_text:
+      de: "Artikel 50 Absatz 4 KI-VO"
+      en: "Article 50(4) AI Act"
+    roles: [deployer]
+    risk_classes: [transparency]
+    severity: obligation
+    applies_from: 2026-08-02
+    evidence_of_compliance:
+      de: "Beispiele der veröffentlichten Inhalte mit sichtbarem Hinweis, dazu bei redaktioneller Kontrolle der Nachweis des Prüfwegs und der verantwortlichen Person."
+      en: "Examples of the published content with a visible notice, together with, in the case of editorial control, evidence of the review process and of the responsible person."
+    on_infringement:
+      de: "Artikel 99 Absatz 4 Buchstabe g: bis zu 15 000 000 Euro oder bis zu 3 Prozent des weltweiten Jahresumsatzes, je nachdem welcher Betrag höher ist."
+      en: "Article 99(4)(g): up to EUR 15 000 000 or up to 3 % of worldwide annual turnover, whichever is higher."
+
+  # ---------------------------------------------------------------
+  # General-purpose AI models
+  # ---------------------------------------------------------------
+  - id: gpai-technical-documentation
+    title:
+      de: "Technische Dokumentation des Modells erstellen und aktuell halten"
+      en: "Draw up and keep the technical documentation of the model up to date"
+    action_required:
+      de: "Zu tun ist: Die technische Dokumentation des Modells erstellen und fortschreiben, einschliesslich des Trainings- und Testverfahrens und der Bewertungsergebnisse, mit mindestens den Angaben aus Anhang XI, damit sie dem Büro für Künstliche Intelligenz und den zuständigen nationalen Behörden auf Anfrage vorgelegt werden kann. Diese Pflicht entfällt für Modelle unter einer freien und quelloffenen Lizenz, die Zugang, Nutzung, Änderung und Verbreitung erlaubt und deren Parameter einschliesslich Gewichte, Architektur- und Nutzungsinformationen öffentlich sind; bei systemischem Risiko gilt diese Ausnahme nicht."
+      en: "What to do: Draw up and keep up to date the technical documentation of the model, including its training and testing process and the results of its evaluation, containing at least the information set out in Annex XI, so that it can be provided to the AI Office and the national competent authorities upon request. This obligation does not apply to models released under a free and open-source licence that allows for access, usage, modification and distribution and whose parameters, including the weights, the information on the model architecture and the information on model usage, are made publicly available; this exception does not apply in the case of systemic risk."
+    legal_basis:
+      - AI-Act/art-53
+      - AI-Act/art-53/para-1
+      - AI-Act/art-53/para-1-a
+      - AI-Act/art-53/para-2
+      - AI-Act/annex-XI
+      - AI-Act/annex-XI/pt-1-1
+      - AI-Act/annex-XI/pt-2-1
+    citation_text:
+      de: "Artikel 53 Absatz 1 Buchstabe a KI-VO mit Anhang XI"
+      en: "Article 53(1)(a) AI Act with Annex XI"
+    roles: [provider]
+    risk_classes: [gpai, gpai_systemic_risk]
+    severity: obligation
+    applies_from: 2025-08-02
+    evidence_of_compliance:
+      de: "Die Dokumentation selbst, geordnet nach den Nummern des Anhangs XI, mit Versionsstand und Aktualisierungsdatum."
+      en: "The documentation itself, organised by the points of Annex XI, with version status and date of update."
+    on_infringement:
+      de: "Artikel 101 Absatz 1: Die Kommission kann Geldbussen von bis zu 3 Prozent des gesamten weltweiten Jahresumsatzes des vorangegangenen Geschäftsjahres oder 15 000 000 Euro verhängen, je nachdem welcher Betrag höher ist, wenn der Anbieter vorsätzlich oder fahrlässig verstossen hat. Artikel 101 gilt nach Artikel 113 Absatz 1 Buchstabe b erst ab dem 2. August 2026."
+      en: "Article 101(1): the Commission may impose fines of up to 3 % of total worldwide annual turnover for the preceding financial year or EUR 15 000 000, whichever is higher, if the provider infringed intentionally or negligently. Under Article 113(1)(b), Article 101 applies only from 2 August 2026."
+
+  - id: gpai-downstream-provider-information
+    title:
+      de: "Nachgelagerte Anbieter mit Informationen versorgen"
+      en: "Supply downstream providers with information"
+    action_required:
+      de: "Zu tun ist: Informationen und Unterlagen erstellen, aktuell halten und denjenigen Anbietern von KI-Systemen bereitstellen, die Ihr Modell in ihre Systeme einbauen wollen. Die Unterlagen müssen diese Anbieter in die Lage versetzen, Fähigkeiten und Grenzen des Modells gut zu verstehen und ihre eigenen Pflichten aus der Verordnung zu erfüllen, und mindestens die Angaben aus Anhang XII enthalten. Rechte des geistigen Eigentums und Geschäftsgeheimnisse bleiben geschützt. Diese Pflicht entfällt für Modelle unter einer freien und quelloffenen Lizenz nach Artikel 53 Absatz 2, nicht aber bei systemischem Risiko."
+      en: "What to do: Draw up, keep up to date and make available information and documentation to those providers of AI systems who intend to integrate your model into their systems. The documentation must enable these providers to have a good understanding of the capabilities and limitations of the model and to comply with their own obligations under the Regulation, and must contain at least the information set out in Annex XII. Intellectual property rights and trade secrets remain protected. This obligation does not apply to models under a free and open-source licence under Article 53(2), but it does in the case of systemic risk."
+    legal_basis:
+      - AI-Act/art-53/para-1-b
+      - AI-Act/art-53/para-2
+      - AI-Act/annex-XII
+      - AI-Act/annex-XII/pt-1
+      - AI-Act/annex-XII/pt-2
+
+    also_cited:
+      - AI-Act/art-53
+    citation_text:
+      de: "Artikel 53 Absatz 1 Buchstabe b KI-VO mit Anhang XII"
+      en: "Article 53(1)(b) AI Act with Annex XII"
+    roles: [provider]
+    risk_classes: [gpai, gpai_systemic_risk]
+    severity: obligation
+    applies_from: 2025-08-02
+    evidence_of_compliance:
+      de: "Das Informationspaket für nachgelagerte Anbieter, abgeglichen gegen Anhang XII, mit Datum der Bereitstellung und Empfängerliste."
+      en: "The information package for downstream providers, checked against Annex XII, with date of provision and list of recipients."
+    on_infringement:
+      de: "Artikel 101 Absatz 1: bis zu 3 Prozent des weltweiten Jahresumsatzes oder 15 000 000 Euro, je nachdem welcher Betrag höher ist, bei vorsätzlichem oder fahrlässigem Verstoss. Artikel 101 gilt erst ab dem 2. August 2026."
+      en: "Article 101(1): up to 3 % of worldwide annual turnover or EUR 15 000 000, whichever is higher, for an intentional or negligent infringement. Article 101 applies only from 2 August 2026."
+
+  - id: gpai-copyright-policy
+    title:
+      de: "Strategie zur Einhaltung des Urheberrechts aufsetzen"
+      en: "Set up a policy to comply with copyright"
+    action_required:
+      de: "Zu tun ist: Eine Strategie zur Einhaltung des Urheberrechts der Union und damit zusammenhängender Rechte auf den Weg bringen. Sie muss insbesondere erfassen, wie Sie einen nach Artikel 4 Absatz 3 der Richtlinie (EU) 2019/790 erklärten Rechtsvorbehalt ermitteln und einhalten; das ist der Vorbehalt, mit dem Rechteinhaber die Nutzung ihrer Werke zum Text- und Datamining untersagen. Dafür sind auch modernste Technologien einzusetzen. Diese Pflicht gilt auch für Modelle unter freier und quelloffener Lizenz, weil die Ausnahme in Artikel 53 Absatz 2 nur die Buchstaben a und b betrifft."
+      en: "What to do: Put in place a policy to comply with Union law on copyright and related rights. It must in particular cover how you identify and comply with a reservation of rights expressed under Article 4(3) of Directive (EU) 2019/790; this is the reservation by which rightholders prohibit the use of their works for text and data mining. State-of-the-art technologies must also be used for this. This obligation also applies to models under a free and open-source licence, because the exception in Article 53(2) concerns only points (a) and (b)."
+    legal_basis:
+      - AI-Act/art-53/para-1-c
+
+    also_cited:
+      - AI-Act/art-4
+      - AI-Act/art-53/para-2
+    citation_text:
+      de: "Artikel 53 Absatz 1 Buchstabe c KI-VO"
+      en: "Article 53(1)(c) AI Act"
+    roles: [provider]
+    risk_classes: [gpai, gpai_systemic_risk]
+    severity: obligation
+    applies_from: 2025-08-02
+    evidence_of_compliance:
+      de: "Das schriftliche Strategiepapier, die eingesetzten Werkzeuge zur Erkennung von Rechtsvorbehalten und Protokolle der Prüfungen."
+      en: "The written policy document, the tools used to identify reservations of rights and logs of the checks."
+    on_infringement:
+      de: "Artikel 101 Absatz 1: bis zu 3 Prozent des weltweiten Jahresumsatzes oder 15 000 000 Euro, je nachdem welcher Betrag höher ist. Artikel 101 gilt erst ab dem 2. August 2026."
+      en: "Article 101(1): up to 3 % of worldwide annual turnover or EUR 15 000 000, whichever is higher. Article 101 applies only from 2 August 2026."
+
+  - id: gpai-training-content-summary
+    title:
+      de: "Zusammenfassung der Trainingsinhalte veröffentlichen"
+      en: "Publish a summary of the training content"
+    action_required:
+      de: "Zu tun ist: Eine hinreichend detaillierte Zusammenfassung der für das Training verwendeten Inhalte erstellen und veröffentlichen, und zwar nach der Vorlage, die das Büro für Künstliche Intelligenz bereitstellt. Auch diese Pflicht gilt für Modelle unter freier und quelloffener Lizenz, weil die Ausnahme in Artikel 53 Absatz 2 nur die Buchstaben a und b betrifft."
+      en: "What to do: Draw up and make publicly available a sufficiently detailed summary about the content used for training, according to the template provided by the AI Office. This obligation also applies to models under a free and open-source licence, because the exception in Article 53(2) concerns only points (a) and (b)."
+    legal_basis:
+      - AI-Act/art-53/para-1-d
+
+    also_cited:
+      - AI-Act/art-53/para-2
+    citation_text:
+      de: "Artikel 53 Absatz 1 Buchstabe d KI-VO"
+      en: "Article 53(1)(d) AI Act"
+    roles: [provider]
+    risk_classes: [gpai, gpai_systemic_risk]
+    severity: obligation
+    applies_from: 2025-08-02
+    evidence_of_compliance:
+      de: "Die veröffentlichte Zusammenfassung mit Fundstelle, Datum und Verweis auf die verwendete Vorlage."
+      en: "The published summary with its location, date and reference to the template used."
+    on_infringement:
+      de: "Artikel 101 Absatz 1: bis zu 3 Prozent des weltweiten Jahresumsatzes oder 15 000 000 Euro, je nachdem welcher Betrag höher ist. Artikel 101 gilt erst ab dem 2. August 2026."
+      en: "Article 101(1): up to 3 % of worldwide annual turnover or EUR 15 000 000, whichever is higher. Article 101 applies only from 2 August 2026."
+
+  - id: gpai-cooperate-with-commission
+    title:
+      de: "Mit Kommission und Behörden zusammenarbeiten"
+      en: "Cooperate with the Commission and the authorities"
+    action_required:
+      de: "Zu tun ist: Soweit erforderlich mit der Kommission und den zuständigen nationalen Behörden zusammenarbeiten, wenn diese ihre Zuständigkeiten und Befugnisse aus der Verordnung ausüben. Bis eine harmonisierte Norm veröffentlicht ist, dürfen Sie sich auf Praxisleitfäden nach Artikel 56 stützen, um die Einhaltung nachzuweisen; folgen Sie weder einem genehmigten Praxisleitfaden noch einer harmonisierten europäischen Norm, müssen Sie geeignete alternative Verfahren der Einhaltung aufzeigen, die die Kommission bewertet."
+      en: "What to do: Cooperate as necessary with the Commission and the national competent authorities in the exercise of their competences and powers under the Regulation. Until a harmonised standard is published, you may rely on codes of practice within the meaning of Article 56 to demonstrate compliance; if you follow neither an approved code of practice nor a European harmonised standard, you must demonstrate alternative adequate means of compliance for assessment by the Commission."
+    legal_basis:
+      - AI-Act/art-53/para-3
+      - AI-Act/art-53/para-4
+
+    also_cited:
+      - AI-Act/art-56
+    citation_text:
+      de: "Artikel 53 Absätze 3 und 4 KI-VO"
+      en: "Article 53(3) and (4) AI Act"
+    roles: [provider]
+    risk_classes: [gpai, gpai_systemic_risk]
+    severity: obligation
+    applies_from: 2025-08-02
+    evidence_of_compliance:
+      de: "Ein Register der Behördenkontakte und die Erklärung, welchem Praxisleitfaden oder welcher Norm Sie folgen, oder die Darlegung des alternativen Verfahrens."
+      en: "A register of contacts with authorities and the statement of which code of practice or standard you follow, or the description of the alternative means."
+    on_infringement:
+      de: "Artikel 101 Absatz 1 Buchstaben b bis d: bis zu 3 Prozent des weltweiten Jahresumsatzes oder 15 000 000 Euro, je nachdem welcher Betrag höher ist, unter anderem wenn Dokumente oder Informationen nicht geliefert, falsche Angaben gemacht oder der Kommission der Modellzugang zur Bewertung verweigert wird. Artikel 101 gilt erst ab dem 2. August 2026."
+      en: "Article 101(1), points (b) to (d): up to 3 % of worldwide annual turnover or EUR 15 000 000, whichever is higher, among other things where documents or information are not supplied, incorrect information is supplied or the Commission is refused access to the model for evaluation. Article 101 applies only from 2 August 2026."
+
+  - id: gpai-authorised-representative
+    title:
+      de: "Als Modellanbieter aus einem Drittland einen Bevollmächtigten benennen"
+      en: "As a model provider from a third country, appoint an authorised representative"
+    only_when: [third_country_transfer]
+    on_unknown: with_caveat
+    caveat:
+      de: "Diese Pflicht trifft Sie nur, wenn Sie als Modellanbieter ausserhalb der Europaeischen Union sitzen."
+      en: "This obligation applies to you only if you, as the model provider, are established outside the European Union."
+    action_required:
+      de: "Zu tun ist: Sitzen Sie ausserhalb der Europäischen Union, benennen Sie schriftlich einen in der Union niedergelassenen Bevollmächtigten, bevor Sie das Modell auf dem Unionsmarkt in Verkehr bringen, und versetzen Sie ihn in die Lage, seinen Auftrag zu erfüllen. Der Auftrag muss ihn mindestens berechtigen: zu prüfen, ob die technische Dokumentation nach Anhang XI erstellt wurde und alle Pflichten aus Artikel 53 und gegebenenfalls Artikel 55 erfüllt sind; eine Kopie dieser Dokumentation und Ihre Kontaktdaten zehn Jahre nach dem Inverkehrbringen für das Büro für Künstliche Intelligenz und die zuständigen nationalen Behörden bereitzuhalten; auf begründeten Antrag alle Nachweisunterlagen zu liefern; und mit Büro und Behörden zusammenzuarbeiten. Hält der Bevollmächtigte Sie für pflichtwidrig, beendet er den Auftrag und informiert das Büro unverzüglich. Die Pflicht entfällt für Modelle unter einer freien und quelloffenen Lizenz nach Artikel 54 Absatz 6, nicht aber bei systemischem Risiko."
+      en: "What to do: If you are established outside the European Union, appoint by written mandate an authorised representative established in the Union before placing the model on the Union market, and enable it to perform its tasks. The mandate must empower it at least: to verify that the technical documentation under Annex XI has been drawn up and that all obligations under Article 53 and, where applicable, Article 55 have been fulfilled; to keep a copy of this documentation and your contact details at the disposal of the AI Office and the national competent authorities for ten years after placing on the market; to provide, upon a reasoned request, all documentation necessary to demonstrate compliance; and to cooperate with the AI Office and the authorities. If the authorised representative considers that you are acting contrary to your obligations, it terminates the mandate and immediately informs the AI Office. The obligation does not apply to models under a free and open-source licence under Article 54(6), but it does in the case of systemic risk."
+    legal_basis:
+      - AI-Act/art-54
+      - AI-Act/art-54/para-1
+      - AI-Act/art-54/para-2
+      - AI-Act/art-54/para-3
+      - AI-Act/art-54/para-3-a
+      - AI-Act/art-54/para-3-b
+      - AI-Act/art-54/para-3-c
+      - AI-Act/art-54/para-3-d
+      - AI-Act/art-54/para-5
+      - AI-Act/art-54/para-6
+
+    also_cited:
+      - AI-Act/art-53
+      - AI-Act/art-55
+    citation_text:
+      de: "Artikel 54 KI-VO"
+      en: "Article 54 AI Act"
+    roles: [provider, authorised_representative]
+    risk_classes: [gpai, gpai_systemic_risk]
+    severity: obligation
+    applies_from: 2025-08-02
+    evidence_of_compliance:
+      de: "Der schriftliche Auftrag mit den vier Mindestaufgaben, die Kopie für das Büro für Künstliche Intelligenz und der Nachweis, dass die Dokumentation beim Bevollmächtigten liegt."
+      en: "The written mandate with the four minimum tasks, the copy for the AI Office and evidence that the documentation is held by the authorised representative."
+    on_infringement:
+      de: "Artikel 101 Absatz 1: bis zu 3 Prozent des weltweiten Jahresumsatzes oder 15 000 000 Euro, je nachdem welcher Betrag höher ist. Artikel 101 gilt erst ab dem 2. August 2026."
+      en: "Article 101(1): up to 3 % of worldwide annual turnover or EUR 15 000 000, whichever is higher. Article 101 applies only from 2 August 2026."
+
+  - id: gpai-systemic-evaluation-and-adversarial-testing
+    title:
+      de: "Modell bewerten und Angriffstests durchführen"
+      en: "Evaluate the model and conduct adversarial testing"
+    action_required:
+      de: "Zu tun ist: Bei einem Modell mit systemischem Risiko zusätzlich zu den Pflichten aus Artikel 53 und 54 eine Modellbewertung mit standardisierten Protokollen und Instrumenten nach dem Stand der Technik durchführen. Dazu gehören Angriffstests am Modell (im Fachgebrauch Red Teaming), mit denen systemische Risiken ermittelt und gemindert werden; Durchführung und Ergebnis sind zu dokumentieren."
+      en: "What to do: For a model with systemic risk, in addition to the obligations under Articles 53 and 54, perform model evaluation using standardised protocols and tools reflecting the state of the art. This includes adversarial testing of the model (red teaming in technical usage) to identify and mitigate systemic risks; the conduct and the results must be documented."
+    legal_basis:
+      - AI-Act/art-55
+      - AI-Act/art-55/para-1
+      - AI-Act/art-55/para-1-a
+
+    also_cited:
+      - AI-Act/art-53
+    citation_text:
+      de: "Artikel 55 Absatz 1 Buchstabe a KI-VO"
+      en: "Article 55(1)(a) AI Act"
+    roles: [provider]
+    risk_classes: [gpai_systemic_risk]
+    severity: obligation
+    applies_from: 2025-08-02
+    evidence_of_compliance:
+      de: "Bewertungsbericht und Angriffstestbericht mit verwendeten Protokollen, Instrumenten, Befunden und abgeleiteten Massnahmen."
+      en: "Evaluation report and adversarial testing report with the protocols and tools used, findings and resulting measures."
+    on_infringement:
+      de: "Artikel 101 Absatz 1: bis zu 3 Prozent des weltweiten Jahresumsatzes oder 15 000 000 Euro, je nachdem welcher Betrag höher ist. Artikel 101 gilt erst ab dem 2. August 2026."
+      en: "Article 101(1): up to 3 % of worldwide annual turnover or EUR 15 000 000, whichever is higher. Article 101 applies only from 2 August 2026."
+
+  - id: gpai-systemic-risk-mitigation
+    title:
+      de: "Systemische Risiken auf Unionsebene bewerten und mindern"
+      en: "Assess and mitigate systemic risks at Union level"
+    action_required:
+      de: "Zu tun ist: Mögliche systemische Risiken auf Unionsebene einschliesslich ihrer Ursachen bewerten und mindern, soweit sie sich aus der Entwicklung, dem Inverkehrbringen oder der Verwendung des Modells ergeben können. Halten Sie Bewertung, Ursachenanalyse und Minderungsmassnahmen schriftlich fest und führen Sie sie fort, wenn sich das Modell oder seine Nutzung ändert."
+      en: "What to do: Assess and mitigate possible systemic risks at Union level, including their sources, that may stem from the development, the placing on the market or the use of the model. Record the assessment, the analysis of sources and the mitigation measures in writing and update them when the model or its use changes."
+    legal_basis:
+      - AI-Act/art-55/para-1-b
+    citation_text:
+      de: "Artikel 55 Absatz 1 Buchstabe b KI-VO"
+      en: "Article 55(1)(b) AI Act"
+    roles: [provider]
+    risk_classes: [gpai_systemic_risk]
+    severity: obligation
+    applies_from: 2025-08-02
+    evidence_of_compliance:
+      de: "Die Risikobewertung auf Unionsebene mit Ursachen, Minderungsmassnahmen und Fortschreibungsdatum."
+      en: "The risk assessment at Union level with sources, mitigation measures and date of update."
+    on_infringement:
+      de: "Artikel 101 Absatz 1: bis zu 3 Prozent des weltweiten Jahresumsatzes oder 15 000 000 Euro, je nachdem welcher Betrag höher ist. Artikel 101 gilt erst ab dem 2. August 2026."
+      en: "Article 101(1): up to 3 % of worldwide annual turnover or EUR 15 000 000, whichever is higher. Article 101 applies only from 2 August 2026."
+
+  - id: gpai-systemic-report-incidents
+    title:
+      de: "Schwerwiegende Vorfälle erfassen und dem Büro melden"
+      en: "Track serious incidents and report them to the AI Office"
+    action_required:
+      de: "Zu tun ist: Einschlägige Informationen über schwerwiegende Vorfälle und mögliche Abhilfemassnahmen erfassen und dokumentieren und das Büro für Künstliche Intelligenz sowie gegebenenfalls die zuständigen nationalen Behörden unverzüglich darüber unterrichten. Richten Sie dafür einen festen Meldeweg mit benannter Zuständigkeit ein."
+      en: "What to do: Keep track of, document and report without undue delay to the AI Office and, as appropriate, to the national competent authorities relevant information about serious incidents and possible corrective measures to address them. Set up a fixed reporting channel with designated responsibility for this."
+    legal_basis:
+      - AI-Act/art-55/para-1-c
+    citation_text:
+      de: "Artikel 55 Absatz 1 Buchstabe c KI-VO"
+      en: "Article 55(1)(c) AI Act"
+    roles: [provider]
+    risk_classes: [gpai_systemic_risk]
+    severity: obligation
+    applies_from: 2025-08-02
+    evidence_of_compliance:
+      de: "Das Vorfallsregister mit Kenntnisdatum, Meldedatum, Empfänger und dokumentierten Abhilfemassnahmen."
+      en: "The incident register with date of awareness, date of report, recipient and documented corrective measures."
+    on_infringement:
+      de: "Artikel 101 Absatz 1: bis zu 3 Prozent des weltweiten Jahresumsatzes oder 15 000 000 Euro, je nachdem welcher Betrag höher ist. Artikel 101 gilt erst ab dem 2. August 2026."
+      en: "Article 101(1): up to 3 % of worldwide annual turnover or EUR 15 000 000, whichever is higher. Article 101 applies only from 2 August 2026."
+
+  - id: gpai-systemic-cybersecurity
+    title:
+      de: "Modell und Infrastruktur angemessen absichern"
+      en: "Adequately protect the model and infrastructure"
+    action_required:
+      de: "Zu tun ist: Ein angemessenes Mass an Cybersicherheit für das Modell und für die physische Infrastruktur des Modells gewährleisten. Das umfasst also nicht nur die Software, sondern auch die Rechenzentren, Zugänge und Speicherorte, an denen Modellgewichte liegen."
+      en: "What to do: Ensure an adequate level of cybersecurity protection for the model and for the physical infrastructure of the model. This therefore covers not only the software but also the data centres, access points and storage locations where model weights are held."
+    legal_basis:
+      - AI-Act/art-55/para-1-d
+    citation_text:
+      de: "Artikel 55 Absatz 1 Buchstabe d KI-VO"
+      en: "Article 55(1)(d) AI Act"
+    roles: [provider]
+    risk_classes: [gpai_systemic_risk]
+    severity: obligation
+    applies_from: 2025-08-02
+    evidence_of_compliance:
+      de: "Sicherheitskonzept für Modell und Infrastruktur, Zugriffsregelung für die Modellgewichte und Berichte der Sicherheitsprüfungen."
+      en: "Security concept for model and infrastructure, access rules for the model weights and reports of the security tests."
+    on_infringement:
+      de: "Artikel 101 Absatz 1: bis zu 3 Prozent des weltweiten Jahresumsatzes oder 15 000 000 Euro, je nachdem welcher Betrag höher ist. Artikel 101 gilt erst ab dem 2. August 2026."
+      en: "Article 101(1): up to 3 % of worldwide annual turnover or EUR 15 000 000, whichever is higher. Article 101 applies only from 2 August 2026."

@@ -1,0 +1,5 @@
+{
+  "index_missing": "No stored search index ({language_name}) at {path}. Build it first: {command}",
+  "language_de": "German",
+  "language_en": "English"
+}

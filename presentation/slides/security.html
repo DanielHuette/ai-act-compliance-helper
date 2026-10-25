@@ -1,0 +1,25 @@
+<section id="security" data-transition="fade" style="background:#061634;color:#FFFFFF;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:34px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:62px;font-weight:400;line-height:1.1;color:#FFFFFF"><de>Vier Angriffswege, jeder einzeln verbaut</de><en>Four attack routes, each one closed off</en></h2>
+<div style="display:flex;gap:22px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#102A57;padding:30px;border-radius:14px">
+<h3 style="font-size:27px;font-weight:600;color:#FFCC00"><de>Untergeschobene Anweisungen</de><en>Injected instructions</en></h3>
+<p style="font-size:25px;line-height:1.38;color:#AEC0E2"><de>Die Beschreibung des Nutzers steht zwischen zwei je Anfrage gewürfelten Marken. Wer eine Abschnittsgrenze nachbauen will, müsste sie erraten.</de><en>The user's description sits between two markers drawn at random for each request. Faking a section boundary would mean guessing them.</en></p>
+<p style="font-size:24px;line-height:1.35;color:#93A7CC"><de>Erprobt mit 10 Angriffen, je zweifach geprüft.</de><en>Tested with 10 attacks, each checked twice.</en></p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#102A57;padding:30px;border-radius:14px">
+<h3 style="font-size:27px;font-weight:600;color:#FFCC00"><de>Erfundene Fundstellen</de><en>Invented citations</en></h3>
+<p style="font-size:25px;line-height:1.38;color:#AEC0E2"><de>Jeder Artikel in der Antwort muss in den Belegen stehen. Was nicht belegt ist, wird gemeldet.</de><en>Every article in the answer must appear in the evidence. Anything unsupported is reported.</en></p>
+<p style="font-size:24px;line-height:1.35;color:#93A7CC"><de>So fiel auf, dass Artikel 72 im Pflichttext stand, aber nicht in den Fundstellen.</de><en>That is how Article 72 was caught in an obligation text but missing from its citations.</en></p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#102A57;padding:30px;border-radius:14px">
+<h3 style="font-size:27px;font-weight:600;color:#FFCC00"><de>Der Bestand als Angriffsweg</de><en>The index as an attack route</en></h3>
+<p style="font-size:25px;line-height:1.38;color:#AEC0E2"><de>Als pickle hätte eine veränderte Kopie beim Laden fremden Code ausgeführt. Jetzt JSON: falsche Treffer sind möglich, fremder Code nicht.</de><en>Stored as a pickle file, a tampered copy would have run foreign code on load. Now JSON: wrong hits are possible, foreign code is not.</en></p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#2F6B5E;padding:30px;border-radius:14px">
+<h3 style="font-size:27px;font-weight:600;color:#FFFFFF"><de>Im Betrieb</de><en>In operation</en></h3>
+<p style="font-size:25px;line-height:1.38;color:#D4EDE6"><de>Der Container läuft ohne Verwalterrechte und kann seinen Quelltext nicht ändern. Schlüssel nie im Protokoll. 30 Anfragen je Minute. Keine Verbindung nach außen.</de><en>The container runs without administrator rights and cannot change its own code. Keys never in the log. 30 requests per minute. No outbound connection.</en></p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#7D92B8"><de>Schwachstellenmeldungen: SECURITY.md &middot; Sicherheitsmodell: docs/security.de.md</de><en>Vulnerability reports: SECURITY.md &middot; Security model: docs/security.md</en></p>
+<aside><de>Der dritte Punkt ist der, der am leichtesten übersehen wird. Im Quelltext stand als Begründung „eigene Datei, kein Fremdinhalt" — das stimmte nicht: die Datei wird mit ausgeliefert, und wer eine Kopie des Repositories ändert, erreicht damit jeden, der sie lädt. Die Prüfwerkzeuge brechen ab, statt zu warnen: ruff, ruff format, mypy, bandit und pip-audit laufen ohne Beanstandung, damit ein roter Lauf wieder etwas bedeutet.</de><en>The third point is the easiest to overlook. The code once justified it with “own file, no foreign content” — that was wrong: the file ships with the repository, and anyone who changes a copy reaches everyone who loads it. The check tools fail instead of warning: ruff, ruff format, mypy, bandit and pip-audit pass without findings, so a red run means something again.</en></aside>
+</section>

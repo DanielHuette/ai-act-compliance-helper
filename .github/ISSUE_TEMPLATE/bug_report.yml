@@ -1,0 +1,116 @@
+name: Bug report / Fehler im Programm
+description: Something crashes or does not do what it says / Etwas stürzt ab oder tut nicht, was dasteht
+title: "[Bug] "
+labels: ["bug / Fehler"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For a **wrong article reference, deadline or classification**, please use the template
+        "Legal error"; it is handled first.
+        Für einen **falschen Artikelverweis, eine falsche Frist oder eine falsche Einstufung**
+        nehmen Sie bitte die Vorlage „Rechtsfehler"; die wird vorrangig bearbeitet.
+
+        For a **security vulnerability**, use no template but the route in SECURITY.md.
+        Für eine **Sicherheitslücke** nehmen Sie keine Vorlage, sondern den Weg in
+        SECURITY.de.md.
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Which part? / Welcher Teil?
+      options:
+        - Classification / Einstufung (data/rules, src/compliance_helper/classification, web/walkthrough.js)
+        - Search in the legal text / Suche im Rechtstext (src/compliance_helper/search)
+        - Answer and language model / Antwort und Sprachmodell (src/compliance_helper/answer)
+        - Web page or web service / Webseite oder Webdienst (web, src/compliance_helper/service, src/compliance_helper/webui)
+        - Command line / Kommandozeile (src/compliance_helper/cli.py)
+        - Package or container / Paket oder Container (packaging, Dockerfile)
+        - Corpus build or fetching / Aufbau des Rechtsbestands oder Abruf (src/compliance_helper/corpus, scripts)
+        - German or English text / Deutscher oder englischer Text (locales)
+        - Don't know / Weiß ich nicht
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect? / Was haben Sie erwartet?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead? / Was ist stattdessen geschehen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How can it be reproduced? / Wie stellt man es nach?
+      description: >-
+        Step by step, with the commands you entered. / Schritt für Schritt, mit den Befehlen, die
+        Sie eingegeben haben.
+      placeholder: |
+        1. pip install -e ".[search]"
+        2. compliance-helper build-index --language en
+        3. compliance-helper --lang en search "Article 6(3)"
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: error_output
+    attributes:
+      label: Error message / Fehlermeldung
+      description: >-
+        The full text, not only the last line, as text rather than a screenshot so it can be
+        searched. Remove keys and business secrets first. / Der vollständige Text, nicht nur die
+        letzte Zeile, als Text statt als Bild, damit man darin suchen kann. Schlüssel und
+        Betriebsgeheimnisse vorher entfernen.
+      render: text
+
+  - type: input
+    id: version
+    attributes:
+      label: Which version? / Welche Fassung?
+      description: >-
+        Tag or commit; for the package, the version on the releases page. / Marke oder Commit;
+        beim Paket die Fassung von der Veröffentlichungsseite.
+      placeholder: "2.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment / Umgebung
+      description: >-
+        Operating system and Python version (`python -V`), or the browser for the web page. /
+        Betriebssystem und Python-Fassung (`python -V`), oder bei der Webseite der Browser.
+      placeholder: "Windows 11, Python 3.12"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language of the tool / Sprache des Werkzeugs
+      options:
+        - English / Englisch
+        - German / Deutsch
+        - Both / Beide
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: situation
+    attributes:
+      label: Which of these apply? / Was davon trifft zu?
+      options:
+        - label: It worked before and no longer does / Es lief vorher und jetzt nicht mehr
+        - label: I have read the troubleshooting section of docs/operations-guide.md / Ich habe den Abschnitt zur Fehlersuche in docs/operations-guide.de.md durchgesehen
+        - label: I work without a key for a language model / Ich arbeite ohne Schlüssel für ein Sprachmodell
+        - label: The search index is built on my machine (`compliance-helper build-index` completed) / Der Suchbestand ist bei mir gebaut (`compliance-helper build-index` ist durchgelaufen)

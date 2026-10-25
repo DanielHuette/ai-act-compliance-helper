@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EU AI Act and GDPR Compliance Helper</title>
+<meta name="description" content="Architecture, workings and operation of the EU AI Act and GDPR Compliance Helper.">
+<link rel="alternate" hreflang="de" href="presentation.html">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@300..700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root { --gutter: 24px; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #11182B; }
+  body { font-family: 'IBM Plex Sans', Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+
+  .header {
+    position: sticky; top: 0; z-index: 10;
+    display: flex; flex-wrap: wrap; gap: 16px; align-items: center;
+    padding: 14px var(--gutter); background: #0B1220; color: #8FA3BF;
+    border-bottom: 1px solid #22314F; font-size: 15px; line-height: 1.4;
+  }
+  .header b { color: #FAFAF7; font-weight: 600; }
+  .header button, .header .language {
+    font: inherit; color: #BCCBDD; background: #1B2A41; cursor: pointer;
+    border: 1px solid #38496B; border-radius: 8px; padding: 6px 14px; text-decoration: none;
+  }
+  .header button:hover, .header .language:hover { background: #24375A; color: #FAFAF7; }
+  .header .hint { margin-left: auto; }
+
+  .slides { display: flex; flex-direction: column; gap: 32px; padding: 32px var(--gutter) 96px; }
+
+  /* The scale comes from the script below: scale() needs a plain number, and a width divided
+     by 1920 is a length in CSS. Without script the slide stays at 1 and the stage scrolls. */
+  .stage {
+    position: relative; width: 100%; max-width: 1920px; margin: 0 auto;
+    aspect-ratio: 16 / 9; overflow: hidden;
+    border-radius: 14px; box-shadow: 0 18px 50px rgba(0, 0, 0, .45);
+  }
+  .stage > section {
+    position: absolute; top: 0; left: 0;
+    width: 1920px; height: 1080px;
+    transform-origin: top left; transform: scale(var(--scale, 1));
+  }
+
+  /* The slide format spaces blocks only via the parent's gap; default browser margins add up
+     to several hundred pixels per slide and push content off the bottom. */
+  .stage section :where(h1, h2, h3, h4, p, ul, ol, table, figure, blockquote) {
+    margin: 0;
+  }
+  .stage section :where(ul, ol) { padding-left: 1.3em; }
+  .stage section table { border-collapse: collapse; }
+  .stage section :where(td, th) { padding: 0.35em 0.6em; }
+  html:not(.scaled) .stage { overflow: auto; }
+
+  .counter {
+    position: absolute; right: 18px; bottom: 12px; margin: 0;
+    font-size: 13px; color: rgba(138, 143, 126, .75);
+  }
+  .note {
+    max-width: 1920px; margin: -12px auto 0; padding: 18px 26px;
+    background: #0B1220; border: 1px solid #22314F; border-left: 3px solid #C8742B;
+    border-radius: 10px; color: #A9BBD4; font-size: 16px; line-height: 1.6;
+  }
+  .note p { margin: 0; }
+  body.notes-hidden .note { display: none; }
+  body.notes-hidden .slides { gap: 28px; }
+
+  @media print {
+    :root { --gutter: 0; }
+    html, body { background: #FFFFFF; }
+    .header, .note, .counter { display: none !important; }
+    .slides { gap: 0; padding: 0; }
+    .stage { border-radius: 0; box-shadow: none; break-after: page; }
+    @page { size: 1920px 1080px; margin: 0; }
+  }
+</style>
+</head>
+<body>
+<header class="header">
+  <b>EU AI Act and GDPR Compliance Helper</b>
+  <span>19 slides &middot; Legal text as of 31 May 2026 &middot; not legal advice</span>
+  <button type="button" id="notes-toggle">Hide speaker notes</button>
+  <a class="language" href="presentation.html" hreflang="de"
+     lang="de">Deutsch</a>
+  <span class="hint">Page with &larr; and &rarr; &middot; Printing gives one slide per page</span>
+</header>
+<main class="slides">
+<div class="stage" id="slide-1"><section id="cover" style="position:relative;overflow:hidden;background:#061634;color:#FFFFFF;font-family:'IBM Plex Sans', Arial, sans-serif">
+<img src="eu-flag.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:72% 36%">
+<div style="position:absolute;inset:0;background:linear-gradient(100deg, rgba(6,22,52,.97) 0%, rgba(6,22,52,.94) 38%, rgba(6,22,52,.66) 62%, rgba(6,22,52,.2) 86%)"></div>
+<div style="position:absolute;inset:0;padding:128px 128px 160px;display:flex;flex-direction:column;justify-content:space-between">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#FFCC00;margin:0">A tool for providers and deployers</p>
+<div style="display:flex;flex-direction:column;gap:28px">
+<h1 style="font-family:'Source Serif 4', Georgia, serif;font-size:104px;font-weight:400;line-height:1.02;color:#FFFFFF;margin:0;max-width:17ch">EU AI Act and<br>GDPR Compliance<br>Helper</h1>
+<p style="font-size:32px;line-height:1.45;color:#AEC0E2;width:1180px;margin:0">It asks you about your AI system for about six steps, in German or English. Then you know which risk class it falls into, which obligations follow and where the law says so.</p>
+</div>
+<div style="display:flex;gap:56px;border-top:1px solid rgba(255,255,255,.22);padding:28px 0 0">
+<div style="display:flex;flex-direction:column;gap:6px"><p style="font-family:'Source Serif 4', Georgia, serif;font-size:46px;color:#FFFFFF;margin:0">207 / 217</p><p style="font-size:24px;color:#93A7CC;margin:0">official examples classified<br>correctly</p></div>
+<div style="display:flex;flex-direction:column;gap:6px"><p style="font-family:'Source Serif 4', Georgia, serif;font-size:46px;color:#FFFFFF;margin:0">5.3</p><p style="font-size:24px;color:#93A7CC;margin:0">steps per case<br>on average</p></div>
+<div style="display:flex;flex-direction:column;gap:6px"><p style="font-family:'Source Serif 4', Georgia, serif;font-size:46px;color:#FFFFFF;margin:0">2,811</p><p style="font-size:24px;color:#93A7CC;margin:0">legal units<br>per language</p></div>
+<div style="display:flex;flex-direction:column;gap:6px"><p style="font-family:'Source Serif 4', Georgia, serif;font-size:46px;color:#FFCC00;margin:0">0</p><p style="font-size:24px;color:#93A7CC;margin:0">details that leave<br>the device</p></div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#7D92B8;margin:0">Legal text as of 31 May 2026 &middot; Apache-2.0 &middot; Not legal advice</p>
+</div>
+
+</section><p class="counter">1 / 19</p></div><div class="note"><p>The helper saves staff the legal research: they answer a few questions about their system, and at the end they get the classification together with its place in the law. The four figures below are measured, not estimated. The 207 of 217 matters most: the expected verdicts come from the European Commission, not from us.</p></div>
+<div class="stage" id="slide-2"><section id="the-question" style="background:#FFFFFF;color:#061634;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:62px;font-weight:400;line-height:1.1">Reading misses, guessing invents — the helper asks</h2>
+<p style="font-size:30px;line-height:1.5;color:#44546F;width:1500px">A language model pre-sorts job applications. A camera detects driver fatigue. A chatbot answers customer questions. Three cases, three entirely different legal situations — and everyone looks it up alone.</p>
+<div style="display:flex;gap:24px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:30px;border:1px solid #DDE4EF;border-radius:16px">
+<h3 style="font-size:28px;font-weight:600">What happens today</h3>
+<p style="font-size:25px;line-height:1.45;color:#44546F">Someone searches 113 articles, 13 annexes and 180 recitals — and misses the one annex point everything depends on.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:30px;border:1px solid #DDE4EF;border-radius:16px">
+<h3 style="font-size:28px;font-weight:600">What a language model delivers alone</h3>
+<p style="font-size:25px;line-height:1.45;color:#44546F">It answers fluently and cites a provision that does not exist. Nobody notices that mistake until an authority asks.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#061634;padding:30px;border-radius:16px">
+<h3 style="font-size:28px;font-weight:600;color:#FFCC00">What this helper does</h3>
+<p style="font-size:25px;line-height:1.45;color:#DCE6F7">It asks — the way the official interpretation prescribes. The answers decide the class, the class decides the obligations, and each comes with its place in the law.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#7C8AA3">Regulation (EU) 2024/1689 &middot; Regulation (EU) 2016/679 &middot; German Federal Data Protection Act (BDSG)</p>
+
+</section><p class="counter">2 / 19</p></div><div class="note"><p>The middle option is the dangerous one: a language model answering from memory sounds just as convincing whether it is right or not. That is why this helper keeps the two apart: the classification comes from the user's answers to fixed questions, and a model may only do the wording.</p></div>
+<div class="stage" id="slide-3"><section id="ask-dont-guess" style="background:#FFFFFF;color:#061634;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:32px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:62px;font-weight:400;line-height:1.1">Asking, not guessing: right instead of probable</h2>
+<p style="font-size:30px;line-height:1.5;color:#44546F;width:1560px">A lawyer asks five to eight things and is then certain — not 98 percent sure. Precise guessing is worse than asking, because it guesses the answers to questions one could simply ask.</p>
+<div style="display:flex;gap:24px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:28px;border:1px solid #DDE4EF;border-radius:16px">
+<h3 style="font-size:27px;font-weight:600">Guessing from a description</h3>
+<p style="font-size:25px;line-height:1.45;color:#44546F">The user writes two sentences about the system. Whatever is not in them — and something almost always is missing — the tool has to assume. In the end the assumption looks like a finding.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:28px;border:1px solid #DDE4EF;border-radius:16px">
+<h3 style="font-size:27px;font-weight:600">What comes out of it</h3>
+<p style="font-size:25px;line-height:1.45;color:#44546F">A result with a probability. Anyone who wants to check it first has to work out what the tool inferred from which word. That is exactly the work it was meant to save.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#061634;padding:28px;border-radius:16px">
+<h3 style="font-size:27px;font-weight:600;color:#FFCC00">Asking</h3>
+<p style="font-size:25px;line-height:1.45;color:#DCE6F7">The answers come from the user, who knows the system. The result is then not probable but right, as far as the answers are true. And the user sees what it depends on.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#7C8AA3">5.3 steps per case on average &middot; measured on 217 official examples, see data/evaluation/MEASUREMENT.md</p>
+
+</section><p class="counter">3 / 19</p></div><div class="note"><p>This is the most important point of the whole presentation. A tool that guesses can guess as well as it likes and remains a guessing tool: nobody can see the gap it filled. A tool that asks exposes every gap — and the answer comes from the only person who knows it.</p></div>
+<div class="stage" id="slide-4"><section id="three-answers" style="background:#FFFFFF;color:#061634;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:32px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:62px;font-weight:400;line-height:1.1">Three answers per question: “Don't know” saves cases</h2>
+<p style="font-size:30px;line-height:1.5;color:#44546F;width:1560px">Every question allows Yes, No and Don't know. The third answer is not a convenience; it follows from the measurement.</p>
+<div style="display:flex;gap:24px">
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#061634;padding:32px;border-radius:16px">
+<h3 style="font-size:28px;font-weight:600;color:#FFCC00">Some questions do not fit</h3>
+<p style="font-size:26px;line-height:1.42;color:#AEC0E2">A tool that screens CVs does not publish job ads — to the question whether an ad shows a specific vacancy, there is neither a yes nor a no.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#061634;padding:32px;border-radius:16px">
+<h3 style="font-size:28px;font-weight:600;color:#FFCC00">A forced no costs cases</h3>
+<p style="font-size:26px;line-height:1.42;color:#AEC0E2">Measured: exactly such systems dropped out of the classification while only yes and no were on offer. The third answer leaves the question open without deciding it.</p>
+</div>
+</div>
+
+</section><p class="counter">4 / 19</p></div><div class="note"><p>A tool that only knows yes and no forces the user into a statement they cannot make. Choosing no then rules out a route that was never meant for their system — and the result becomes wrong without them noticing.</p></div>
+<div class="stage" id="slide-5"><section id="walkthrough" style="background:#FFFFFF;color:#061634;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:22px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:62px;font-weight:400;line-height:1.1">The first three steps only pick the legal questions</h2>
+<p style="font-size:26px;line-height:1.35;color:#44546F;width:1580px">Each step is one screen with a handful of questions. What one step yields decides the next — branches that do not fit are never shown.</p>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:18px;align-items:center">
+<div style="width:300px;display:flex;flex-direction:column;gap:2px;background:#061634;padding:13px 22px;border-radius:12px"><p style="font-size:24px;color:#93A7CC">Step 1</p><h3 style="font-size:26px;font-weight:600;color:#FFFFFF">Three preliminaries</h3></div>
+<p style="flex:1;font-size:24px;line-height:1.35;color:#061634">Is it an AI system under Article 3(1) at all? Does it assess people or only companies? Do you act on behalf of a public authority?</p>
+</div>
+<div style="display:flex;gap:18px;align-items:center">
+<div style="width:300px;display:flex;flex-direction:column;gap:2px;background:#061634;padding:13px 22px;border-radius:12px"><p style="font-size:24px;color:#93A7CC">Step 2</p><h3 style="font-size:26px;font-weight:600;color:#FFFFFF">Annex I</h3></div>
+<p style="flex:1;font-size:24px;line-height:1.35;color:#061634">Is your system built into a regulated product — machinery, toy, lift, medical device, vehicle — or is it one itself? <b>15 product categories.</b></p>
+</div>
+<div style="display:flex;gap:18px;align-items:center">
+<div style="width:300px;display:flex;flex-direction:column;gap:2px;background:#061634;padding:13px 22px;border-radius:12px"><p style="font-size:24px;color:#93A7CC">Step 3</p><h3 style="font-size:26px;font-weight:600;color:#FFFFFF">Eight area questions</h3></div>
+<p style="flex:1;font-size:24px;line-height:1.35;color:#061634">What does your system deal with? Employment, money and essential services, physical features, education, supply networks, courts and elections, police, borders. <b>These eight sentences only sort.</b></p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#7C8AA3">The order is set in data/rules/question_flow_layout.yaml, the questions in data/rules/question_flow/</p>
+
+</section><p class="counter">5 / 19</p></div><div class="note"><p>Anyone who says in the preliminaries that their system only assesses companies is done after three steps. The key point of this slide is step 3: the eight area questions decide nothing, they only select which legal questions are asked at all. Without this split everyone would have to see all 379 questions.</p></div>
+<div class="stage" id="slide-6"><section id="walkthrough-decision" style="background:#FFFFFF;color:#061634;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:22px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:62px;font-weight:400;line-height:1.1">Only the legal questions decide — then comes the finding</h2>
+<p style="font-size:26px;line-height:1.35;color:#44546F;width:1580px">Six steps are the range, not the rule: the average is 5.3.</p>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:18px;align-items:center">
+<div style="width:300px;display:flex;flex-direction:column;gap:2px;background:#FFCC00;padding:13px 22px;border-radius:12px"><p style="font-size:24px;color:#5A4600">Step 4</p><h3 style="font-size:26px;font-weight:600;color:#171100">The legal questions</h3></div>
+<p style="flex:1;font-size:24px;line-height:1.35;color:#061634"><b>This is where the decision is made.</b> The questions of the provision that applies — 31 provisions of the law, each with a main question, follow-up questions and the explicit exclusions of the interpretation.</p>
+</div>
+<div style="display:flex;gap:18px;align-items:center">
+<div style="width:300px;display:flex;flex-direction:column;gap:2px;background:#2F6B5E;padding:13px 22px;border-radius:12px"><p style="font-size:24px;color:#C9E8DF">Step 5</p><h3 style="font-size:26px;font-weight:600;color:#FFFFFF">The derogation</h3></div>
+<p style="flex:1;font-size:24px;line-height:1.35;color:#061634"><b>Article 6(3)</b> — four conditions and the profiling counter-exception. It only comes up if a provision applied before: the law only exempts what first falls under it.</p>
+</div>
+<div style="display:flex;gap:18px;align-items:center">
+<div style="width:300px;display:flex;flex-direction:column;gap:2px;background:#44546F;padding:13px 22px;border-radius:12px"><p style="font-size:24px;color:#CFD8EA">Step 6</p><h3 style="font-size:26px;font-weight:600;color:#FFFFFF">The finding</h3></div>
+<p style="flex:1;font-size:24px;line-height:1.35;color:#061634">Class, citation down to the letter, the obligations that follow — and the official examples for the same provision, so you can hold your case up against them.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#7C8AA3">31 provisions &middot; 379 questions &middot; 214 exclusions &middot; counted from data/rules/question_flow/</p>
+
+</section><p class="counter">6 / 19</p></div><div class="note"><p>Step 4 is the only one that decides. The derogation in step 5 deliberately comes afterwards: Article 6(3) only exempts what first fell under Annex III. A tool asking about the derogation first could clear systems that were never high-risk — or miss ones that are.</p></div>
+<div class="stage" id="slide-7"><section id="example" style="background:#FFFFFF;color:#061634;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:28px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:62px;font-weight:400;line-height:1.1">One question separates high risk from none</h2>
+<p style="font-size:28px;line-height:1.42;color:#44546F;width:1560px">Both systems work in the employment area. They part ways at a single sentence. Cases and verdicts are taken from the Commission guidelines; the walkthrough reaches the same verdict for both.</p>
+<div style="display:flex;gap:26px;align-items:stretch">
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#061634;padding:28px 30px;border-radius:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#FFCC00">Official example 109</p>
+<p style="font-family:'Source Serif 4', Georgia, serif;font-size:27px;line-height:1.42;color:#FFFFFF">“A tool automatically matches candidates with jobs and creates a ranking … Recruiters may override, but the ranking is the most important input to the decision.”</p>
+<div style="display:flex;flex-direction:column;gap:6px;background:#102A57;padding:18px 22px;border-radius:12px">
+<p style="font-size:24px;line-height:1.35;color:#AEC0E2">“Is your system intended to be used to recruit or select people for a job or an assignment?”</p>
+<p style="font-size:25px;font-weight:600;color:#FFFFFF">Yes</p>
+</div>
+<p style="font-size:30px;font-weight:600;color:#FFCC00">High risk<br>Annex III, point 4(a)</p>
+<p style="font-size:24px;line-height:1.38;color:#93A7CC">7 steps, 46 questions &middot; Commission verdict on paragraph (254): “The system screens and filters candidates.”</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:28px 30px;border:1px solid #DDE4EF;border-radius:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#7C8AA3">Official example 50</p>
+<p style="font-family:'Source Serif 4', Georgia, serif;font-size:27px;line-height:1.42;color:#061634">“A system exclusively detects non-inclusive or discriminatory wording in job advertisement texts; the detection logic is based on patterns defined and reviewed by humans.”</p>
+<div style="display:flex;flex-direction:column;gap:6px;background:#F4F6FB;padding:18px 22px;border-radius:12px">
+<p style="font-size:24px;line-height:1.35;color:#44546F">The same question</p>
+<p style="font-size:25px;font-weight:600;color:#061634">No</p>
+</div>
+<p style="font-size:30px;font-weight:600;color:#2F6B5E">Not high risk</p>
+<p style="font-size:24px;line-height:1.38;color:#44546F">4 steps, 13 questions &middot; Commission verdict: “It is not intended for recruiting or selecting people, even though it operates in the broad field of employment.”</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#7C8AA3">Both cases recomputed on 4 October 2026 &middot; all 217 cases with expected and actual verdict and step count in data/evaluation/</p>
+
+</section><p class="counter">7 / 19</p></div><div class="note"><p>This shows what the question flow achieves. Both systems deal with applicants, both work in the area of point 4. A tool guessing from a description would see the same keywords in both — ads, applicants, selection. The question whether the system is meant to recruit or select people separates them; and that question was not made up by the program, it comes from paragraph (254) of the guidelines.</p></div>
+<div class="stage" id="slide-8"><section id="question-sources" style="background:#061634;color:#FFFFFF;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:26px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:62px;font-weight:400;line-height:1.1;color:#FFFFFF">Every question comes from the Commission guidelines</h2>
+<p style="font-size:29px;line-height:1.45;color:#AEC0E2;width:1580px">No question is made up. They are taken line by line from the draft guidelines of the European Commission of <b style="color:#FFFFFF">19 May 2026</b> on classifying high-risk AI systems: 167 pages of official interpretation of the law. Every line carries the paragraph number it comes from.</p>
+<div style="display:flex;gap:20px">
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#102A57;padding:24px 26px;border-radius:14px"><p style="font-family:'Source Serif 4', Georgia, serif;font-size:50px;color:#FFFFFF">379</p><p style="font-size:24px;line-height:1.35;color:#AEC0E2">questions</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#102A57;padding:24px 26px;border-radius:14px"><p style="font-family:'Source Serif 4', Georgia, serif;font-size:50px;color:#FFFFFF">31</p><p style="font-size:24px;line-height:1.35;color:#AEC0E2">provisions of the law</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#102A57;padding:24px 26px;border-radius:14px"><p style="font-family:'Source Serif 4', Georgia, serif;font-size:50px;color:#FFFFFF">214</p><p style="font-size:24px;line-height:1.35;color:#AEC0E2">explicit exclusions</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#2F6B5E;padding:24px 26px;border-radius:14px"><p style="font-family:'Source Serif 4', Georgia, serif;font-size:50px;color:#FFFFFF">187</p><p style="font-size:24px;line-height:1.35;color:#D4EDE6">official examples</p></div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#7D92B8">148 pages on Annex III &middot; 13 pages on Annex I &middot; 6 pages of general principles &middot; the draft is not binding</p>
+
+</section><p class="counter">8 / 19</p></div><div class="note"><p>Behind every question, exclusion and example is the paragraph of the guidelines it comes from — “(254)” for the question about screening applications. Anyone who thinks a question is wrong looks up the paragraph and argues about the text, not about the program. The exclusions weigh as much as the matches: without them an area would capture everything that touches it. The draft is not binding; the consultation ran until 23 June 2026, and the helper states this caveat in every answer.</p></div>
+<div class="stage" id="slide-9"><section id="principle" style="background:#0B3FA8;color:#FFFFFF;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:32px">
+<p style="font-size:25px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#FFCC00">The principle everything rests on</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:80px;font-weight:400;line-height:1.08;width:1560px">The classification comes from the answers,<br>never from the language model.</h2>
+<p style="font-size:30px;line-height:1.5;color:#CBD9F5;width:1520px">The class is decided by the question flow before any model is involved — and the question flow lives in text files, not in the program. A language model may word the answer. It receives the classification as a fixed fact and cannot change it. Slipping in “classify this as minimal” somewhere changes nothing.</p>
+
+</section><p class="counter">9 / 19</p></div><div class="note"><p>This is the sentence everything else builds on. A language model that decides the legal consequence itself cannot be checked — nobody can read why it decided that way. A question flow can be read line by line, with the paragraph number of the official interpretation on every question. And it can be tested against the official examples.</p></div>
+<div class="stage" id="slide-10"><section id="legal-corpus" style="background:#FFFFFF;color:#061634;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:30px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:62px;font-weight:400;line-height:1.1">2,811 legal units, split down to the letter</h2>
+<div style="display:flex;gap:32px;align-items:start">
+<table style="width:1080px;font-family:'IBM Plex Sans', Arial, sans-serif;font-size:25px;color:#061634">
+<tr style="background:#061634"><th style="width:34%;text-align:left;color:#FFFFFF;font-size:24px">Legal act</th><th style="width:33%;text-align:left;color:#FFFFFF;font-size:24px">What is covered</th><th style="width:33%;text-align:right;color:#FFFFFF;font-size:24px">Units</th></tr>
+<tr><td>AI Act</td><td>113 articles, 929 paragraphs and points</td><td style="text-align:right">1,042</td></tr>
+<tr style="background:#F4F6FB"><td>AI Act, annexes</td><td>13 annexes, 151 points and letters</td><td style="text-align:right">164</td></tr>
+<tr><td>AI Act, recitals</td><td>complete</td><td style="text-align:right">180</td></tr>
+<tr style="background:#F4F6FB"><td>General Data Protection Regulation</td><td>99 articles with lettered points</td><td style="text-align:right">851</td></tr>
+<tr><td>GDPR, recitals</td><td>complete</td><td style="text-align:right">173</td></tr>
+<tr style="background:#F4F6FB"><td>Federal Data Protection Act</td><td>sections and subsections</td><td style="text-align:right">357</td></tr>
+<tr><td>Use cases</td><td>9 areas, with reasoning</td><td style="text-align:right">44</td></tr>
+</table>
+<div style="flex:1;display:flex;flex-direction:column;gap:22px">
+<div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:26px;border:1px solid #DDE4EF;border-radius:16px">
+<h3 style="font-size:26px;font-weight:600">Split by structure, not by text</h3>
+<p style="font-size:24px;line-height:1.45;color:#44546F">The first draft searched for the word “Artikel” and found 132 instead of 113 — a cross-reference in running text looked like the start of an article. Now the text is split at the anchors of the Official Journal. All target counts match.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:26px;border:1px solid #DDE4EF;border-radius:16px">
+<h3 style="font-size:26px;font-weight:600">Down to the letter, not just the point</h3>
+<p style="font-size:24px;line-height:1.45;color:#44546F">Annex III names eight areas, but a case depends on the letter below: point 4(a) covers recruitment, point 4(b) working conditions. All 24 letters are units of their own — as are the 20 legal acts of Annex I.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#7C8AA3">1,877,159 characters of English legal text &middot; the same 2,811 units in German &middot; sources in docs/data-sources.md</p>
+
+</section><p class="counter">10 / 19</p></div><div class="note"><p>The figures are test criteria, not claims: a dedicated test file checks on every run that the AI Act has 113 articles. If a provision is missing, the run fails — otherwise a gap in the corpus would never show; it would only lead to an incomplete answer. The English corpus takes over the ids of the German one, so both languages cite the same unit.</p></div>
+<div class="stage" id="slide-11"><section id="classification" style="background:#FFFFFF;color:#061634;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:22px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:62px;font-weight:400;line-height:1.1">A preliminary check, then two routes to high risk</h2>
+<p style="font-size:26px;line-height:1.35;color:#44546F;width:1580px">The checks follow the order of the law. The first finding that holds stands — with the provision it rests on.</p>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:18px;align-items:center">
+<div style="width:330px;display:flex;flex-direction:column;gap:2px;background:#44546F;padding:13px 22px;border-radius:12px"><p style="font-size:24px;color:#CFD8EA">Preliminary 1</p><h3 style="font-size:26px;font-weight:600;color:#FFFFFF">Not an AI system</h3></div>
+<p style="flex:1;font-size:24px;line-height:1.34;color:#061634">Anything that only runs fixed calculation steps and infers nothing from its inputs is outside the Regulation. <b>Article 3(1).</b> The walkthrough ends here after one question.</p>
+</div>
+<div style="display:flex;gap:18px;align-items:center">
+<div style="width:330px;display:flex;flex-direction:column;gap:2px;background:#FFCC00;padding:13px 22px;border-radius:12px"><p style="font-size:24px;color:#5A4600">Article 6(1)</p><h3 style="font-size:26px;font-weight:600;color:#171100">High risk, Annex I</h3></div>
+<p style="flex:1;font-size:24px;line-height:1.34;color:#061634">The system is a safety component of a regulated product or is such a product itself. <b>15 product categories</b> — machinery, lift, medical device, vehicle and more.</p>
+</div>
+<div style="display:flex;gap:18px;align-items:center">
+<div style="width:330px;display:flex;flex-direction:column;gap:2px;background:#FFCC00;padding:13px 22px;border-radius:12px"><p style="font-size:24px;color:#5A4600">Article 6(2)</p><h3 style="font-size:26px;font-weight:600;color:#171100">High risk, Annex III</h3></div>
+<p style="flex:1;font-size:24px;line-height:1.34;color:#061634">One of the <b>31 provisions</b> applies, down to the letter: point 4(a) covers recruitment, point 4(b) working conditions — two question flows, two lists of obligations.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#7C8AA3">The findings are computed in src/compliance_helper/classification/question_flow.py and in web/walkthrough.js — identical in 400 of 400 runs</p>
+
+</section><p class="counter">11 / 19</p></div><div class="note"><p>The order is that of the law: first whether it is an AI system at all, then the product safety law of Annex I, then the areas of use in Annex III. Annex III always applies down to the letter, because the obligations depend on it. The same logic exists twice, in Python and in the browser; a comparison with 400 answer patterns shows that both compute the same.</p></div>
+<div class="stage" id="slide-12"><section id="classification-edge-cases" style="background:#FFFFFF;color:#061634;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:22px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:62px;font-weight:400;line-height:1.1">More than yes or no: conditional, exempt, not high risk</h2>
+<p style="font-size:26px;line-height:1.35;color:#44546F;width:1580px">These three findings, too, name the provision they rest on — and what would change the answer.</p>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:18px;align-items:center">
+<div style="width:330px;display:flex;flex-direction:column;gap:2px;background:#8C2F23;padding:13px 22px;border-radius:12px"><p style="font-size:24px;color:#F3CFC9">What nobody can know</p><h3 style="font-size:26px;font-weight:600;color:#FFFFFF">High risk, conditional</h3></div>
+<p style="flex:1;font-size:24px;line-height:1.34;color:#061634">Annex III point 2 requires the deployer to be formally designated as a critical entity — and the interpretation states that the provider need not be told. A no would be wrong here, hence a finding of its own.</p>
+</div>
+<div style="display:flex;gap:18px;align-items:center">
+<div style="width:330px;display:flex;flex-direction:column;gap:2px;background:#2F6B5E;padding:13px 22px;border-radius:12px"><p style="font-size:24px;color:#C9E8DF">Article 6(3)</p><h3 style="font-size:26px;font-weight:600;color:#FFFFFF">Derogation applies</h3></div>
+<p style="flex:1;font-size:24px;line-height:1.34;color:#061634">A provision applies, but the task is narrowly defined and does not materially influence the decision. <b>With a counter-exception:</b> profiling of people never qualifies.</p>
+</div>
+<div style="display:flex;gap:18px;align-items:center">
+<div style="width:330px;display:flex;flex-direction:column;gap:2px;background:#061634;padding:13px 22px;border-radius:12px"><p style="font-size:24px;color:#93A7CC">No match</p><h3 style="font-size:26px;font-weight:600;color:#FFFFFF">Not high risk</h3></div>
+<p style="flex:1;font-size:24px;line-height:1.34;color:#061634">No provision applies, or one of the <b>214 explicit exclusions</b> does. Here, too, the finding names the provision where it was decided.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#7C8AA3">Conditional: paragraphs (190) and (191) of the guidelines &middot; Derogation: Article 6(3) AI Act</p>
+
+</section><p class="counter">12 / 19</p></div><div class="note"><p>The first finding on this slide is the one that matters. A tool that only knows yes and no would have had to lie here: either it claims high risk although the designation may be missing, or it denies it although the designation may exist. Both would be wrong. That this gets a finding of its own is not in the law — it follows from paragraphs 190 and 191 of the interpretation.</p></div>
+<div class="stage" id="slide-13"><section id="obligations" style="background:#FFFFFF;color:#061634;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:34px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:62px;font-weight:400;line-height:1.1">57 obligations — filtered, not just listed</h2>
+<p style="font-size:28px;line-height:1.4;color:#44546F;width:1560px">Each obligation states: what to do, in plain language · the citation · from when it applies · how to prove compliance · what an infringement risks.</p>
+<div style="display:flex;gap:26px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:30px;border:1px solid #DDE4EF;border-radius:14px">
+<h3 style="font-size:28px;font-weight:600">By class and by role</h3>
+<p style="font-size:25px;line-height:1.4;color:#44546F">A chatbot gets no high-risk obligations. And there are more than two roles: provider, deployer, product manufacturer, importer, distributor, authorised representative — each carries different obligations from the same articles.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:30px;border:1px solid #DDE4EF;border-radius:14px">
+<h3 style="font-size:28px;font-weight:600">What stays open is named</h3>
+<p style="font-size:25px;line-height:1.4;color:#44546F">If the user names no role, both the provider's and the deployer's view are shown — otherwise half the answer would be missing. Only what an answer rules out is left out.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#061634;padding:30px;border-radius:14px">
+<h3 style="font-size:28px;font-weight:600;color:#FFCC00">Every legal basis checked</h3>
+<p style="font-size:25px;line-height:1.4;color:#AEC0E2">302 of 302 legal bases in the rule set point to a passage that really is in the bundled legal corpus — checked on every test run, not once while writing.</p>
+</div>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFFFF;padding:26px 30px;border:1px solid #DDE4EF;border-radius:14px"><p style="font-family:'Source Serif 4', Georgia, serif;font-size:50px;color:#061634">26</p><p style="font-size:25px;line-height:1.35;color:#44546F">sections in the data protection review path, each with a question, legal basis, evidence and consequence of an infringement</p></div>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#7C8AA3">Obligations matrix: data/rules/ai_act_obligations.yaml &middot; Data protection path: data/rules/gdpr_review_path.yaml</p>
+
+</section><p class="counter">13 / 19</p></div><div class="note"><p>The filter is the difference between an answer and a pile of material: without it every high-risk system would get the whole list, and the user would have to sort it out alone — exactly the work the tool is meant to save. The filter errs on the side of caution: it only leaves out what an answer rules out, not what an answer leaves open. Next to the finding the user also sees the official examples for the same provision, 187 in total.</p></div>
+<div class="stage" id="slide-14"><section id="search" style="background:#061634;color:#FFFFFF;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:28px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:62px;font-weight:400;line-height:1.1;color:#FFFFFF">Four search routes find the passage by meaning and wording</h2>
+<p style="font-size:26px;line-height:1.45;color:#AEC0E2;width:1600px">The second task besides classification: looking things up. Legal questions come in two kinds — by meaning (“May we pre-sort job applications?”) and by wording (“What does Article 6(3) say?”). A single search route loses the other half each time.</p>
+<div style="display:flex;gap:18px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#102A57;padding:26px;border-radius:16px">
+<p style="font-size:24px;font-weight:600;color:#FFCC00">1 &middot; Meaning</p>
+<h3 style="font-size:25px;font-weight:600;color:#FFFFFF">Vector search</h3>
+<p style="font-size:24px;line-height:1.4;color:#AEC0E2">Finds “recruitment or selection of natural persons” although no word matches.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#102A57;padding:26px;border-radius:16px">
+<p style="font-size:24px;font-weight:600;color:#FFCC00">2 &middot; Wording</p>
+<h3 style="font-size:25px;font-weight:600;color:#FFFFFF">Keyword search</h3>
+<p style="font-size:24px;line-height:1.4;color:#AEC0E2">BM25 ranking over the wording. A vector search blurs article numbers &mdash; to it, numbers look almost alike.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#102A57;padding:26px;border-radius:16px">
+<p style="font-size:24px;font-weight:600;color:#FFCC00">3 &middot; Context</p>
+<h3 style="font-size:25px;font-weight:600;color:#FFFFFF">Model word weights</h3>
+<p style="font-size:24px;line-height:1.4;color:#AEC0E2">Sits between meaning and wording: weights words by their role in the sentence.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#2F6B5E;padding:26px;border-radius:16px">
+<p style="font-size:24px;font-weight:600;color:#C9E8DF">4 &middot; Named provision</p>
+<h3 style="font-size:25px;font-weight:600;color:#FFFFFF">Citation route</h3>
+<p style="font-size:24px;line-height:1.4;color:#D4EDE6">“Art. 6(3)” is resolved to an id and fetched directly. Without this route an exact question would only get approximate similarity.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#7D92B8">One search index per language &middot; search model about 2.3 gigabytes, loaded once &mdash; classification runs without it</p>
+
+</section><p class="counter">14 / 19</p></div><div class="note"><p>The fourth route is easy to forget — and the one needed most often: a lawyer names the provision they are asking about. A pure meaning search answers that with something similar instead of the thing asked for. The routes are merged not by their scores, which are not comparable between routes, but by rank; a hit that several routes rank high moves up. On request a cross-encoder, which reads question and passage together, then reorders the best 30. Search is an extra: the classification does not need it and runs without any model.</p></div>
+<div class="stage" id="slide-15"><section id="security" style="background:#061634;color:#FFFFFF;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:34px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:62px;font-weight:400;line-height:1.1;color:#FFFFFF">Four attack routes, each one closed off</h2>
+<div style="display:flex;gap:22px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#102A57;padding:30px;border-radius:14px">
+<h3 style="font-size:27px;font-weight:600;color:#FFCC00">Injected instructions</h3>
+<p style="font-size:25px;line-height:1.38;color:#AEC0E2">The user's description sits between two markers drawn at random for each request. Faking a section boundary would mean guessing them.</p>
+<p style="font-size:24px;line-height:1.35;color:#93A7CC">Tested with 10 attacks, each checked twice.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#102A57;padding:30px;border-radius:14px">
+<h3 style="font-size:27px;font-weight:600;color:#FFCC00">Invented citations</h3>
+<p style="font-size:25px;line-height:1.38;color:#AEC0E2">Every article in the answer must appear in the evidence. Anything unsupported is reported.</p>
+<p style="font-size:24px;line-height:1.35;color:#93A7CC">That is how Article 72 was caught in an obligation text but missing from its citations.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#102A57;padding:30px;border-radius:14px">
+<h3 style="font-size:27px;font-weight:600;color:#FFCC00">The index as an attack route</h3>
+<p style="font-size:25px;line-height:1.38;color:#AEC0E2">Stored as a pickle file, a tampered copy would have run foreign code on load. Now JSON: wrong hits are possible, foreign code is not.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#2F6B5E;padding:30px;border-radius:14px">
+<h3 style="font-size:27px;font-weight:600;color:#FFFFFF">In operation</h3>
+<p style="font-size:25px;line-height:1.38;color:#D4EDE6">The container runs without administrator rights and cannot change its own code. Keys never in the log. 30 requests per minute. No outbound connection.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#7D92B8">Vulnerability reports: SECURITY.md &middot; Security model: docs/security.md</p>
+
+</section><p class="counter">15 / 19</p></div><div class="note"><p>The third point is the easiest to overlook. The code once justified it with “own file, no foreign content” — that was wrong: the file ships with the repository, and anyone who changes a copy reaches everyone who loads it. The check tools fail instead of warning: ruff, ruff format, mypy, bandit and pip-audit pass without findings, so a red run means something again.</p></div>
+<div class="stage" id="slide-16"><section id="where-it-runs" style="background:#FFFFFF;color:#061634;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:30px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:62px;font-weight:400;line-height:1.1">Three places, the same answer</h2>
+<p style="font-size:28px;line-height:1.45;color:#44546F;width:1580px">Question flow, legal corpus and rule set ship everywhere, in German and English. No detail leaves the device &mdash; unless the operator deliberately stores a key for Claude or GPT to word the answer.</p>
+<div style="display:flex;gap:22px">
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#061634;padding:28px;border-radius:16px">
+<h3 style="font-size:29px;font-weight:600;color:#FFCC00">In the browser</h3>
+<p style="font-size:24px;line-height:1.45;color:#DCE6F7">A web page that installs nothing and transmits nothing: one HTML file, two JavaScript files, the question data and one text file per language. No sign-in, no account, no model.</p>
+<p style="font-size:24px;line-height:1.4;color:#FFFFFF"><b>Your browser computes the classification</b> &mdash; the page cannot send your answers anywhere; there is nowhere to send them.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:28px;border:1px solid #DDE4EF;border-radius:16px">
+<h3 style="font-size:29px;font-weight:600">As a ready-made package</h3>
+<p style="font-size:24px;line-height:1.45;color:#44546F">An installer for Windows, a disk image to drag in for Mac, an archive for Linux. Download, start &mdash; the interface opens in the browser. No Python, no setup.</p>
+<p style="font-size:24px;line-height:1.4;color:#061634"><b>Plus looking things up:</b> full-text search in the legal text, by words only in the package.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFFFF;padding:28px;border:1px solid #DDE4EF;border-radius:16px">
+<h3 style="font-size:29px;font-weight:600">From source</h3>
+<p style="font-size:24px;line-height:1.45;color:#44546F">For in-house operation: an interface for your own workflows, five command-line commands, and a container that runs with one command &mdash; as a user without administrator rights.</p>
+<p style="font-size:24px;line-height:1.4;color:#061634"><b>Tested offline:</b> the container is started with networking switched off and must still answer.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#7C8AA3">Every package is started in the check run before it is published</p>
+
+</section><p class="counter">16 / 19</p></div><div class="note"><p>“Runs without installation” is meant literally here: the web page is a file that computes in the browser. There is no service behind it that could receive answers. And “runs offline” is checked in the container: the service is started with networking switched off and must answer — and the check also confirms that the network really is absent, otherwise the first check would be worthless.</p></div>
+<div class="stage" id="slide-17"><section id="operations-guide" style="background:#FFFFFF;color:#061634;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:26px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:60px;font-weight:400;line-height:1.1">From first try to production in three steps</h2>
+<div style="display:flex;gap:26px;align-items:start">
+<div style="width:840px;display:flex;flex-direction:column;gap:18px">
+<div style="display:flex;gap:16px;align-items:start"><p style="font-family:'Source Serif 4', Georgia, serif;font-size:36px;color:#E0A800;width:52px">1</p><div style="flex:1;display:flex;flex-direction:column;gap:6px"><h3 style="font-size:26px;font-weight:600">Just trying: do nothing</h3><p style="font-size:24px;line-height:1.4;color:#44546F">Open the web page and answer the questions. There is nothing to install and no sign-in; the browser computes the classification.</p></div></div>
+<div style="display:flex;gap:16px;align-items:start"><p style="font-family:'Source Serif 4', Georgia, serif;font-size:36px;color:#E0A800;width:52px">2</p><div style="flex:1;display:flex;flex-direction:column;gap:6px"><h3 style="font-size:26px;font-weight:600">On your own computer: the package</h3><p style="font-size:24px;line-height:1.4;color:#44546F">Download the package for Windows, Mac or Linux from the releases page, install, start. The interface opens in the browser. Legal corpus and rule set are included &mdash; nothing is downloaded later.</p></div></div>
+<div style="display:flex;gap:16px;align-items:start"><p style="font-family:'Source Serif 4', Georgia, serif;font-size:36px;color:#E0A800;width:52px">3</p><div style="flex:1;display:flex;flex-direction:column;gap:6px"><h3 style="font-size:26px;font-weight:600">From source</h3><p style="font-size:24px;line-height:1.4;color:#44546F">Clone the repository, then <b>pip install -e .</b> and <b>python packaging/launch_app.py</b>. As a container: <b>./scripts/start.sh</b>. Anyone who wants to search the legal text builds the search index once per language &mdash; the classification does not wait for it.</p></div></div>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#061634;padding:28px;border-radius:16px">
+<h3 style="font-size:26px;font-weight:600;color:#FFCC00">For your own workflows</h3>
+<p style="font-size:24px;line-height:1.45;color:#AEC0E2">compliance-helper <b style="color:#FFFFFF">classify</b> &ldquo;...&rdquo;<br>compliance-helper <b style="color:#FFFFFF">ask</b> &ldquo;...&rdquo;<br>compliance-helper <b style="color:#FFFFFF">search</b> &ldquo;Article 6(3)&rdquo;<br>compliance-helper <b style="color:#FFFFFF">status</b><br>compliance-helper <b style="color:#FFFFFF">serve</b></p>
+<p style="font-size:24px;line-height:1.4;color:#93A7CC">With <b>--json</b> the output can be processed further, with <b>--lang de</b> it is German &mdash; for a nightly check of all systems of a company, say.</p>
+<p style="font-size:24px;line-height:1.4;color:#93A7CC"><b>/health</b> reports status, legal units, rule set version and search model &mdash; and says so when the search index is missing.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#7C8AA3">In detail in docs/operations-guide.md &middot; Architecture in docs/architecture.md</p>
+
+</section><p class="counter">17 / 19</p></div><div class="note"><p>The order is the order of getting started: anyone who wants to know whether the tool helps them needs step 1 and nothing else. Step 3 is the only one with a wait, and it only affects looking things up. That is why the service says on its own when it searches with the fallback: it then compares words instead of meaning, and the passages found are noticeably worse. Keys for a language model come from the environment, not from a file in the repository; the template is .env.example.</p></div>
+<div class="stage" id="slide-18"><section id="measured" style="background:#061634;color:#FFFFFF;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:28px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:62px;font-weight:400;line-height:1.1;color:#FFFFFF">207 of 217 official examples classified correctly</h2>
+<div style="display:flex;gap:28px;align-items:start">
+<table style="width:1010px;font-family:'IBM Plex Sans', Arial, sans-serif;font-size:25px;color:#FFFFFF">
+<tr style="background:#040D1F"><th style="width:66%;text-align:left;color:#FFCC00;font-size:24px">What was measured</th><th style="width:34%;text-align:right;color:#FFCC00;font-size:24px">Result</th></tr>
+<tr><td>Official Commission examples classified correctly</td><td style="text-align:right;font-weight:600">207 of 217</td></tr>
+<tr style="background:#0A1A36"><td>&#8201;&#8201;without the seven that do not measure the walkthrough</td><td style="text-align:right">207 of 210</td></tr>
+<tr style="background:#102A57"><td>Steps per case, on average</td><td style="text-align:right">5.3</td></tr>
+<tr><td>Web page and program compute the same</td><td style="text-align:right">400 of 400</td></tr>
+<tr style="background:#102A57"><td>Legal bases in the rule set point to real official text</td><td style="text-align:right">302 of 302</td></tr>
+<tr><td>Legal corpus split without loss, per language</td><td style="text-align:right">2,811 units</td></tr>
+<tr style="background:#102A57"><td>The built package starts and shows the question flow</td><td style="text-align:right">every build</td></tr>
+</table>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;flex-direction:column;gap:10px;background:#2F6B5E;padding:24px;border-radius:16px">
+<h3 style="font-size:26px;font-weight:600;color:#FFFFFF">The expected values are not ours</h3>
+<p style="font-size:24px;line-height:1.38;color:#D4EDE6">That is the difference from the previous version: there, rules and test cases came from the same hand, and a high hit rate only meant that the helper shared the same reading. Now each of the 217 examples carries the Commission's verdict.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px;background:#102A57;padding:24px;border-radius:16px">
+<h3 style="font-size:26px;font-weight:600;color:#FFCC00">The ten mismatches, each one named</h3>
+<p style="font-size:24px;line-height:1.38;color:#AEC0E2">Seven do not measure the walkthrough: their descriptions name no Annex III area at all, and without an area the Article 6(3) derogation rightly never comes up. The other three lack the decisive feature in the example text — anyone classifying their own system knows it.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#7D92B8">Method and every single mismatch in data/evaluation/MEASUREMENT.md &middot; on every pull request on GitHub: Python 3.11, 3.12 and 3.13</p>
+
+</section><p class="counter">18 / 19</p></div><div class="note"><p>The second row is the most honest figure of the presentation: seven examples come from the section of the guidelines on the derogation and describe only the derogation feature, without naming an area. The walkthrough asks about the derogation only once an area applies — that is what the law says. For the user the result in these seven cases is the same: no high-risk obligations. In the other direction the figure is rather too low: the examples are two sentences long, and staff know more about their own system.</p></div>
+<div class="stage" id="slide-19"><section id="limitations" style="background:#FFFFFF;color:#061634;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:30px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:62px;font-weight:400;line-height:1.1">Not legal advice, but one data version with limits</h2>
+<div style="display:flex;gap:24px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:30px;border:1px solid #DDE4EF;border-radius:16px">
+<h3 style="font-size:28px;font-weight:600">Not legal advice</h3>
+<p style="font-size:25px;line-height:1.45;color:#44546F">It says which provision is relevant and what it says. Whether it applies to your case is decided by a person licensed to give legal advice. Every answer says so.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:30px;border:1px solid #DDE4EF;border-radius:16px">
+<h3 style="font-size:28px;font-weight:600">The interpretation is a draft</h3>
+<p style="font-size:25px;line-height:1.45;color:#44546F">The questions rest on the Commission guidelines of <b>19 May 2026</b>. The consultation ran until 23 June 2026; no final version existed when this work was completed.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:30px;border:1px solid #DDE4EF;border-radius:16px">
+<h3 style="font-size:28px;font-weight:600">A data version, not a subscription</h3>
+<p style="font-size:25px;line-height:1.45;color:#44546F">Covered is the wording as of <b>31 May 2026</b>. Anything issued later is not included. The deadlines from Article 113 also come with a caveat: the application dates were under political discussion.</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px;background:#061634;padding:30px 32px;border-radius:16px">
+<h3 style="font-size:28px;font-weight:600;color:#FFCC00">Still to be checked</h3>
+<p style="font-size:24px;line-height:1.42;color:#AEC0E2">No lawyer has reviewed the walkthrough. The obligations are checked against the text of the Regulation but not measured against an outside benchmark — no official collection of examples exists for them. Only the classification is measured.</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#7C8AA3">Apache-2.0 &middot; Liability in docs/liability.md &middot; Anyone may use, change and share it</p>
+
+</section><p class="counter">19 / 19</p></div><div class="note"><p>This slide belongs in the deck, not in the small print. A tool that does not state its limits is taken for more than it is — and then someone is liable for it. The key sentence is in the dark box: everything measured concerns the classification, not the obligations, and nobody licensed has read the questions. Anyone who finds a legal error gets a dedicated report template in the repository: citation, expected and received classification. A wrongly classified case is the most important bug there is and is handled before all others.</p></div>
+</main>
+<script>
+  (function () {
+    var stages = Array.prototype.slice.call(document.querySelectorAll('.stage'));
+    if (!stages.length) return;
+
+    function applyScale() {
+      var width = stages[0].clientWidth;
+      document.documentElement.style.setProperty('--scale', width / 1920);
+      document.documentElement.classList.add('scaled');
+    }
+    applyScale();
+    window.addEventListener('resize', applyScale);
+    if ('ResizeObserver' in window) new ResizeObserver(applyScale).observe(stages[0]);
+
+    if (window.matchMedia) {
+      var printQuery = window.matchMedia('print');
+      var onPrintChange = function (e) {
+        if (e.matches) document.documentElement.style.setProperty('--scale', 1);
+        else applyScale();
+      };
+      if (printQuery.addEventListener) printQuery.addEventListener('change', onPrintChange);
+    }
+
+    // Paging scrolls to the next slide instead of keeping a view state, so the page stays
+    // fully readable without JavaScript.
+    var current = 0;
+    function show(n) {
+      current = Math.max(0, Math.min(stages.length - 1, n));
+      stages[current].scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+    document.addEventListener('keydown', function (e) {
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') {
+        e.preventDefault(); show(current + 1);
+      } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+        e.preventDefault(); show(current - 1);
+      } else if (e.key === 'Home') { e.preventDefault(); show(0); }
+      else if (e.key === 'End') { e.preventDefault(); show(stages.length - 1); }
+    });
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) current = stages.indexOf(e.target);
+        });
+      }, { rootMargin: '-45% 0px -45% 0px' });
+      stages.forEach(function (b) { observer.observe(b); });
+    }
+
+    var toggle = document.getElementById('notes-toggle');
+    var labels = ["Hide speaker notes", "Show speaker notes"];
+    toggle.addEventListener('click', function () {
+      var hidden = document.body.classList.toggle('notes-hidden');
+      toggle.textContent = labels[hidden ? 1 : 0];
+    });
+  })();
+</script>
+</body>
+</html>

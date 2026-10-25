@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=AI Act Compliance Helper
+Name[de]=Konformitätshelfer
+Comment=EU AI Act and General Data Protection Regulation: classification in six steps
+Comment[de]=EU-KI-Verordnung und Datenschutz-Grundverordnung: Einstufung in sechs Schritten
+Exec=sh -c 'cd "$(dirname "$(readlink -f %k)")" && ./ComplianceHelper'
+Terminal=true
+Categories=Office;Utility;
+Keywords=AI Act;EU AI Act;GDPR;compliance;classification;
+Keywords[de]=KI-Verordnung;EU AI Act;DSGVO;Konformität;Einstufung;

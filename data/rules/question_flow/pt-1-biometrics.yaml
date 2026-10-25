@@ -1,0 +1,494 @@
+area: "AI-Act/annex-III/pt-1"
+title:
+  de: "Biometrie"
+  en: "Biometrics"
+source:
+  de: "Entwurf der Leitlinien der Kommission vom 19.05.2026, Anhang III, Abschnitt 3.1"
+  en: "Draft Commission guidelines of 19 May 2026, Annex III, section 3.1"
+provisions:
+  - citation: "AI-Act/annex-III/pt-1-a"
+    main_question:
+      de: "Erkennt Ihr System wieder, wer ein Mensch ist, indem es gemessene Körpermerkmale mit einer Sammlung gespeicherter Körpermerkmale vergleicht, ohne dass die Person dabei bewusst mitmacht?"
+      en: "Does your system recognise who a person is by comparing measured biometric data with a database of stored biometric data, without the person knowingly taking part?"
+    follow_up_questions:
+      - question:
+          de: "Verarbeitet Ihr System gemessene Körpermerkmale von Menschen, also Gesicht, Fingerabdruck, Iris, Venenbild, Erbinformation, Geruch, Stimme, Gangart, Handschrift, Tippverhalten, Klickmuster, Blickbewegung, Herzschlag oder Hirnströme?"
+          en: "Does your system process measured biometric data of people, i.e. face, fingerprint, iris, vein pattern, genetic information, odour, voice, gait, handwriting, typing behaviour, click patterns, eye movement, heartbeat or brain waves?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(122)"
+      - question:
+          de: "Betreffen diese Körpermerkmale ausschliesslich Verstorbene, Leichen, menschliche Überreste oder Spuren davon?"
+          en: "Does this biometric data relate exclusively to deceased persons, corpses, human remains or traces of them?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(123)"
+      - question:
+          de: "Ist der Zweck des Systems, festzustellen, wer eine Person ist, also ihre Identität zu bestimmen?"
+          en: "Is the purpose of the system to establish who a person is, i.e. to determine their identity?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(131)"
+      - question:
+          de: "Vergleicht das System die gemessenen Körpermerkmale der Person mit Körpermerkmalen, die in einer Sammlung gespeichert sind?"
+          en: "Does the system compare the person's measured biometric data with biometric data stored in a database?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(129)"
+      - question:
+          de: "Ist der einzige Zweck, zu bestätigen, dass die Person diejenige ist, für die sie sich ausgibt, etwa um ihr Zugang zu einem Dienst zu geben, ein Gerät zu entsperren oder sie in Räume zu lassen?"
+          en: "Is the sole purpose to confirm that the person is who they claim to be, for example to give them access to a service, to unlock a device or to let them into premises?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(138)"
+      - question:
+          de: "Müssen die betroffenen Personen bewusst mitmachen, sich also absichtlich vor den Sensor stellen oder ihn absichtlich berühren, damit das System arbeitet?"
+          en: "Do the persons concerned have to knowingly take part, i.e. deliberately stand in front of the sensor or deliberately touch it, for the system to work?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(140)"
+      - question:
+          de: "Werden ausschliesslich Aufnahmen eines abgeschlossenen Materialbestands von einem Tatort ausgewertet, ohne Abgleich mit Sammlungen von aussen, so dass keine Identität festgestellt wird?"
+          en: "Is the system used exclusively to analyse recordings from a closed set of material from a crime scene, without comparison against external databases, so that no identity is established?"
+        on_yes: "not_covered"
+        on_no: "covered"
+        source_ref: "(144)"
+    covered:
+      - text:
+          de: "Es genügt, wenn das System eine Person verfolgt, etwa um die Fluchtrichtung eines Verdächtigen zu bestimmen, sofern das Verfolgen auf Körpermerkmalen beruht und ein Vergleich mit einer Sammlung gespeicherter Körpermerkmale stattfindet."
+          en: "It is sufficient for the system to track a person, for example to determine the direction in which a suspect is fleeing, provided that the tracking is based on biometric data and a comparison with a database of stored biometric data takes place."
+        source_ref: "(135)"
+      - text:
+          de: "Die Identität darf vorher schon bekannt oder von einem Menschen geprüft worden sein; auch die erste Feststellung der Identität zählt."
+          en: "The identity may already be known beforehand or have been checked by a human; establishing the identity for the first time also counts."
+        source_ref: "(133)"
+      - text:
+          de: "Die Sammlung kann die Körpermerkmale einer einzigen Person oder vieler Personen enthalten."
+          en: "The database may contain the biometric data of a single person or of many persons."
+        source_ref: "(143)"
+      - text:
+          de: "Als Sammlung genügt auch eine Umwandlung von Körpermerkmalen aus Material, das im Internet verfügbar ist; ebenso eine Sammlung eines privaten Unternehmens, etwa eine Stimmensammlung."
+          en: "A conversion of biometric data from material available on the internet is also sufficient as a database; so is a database held by a private company, for example a voice database."
+        source_ref: "(144)"
+      - text:
+          de: "Der Ort spielt keine Rolle: anders als beim Verbot ist diese Nummer nicht auf öffentlich zugängliche Orte beschränkt, auch Aufnahmen einer Kamera auf Privatgrund genügen."
+          en: "The location does not matter: unlike the prohibition, this point is not limited to publicly accessible spaces; recordings from a camera on private property are also sufficient."
+        source_ref: "(144)"
+      - text:
+          de: "Auch berührungslos erfasste Merkmale wie Fingerabdruck, Gangart, Stimme, Erbinformation, Tippverhalten und andere Verhaltenssignale können genügen."
+          en: "Features captured without contact, such as fingerprint, gait, voice, genetic information, typing behaviour and other behavioural signals, can also be sufficient."
+        source_ref: "(141)"
+      - text:
+          de: "Körperkameras, die etwa eine Demonstration mit hunderten Teilnehmern ungezielt filmen, erfüllen die Bedingung der Erkennung aus der Ferne; dasselbe gilt für den Einsatz im virtuellen Raum."
+          en: "Body cameras that film, for example, a demonstration with hundreds of participants indiscriminately meet the condition of remote identification; the same applies to use in virtual spaces."
+        source_ref: "(142)"
+      - text:
+          de: "Fernerkennung, die nicht der Strafverfolgung dient oder nicht in Echtzeit abläuft, ist nicht verboten, sondern gilt als hochriskant; dasselbe gilt für Fälle, die unter eine Ausnahme vom Verbot fallen."
+          en: "Remote identification that does not serve law enforcement or does not take place in real time is not prohibited but is considered high-risk; the same applies to cases that fall under an exception to the prohibition."
+        source_ref: "(126)"
+    not_covered:
+      - text:
+          de: "Körpermerkmale von Verstorbenen, Leichen, menschlichen Überresten oder Spuren davon sind keine Körpermerkmale im Sinne dieser Nummer; ein Abgleich von Erbinformation oder Gesichtsbildern aus Leichenfunden fällt nicht darunter."
+          en: "Biometric data of deceased persons, corpses, human remains or traces of them is not biometric data within the meaning of this point; a comparison of genetic information or facial images from discovered bodies is not covered."
+        source_ref: "(123)"
+      - text:
+          de: "Die Suche nach Gegenständen ohne Körpermerkmale, etwa nach Kennzeichen, bestimmter Kleidung, Waffen oder Hintergrund, fällt nicht darunter."
+          en: "Searching for objects without biometric data, for example for licence plates, particular clothing, weapons or background, is not covered."
+        source_ref: "(124)"
+      - text:
+          de: "Systeme, deren Zweck nicht ist, die Identität einer Person festzustellen, fallen nicht darunter; etwa das Sammeln weiterer Angaben oder das Herstellen von Verbindungen zwischen Straffällen."
+          en: "Systems whose purpose is not to establish the identity of a person are not covered; for example, gathering further information or establishing links between criminal cases."
+        source_ref: "(132)"
+      - text:
+          de: "Systeme, die Körpermerkmale nicht mit einer Sammlung gespeicherter Körpermerkmale vergleichen, fallen nicht darunter."
+          en: "Systems that do not compare biometric data with a database of stored biometric data are not covered."
+        source_ref: "(132)"
+      - text:
+          de: "Wer eine Person ortet, ohne Körpermerkmale zu nutzen oder ohne Abgleich mit einer Sammlung, fällt nicht darunter; etwa Suche nach Aufdrucken auf Kleidung, Kennzeichenerkennung, Auswertung von Fahrscheinentwertungen oder Ortsbestimmung eines Bildes anhand des Hintergrunds."
+          en: "Locating a person without using biometric data or without comparison against a database is not covered; for example, searching for prints on clothing, licence plate recognition, analysing ticket validations or determining the location of an image from its background."
+        source_ref: "(134)"
+      - text:
+          de: "Die blosse Bestätigung der behaupteten Identität durch Eins-zu-eins-Abgleich mit Körpermerkmalen, die auf einem Gerät, im Pass oder auf einem Ausweis gespeichert sind, fällt nicht darunter."
+          en: "Merely confirming the claimed identity through one-to-one comparison with biometric data stored on a device, in a passport or on an identity card is not covered."
+        source_ref: "(136)"
+      - text:
+          de: "Bestätigung der Identität allein zu dem Zweck, Zugang zu einem Dienst zu erhalten, ein Gerät zu entsperren oder gesicherte Räume zu betreten, fällt nicht darunter."
+          en: "Confirming identity solely for the purpose of gaining access to a service, unlocking a device or entering secured premises is not covered."
+        source_ref: "(138)"
+      - text:
+          de: "Bewusstes Mitmachen schliesst die Erkennung aus der Ferne aus; dass die Personen über den Einsatz nur informiert werden, genügt dafür aber nicht, sie müssen sich aktiv und bewusst vor den Sensor stellen."
+          en: "Knowingly taking part rules out remote identification; however, merely informing the persons about the use is not sufficient for this, they must actively and knowingly stand in front of the sensor."
+        source_ref: "(140)"
+      - text:
+          de: "Die Auswertung eines abgeschlossenen Materialbestands vom Tatort ohne Abgleich mit Sammlungen von aussen fällt noch nicht darunter, auch wenn dabei Gesichter verglichen werden."
+          en: "Analysing a closed set of material from the crime scene without comparison against external databases is not yet covered, even if faces are compared in the process."
+        source_ref: "(144)"
+      - text:
+          de: "Systeme, die Fingerabdrücke nur aufnehmen, etwa über mehrere Lichtwellenlängen aus Haut und Unterhaut, ohne Abgleich mit einer Sammlung, fallen nicht darunter."
+          en: "Systems that merely capture fingerprints, for example using several light wavelengths from the skin and subcutaneous layer, without comparison against a database, are not covered."
+        source_ref: "(144)"
+      - text:
+          de: "Systeme allein für Netzsicherheit und Datenschutz, etwa zum Unkenntlichmachen personenbezogener Daten, fallen nicht darunter."
+          en: "Systems solely for network security and data protection, for example to make personal data unrecognisable, are not covered."
+        source_ref: "(144)"
+      - text:
+          de: "Kameras, die nur feststellen, ob Menschen anwesend sind, etwa Wärmebildkameras zur Sitzplatzbelegung, zur Erkennung von Personen im Gleisbereich oder Drohnen- und Satellitenbilder bei der Suche nach Vermissten, fallen nicht darunter."
+          en: "Cameras that merely detect whether people are present, for example thermal cameras for seat occupancy, for detecting persons on railway tracks, or drone and satellite images when searching for missing persons, are not covered."
+        source_ref: "(144)"
+      - text:
+          de: "Das Verfolgen einer Person allein anhand von Kleidungsfarbe und Körperumriss, ohne Körpermerkmale zu gewinnen oder abzugleichen, fällt nicht darunter."
+          en: "Tracking a person solely on the basis of clothing colour and body outline, without extracting or comparing biometric data, is not covered."
+        source_ref: "(144)"
+      - text:
+          de: "Systeme, die Körpermerkmale nutzen, aber nicht zur Feststellung der Identität, fallen nicht darunter; etwa eine Sprach- und Dialektauswertung, die nur die Herkunftsregion stützen soll."
+          en: "Systems that use biometric data but not to establish identity are not covered; for example, a language and dialect analysis intended only to support the region of origin."
+        source_ref: "(144)"
+      - text:
+          de: "Systeme, die beschlagnahmtes Material nur vorsortieren, etwa um festzustellen, ob auf einem Bild ein Kind zu sehen ist, fallen nicht darunter."
+          en: "Systems that merely pre-sort seized material, for example to determine whether a child is shown in an image, are not covered."
+        source_ref: "(144)"
+    examples:
+      - scenario:
+          de: "Kameras in Wand und Decke eines Stadions; nach einem Vorfall werden die aufgenommenen Gesichtsbilder mit einer Sammlung abgeglichen, um Täter festzustellen, ohne dass die Besucher mitmachen."
+          en: "Cameras in the walls and ceiling of a stadium; after an incident, the recorded facial images are compared with a database to identify perpetrators, without the visitors taking part."
+        verdict: "high_risk"
+        rationale:
+          de: "Feststellung der Identität durch Abgleich mit einer Sammlung, ohne bewusstes Mitmachen."
+          en: "Identity is established by comparison with a database, without the persons knowingly taking part."
+        source_ref: "(144)"
+      - scenario:
+          de: "Gangerkennung, die das gespeicherte Gangbild eines bekannten Flüchtigen mit Videomaterial aus Verkehrsknotenpunkten abgleicht, um ihn weiterzuverfolgen."
+          en: "Gait recognition that compares the stored gait pattern of a known fugitive with video footage from transport hubs in order to keep tracking them."
+        verdict: "high_risk"
+        rationale:
+          de: "Das Verfolgen beruht auf Körpermerkmalen und auf dem Abgleich mit einer Sammlung."
+          en: "The tracking is based on biometric data and on comparison with a database."
+        source_ref: "(135)"
+      - scenario:
+          de: "Gesichtserkennung am Stadioneingang, die gesperrte Personen bei der Einlasskontrolle erkennt."
+          en: "Facial recognition at the stadium entrance that recognises banned persons during entry checks."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Die Bedingung der Erkennung aus der Ferne fehlt, weil die Personen bewusst vor das Gerät treten müssen, um Einlass zu bekommen."
+          en: "The condition of remote identification is not met because the persons must knowingly step in front of the device to gain entry."
+        source_ref: "(144)"
+      - scenario:
+          de: "Grenzautomat vergleicht das aufgenommene Gesichtsbild eines Reisenden mit dem Bild im Chip seines Passes, um zu bestätigen, dass er der Inhaber des Dokuments ist."
+          en: "A border gate compares the captured facial image of a traveller with the image in the chip of their passport to confirm that they are the holder of the document."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Reine Bestätigung der behaupteten Identität."
+          en: "Mere confirmation of the claimed identity."
+        source_ref: "(136)"
+      - scenario:
+          de: "Derselbe Grenzautomat gleicht die aufgenommenen Körpermerkmale zusätzlich mit einer Sammlung von Straftätern ab."
+          en: "The same border gate additionally compares the captured biometric data with a database of offenders."
+        verdict: "high_risk"
+        rationale:
+          de: "Neben der Bestätigung tritt ein Abgleich mit einer Sammlung zur Feststellung der Identität."
+          en: "In addition to the confirmation, there is a comparison with a database to establish identity."
+        source_ref: "(136)"
+      - scenario:
+          de: "Nach einer Festnahme wird im Polizeigewahrsam ein Lichtbild des Verdächtigen aufgenommen und mit einer Sammlung gespeicherter Körpermerkmale abgeglichen."
+          en: "After an arrest, a photograph of the suspect is taken in police custody and compared with a database of stored biometric data."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Keine Erkennung aus der Ferne, weil der Verdächtige im formellen Verfahren mitmacht."
+          en: "No remote identification, because the suspect takes part in the formal procedure."
+        source_ref: "(140)"
+      - scenario:
+          de: "Eine Behörde prüft mit Gesichtserkennung die Identität von Personen gegen eine Liste terrorverdächtiger Personen, um ihnen Einlass in einen abgesperrten Sicherheitsbereich innerhalb eines öffentlichen Platzes zu geben; Hinweise sind sichtbar angebracht und der Sensor verlangt, dass man in einem markierten Feld steht und hineinschaut."
+          en: "An authority uses facial recognition to check the identity of persons against a list of terrorist suspects in order to admit them to a cordoned-off security area within a public square; notices are visibly displayed and the sensor requires people to stand in a marked area and look into it."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Die Personen machen bewusst mit, deshalb fehlt die Erkennung aus der Ferne."
+          en: "The persons knowingly take part, so there is no remote identification."
+        source_ref: "(140)"
+      - scenario:
+          de: "Gesichts- und Stimmerkennung, die ausgewählte Personen in Rundfunkarchiven aufspürt, indem der Inhalt mit einer Sammlung abgeglichen wird, ohne dass die Personen mitmachen."
+          en: "Facial and voice recognition that tracks down selected persons in broadcasting archives by comparing the content with a database, without the persons taking part."
+        verdict: "high_risk"
+        rationale:
+          de: "Feststellung der Identität durch Abgleich mit einer Sammlung ohne Mitmachen der Betroffenen."
+          en: "Identity is established by comparison with a database without the persons concerned taking part."
+        source_ref: "(144)"
+  - citation: "AI-Act/annex-III/pt-1-b"
+    main_question:
+      de: "Teilt Ihr System Menschen anhand gemessener Körpermerkmale in Gruppen ein und leitet dafür ein geschütztes Merkmal wie ethnische Herkunft, Erbinformation oder Gesundheit aus diesen Körpermerkmalen ab?"
+      en: "Does your system sort people into groups based on measured biometric data and, to do so, infer a protected characteristic such as ethnic origin, genetic information or health from this biometric data?"
+    follow_up_questions:
+      - question:
+          de: "Ordnet Ihr System einzelne Menschen anhand ihrer gemessenen Körpermerkmale bestimmten Gruppen zu, also nicht um festzustellen, wer sie sind, sondern um sie einzuordnen?"
+          en: "Does your system assign individual people to particular groups based on their measured biometric data, i.e. not to establish who they are but to categorise them?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(166)"
+      - question:
+          de: "Beruht die Einteilung allein auf Kleidung oder Zubehör wie Schal, Hut, Handschuhe, Uhr oder Kreuz, oder auf Aktivität in sozialen Netzwerken?"
+          en: "Is the categorisation based solely on clothing or accessories such as a scarf, hat, gloves, watch or cross, or on activity on social networks?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(167)"
+      - question:
+          de: "Ist diese Einteilung nur eine Beigabe zu einer anderen entgeltlichen Leistung und aus sachlichen technischen Gründen zwingend nötig, so dass sie ohne die Hauptleistung gar nicht genutzt werden kann?"
+          en: "Is this categorisation merely ancillary to another commercial service and strictly necessary for objective technical reasons, so that it cannot be used at all without the principal service?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(168)"
+      - question:
+          de: "Leitet Ihr System aus den Körpermerkmalen ein Merkmal ab, das zu den geschützten gehört, also rassische oder ethnische Herkunft, politische Meinung, religiöse oder philosophische Überzeugung, Gewerkschaftszugehörigkeit, Erbinformation, Körpermerkmale zur eindeutigen Erkennung einer Person, Gesundheit, Sexualleben oder sexuelle Orientierung?"
+          en: "Does your system infer from the biometric data a characteristic that is one of the protected ones, i.e. racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data for the purpose of uniquely identifying a natural person, health, sex life or sexual orientation?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(169)"
+      - question:
+          de: "Sind die abgeleiteten Merkmale ausschliesslich Alter oder Geschlecht?"
+          en: "Are the inferred characteristics exclusively age or sex?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(170)"
+      - question:
+          de: "Sind die Körpermerkmale die Eingabe des Systems und das geschützte Merkmal das Ergebnis, nach dem die Personen dann eingeteilt werden?"
+          en: "Is the biometric data the input of the system and the protected characteristic the output by which the persons are then categorised?"
+        on_yes: "covered"
+        on_no: "not_covered"
+        source_ref: "(170)"
+    covered:
+      - text:
+          de: "Nur Einteilungen nach geschützten Merkmalen werden erfasst; geschützt sind rassische oder ethnische Herkunft, politische Meinung, religiöse oder philosophische Überzeugung, Gewerkschaftszugehörigkeit, Erbinformation, Körpermerkmale zur eindeutigen Erkennung einer Person, Gesundheit sowie Sexualleben oder sexuelle Orientierung."
+          en: "Only categorisations according to protected characteristics are covered; protected are racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data for the purpose of uniquely identifying a natural person, health, and sex life or sexual orientation."
+        source_ref: "(169)"
+      - text:
+          de: "Praktisch bleiben vor allem ethnische Herkunft, Erbinformation und Gesundheit, weil die Einteilung nach Rasse, politischer Meinung, Gewerkschaftszugehörigkeit, religiöser oder philosophischer Überzeugung, Sexualleben oder sexueller Orientierung verboten ist."
+          en: "In practice, this mainly leaves ethnic origin, genetic data and health, because categorisation by race, political opinions, trade union membership, religious or philosophical beliefs, sex life or sexual orientation is prohibited."
+        source_ref: "(169)"
+      - text:
+          de: "Körpermerkmale müssen die Eingabe sein und das geschützte Merkmal das Ergebnis, das aus ihnen abgeleitet wird."
+          en: "Biometric data must be the input and the protected characteristic the output inferred from it."
+        source_ref: "(170)"
+      - text:
+          de: "Die Einteilung kann auf körperlichen Merkmalen wie Gesichtszügen, Gesichtsform oder Hautfarbe beruhen, ebenso auf Erbinformation oder auf Verhalten wie Tippverhalten oder Gangart."
+          en: "The categorisation may be based on physical features such as facial features, face shape or skin colour, as well as on genetic data or on behaviour such as typing behaviour or gait."
+        source_ref: "(167)"
+      - text:
+          de: "Einteilungen nach geschützten Merkmalen, die nicht verboten sind, gelten als hochriskant."
+          en: "Categorisations according to protected characteristics that are not prohibited are considered high-risk."
+        source_ref: "(126)"
+    not_covered:
+      - text:
+          de: "Die Einteilung nach Kleidung oder Zubehör wie Schal, Hut, Handschuhe, Uhren oder Kreuze fällt nicht darunter."
+          en: "Categorisation by clothing or accessories such as scarves, hats, gloves, watches or crosses is not covered."
+        source_ref: "(167)"
+      - text:
+          de: "Die Einteilung nach Aktivität in sozialen Netzwerken fällt nicht darunter."
+          en: "Categorisation by activity on social networks is not covered."
+        source_ref: "(167)"
+      - text:
+          de: "Eine Funktion, die nur Beigabe zu einer anderen entgeltlichen Leistung und aus sachlichen technischen Gründen zwingend nötig ist, fällt nicht unter den Begriff der Einteilung nach Körpermerkmalen."
+          en: "A feature that is merely ancillary to another commercial service and strictly necessary for objective technical reasons does not fall under the concept of biometric categorisation."
+        source_ref: "(166)"
+      - text:
+          de: "Beigabe heisst: die Funktion ist mit der anderen Leistung untrennbar verbunden, kann aus sachlichen technischen Gründen ohne sie nicht genutzt werden, und ihr Einbau dient nicht dazu, die Vorschriften zu umgehen."
+          en: "Ancillary means: the feature is intrinsically linked to the other service, cannot be used without it for objective technical reasons, and its integration does not serve to circumvent the rules."
+        source_ref: "(168)"
+      - text:
+          de: "Systeme, die eine bestimmte Person erkennen oder ihre Identität bestätigen sollen, fallen nicht hierunter, weil es hier nur um das Einordnen in eine Gruppe geht."
+          en: "Systems intended to recognise a specific person or to verify their identity are not covered here, because this point is only about sorting into a group."
+        source_ref: "(166)"
+      - text:
+          de: "Alter und Geschlecht gelten nicht als geschützte Merkmale; wer nur sie ableitet, fällt nicht darunter."
+          en: "Age and sex are not considered protected characteristics; a system that infers only these is not covered."
+        source_ref: "(170)"
+      - text:
+          de: "Eine Einteilung, die nicht auf Körpermerkmalen beruht, fällt nicht darunter, auch wenn sie geschützte Merkmale berührt."
+          en: "A categorisation that is not based on biometric data is not covered, even if it touches on protected characteristics."
+        source_ref: "(170)"
+    examples:
+      - scenario:
+          de: "System teilt Patienten ein: es nimmt das Gangbild auf, leitet daraus Gesundheitsangaben ab und ordnet die Personen Krankheitsstufen zu, um frühe Anzeichen von Krankheiten mit Bewegungsstörungen zu erkennen."
+          en: "A system categorises patients: it records their gait, infers health information from it and assigns the persons to disease stages in order to detect early signs of diseases involving movement disorders."
+        verdict: "high_risk"
+        rationale:
+          de: "Körpermerkmale als Eingabe, Gesundheit als abgeleitetes geschütztes Merkmal, danach Einteilung."
+          en: "Biometric data as input, health as the inferred protected characteristic, followed by categorisation."
+        source_ref: "(170)"
+      - scenario:
+          de: "Flughafenkameras nehmen Gangbild und Gesichtsmuster der Reisenden auf, leiten daraus unter anderem die ethnische Herkunft ab und teilen die Reisenden in Gruppen ein, etwa um Sammelprofile zu bilden oder gezielte Massnahmen zu stützen."
+          en: "Airport cameras capture the gait and facial patterns of travellers, infer from them, among other things, their ethnic origin and sort the travellers into groups, for example to build collective profiles or to support targeted measures."
+        verdict: "high_risk"
+        rationale:
+          de: "Ethnische Herkunft wird aus Körpermerkmalen abgeleitet und zur Einteilung benutzt."
+          en: "Ethnic origin is inferred from biometric data and used for categorisation."
+        source_ref: "(170)"
+      - scenario:
+          de: "Kameras an der Grenze nehmen Gesichtsbilder auf und leiten daraus Alter und Geschlecht einreisender Ausländer ab."
+          en: "Cameras at the border capture facial images and infer from them the age and sex of foreign nationals entering the country."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Alter und Geschlecht sind keine geschützten Merkmale."
+          en: "Age and sex are not protected characteristics."
+        source_ref: "(170)"
+      - scenario:
+          de: "System nimmt das Tippverhalten von Kunden auf, leitet daraus das Geschlecht ab und spielt danach persönlich zugeschnittene Werbung aus."
+          en: "A system records customers' typing behaviour, infers their sex from it and then serves personalised advertising."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es wird nach Körpermerkmalen eingeteilt, das abgeleitete Merkmal Geschlecht ist aber nicht geschützt."
+          en: "Categorisation is based on biometric data, but the inferred characteristic, sex, is not protected."
+        source_ref: "(170)"
+      - scenario:
+          de: "System schätzt aus Gesichtszügen oder Tippverhalten das Alter, um Minderjährige von schädlichen Inhalten, von altersbeschränkten Diensten, von Räumen oder von Warenautomaten fernzuhalten."
+          en: "A system estimates age from facial features or typing behaviour in order to keep minors away from harmful content, age-restricted services, premises or vending machines."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Abgeleitet wird das Alter, das nicht zu den geschützten Merkmalen gehört."
+          en: "What is inferred is age, which is not one of the protected characteristics."
+        source_ref: "(170)"
+      - scenario:
+          de: "System durchsucht Texte und Bilder, um verbotene oder unangemessene Inhalte zu finden, auch solche, die auf politische Meinungen hindeuten."
+          en: "A system searches texts and images to find prohibited or inappropriate content, including content that indicates political opinions."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Die Einteilung beruht nicht auf Körpermerkmalen."
+          en: "The categorisation is not based on biometric data."
+        source_ref: "(170)"
+  - citation: "AI-Act/annex-III/pt-1-c"
+    main_question:
+      de: "Stellt Ihr System aus gemessenen Körpermerkmalen Gefühle oder Absichten von Menschen fest oder erschliesst es sie?"
+      en: "Does your system identify or infer people's emotions or intentions from measured biometric data?"
+    follow_up_questions:
+      - question:
+          de: "Ist der Zweck Ihres Systems, Gefühle oder Absichten von Menschen festzustellen oder zu erschliessen?"
+          en: "Is the purpose of your system to identify or infer people's emotions or intentions?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(171)"
+      - question:
+          de: "Beruht diese Feststellung auf gemessenen Körpermerkmalen, etwa Stimme, Gesichtsausdruck, Körperhaltung, Bewegung, Gangart, Tippverhalten oder Herzschlag?"
+          en: "Is this identification based on measured biometric data, for example voice, facial expression, posture, movement, gait, typing behaviour or heartbeat?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(171)"
+      - question:
+          de: "Leitet Ihr System die Gefühle allein aus getipptem Text ab, also aus Inhalt, Stimmungsauswertung oder Schreibstil?"
+          en: "Does your system infer the emotions solely from typed text, i.e. from content, sentiment analysis or writing style?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(124)"
+      - question:
+          de: "Geht es ausschliesslich um körperliche Zustände wie Schmerz, Müdigkeit oder Krankheit, etwa um Müdigkeit bei Piloten oder Fahrern zu erkennen und Unfälle zu verhüten?"
+          en: "Is it exclusively about physical states such as pain, fatigue or illness, for example to detect fatigue in pilots or drivers and prevent accidents?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(177)"
+      - question:
+          de: "Erkennt Ihr System nur offen sichtbare Ausdrücke, Gesten oder Bewegungen, etwa Lächeln, Stirnrunzeln, Hand-, Arm- oder Kopfbewegungen, eine erhobene oder flüsternde Stimme, ohne daraus Gefühle oder Absichten abzuleiten?"
+          en: "Does your system only detect readily apparent expressions, gestures or movements, for example smiling, frowning, hand, arm or head movements, a raised or whispering voice, without inferring emotions or intentions from them?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(177)"
+      - question:
+          de: "Stellt Ihr System fest, dass eine Person eine bestimmte Haltung zeigt, etwa dass sie wütend wirkt?"
+          en: "Does your system determine that a person displays a particular attitude, for example that they appear angry?"
+        on_yes: "covered"
+        on_no: "covered"
+        source_ref: "(176)"
+    covered:
+      - text:
+          de: "Gefühle und Absichten sind weit zu verstehen; genannt werden Freude, Trauer, Wut, Überraschung, Ekel, Verlegenheit, Erregung, Scham, Verachtung, Zufriedenheit und Belustigung, die Aufzählung ist nicht abschliessend."
+          en: "Emotions and intentions are to be understood broadly; those named are happiness, sadness, anger, surprise, disgust, embarrassment, excitement, shame, contempt, satisfaction and amusement, and the list is not exhaustive."
+        source_ref: "(175)"
+      - text:
+          de: "Auch die Feststellung einer Haltung wird erfasst, etwa dass eine Person eine wütende Haltung zeigt; die Vorschrift darf nicht dadurch umgangen werden, dass von Haltungen gesprochen wird."
+          en: "Determining an attitude is also covered, for example that a person displays an angry attitude; the provision must not be circumvented by speaking of attitudes."
+        source_ref: "(176)"
+      - text:
+          de: "Feststellen liegt vor, wenn ein Gefühl unmittelbar mit einem vorher eingespeicherten verglichen und erkannt wird; Erschliessen liegt vor, wenn das System es aus weiteren Daten ableitet, etwa durch lernende Verfahren. Wer erschliesst, stellt zugleich fest."
+          en: "Identification occurs when an emotion is directly compared with one stored beforehand and recognised; inference occurs when the system derives it from further data, for example through machine learning methods. A system that infers also identifies."
+        source_ref: "(174)"
+      - text:
+          de: "Offen sichtbare Ausdrücke und Gesten sind erfasst, sobald sie benutzt werden, um Gefühle oder Absichten festzustellen oder zu erschliessen."
+          en: "Readily apparent expressions and gestures are covered as soon as they are used to identify or infer emotions or intentions."
+        source_ref: "(177)"
+      - text:
+          de: "Sprachbasierte Begleitsysteme sind nicht ausdrücklich eingestuft, können aber erfasst sein, wenn sie Gefühle oder Absichten aus Körpermerkmalen wie Stimme oder Videogesprächen ableiten."
+          en: "Language-based companion systems are not explicitly classified, but can be covered if they infer emotions or intentions from biometric data such as voice or video calls."
+        source_ref: "(173)"
+      - text:
+          de: "Es spielt keine Rolle, ob das System die Person zugleich erkennen soll, und es spielt keine Rolle, ob das Ergebnis nur der betroffenen Person selbst angezeigt wird."
+          en: "It does not matter whether the system is also intended to recognise the person, and it does not matter whether the output is displayed only to the person concerned."
+        source_ref: "(177)"
+      - text:
+          de: "Systeme zur Gefühlserkennung ausserhalb von Arbeitsplatz und Bildungseinrichtungen sind nicht verboten, sondern hochriskant; ebenso solche, die an diesen Orten aus medizinischen Gründen oder aus Sicherheitsgründen eingesetzt werden."
+          en: "Emotion recognition systems outside the workplace and educational institutions are not prohibited but high-risk; so are those used in these places for medical or safety reasons."
+        source_ref: "(126)"
+    not_covered:
+      - text:
+          de: "Körperliche Zustände wie Schmerz oder Müdigkeit gehören nicht zu Gefühlen oder Absichten; die Erkennung von Müdigkeit bei Piloten oder Fahrern zur Unfallverhütung fällt nicht darunter, ebenso nicht die Feststellung, dass eine Person krank ist."
+          en: "Physical states such as pain or fatigue are not emotions or intentions; detecting fatigue in pilots or drivers to prevent accidents is not covered, nor is determining that a person is ill."
+        source_ref: "(177)"
+      - text:
+          de: "Das blosse Erkennen offen sichtbarer Ausdrücke, Gesten oder Bewegungen fällt nicht darunter, solange daraus keine Gefühle oder Absichten abgeleitet werden."
+          en: "Merely detecting readily apparent expressions, gestures or movements is not covered, as long as no emotions or intentions are inferred from them."
+        source_ref: "(177)"
+      - text:
+          de: "Gefühle, die allein aus getipptem Text abgeleitet werden, also aus Inhalt, Stimmungsauswertung oder Schreibstil, beruhen nicht auf Körpermerkmalen und fallen nicht darunter."
+          en: "Emotions inferred solely from typed text, i.e. from content, sentiment analysis or writing style, are not based on biometric data and are not covered."
+        source_ref: "(124)"
+    examples:
+      - scenario:
+          de: "Körperkameras von Polizeikräften erkennen selbsttätig Verhaltensmuster und melden eine aggressive Körperhaltung anhand von Gangart, Haltung, Bewegung und Gesichtsauswertung, um einzuschätzen, ob eine Person in eine Auseinandersetzung geraten wird."
+          en: "Body cameras worn by police officers automatically detect behavioural patterns and flag an aggressive posture based on gait, posture, movement and facial analysis in order to assess whether a person will become involved in a confrontation."
+        verdict: "high_risk"
+        rationale:
+          de: "Körperliche Anzeichen werden ausgelegt, um den Gefühlszustand Wut zu erschliessen."
+          en: "Physical signs are interpreted to infer the emotional state of anger."
+        source_ref: "(177)"
+      - scenario:
+          de: "System der Spielebranche verfolgt Körperhaltung, Gesichtsausdruck, Augenschluss und Blick, um Erregung, Wut, Frust und Belustigung der Spieler zu messen und das Produkt zu verbessern."
+          en: "A system in the gaming industry tracks posture, facial expression, eye closure and gaze in order to measure players' excitement, anger, frustration and amusement and to improve the product."
+        verdict: "high_risk"
+        rationale:
+          de: "Gefühle werden aus Körpermerkmalen erschlossen."
+          en: "Emotions are inferred from biometric data."
+        source_ref: "(177)"
+      - scenario:
+          de: "Kameras an Wänden und Decken prüfen bei Konzerten die Stimmung des Publikums anhand von Stimmen, Gesichtern und Bewegungen und schicken mehr Sicherheitspersonal in Bereiche, in denen die Stimmung aggressiv wird."
+          en: "Cameras on walls and ceilings check the mood of the audience at concerts based on voices, faces and movements and send more security staff to areas where the mood becomes aggressive."
+        verdict: "high_risk"
+        rationale:
+          de: "Gefühle einzelner Teilnehmer werden ausgewertet, um die Stimmung einzuschätzen."
+          en: "The emotions of individual attendees are analysed in order to assess the mood."
+        source_ref: "(177)"
+      - scenario:
+          de: "System im Callcenter wertet Tonlage, Tonhöhe und Lautstärke der Kundenstimme aus, um Zufriedenheit zu messen, Wut zu erkennen und an einen Menschen weiterzuleiten."
+          en: "A system in a call centre analyses the tone, pitch and volume of the customer's voice in order to measure satisfaction, detect anger and transfer the call to a human."
+        verdict: "high_risk"
+        rationale:
+          de: "Aus der Stimme werden Gefühle abgeleitet; dass der Kunde nicht erkannt werden soll, ändert nichts."
+          en: "Emotions are inferred from the voice; the fact that the customer is not to be identified makes no difference."
+        source_ref: "(177)"
+      - scenario:
+          de: "Armbanduhr misst Stimme und Herzschlag und überwacht die Stimmung des Trägers, um ihm den eigenen Gefühlszustand bewusst zu machen und Vorschläge zur Besserung zu geben."
+          en: "A wristwatch measures voice and heartbeat and monitors the wearer's mood in order to make them aware of their own emotional state and give suggestions for improvement."
+        verdict: "high_risk"
+        rationale:
+          de: "Gefühle werden erschlossen; dass das Ergebnis nur dem Träger angezeigt wird, ändert nichts."
+          en: "Emotions are inferred; the fact that the output is displayed only to the wearer makes no difference."
+        source_ref: "(177)"
+      - scenario:
+          de: "System im Fahrzeug verfolgt Körperhaltung, Gesichtsausdruck, Augenschluss und Blick, um zu erkennen, wenn der Fahrer die Aufmerksamkeit verliert, einschläft oder ein plötzliches gesundheitliches Problem hat, und bringt das Fahrzeug sicher zum Stehen."
+          en: "A system in the vehicle tracks posture, facial expression, eye closure and gaze in order to detect when the driver loses attention, falls asleep or has a sudden health problem, and brings the vehicle safely to a stop."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Schmerz und Müdigkeit sind körperliche Zustände und gehören nicht zu Gefühlen oder Absichten."
+          en: "Pain and fatigue are physical states and are not emotions or intentions."
+        source_ref: "(177)"
+      - scenario:
+          de: "Ein Fernsehsender zählt mit einem Gerät, wie oft seine Nachrichtensprecher in die Kamera lächeln."
+          en: "A television broadcaster uses a device to count how often its news presenters smile into the camera."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Blosse Beobachtung eines offen sichtbaren Ausdrucks ohne Ableitung von Gefühlen."
+          en: "Mere observation of a readily apparent expression without inferring emotions."
+        source_ref: "(177)"

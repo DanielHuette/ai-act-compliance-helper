@@ -1,0 +1,534 @@
+area: "AI-Act/annex-III/pt-2"
+title:
+  de: "Kritische Infrastruktur"
+  en: "Critical infrastructure"
+source:
+  de: "Entwurf der Leitlinien der Kommission vom 19.05.2026, Anhang III, Abschnitt 3.2"
+  en: "Draft Commission guidelines of 19 May 2026, Annex III, section 3.2"
+provisions:
+  - citation: "AI-Act/annex-III/pt-2"
+    main_question:
+      de: "Wird Ihr KI-System bei der Verwaltung oder beim Betrieb von kritischer digitaler Infrastruktur, von Straßenverkehr oder bei der Versorgung mit Wasser, Gas, Wärme oder Strom eingesetzt?"
+      en: "Is your AI system used in the management or operation of critical digital infrastructure, road traffic, or in the supply of water, gas, heating or electricity?"
+    follow_up_questions:
+      - question:
+          de: "Wird Ihr System in einer Anlage, einem Gerät, einem Netz oder einem Teil davon eingesetzt, das für einen dieser Dienste gebraucht wird: Betrieb eines Internet-Knotenpunktes (Übergabestelle, an der Netze Datenverkehr austauschen), Betrieb des Dienstes, der Internet-Namen in Adressen auflöst (Domain-Name-System), Verwaltung einer Registrierungsstelle für Namen der obersten Ebene (zum Beispiel .de oder .eu), Bereitstellung von Rechenleistung und Speicher über das Netz (Cloud-Dienste), Betrieb eines Rechenzentrums, Betrieb eines Netzes zur Auslieferung von Inhalten (Content Delivery Network), Bereitstellung von Vertrauensdiensten (zum Beispiel elektronische Signaturen), Bereitstellung öffentlich zugänglicher elektronischer Kommunikationsdienste oder Betrieb öffentlicher elektronischer Kommunikationsnetze?"
+          en: "Is your system used in an asset, equipment, a network or a part thereof that is needed for one of these services: operating an internet exchange point (a point where networks exchange data traffic), operating the service that resolves internet names into addresses (Domain Name System), managing a top-level domain name registry (for example .de or .eu), providing computing power and storage over the network (cloud computing services), operating a data centre, operating a network for delivering content (content delivery network), providing trust services (for example electronic signatures), providing publicly available electronic communications services, or operating public electronic communications networks?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(193)"
+      - question:
+          de: "Wird Ihr System für die Lenkung und Steuerung des Straßenverkehrs eingesetzt, also für Planung, Steuerung und Verwaltung des Straßennetzes, oder für Dienste intelligenter Verkehrssysteme (Verkehrstechnik, die Fahrzeuge, Straße und Leitstelle miteinander verbindet)?"
+          en: "Is your system used for road traffic management and control, i.e. for planning, controlling and managing the road network, or for intelligent transport system services (traffic technology that connects vehicles, the road and the control centre)?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(195)"
+      - question:
+          de: "Wird Ihr System bei der Versorgung mit Trinkwasser, bei der Verteilung von Trinkwasser oder beim Sammeln, Behandeln und Beseitigen von Abwasser eingesetzt?"
+          en: "Is your system used in the supply of drinking water, in the distribution of drinking water, or in the collection, treatment and disposal of waste water?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(197)"
+      - question:
+          de: "Wird Ihr System bei der Lieferung, Verteilung, Fernleitung oder Speicherung von Gas, beim Betrieb einer Anlage für verflüssigtes Erdgas, bei der Gewinnung oder beim Einkauf von Erdgas oder bei der Raffination und Behandlung von Erdgas eingesetzt?"
+          en: "Is your system used in the supply, distribution, transmission or storage of gas, in the operation of a liquefied natural gas facility, in the production or purchase of natural gas, or in the refining and treatment of natural gas?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(199)"
+      - question:
+          de: "Wird Ihr System bei der Bereitstellung von Fernwärme oder Fernkälte eingesetzt?"
+          en: "Is your system used in the provision of district heating or district cooling?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(201)"
+      - question:
+          de: "Wird Ihr System bei der Lieferung von Strom, beim Betrieb, bei der Instandhaltung oder beim Ausbau eines Stromverteilnetzes oder eines Stromübertragungsnetzes, bei der Stromerzeugung, beim Dienst eines benannten Strommarktbetreibers, bei der Laststeuerung durch Nachfrageanpassung, beim Zusammenfassen von Strommengen (Aggregation) oder bei der Energiespeicherung eingesetzt?"
+          en: "Is your system used in the supply of electricity, in the operation, maintenance or development of an electricity distribution system or an electricity transmission system, in electricity generation, in the service of a nominated electricity market operator, in demand response, in the pooling of electricity volumes (aggregation) or in energy storage?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(203)"
+      - question:
+          de: "Haben Sie alle sechs vorstehenden Fragen mit Nein beantwortet?"
+          en: "Have you answered No to all six questions above?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(188)"
+    covered:
+      - text:
+          de: "Nummer 2 des Anhangs III nennt sechs Fälle: KI-Systeme, die als Sicherheitsbauteil bei der Verwaltung und beim Betrieb von kritischer digitaler Infrastruktur, von Straßenverkehr oder bei der Versorgung mit Wasser, Gas, Wärme oder Strom eingesetzt werden sollen."
+          en: "Annex III, point 2 names six cases: AI systems intended to be used as safety components in the management and operation of critical digital infrastructure, road traffic, or in the supply of water, gas, heating or electricity."
+        source_ref: "(178)"
+      - text:
+          de: "Gemeint ist ein Einsatz in einer Anlage, einem Gebäude, einem Gerät, einem Netz oder einem System oder in einem Teil davon, der für die Erbringung der genannten wesentlichen Dienste notwendig ist."
+          en: "This means use in an asset, a facility, equipment, a network or a system, or a part thereof, that is necessary for the provision of the essential services listed."
+        source_ref: "(193)"
+    not_covered:
+      - text:
+          de: "Straßenverkehr meint Straßen an der Oberfläche; Wasserwege gehören nicht dazu."
+          en: "Road traffic means roads on the surface; waterways are not included."
+        source_ref: "(195)"
+      - text:
+          de: "Verkehrslenkung und der Betrieb intelligenter Verkehrssysteme sind ausgenommen, soweit sie kein wesentlicher Teil der allgemeinen Tätigkeit öffentlicher Stellen sind."
+          en: "Traffic management and the operation of intelligent transport systems are excluded insofar as they are not an essential part of the general activity of public bodies."
+        source_ref: "(195)"
+      - text:
+          de: "Dienste rund um die Wurzel-Namensserver des Internets (root name servers) gehören nicht zur kritischen digitalen Infrastruktur."
+          en: "Services relating to the root name servers of the internet are not part of critical digital infrastructure."
+        source_ref: "(193)"
+      - text:
+          de: "Die Verteilung von Wasser für den menschlichen Gebrauch ist ausgenommen, wenn dieser Dienst kein wesentlicher Teil der allgemeinen Tätigkeit eines Verteilers ist, der auch andere Waren und Güter verteilt."
+          en: "The distribution of water intended for human consumption is excluded if this service is not an essential part of the general activity of a distributor that also distributes other commodities and goods."
+        source_ref: "(197)"
+      - text:
+          de: "Das Sammeln, Beseitigen oder Behandeln von kommunalem, häuslichem oder industriellem Abwasser ist ausgenommen, wenn es kein wesentlicher Teil der allgemeinen Tätigkeit des Unternehmens ist."
+          en: "The collection, disposal or treatment of urban, domestic or industrial waste water is excluded if it is not an essential part of the general activity of the undertaking."
+        source_ref: "(197)"
+      - text:
+          de: "Der Erdölbereich gehört nicht zum Fall Gasversorgung: nicht erfasst sind Betreiber von Erdöl-Fernleitungen, von Anlagen zur Erdölgewinnung, -raffination und -behandlung, von Erdölspeicherung und -fernleitung sowie zentrale Bevorratungsstellen."
+          en: "The oil sector does not belong to the gas supply case: operators of oil transmission pipelines, of oil production, refining and treatment facilities, of oil storage and transmission, and central stockholding entities are not covered."
+        source_ref: "(199)"
+      - text:
+          de: "Der Wasserstoffbereich gehört nicht zum Fall Stromversorgung: nicht erfasst sind Betreiber der Wasserstofferzeugung, -speicherung und -fernleitung."
+          en: "The hydrogen sector does not belong to the electricity supply case: operators of hydrogen production, storage and transmission are not covered."
+        source_ref: "(203)"
+      - text:
+          de: "Fällt ein System nicht unter Nummer 2 des Anhangs III, kann es trotzdem nach Artikel 6 Absatz 1 als hochriskant gelten, wenn es von Harmonisierungsrechtsvorschriften der Union aus Anhang I erfasst wird, zum Beispiel eingebaut in Funkanlagen, Seilbahnen, Luftfahrt oder Schienensysteme. Diese Prüfung ist eine andere und hier nicht abgedeckt."
+          en: "If a system does not fall under Annex III, point 2, it may nevertheless be considered high-risk under Article 6(1) if it is covered by Union harmonisation legislation listed in Annex I, for example integrated into radio equipment, cableway installations, aviation or rail systems. This assessment is a different one and is not covered here."
+        source_ref: "(179)"
+    examples: []
+  - citation: "AI-Act/annex-III/pt-2"
+    main_question:
+      de: "Wird Ihr KI-System von einer Einrichtung eingesetzt, die ihr Mitgliedstaat förmlich als kritische Einrichtung benannt hat?"
+      en: "Is your AI system used by an entity that its Member State has formally identified as a critical entity?"
+    follow_up_questions:
+      - question:
+          de: "Hat ein Mitgliedstaat den Betreiber, der Ihr System einsetzt, nach der Richtlinie über die Widerstandsfähigkeit kritischer Einrichtungen als kritische Einrichtung benannt?"
+          en: "Has a Member State identified the deployer using your system as a critical entity under the Critical Entities Resilience Directive?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(190)"
+    covered:
+      - text:
+          de: "Ein KI-System gilt nur dann als Sicherheitsbauteil in kritischer Infrastruktur und damit als hochriskant, wenn es von einer Einrichtung genutzt wird, die ein Mitgliedstaat nach der Richtlinie über die Widerstandsfähigkeit kritischer Einrichtungen als kritische Einrichtung benannt hat."
+          en: "An AI system is considered a safety component in critical infrastructure, and therefore high-risk, only if it is used by an entity that a Member State has identified as a critical entity under the Critical Entities Resilience Directive."
+        source_ref: "(190)"
+      - text:
+          de: "Welche Dienste als wesentlich gelten und welchen Arten von Einrichtungen sie zugeordnet sind, legt die Delegierte Verordnung (EU) 2023/2450 fest; Artikel 3 Nummer 62 der KI-Verordnung verweist dafür auf die Richtlinie (EU) 2022/2557."
+          en: "Which services are considered essential and to which types of entities they are assigned is laid down in Commission Delegated Regulation (EU) 2023/2450; Article 3(62) of the AI Act refers for this to Directive (EU) 2022/2557."
+        source_ref: "(189)"
+      - text:
+          de: "Der Betreiber muss seinen Status als benannte kritische Einrichtung einem außenstehenden Anbieter nicht offenlegen. Ein Anbieter kann sein System freiwillig nach den Anforderungen für hochriskante Systeme bauen und für solche Zwecke anbieten, und ein Betreiber kann die Einhaltung der KI-Verordnung im Einkauf, im Vertrag oder in den technischen Vorgaben verlangen, ohne seinen Status zu nennen."
+          en: "The deployer does not have to disclose its status as an identified critical entity to an external provider. A provider may voluntarily build its system in accordance with the requirements for high-risk systems and offer it for such purposes, and a deployer may require compliance with the AI Act in procurement, in the contract or in the technical specifications without disclosing its status."
+        source_ref: "(191)"
+    not_covered:
+      - text:
+          de: "Wird Ihr System von einer Einrichtung genutzt, die kein Mitgliedstaat als kritische Einrichtung benannt hat, fällt es nicht unter Nummer 2 des Anhangs III."
+          en: "If your system is used by an entity that no Member State has identified as a critical entity, it does not fall under Annex III, point 2."
+        source_ref: "(190)"
+    examples: []
+  - citation: "AI-Act/annex-III/pt-2"
+    main_question:
+      de: "Erfüllt Ihr KI-System selbst eine Schutzaufgabe, das heißt schützt es unmittelbar die körperliche Unversehrtheit der Anlage, indem es Gefahren verringert, verhindert, beherrscht oder in ihren Folgen begrenzt, die sonst zu körperlichen Schäden an Menschen oder zu Sachschäden führen würden?"
+      en: "Does your AI system itself perform a safety function, i.e. does it directly protect the physical integrity of the infrastructure by reducing, preventing, controlling or mitigating the consequences of hazards that would otherwise lead to physical harm to people or to damage to property?"
+    follow_up_questions:
+      - question:
+          de: "Überwacht und erkennt Ihr System Lagen, die unmittelbar zu körperlichen Schäden an Menschen oder zu Sachschäden führen können, und schützt es damit unmittelbar die körperliche Unversehrtheit der Anlage, zum Beispiel indem es ungewöhnliches Verhalten im Betrieb der Anlage erkennt?"
+          en: "Does your system monitor and detect situations that can directly lead to physical harm to people or to damage to property, and thereby directly protect the physical integrity of the infrastructure, for example by detecting abnormal behaviour in the operation of the infrastructure?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(184)"
+      - question:
+          de: "Überwacht und erkennt Ihr System, dass eine Wartung oder Prüfung angesetzt werden muss, deren Ausbleiben unmittelbar die körperliche Unversehrtheit der Anlage gefährden und zu körperlichen Schäden an Menschen oder zu Sachschäden führen würde, zum Beispiel indem es abgenutzte Teile der Anlage erkennt, die ersetzt werden müssen?"
+          en: "Does your system monitor and detect that maintenance or an inspection must be scheduled, the absence of which would directly endanger the physical integrity of the infrastructure and lead to physical harm to people or to damage to property, for example by detecting worn parts of the infrastructure that need to be replaced?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(184)"
+      - question:
+          de: "Verhindert Ihr System körperliche Schäden an Menschen oder Sachschäden, indem es unmittelbar die körperliche Unversehrtheit der Anlage schützt, zum Beispiel indem es den Anlauf des Betriebs verhindert, wenn es ungewöhnliches Verhalten erkennt?"
+          en: "Does your system prevent physical harm to people or damage to property by directly protecting the physical integrity of the infrastructure, for example by preventing operation from starting when it detects abnormal behaviour?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(184)"
+      - question:
+          de: "Steuert oder begrenzt Ihr System mögliche körperliche Schäden an Menschen oder Sachschäden, indem es unmittelbar die körperliche Unversehrtheit der Anlage schützt, zum Beispiel indem es ein bestimmtes Verhalten oder eine Funktion der Anlage steuert und entsprechend nachregelt?"
+          en: "Does your system control or limit potential physical harm to people or damage to property by directly protecting the physical integrity of the infrastructure, for example by controlling a particular behaviour or function of the infrastructure and adjusting it accordingly?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(184)"
+      - question:
+          de: "Begrenzt Ihr System die Folgen möglicher körperlicher Schäden an Menschen oder von Sachschäden, indem es unmittelbar die körperliche Unversehrtheit der Anlage schützt, zum Beispiel indem es bei einem gefährlichen Zustand selbst eine Handlung auslöst wie einen sicheren Halt?"
+          en: "Does your system mitigate the consequences of potential physical harm to people or of damage to property by directly protecting the physical integrity of the infrastructure, for example by itself triggering an action such as a safe stop in a hazardous state?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(184)"
+      - question:
+          de: "Steuert oder überwacht Ihr System ein anderes System, das eine Schutzaufgabe erfüllt, zum Beispiel indem es dessen Betrieb über Messfühler in Echtzeit überwacht und dabei selbst die Schutzaufgabe unmittelbar erfüllt?"
+          en: "Does your system control or monitor another system that performs a safety function, for example by monitoring its operation in real time via sensors and thereby itself directly performing the safety function?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(184)"
+      - question:
+          de: "Haben Sie alle sechs vorstehenden Fragen mit Nein beantwortet?"
+          en: "Have you answered No to all six questions above?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(184)"
+      - question:
+          de: "Läuft Ihr System im Kern nur unterstützend mit, liefert es Auskünfte, dient es der Organisation oder verbessert es den Betrieb der Anlage, etwa die Leistung, die Wirtschaftlichkeit oder die Kosten, ohne selbst eine unmittelbare Schutzaufgabe zu erfüllen?"
+          en: "Does your system essentially only run in a supporting role, provide information, serve organisational purposes or improve the operation of the infrastructure, for example its performance, cost-effectiveness or costs, without itself performing a direct safety function?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(181)"
+      - question:
+          de: "Leitet Ihr System Verkehr oder Daten nur durch, ohne über deren Inhalt oder Ziel zu bestimmen oder zu entscheiden (sogenannte reine Durchleitung)?"
+          en: "Does your system merely pass traffic or data through, without determining or deciding on its content or destination (so-called mere conduit)?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(182)"
+      - question:
+          de: "Liefert Ihr System nur Erkenntnisse und Auswertungen, ohne Änderungen am Betrieb der Anlage unmittelbar auszulösen, die sich auf die Sicherheit auswirken können?"
+          en: "Does your system only provide insights and analyses, without directly triggering changes to the operation of the infrastructure that can affect safety?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(183)"
+      - question:
+          de: "Kann die Anlage ohne Ihr System sicher weiterlaufen, weil Ihr System nur eine von mehreren vorsorglichen Maßnahmen ist und für den sicheren Betrieb nicht notwendig ist?"
+          en: "Can the infrastructure continue to operate safely without your system, because your system is only one of several precautionary measures and is not necessary for safe operation?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(196)"
+      - question:
+          de: "Gibt Ihr System sein Ergebnis nur als Warnung, Hinweis oder Empfehlung an einen Menschen weiter, der dann selbst über Maßnahmen entscheidet, und greift es nicht selbst in die Anlage ein?"
+          en: "Does your system only pass its output to a human as a warning, notice or recommendation, who then decides on measures themselves, and does it not itself intervene in the infrastructure?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(206)"
+      - question:
+          de: "Kann Ihr System ausschließlich erkennen und melden, ohne vorbeugende Maßnahmen zu ergreifen, in den Betrieb einzugreifen, Störungen zu beheben oder Gefahren abzuwenden?"
+          en: "Can your system only detect and report, without taking preventive measures, intervening in operation, remedying faults or averting hazards?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(202)"
+      - question:
+          de: "Soll Ihr System allein Schäden verhindern, die nicht körperlich sind, also nicht gegenständliche Schäden wie seelisches Leid oder die Verletzung von Rechten?"
+          en: "Is your system intended solely to prevent harm that is not physical, i.e. non-material harm such as psychological distress or the infringement of rights?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(185)"
+      - question:
+          de: "Soll Ihr System allein Schäden verhindern, die Dritte verursachen, einschließlich solcher, die durch die Nutzung von Vermittlungsdiensten entstehen?"
+          en: "Is your system intended solely to prevent harm caused by third parties, including harm arising from the use of intermediary services?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(185)"
+      - question:
+          de: "Dient Ihr System ausschließlich der Abwehr von Angriffen über das Netz, also allein Zwecken der Netz- und Informationssicherheit?"
+          en: "Is your system used exclusively to defend against cyberattacks, i.e. solely for network and information security purposes?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(187)"
+      - question:
+          de: "Gibt es neben Ihrem System ein zweites System oder eine Rückfallebene, die die körperliche Unversehrtheit der Anlage unmittelbar schützt und den Schaden allein verhindern könnte?"
+          en: "Is there, in addition to your system, a second system or a fallback that directly protects the physical integrity of the infrastructure and could prevent the harm on its own?"
+        on_yes: "continue"
+        on_no: "continue"
+        source_ref: "(186)"
+    covered:
+      - text:
+          de: "Die Einstufung als Sicherheitsbauteil richtet sich vor allem nach der Schutzaufgabe, die das KI-System selbst erfüllt. Bei kritischer Infrastruktur kommt es darauf an, ob das System unmittelbar die körperliche Unversehrtheit der Anlage schützt, indem es Gefahren verringert, verhindert, beherrscht oder in ihren Folgen begrenzt, die sonst zu körperlichen Schäden an Menschen oder zu Sachschäden führen würden. Die Aufgabe des Sicherheitsbauteils ist mit der Erhaltung der körperlichen Unversehrtheit der Anlage untrennbar verbunden."
+          en: "Classification as a safety component depends primarily on the safety function that the AI system itself performs. In critical infrastructure, what matters is whether the system directly protects the physical integrity of the infrastructure by reducing, preventing, controlling or mitigating the consequences of hazards that would otherwise lead to physical harm to people or to damage to property. The function of the safety component is inseparably linked to preserving the physical integrity of the infrastructure."
+        source_ref: "(180)"
+      - text:
+          de: "Als Sicherheitsbauteil gilt ein System nur, wenn es eine dieser sechs Schutzaufgaben erfüllt: Lagen erkennen, die unmittelbar zu Schaden führen können; den Bedarf an Wartung und Prüfung erkennen, dessen Ausbleiben die Unversehrtheit gefährdet; Schaden verhindern; möglichen Schaden steuern oder begrenzen; die Folgen möglichen Schadens begrenzen; oder ein anderes System steuern beziehungsweise überwachen, das eine Schutzaufgabe erfüllt."
+          en: "A system is considered a safety component only if it performs one of these six safety functions: detecting situations that can directly lead to harm; detecting the need for maintenance and inspection, the absence of which endangers integrity; preventing harm; controlling or limiting potential harm; mitigating the consequences of potential harm; or controlling or monitoring another system that performs a safety function."
+        source_ref: "(184)"
+      - text:
+          de: "Hintergrund der Einstufung ist die Gefahr, dass ein Ausfall oder eine Fehlfunktion solcher Systeme Leben und Gesundheit vieler Menschen gefährdet und den gewöhnlichen Ablauf gesellschaftlicher und wirtschaftlicher Tätigkeiten merklich stört."
+          en: "The reason for the classification is the risk that a failure or malfunction of such systems endangers the life and health of many people and appreciably disrupts the ordinary conduct of social and economic activities."
+        source_ref: "(178)"
+    not_covered:
+      - text:
+          de: "Nicht erfasst sind Systeme, die bloß unterstützend mitlaufen, Auskünfte geben, der Organisation dienen oder den Betrieb verbessern, etwa Leistung oder Kosten optimieren, und die selbst keine unmittelbare Schutzaufgabe erfüllen."
+          en: "Not covered are systems that merely run in a supporting role, provide information, serve organisational purposes or improve operation, for example optimise performance or costs, and that do not themselves perform a direct safety function."
+        source_ref: "(181)"
+      - text:
+          de: "Nicht erfasst ist die reine Durchleitung, also das passive Weiterleiten von Verkehr oder Daten ohne Steuerung oder Entscheidung über Inhalt oder Ziel."
+          en: "Not covered is mere conduit, i.e. passively forwarding traffic or data without controlling or deciding on content or destination."
+        source_ref: "(182)"
+      - text:
+          de: "Nicht erfasst sind Systeme, die nur Erkenntnisse liefern und keine Änderung im Betrieb unmittelbar auslösen, die sich auf die Sicherheit auswirkt; dass die Verfügbarkeit von Diensten betroffen sein kann, genügt nicht."
+          en: "Not covered are systems that only provide insights and do not directly trigger any change in operation that affects safety; the fact that the availability of services may be affected is not sufficient."
+        source_ref: "(183)"
+      - text:
+          de: "Nicht als Sicherheitsbauteil gelten Bauteile, die allein Schäden verhindern sollen, die nicht körperlich oder nicht gegenständlich sind, etwa seelisches Leid oder die Verletzung von Rechten."
+          en: "Components intended solely to prevent harm that is not physical or not material, for example psychological distress or the infringement of rights, are not considered safety components."
+        source_ref: "(185)"
+      - text:
+          de: "Nicht als Sicherheitsbauteil gelten Bauteile, die allein Schäden verhindern sollen, die Dritte verursachen, einschließlich solcher, die durch die Nutzung von Vermittlungsdiensten entstehen."
+          en: "Components intended solely to prevent harm caused by third parties, including harm arising from the use of intermediary services, are not considered safety components."
+        source_ref: "(185)"
+      - text:
+          de: "Ein System, das ausschließlich Zwecken der Abwehr von Angriffen über das Netz dient, fällt nicht unter Nummer 2 des Anhangs III. Erwägungsgrund 55 der KI-Verordnung unterscheidet klar zwischen einem Sicherheitsbauteil und einem Bauteil für die Netz- und Informationssicherheit; ohne unmittelbare Schutzaufgabe ist ein System kein Sicherheitsbauteil."
+          en: "A system used exclusively for cybersecurity purposes does not fall under Annex III, point 2. Recital 55 of the AI Act clearly distinguishes between a safety component and a component for network and information security; without a direct safety function, a system is not a safety component."
+        source_ref: "(187)"
+      - text:
+          de: "Bei der Prüfung ist zu berücksichtigen, ob es ein zweites System oder eine Rückfallebene gibt, die die körperliche Unversehrtheit der Anlage unmittelbar schützt und den Schaden verhindern könnte."
+          en: "The assessment must take into account whether there is a second system or a fallback that directly protects the physical integrity of the infrastructure and could prevent the harm."
+        source_ref: "(186)"
+      - text:
+          de: "Ein System, das nur erkennen und melden kann und weder vorbeugende Maßnahmen ergreifen noch in den Betrieb eingreifen, Störungen beheben oder Gefahren abwenden kann, hat keine Schutzaufgabe."
+          en: "A system that can only detect and report and can neither take preventive measures nor intervene in operation, remedy faults or avert hazards has no safety function."
+        source_ref: "(202)"
+      - text:
+          de: "Ein System, das nicht selbst auf die Anlage einwirkt, sondern nur die Entscheidungsmöglichkeiten in der Leitstelle erweitert, hat keine unmittelbare Schutzaufgabe."
+          en: "A system that does not itself act on the infrastructure, but only extends the decision-making options in the control centre, has no direct safety function."
+        source_ref: "(206)"
+      - text:
+          de: "Ein System, das nur hilft, Ausfälle zu vermeiden, ist kein Sicherheitsbauteil, wenn die Anlage ohne es weiterlaufen kann, weil es nur eine von mehreren vorsorglichen Maßnahmen und für den sicheren Betrieb nicht notwendig ist."
+          en: "A system that only helps to avoid failures is not a safety component if the infrastructure can continue to operate without it, because it is only one of several precautionary measures and is not necessary for safe operation."
+        source_ref: "(196)"
+      - text:
+          de: "Werden die Kernaufgaben der Sicherheit getrennt von Ihrem System erledigt, hat Ihr System keine unmittelbare Schutzaufgabe."
+          en: "If the core safety functions are performed separately from your system, your system has no direct safety function."
+        source_ref: "(206)"
+    examples:
+      - scenario:
+          de: "Ein System zur Optimierung des Verkehrsflusses auf Grundlage von Daten, die in Echtzeit gesammelt werden."
+          en: "A system for optimising traffic flow based on data collected in real time."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es ist eine Auswertungsplattform für Verkehrsdaten. Sie löst Änderungen in der Verkehrssteuerung nicht unmittelbar aus und schützt Sicherheit oder körperliche Unversehrtheit nicht unmittelbar; sie liefert Erkenntnisse. Der Verkehr funktioniert auch ohne sie."
+          en: "It is an analytics platform for traffic data. It does not directly trigger changes in traffic control and does not directly protect safety or physical integrity; it provides insights. Traffic also functions without it."
+        source_ref: "(183)"
+      - scenario:
+          de: "Ein Köder-System im Netz (Honeypot), das Angriffe über das Netz in Echtzeit erkennen und unschädlich machen soll."
+          en: "A decoy system on the network (honeypot) intended to detect and neutralise cyberattacks in real time."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es dient ausschließlich der Abwehr von Angriffen über das Netz."
+          en: "It is used exclusively for cybersecurity purposes."
+        source_ref: "(187)"
+      - scenario:
+          de: "Eine Technik, die sich mit möglichen Angreifern aktiv einlässt, um neue Angriffsmuster zu lernen."
+          en: "A technique that actively engages with potential attackers in order to learn new attack patterns."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Sie dient ausschließlich der Abwehr von Angriffen über das Netz."
+          en: "It is used exclusively for cybersecurity purposes."
+        source_ref: "(187)"
+      - scenario:
+          de: "Ein System, das unberechtigte Zugriffe erkennen hilft, sodass betroffene Kunden gewarnt werden, bevor ihr Kennwort missbraucht wird."
+          en: "A system that helps detect unauthorised access so that affected customers are warned before their password is misused."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es dient ausschließlich der Abwehr von Angriffen über das Netz."
+          en: "It is used exclusively for cybersecurity purposes."
+        source_ref: "(187)"
+      - scenario:
+          de: "Ein System, das verdächtige Absenderadressen von Nachrichten erkennt und entwendete Daten ausfindig macht."
+          en: "A system that detects suspicious sender addresses of messages and locates stolen data."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es dient ausschließlich der Abwehr von Angriffen über das Netz."
+          en: "It is used exclusively for cybersecurity purposes."
+        source_ref: "(187)"
+      - scenario:
+          de: "Eine Brandmeldeanlage mit KI-Steuerung in einem Rechenzentrum für Rechenleistung aus dem Netz."
+          en: "An AI-controlled fire alarm system in a data centre for cloud computing."
+        verdict: "high_risk"
+        rationale:
+          de: "Sie hat eine unmittelbare Schutzaufgabe: sie verhindert unmittelbaren Schaden an der körperlichen Anlage des Rechenzentrums und an Menschen. Keine der Ausnahmen des Artikels 6 Absatz 3 greift."
+          en: "It has a direct safety function: it prevents direct harm to the physical infrastructure of the data centre and to people. None of the exemptions in Article 6(3) applies."
+        source_ref: "(194)"
+      - scenario:
+          de: "Systeme, die die Dienstgüte und den Betrieb kritischer digitaler Infrastruktur verbessern sollen: Verwaltung von Störungsmeldungen, Optimierung des Netzes und Anpassung an einzelne Kundenbedürfnisse, KI-gestützte Auskunft aus dem technischen Handbuch zur Netzwartung, Vorhersage der Netzlast."
+          en: "Systems intended to improve the quality of service and the operation of critical digital infrastructure: management of fault reports, network optimisation and adaptation to individual customer needs, AI-supported information from the technical manual for network maintenance, network load forecasting."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Solche Systeme haben keine unmittelbare Schutzaufgabe."
+          en: "Such systems have no direct safety function."
+        source_ref: "(194)"
+      - scenario:
+          de: "Ein Werkzeug für Übersetzung in Echtzeit im Straßenverkehr."
+          en: "A real-time translation tool in road traffic."
+        verdict: "high_risk"
+        rationale:
+          de: "Es ist für die Beschäftigten des Verkehrsbetriebs notwendig, um Sprachbarrieren zwischen Leitstelle und Fahrern sowie zwischen Fahrgästen und Fahrern zu überwinden; es sichert die sprachliche Verständigung und trägt so zur Sicherheit des öffentlichen Verkehrs bei."
+          en: "It is necessary for the staff of the transport operator to overcome language barriers between the control centre and drivers and between passengers and drivers; it ensures linguistic communication and thus contributes to the safety of public transport."
+        source_ref: "(196)"
+      - scenario:
+          de: "Ein System, das den Straßenverkehr überwacht und die Ampeln entsprechend nachregelt."
+          en: "A system that monitors road traffic and adjusts the traffic lights accordingly."
+        verdict: "high_risk"
+        rationale:
+          de: "Es steuert und begrenzt mögliche körperliche Schäden an Menschen und Sachschäden an Fahrzeugen, Verkehrsteilnehmern und Umgebung, indem es unmittelbar die körperliche Unversehrtheit des Verkehrslenkungssystems schützt; es wirkt unmittelbar auf die Verkehrssicherheit."
+          en: "It controls and limits potential physical harm to people and damage to property in respect of vehicles, road users and the surroundings by directly protecting the physical integrity of the traffic management system; it has a direct effect on road safety."
+        source_ref: "(196)"
+      - scenario:
+          de: "Ein System, das schwere Gegenstände auf anfälligen Brücken und Kaimauern erkennt."
+          en: "A system that detects heavy objects on vulnerable bridges and quay walls."
+        verdict: "high_risk"
+        rationale:
+          de: "Es hilft, den Einsturz von Brücken und Kaimauern zu verhindern, und schützt damit unmittelbar die körperliche Unversehrtheit der Straßeninfrastruktur. Fällt es aus, wird ein drohender Einsturz nicht rechtzeitig erkannt. Es wird für die Verwaltung der Brücken und Kaimauern nicht gebraucht und ist ein zusätzliches Sicherheitsbauteil, vergleichbar einem Notausschalter."
+          en: "It helps to prevent the collapse of bridges and quay walls and thereby directly protects the physical integrity of the road infrastructure. If it fails, an impending collapse is not detected in time. It is not needed for the management of the bridges and quay walls and is an additional safety component, comparable to an emergency stop switch."
+        source_ref: "(196)"
+      - scenario:
+          de: "Ein System, das Wasserstandsdaten in Echtzeit mit der Schleusensteuerung für den Straßenverkehr verknüpft, etwa bei Hochwassergefahr."
+          en: "A system that links real-time water level data with the lock control for road traffic, for example when there is a risk of flooding."
+        verdict: "high_risk"
+        rationale:
+          de: "Es überwacht und erkennt Lagen, die unmittelbar zu körperlichen Schäden an Menschen oder zu Sachschäden führen können, und schützt damit unmittelbar die körperliche Unversehrtheit der Straßeninfrastruktur."
+          en: "It monitors and detects situations that can directly lead to physical harm to people or to damage to property, and thereby directly protects the physical integrity of the road infrastructure."
+        source_ref: "(196)"
+      - scenario:
+          de: "Ein Steuerungssystem, das über Telekommunikationsnetze mit Verkehrsteilnehmern sprechen kann (intelligentes Verkehrssteuerungssystem). Es erkennt Verkehr, wertet die empfangenen Daten aus und entscheidet auf dieser Grundlage, etwa um bestimmte Verkehrsteilnehmer zu bevorrechtigen oder Verkehrsteilnehmern mitzuteilen, wie lange eine Ampel rot oder grün bleibt."
+          en: "A control system that can communicate with road users via telecommunications networks (intelligent traffic control system). It detects traffic, analyses the data received and makes decisions on that basis, for example to give priority to certain road users or to inform road users how long a traffic light will stay red or green."
+        verdict: "high_risk"
+        rationale:
+          de: "Es verhindert Unfälle, etwa Zusammenstöße kreuzender Verkehrsströme oder Auffahrunfälle im Stau. Eine Fehlfunktion kann Stillstand, die Behinderung von Rettungsdiensten oder mehr Unfälle an belebten Kreuzungen verursachen; solche Ausfälle schaffen unmittelbare Gefahren für die Unversehrtheit der Infrastruktur und für Leben und Gesundheit von Menschen."
+          en: "It prevents accidents, for example collisions between crossing traffic flows or rear-end collisions in congestion. A malfunction can cause gridlock, obstruct emergency services or cause more accidents at busy intersections; such failures create direct hazards to the integrity of the infrastructure and to the life and health of people."
+        source_ref: "(196)"
+      - scenario:
+          de: "Ein System für vorausschauende Wartung, das genauere Vorhersagen zur Wartung der Straßeninfrastruktur erlaubt und Teil einer Reihe von Sicherheitsmaßnahmen ist."
+          en: "A predictive maintenance system that enables more accurate forecasts for the maintenance of road infrastructure and is part of a set of safety measures."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es hilft nur, Ausfälle zu vermeiden, und ist kein Sicherheitsbauteil. Eine Fehlfunktion gefährdet die Sicherheit nicht, weil die Anlage ohne es funktioniert; es ist nur eine von mehreren vorsorglichen Maßnahmen und für den sicheren Betrieb nicht notwendig."
+          en: "It only helps to avoid failures and is not a safety component. A malfunction does not endanger safety, because the infrastructure functions without it; it is only one of several precautionary measures and is not necessary for safe operation."
+        source_ref: "(196)"
+      - scenario:
+          de: "Ein System, das als Druckfühler in der Überwachung des Wasserdrucks eingesetzt wird."
+          en: "A system used as a pressure sensor in water pressure monitoring."
+        verdict: "high_risk"
+        rationale:
+          de: "Es erfüllt die Begriffsbestimmung des Sicherheitsbauteils und soll in der Verteilung von Trinkwasser eingesetzt werden, die zum Fall Wasserversorgung gehört."
+          en: "It meets the definition of a safety component and is intended to be used in the distribution of drinking water, which belongs to the water supply case."
+        source_ref: "(198)"
+      - scenario:
+          de: "Ein System, das den Überlauf der Abwasseranlage vorhersagt, soweit dieser das Trinkwasser beeinträchtigt."
+          en: "A system that predicts the overflow of the sewage system insofar as it affects drinking water."
+        verdict: "high_risk"
+        rationale:
+          de: "Es erfüllt die Begriffsbestimmung des Sicherheitsbauteils und soll in der Verteilung von Trinkwasser eingesetzt werden, die zum Fall Wasserversorgung gehört."
+          en: "It meets the definition of a safety component and is intended to be used in the distribution of drinking water, which belongs to the water supply case."
+        source_ref: "(198)"
+      - scenario:
+          de: "Ein Werkzeug für vorausschauende Wartung zur Überwachung einer Gasfernleitung, das Betriebsdaten auswertet, um den Wartungsbedarf vorherzusagen."
+          en: "A predictive maintenance tool for monitoring a gas transmission pipeline that analyses operating data in order to predict maintenance needs."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es steuert keine Schutzaufgaben unmittelbar, und die vorhandenen Sicherheitssysteme bleiben unabhängig davon in Betrieb."
+          en: "It does not directly control any safety functions, and the existing safety systems remain in operation independently of it."
+        source_ref: "(200)"
+      - scenario:
+          de: "Selbstfahrende Roboter, die in einem Heizkraftwerk regelmäßige, vorab festgelegte Runden und Kontrollpunkte abfahren."
+          en: "Autonomous robots that follow regular, predefined rounds and checkpoints in a combined heat and power plant."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Das System kann nur erkennen. Es kann keine vorbeugenden Maßnahmen ergreifen, nicht in den Betrieb eingreifen, keine Störungen beheben und keine Gefahren abwenden; ihm fehlt die Schutzaufgabe."
+          en: "The system can only detect. It cannot take preventive measures, cannot intervene in operation, cannot remedy faults and cannot avert hazards; it lacks a safety function."
+        source_ref: "(202)"
+      - scenario:
+          de: "Ein System zur Überwachung und zum Schutz des äußeren Umfelds einer Stromanlage, etwa Kamerasysteme, Radarsysteme und die Steuerung von Fluggeräten ohne Besatzung."
+          en: "A system for monitoring and protecting the external perimeter of an electricity facility, for example camera systems, radar systems and the control of unmanned aircraft."
+        verdict: "high_risk"
+        rationale:
+          de: "Es wird eingesetzt, um die körperliche Unversehrtheit der Anlage unmittelbar zu schützen."
+          en: "It is used to directly protect the physical integrity of the infrastructure."
+        source_ref: "(206)"
+      - scenario:
+          de: "Ein System, das beim Betrieb von Stromnetzen Abweichungen in Datenmustern erkennt, um kritische Funktionen zu überwachen und Entscheidungen dazu zu unterstützen, etwa die Verteilung der Last, die Netzstabilität oder Abschaltverfahren."
+          en: "A system that detects anomalies in data patterns in the operation of electricity grids in order to monitor critical functions and support decisions on them, for example load distribution, grid stability or shutdown procedures."
+        verdict: "high_risk"
+        rationale:
+          de: "Dieser Einsatz ist im amtlichen Text als Beispiel innerhalb des Falls Stromversorgung aufgeführt."
+          en: "This use is listed in the official text as an example within the electricity supply case."
+        source_ref: "(206)"
+      - scenario:
+          de: "Ein System zur Optimierung des Stromnetzes durch Vorhersage des Energiebedarfs."
+          en: "A system for optimising the electricity grid by forecasting energy demand."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Die Kernaufgaben der Sicherheit werden getrennt davon erledigt, sodass das System keine unmittelbare Schutzaufgabe hat."
+          en: "The core safety functions are performed separately from it, so the system has no direct safety function."
+        source_ref: "(206)"
+      - scenario:
+          de: "Ein System zur Überwachung der Netz- und Informationssicherheit in Stromnetzen. Es überwacht fortlaufend den Netzverkehr, erkennt ungewöhnliche Muster und meldet mögliche Angriffe an das Sicherheitspersonal; es arbeitet unabhängig von den Betriebssystemen, die den Stromnetzbetrieb körperlich steuern."
+          en: "A system for monitoring network and information security in electricity grids. It continuously monitors network traffic, detects unusual patterns and reports possible attacks to security staff; it operates independently of the operational systems that physically control electricity grid operation."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es dient ausschließlich der Abwehr von Angriffen über das Netz."
+          en: "It is used exclusively for cybersecurity purposes."
+        source_ref: "(206)"
+      - scenario:
+          de: "Ein System zur Qualitätssicherung beim Einbau von Stromzählern, das Bilder eingebauter Zähler auswertet und dem Beschäftigten Hinweise auf Fehler und Verbesserungen gibt."
+          en: "A system for quality assurance in the installation of electricity meters that analyses images of installed meters and gives the worker indications of errors and improvements."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es hat keine unmittelbare Schutzaufgabe."
+          en: "It has no direct safety function."
+        source_ref: "(206)"
+      - scenario:
+          de: "Ein System zur Störungserkennung zur vorsorglichen Vermeidung von Ausfällen. Es erkennt Abweichungen, sagt drohende Ausfälle voraus und warnt die Netzleitstelle, die dann vorsorglich Lasten umschalten kann."
+          en: "A fault detection system for the precautionary avoidance of failures. It detects anomalies, predicts impending failures and warns the grid control centre, which can then shift loads as a precaution."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es fehlt die unmittelbare Schutzaufgabe: das System ist nur eine von mehreren vorsorglichen Maßnahmen und für den sicheren Betrieb nicht notwendig. Es wirkt nicht selbst, sondern erweitert nur die Entscheidungsmöglichkeiten der Leitstelle. Selbst wenn es einen Ausfall falsch ankündigt, entsteht kein Ausfall."
+          en: "There is no direct safety function: the system is only one of several precautionary measures and is not necessary for safe operation. It does not act itself, but only extends the decision-making options of the control centre. Even if it wrongly announces a failure, no failure occurs."
+        source_ref: "(206)"
+      - scenario:
+          de: "Ein System, das Abweichungen in Daten aus dem Stromnetzbetrieb erkennt und auswertet, dessen Ergebnis die Grundlage für künftige Verbesserungen im Netzbetrieb ist und von einem Menschen geprüft wird."
+          en: "A system that detects and analyses anomalies in data from electricity grid operation, whose output is the basis for future improvements in grid operation and is reviewed by a human."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es dient dazu, den Entscheidungsvorgang anzureichern, und hat keine unmittelbare Schutzaufgabe."
+          en: "It serves to enrich the decision-making process and has no direct safety function."
+        source_ref: "(206)"
+      - scenario:
+          de: "Ein System, das als Assistent Empfehlungen gibt und den Energieverbrauch auf Ebene der Fernleitung, der Region oder vor Ort vorhersagt."
+          en: "A system that acts as an assistant, giving recommendations and forecasting energy consumption at transmission, regional or local level."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es hat keine unmittelbare Schutzaufgabe."
+          en: "It has no direct safety function."
+        source_ref: "(206)"
+      - scenario:
+          de: "Ein von einem Menschen beaufsichtigtes System, das Ungleichgewichte im Stromnetz vorhersagt, etwa im Abstand von 15 Minuten. Die Vorhersagen stützen die Betriebsplanung, wirken aber auch unmittelbar auf Marktteilnehmer; eine Fehlfunktion könnte innere und äußere Beteiligte in die Irre führen und über schlechtere Einsatz- oder Absicherungsentscheidungen die Netzstabilität und damit die Stromversorgung beeinträchtigen."
+          en: "A human-supervised system that forecasts imbalances in the electricity grid, for example at 15-minute intervals. The forecasts support operational planning but also have a direct effect on market participants; a malfunction could mislead internal and external stakeholders and, through poorer dispatch or hedging decisions, impair grid stability and thus the electricity supply."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Zwischen dem System und dem möglichen Schaden fehlt der unmittelbare Zusammenhang."
+          en: "There is no direct link between the system and the potential harm."
+        source_ref: "(206)"
+  - citation: "AI-Act/annex-III/pt-2"
+    main_question:
+      de: "Wird Ihr KI-System in der Kernenergieerzeugung eingesetzt?"
+      en: "Is your AI system used in nuclear power generation?"
+    follow_up_questions:
+      - question:
+          de: "Wird Ihr System als Sicherheitsbauteil in den Strombestandteilen eines Kernkraftwerks eingesetzt, also in den Teilen, die der Stromerzeugung und Stromübertragung dienen?"
+          en: "Is your system used as a safety component in the electricity components of a nuclear power plant, i.e. in the parts that serve electricity generation and electricity transmission?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(206)"
+      - question:
+          de: "Wird Ihr System sonst als Sicherheitsbauteil in der Kernenergieerzeugung oder innerhalb eines Kernkraftwerks eingesetzt?"
+          en: "Is your system otherwise used as a safety component in nuclear power generation or within a nuclear power plant?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(206)"
+    covered:
+      - text:
+          de: "Systeme, die als Sicherheitsbauteil in den Strombestandteilen eines Kernkraftwerks eingesetzt werden, können erfasst sein."
+          en: "Systems used as a safety component in the electricity components of a nuclear power plant may be covered."
+        source_ref: "(206)"
+    not_covered:
+      - text:
+          de: "Systeme, die als Sicherheitsbauteil in der Kernenergieerzeugung eingesetzt werden, fallen nicht unter Nummer 2 des Anhangs III. Systeme, die innerhalb von Kernkraftwerken betrieben werden, sind vom Fall kritische Infrastruktur nicht erfasst."
+          en: "Systems used as a safety component in nuclear power generation do not fall under Annex III, point 2. Systems operated within nuclear power plants are not covered by the critical infrastructure case."
+        source_ref: "(206)"
+      - text:
+          de: "Erwägungsgrund 5 der Richtlinie über die Widerstandsfähigkeit kritischer Einrichtungen grenzt den Energiebereich ab: die Stromerzeugung kann Teile der Stromübertragung von Kernkraftwerken umfassen, nimmt aber die kernspezifischen Bestandteile aus, die von Verträgen und Unionsrecht einschließlich der einschlägigen Rechtsakte zur Kernkraft erfasst sind."
+          en: "Recital 5 of the Critical Entities Resilience Directive delimits the energy sector: electricity generation may include parts of the electricity transmission of nuclear power plants, but excludes the nuclear-specific components covered by treaties and Union law, including the relevant legal acts on nuclear power."
+        source_ref: "(205)"
+    examples: []

@@ -1,0 +1,21 @@
+{
+  "purpose_rationale": "The described purpose matches {citation} ({confidence}): {sentence!r} matches {purpose!r} (similarity {value:.2f}).",
+  "prohibition_lifted_by_exemption": "The description names a medical or safety purpose. The exception in {citation} then applies, and the practice is not prohibited. It nevertheless remains emotion recognition and therefore falls under Annex III point 1(c), with all obligations for high-risk AI systems. The reason for the exception must be documented. Wording of the exception: {wording}",
+  "exemption": "Exception: {wording}",
+  "annex_i_third_party_assessment": "It remains to be checked whether this product requires a third-party conformity assessment; only then does Article 6(1) apply.",
+  "annex_iii_area_with_keywords": "The described use falls within the area {title!r} of Annex III (keywords: {keywords}).",
+  "annex_iii_area": "The described use falls within the area {title!r} of Annex III.",
+  "annex_iii_area_covers": "The area covers: {covers}.",
+  "annex_iii_area_note": "Note: {note}",
+  "exemption_case": "Your description points to this case: {case} {precondition} Whoever relies on it bears the burden of proof: {follow_up_obligation}",
+  "gpai_model_provided": "You provide a general-purpose AI model yourself. The obligations for providers of general-purpose AI models therefore apply.",
+  "gpai_systemic_risk_threshold": "The stated training compute of {compute:.1e} floating-point operations reaches the threshold of {threshold:.0e}. {presumption}",
+  "trait_caveat": "This obligation applies only if your system has the trait {traits}. Your description does not say — please check this yourself.",
+  "trait_separator": " or ",
+  "open_question_role": "Are you a provider or a deployer? The provider develops the system and places it on the market under its own name; the deployer uses it under its own authority. The obligations differ considerably.",
+  "open_question_personal_data": "Does the system process personal data, that is, information relating to an identifiable person? This decides whether data protection law applies as well.",
+  "open_question_human_oversight": "Does a person review the result before it takes effect, and can they change it? This decides the derogation under Article 6(3).",
+  "open_question_profiling": "Is the system used to create or evaluate profiles of individual people? If so, no derogation applies.",
+  "open_question_training_compute": "How much compute was used for training, in floating-point operations? From 10^25 onwards, systemic risk is presumed.",
+  "open_question_thin_description": "The description is still thin. The more precisely the purpose, the area of use and the affected persons are named, the more reliable the answer."
+}

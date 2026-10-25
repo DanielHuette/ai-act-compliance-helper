@@ -1,0 +1,10 @@
+{
+  "question_empty": "Bitte geben Sie eine Frage ein.",
+  "question_too_long": "Die Frage ist zu lang: {length} Zeichen, erlaubt sind höchstens {limit}. Bitte stellen Sie die Frage kürzer und schreiben Sie die Einzelheiten in das Feld für die Systembeschreibung.",
+  "description_too_long": "Die Beschreibung ist zu lang: {length} Zeichen, erlaubt sind höchstens {limit}. Bitte kürzen Sie auf das, was für die Einstufung zählt: Zweck, Einsatzbereich, betroffene Personen, Ihre Rolle.",
+  "description_empty": "Bitte beschreiben Sie das KI-System: was es tut, wer es einsetzt und wen seine Ergebnisse betreffen.",
+  "rate_limited": "Zu viele Anfragen von dieser Adresse: erlaubt sind {limit} Anfragen je Minute. Bitte in {seconds} Sekunden erneut versuchen.",
+  "running_as_root": "Der Dienst läuft mit Verwalterrechten (root). Ein Fehler im Dienst wirkt dann auf das ganze System. Im Container sorgt der Nutzer app (Kennung 10001) dafür, dass das nicht passiert.",
+  "debug_enabled": "Die Umgebungsvariable {name} ist gesetzt ({value}). Im Fehlersuchbetrieb können Innereien nach außen gelangen — für den Betrieb abschalten.",
+  "two_llm_keys": "Es liegen Zugangsschlüssel für zwei Anbieter in der Umgebung. Der Dienst nimmt den ersten erreichbaren — wer ein bestimmtes Modell will, gibt COMPLIANCE_HELPER_MODEL ausdrücklich an."
+}

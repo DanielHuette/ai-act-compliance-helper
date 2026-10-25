@@ -1,0 +1,21 @@
+{
+  "purpose_rationale": "Der beschriebene Zweck entspricht {citation} ({confidence}): {sentence!r} trifft {purpose!r} (Nähe {value:.2f}).",
+  "prohibition_lifted_by_exemption": "Die Beschreibung nennt einen medizinischen oder sicherheitsbezogenen Zweck. Dann greift die Ausnahme zu {citation}, und die Praktik ist nicht verboten. Sie bleibt aber Emotionserkennung und fällt damit unter Anhang III Nummer 1 Buchstabe c — mit allen Pflichten für Hochrisiko-KI-Systeme. Der Ausnahmegrund ist zu dokumentieren. Wortlaut der Ausnahme: {wording}",
+  "exemption": "Ausnahme: {wording}",
+  "annex_i_third_party_assessment": "Zu prüfen bleibt, ob für dieses Produkt eine Konformitätsbewertung durch eine dritte Stelle verlangt wird — nur dann greift Artikel 6 Absatz 1.",
+  "annex_iii_area_with_keywords": "Der beschriebene Einsatz fällt in den Bereich {title!r} des Anhangs III (Stichworte: {keywords}).",
+  "annex_iii_area": "Der beschriebene Einsatz fällt in den Bereich {title!r} des Anhangs III.",
+  "annex_iii_area_covers": "Der Bereich umfasst: {covers}.",
+  "annex_iii_area_note": "Zu beachten: {note}",
+  "exemption_case": "Ihre Beschreibung deutet auf den Fall: {case} {precondition} Wer sich darauf beruft, trägt die Nachweislast: {follow_up_obligation}",
+  "gpai_model_provided": "Es wird selbst ein KI-Modell mit allgemeinem Verwendungszweck bereitgestellt. Damit greifen die Pflichten für Modellanbieter.",
+  "gpai_systemic_risk_threshold": "Der angegebene Trainingsaufwand von {compute:.1e} Gleitkommaoperationen erreicht die Schwelle von {threshold:.0e}. {presumption}",
+  "trait_caveat": "Diese Pflicht greift nur, wenn Ihr System das Merkmal {traits} aufweist. Ihre Beschreibung sagt dazu nichts — bitte selbst prüfen.",
+  "trait_separator": " oder ",
+  "open_question_role": "Sind Sie Anbieter oder Betreiber? Anbieter entwickelt das System und bringt es unter eigenem Namen heraus; Betreiber nutzt es unter eigener Verantwortung. Die Pflichten unterscheiden sich stark.",
+  "open_question_personal_data": "Verarbeitet das System personenbezogene Daten — also Angaben, über die sich ein Mensch bestimmen lässt? Davon hängt ab, ob zusätzlich das Datenschutzrecht greift.",
+  "open_question_human_oversight": "Prüft ein Mensch das Ergebnis, bevor es wirkt — und kann er es ändern? Das entscheidet über die Ausnahme nach Artikel 6 Absatz 3.",
+  "open_question_profiling": "Wird mit dem System ein Profil über einzelne Menschen gebildet oder ausgewertet? Dann greift keine Ausnahme.",
+  "open_question_training_compute": "Wie hoch war der Rechenaufwand beim Training in Gleitkommaoperationen? Ab 10^25 wird systemisches Risiko vermutet.",
+  "open_question_thin_description": "Die Beschreibung ist noch dünn. Je genauer Zweck, Einsatzbereich und betroffene Personen benannt sind, desto belastbarer die Auskunft."
+}

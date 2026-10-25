@@ -1,0 +1,787 @@
+[
+ {
+  "index": 145,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 6,
+  "questions": 50,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 146,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 4,
+  "questions": 16,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 147,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 34,
+  "citations": [
+   "AI-Act/annex-III/pt-5-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 148,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 3,
+  "questions": 12,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 149,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 46,
+  "citations": [
+   "AI-Act/annex-III/pt-4-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 150,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 38,
+  "citations": [
+   "AI-Act/annex-III/pt-5-b"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 151,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 4,
+  "questions": 15,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 152,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 22,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 153,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 32,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 154,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 37,
+  "citations": [
+   "AI-Act/annex-III/pt-3-a",
+   "AI-Act/annex-III/pt-3-c"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 155,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 22,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 156,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 22,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 157,
+  "expected": "high_risk",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 6,
+  "questions": 50,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "(c) Fehler im Durchlauf: in Nr. 4 Buchstabe b schliesst die letzte Frage (koerperliche Messwerte wie Herzfrequenz) den Punkt bei Nein aus; ein Nein wirft damit jeden Fall der Arbeitnehmerueberwachung heraus.",
+   "en": "(c) Error in the walkthrough: in point 4(b) the last question (physical measurements such as heart rate) excludes the point on a no; a no thereby drops every case of worker monitoring."
+  }
+ },
+ {
+  "index": 158,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 6,
+  "questions": 42,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 159,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 4,
+  "questions": 16,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 160,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 35,
+  "citations": [
+   "AI-Act/annex-III/pt-5-c"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 161,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 22,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 162,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 20,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 163,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 32,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 164,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 34,
+  "citations": [
+   "AI-Act/annex-III/pt-5-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 165,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 32,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 166,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 38,
+  "citations": [
+   "AI-Act/annex-III/pt-5-b"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 167,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 32,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 168,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 35,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 169,
+  "expected": "not_high_risk",
+  "actual": "not_ai_system",
+  "matched": true,
+  "steps": 1,
+  "questions": 3,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 170,
+  "expected": "exemption_applies",
+  "actual": "high_risk_exemption",
+  "matched": true,
+  "steps": 7,
+  "questions": 29,
+  "citations": [
+   "AI-Act/annex-III/pt-3-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 171,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 32,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 172,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 31,
+  "citations": [
+   "AI-Act/annex-III/pt-3-b"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 173,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 20,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 174,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 38,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 175,
+  "expected": "high_risk",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 6,
+  "questions": 38,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "(d) Die Lage nennt nicht, dass der Betreiber foermlich als kritische Einrichtung benannt ist; der Verbund der Nr. 2 verlangt das zusaetzlich.",
+   "en": "(d) The scenario does not state that the operator is formally designated as a critical entity; the combined condition of point 2 additionally requires this."
+  }
+ },
+ {
+  "index": 176,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 8,
+  "questions": 58,
+  "citations": [
+   "AI-Act/annex-III/pt-4-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 177,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 34,
+  "citations": [
+   "AI-Act/annex-III/pt-5-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 178,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 46,
+  "citations": [
+   "AI-Act/annex-III/pt-4-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 179,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 33,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 180,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 31,
+  "citations": [
+   "AI-Act/annex-III/pt-3-d"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 181,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 4,
+  "questions": 16,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 182,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 25,
+  "citations": [
+   "AI-Act/annex-III/pt-1-b"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 183,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 46,
+  "citations": [
+   "AI-Act/annex-III/pt-4-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 184,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 60,
+  "citations": [
+   "AI-Act/annex-III/pt-5-d"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 185,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 4,
+  "questions": 16,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 186,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 37,
+  "citations": [
+   "AI-Act/annex-III/pt-3-a",
+   "AI-Act/annex-III/pt-3-c"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 187,
+  "expected": "high_risk",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 5,
+  "questions": 22,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "(d) Die Lage nennt weder die foermliche Benennung als kritische Einrichtung noch eine Schutzaufgabe des Uebersetzungswerkzeugs.",
+   "en": "(d) The scenario names neither the formal designation as a critical entity nor a safety function of the translation tool."
+  }
+ },
+ {
+  "index": 188,
+  "expected": "high_risk",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 6,
+  "questions": 38,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "(d) Die Lage nennt nicht, dass der Abwasserbetreiber foermlich als kritische Einrichtung benannt ist.",
+   "en": "(d) The scenario does not state that the wastewater operator is formally designated as a critical entity."
+  }
+ },
+ {
+  "index": 189,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 24,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 190,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 3,
+  "questions": 12,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 191,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 34,
+  "citations": [
+   "AI-Act/annex-III/pt-5-d"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 192,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_i",
+  "matched": true,
+  "steps": 5,
+  "questions": 35,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 193,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 22,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 194,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 4,
+  "questions": 16,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 195,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 3,
+  "questions": 12,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 196,
+  "expected": "high_risk",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 6,
+  "questions": 38,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "(d) Die Lage nennt nicht, dass der Betreiber der Bruecken und Kaimauern foermlich als kritische Einrichtung benannt ist.",
+   "en": "(d) The scenario does not state that the operator of the bridges and quay walls is formally designated as a critical entity."
+  }
+ },
+ {
+  "index": 197,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 31,
+  "citations": [
+   "AI-Act/annex-III/pt-3-b"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 198,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 20,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 199,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 3,
+  "questions": 12,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 200,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 34,
+  "citations": [
+   "AI-Act/annex-III/pt-5-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 201,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 22,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 202,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 52,
+  "citations": [
+   "AI-Act/annex-III/pt-1-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 203,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 4,
+  "questions": 14,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 204,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 4,
+  "questions": 16,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 205,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 4,
+  "questions": 16,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 206,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 46,
+  "citations": [
+   "AI-Act/annex-III/pt-4-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 207,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_i",
+  "matched": true,
+  "steps": 5,
+  "questions": 35,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 208,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 6,
+  "questions": 40,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 209,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 6,
+  "questions": 25,
+  "citations": [
+   "AI-Act/annex-III/pt-1-b"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 210,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 22,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 211,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 20,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 212,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "questions": 46,
+  "citations": [
+   "AI-Act/annex-III/pt-4-a"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 213,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 32,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 214,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 4,
+  "questions": 15,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 215,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 4,
+  "questions": 16,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 216,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 5,
+  "questions": 22,
+  "citations": [],
+  "mismatch_reason": ""
+ }
+]

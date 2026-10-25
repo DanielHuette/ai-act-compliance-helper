@@ -1,0 +1,3 @@
+{
+  "missing": "Korpus fehlt ({language_name}): {path}. Erst bauen: {command}"
+}

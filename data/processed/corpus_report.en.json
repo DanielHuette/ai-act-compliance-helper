@@ -1,0 +1,40 @@
+{
+ "sources": {
+  "ai_act_official_journal_en.xhtml": {
+   "units": 1386,
+   "article": 113,
+   "paragraphs": 929,
+   "annex": 13,
+   "annex_points": 151,
+   "recital": 180
+  },
+  "gdpr_official_journal_en.xhtml": {
+   "units": 1024,
+   "article": 99,
+   "paragraphs": 752,
+   "annex": 0,
+   "annex_points": 0,
+   "recital": 173
+  },
+  "bdsg.html": {
+   "units": 357,
+   "source": "https://www.gesetze-im-internet.de/englisch_bdsg/englisch_bdsg.html (translation by the Language Service of the Federal Ministry of the Interior; includes the amendments to the Act by Article 10 of the Act of 23 June 2021 (Federal Law Gazette I, p. 1858; 2022 I p. 1045))"
+  },
+  "cases": {
+   "examples": 44
+  }
+ },
+ "warnings": [],
+ "units_by_kind": {
+  "AI-Act/annex": 164,
+  "AI-Act/article": 1042,
+  "AI-Act/recital": 180,
+  "BDSG/section": 357,
+  "GDPR/article": 851,
+  "GDPR/recital": 173,
+  "Guidelines/example": 44
+ },
+ "units": 2811,
+ "characters": 1877159,
+ "built_on": "2026-10-09"
+}

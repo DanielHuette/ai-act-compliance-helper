@@ -1,0 +1,637 @@
+# Company questions: the yardstick for classification accuracy.
+#
+# WHY THIS FILE EXISTS
+# The 44 use cases in data/cases are the yardstick for obligations.
+# They are not enough for accuracy on their own: the keyword lists were
+# developed on them, and 44 of 44 there only means nothing has regressed.
+#
+# This file holds 100 descriptions as companies actually submit them:
+# brief, in their own words, often as a question, with product names and without
+# legal terms. Half from the perspective of a software company selling an AI product,
+# half from the perspective of a deployer. 28 of them are "minimal": a
+# checker that declares everything high-risk would be as worthless as one that
+# recognises nothing. Each question is given in German and English ({de, en}); both share the expected result.
+#
+# The expected classification is determined from the text of the Regulation, not from what
+# the checker currently returns. The field "expected_provision" names the provision on which
+# the expected result rests; whoever wants to change it must read up there.
+#
+# MEASURED STATE (German questions)
+#   keyword lists only                   55 %
+#   with purpose catalog, first version 86 %
+#   after working through the 14 misses 98 %
+#   after the role split in Article 50 and the second route to paragraph 4
+#                                       100 %  (2026-10-04)
+#
+# MEASURED STATE (English questions, tests/test_accuracy_en.py)
+#   bilingual purpose catalog, first version            93 %
+#   after rewording four English purpose sentences      97 %  (2026-10-09)
+# The three remaining misses lie outside the purpose catalog: English compute
+# wording ("floating-point operations"), deep fake keywords, and the German
+# stem "note" (grade) matching the English word "notes".
+#
+# The gate in tests/test_purposes.py is 95, not 100: a
+# gate that breaks at the first new purpose sentence gets raised instead of
+# fixed. If the rate drops below 95, something has regressed.
+as_of: "2026-10-04"
+questions:
+  - question:
+      de: "Wir sind ein Softwarehaus und verkaufen eine Recruiting-Software. Die KI liest Lebensläufe und schlägt dem Personaler die drei besten Kandidaten vor. Was müssen wir beachten?"
+      en: "We're a software company selling recruiting software. The AI reads CVs and suggests the three best candidates to the recruiter. What do we need to consider?"
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 4a"
+  - question:
+      de: "Unser Produkt schaltet Stellenanzeigen automatisch dort, wo die KI die passendsten Kandidaten vermutet. Fallen wir unter den AI Act?"
+      en: "Our product automatically places job ads wherever the AI thinks the best-matching candidates are. Do we fall under the AI Act?"
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 4a"
+  - question:
+      de: "Wir verkaufen ein Tool, das Videointerviews von Bewerbern auswertet und eine Eignungsnote ausgibt."
+      en: "We sell a tool that analyses video interviews with applicants and outputs a suitability score."
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 4a"
+  - question:
+      de: "Unsere Software erstellt für Vorgesetzte monatliche Leistungsberichte über jeden Mitarbeiter aus Ticketzahlen und Bearbeitungszeiten."
+      en: "Our software produces monthly performance reports on every employee for their managers, based on ticket counts and handling times."
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 4b"
+  - question:
+      de: "Wir bieten eine Lösung an, die bei Stellenabbau vorschlägt, von welchen Mitarbeitern sich das Unternehmen trennen sollte."
+      en: "We offer a solution that, when jobs are being cut, suggests which employees the company should let go."
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 4b"
+  - question:
+      de: "Unser Werkzeug verteilt Aufträge an Außendienstmitarbeiter danach, wer in der Vergangenheit schneller abgeschlossen hat."
+      en: "Our tool allocates jobs to field staff based on who has completed them faster in the past."
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 4b"
+  - question:
+      de: "Wir verkaufen eine Software, die Probezeitgespräche vorbereitet und eine Empfehlung zur Übernahme ausspricht."
+      en: "We sell software that prepares end-of-probation reviews and makes a recommendation on whether to keep the employee on."
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 4b"
+  - question:
+      de: "Unsere Plattform prüft bei Freiberuflern, ob sie für einen Auftrag zugelassen werden, und sperrt sie bei schlechter Bewertung."
+      en: "Our platform checks whether freelancers are approved for an assignment and blocks them if they get poor ratings."
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 4b"
+  - question:
+      de: "Wir setzen in der Personalabteilung ein KI-Tool ein, das Bewerbungen vorsortiert. Was müssen wir tun?"
+      en: "Our HR department uses an AI tool that pre-sorts job applications. What do we have to do?"
+    role: deployer
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 4a"
+  - question:
+      de: "Wir messen mit einer KI die Gesprächsqualität im Callcenter: Wortwahl, Redeanteil, Tonfall. Die Ergebnisse gehen in die Leistungsbeurteilung der Agenten. Ist das zulässig?"
+      en: "We use AI to measure call quality in our call centre: word choice, share of talking time, tone of voice. The results feed into the agents' performance reviews. Is that allowed?"
+    role: deployer
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 4b"
+  - question:
+      de: "Wir lassen eine KI die Schichtpläne schreiben. Sie berücksichtigt Qualifikation, Arbeitszeitkonten und wer wie oft kurzfristig krank war, und verteilt danach die gut bezahlten Nachtschichten."
+      en: "We have an AI write our shift schedules. It takes into account qualifications, working-time accounts and how often someone has called in sick at short notice, and allocates the well-paid night shifts accordingly."
+    role: deployer
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 4b"
+  - question:
+      de: "In unserer Logistik wertet eine KI die Scannerdaten der Lagerarbeiter aus und zeigt der Leitung, wer unter der Sollmenge liegt."
+      en: "In our logistics operation, an AI analyses the warehouse workers' scanner data and shows management who is below target."
+    role: deployer
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 4b"
+  - question:
+      de: "Unsere Personalabteilung nutzt ein System, das aus internen Daten vorhersagt, welche Mitarbeiter bald kündigen, damit wir gegensteuern können."
+      en: "Our HR department uses a system that predicts from internal data which employees are about to resign, so that we can take countermeasures."
+    role: deployer
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 4b"
+  - question:
+      de: "Wir lassen eine KI die Bewerbungsgespräche protokollieren und daraus eine Rangliste der Kandidaten erstellen."
+      en: "We have an AI take notes during job interviews and produce a ranking of the candidates from them."
+    role: deployer
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 4a"
+  - question:
+      de: "Bei uns entscheidet ein KI-System mit, wer die jährliche Bonuszahlung bekommt."
+      en: "At our company, an AI system has a say in who gets the annual bonus."
+    role: deployer
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 4b"
+  - question:
+      de: "Unser Produkt ist ein Scoring für Ratenkredite. Banken kaufen es und binden es in ihre Kreditstrecke ein. Fallen wir unter den AI Act?"
+      en: "Our product is a scoring system for consumer instalment loans. Banks buy it and integrate it into their lending process. Do we fall under the AI Act?"
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 5b"
+  - question:
+      de: "Wir verkaufen eine Software, die bei Mietinteressenten die Zahlungsfähigkeit einschätzt."
+      en: "We sell software that assesses prospective tenants' ability to pay."
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 5b"
+  - question:
+      de: "Unsere Versicherung nutzt KI, um bei Lebensversicherungen das Risiko einzuschätzen und den Beitrag festzulegen. Was gilt da?"
+      en: "Our insurance company uses AI to assess risk and set premiums for life insurance. What applies here?"
+    role: deployer
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 5c"
+  - question:
+      de: "Wir berechnen mit einer KI die Beiträge für unsere private Krankenversicherung aus den Angaben im Gesundheitsfragebogen."
+      en: "We use AI to calculate premiums for our private health insurance from the answers in the health questionnaire."
+    role: deployer
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 5c"
+  - question:
+      de: "Unsere Bank lässt eine KI entscheiden, welche Kreditanträge von Privatkunden ohne Prüfung durch einen Sachbearbeiter abgelehnt werden."
+      en: "Our bank lets an AI decide which loan applications from private customers are rejected without being reviewed by a loan officer."
+    role: deployer
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 5b"
+  - question:
+      de: "Wir verkaufen ein System an Jobcenter, das einschätzt, wer Anspruch auf eine Förderung hat."
+      en: "We sell a system to public job centres that assesses who is eligible for support."
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 5a"
+  - question:
+      de: "Unsere Stadtverwaltung prüft mit KI, ob Anträge auf Wohngeld bewilligt werden können."
+      en: "Our city administration uses AI to check whether housing benefit applications can be approved."
+    role: deployer
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 5a"
+  - question:
+      de: "Wir liefern der Rettungsleitstelle eine Software, die eingehende Notrufe nach Dringlichkeit sortiert."
+      en: "We supply the emergency dispatch centre with software that sorts incoming emergency calls by urgency."
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 5d"
+  - question:
+      de: "In unserer Notaufnahme teilt eine KI die Patienten nach Behandlungsdringlichkeit ein."
+      en: "In our emergency department, an AI triages patients by how urgently they need treatment."
+    role: deployer
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 5d"
+  - question:
+      de: "Wir bieten eine Lernplattform für Schulen an. Die KI bewertet Aufsätze und gibt eine Note. Brauchen wir eine CE-Kennzeichnung?"
+      en: "We offer a learning platform for schools. The AI marks essays and gives a grade. Do we need a CE marking?"
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 3b"
+  - question:
+      de: "Unsere Software korrigiert Multiple-Choice-Klausuren an Hochschulen und setzt die Note."
+      en: "Our software marks multiple-choice exams at universities and sets the grade."
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 3b"
+  - question:
+      de: "Wir verkaufen ein System, das bei der Studienplatzvergabe die Bewerber in eine Rangfolge bringt."
+      en: "We sell a system that ranks applicants when university places are being allocated."
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 3a"
+  - question:
+      de: "Unsere Prüfungsaufsicht per Webcam erkennt, ob Prüflinge während der Klausur abschauen."
+      en: "Our webcam-based exam proctoring detects whether candidates are copying during the exam."
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 3d"
+  - question:
+      de: "Unsere Volkshochschule stuft Teilnehmer mit einer KI in Sprachniveaus ein und weist sie danach den Kursen zu."
+      en: "Our adult education centre uses AI to place participants at language levels and then assigns them to courses."
+    role: deployer
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 3a"
+  - question:
+      de: "Wir setzen eine KI ein, die bei Auszubildenden den Lernstand misst und danach die Lerninhalte vorgibt."
+      en: "We use an AI that measures apprentices' level of knowledge and sets their learning content accordingly."
+    role: deployer
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 3b"
+  - question:
+      de: "Wir verkaufen eine Software, die Überwachungskameras auswertet und Gesichter mit einer Besucherliste abgleicht. Was gilt für uns?"
+      en: "We sell software that analyses surveillance camera footage and matches faces against a visitor list. What applies to us?"
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 1a"
+  - question:
+      de: "Unser Zutrittssystem für Rechenzentren erkennt Mitarbeiter am Gesicht, ohne dass sie eine Karte vorzeigen müssen."
+      en: "Our access control system for data centres recognises employees by their face, without them having to show a card."
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 1a"
+  - question:
+      de: "Wir bieten eine Stimmanalyse, die aus einem Anruf das Alter und das Geschlecht des Anrufers schätzt."
+      en: "We offer voice analysis that estimates a caller's age and gender from a phone call."
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 1b"
+  - question:
+      de: "Unser Museum zählt Besucher und schätzt per Kamera deren Altersgruppe, um das Programm anzupassen."
+      en: "Our museum counts visitors and uses a camera to estimate their age group in order to tailor the programme."
+    role: deployer
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 1b"
+  - question:
+      de: "Unser Stadtwerk steuert das Fernwärmenetz mit einer KI. Was gilt?"
+      en: "Our municipal utility controls its district heating network with AI. What applies?"
+    role: deployer
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 2"
+  - question:
+      de: "Wir verkaufen eine Software, die in Netzleitstellen die Lastverteilung im Stromnetz regelt."
+      en: "We sell software that manages load distribution in the power grid from grid control centres."
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 2"
+  - question:
+      de: "Unsere Software schaltet die Ampeln einer Großstadt nach Verkehrsaufkommen."
+      en: "Our software switches the traffic lights of a large city according to traffic volume."
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 2"
+  - question:
+      de: "Unser Wasserwerk überwacht mit KI die Druckverhältnisse im Leitungsnetz und schließt bei Rohrbruch automatisch Schieber."
+      en: "Our waterworks uses AI to monitor pressure in the pipe network and automatically closes valves when a pipe bursts."
+    role: deployer
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 2"
+  - question:
+      de: "Wir liefern der Polizei eine Software, die aus Anzeigen die Glaubwürdigkeit von Zeugenaussagen bewertet."
+      en: "We supply the police with software that assesses the credibility of witness statements from criminal complaints."
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 6c"
+  - question:
+      de: "Unser Produkt berechnet für Strafverfolgungsbehörden, wie hoch das Rückfallrisiko eines Beschuldigten ist."
+      en: "Our product calculates for law enforcement authorities how high a suspect's risk of reoffending is."
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 6d"
+  - question:
+      de: "Wir verkaufen der Grenzbehörde ein System, das bei Einreisenden ein Sicherheitsrisiko einschätzt."
+      en: "We sell the border agency a system that estimates the security risk of travellers entering the country."
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 7b"
+  - question:
+      de: "Unsere Software unterstützt das Bundesamt bei der Prüfung von Asylanträgen."
+      en: "Our software supports the federal migration office in examining asylum applications."
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 7c"
+  - question:
+      de: "Wir bieten Gerichten ein Werkzeug, das aus der Aktenlage einen Urteilsvorschlag erstellt."
+      en: "We offer courts a tool that drafts a proposed judgment based on the case files."
+    role: provider
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 8a"
+  - question:
+      de: "Unsere Kanzlei nutzt KI, die in Schlichtungsverfahren einen Einigungsvorschlag berechnet."
+      en: "Our law firm uses AI that calculates a proposed settlement in conciliation proceedings."
+    role: deployer
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 8a"
+  - question:
+      de: "Wir bauen ein KI-Modul für Werkzeugmaschinen, das den Not-Halt auslöst, wenn jemand in den Arbeitsraum greift. Die Maschine braucht eine CE-Konformitätsbewertung. Was kommt auf uns zu?"
+      en: "We build an AI module for machine tools that triggers the emergency stop when someone reaches into the working area. The machine requires a CE conformity assessment. What does this mean for us?"
+    role: provider
+    classification: high_risk_annex_i
+    expected_provision: "Anh I A1"
+  - question:
+      de: "Unsere KI sitzt in der Steuerung eines Industrieroboters und hält den Sicherheitsabstand zum Bedienpersonal ein."
+      en: "Our AI sits in the controller of an industrial robot and maintains the safety distance from operators."
+    role: provider
+    classification: high_risk_annex_i
+    expected_provision: "Anh I A1"
+  - question:
+      de: "Wir entwickeln eine KI, die Röntgenbilder befundet. Das Gerät ist ein Medizinprodukt der Klasse IIb."
+      en: "We develop an AI that reads X-ray images and reports the findings. The device is a class IIb medical device."
+    role: provider
+    classification: high_risk_annex_i
+    expected_provision: "Anh I A11"
+  - question:
+      de: "Unsere Software ist selbst ein Medizinprodukt und überwacht auf der Intensivstation die Vitalwerte."
+      en: "Our software is itself a medical device and monitors vital signs in the intensive care unit."
+    role: provider
+    classification: high_risk_annex_i
+    expected_provision: "Anh I A11"
+  - question:
+      de: "Wir liefern die KI für den Notbremsassistenten eines Lastwagens."
+      en: "We supply the AI for a truck's emergency braking assistant."
+    role: provider
+    classification: high_risk_annex_i
+    expected_provision: "Anh I B18"
+  - question:
+      de: "Unsere KI steuert eine Drohne und hält sie von Hindernissen frei."
+      en: "Our AI flies a drone and keeps it clear of obstacles."
+    role: provider
+    classification: high_risk_annex_i
+    expected_provision: "Anh I B20"
+  - question:
+      de: "Wir bauen eine KI in die Steuerung eines Aufzugs ein, die die Kabine bei Seilproblemen festsetzt."
+      en: "We build an AI into a lift's control system that locks the car in place if there are problems with the ropes."
+    role: provider
+    classification: high_risk_annex_i
+    expected_provision: "Anh I A4"
+  - question:
+      de: "Unsere KI wertet Laborproben aus und gibt den Befund als In-vitro-Diagnostikum aus."
+      en: "Our AI analyses lab samples and outputs the result as an in vitro diagnostic."
+    role: provider
+    classification: high_risk_annex_i
+    expected_provision: "Anh I A12"
+  - question:
+      de: "Unsere App misst über die Handykamera die Stimmung von Mitarbeitern im Großraumbüro, damit HR die Zufriedenheit tracken kann. Dürfen wir das verkaufen?"
+      en: "Our app uses the phone camera to measure the mood of employees in an open-plan office so that HR can track satisfaction. Are we allowed to sell this?"
+    role: provider
+    classification: prohibited
+    expected_provision: "Art 5 1f"
+  - question:
+      de: "Wir werten in der Schule die Mimik der Schüler aus, um den Lehrern zu zeigen, wer gelangweilt ist."
+      en: "At school, we analyse pupils' facial expressions to show teachers who is bored."
+    role: deployer
+    classification: prohibited
+    expected_provision: "Art 5 1f"
+  - question:
+      de: "Unser Produkt leitet aus Gesichtsfotos die politische Einstellung einer Person ab."
+      en: "Our product works out a person's political leanings from facial photos."
+    role: provider
+    classification: prohibited
+    expected_provision: "Art 5 1g"
+  - question:
+      de: "Wir bieten eine Software, die aus einem Porträtfoto auf die sexuelle Orientierung schließt."
+      en: "We offer software that determines a person's sexual orientation from a portrait photo."
+    role: provider
+    classification: prohibited
+    expected_provision: "Art 5 1g"
+  - question:
+      de: "Unsere Plattform vergibt jedem Kunden eine allgemeine Vertrauenspunktzahl aus Zahlungsmoral, Umgangston im Chat und Verhalten in sozialen Netzen, und sperrt danach Dienste."
+      en: "Our platform gives every customer an overall trust score based on payment history, tone in chat and behaviour on social networks, and blocks services accordingly."
+    role: provider
+    classification: prohibited
+    expected_provision: "Art 5 1c"
+  - question:
+      de: "Wir sammeln Gesichtsbilder automatisch aus öffentlichen Profilen im Internet und bauen daraus eine Suchdatenbank auf."
+      en: "We automatically collect facial images from public profiles on the internet and build a searchable database from them."
+    role: provider
+    classification: prohibited
+    expected_provision: "Art 5 1e"
+  - question:
+      de: "Unsere Werbung nutzt flackernde Reize unterhalb der Wahrnehmungsschwelle, damit Nutzer länger im Spiel bleiben und mehr kaufen."
+      en: "Our ads use flickering stimuli below the threshold of conscious perception to keep users playing longer and spending more."
+    role: provider
+    classification: prohibited
+    expected_provision: "Art 5 1a"
+  - question:
+      de: "Wir bieten der Polizei ein System, das Personen auf Bahnhöfen in Echtzeit per Gesichtserkennung mit einer Fahndungsliste abgleicht."
+      en: "We offer the police a system that matches people at railway stations against a wanted list in real time using facial recognition."
+    role: provider
+    classification: prohibited
+    expected_provision: "Art 5 1h"
+  - question:
+      de: "Wir trainieren ein eigenes Sprachmodell und verkaufen den Zugang über eine API an andere Softwarefirmen. Welche Pflichten haben wir?"
+      en: "We train our own language model and sell access to it via an API to other software companies. What obligations do we have?"
+    role: provider
+    classification: gpai
+    expected_provision: "Art 3 Nr 63"
+  - question:
+      de: "Unser Unternehmen veröffentlicht ein Bildmodell als offene Gewichte, das andere in ihre Produkte einbauen."
+      en: "Our company releases an image model as open weights that others build into their products."
+    role: provider
+    classification: gpai
+    expected_provision: "Art 3 Nr 63"
+  - question:
+      de: "Wir haben ein vielseitiges Basismodell trainiert und stellen es nachgelagerten Anbietern bereit."
+      en: "We have trained a versatile foundation model and make it available to downstream providers."
+    role: provider
+    classification: gpai
+    expected_provision: "Art 3 Nr 63"
+  - question:
+      de: "Wir trainieren ein Sprachmodell mit einem Rechenaufwand von 3 x 10^25 Gleitkommaoperationen und bringen es in Verkehr."
+      en: "We train a language model with a compute budget of 3 x 10^25 floating-point operations and are placing it on the market."
+    role: provider
+    classification: gpai_systemic_risk
+    expected_provision: "Art 51"
+  - question:
+      de: "Wir nutzen das Sprachmodell unseres Lieferanten über eine Programmierschnittstelle in unserer eigenen App."
+      en: "We use our supplier's language model through an API in our own app."
+    role: deployer
+    classification: minimal
+    expected_provision: "nur Betreiber"
+  - question:
+      de: "Wir trainieren ein Modell ausschließlich für die eigene Forschung und bringen es nicht in Verkehr."
+      en: "We're training a model purely for our own research and won't be placing it on the market."
+    role: provider
+    classification: minimal
+    expected_provision: "Art 3 Nr 63 Ausnahme"
+  - question:
+      de: "Wir verkaufen einen Chatbot für Online-Shops. Er beantwortet Fragen zu Produkten und Lieferzeiten. Was müssen wir tun?"
+      en: "We sell a chatbot for online shops. It answers questions about products and delivery times. What do we need to do?"
+    role: provider
+    classification: transparency
+    expected_provision: "Art 50 1"
+  - question:
+      de: "Unser Produkt ist ein Sprachassistent, der Anrufe im Kundenservice selbstständig annimmt und beantwortet."
+      en: "Our product is a voice assistant that independently takes and answers customer service calls."
+    role: provider
+    classification: transparency
+    expected_provision: "Art 50 1"
+  - question:
+      de: "Unser Tool erstellt Produktfotos komplett per KI, damit Händler nicht mehr fotografieren müssen. Gibt es da Auflagen?"
+      en: "Our tool creates product photos entirely with AI, so retailers no longer need to take photos. Are there any requirements?"
+    role: provider
+    classification: transparency
+    expected_provision: "Art 50 2"
+  - question:
+      de: "Wir bieten eine Software, die aus einem Stichwort ganze Blogartikel schreibt."
+      en: "We offer software that writes entire blog articles from a single keyword."
+    role: provider
+    classification: transparency
+    expected_provision: "Art 50 2"
+  - question:
+      de: "Unser Dienst erzeugt Werbespots mit künstlichen Sprecherstimmen."
+      en: "Our service produces commercials with artificial narrator voices."
+    role: provider
+    classification: transparency
+    expected_provision: "Art 50 2"
+  - question:
+      de: "Wir setzen in unserer Marketingabteilung ein Werkzeug ein, das Gesichter bekannter Sportler in unsere Werbevideos einsetzt."
+      en: "In our marketing department we use a tool that inserts the faces of famous athletes into our promotional videos."
+    role: deployer
+    classification: transparency
+    expected_provision: "Art 50 4"
+  - question:
+      de: "Unsere Redaktion lässt Nachrichtentexte zu politischen Themen von einer KI schreiben und veröffentlicht sie ohne Gegenlesen."
+      en: "Our newsroom has an AI write news articles on political topics and publishes them without anyone reviewing them."
+    role: deployer
+    classification: transparency
+    expected_provision: "Art 50 4"
+  - question:
+      de: "Wir betreiben an der Kasse ein System, das aus dem Gesicht die Altersgruppe des Kunden schätzt, um Werbung einzublenden."
+      en: "At the checkout we run a system that estimates the customer's age group from their face in order to display advertising."
+    role: deployer
+    classification: high_risk_annex_iii
+    expected_provision: "Anh III 1b, dazu Art 50 3 - Altersschaetzung aus dem Gesicht ist biometrische Kategorisierung, nicht nur eine Informationspflicht"
+  - question:
+      de: "Wir haben ein Tool gebaut, das aus Rechnungen die Beträge ausliest und in SAP überträgt. Betrifft uns der AI Act?"
+      en: "We built a tool that extracts the amounts from invoices and transfers them to SAP. Does the AI Act affect us?"
+    role: provider
+    classification: minimal
+    expected_provision: "Buchhaltung"
+  - question:
+      de: "Wir nutzen ChatGPT, um Marketingtexte zu schreiben. Eine Kollegin liest alles gegen, bevor es online geht. Müssen wir etwas melden?"
+      en: "We use ChatGPT to write marketing copy. A colleague proofreads everything before it goes online. Do we need to report anything?"
+    role: deployer
+    classification: minimal
+    expected_provision: "Betreiber, kein Deepfake"
+  - question:
+      de: "In unserem Werk prüft eine KI-Kamera, ob die Schweißnähte in Ordnung sind. Fällt das unter den AI Act?"
+      en: "In our plant, an AI camera checks whether the weld seams are OK. Does that fall under the AI Act?"
+    role: deployer
+    classification: minimal
+    expected_provision: "Qualitätsprüfung"
+  - question:
+      de: "Wir haben Microsoft Copilot im Unternehmen ausgerollt. Was müssen wir beachten?"
+      en: "We have rolled out Microsoft Copilot across the company. What do we need to consider?"
+    role: deployer
+    classification: minimal
+    expected_provision: "Bürowerkzeug"
+  - question:
+      de: "Unser Außendienst bekommt von einer KI die Tourenplanung vorgegeben. Zählt das als Hochrisiko?"
+      en: "Our field staff get their route planning from an AI. Does that count as high-risk?"
+    role: deployer
+    classification: minimal
+    expected_provision: "Routenoptimierung"
+  - question:
+      de: "Wir setzen eine KI ein, die eingehende Mails nach Abteilung sortiert. Sie bewertet nichts und entscheidet nichts. Brauchen wir eine Risikobewertung?"
+      en: "We use an AI that sorts incoming emails by department. It doesn't evaluate anything or decide anything. Do we need a risk assessment?"
+    role: deployer
+    classification: minimal
+    expected_provision: "Verfahrensaufgabe"
+  - question:
+      de: "Unsere KI sagt den Absatz unserer Produkte für das nächste Quartal voraus, damit der Einkauf planen kann."
+      en: "Our AI forecasts sales of our products for the next quarter so purchasing can plan."
+    role: deployer
+    classification: minimal
+    expected_provision: "Absatzprognose"
+  - question:
+      de: "Wir lassen eine KI unsere Lagerbestände optimieren und Nachbestellungen auslösen."
+      en: "We have an AI optimise our inventory and trigger reorders."
+    role: deployer
+    classification: minimal
+    expected_provision: "Lagerwirtschaft"
+  - question:
+      de: "Unser Werkzeug übersetzt technische Handbücher aus dem Deutschen ins Englische."
+      en: "Our tool translates technical manuals from German into English."
+    role: provider
+    classification: minimal
+    expected_provision: "Übersetzung"
+  - question:
+      de: "Wir nutzen eine KI, die Besprechungsprotokolle aus Tonaufnahmen erstellt, die wir selbst gegenlesen."
+      en: "We use an AI that creates meeting minutes from audio recordings, which we proofread ourselves."
+    role: deployer
+    classification: minimal
+    expected_provision: "Protokoll"
+  - question:
+      de: "Unsere Software erkennt in Satellitenbildern Waldflächen und berechnet deren Größe."
+      en: "Our software detects forest areas in satellite images and calculates their size."
+    role: provider
+    classification: minimal
+    expected_provision: "Fernerkundung"
+  - question:
+      de: "Wir setzen KI ein, die in der Produktion den Zeitpunkt der nächsten Wartung einer Pumpe vorhersagt."
+      en: "We use AI in production that predicts when a pump will next need maintenance."
+    role: deployer
+    classification: minimal
+    expected_provision: "Wartungsprognose"
+  - question:
+      de: "Unsere KI sortiert Pakete im Verteilzentrum nach Zieladresse."
+      en: "Our AI sorts parcels in the distribution centre by destination address."
+    role: deployer
+    classification: minimal
+    expected_provision: "Sortierung"
+  - question:
+      de: "Wir bieten eine Software, die Rechtschreibung und Grammatik in Geschäftsbriefen korrigiert."
+      en: "We offer software that corrects spelling and grammar in business letters."
+    role: provider
+    classification: minimal
+    expected_provision: "Korrektur"
+  - question:
+      de: "Unsere Suchfunktion im Intranet findet Dokumente nach Bedeutung statt nach Stichwort."
+      en: "Our intranet search finds documents by meaning rather than by keyword."
+    role: deployer
+    classification: minimal
+    expected_provision: "Suche"
+  - question:
+      de: "Wir nutzen eine KI, die aus Sensordaten den Energieverbrauch unserer Bürogebäude senkt."
+      en: "We use an AI that reduces the energy consumption of our office buildings based on sensor data."
+    role: deployer
+    classification: minimal
+    expected_provision: "Gebäudetechnik"
+  - question:
+      de: "Unser System erkennt in eingehenden Mails Spam und verschiebt ihn in einen Ordner."
+      en: "Our system detects spam in incoming emails and moves it to a folder."
+    role: deployer
+    classification: minimal
+    expected_provision: "Spamfilter"
+  - question:
+      de: "Wir lassen eine KI Produktbeschreibungen für unseren Webshop aus Datenblättern erzeugen, die unsere Redaktion freigibt."
+      en: "We have an AI generate product descriptions for our online shop from data sheets, which our editorial team approves."
+    role: deployer
+    classification: minimal
+    expected_provision: "Betreiber"
+  - question:
+      de: "Unsere KI liest Lieferscheine ein und vergleicht sie mit der Bestellung."
+      en: "Our AI reads in delivery notes and compares them with the purchase order."
+    role: deployer
+    classification: minimal
+    expected_provision: "Belegprüfung"
+  - question:
+      de: "Wir setzen eine KI ein, die Kundenbewertungen zu Themen gruppiert, damit das Produktmanagement sie überblickt."
+      en: "We use an AI that groups customer reviews by topic so that product management can get an overview."
+    role: deployer
+    classification: minimal
+    expected_provision: "Textgruppierung"
+  - question:
+      de: "Unsere Software plant die Reihenfolge der Fertigungsaufträge an den Maschinen."
+      en: "Our software schedules the order in which production jobs run on the machines."
+    role: deployer
+    classification: minimal
+    expected_provision: "Fertigungsplanung"
+  - question:
+      de: "Wir nutzen KI, die in unseren Verträgen nach Kündigungsfristen sucht und sie auflistet."
+      en: "We use AI that searches our contracts for notice periods and lists them."
+    role: deployer
+    classification: minimal
+    expected_provision: "Vertragssuche"
+  - question:
+      de: "Unsere KI erkennt in Aufnahmen unserer Obstsortieranlage faule Früchte und bläst sie aus."
+      en: "Our AI detects rotten fruit in images from our fruit sorting line and blows it out."
+    role: deployer
+    classification: minimal
+    expected_provision: "Sortierung"
+  - question:
+      de: "Wir lassen eine KI die Preise unserer Hotelzimmer nach Nachfrage anpassen."
+      en: "We have an AI adjust our hotel room prices according to demand."
+    role: deployer
+    classification: minimal
+    expected_provision: "Preisgestaltung"
+  - question:
+      de: "Unser Werkzeug fasst lange Forschungsberichte für unsere Entwickler zusammen."
+      en: "Our tool summarises long research reports for our developers."
+    role: deployer
+    classification: minimal
+    expected_provision: "Zusammenfassung"
+  - question:
+      de: "Wir setzen eine KI ein, die aus Maschinendaten den Ausschuss in der Fertigung vorhersagt."
+      en: "We use an AI that predicts production scrap from machine data."
+    role: deployer
+    classification: minimal
+    expected_provision: "Prozessprognose"

@@ -1,0 +1,54 @@
+{
+ "v": 4,
+ "createdOnFiles": { "v": 1, "at": "2026-10-03T22:00:00Z" },
+ "lists": "css",
+ "title": {
+  "de": "EU AI Act und DSGVO Konformitätshelfer",
+  "en": "EU AI Act and GDPR Compliance Helper"
+ },
+ "order": ["cover", "the-question", "ask-dont-guess", "three-answers", "walkthrough",
+           "walkthrough-decision", "example", "question-sources", "principle", "legal-corpus",
+           "classification", "classification-edge-cases", "obligations", "search", "security",
+           "where-it-runs", "operations-guide", "measured", "limitations"],
+ "sections": {
+  "s1": {
+   "description": {
+    "de": "Wozu der Helfer da ist, warum er fragt statt zu raten und wie ein Durchlauf aussieht.",
+    "en": "What the helper is for, why it asks instead of guessing and what a walkthrough looks like."
+   },
+   "start": "cover"
+  },
+  "s2": {
+   "description": {
+    "de": "Wie er arbeitet: Regelwerk, Rechtsbestand, Befunde, Pflichten, Nachlesen, Sicherheit.",
+    "en": "How it works: rule set, legal corpus, findings, obligations, search, security."
+   },
+   "start": "principle"
+  },
+  "s3": {
+   "description": {
+    "de": "Wo er läuft und wie man ihn in Gang setzt.",
+    "en": "Where it runs and how to get it going."
+   },
+   "start": "where-it-runs"
+  },
+  "s4": {
+   "description": {
+    "de": "Was nachgemessen ist und wo die Grenzen liegen.",
+    "en": "What is measured and where the limits are."
+   },
+   "start": "measured"
+  }
+ },
+ "faces": {
+  "source-serif-4": {
+   "family": "Source Serif 4",
+   "href": "https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@300..700&display=swap"
+  },
+  "ibm-plex-sans": {
+   "family": "IBM Plex Sans",
+   "href": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+  }
+ },
+ "designSystems": []
+}

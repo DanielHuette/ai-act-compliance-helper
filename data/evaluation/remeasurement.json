@@ -1,0 +1,256 @@
+[
+ {
+  "index": 2,
+  "expected": "exemption_applies",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 3,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "Die Lage nennt keinen Bereich des Anhangs III; ohne getragenen Punkt wird der Filter des Artikels 6 Absatz 3 nie gefragt, also kann 'high_risk_exemption' nicht entstehen.",
+   "en": "The scenario names no Annex III area; without an established point the Article 6(3) filter is never asked, so 'high_risk_exemption' cannot arise."
+  }
+ },
+ {
+  "index": 6,
+  "expected": "exemption_applies",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 3,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "Die Lage nennt keinen Bereich des Anhangs III; ohne getragenen Punkt wird der Filter des Artikels 6 Absatz 3 nie gefragt.",
+   "en": "The scenario names no Annex III area; without an established point the Article 6(3) filter is never asked."
+  }
+ },
+ {
+  "index": 11,
+  "expected": "high_risk",
+  "actual": "high_risk_conditional",
+  "matched": true,
+  "steps": 7,
+  "citations": [
+   "AI-Act/annex-III/pt-2"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 13,
+  "expected": "exemption_applies",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 3,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "Alter, Geschlecht und Koerpergroesse sind keine Koerpermerkmale nach Nummer 1; kein Bereich traegt, darum wird der Filter nie gefragt.",
+   "en": "Age, sex and height are not biometric features under point 1; no area is established, so the filter is never asked."
+  }
+ },
+ {
+  "index": 30,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_i",
+  "matched": true,
+  "steps": 5,
+  "citations": [],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 35,
+  "expected": "high_risk",
+  "actual": "high_risk_conditional",
+  "matched": true,
+  "steps": 7,
+  "citations": [
+   "AI-Act/annex-III/pt-2"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 47,
+  "expected": "exemption_applies",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 4,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "Der Bereich Nummer 5 Buchstabe a oeffnet nur, wenn das System selbst den Anspruch prueft; ein rein rueckblickendes Pruefwerkzeug traegt den Punkt nicht, also wird der Filter nie gefragt.",
+   "en": "The area of point 5(a) only opens if the system itself assesses the entitlement; a purely retrospective auditing tool does not establish the point, so the filter is never asked."
+  }
+ },
+ {
+  "index": 48,
+  "expected": "exemption_applies",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 3,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "Die Lage nennt keinen Bereich des Anhangs III; ohne getragenen Punkt wird der Filter des Artikels 6 Absatz 3 nie gefragt.",
+   "en": "The scenario names no Annex III area; without an established point the Article 6(3) filter is never asked."
+  }
+ },
+ {
+  "index": 55,
+  "expected": "high_risk",
+  "actual": "high_risk_conditional",
+  "matched": true,
+  "steps": 7,
+  "citations": [
+   "AI-Act/annex-III/pt-2"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 72,
+  "expected": "exemption_applies",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 4,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "Warenrisiko an der Grenze bewertet keine Menschen; der Bereich Nummer 7 oeffnet nicht, darum wird der Filter nie gefragt.",
+   "en": "Goods risk at the border does not assess people; the area of point 7 does not open, so the filter is never asked."
+  }
+ },
+ {
+  "index": 82,
+  "expected": "high_risk",
+  "actual": "high_risk_conditional",
+  "matched": true,
+  "steps": 7,
+  "citations": [
+   "AI-Act/annex-III/pt-2"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 88,
+  "expected": "high_risk",
+  "actual": "high_risk_conditional",
+  "matched": true,
+  "steps": 7,
+  "citations": [
+   "AI-Act/annex-III/pt-2"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 92,
+  "expected": "not_high_risk",
+  "actual": "not_high_risk",
+  "matched": true,
+  "steps": 2,
+  "citations": [
+   "AI-Act/annex-III/pt-5-b"
+  ],
+  "mismatch_reason": "",
+  "remark": {
+   "de": "Nachgemessen am 04.10.2026, nachdem die Vorfrage nach der Bewertung von Menschen den Satz aus Absatz 73 aufgenommen hat: ein Betrieb bleibt ein Betrieb, auch wenn er einem einzelnen Menschen gehoert.",
+   "en": "Remeasured on 4 October 2026, after the preliminary question on the assessment of people took up the sentence from paragraph 73: a business remains a business even if it is owned by a single person."
+  }
+ },
+ {
+  "index": 99,
+  "expected": "high_risk",
+  "actual": "high_risk_conditional",
+  "matched": true,
+  "steps": 7,
+  "citations": [
+   "AI-Act/annex-III/pt-2"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 108,
+  "expected": "high_risk",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 3,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "Die Lage nennt keine Strafverfolgungsbehoerde als Betreiber; ohne diesen Bereich ist Nummer 6 Buchstabe e nicht erreichbar.",
+   "en": "The scenario names no law enforcement authority as deployer; without this area point 6(e) cannot be reached."
+  }
+ },
+ {
+  "index": 114,
+  "expected": "exemption_applies",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 3,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "Die Lage nennt keinen Bereich des Anhangs III; die enge Verfahrensaufgabe wird erst nach einem getragenen Punkt gefragt.",
+   "en": "The scenario names no Annex III area; the narrow procedural task is only asked after an established point."
+  }
+ },
+ {
+  "index": 141,
+  "expected": "high_risk",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 3,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "Die Lage nennt keinen Bereich des Anhangs III; das Beispiel ist ein Gegenbeispiel zum Filter, der ohne getragenen Punkt nie gefragt wird.",
+   "en": "The scenario names no Annex III area; the example is a counter-example to the filter, which is never asked without an established point."
+  }
+ },
+ {
+  "index": 157,
+  "expected": "high_risk",
+  "actual": "high_risk_annex_iii",
+  "matched": true,
+  "steps": 7,
+  "citations": [
+   "AI-Act/annex-III/pt-4-b"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 175,
+  "expected": "high_risk",
+  "actual": "high_risk_conditional",
+  "matched": true,
+  "steps": 7,
+  "citations": [
+   "AI-Act/annex-III/pt-2"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 187,
+  "expected": "high_risk",
+  "actual": "not_high_risk",
+  "matched": false,
+  "steps": 6,
+  "citations": [],
+  "mismatch_reason": {
+   "de": "Die Lage nennt fuer das Uebersetzungswerkzeug keine Schutzaufgabe; der Verbund der Nummer 2 bricht an diesem Punkt, nicht mehr an der Benennung.",
+   "en": "The scenario names no safety function for the translation tool; the combined condition of point 2 now fails at this point, no longer at the designation."
+  }
+ },
+ {
+  "index": 188,
+  "expected": "high_risk",
+  "actual": "high_risk_conditional",
+  "matched": true,
+  "steps": 7,
+  "citations": [
+   "AI-Act/annex-III/pt-2"
+  ],
+  "mismatch_reason": ""
+ },
+ {
+  "index": 196,
+  "expected": "high_risk",
+  "actual": "high_risk_conditional",
+  "matched": true,
+  "steps": 7,
+  "citations": [
+   "AI-Act/annex-III/pt-2"
+  ],
+  "mismatch_reason": ""
+ }
+]

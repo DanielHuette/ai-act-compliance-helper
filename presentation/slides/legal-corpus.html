@@ -1,0 +1,27 @@
+<section id="legal-corpus" data-transition="fade" style="background:#FFFFFF;color:#061634;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:30px">
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:62px;font-weight:400;line-height:1.1"><de>2.811 Rechtsstellen, bis zum Buchstaben zerlegt</de><en>2,811 legal units, split down to the letter</en></h2>
+<div style="display:flex;gap:32px;align-items:start">
+<table style="width:1080px;font-family:'IBM Plex Sans', Arial, sans-serif;font-size:25px;color:#061634">
+<tr style="background:#061634"><th style="width:34%;text-align:left;color:#FFFFFF;font-size:24px"><de>Rechtsakt</de><en>Legal act</en></th><th style="width:33%;text-align:left;color:#FFFFFF;font-size:24px"><de>Was erfasst ist</de><en>What is covered</en></th><th style="width:33%;text-align:right;color:#FFFFFF;font-size:24px"><de>Stellen</de><en>Units</en></th></tr>
+<tr><td><de>KI-Verordnung</de><en>AI Act</en></td><td><de>113 Artikel, 929 Absätze und Nummern</de><en>113 articles, 929 paragraphs and points</en></td><td style="text-align:right"><de>1.042</de><en>1,042</en></td></tr>
+<tr style="background:#F4F6FB"><td><de>KI-VO, Anhänge</de><en>AI Act, annexes</en></td><td><de>13 Anhänge, 151 Nummern und Buchstaben</de><en>13 annexes, 151 points and letters</en></td><td style="text-align:right">164</td></tr>
+<tr><td><de>KI-VO, Erwägungsgründe</de><en>AI Act, recitals</en></td><td><de>vollständig</de><en>complete</en></td><td style="text-align:right">180</td></tr>
+<tr style="background:#F4F6FB"><td><de>Datenschutz-Grundverordnung</de><en>General Data Protection Regulation</en></td><td><de>99 Artikel mit Buchstabenpunkten</de><en>99 articles with lettered points</en></td><td style="text-align:right">851</td></tr>
+<tr><td><de>DSGVO, Erwägungsgründe</de><en>GDPR, recitals</en></td><td><de>vollständig</de><en>complete</en></td><td style="text-align:right">173</td></tr>
+<tr style="background:#F4F6FB"><td><de>Bundesdatenschutzgesetz</de><en>Federal Data Protection Act</en></td><td><de>Paragrafen und Absätze</de><en>sections and subsections</en></td><td style="text-align:right">357</td></tr>
+<tr><td><de>Anwendungsfälle</de><en>Use cases</en></td><td><de>9 Gebiete, mit Begründung</de><en>9 areas, with reasoning</en></td><td style="text-align:right">44</td></tr>
+</table>
+<div style="flex:1;display:flex;flex-direction:column;gap:22px">
+<div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:26px;border:1px solid #DDE4EF;border-radius:16px">
+<h3 style="font-size:26px;font-weight:600"><de>Zerlegt an der Gliederung, nicht am Text</de><en>Split by structure, not by text</en></h3>
+<p style="font-size:24px;line-height:1.45;color:#44546F"><de>Der erste Entwurf suchte das Wort „Artikel" und fand 132 statt 113 — ein Querverweis im Fließtext sah wie ein Artikelanfang aus. Jetzt wird an den Ankern des Amtsblatts getrennt. Alle Zielzahlen stimmen.</de><en>The first draft searched for the word “Artikel” and found 132 instead of 113 — a cross-reference in running text looked like the start of an article. Now the text is split at the anchors of the Official Journal. All target counts match.</en></p>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:26px;border:1px solid #DDE4EF;border-radius:16px">
+<h3 style="font-size:26px;font-weight:600"><de>Bis zum Buchstaben, nicht bis zur Nummer</de><en>Down to the letter, not just the point</en></h3>
+<p style="font-size:24px;line-height:1.45;color:#44546F"><de>Anhang III nennt acht Bereiche, aber der Fall hängt am Buchstaben darunter: Nummer 4 Buchstabe a trifft die Einstellung, Buchstabe b die Arbeitsbedingungen. Alle 24 sind eigene Einheiten — ebenso die 20 Rechtsakte des Anhangs I.</de><en>Annex III names eight areas, but a case depends on the letter below: point 4(a) covers recruitment, point 4(b) working conditions. All 24 letters are units of their own — as are the 20 legal acts of Annex I.</en></p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;font-size:24px;color:#7C8AA3"><de>2.089.820 Zeichen Rechtstext &middot; dieselben 2.811 Stellen auch auf Englisch &middot; Quellen in docs/data-sources.de.md</de><en>1,877,159 characters of English legal text &middot; the same 2,811 units in German &middot; sources in docs/data-sources.md</en></p>
+<aside><de>Die Zahlen sind Prüfkriterien, keine Angaben: dass die KI-Verordnung 113 Artikel hat, prüft eine eigene Testdatei bei jedem Lauf. Fehlt eine Norm, bricht der Lauf ab — sonst würde eine Lücke im Bestand nie auffallen, sie würde nur zu einer unvollständigen Auskunft führen. Der englische Bestand übernimmt die Kennungen des deutschen, damit beide Sprachen dieselbe Stelle zitieren.</de><en>The figures are test criteria, not claims: a dedicated test file checks on every run that the AI Act has 113 articles. If a provision is missing, the run fails — otherwise a gap in the corpus would never show; it would only lead to an incomplete answer. The English corpus takes over the ids of the German one, so both languages cite the same unit.</en></aside>
+</section>

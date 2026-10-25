@@ -1,0 +1,68 @@
+name: Feature request / Wunsch
+description: Something is missing / Etwas fehlt
+title: "[Feature] "
+labels: ["feature request / Wunsch"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please check CHANGELOG.md and the open issues first; a note that you need something
+        already requested is still useful, because it says what should come first.
+        Bitte zuerst CHANGELOG.md und die offenen Meldungen durchsehen; ein Hinweis, dass Sie
+        etwas schon Gewünschtes brauchen, ist trotzdem nützlich, denn er sagt, was zuerst kommen
+        soll.
+
+  - type: textarea
+    id: situation
+    attributes:
+      label: Which situation should the tool solve? / Welche Lage soll das Werkzeug lösen?
+      description: >-
+        What you intend to do, not the proposed solution; this often leads to a simpler way. /
+        Was Sie vorhaben, nicht die vorgeschlagene Lösung; daraus ergibt sich oft ein
+        einfacherer Weg als der gedachte.
+      placeholder: >-
+        I need a first classification for 40 planned AI projects and cannot enter each one by
+        hand.
+    validations:
+      required: true
+
+  - type: textarea
+    id: request
+    attributes:
+      label: What do you have in mind? / Was stellen Sie sich vor?
+    validations:
+      required: true
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: How do you manage today? / Wie behelfen Sie sich heute?
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Which part does it concern? / Welchen Teil betrifft es?
+      options:
+        - Classification or rule set / Einstufung oder Regelwerk
+        - Search in the legal text / Suche im Rechtstext
+        - Answer and phrasing / Antwort und Formulierung
+        - Legal data and its maintenance / Rechtsdaten und ihre Pflege
+        - Languages and translations / Sprachen und Übersetzungen
+        - Documentation / Dokumentation
+        - Something new / Etwas Neues
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: limits
+    attributes:
+      label: Please confirm / Bitte bestätigen
+      options:
+        - label: >-
+            My request does not require a language model to decide the classification or the
+            obligations. This separation is the founding decision of the project (see
+            docs/architecture.md); such a request will not be implemented. / Mein Wunsch
+            verlangt nicht, dass ein Sprachmodell die Einstufung oder die Pflichten bestimmt.
+            Diese Trennung ist die Grundentscheidung des Projekts (siehe
+            docs/architecture.de.md); ein solcher Wunsch wird nicht umgesetzt.
+          required: true

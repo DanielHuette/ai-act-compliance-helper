@@ -1,0 +1,738 @@
+area: "AI-Act/annex-III/pt-3"
+title:
+  de: "Allgemeine und berufliche Bildung"
+  en: "Education and vocational training"
+source:
+  de: "Entwurf der Leitlinien der Kommission vom 19.05.2026, Anhang III, Abschnitt 3.3"
+  en: "Draft Commission guidelines of 19 May 2026, Annex III, section 3.3"
+provisions:
+  - citation: "AI-Act/annex-III/pt-3-a"
+    main_question:
+      de: "Entscheidet Ihr System mit darueber, wer in eine Bildungs- oder Ausbildungseinrichtung aufgenommen wird oder wer welchem Kurs, welchem Programm oder welchem Lernweg zugeordnet wird?"
+      en: "Does your system have a say in who is admitted to an educational or training institution, or who is assigned to which course, programme or learning path?"
+    follow_up_questions:
+      - question:
+          de: "Wird Ihr System im Rahmen einer Bildungs- oder Berufsbildungseinrichtung eingesetzt, egal welcher Stufe, also auch fruehkindliche Bildung, Grundschule, weiterfuehrende Schule, Hochschule, Berufsausbildung oder Erwachsenenbildung?"
+          en: "Is your system used in the context of an educational or vocational training institution, at any level, i.e. including early childhood education, primary school, secondary school, higher education, vocational training or adult education?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(210)"
+      - question:
+          de: "Richtet sich Ihr System hauptsaechlich an die Fortbildung von Lehrkraeften, Ausbildern oder anderem Lehrpersonal und nicht an Lernende?"
+          en: "Is your system mainly aimed at the further training of teachers, trainers or other teaching staff rather than at learners?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(214)"
+      - question:
+          de: "Legt Ihr System fest, ob eine bestimmte Person sich einschreiben, aufgenommen werden oder in einen bestimmten Kurs, ein bestimmtes Programm oder einen bestimmten Lernweg eingeordnet werden kann?"
+          en: "Does your system determine whether a particular person can enrol, be admitted or be placed in a particular course, programme or learning path?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(217)"
+      - question:
+          de: "Verarbeitet Ihr System persoenliche Daten einer Person, um daraus auf ihre Eigenschaften zu schliessen oder ihren schulischen oder beruflichen Weg einzuschaetzen oder vorherzusagen?"
+          en: "Does your system process a person's personal data in order to draw conclusions about their characteristics or to assess or predict their educational or professional path?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(215)"
+      - question:
+          de: "Beschraenkt sich Ihr System darauf, Bewerbungsunterlagen zu ordnen, zu durchsuchen, zu uebersetzen oder in eine nutzbare Form zu bringen, ohne die Entscheidung spuerbar zu beeinflussen?"
+          en: "Is your system limited to organising, searching, translating or converting application documents into a usable form, without materially influencing the decision?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(219)"
+      - question:
+          de: "Wertet Ihr System nur im Nachhinein aus, ob bereits getroffene Aufnahmeentscheidungen stimmig waren, ohne die abgeschlossene menschliche Entscheidung zu ersetzen oder zu beeinflussen?"
+          en: "Does your system only analyse after the fact whether admission decisions already taken were consistent, without replacing or influencing the completed human decision?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(219)"
+      - question:
+          de: "Sortiert Ihr System eingehende Bewerbungen nur vor, etwa in Gruppen wie Bachelor oder Master, und markiert doppelte Bewerbungen, ohne selbst ueber die Aufnahme zu entscheiden?"
+          en: "Does your system merely pre-sort incoming applications, for example into groups such as Bachelor or Master, and flag duplicate applications, without itself deciding on admission?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(219)"
+      - question:
+          de: "Beschraenkt sich Ihr System darauf, Interessierte zu informieren, damit sie selbst entscheiden, ob sie sich bewerben, ohne den Zugang zu bestimmen?"
+          en: "Is your system limited to informing interested persons so that they can decide for themselves whether to apply, without determining access?"
+        on_yes: "not_covered"
+        on_no: "covered"
+        source_ref: "(219)"
+    covered:
+      - text:
+          de: "Zugang, Zulassung oder Zuweisung heisst: es wird bestimmt, ob eine Person sich einschreiben, Zutritt erhalten oder in einen bestimmten Kurs, ein bestimmtes Programm oder einen bestimmten Lernweg eingeordnet werden kann."
+          en: "Access, admission or assignment means: it is determined whether a person can enrol, gain entry or be placed in a particular course, programme or learning path."
+        source_ref: "(217)"
+      - text:
+          de: "Systeme, die Bewerbungen pruefen, um den Zugang bestimmter Personen zu bestimmten Einrichtungen zu bestimmen, die Auswertung der Bewerbungen uebernehmen oder die Aufnahmeentscheidung unterstuetzen, einschliesslich Platzierung und Zuweisung von Lernenden."
+          en: "Systems that review applications in order to determine the access of particular persons to particular institutions, that take over the evaluation of applications or that support the admission decision, including the placement and assignment of learners."
+        source_ref: "(218)"
+      - text:
+          de: "Systeme, die Arbeitsuchende oder Beschaeftigte mit passenden Angeboten der Berufsbildung zusammenbringen; auch sie bestimmen den Zugang zu Einrichtungen und zu Programmen innerhalb dieser Einrichtungen auf allen Stufen."
+          en: "Systems that match jobseekers or employees with suitable vocational training offers; they too determine access to institutions and to programmes within those institutions at all levels."
+        source_ref: "(218)"
+      - text:
+          de: "Systeme, die Lernende oder Auszubildende bestimmten Programmen oder Kursen innerhalb einer Einrichtung oder eines ihrer Teilbereiche zuweisen."
+          en: "Systems that assign learners or trainees to particular programmes or courses within an institution or one of its sub-units."
+        source_ref: "(219)"
+      - text:
+          de: "Alle Stufen formaler und nicht formaler Bildung sind gemeint, von fruehkindlicher Bildung ueber Grundschule, weiterfuehrende Schule und Hochschule bis zu Berufsbildung und Erwachsenenbildung."
+          en: "All levels of formal and non-formal education are meant, from early childhood education through primary school, secondary school and higher education to vocational training and adult education."
+        source_ref: "(210)"
+      - text:
+          de: "Oeffentliche und private Einrichtungen sind gleich behandelt, ohne Begrenzung auf Art oder Alter der Lernenden und ohne Begrenzung auf eine Form des Unterrichts, also auch online oder gemischt."
+          en: "Public and private institutions are treated equally, without limitation as to the type or age of learners and without limitation to one form of teaching, i.e. including online or blended."
+        source_ref: "(211)"
+      - text:
+          de: "Einrichtungen der Erwachsenenbildung und der fortlaufenden Weiterbildung zaehlen mit, auch wenn sie nicht zum formalen Schulsystem gehoeren, etwa wenn sie persoenliche Lernangebote machen und am Ende eine Bescheinigung ausstellen."
+          en: "Institutions of adult education and continuing education are included, even if they are not part of the formal school system, for example if they offer personalised learning and issue a certificate at the end."
+        source_ref: "(212)"
+      - text:
+          de: "Berufliche Bildung ist in mehreren Bildungssystemen der Union Teil der formalen Bildung."
+          en: "In several education systems of the Union, vocational training is part of formal education."
+        source_ref: "(213)"
+      - text:
+          de: "Verarbeitet das System persoenliche Daten, um persoenliche Eigenschaften einer Person zu bewerten, so ist es immer als hochriskant einzustufen, auch wenn es die Bedingungen der Ausnahmeregel in Artikel 6 Absatz 3 der Verordnung erfuellen wuerde."
+          en: "If the system processes personal data in order to evaluate a person's personal characteristics, it must always be classified as high-risk, even if it would meet the conditions of the exemption in Article 6(3) of the Regulation."
+        source_ref: "(215)"
+      - text:
+          de: "Die eigenen Zustaendigkeiten der Mitgliedstaaten im Bildungsbereich aendern nichts an der Einstufung eines Systems als hochriskant."
+          en: "The Member States' own competences in the field of education do not change the classification of a system as high-risk."
+        source_ref: "(208)"
+    not_covered:
+      - text:
+          de: "Systeme, die im Umfeld einer Bildungseinrichtung eingesetzt werden, sich aber hauptsaechlich an die Fortbildung von Lehrkraeften und Ausbildungspersonal richten, fallen nicht unter Nummer 3; sie koennen aber unter Nummer 4 des Anhangs III fallen, die Beschaeftigung betrifft."
+          en: "Systems that are used in the setting of an educational institution but are mainly aimed at the further training of teachers and training staff do not fall under point 3; they may, however, fall under Annex III, point 4, which concerns employment."
+        source_ref: "(214)"
+      - text:
+          de: "Systeme, die die Leistung oder den Fortschritt von Lernenden bewerten, fallen nicht unter Buchstabe a, weil diese Bewertung unabhaengig von Aufnahme und Zuweisung geschehen kann; sie koennen unter Buchstabe b fallen."
+          en: "Systems that evaluate the performance or progress of learners do not fall under point (a), because this evaluation can take place independently of admission and assignment; they may fall under point (b)."
+        source_ref: "(218)"
+      - text:
+          de: "Systeme, deren Ergebnis den Zugang nicht bestimmt, sondern Interessierte nur informiert, damit sie ihre eigene Entscheidung treffen koennen."
+          en: "Systems whose output does not determine access but merely informs interested persons so that they can make their own decision."
+        source_ref: "(219)"
+      - text:
+          de: "Systeme, die nur allgemeine Auskuenfte und Hinweise geben und keine persoenlichen Empfehlungen aussprechen, die eine Aufnahmeentscheidung spuerbar beeinflussen koennten."
+          en: "Systems that only provide general information and guidance and do not make personalised recommendations that could materially influence an admission decision."
+        source_ref: "(219)"
+      - text:
+          de: "Systeme, die Bewerbungsunterlagen nur ordnen, durchsuchen, Text und Sprache verarbeiten, uebersetzen und die Daten in eine nutzbare Form bringen, fallen unter die Ausnahme fuer vorbereitende Taetigkeiten in Artikel 6 Absatz 3 Buchstabe d."
+          en: "Systems that merely organise and search application documents, process text and language, translate and convert the data into a usable form fall under the exemption for preparatory tasks in Article 6(3)(d)."
+        source_ref: "(219)"
+      - text:
+          de: "Systeme, die bereits getroffene Aufnahmeentscheidungen im Nachhinein pruefen, um Muster und Abweichungen zu erkennen, und die die abgeschlossene menschliche Bewertung nicht ersetzen oder beeinflussen sollen, fallen unter die Ausnahme in Artikel 6 Absatz 3 Buchstabe c."
+          en: "Systems that review admission decisions already taken after the fact in order to detect patterns and deviations, and that are not intended to replace or influence the completed human assessment, fall under the exemption in Article 6(3)(c)."
+        source_ref: "(219)"
+      - text:
+          de: "Systeme, die eingehende Bewerbungen nur vorsortieren, Angaben aus freien Texten in eine geordnete Form bringen und doppelte Bewerbungen markieren, ohne ueber die Aufnahme zu entscheiden, fallen unter die Ausnahme fuer eng umgrenzte Verfahrensaufgaben in Artikel 6 Absatz 3 Buchstabe a."
+          en: "Systems that merely pre-sort incoming applications, convert information from free text into a structured form and flag duplicate applications, without deciding on admission, fall under the exemption for narrow procedural tasks in Article 6(3)(a)."
+        source_ref: "(219)"
+    examples:
+      - scenario:
+          de: "Ein System prueft Bewerbungen, Zeugnisse und Testergebnisse und bestimmt daraus, wer an der Einrichtung aufgenommen werden kann."
+          en: "A system reviews applications, certificates and test results and uses them to determine who can be admitted to the institution."
+        verdict: "high_risk"
+        rationale:
+          de: "Das Ergebnis wirkt sich unmittelbar auf das Recht aus, an dieser Einrichtung zu lernen, sich auszubilden oder sich einzuschreiben, weil die Bewertung und die Empfehlung den Ausgang der Aufnahmeentscheidung bestimmen koennen."
+          en: "The output has a direct effect on the right to study, train or enrol at this institution, because the evaluation and the recommendation can determine the outcome of the admission decision."
+        source_ref: "(219)"
+      - scenario:
+          de: "Eine Stadt oder eine Region weist Kinder automatisch Schulen zu, anhand von Wohnort, Schulbezirk, freien Plaetzen, Geschwisterkindern und Angaben zu den Eltern."
+          en: "A city or a region automatically assigns children to schools based on place of residence, school district, available places, siblings and information about the parents."
+        verdict: "high_risk"
+        rationale:
+          de: "Weil das System dabei persoenliche Daten bewertet, kann die Ausnahmeregel in Artikel 6 Absatz 3 nicht angewandt werden."
+          en: "Because the system evaluates personal data in doing so, the exemption in Article 6(3) cannot be applied."
+        source_ref: "(219)"
+      - scenario:
+          de: "Eine Arbeitsagentur laesst Vorbildung, Abschluesse und Testergebnisse von Bewerbern auswerten und ordnet die Personen freien Ausbildungsplaetzen zu."
+          en: "An employment agency has applicants' prior education, qualifications and test results analysed and assigns the persons to available training places."
+        verdict: "high_risk"
+        rationale:
+          de: "Das System wendet feste Zugangskriterien und Platzgrenzen an und weist dadurch Personen Ausbildungsplaetze zu; weil es dabei persoenliche Daten bewertet, greift die Ausnahmeregel in Artikel 6 Absatz 3 nicht."
+          en: "The system applies fixed access criteria and capacity limits and thereby assigns persons to training places; because it evaluates personal data in doing so, the exemption in Article 6(3) does not apply."
+        source_ref: "(219)"
+      - scenario:
+          de: "Ein System entscheidet anhand von Einkommen, Ausgaben und Familiengroesse, ob eine Person ein Stipendium erhalten kann."
+          en: "A system decides on the basis of income, expenses and family size whether a person can receive a scholarship."
+        verdict: "high_risk"
+        rationale:
+          de: "Mit der Entscheidung ueber die Geldhilfe wird der Zugang der Person zu einer Bildungseinrichtung bestimmt."
+          en: "The decision on the financial aid determines the person's access to an educational institution."
+        source_ref: "(219)"
+      - scenario:
+          de: "Eine Plattform empfiehlt Schuelerinnen und Schuelern anhand ihrer angegebenen Vorlieben und Interessen Studiengaenge und passende Hochschulen."
+          en: "A platform recommends degree programmes and suitable universities to pupils based on the preferences and interests they have stated."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Das Ergebnis bestimmt den Zugang nicht, sondern unterstuetzt die Lernenden bei ihrer eigenen Entscheidung, ob sie sich bewerben."
+          en: "The output does not determine access but supports the learners in their own decision whether to apply."
+        source_ref: "(219)"
+      - scenario:
+          de: "Ein Auskunftsassistent einer Hochschule beantwortet Fragen zu Zulassungsvoraussetzungen, Bewerbungsablauf und Studienangebot."
+          en: "A university information assistant answers questions about admission requirements, the application process and the range of courses offered."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Er entscheidet nicht ueber Aufnahmen und gibt keine persoenlichen Empfehlungen, die eine Aufnahmeentscheidung spuerbar beeinflussen koennten."
+          en: "It does not decide on admissions and does not give personalised recommendations that could materially influence an admission decision."
+        source_ref: "(219)"
+      - scenario:
+          de: "Ein System unterstuetzt die Bearbeitung von Bewerbungen, indem es Unterlagen ordnet, durchsucht, uebersetzt und die Angaben in eine geordnete Form bringt."
+          en: "A system supports the processing of applications by organising, searching and translating documents and converting the information into a structured form."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es erleichtert nur das Ordnen und Durchsehen der Unterlagen und hat keinen bedeutsamen Einfluss auf die Entscheidung; es faellt unter die Ausnahme fuer vorbereitende Taetigkeiten in Artikel 6 Absatz 3 Buchstabe d."
+          en: "It merely facilitates organising and reviewing the documents and has no significant influence on the decision; it falls under the exemption for preparatory tasks in Article 6(3)(d)."
+        source_ref: "(219)"
+      - scenario:
+          de: "Ein System prueft im Nachhinein die Entscheidungen eines Zulassungsausschusses, um die Qualitaet des Verfahrens zu kontrollieren."
+          en: "A system reviews the decisions of an admissions committee after the fact in order to check the quality of the procedure."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es soll Entscheidungsmuster und Abweichungen erkennen und nicht die abgeschlossene menschliche Bewertung ersetzen oder beeinflussen; es faellt unter die Ausnahme in Artikel 6 Absatz 3 Buchstabe c."
+          en: "It is intended to detect decision-making patterns and deviations and not to replace or influence the completed human assessment; it falls under the exemption in Article 6(3)(c)."
+        source_ref: "(219)"
+      - scenario:
+          de: "Ein System sortiert eingehende Bewerbungen vor dem Verfahren, ordnet sie festen Gruppen zu und markiert doppelte Bewerbungen."
+          en: "A system pre-sorts incoming applications before the procedure, assigns them to fixed groups and flags duplicate applications."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Solange es keine Entscheidung ueber Aufnahme oder Zugang trifft, faellt es unter die Ausnahme fuer eng umgrenzte Verfahrensaufgaben der Datenverarbeitung und Ordnung in Artikel 6 Absatz 3 Buchstabe a."
+          en: "As long as it does not take any decision on admission or access, it falls under the exemption for narrow procedural tasks of data processing and organisation in Article 6(3)(a)."
+        source_ref: "(219)"
+  - citation: "AI-Act/annex-III/pt-3-b"
+    main_question:
+      de: "Bewertet Ihr System, was eine Person gelernt hat, und wirkt sich das auf ihre Note, ihr Zeugnis oder ihren Abschluss aus?"
+      en: "Does your system evaluate what a person has learned, and does this affect their grade, their certificate or their qualification?"
+    follow_up_questions:
+      - question:
+          de: "Wird Ihr System im Rahmen einer Bildungs- oder Berufsbildungseinrichtung eingesetzt, egal welcher Stufe?"
+          en: "Is your system used in the context of an educational or vocational training institution, at any level?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(210)"
+      - question:
+          de: "Richtet sich Ihr System hauptsaechlich an die Fortbildung von Lehrkraeften, Ausbildern oder anderem Lehrpersonal und nicht an Lernende?"
+          en: "Is your system mainly aimed at the further training of teachers, trainers or other teaching staff rather than at learners?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(214)"
+      - question:
+          de: "Beurteilt Ihr System Wissen, Koennen, Fertigkeiten oder Kompetenzen einer Person und vergleicht das Ergebnis mit einem festgelegten Massstab?"
+          en: "Does your system assess a person's knowledge, abilities, skills or competences and compare the result with a defined standard?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(220)"
+      - question:
+          de: "Verarbeitet Ihr System persoenliche Daten einer Person, um daraus auf ihre Eigenschaften zu schliessen oder ihren schulischen oder beruflichen Weg einzuschaetzen oder vorherzusagen?"
+          en: "Does your system process a person's personal data in order to draw conclusions about their characteristics or to assess or predict their educational or professional path?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(215)"
+      - question:
+          de: "Prueft Ihr System nur eine von einer Lehrkraft erstellte Pruefung auf Fehler, unklare Formulierungen oder Widersprueche und schlaegt Aenderungen vor, ohne Inhalt, Schwierigkeit oder Lernziel zu veraendern?"
+          en: "Does your system only check a test created by a teacher for errors, unclear wording or contradictions and suggest changes, without altering the content, difficulty or learning objective?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(225)"
+      - question:
+          de: "Rechnet Ihr System nur aus bereits vergebenen Noten und ihren Gewichtungen einen Durchschnitt aus, den dann die Lehrkraft fuer ihre Bewertung nutzt?"
+          en: "Does your system only calculate an average from grades already awarded and their weightings, which the teacher then uses for their assessment?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(225)"
+      - question:
+          de: "Vergleicht Ihr System nur die Bewertungsmuster von Lehrkraeften ueber die Zeit und meldet Abweichungen, die danach ein Mensch prueft, ohne dass Noten selbsttaetig geaendert werden?"
+          en: "Does your system only compare teachers' grading patterns over time and flag deviations that a human then reviews, without grades being changed automatically?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(225)"
+      - question:
+          de: "Begleitet Ihr System nur das laufende Lernen, etwa mit Uebungen, Rueckmeldung, Hinweisen oder angepasster Schwierigkeit, ohne zu einer abschliessenden Note, Bewertung oder Qualifikation zu fuehren?"
+          en: "Does your system only accompany ongoing learning, for example with exercises, feedback, hints or adapted difficulty, without leading to a final grade, assessment or qualification?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(224)"
+      - question:
+          de: "Fuehrt die Nutzung Ihres Systems zu einem Zeugnis, einer Bescheinigung oder einer anderen Anerkennung, die von den zustaendigen staatlichen Stellen anerkannt wird?"
+          en: "Does the use of your system lead to a certificate, an attestation or another form of recognition that is recognised by the competent national authorities?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(225)"
+      - question:
+          de: "Nutzen Lernende Ihr System aus eigenem Antrieb fuer Lernen ausserhalb des Unterrichts, ohne dass die Einrichtung, an der sie eingeschrieben sind, das verlangt?"
+          en: "Do learners use your system on their own initiative for learning outside class, without the institution at which they are enrolled requiring it?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(225)"
+      - question:
+          de: "Fliesst das Ergebnis Ihres Systems in eine Note, eine Bewertung, ein Zeugnis oder einen Abschluss ein, oder in eine Zwischennote, die bei der Endnote oder beim Bestehen mitzaehlt?"
+          en: "Does the output of your system feed into a grade, an assessment, a certificate or a qualification, or into an interim grade that counts towards the final grade or towards passing?"
+        on_yes: "covered"
+        on_no: "not_covered"
+        source_ref: "(223)"
+    covered:
+      - text:
+          de: "Lernergebnisse bewerten heisst: Wissen, Koennen, Angaben, Werte, Fertigkeiten und Kompetenzen beurteilen, die in formalen und in nicht formalen Bildungs- und Berufsbildungszusammenhaengen erworben wurden, und sie mit den geltenden Massstaeben vergleichen."
+          en: "Evaluating learning outcomes means: assessing knowledge, abilities, information, values, skills and competences acquired in formal and non-formal education and vocational training contexts, and comparing them with the applicable standards."
+        source_ref: "(220)"
+      - text:
+          de: "Das Ergebnis ist eine Einschaetzung der Leistung gegen vorab festgelegte Lernziele, Standards, Lehrplanziele oder Kompetenzrahmen und kann fuer Noten, Zeugnisse, Qualifikationen, das Erkennen von Luecken oder das selbsttaetige Steuern des weiteren Lernwegs genutzt werden."
+          en: "The result is an assessment of performance against predefined learning objectives, standards, curriculum goals or competence frameworks and can be used for grades, certificates, qualifications, identifying gaps or automatically steering the further learning path."
+        source_ref: "(221)"
+      - text:
+          de: "Erfasst ist nur die abschliessende Bewertung, die auf eine Entscheidung ueber den Bildungs- und Berufsweg hinwirkt; dazu zaehlen Systeme, die die Endnote bestimmen, und solche, die Zwischennoten bestimmen, die in die Endbewertung oder in den Leistungsstand einfliessen."
+          en: "Only summative assessment that contributes to a decision on the educational and professional path is covered; this includes systems that determine the final grade and those that determine interim grades that feed into the final assessment or into the performance record."
+        source_ref: "(223)"
+      - text:
+          de: "Eine abschliessende Bewertung ist eine Bewertung, die zu einer Note, einer Beurteilung oder einer Qualifikation fuehrt oder am Ende eines Unterrichtsabschnitts steht, etwa eines Kurses, eines Programms, eines Halbjahres oder eines Schuljahres, und daher den Bildungsweg deutlich beeinflussen kann."
+          en: "A summative assessment is an assessment that leads to a grade, an evaluation or a qualification or comes at the end of a unit of instruction, for example a course, a programme, a semester or a school year, and can therefore significantly influence the educational path."
+        source_ref: "(222)"
+      - text:
+          de: "Systeme, die Lernende aus eigenem Antrieb nutzen, sind dann hochriskant, wenn sie zu einem Zeugnis, einer Bescheinigung oder einer von den zustaendigen staatlichen Stellen anerkannten Form der Anerkennung fuehren, sofern keine Ausnahme nach Artikel 6 Absatz 3 greift."
+          en: "Systems that learners use on their own initiative are high-risk if they lead to a certificate, an attestation or a form of recognition recognised by the competent national authorities, unless an exemption under Article 6(3) applies."
+        source_ref: "(225)"
+      - text:
+          de: "Verarbeitet das System persoenliche Daten, um persoenliche Eigenschaften einer Person zu bewerten, so ist es immer als hochriskant einzustufen, auch wenn es die Bedingungen der Ausnahmeregel in Artikel 6 Absatz 3 erfuellen wuerde."
+          en: "If the system processes personal data in order to evaluate a person's personal characteristics, it must always be classified as high-risk, even if it would meet the conditions of the exemption in Article 6(3)."
+        source_ref: "(215)"
+    not_covered:
+      - text:
+          de: "Die begleitende Bewertung ist nicht erfasst: sie laeuft fortlaufend mit, soll die Leistung verbessern und fuehrt nicht zu einer abschliessenden Note, Bewertung oder Qualifikation; sie arbeitet mit Uebungen, Rueckmeldung und Hinweisen."
+          en: "Formative assessment is not covered: it runs continuously, is intended to improve performance and does not lead to a final grade, assessment or qualification; it works with exercises, feedback and hints."
+        source_ref: "(222)"
+      - text:
+          de: "Systeme, die im laufenden Unterricht nur Rueckmeldung und Lernunterstuetzung geben, sind nicht hochriskant; dazu zaehlen Systeme, die die Schwierigkeit der Materialien an die Leistung anpassen, Systeme, die persoenliche Rueckmeldung und Anleitung geben, und Systeme, die Beteiligung und Fortschritt verfolgen und Lehrkraeften Hinweise geben."
+          en: "Systems that only provide feedback and learning support during ongoing teaching are not high-risk; these include systems that adapt the difficulty of materials to performance, systems that provide personalised feedback and guidance, and systems that track participation and progress and give teachers indications."
+        source_ref: "(224)"
+      - text:
+          de: "Systeme, die Lernende aus eigenem Antrieb fuer nicht formales und beilaeufiges Lernen nutzen, ohne dass ihre Einrichtung das verlangt, sind nicht hochriskant."
+          en: "Systems that learners use on their own initiative for non-formal and informal learning, without their institution requiring it, are not high-risk."
+        source_ref: "(225)"
+      - text:
+          de: "Systeme, die hauptsaechlich der Fortbildung von Lehrkraeften und Ausbildungspersonal dienen, fallen nicht unter Nummer 3; sie koennen unter Nummer 4 des Anhangs III fallen, die Beschaeftigung betrifft."
+          en: "Systems that mainly serve the further training of teachers and training staff do not fall under point 3; they may fall under Annex III, point 4, which concerns employment."
+        source_ref: "(214)"
+      - text:
+          de: "Systeme, die eine von einer Lehrkraft erstellte Pruefung nur auf Fehler und unklare Stellen pruefen und Verbesserungen vorschlagen, ohne Inhalt, Schwierigkeit oder Lernziel zu aendern, fallen unter die Ausnahme fuer Systeme, die das Ergebnis einer bereits abgeschlossenen menschlichen Taetigkeit verbessern, Artikel 6 Absatz 3 Buchstabe b."
+          en: "Systems that merely check a test created by a teacher for errors and unclear passages and suggest improvements, without changing the content, difficulty or learning objective, fall under the exemption for systems that improve the result of a previously completed human activity, Article 6(3)(b)."
+        source_ref: "(225)"
+      - text:
+          de: "Systeme, die aus vergebenen Noten und deren Gewichtungen nur den Durchschnitt errechnen, fallen unter die Ausnahme fuer eng umgrenzte Verfahrensaufgaben in Artikel 6 Absatz 3 Buchstabe a."
+          en: "Systems that merely calculate the average from grades awarded and their weightings fall under the exemption for narrow procedural tasks in Article 6(3)(a)."
+        source_ref: "(225)"
+      - text:
+          de: "Systeme, die Bewertungsmuster von Lehrkraeften beobachten und Abweichungen melden, die danach ein Mensch prueft, fallen unter die Ausnahme fuer das Erkennen von Entscheidungsmustern und Abweichungen in Artikel 6 Absatz 3 Buchstabe c, weil sie eine abgeschlossene menschliche Bewertung nicht ersetzen oder beeinflussen sollen."
+          en: "Systems that observe teachers' grading patterns and flag deviations that a human then reviews fall under the exemption for detecting decision-making patterns and deviations in Article 6(3)(c), because they are not intended to replace or influence a completed human assessment."
+        source_ref: "(225)"
+    examples:
+      - scenario:
+          de: "Ein System bewertet Arbeiten, Tests, Kurztests und Pruefungen der Lernenden, die in die Endbewertung einfliessen, und schlaegt Noten vor."
+          en: "A system grades learners' assignments, tests, quizzes and exams that feed into the final assessment, and suggests grades."
+        verdict: "high_risk"
+        rationale:
+          de: "Es wirkt auf die abschliessende Bewertung der Lernenden ein, indem es die Ergebnisse auswertet und Noten vorschlaegt."
+          en: "It influences the summative assessment of learners by evaluating the results and suggesting grades."
+        source_ref: "(225)"
+      - scenario:
+          de: "Ein persoenlicher Lernassistent gibt fortlaufend Rueckmeldung und erstellt am Ende jeder Einheit einen Bericht mit Noten, Staerken, Schwaechen und Verbesserungsvorschlaegen; die Lehrkraft nutzt den Bericht fuer die Notengebung am Ende des Zeitraums."
+          en: "A personal learning assistant provides continuous feedback and, at the end of each unit, produces a report with grades, strengths, weaknesses and suggestions for improvement; the teacher uses the report for grading at the end of the period."
+        verdict: "high_risk"
+        rationale:
+          de: "Obwohl das System vor allem begleitend Rueckmeldung gibt, wird sein Ergebnis von der Lehrkraft fuer die Notenentscheidung genutzt und wirkt damit auf die abschliessende Bewertung ein."
+          en: "Although the system mainly provides formative feedback, its output is used by the teacher for the grading decision and thus influences the summative assessment."
+        source_ref: "(225)"
+      - scenario:
+          de: "Eine Sprachlern-Anwendung gibt Lernenden sofortige Rueckmeldung und korrigiert erkannte Fehler; sie fuehrt zu keinem Zeugnis, keiner Bescheinigung und keiner anerkannten Form der Anerkennung und wird von Lernenden aus eigenem Antrieb genutzt, ohne dass eine Einrichtung das verlangt."
+          en: "A language learning app gives learners immediate feedback and corrects detected errors; it does not lead to a certificate, an attestation or any recognised form of recognition and is used by learners on their own initiative, without any institution requiring it."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Sie dient nicht formalem und beilaeufigem Lernen aus eigenem Antrieb und fuehrt zu keiner anerkannten Qualifikation."
+          en: "It serves non-formal and informal learning on the learner's own initiative and does not lead to a recognised qualification."
+        source_ref: "(225)"
+      - scenario:
+          de: "Ein Lernbegleiter fuer Menschen mit anderer Wahrnehmung oder Verarbeitung, etwa Autismus, Lese-Rechtschreib-Schwierigkeiten oder Aufmerksamkeitsstoerung, baut persoenliche Lernwege, passt Material, Tempo und Darstellung an und bietet Vorlesefunktion, Schriftgroessen, Farbanpassungen, mehr Zeit oder Pausen."
+          en: "A learning companion for people with different perception or processing, for example autism, dyslexia or attention deficit disorder, builds personalised learning paths, adapts material, pace and presentation and offers a read-aloud function, font sizes, colour adjustments, extra time or breaks."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Das Ergebnis dient dem Unterricht der Lehrkraft und der zusaetzlichen Unterstuetzung; es soll keine Noten bestimmen und das Gelernte nicht bewerten."
+          en: "The output serves the teacher's teaching and additional support; it is not intended to determine grades or to evaluate what has been learned."
+        source_ref: "(225)"
+      - scenario:
+          de: "Ein Werkzeug gibt Lernenden Rueckmeldung zu Aussprache oder Lesefluss, analysiert die Sprache und schlaegt Verbesserungen bei Betonung, Rhythmus und Aussprache vor."
+          en: "A tool gives learners feedback on pronunciation or reading fluency, analyses their speech and suggests improvements in stress, rhythm and pronunciation."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Die Rueckmeldung nutzen die Lernenden selbst; Lehrkraefte verwenden sie nicht, um Noten zu bestimmen, die in eine Endbewertung einfliessen, und nicht, um Sprachkenntnisse festzustellen."
+          en: "The learners use the feedback themselves; teachers do not use it to determine grades that feed into a final assessment, nor to establish language proficiency."
+        source_ref: "(225)"
+      - scenario:
+          de: "Ein System prueft eine von einer Lehrkraft erstellte Pruefung auf Grammatikfehler, unklare Formulierungen und Widersprueche zum Bewertungsraster und schlaegt Aenderungen vor."
+          en: "A system checks a test created by a teacher for grammatical errors, unclear wording and contradictions with the marking scheme and suggests changes."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es aendert Inhalt, Schwierigkeit und Lernziel nicht, die Lehrkraft bleibt fuer die Pruefung verantwortlich; es faellt unter die Ausnahme fuer das Verbessern des Ergebnisses einer bereits abgeschlossenen menschlichen Taetigkeit, Artikel 6 Absatz 3 Buchstabe b."
+          en: "It does not change the content, difficulty or learning objective, and the teacher remains responsible for the test; it falls under the exemption for improving the result of a previously completed human activity, Article 6(3)(b)."
+        source_ref: "(225)"
+      - scenario:
+          de: "Ein System errechnet aus den im Schuljahr erzielten Noten und deren Gewichtungen den Durchschnitt, den die Lehrkraft fuer ihre Endbewertung nutzt."
+          en: "A system calculates the average from the grades achieved during the school year and their weightings, which the teacher uses for their final assessment."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es fuehrt nur eine einfache Rechnung aus und faellt damit unter die Ausnahme fuer eng umgrenzte Verfahrensaufgaben in Artikel 6 Absatz 3 Buchstabe a."
+          en: "It merely performs a simple calculation and thus falls under the exemption for narrow procedural tasks in Article 6(3)(a)."
+        source_ref: "(225)"
+      - scenario:
+          de: "Ein System beobachtet die Bewertungsmuster von Lehrkraeften ueber die Zeit und meldet Abweichungen, die danach ein Mensch prueft und bei Bedarf berichtigt."
+          en: "A system observes teachers' grading patterns over time and flags deviations that a human then reviews and corrects if necessary."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es soll Entscheidungsmuster und Abweichungen davon erkennen, aendert Bewertungen nicht selbsttaetig und soll eine abgeschlossene menschliche Bewertung nicht ersetzen oder beeinflussen; Ausnahme nach Artikel 6 Absatz 3 Buchstabe c."
+          en: "It is intended to detect decision-making patterns and deviations from them, does not change assessments automatically and is not intended to replace or influence a completed human assessment; exemption under Article 6(3)(c)."
+        source_ref: "(225)"
+  - citation: "AI-Act/annex-III/pt-3-c"
+    main_question:
+      de: "Schaetzt Ihr System ein, welche Stufe der Bildung fuer eine bestimmte Person die richtige ist, also ob sie aufsteigt oder auf welchem Niveau sie einsteigt?"
+      en: "Does your system assess which level of education is appropriate for a particular person, i.e. whether they move up or at which level they start?"
+    follow_up_questions:
+      - question:
+          de: "Wird Ihr System im Rahmen einer Bildungs- oder Berufsbildungseinrichtung eingesetzt, egal welcher Stufe?"
+          en: "Is your system used in the context of an educational or vocational training institution, at any level?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(210)"
+      - question:
+          de: "Richtet sich Ihr System hauptsaechlich an die Fortbildung von Lehrkraeften, Ausbildern oder anderem Lehrpersonal und nicht an Lernende?"
+          en: "Is your system mainly aimed at the further training of teachers, trainers or other teaching staff rather than at learners?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(214)"
+      - question:
+          de: "Schaetzt Ihr System ein, welche Stufe der Bildung eine bestimmte Person erhalten wird oder auf welche Stufe sie Zugang erhalten kann?"
+          en: "Does your system assess the level of education that a particular person will receive or will be able to access?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(226)"
+      - question:
+          de: "Betrachtet Ihr System nur allgemeine Entwicklungen und Muster bei Gruppen von Lernenden, ohne ueber die Einstufung oder die Moeglichkeiten einzelner Personen zu befinden?"
+          en: "Does your system only look at general trends and patterns among groups of learners, without deciding on the placement or the opportunities of individual persons?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(229)"
+      - question:
+          de: "Wird Ihr System von einer Bildungs- oder Berufsbildungseinrichtung eingesetzt und nicht allein von Lernenden selbst, um ihnen ihre eigene Entscheidung zu erleichtern?"
+          en: "Is your system used by an educational or vocational training institution, and not solely by learners themselves to make their own decision easier?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(229)"
+      - question:
+          de: "Verarbeitet Ihr System persoenliche Daten einer Person, um daraus auf ihre Eigenschaften zu schliessen oder ihren schulischen oder beruflichen Weg einzuschaetzen oder vorherzusagen?"
+          en: "Does your system process a person's personal data in order to draw conclusions about their characteristics or to assess or predict their educational or professional path?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(215)"
+      - question:
+          de: "Erstellt Ihr System nur Fragen und Themen, mit denen eine Lehrkraft danach selbst prueft, ob eine Person fuer eine Stufe bereit ist, ohne selbst ueber die Stufe zu befinden?"
+          en: "Does your system only generate questions and topics that a teacher then uses to check personally whether a person is ready for a level, without itself deciding on the level?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(229)"
+      - question:
+          de: "Wertet Ihr System nur die bereits ausgesprochenen Empfehlungen von Ausbildern aus, um das Vorgehen der Einrichtung kuenftig zu verbessern, ohne ueber die Einstufung einzelner Personen zu befinden?"
+          en: "Does your system only analyse recommendations already made by trainers in order to improve the institution's approach in future, without deciding on the placement of individual persons?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(229)"
+      - question:
+          de: "Bestimmt Ihr System die passende Stufe, den passenden Kurs oder das passende Ausbildungsmodul fuer eine Person, oder spricht es dazu eine Empfehlung an Lehrkraefte aus?"
+          en: "Does your system determine the appropriate level, course or training module for a person, or does it make a recommendation on this to teachers?"
+        on_yes: "covered"
+        on_no: "not_covered"
+        source_ref: "(226)"
+    covered:
+      - text:
+          de: "Erfasst sind Systeme, die einschaetzen, welche Stufe der Bildung eine Person erhalten wird oder auf welche Stufe sie Zugang erhalten kann, im Rahmen von oder innerhalb von Bildungs- und Berufsbildungseinrichtungen aller Stufen."
+          en: "Covered are systems that assess the level of education that a person will receive or will be able to access, in the context of or within educational and vocational training institutions at all levels."
+        source_ref: "(226)"
+      - text:
+          de: "Der erste Zweck ist das Bestimmen der Stufe, die eine Person erhalten wird, also der Fortschritt auf einem laufenden Lernweg, etwa der Aufstieg in die naechste Klassenstufe oder der Wechsel in einen Kurs auf hoeherem Niveau."
+          en: "The first purpose is determining the level that a person will receive, i.e. progress along an ongoing learning path, for example moving up to the next grade or switching to a course at a higher level."
+        source_ref: "(226)"
+      - text:
+          de: "Der zweite Zweck ist das Einschaetzen der Stufe, auf die eine Person Zugang erhalten kann, indem Bereitschaft und Voraussetzungen vor dem Eintritt in ein Programm geprueft werden, oft durch Einstufungstests oder Kompetenzpruefungen, um Einstiegsniveau oder Zugangsberechtigung zu bestimmen."
+          en: "The second purpose is assessing the level that a person will be able to access, by checking readiness and prerequisites before entry into a programme, often through placement tests or competence assessments, in order to determine the entry level or eligibility for access."
+        source_ref: "(226)"
+      - text:
+          de: "Erfasst sind auch Systeme, die den aktuellen Wissens- und Koennensstand in einem Fach zugrunde legen und daraus das passende Kurs-, Programm- oder Modulniveau fuer den naechsten Schritt bestimmen, und dabei besondere Bedarfe oder besondere Begabungen beruecksichtigen koennen."
+          en: "Also covered are systems that take the current level of knowledge and skills in a subject as a basis and use it to determine the appropriate course, programme or module level for the next step, and that may take special needs or special talents into account in doing so."
+        source_ref: "(227)"
+      - text:
+          de: "Erfasst sind auch Systeme, die Faehigkeiten, Wissen und Koennen pruefen, um die passende Stufe zu finden, und die anhand der vorhandenen Kompetenzen und gegebenenfalls der Entwicklungsmoeglichkeiten eine Einstufung empfehlen und bestimmen, ob die Person zur naechsten Stufe aufsteigen kann."
+          en: "Also covered are systems that test abilities, knowledge and skills in order to find the appropriate level, and that recommend a placement on the basis of existing competences and, where applicable, development potential, and determine whether the person can move up to the next level."
+        source_ref: "(228)"
+      - text:
+          de: "Dass die letzte Entscheidung bei Lehrkraeften und den verantwortlichen Personen der Einrichtung liegt, die der Empfehlung folgen oder sie verwerfen koennen, aendert nichts an der Einstufung als hochriskant; bei schlechter Gestaltung koennten solche Systeme Lernende falsch einordnen und ihre Moeglichkeiten und ihren weiteren Weg schaedigen."
+          en: "The fact that the final decision lies with teachers and the responsible persons at the institution, who can follow or reject the recommendation, does not change the classification as high-risk; if poorly designed, such systems could misplace learners and harm their opportunities and their further path."
+        source_ref: "(229)"
+      - text:
+          de: "Verarbeitet das System persoenliche Daten, um persoenliche Eigenschaften einer Person zu bewerten, so ist es immer als hochriskant einzustufen, auch wenn es die Bedingungen der Ausnahmeregel in Artikel 6 Absatz 3 erfuellen wuerde."
+          en: "If the system processes personal data in order to evaluate a person's personal characteristics, it must always be classified as high-risk, even if it would meet the conditions of the exemption in Article 6(3)."
+        source_ref: "(215)"
+    not_covered:
+      - text:
+          de: "Nicht erfasst sind Systeme, die nicht von einer Bildungseinrichtung eingesetzt werden, sondern Lernenden nur helfen sollen, ihren Bildungsweg selbst zu entscheiden, etwa Empfehlungen zu Kursen, Programmen oder Abschluessen auf Grundlage von Angaben, die die Lernenden selbst machen, wie Interessen und Berufsziele."
+          en: "Not covered are systems that are not used by an educational institution but are only intended to help learners decide on their educational path themselves, for example recommendations on courses, programmes or qualifications based on information the learners provide themselves, such as interests and career goals."
+        source_ref: "(229)"
+      - text:
+          de: "Nicht erfasst sind Systeme, deren Ergebnis nicht fuer Entscheidungen ueber die Einstufung oder die Moeglichkeiten einzelner Lernender genutzt wird, sondern nur ein breiteres Bild der Bildungslandschaft gibt, etwa die Auswertung allgemeiner Entwicklungen nach dem Ende der weiterfuehrenden Schule."
+          en: "Not covered are systems whose output is not used for decisions on the placement or opportunities of individual learners but only gives a broader picture of the educational landscape, for example the analysis of general trends after the end of secondary school."
+        source_ref: "(229)"
+      - text:
+          de: "Systeme, die hauptsaechlich der Fortbildung von Lehrkraeften und Ausbildungspersonal dienen, fallen nicht unter Nummer 3; sie koennen unter Nummer 4 des Anhangs III fallen, die Beschaeftigung betrifft."
+          en: "Systems that mainly serve the further training of teachers and training staff do not fall under point 3; they may fall under Annex III, point 4, which concerns employment."
+        source_ref: "(214)"
+      - text:
+          de: "Systeme, die nur Fragen und Themen erstellen, mit denen Lehrkraefte danach selbst die Bereitschaft einer Person fuer eine Stufe pruefen, fallen unter die Ausnahme fuer vorbereitende Taetigkeiten in Artikel 6 Absatz 3 Buchstabe d, weil sie selbst nicht ueber die Stufe befinden."
+          en: "Systems that only generate questions and topics that teachers then use to check personally a person's readiness for a level fall under the exemption for preparatory tasks in Article 6(3)(d), because they do not themselves decide on the level."
+        source_ref: "(229)"
+      - text:
+          de: "Systeme, die die bereits ausgesprochenen Empfehlungen von Ausbildern auswerten und Vorschlaege machen, wie die Einrichtung ihr Vorgehen verbessern kann, fallen unter die Ausnahme fuer das Verbessern des Ergebnisses einer bereits abgeschlossenen menschlichen Taetigkeit in Artikel 6 Absatz 3 Buchstabe b, weil sie keine Entscheidung ueber die Einstufung treffen."
+          en: "Systems that analyse recommendations already made by trainers and make suggestions as to how the institution can improve its approach fall under the exemption for improving the result of a previously completed human activity in Article 6(3)(b), because they do not take any decision on placement."
+        source_ref: "(229)"
+    examples:
+      - scenario:
+          de: "Eine Einrichtung nutzt ein Einstufungswerkzeug, das die Faehigkeiten neuer Lernender prueft und den Lehrkraeften empfiehlt, ob sie in den Anfaenger-, Mittel- oder Fortgeschrittenenkurs gehoeren, oder das darueber befindet, ob eine Person in die Hochschulbildung oder in die Berufsbildung wechselt."
+          en: "An institution uses a placement tool that tests the abilities of new learners and recommends to teachers whether they belong in the beginner, intermediate or advanced course, or that decides whether a person moves on to higher education or to vocational training."
+        verdict: "high_risk"
+        rationale:
+          de: "Das System bestimmt die passende Stufe fuer eine bestimmte Person."
+          en: "The system determines the appropriate level for a particular person."
+        source_ref: "(229)"
+      - scenario:
+          de: "Eine Berufsbildungseinrichtung prueft mit Einstufungstests und Kompetenzpruefungen Wissen und Koennen in Mathematik, Physik und technischen Grundlagen und bestimmt daraus die Zugangsberechtigung fuer eine bestimmte Stufe oder einen bestimmten Kurs."
+          en: "A vocational training institution uses placement tests and competence assessments to test knowledge and skills in mathematics, physics and technical fundamentals and determines from them eligibility for access to a particular level or a particular course."
+        verdict: "high_risk"
+        rationale:
+          de: "Das System schaetzt ein, welche Stufe der Bildung die Person in einem bestimmten Programm erreichen kann."
+          en: "The system assesses which level of education the person can reach in a particular programme."
+        source_ref: "(229)"
+      - scenario:
+          de: "Ein System ordnet Lernende mit besonderem Bildungsbedarf passenden Programmen zu und empfiehlt die geeignete Platzierung samt notwendiger Unterstuetzung, auf Grundlage von Testergebnissen, Rueckmeldungen von Lehrkraeften, psychologischen Berichten und der Krankheitsgeschichte."
+          en: "A system assigns learners with special educational needs to suitable programmes and recommends the appropriate placement together with the necessary support, based on test results, teacher feedback, psychological reports and medical history."
+        verdict: "high_risk"
+        rationale:
+          de: "Das System bestimmt die Einstufung und das Mass der Unterstuetzung fuer einzelne Personen."
+          en: "The system determines the placement and the level of support for individual persons."
+        source_ref: "(229)"
+      - scenario:
+          de: "Ein System empfiehlt Lernenden selbst, welche Kurse, Programme oder Abschluesse sie im naechsten Jahr anstreben koennten, auf Grundlage ihrer eigenen Angaben zu Interessen und Berufszielen."
+          en: "A system recommends to learners themselves which courses, programmes or qualifications they could pursue next year, based on their own information about interests and career goals."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es wird nicht von einer Bildungseinrichtung eingesetzt, sondern hilft den Lernenden nur, ihren Bildungsweg selbst zu entscheiden."
+          en: "It is not used by an educational institution but only helps learners decide on their educational path themselves."
+        source_ref: "(229)"
+      - scenario:
+          de: "Einrichtungen, Politik und Forschung nutzen ein System, das aus verschiedenen Quellen allgemeine Entwicklungen auswertet, welche Bildungsstufen nach der weiterfuehrenden Schule gewaehlt werden."
+          en: "Institutions, policymakers and researchers use a system that analyses, from various sources, general trends in which levels of education are chosen after secondary school."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Das Ergebnis dient nicht Entscheidungen ueber die Einstufung oder die Moeglichkeiten einzelner Lernender, sondern einem breiteren Bild der Bildungslandschaft."
+          en: "The output does not serve decisions on the placement or opportunities of individual learners, but a broader picture of the educational landscape."
+        source_ref: "(229)"
+      - scenario:
+          de: "Ein System hilft Lehrkraeften, die Pruefung der Bereitschaft einer Person fuer eine Stufe vorzubereiten, indem es aus Vorbildung und Berufserfahrung Fragen und Themen erstellt, die die Lehrkraft dann selbst nutzt."
+          en: "A system helps teachers prepare the check of a person's readiness for a level by generating questions and topics from prior education and professional experience, which the teacher then uses personally."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Das Ergebnis dient der Lehrkraft fuer ihr eigenes Vorgehen und befindet nicht selbst ueber die Stufe; es faellt unter die Ausnahme fuer vorbereitende Taetigkeiten in Artikel 6 Absatz 3 Buchstabe d."
+          en: "The output serves the teacher for their own approach and does not itself decide on the level; it falls under the exemption for preparatory tasks in Article 6(3)(d)."
+        source_ref: "(229)"
+      - scenario:
+          de: "Eine Einrichtung wertet mit einem System aus, welche Empfehlungen Ausbilder Auszubildenden fuer weiterfuehrende Kurse gegeben haben, und erhaelt Vorschlaege, wie sie dabei kuenftig vorgehen koennte."
+          en: "An institution uses a system to analyse which recommendations trainers have given trainees for advanced courses, and receives suggestions as to how it could proceed in future."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Das Ergebnis verbessert das Vorgehen der Einrichtung, trifft aber keine Entscheidung ueber Einstufung oder Moeglichkeiten der Auszubildenden; Ausnahme nach Artikel 6 Absatz 3 Buchstabe b."
+          en: "The output improves the institution's approach but does not take any decision on the placement or opportunities of the trainees; exemption under Article 6(3)(b)."
+        source_ref: "(229)"
+  - citation: "AI-Act/annex-III/pt-3-d"
+    main_question:
+      de: "Beobachtet Ihr System Lernende waehrend einer Pruefung und erkennt dabei unerlaubtes Verhalten?"
+      en: "Does your system monitor learners during a test and detect prohibited behaviour in doing so?"
+    follow_up_questions:
+      - question:
+          de: "Wird Ihr System im Rahmen einer Bildungs- oder Berufsbildungseinrichtung eingesetzt, egal welcher Stufe?"
+          en: "Is your system used in the context of an educational or vocational training institution, at any level?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(210)"
+      - question:
+          de: "Richtet sich Ihr System hauptsaechlich an die Fortbildung von Lehrkraeften, Ausbildern oder anderem Lehrpersonal und nicht an Lernende?"
+          en: "Is your system mainly aimed at the further training of teachers, trainers or other teaching staff rather than at learners?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(214)"
+      - question:
+          de: "Beobachtet Ihr System Lernende waehrend einer Pruefung, vor Ort oder aus der Ferne, gleichzeitig mitlaufend oder spaeter ausgewertet?"
+          en: "Does your system monitor learners during a test, on site or remotely, live or evaluated afterwards?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(231)"
+      - question:
+          de: "Erkennt Ihr System dabei selbst Verhalten, das die Ordnung der Pruefung verletzt, beobachtet es also nicht nur, sondern meldet auch Auffaelligkeiten?"
+          en: "In doing so, does your system itself detect behaviour that violates the rules of the test, i.e. does it not only monitor but also flag irregularities?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(233)"
+      - question:
+          de: "Findet die Pruefung in einer beaufsichtigten Lage statt, etwa eine schriftliche oder muendliche Pruefung oder eine andere Pruefung in Echtzeit unter Aufsicht?"
+          en: "Does the test take place in a supervised setting, for example a written or oral exam or another real-time test under supervision?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(234)"
+      - question:
+          de: "Fuehrt diese Pruefung zu einer Bewertung oder einer Note der Person?"
+          en: "Does this test lead to an assessment or a grade for the person?"
+        on_yes: "continue"
+        on_no: "not_covered"
+        source_ref: "(234)"
+      - question:
+          de: "Prueft Ihr System nur fertig abgegebene Hausaufgaben, Aufsaetze oder andere Arbeiten auf Abschreiben oder unerlaubte Zusammenarbeit, also nach der Abgabe und ohne Beobachtung in Echtzeit?"
+          en: "Does your system only check completed and submitted homework, essays or other work for plagiarism or unauthorised collaboration, i.e. after submission and without real-time monitoring?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(235)"
+      - question:
+          de: "Beobachtet Ihr System Verhalten nur ausserhalb von Pruefungen, etwa in der Mensa, auf Gaengen oder in anderen Bereichen ohne Pruefung?"
+          en: "Does your system only monitor behaviour outside tests, for example in the cafeteria, in corridors or in other areas where no test takes place?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(235)"
+      - question:
+          de: "Verarbeitet Ihr System persoenliche Daten einer Person, um daraus auf ihre Eigenschaften zu schliessen oder ihren schulischen oder beruflichen Weg einzuschaetzen oder vorherzusagen?"
+          en: "Does your system process a person's personal data in order to draw conclusions about their characteristics or to assess or predict their educational or professional path?"
+        on_yes: "covered"
+        on_no: "continue"
+        source_ref: "(215)"
+      - question:
+          de: "Bestaetigt oder verwirft Ihr System nur einen Verdacht, den eine Aufsichtsperson zuvor selbst gefasst hat, und entscheidet die Aufsichtsperson danach selbst ueber das weitere Vorgehen?"
+          en: "Does your system only confirm or dismiss a suspicion that a proctor has previously formed personally, with the proctor then deciding personally on how to proceed?"
+        on_yes: "not_covered"
+        on_no: "continue"
+        source_ref: "(235)"
+      - question:
+          de: "Prueft Ihr System nur, ob die anwesende Person die angemeldete Person ist, ohne selbst darueber zu entscheiden, ob sie die Pruefung fortsetzen darf oder ob Folgen eintreten?"
+          en: "Does your system only check whether the person present is the registered person, without itself deciding whether they may continue the test or whether consequences follow?"
+        on_yes: "not_covered"
+        on_no: "covered"
+        source_ref: "(235)"
+    covered:
+      - text:
+          de: "Erfasst sind Systeme, die unerlaubtes Verhalten von Lernenden waehrend Pruefungen im Rahmen von oder innerhalb von Bildungs- und Berufsbildungseinrichtungen aller Stufen beobachten und erkennen."
+          en: "Covered are systems that monitor and detect prohibited behaviour of learners during tests in the context of or within educational and vocational training institutions at all levels."
+        source_ref: "(230)"
+      - text:
+          de: "Erfasst sind Pruefungen vor Ort und aus der Ferne oder im Netz, gleichzeitig mitlaufend wie spaeter ausgewertet."
+          en: "Covered are on-site and remote or online tests, whether live or evaluated afterwards."
+        source_ref: "(231)"
+      - text:
+          de: "Unerlaubtes Verhalten ist jede Handlung von Lernenden, die die Ordnung des Pruefungsvorgangs verletzt; dazu zaehlen Abschreiben fremder Texte, unerlaubtes Zusammenwirken und das Verfaelschen von Pruefungsunterlagen."
+          en: "Prohibited behaviour is any action by learners that violates the rules of the test procedure; this includes copying others' texts, unauthorised collusion and falsifying test documents."
+        source_ref: "(232)"
+      - text:
+          de: "Solche Systeme sollen typischerweise Verstoesse gegen die Redlichkeit in Pruefungslagen verhindern und koennen mit Gesichtserkennung, Auswertung des Tastenanschlags, Bildschirmbeobachtung sowie Ton- und Bildaufzeichnung arbeiten."
+          en: "Such systems are typically intended to prevent breaches of integrity in test situations and can work with facial recognition, keystroke analysis, screen monitoring and audio and video recording."
+        source_ref: "(232)"
+      - text:
+          de: "Das System muss beides tun: beobachten und erkennen; Beobachten ist dabei meist die Voraussetzung fuer das Erkennen."
+          en: "The system must do both: monitor and detect; monitoring is usually the prerequisite for detecting."
+        source_ref: "(233)"
+      - text:
+          de: "Pruefung heisst hier, dass das unerlaubte Verhalten in einem Vorgang auftreten muss, der zu einer Bewertung oder einer Note fuehrt, also im Rahmen einer abschliessenden Bewertung; entscheidend sind Zeitpunkt und Umstand des Einsatzes, naemlich eine beaufsichtigte Pruefungslage wie eine schriftliche oder muendliche Pruefung oder eine andere Pruefung in Echtzeit unter Aufsicht."
+          en: "Test here means that the prohibited behaviour must occur in a procedure that leads to an assessment or a grade, i.e. in the context of a summative assessment; what matters is the timing and circumstances of use, namely a supervised test situation such as a written or oral exam or another real-time test under supervision."
+        source_ref: "(234)"
+      - text:
+          de: "Verarbeitet das System persoenliche Daten, um persoenliche Eigenschaften einer Person zu bewerten, so ist es immer als hochriskant einzustufen, auch wenn es die Bedingungen der Ausnahmeregel in Artikel 6 Absatz 3 erfuellen wuerde."
+          en: "If the system processes personal data in order to evaluate a person's personal characteristics, it must always be classified as high-risk, even if it would meet the conditions of the exemption in Article 6(3)."
+        source_ref: "(215)"
+    not_covered:
+      - text:
+          de: "Das Pruefen von Hausaufgaben, Aufsaetzen oder anderen Arbeiten auf Abschreiben oder unerlaubte Zusammenarbeit faellt nicht darunter, weil es ueblicherweise in unbeaufsichtigter Umgebung geschieht, erst nach Fertigstellung und Abgabe stattfindet und keine Beobachtung in Echtzeit waehrend der Pruefung umfasst."
+          en: "Checking homework, essays or other work for plagiarism or unauthorised collaboration is not covered, because it usually takes place in an unsupervised environment, only after completion and submission, and does not involve real-time monitoring during the test."
+        source_ref: "(235)"
+      - text:
+          de: "Systeme, die Verhalten ausserhalb von Pruefungen beobachten, etwa in der Mensa, auf Gaengen und in anderen Bereichen ohne Pruefung, und Personal bei moeglichen Vorfaellen wie Schikane oder Belaestigung warnen, fallen nicht darunter; solche Systeme koennen aber unter Nummer 1 des Anhangs III fallen, wenn sie der Begriffsbestimmung eines Systems zur biometrischen Fernidentifizierung entsprechen."
+          en: "Systems that monitor behaviour outside tests, for example in the cafeteria, in corridors and in other areas where no test takes place, and warn staff of possible incidents such as bullying or harassment, are not covered; such systems may, however, fall under Annex III, point 1 if they meet the definition of a remote biometric identification system."
+        source_ref: "(235)"
+      - text:
+          de: "Systeme, die hauptsaechlich der Fortbildung von Lehrkraeften und Ausbildungspersonal dienen, fallen nicht unter Nummer 3; sie koennen unter Nummer 4 des Anhangs III fallen, die Beschaeftigung betrifft."
+          en: "Systems that mainly serve the further training of teachers and training staff do not fall under point 3; they may fall under Annex III, point 4, which concerns employment."
+        source_ref: "(214)"
+      - text:
+          de: "Systeme, mit denen eine Aufsichtsperson einen zuvor selbst gefassten Verdacht bestaetigen oder verwerfen laesst und die einen Bericht an diese Person geben, ueber den sie selbst weiter entscheidet, fallen unter die Ausnahme fuer das Verbessern des Ergebnisses einer bereits abgeschlossenen menschlichen Taetigkeit in Artikel 6 Absatz 3 Buchstabe b."
+          en: "Systems with which a proctor has a suspicion they have previously formed personally confirmed or dismissed, and which give a report to that person, who then decides personally on further action, fall under the exemption for improving the result of a previously completed human activity in Article 6(3)(b)."
+        source_ref: "(235)"
+      - text:
+          de: "Systeme, die waehrend einer Pruefung nur Ausweise oder biometrische Angaben verarbeiten, um festzustellen, ob die anwesende Person die angemeldete Person ist, und die nicht selbst darueber entscheiden, ob die Person fortfahren darf oder ob Folgen eintreten, fallen unter die Ausnahme fuer Verfahrensaufgaben in Artikel 6 Absatz 3 Buchstabe a."
+          en: "Systems that, during a test, only process identity documents or biometric data in order to establish whether the person present is the registered person, and that do not themselves decide whether the person may continue or whether consequences follow, fall under the exemption for procedural tasks in Article 6(3)(a)."
+        source_ref: "(235)"
+    examples:
+      - scenario:
+          de: "Eine Einrichtung beobachtet mit Gesichtserkennung, Auswertung des Tastenanschlags und Bildschirmbeobachtung Pruefungsteilnehmer in einer Pruefung zur Zertifizierung und erkennt unerlaubtes Verhalten, etwa den Zugriff auf verbotene Unterlagen oder die Verstaendigung mit anderen Personen."
+          en: "An institution uses facial recognition, keystroke analysis and screen monitoring to monitor test takers in a certification exam and detects prohibited behaviour, for example accessing prohibited materials or communicating with other persons."
+        verdict: "high_risk"
+        rationale:
+          de: "Das System beobachtet und erkennt unerlaubtes Verhalten waehrend einer Pruefung."
+          en: "The system monitors and detects prohibited behaviour during a test."
+        source_ref: "(235)"
+      - scenario:
+          de: "Eine Bildungseinrichtung wertet mit maschinellem Lernen in Echtzeit das Verhalten der Lernenden aus und erkennt Muster, die auf Taeuschung in Pruefungen im Netz hindeuten."
+          en: "An educational institution uses machine learning to analyse learners' behaviour in real time and detects patterns that indicate cheating in online tests."
+        verdict: "high_risk"
+        rationale:
+          de: "Das System beobachtet und erkennt unerlaubtes Verhalten waehrend einer Pruefung."
+          en: "The system monitors and detects prohibited behaviour during a test."
+        source_ref: "(235)"
+      - scenario:
+          de: "Eine Bildungseinrichtung erkennt mit Gesichtserkennung und Gegenstandserkennung unerlaubtes Verhalten in Pruefungen in Praesenz, etwa die Nutzung verbotener Unterlagen oder Geraete."
+          en: "An educational institution uses facial recognition and object recognition to detect prohibited behaviour in in-person tests, for example the use of prohibited materials or devices."
+        verdict: "high_risk"
+        rationale:
+          de: "Das System beobachtet und erkennt unerlaubtes Verhalten waehrend einer Pruefung."
+          en: "The system monitors and detects prohibited behaviour during a test."
+        source_ref: "(235)"
+      - scenario:
+          de: "Eine Bildungseinrichtung prueft Hausaufgaben und abgegebene Arbeiten gegen eine Sammlung bestehender Texte auf Abschreiben."
+          en: "An educational institution checks homework and submitted work for plagiarism against a database of existing texts."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es werden abgegebene Arbeiten geprueft, die in unbeaufsichtigter Umgebung entstanden sind; es gibt keine Beobachtung in Echtzeit waehrend einer Pruefung."
+          en: "Submitted work produced in an unsupervised environment is checked; there is no real-time monitoring during a test."
+        source_ref: "(235)"
+      - scenario:
+          de: "Eine Bildungseinrichtung beobachtet Verhalten in Mensa, Gaengen und anderen Bereichen ohne Pruefung und warnt Personal bei moeglichen Vorfaellen wie Schikane oder Belaestigung."
+          en: "An educational institution monitors behaviour in the cafeteria, corridors and other areas where no test takes place and warns staff of possible incidents such as bullying or harassment."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Das System beobachtet kein unerlaubtes Verhalten waehrend Pruefungen, sondern dient der Sicherheit und Ordnung; es kann aber unter Nummer 1 des Anhangs III fallen, wenn es ein System zur biometrischen Fernidentifizierung ist."
+          en: "The system does not monitor prohibited behaviour during tests but serves safety and order; it may, however, fall under Annex III, point 1 if it is a remote biometric identification system."
+        source_ref: "(235)"
+      - scenario:
+          de: "Eine Aufsichtsperson bemerkt in einer Pruefung im Netz auffaelliges Verhalten und laesst sich den Verdacht von einem System bestaetigen oder verwerfen; das System liefert einen Bericht mit den erkannten Mustern, die Aufsichtsperson entscheidet danach selbst ueber das weitere Vorgehen."
+          en: "In an online test, a proctor notices suspicious behaviour and has a system confirm or dismiss the suspicion; the system delivers a report with the detected patterns, and the proctor then decides personally on how to proceed."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Das System verbessert das Ergebnis einer bereits abgeschlossenen menschlichen Taetigkeit; Ausnahme nach Artikel 6 Absatz 3 Buchstabe b."
+          en: "The system improves the result of a previously completed human activity; exemption under Article 6(3)(b)."
+        source_ref: "(235)"
+      - scenario:
+          de: "Ein System verarbeitet waehrend einer Pruefung Ausweise oder biometrische Angaben wie einen Gesichtsabgleich, um festzustellen, ob die anwesende Person die angemeldete Person ist."
+          en: "During a test, a system processes identity documents or biometric data such as a facial comparison in order to establish whether the person present is the registered person."
+        verdict: "not_high_risk"
+        rationale:
+          de: "Es erleichtert nur die Feststellung der Person und entscheidet nicht selbst, ob die Person fortfahren darf oder ob Folgen eintreten; das entscheidet die Aufsichtsperson; Ausnahme nach Artikel 6 Absatz 3 Buchstabe a."
+          en: "It merely facilitates identifying the person and does not itself decide whether the person may continue or whether consequences follow; that is decided by the proctor; exemption under Article 6(3)(a)."
+        source_ref: "(235)"

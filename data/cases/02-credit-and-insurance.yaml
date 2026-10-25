@@ -1,0 +1,166 @@
+topic:
+  de: "Kredit, Versicherung und Sozialleistungen"
+  en: "Credit, insurance and social benefits"
+hint:
+  de: "Die Fälle sind Beispiele zum Lernen, keine Rechtsberatung. Ob eine Einstufung im Einzelfall trägt, hängt von Umständen ab, die hier nicht alle stehen können. Wo es darauf ankommt, ist es im Fall vermerkt.\n"
+  en: "The cases are examples for learning, not legal advice. Whether a classification holds in an individual case depends on circumstances that cannot all be stated here. Where it matters, this is noted in the case.\n"
+cases:
+  - id: consumer-loan-credit-scoring
+    title:
+      de: "Bonitätsbewertung für einen Ratenkredit"
+      en: "Credit scoring for an instalment loan"
+    scenario:
+      de: "Eine Regionalbank prüft Anträge auf Ratenkredite bis 25000 Euro mit einem KI-System. Es rechnet aus Kontoumsätzen, Beschäftigungsdauer und Auskunftsdaten einen Wert aus, der die Rückzahlungswahrscheinlichkeit schätzt. Unterhalb eines festgelegten Werts lehnt die Bank ab, oberhalb bewilligt sie; nur im Mittelfeld sieht ein Sachbearbeiter den Antrag an.\n"
+      en: "A regional bank checks applications for instalment loans of up to 25000 euros with an AI system. From account transactions, length of employment and credit agency data it calculates a value that estimates the probability of repayment. Below a set value the bank rejects, above it the bank approves; only in the middle range does a clerk look at the application.\n"
+    roles: [deployer]
+    classification: high_risk_annex_iii
+    rationale:
+      de: "Anhang III Nummer 5 Buchstabe b nennt KI-Systeme für die Kreditwürdigkeitsprüfung und Bonitätsbewertung natürlicher Personen. Das System tut genau das. Eine Besonderheit kommt hinzu: Nach Artikel 27 müssen Betreiber von Systemen aus Anhang III Nummer 5 Buchstabe b vor der Inbetriebnahme eine Abschätzung der Auswirkungen auf die Grundrechte durchführen — diese Pflicht trifft hier also auch ein privates Unternehmen, nicht nur Behörden.\n"
+      en: "Annex III, point 5(b) lists AI systems intended to be used to evaluate the creditworthiness of natural persons or establish their credit score. The system does exactly that. A special feature is added: under Article 27, deployers of systems referred to in Annex III, point 5(b) must carry out a fundamental rights impact assessment before putting the system into use — so here this obligation also applies to a private company, not only to public authorities.\n"
+    legal_basis: [AI-Act/annex-III/pt-5, AI-Act/art-6/para-2, AI-Act/art-26/para-1, AI-Act/art-26/para-2, AI-Act/art-26/para-11, AI-Act/art-27/para-1, GDPR/art-22, GDPR/art-35]
+    obligations:
+      - de: "Vor der Inbetriebnahme eine Abschätzung der Auswirkungen auf die Grundrechte erstellen und aufbewahren."
+        en: "Prepare and keep a fundamental rights impact assessment before putting the system into use."
+      - de: "Antragsteller darüber informieren, dass ein Hochrisiko-KI-System an der Entscheidung mitwirkt."
+        en: "Inform applicants that a high-risk AI system takes part in the decision."
+      - de: "Für die Fälle, in denen das System allein ablehnt, einen Weg zur Überprüfung durch einen Menschen einrichten."
+        en: "For the cases in which the system rejects on its own, set up a route for review by a human."
+      - de: "Antragstellern ermöglichen, ihren Standpunkt darzulegen und die Entscheidung anzufechten."
+        en: "Enable applicants to state their point of view and to contest the decision."
+      - de: "Eine Datenschutz-Folgenabschätzung prüfen."
+        en: "Consider a data protection impact assessment."
+      - de: "Die Eingabedaten auf Richtigkeit und Eignung achten und das System laufend überwachen."
+        en: "Pay attention to the accuracy and suitability of the input data and monitor the system on an ongoing basis."
+    learning_note:
+      de: "Die Abschätzung der Auswirkungen auf die Grundrechte nach Artikel 27 trifft nicht nur Behörden. Sie gilt zusätzlich für zwei private Felder, die der Gesetzgeber besonders im Blick hatte: Bonitätsbewertung sowie Risikobewertung und Preisbildung bei Lebens- und Krankenversicherungen. Wer in einem dieser beiden Felder arbeitet, muss diese Pflicht kennen — sie wird häufig übersehen, weil sie in der allgemeinen Betreiberübersicht nicht auffällt.\n"
+      en: "The fundamental rights impact assessment under Article 27 does not apply only to public authorities. It applies in addition to two private fields the legislator had particularly in mind: credit scoring, and risk assessment and pricing in life and health insurance. Anyone working in one of these two fields must know this obligation — it is often overlooked because it does not stand out in the general overview of deployer obligations.\n"
+    pitfall:
+      de: "Die volle automatische Ablehnung unterhalb des Schwellenwerts ist daneben eine automatisierte Einzelentscheidung im Sinne des Datenschutzrechts und braucht dafür eine eigene Grundlage samt Recht auf Eingreifen eines Menschen. Wer nur die KI-Verordnung prüft, übersieht diese zweite Hürde.\n"
+      en: "Fully automated rejection below the threshold is, in addition, an automated individual decision within the meaning of data protection law and needs its own basis for that, including the right to obtain human intervention. Anyone who checks only the AI Act overlooks this second hurdle.\n"
+    related_cases: [payment-fraud-detection, health-insurance-pricing, fully-automated-rejection]
+
+  - id: payment-fraud-detection
+    title:
+      de: "Betrugserkennung im Zahlungsverkehr"
+      en: "Fraud detection in payment transactions"
+    scenario:
+      de: "Dieselbe Regionalbank lässt ein zweites KI-System alle Kartenzahlungen in Echtzeit prüfen. Erkennt es ein Muster, das auf eine missbräuchlich verwendete Karte hindeutet, hält es die Zahlung an und meldet sie der Betrugsabteilung, die den Kunden anruft. Der Wert spielt bei der Kreditvergabe keine Rolle und wird dort auch nicht gespeichert.\n"
+      en: "The same regional bank has a second AI system check all card payments in real time. If it detects a pattern indicating a misused card, it holds the payment and reports it to the fraud department, which calls the customer. The value plays no role in lending and is not stored there either.\n"
+    roles: [deployer]
+    classification: high_risk_exemption
+    rationale:
+      de: "Anhang III Nummer 5 Buchstabe b nimmt KI-Systeme, die zur Aufdeckung von Finanzbetrug verwendet werden, ausdrücklich von der Hochrisiko-Einstufung aus. Diese Ausnahme steht im Gesetzestext selbst und ist nicht die allgemeine Ausnahme nach Artikel 6 Absatz 3; sie gilt, solange der Zweck wirklich die Betrugsaufdeckung ist. Entscheidend ist die saubere Trennung: Sobald der Wert in die Bonitätsbewertung einfließt, ist der Zweck nicht mehr nur Betrugsaufdeckung und die Ausnahme trägt nicht mehr.\n"
+      en: "Annex III, point 5(b) expressly excludes from the high-risk classification AI systems used for the purpose of detecting financial fraud. This exception is in the legal text itself and is not the general derogation under Article 6(3); it applies as long as the purpose really is fraud detection. What matters is clean separation: as soon as the value feeds into credit scoring, the purpose is no longer just fraud detection and the exception no longer holds.\n"
+    legal_basis: [AI-Act/annex-III/pt-5, AI-Act/art-6/para-2, AI-Act/art-4, GDPR/art-22, GDPR/art-5]
+    obligations:
+      - de: "Den Zweck Betrugsaufdeckung festschreiben und technisch dafür sorgen, dass der Wert nicht in die Kreditentscheidung gelangt."
+        en: "Lay down fraud detection as the purpose and ensure technically that the value does not reach the credit decision."
+      - de: "Dokumentieren, warum die Ausnahme in Anspruch genommen wird."
+        en: "Document why the exception is relied on."
+      - de: "Für die KI-Kompetenz der damit arbeitenden Beschäftigten sorgen."
+        en: "Ensure AI literacy of the employees working with it."
+      - de: "Für angehaltene Zahlungen eine schnelle Klärung durch Menschen bereithalten."
+        en: "Provide prompt clarification by humans for held payments."
+      - de: "Datenschutzrechtlich prüfen, ob das Anhalten einer Zahlung als automatisierte Einzelentscheidung zu behandeln ist."
+        en: "Check under data protection law whether holding a payment is to be treated as an automated individual decision."
+    learning_note:
+      de: "Es gibt zwei verschiedene Arten von Ausnahmen, und sie werden oft verwechselt. Die eine steht im Anhang selbst und nimmt einen Zweck aus dem Bereich heraus — so hier die Betrugsaufdeckung. Die andere ist Artikel 6 Absatz 3 und greift nur, wenn das System die Entscheidung nicht wesentlich beeinflusst. Die erste trägt weiter, verlangt aber Zweckdisziplin: Sie fällt, sobald das Ergebnis für etwas anderes genutzt wird. Zweckbindung ist hier keine Formalie, sondern der Grund, aus dem die Ausnahme überhaupt besteht.\n"
+      en: "There are two different kinds of exceptions, and they are often confused. One is in the Annex itself and takes a purpose out of the area — here, fraud detection. The other is Article 6(3) and applies only if the system does not materially influence the decision. The first goes further but demands purpose discipline: it falls as soon as the result is used for something else. Purpose limitation is not a formality here but the very reason the exception exists.\n"
+    pitfall:
+      de: "Der Betrugswert wird im Datenhaushalt abgelegt und wandert später als praktisches Zusatzmerkmal in die Kreditprüfung. Damit entsteht nachträglich ein Hochrisiko-Einsatz, den niemand beschlossen hat.\n"
+      en: "The fraud value is stored in the data pool and later moves into the credit check as a handy additional feature. This creates, after the fact, a high-risk use that nobody decided on.\n"
+    related_cases: [consumer-loan-credit-scoring, manufacturing-quality-inspection, training-on-customer-data]
+
+  - id: health-insurance-pricing
+    title:
+      de: "Risikobewertung und Beitrag in der privaten Krankenversicherung"
+      en: "Risk assessment and premium in private health insurance"
+    scenario:
+      de: "Ein privater Krankenversicherer bewertet Neuanträge mit einem KI-System. Aus den Angaben im Gesundheitsfragebogen und dem Alter schätzt es die erwarteten Leistungsausgaben und schlägt daraus einen Risikozuschlag vor, den die Antragsbearbeitung übernimmt oder nach Rücksprache mit dem medizinischen Dienst ändert.\n"
+      en: "A private health insurer assesses new applications with an AI system. From the answers in the health questionnaire and the age, it estimates the expected benefit costs and uses this to propose a risk surcharge, which application processing adopts or changes after consulting the medical service.\n"
+    roles: [deployer]
+    classification: high_risk_annex_iii
+    rationale:
+      de: "Anhang III Nummer 5 Buchstabe c nennt KI-Systeme für die Risikobewertung und Preisbildung in Bezug auf natürliche Personen bei Lebens- und Krankenversicherungen. Beides trifft zu. Wie bei der Bonitätsbewertung gilt auch hier die Pflicht zur Abschätzung der Auswirkungen auf die Grundrechte nach Artikel 27. Dass die Bearbeitung den Vorschlag ändern kann, ändert die Einstufung nicht, weil das System die Preisbildung wesentlich beeinflusst.\n"
+      en: "Annex III, point 5(c) lists AI systems intended to be used for risk assessment and pricing in relation to natural persons in the case of life and health insurance. Both apply. As with credit scoring, the obligation to carry out a fundamental rights impact assessment under Article 27 applies here too. That processing can change the proposal does not change the classification, because the system materially influences pricing.\n"
+    legal_basis: [AI-Act/annex-III/pt-5, AI-Act/art-6/para-2, AI-Act/art-26/para-2, AI-Act/art-26/para-11, AI-Act/art-27/para-1, GDPR/art-9, GDPR/art-22, GDPR/art-35]
+    obligations:
+      - de: "Abschätzung der Auswirkungen auf die Grundrechte vor der Inbetriebnahme erstellen."
+        en: "Prepare a fundamental rights impact assessment before putting the system into use."
+      - de: "Antragsteller über die Mitwirkung des Systems informieren."
+        en: "Inform applicants that the system takes part."
+      - de: "Menschliche Aufsicht mit echter Änderungsbefugnis einrichten, nicht nur ein Bestätigungsfeld."
+        en: "Set up human oversight with a real power to change the result, not just a confirmation box."
+      - de: "Für die Verarbeitung der Gesundheitsangaben die besonderen Anforderungen an Gesundheitsdaten beachten."
+        en: "For processing the health information, observe the special requirements for health data."
+      - de: "Die Vorschläge regelmäßig auf unzulässige Benachteiligung prüfen."
+        en: "Regularly check the proposals for unlawful discrimination."
+    learning_note:
+      de: "Nicht jede Versicherung fällt unter diesen Bereich: Der Anhang nennt Lebens- und Krankenversicherung, nicht Versicherungen überhaupt. Eine Kfz- oder Hausratversicherung ist von Anhang III Nummer 5 Buchstabe c nicht erfasst. Der Grund liegt auf der Hand, wenn man den Zweck der Vorschrift liest: Es geht um den Zugang zu grundlegenden Diensten. Beim Lesen von Anhang III lohnt es sich deshalb, auf jedes einschränkende Wort zu achten — die Bereiche sind enger gefasst, als die Überschriften vermuten lassen.\n"
+      en: "Not every insurance falls under this area: the Annex names life and health insurance, not insurance in general. Motor or household contents insurance is not covered by Annex III, point 5(c). The reason is obvious once you read the purpose of the provision: it is about access to essential services. When reading Annex III it is therefore worth paying attention to every restrictive word — the areas are drawn more narrowly than the headings suggest.\n"
+    pitfall:
+      de: "Der Versicherer überträgt die Bewertung ungeprüft auf andere Versicherungszweige und nimmt dort unnötige Pflichten auf sich — oder er schließt umgekehrt aus der fehlenden Nennung der Kfz-Versicherung, dass auch in der Krankenversicherung nichts gelte.\n"
+      en: "The insurer transfers the assessment unchecked to other lines of insurance and takes on unnecessary obligations there — or, conversely, concludes from the absence of motor insurance in the list that nothing applies in health insurance either.\n"
+    related_cases: [consumer-loan-credit-scoring, telematics-car-insurance, medical-device-software]
+
+  - id: telematics-car-insurance
+    title:
+      de: "Telematiktarif in der Kfz-Versicherung"
+      en: "Telematics tariff in motor insurance"
+    scenario:
+      de: "Ein Versicherer bietet einen günstigeren Kfz-Tarif für Fahrer, die eine App mitlaufen lassen. Ein KI-System bewertet Bremsverhalten, Beschleunigung und Nachtfahrten und errechnet daraus einen Fahrwert, der über den Rabatt im nächsten Jahr entscheidet.\n"
+      en: "An insurer offers a cheaper motor tariff for drivers who let an app run along. An AI system evaluates braking behaviour, acceleration and night driving and from this calculates a driving score that decides the discount for the following year.\n"
+    roles: [provider, deployer]
+    classification: minimal
+    rationale:
+      de: "Anhang III Nummer 5 Buchstabe c erfasst Risikobewertung und Preisbildung bei Lebens- und Krankenversicherungen; die Kfz-Versicherung ist dort nicht genannt, und auch kein anderer Bereich von Anhang III trifft zu. Damit bleibt es bei der Pflicht zur KI-Kompetenz nach Artikel 4. Die Bewertung von Fahrverhalten ist dennoch eine datenschutzrechtlich heikle Verarbeitung mit Bewegungsdaten, und der Rabatt kann eine automatisierte Einzelentscheidung sein — das ist eine eigene Prüfung außerhalb der KI-Verordnung.\n"
+      en: "Annex III, point 5(c) covers risk assessment and pricing in life and health insurance; motor insurance is not named there, and no other area of Annex III applies either. This leaves the AI literacy obligation under Article 4. Evaluating driving behaviour is nonetheless a sensitive processing under data protection law involving location data, and the discount can be an automated individual decision — that is a separate check outside the AI Act.\n"
+    legal_basis: [AI-Act/annex-III/pt-5, AI-Act/art-4, GDPR/art-22, GDPR/art-5, GDPR/art-35]
+    obligations:
+      - de: "Für die KI-Kompetenz der mit dem System arbeitenden Beschäftigten sorgen."
+        en: "Ensure AI literacy of the employees working with the system."
+      - de: "Die datenschutzrechtliche Grundlage für die laufende Erhebung der Fahrdaten klären."
+        en: "Clarify the legal basis under data protection law for the ongoing collection of driving data."
+      - de: "Die Einstufung erneut prüfen, wenn der Fahrwert für andere Zwecke verwendet wird."
+        en: "Re-check the classification if the driving score is used for other purposes."
+      - de: "Kunden verständlich erklären, welche Daten erhoben werden und wie sie den Rabatt beeinflussen."
+        en: "Explain to customers in understandable terms which data are collected and how they affect the discount."
+    learning_note:
+      de: "Nicht hochriskant heißt nicht unreguliert, und es heißt erst recht nicht unbedenklich. Hier greift von der KI-Verordnung fast nichts, vom Datenschutzrecht aber viel. Wer die Risikoklasse als einziges Maß nimmt, kommt bei genau solchen Fällen zum falschen Ergebnis — die Einstufung beantwortet nur die Frage, welche Pflichten aus der KI-Verordnung folgen, nicht die Frage, ob das Vorhaben in Ordnung ist.\n"
+      en: "Not high-risk does not mean unregulated, and still less does it mean harmless. Here almost nothing of the AI Act applies, but a great deal of data protection law does. Anyone who takes the risk class as the only measure reaches the wrong result in exactly such cases — the classification only answers the question which obligations follow from the AI Act, not the question whether the project is acceptable.\n"
+    pitfall:
+      de: "Aus \"fällt nicht unter Anhang III\" wird im Haus die Botschaft \"unkritisch, kann so laufen\". Die Prüfung der Datenverarbeitung unterbleibt dann ganz, obwohl sie hier die eigentliche Hürde ist.\n"
+      en: "Within the company, \"does not fall under Annex III\" turns into the message \"uncritical, can go ahead as is\". The check of the data processing is then skipped entirely, although here it is the real hurdle.\n"
+    related_cases: [health-insurance-pricing, customer-social-scoring, predictive-maintenance]
+
+  - id: municipal-application-prescreening
+    title:
+      de: "Vorprüfung von Anträgen in einer Kommunalbehörde"
+      en: "Preliminary review of applications in a municipal authority"
+    scenario:
+      de: "Eine Stadtverwaltung prüft Anträge auf eine kommunale Unterstützungsleistung mit einem KI-System vor. Es liest die eingereichten Unterlagen, vergleicht die Angaben mit den Bewilligungsvoraussetzungen und kennzeichnet Anträge, bei denen die Voraussetzungen aus seiner Sicht nicht erfüllt sind. Die Sachbearbeitung arbeitet die gekennzeichneten Anträge zuerst ab und lehnt sie meist ab.\n"
+      en: "A city administration pre-checks applications for a municipal assistance benefit with an AI system. It reads the submitted documents, compares the information with the eligibility requirements and flags applications where, in its view, the requirements are not met. Case handlers process the flagged applications first and mostly reject them.\n"
+    roles: [deployer]
+    classification: high_risk_annex_iii
+    rationale:
+      de: "Anhang III Nummer 5 Buchstabe a erfasst KI-Systeme, die von Behörden oder in deren Namen verwendet werden, um zu beurteilen, ob Menschen Anspruch auf grundlegende öffentliche Unterstützungsleistungen haben und ob solche Leistungen zu gewähren, einzuschränken, zu widerrufen oder zurückzufordern sind. Die Kennzeichnung ist eine solche Beurteilung. Dass sie formal nur vorsortiert, trägt nicht, weil die Kennzeichnung die Ablehnung in der Praxis vorzeichnet. Als Behörde trifft die Stadt zudem die Pflicht zur Abschätzung der Auswirkungen auf die Grundrechte nach Artikel 27.\n"
+      en: "Annex III, point 5(a) covers AI systems intended to be used by public authorities or on their behalf to evaluate the eligibility of natural persons for essential public assistance benefits and services, and to grant, reduce, revoke or reclaim such benefits and services. The flagging is such an evaluation. That it formally only pre-sorts does not hold, because in practice the flagging predetermines the rejection. As a public authority, the city is also subject to the obligation to carry out a fundamental rights impact assessment under Article 27.\n"
+    legal_basis: [AI-Act/annex-III/pt-5, AI-Act/art-6/para-2, AI-Act/art-6/para-3, AI-Act/art-26/para-2, AI-Act/art-26/para-11, AI-Act/art-27/para-1, GDPR/art-22]
+    obligations:
+      - de: "Abschätzung der Auswirkungen auf die Grundrechte vor der Inbetriebnahme durchführen."
+        en: "Carry out a fundamental rights impact assessment before putting the system into use."
+      - de: "Antragsteller über die Mitwirkung des Systems informieren."
+        en: "Inform applicants that the system takes part."
+      - de: "Sicherstellen, dass gekennzeichnete Anträge inhaltlich vollständig geprüft werden und nicht nur schneller abgelehnt."
+        en: "Ensure that flagged applications are examined fully on their merits and not just rejected faster."
+      - de: "Auswerten, wie oft die Sachbearbeitung der Kennzeichnung widerspricht — bleibt diese Zahl bei null, ist die Aufsicht nur formal."
+        en: "Evaluate how often case handlers disagree with the flagging — if this number stays at zero, oversight is only formal."
+      - de: "Ablehnungen so begründen, dass der Antragsteller sie anfechten kann."
+        en: "Give reasons for rejections in a way that allows the applicant to contest them."
+    learning_note:
+      de: "Eine Vorsortierung, der in der Praxis immer gefolgt wird, ist eine Entscheidung. Ob die menschliche Aufsicht wirkt, lässt sich messen: Wie oft weicht der Mensch vom Vorschlag ab? Diese Zahl ist der beste Selbsttest, den ein Betreiber hat, und sie ist auf jeden eigenen Fall anwendbar. Liegt sie dauerhaft bei null, ist nicht die Technik besonders gut, sondern die Aufsicht nicht vorhanden.\n"
+      en: "A pre-sorting that is always followed in practice is a decision. Whether human oversight works can be measured: how often does the human deviate from the proposal? This number is the best self-test a deployer has, and it can be applied to any case of your own. If it stays at zero over time, it is not that the technology is especially good, but that oversight is not there.\n"
+    pitfall:
+      de: "Die Behörde verlässt sich darauf, dass die Ausnahme nach Artikel 6 Absatz 3 für eine vorbereitende Aufgabe greift. Vorbereitend ist eine Aufgabe nur, wenn die Bewertung danach wirklich noch stattfindet — eine Kennzeichnung, die die Ablehnung festlegt, ist keine Vorbereitung.\n"
+      en: "The authority relies on the derogation under Article 6(3) for a preparatory task. A task is preparatory only if the assessment really still takes place afterwards — a flagging that determines the rejection is not preparation.\n"
+    related_cases: [inbound-mail-routing, consumer-loan-credit-scoring, grading-pattern-deviation]

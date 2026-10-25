@@ -1,0 +1,63 @@
+AI Act Compliance Helper
+Copyright 2026 Daniel Hütte
+
+This work is licensed under the Apache License, Version 2.0. The licence text is in the file
+LICENSE.
+
+This notice concerns the licence situation only. What the tool is not, and that nobody is
+liable for its answers, is set out in docs/liability.md.
+
+
+BUNDLED LEGAL TEXTS - NOT BY THE AUTHOR OF THIS WORK
+
+The legal corpus in data/processed/corpus.jsonl (German) and data/processed/corpus.en.jsonl
+(English), the texts derived from it in the search indexes data/processed/search_index.*, and
+the raw files fetched into data/raw contain legal text that does not come from the authors of
+this work. The Apache License does not apply to it; the legal position of each source does:
+
+1. Regulation (EU) 2024/1689 (Artificial Intelligence Act) and Regulation (EU) 2016/679
+   (General Data Protection Regulation), in German and English - official texts of the
+   European Union. Reuse of Commission documents is governed by Commission Decision
+   2011/833/EU. Only the text published in the Official Journal of the European Union is
+   authentic; the version bundled here is a machine-split copy and not an official
+   publication.
+   Source: https://eur-lex.europa.eu, fetched through the Cellar service of the Publications
+   Office of the European Union.
+
+2. Bundesdatenschutzgesetz (German Federal Data Protection Act) - statute of the Federal
+   Republic of Germany. Under section 5(1) of the German Copyright Act (Urheberrechtsgesetz),
+   statutes are official works without copyright protection. The presentation on
+   gesetze-im-internet.de is provided by the Federal Ministry of Justice and juris GmbH.
+   Source: https://www.gesetze-im-internet.de/bdsg_2018/
+   The English text is the translation by the Language Service of the Federal Ministry of the
+   Interior. Only the German version is legally binding.
+   Source: https://www.gesetze-im-internet.de/englisch_bdsg/
+
+3. The bundled corpus is built entirely from the sources above. The scripts
+   scripts/fetch_ai_act.py and scripts/fetch_gdpr.py can fetch the German text article by
+   article from artificialintelligenceact.eu and dsgvo-gesetz.de as a fallback when the
+   Official Journal cannot be reached. A corpus built that way contains the editorial
+   preparation of these sites, which belongs to their operators. Which source contributed how
+   much is listed in docs/data-sources.md.
+
+Whoever reuses this data checks the legal position of the sources themselves. The Apache
+License of this work grants no rights to it.
+
+
+THIRD-PARTY SOFTWARE AND MODELS
+
+The libraries are listed with their versions in pyproject.toml; they are under their own
+licences and are not bundled in this repository.
+
+Two models are used but not bundled:
+
+* BAAI/bge-m3 - embedding model for the search and for matching free-text descriptions.
+  The search indexes in data/processed were computed with it.
+  https://huggingface.co/BAAI/bge-m3
+* BAAI/bge-reranker-v2-m3 - cross-encoder for reranking search hits and purpose matches.
+  Optional; without it, the order of the rank fusion stays.
+  https://huggingface.co/BAAI/bge-reranker-v2-m3
+
+Their licences are not reproduced here, because they may change at the provider. Whoever
+distributes them, for example in a container image built with WITH_SEARCH_MODEL=1, checks
+their terms at the source.

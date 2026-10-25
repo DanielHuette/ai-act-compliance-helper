@@ -1,0 +1,315 @@
+# Structure of the walkthrough — which question is asked when.
+#
+# The questions themselves are in data/rules/question_flow/*.yaml and are taken line
+# by line from the draft Commission guidelines of 19 May 2026, each
+# with its paragraph number. This file only sets the order and states which
+# question is a gate and which only informs.
+#
+# Why this separation: a question such as "Do you want to classify the system as
+# not high-risk solely because a human reviews it at the end?" is not a
+# fork in the road. It clears up a common misconception. If the walkthrough treated it
+# as a gate, the user could answer their way out of the assessment
+# with a yes — exactly what the official text rules out.
+as_of: "2026-10-04"
+
+# The preliminary questions, in this order. kind "gate" means: the answer steers the
+# further path. kind "note" means: it is displayed, not asked.
+preliminary_questions:
+  - id: is-ai-system
+    kind: gate
+    on_no: end
+    closing_text:
+      de: "Was Sie beschreiben, ist nach Artikel 3 Nummer 1 kein KI-System. Die KI-Verordnung gilt dafür nicht. Die Datenschutz-Grundverordnung kann trotzdem gelten, wenn personenbezogene Daten verarbeitet werden.\n"
+      en: "What you describe is not an AI system within the meaning of Article 3(1). The AI Act does not apply to it. The General Data Protection Regulation may apply nonetheless if personal data are processed.\n"
+  - id: natural-persons
+    kind: gate
+    applies_to: [AI-Act/annex-III/pt-1-a, AI-Act/annex-III/pt-1-b, AI-Act/annex-III/pt-1-c, AI-Act/annex-III/pt-3-a, AI-Act/annex-III/pt-3-b, AI-Act/annex-III/pt-3-c, AI-Act/annex-III/pt-3-d, AI-Act/annex-III/pt-4-a, AI-Act/annex-III/pt-4-b, AI-Act/annex-III/pt-5-a, AI-Act/annex-III/pt-5-b, AI-Act/annex-III/pt-5-c, AI-Act/annex-III/pt-5-d, AI-Act/annex-III/pt-6-a, AI-Act/annex-III/pt-6-b, AI-Act/annex-III/pt-6-c, AI-Act/annex-III/pt-6-d, AI-Act/annex-III/pt-6-e, AI-Act/annex-III/pt-7-a, AI-Act/annex-III/pt-7-b, AI-Act/annex-III/pt-7-c, AI-Act/annex-III/pt-7-d, AI-Act/annex-III/pt-8-a, AI-Act/annex-III/pt-8-b]
+  - id: on-behalf-of-authority
+    kind: gate
+    applies_to: [AI-Act/annex-III/pt-5-a, AI-Act/annex-III/pt-6-a, AI-Act/annex-III/pt-6-b, AI-Act/annex-III/pt-6-c, AI-Act/annex-III/pt-6-d, AI-Act/annex-III/pt-6-e, AI-Act/annex-III/pt-7-a, AI-Act/annex-III/pt-7-b, AI-Act/annex-III/pt-7-c, AI-Act/annex-III/pt-7-d, AI-Act/annex-III/pt-8-a]
+    supplementary_only: true
+  - id: human-involvement
+    kind: note
+  - id: part-of-composite-product
+    kind: note
+  - id: intended-purpose
+    kind: note
+  - id: where-permitted-by-law
+    kind: note
+
+# The areas in the order in which they are asked.
+#
+# Each area carries a short question. It decides nothing — it only leads
+# to where further questions are asked. Without it, 31 legal questions stood on one
+# sheet; this way there are eight sentences that anyone can answer about their own company,
+# and the legal questions only come in the chosen area.
+# That is also why these eight sentences carry no paragraph number: they do not come
+# from the official text, they only sort. The order follows
+# how common the areas are in business, not the numbering of the Annex: anyone
+# asked about law enforcement first assumes the helper was not made for them.
+areas:
+  - citation: AI-Act/annex-III/pt-4
+    title:
+      de: "Beschäftigung und Personal"
+      en: "Employment and personnel"
+    question:
+      de: "Hat Ihr System mit Beschäftigten, Bewerbern oder Selbstständigen zu tun, die für Sie oder Ihre Kunden arbeiten?"
+      en: "Does your system deal with employees, job applicants or self-employed persons who work for you or your customers?"
+  - citation: AI-Act/annex-III/pt-5
+    title:
+      de: "Kredit, Versicherung, Sozialleistungen, Notrufe"
+      en: "Credit, insurance, social benefits, emergency calls"
+    question:
+      de: "Geht es bei Ihrem System um Geld oder Daseinsvorsorge für einzelne Menschen — Kredite, Lebens- oder Krankenversicherung, Sozialleistungen oder Notrufe?"
+      en: "Is your system about money or essential services for individual people — credit, life or health insurance, social benefits or emergency calls?"
+  - citation: AI-Act/annex-III/pt-1
+    title:
+      de: "Gesichter, Körpermerkmale, Gefühle"
+      en: "Faces, physical features, emotions"
+    question:
+      de: "Verarbeitet Ihr System Körpermerkmale von Menschen — Gesicht, Stimme, Fingerabdruck, Gang, Mimik?"
+      en: "Does your system process people's physical features — face, voice, fingerprint, gait, facial expressions?"
+  - citation: AI-Act/annex-III/pt-3
+    title:
+      de: "Schule, Hochschule, Ausbildung"
+      en: "School, university, vocational training"
+    question:
+      de: "Wird Ihr System in einer Schule, Hochschule oder Ausbildungseinrichtung eingesetzt, oder wirkt es auf Noten, Zeugnisse oder die Aufnahme ein?"
+      en: "Is your system used in a school, university or training institution, or does it affect marks, certificates or admission?"
+  - citation: AI-Act/annex-III/pt-2
+    title:
+      de: "Strom, Gas, Wasser, Wärme, Straßenverkehr"
+      en: "Electricity, gas, water, heating, road traffic"
+    question:
+      de: "Wird Ihr System beim Betrieb von Strom-, Gas-, Wasser- oder Wärmeversorgung, im Straßenverkehr oder in kritischer digitaler Infrastruktur eingesetzt?"
+      en: "Is your system used in the operation of electricity, gas, water or heating supply, in road traffic or in critical digital infrastructure?"
+  - citation: AI-Act/annex-III/pt-8
+    title:
+      de: "Gerichte und Wahlen"
+      en: "Courts and elections"
+    question:
+      de: "Wirkt Ihr System in einem Gerichts- oder Schlichtungsverfahren mit, oder soll es Wahlen oder Abstimmungen beeinflussen?"
+      en: "Does your system take part in court or alternative dispute resolution proceedings, or is it intended to influence elections or referendums?"
+  - citation: AI-Act/annex-III/pt-6
+    title:
+      de: "Polizei und Strafverfolgung"
+      en: "Police and law enforcement"
+    question:
+      de: "Wird Ihr System von der Polizei oder einer Strafverfolgungsbehörde eingesetzt — oder von Ihnen in deren Auftrag?"
+      en: "Is your system used by the police or a law enforcement authority — or by you on their behalf?"
+  - citation: AI-Act/annex-III/pt-7
+    title:
+      de: "Grenze, Asyl, Aufenthalt"
+      en: "Border, asylum, residence"
+    question:
+      de: "Wird Ihr System an der Grenze, im Asylverfahren oder bei Aufenthaltsfragen eingesetzt — oder von Ihnen im Auftrag einer solchen Behörde?"
+      en: "Is your system used at the border, in asylum procedures or on residence matters — or by you on behalf of such an authority?"
+
+# Points whose main question is a gate for their entire area. If the
+# answer is no, the area is dropped together with its sub-points.
+gates_by_area:
+  AI-Act/annex-III/pt-4: AI-Act/annex-III/pt-4
+  AI-Act/annex-III/pt-6: AI-Act/annex-III/pt-6-preliminary
+  AI-Act/annex-III/pt-7: AI-Act/annex-III/pt-7-preliminary
+
+# Annex I — high risk through product safety law, Article 6(1).
+#
+# This path is built differently from Annex III and therefore needs its own
+# structure: Article 6(2) applies if ONE of the eight areas fits.
+# Article 6(1) requires THREE things to come together — a category
+# from Annex I, the role as a safety component or as the product itself, and
+# a third-party conformity assessment. If one is missing, the
+# system is not high-risk under Annex I, even if the rest applies.
+#
+# Only a yes affirms a category or a condition, and only a yes to an exclusion
+# excludes. A "don't know" is no yes: if everything else holds and only such
+# answers are open, the finding is "conditionally high-risk" with the sentence in
+# when_open, never a high-risk finding the user did not confirm and never a
+# silent "not high-risk".
+#
+# It is checked before Annex III because Article 6(1) comes before paragraph 2.
+annex_i:
+  gate: product-under-annex-i
+  conditions:
+    - group: role
+      any_of: [ai-system-is-product, part-of-regulated-product]
+    - group: safety-component
+      any_of: [safety-function, failure-endangers-safety]
+      exclusion: [comfort-or-efficiency-only]
+      # Article 6(1)(a) requires: safety component of a
+      # product OR itself such a product. If the system is itself the
+      # product, the question about the safety component is moot.
+      # Previously the walkthrough required both and failed a system that is itself
+      # a regulated product.
+      waived_when: [ai-system-is-product]
+    - group: third-party-assessment
+      any_of: [third-party-assessment-required, enhanced-pre-market-control]
+  # These questions are not asked: they only summarise what the
+  # walkthrough counts itself, or they refer the user to the
+  # legal text instead of asking about their system.
+  skipped_questions: [both-conditions-met, where-is-assessment-procedure, module-a-with-standards-only, safety-component, supplied-separately]
+  # {product} is the product category the user affirmed, else product_fallback.
+  closing_text:
+    de: "Hohes Risiko über das Produktsicherheitsrecht: {product}. Der Filter des Artikels 6 Absatz 3 gilt hier nicht — er betrifft nur Anhang III."
+    en: "High risk by way of product safety legislation: {product}. The filter in Article 6(3) does not apply here — it concerns Annex III only."
+  product_fallback:
+    de: "Produkt nach Anhang I"
+    en: "product covered by Annex I"
+  when_open:
+    de: "Ihr System erfüllt jede Voraussetzung des Artikels 6 Absatz 1, die Sie beantwortet haben; offen ist, was Sie nicht beantworten konnten. Trifft es zu, ist Ihr System über das Produktsicherheitsrecht hochriskant: {product}. Klären Sie die offenen Punkte mit dem Hersteller des Produkts oder mit der benannten Stelle."
+    en: "Your system meets every condition of Article 6(1) that you answered; what you could not answer is still open. If it applies, your system is high-risk by way of product safety legislation: {product}. Clarify the open points with the manufacturer of the product or with the notified body."
+
+# Areas whose points must apply TOGETHER, not one of many.
+#
+# Most areas of Annex III list points: point 4(a)
+# OR (b), point 5(a) OR (b) OR (c) OR (d). Point 2 is
+# not built like that. There the official text requires three things at once:
+# one of the six supply sectors, a deployer that a Member State has
+# formally designated as a critical entity, and a system that itself
+# performs a protective task. If one is missing, it is not a safety component within
+# the meaning of point 2 — a traffic light control that only provides information no more
+# than a protection system at a non-designated deployer.
+#
+# Measured, the wrong mapping cost ten of the official examples: read as
+# an enumeration, point 2 could produce NO match AT ALL, because
+# none of its questions alone leads to a match.
+compounds:
+  - area: AI-Act/annex-III/pt-2
+    risk_class: high_risk_annex_iii
+    citation: AI-Act/annex-III/pt-2
+    special_case_main_question_contains: Kernenergie
+    # A condition that the user often CANNOT know at all.
+    #
+    # Paragraph (190) of the guidelines requires that the deployer has been formally
+    # designated as a critical entity by its Member State. Paragraph
+    # (191) states in the same breath that this designation does not have to be disclosed
+    # to the provider — a software company that sells grid control systems
+    # usually does not learn of it.
+    #
+    # A no to a question the user cannot answer is
+    # false information: measured, ten official examples on point 2 thus fell
+    # to "not high-risk", although the Commission lists them as high-risk.
+    # If the question stays open and the rest holds, the finding is therefore
+    # "conditionally high-risk", with the sentence that says what it depends on.
+    may_stay_open:
+      main_question_contains: "förmlich als kritische Einrichtung"
+      source_ref: "(190), (191)"
+      when_open:
+        de: "Ihr System erfüllt alle übrigen Voraussetzungen der Nummer 2. Hochriskant ist es, sobald ein Betreiber es einsetzt, den sein Mitgliedstaat förmlich als kritische Einrichtung benannt hat. Diese Benennung muss Ihnen als Anbieter nicht offengelegt werden. Rechnen Sie damit, dass ein solcher Betreiber zu Ihren Kunden gehört, so gelten die Pflichten für Hochrisiko-KI-Systeme."
+        en: "Your system meets all other conditions of point 2. It is high-risk as soon as it is used by a deployer that its Member State has formally designated as a critical entity. This designation does not have to be disclosed to you as the provider. If you expect such a deployer to be among your customers, the obligations for high-risk AI systems apply."
+
+# Letters whose official text names ALTERNATIVES, each sufficient on its own.
+#
+# Point 4(a) covers recruitment or selection "in particular to place targeted job
+# advertisements, to analyse and filter job applications, and to evaluate
+# candidates"; point 4(b) covers decisions on terms, promotion or termination,
+# task allocation, and monitoring or evaluation; point 5(b) covers creditworthiness
+# or a credit score; point 5(c) risk assessment or pricing ("eines von beiden
+# genügt", paragraph 311); point 8(a) a judicial authority or alternative dispute
+# resolution.
+#
+# A question listed under one alternative decides only that alternative: its
+# exclusions and its conditions do not reach the others. A tool that ranks CVs
+# places no job ads, so a "no" to "does the ad show a specific vacancy?" must not
+# drop it from point 4(a). Questions not listed apply to every alternative. The
+# letter applies when one alternative applies together with the shared questions.
+# A question under "required" belongs to its alternative and ends it with a no:
+# without placing job ads there is no targeted job advertising.
+#
+# Each entry is a distinctive part of the German wording of exactly one follow-up
+# question of the letter; loading fails if an entry matches none or several.
+alternatives:
+  - citation: AI-Act/annex-III/pt-4-a
+    branches:
+      recruitment_or_selection:
+        questions:
+          - "das Auswahlverfahren selbst"
+          - "mögliche Bewerber in Datenbanken"
+          - "Sichtet Ihr System Lebensläufe"
+          - "Selbstständige durch ihren Auftraggeber ausgewählt"
+          - "Erzeugt Ihr System Eignungswerte"
+          - "Schätzt Ihr System Eignung, Verdienst oder Potenzial"
+          - "Beeinflusst die Ausgabe Ihres Systems die Entscheidung merklich"
+          - "im Rahmen der Einarbeitung"
+      targeted_job_ads:
+        required:
+          - "Platziert Ihr System Stellenanzeigen gezielt"
+        questions:
+          - "Substanz des Einstellungsverfahrens"
+          - "gezielten Platzierung von Stellenanzeigen auf Profilbildung"
+          - "auch ohne Profilbildung"
+          - "konkrete offene Stelle"
+          - "denen die Anzeige gezeigt wird"
+          - "Stellenanzeigen ausschließlich nach dem Umfeld"
+      tender_offers:
+        questions:
+          - "Antworten auf Ausschreibungen"
+  - citation: AI-Act/annex-III/pt-4-b
+    branches:
+      decisions_on_terms_promotion_termination:
+        questions:
+          - "grundlegende Bestandteile des Arbeitsvertrags"
+          - "wesentliche Rechte und Pflichten aus dem Vertrag oder Verhältnis"
+          - "Betrifft Ihr System eine Beförderung"
+          - "Betrifft Ihr System die Beendigung"
+          - "Kündigung, Stellenabbau oder die Nichtverlängerung"
+          - "Plattformkonto endgültig"
+          - "Entscheidet Ihr System selbst"
+          - "alltägliche Betriebs- oder Organisationsentscheidung"
+          - "befristeter Vertrag demnächst ausläuft"
+      task_allocation:
+        questions:
+          - "Weist Ihr System einzelne Aufgaben zu"
+          - "Stützt sich die Aufgabenzuweisung auf individuelles Verhalten"
+          - "bei der Aufgabenzuweisung Verhaltenskennzahlen"
+          - "Betrifft das verwendete Merkmal persönliche Eigenschaften"
+          - "Ersatzmerkmal für Staatsangehörigkeit"
+          - "Aufgabenzuweisung ausschließlich auf sachliche"
+      monitoring_and_evaluation:
+        questions:
+          - "regelmäßig und planmäßig"
+          - "Misst Ihr System Leistung in Mengen"
+          - "Rückmeldungswerte, Leistungseinschätzungen"
+          - "Erfasst Ihr System Verhalten wie Pünktlichkeit"
+          - "Schichten selten annehmen"
+          - "körperliche Werte wie Muskelbewegung"
+          - "äußere rechtliche oder aufsichtsrechtliche Pflichten"
+          - "aus medizinischen Gründen, aus Sicherheitsgründen"
+          - "zu zusätzlicher Produktivität zu drängen"
+          - "Teilt Ihr System Leistungsdaten"
+      training:
+        questions:
+          - "Leistung in Schulungen"
+          - "freiwillige oder zusätzliche Schulung"
+  - citation: AI-Act/annex-III/pt-5-b
+    branches:
+      creditworthiness:
+        required:
+          - "Fähigkeit und Bereitschaft eines einzelnen Menschen"
+      credit_score:
+        required:
+          - "Bildet Ihr System eine Zahl, eine Rangfolge oder ein Etikett"
+  - citation: AI-Act/annex-III/pt-5-c
+    branches:
+      risk_assessment:
+        required:
+          - "Bewertet Ihr System das Risikoprofil"
+      pricing:
+        required:
+          - "Legt Ihr System die Beiträge fest"
+  - citation: AI-Act/annex-III/pt-8-a
+    branches:
+      judicial_authority:
+        questions:
+          - "von einer Justizbehoerde oder in deren Namen"
+          - "ein Gericht oder einen Richter unterstuetzen"
+          - "Hat ein Gericht einen Dritten beauftragt"
+          - "allein von der Gerichtsverwaltung"
+          - "einer Justizbehoerde nicht gleichsteht"
+          - "richterliche Aufgaben aus"
+          - "Sachverstaendige von einer Partei"
+      alternative_dispute_resolution:
+        required:
+          - "aussergerichtlichen Streitbeilegung genutzt"
+        questions:
+          - "Rechtswirkungen fuer die Parteien"

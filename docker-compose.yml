@@ -1,0 +1,66 @@
+# Hardened because the service accepts free text from outside: read-only filesystem, no new
+# privileges, non-root user, memory limit. Start with: docker compose up --build
+
+services:
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        # 1 = bundle bge-m3 (large image, works offline); 0 = small image with fallback, tests only.
+        WITH_SEARCH_MODEL: "${WITH_SEARCH_MODEL:-1}"
+    image: compliance-helper:2.0.0
+    container_name: compliance-helper
+
+    # Bound to localhost; exposing the service to the network must be a deliberate change.
+    ports:
+      - "127.0.0.1:${COMPLIANCE_HELPER_PORT:-8000}:8000"
+
+    environment:
+      COMPLIANCE_HELPER_HOST: "0.0.0.0"
+      COMPLIANCE_HELPER_PORT: "8000"
+      COMPLIANCE_HELPER_REQUESTS_PER_MINUTE: "${COMPLIANCE_HELPER_REQUESTS_PER_MINUTE:-30}"
+      COMPLIANCE_HELPER_CORS_ORIGINS: "${COMPLIANCE_HELPER_CORS_ORIGINS:-http://localhost:8000,http://127.0.0.1:8000}"
+      COMPLIANCE_HELPER_MODEL: "${COMPLIANCE_HELPER_MODEL:-none}"
+      # Empty: the image decides (full image: purpose matching on, search reranking off).
+      COMPLIANCE_HELPER_RERANK: "${COMPLIANCE_HELPER_RERANK:-}"
+      COMPLIANCE_HELPER_LANG: "${COMPLIANCE_HELPER_LANG:-de}"
+      # API keys come from .env only.
+      ANTHROPIC_API_KEY: "${ANTHROPIC_API_KEY:-}"
+      OPENAI_API_KEY: "${OPENAI_API_KEY:-}"
+    env_file:
+      - path: .env
+        required: false
+
+    # Data ships in the image and results go over HTTP; only temp files need RAM-backed space.
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m,mode=1777
+      # Model libraries put their lock files here.
+      - /home/app/.cache:size=32m,mode=0700
+
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+
+    # bge-m3 and the cross-encoder need about 5 GB together; 6g leaves room for the indexes
+    # (1g suffices for the small image without models).
+    deploy:
+      resources:
+        limits:
+          memory: ${COMPLIANCE_HELPER_MEMORY:-6g}
+          cpus: "${COMPLIANCE_HELPER_CPUS:-2.0}"
+
+    # The check itself is the image HEALTHCHECK; the first start with bge-m3 takes minutes.
+    healthcheck:
+      start_period: 240s
+
+    restart: unless-stopped
+
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

@@ -1,0 +1,835 @@
+# Classification rules of the AI Act (Regulation (EU) 2024/1689)
+#
+# This file is the decision tree by which the helper classifies. It is
+# deliberately data and not program code: that way it can be read and checked why
+# a classification comes out, and a change in the law changes a
+# text file instead of a line of code.
+#
+# IMPORTANT: the classification is NOT made by the language model. It results from
+# these rules. The language model only words the answer and must not change the
+# result. Reason: an invented classification costs money and trust.
+#
+# Structure of a rule:
+#   id             unique name, appears in the rationale
+#   risk_class     which bucket the rule assigns
+#   legal_basis    identifiers in the corpus - checked at build time
+#   citation       how the provision is cited in the answer
+#   when           conditions; all must apply (AND)
+#   or_when        alternatives; one is enough
+#   keywords       words in the description that trigger the rule
+#   question       what the helper asks if the information is missing
+#   rationale      sentence that appears in the answer
+#   confidence     certain | likely | needs_review
+
+as_of: 2026-05-31
+legal_act: AI-Act
+version_note:
+  de: "Der Regelsatz folgt dem Verordnungstext in der Fassung des Amtsblatts vom 12. Juli 2024. Änderungen durch delegierte Rechtsakte, Leitlinien der Kommission oder ein Änderungsvorhaben nach dem genannten Stand sind hier nicht enthalten. Der Helfer sagt diesen Vorbehalt in jeder Auskunft mit.\n"
+  en: "The rule set follows the text of the Regulation as published in the Official Journal of 12 July 2024. Amendments by delegated acts, Commission guidelines or an amending proposal after that date are not included here. The helper states this caveat in every answer."
+
+# ---------------------------------------------------------------------------
+# Tier 1: prohibited practices, Article 5. The check always goes here first.
+# ---------------------------------------------------------------------------
+prohibitions:
+  - id: art5-1a-subliminal
+    risk_class: prohibited
+    legal_basis: ["AI-Act/art-5/para-1-a", "AI-Act/art-5"]
+    citation:
+      de: "Artikel 5 Absatz 1 Buchstabe a KI-VO"
+      en: "Article 5(1)(a) AI Act"
+    title:
+      de: "Unterschwellige Beeinflussung oder manipulative Techniken"
+      en: "Subliminal influence or manipulative techniques"
+    when:
+      - trait: subliminal_behaviour_manipulation
+        actual: true
+    keywords:
+      de: [unterschwellig, subliminal, manipulativ, täuschend, dark pattern, verhaltensbeeinflussung, nudging verdeckt]
+      en: [subliminal, manipulative, deceptive, dark pattern, behaviour manipulation, behavior manipulation, covert nudging, hidden nudging]
+    question:
+      de: "Beeinflusst das System das Verhalten von Menschen mit Techniken, die sie nicht bemerken können, oder mit Täuschung — so dass sie Entscheidungen treffen, die sie sonst nicht getroffen hätten und die ihnen erheblich schaden können?\n"
+      en: "Does your system influence people's behaviour with techniques they cannot notice, or through deception, so that they take decisions they would not otherwise have taken and that can cause them significant harm?"
+    rationale:
+      de: "Techniken, die unterschwellig wirken oder täuschen und das Verhalten so verzerren, dass erheblicher Schaden entstehen kann, sind verboten.\n"
+      en: "Techniques that work subliminally or deceive and distort behaviour in a way that can cause significant harm are prohibited."
+    confidence: needs_review
+
+  - id: art5-1b-vulnerability
+    risk_class: prohibited
+    legal_basis: ["AI-Act/art-5/para-1-b", "AI-Act/art-5"]
+    citation:
+      de: "Artikel 5 Absatz 1 Buchstabe b KI-VO"
+      en: "Article 5(1)(b) AI Act"
+    title:
+      de: "Ausnutzen einer Schwäche"
+      en: "Exploitation of vulnerabilities"
+    when:
+      - trait: exploits_vulnerabilities
+        actual: true
+    keywords:
+      de: [kinder gezielt, minderjährige beeinflussen, behinderung ausnutzen, vulnerable gruppe, soziale lage ausnutzen, armut gezielt]
+      en: [targets children, children targeted, influence minors, exploit disability, vulnerable group, exploit social situation, targets people in poverty]
+    question:
+      de: "Richtet sich das System gezielt an Menschen, die wegen ihres Alters, einer Behinderung oder ihrer sozialen oder wirtschaftlichen Lage besonders angreifbar sind, und nutzt es diese Lage aus?\n"
+      en: "Does your system specifically target people who are particularly vulnerable because of their age, a disability or their social or economic situation, and does it exploit that situation?"
+    rationale:
+      de: "Das Ausnutzen von Alter, Behinderung oder sozialer und wirtschaftlicher Lage zur Verhaltensverzerrung mit erheblichem Schadenspotenzial ist verboten.\n"
+      en: "Exploiting age, disability or a social and economic situation to distort behaviour with a potential for significant harm is prohibited."
+    confidence: needs_review
+
+  - id: art5-1c-social-scoring
+    risk_class: prohibited
+    legal_basis: ["AI-Act/art-5/para-1-c", "AI-Act/art-5"]
+    citation:
+      de: "Artikel 5 Absatz 1 Buchstabe c KI-VO"
+      en: "Article 5(1)(c) AI Act"
+    title:
+      de: "Soziale Bewertung von Menschen"
+      en: "Social scoring of people"
+    when:
+      - trait: social_scoring
+        actual: true
+    keywords:
+      de: [social scoring, sozialpunkte, bürgerbewertung, vertrauenswürdigkeit bewerten, verhaltensscore person, reputationsscore]
+      en: [social scoring, social credit score, social points, citizen score, citizen rating, rate trustworthiness, trustworthiness score, behaviour score person, behavior score person, reputation score]
+    question:
+      de: "Bewertet oder stuft das System Menschen nach ihrem Sozialverhalten oder nach persönlichen Eigenschaften ein, und wird diese Bewertung in einem anderen Zusammenhang verwendet als dem, in dem die Daten entstanden sind — oder führt sie zu einer Benachteiligung, die nicht verhältnismäßig ist?\n"
+      en: "Does your system evaluate or classify people based on their social behaviour or personal characteristics, and is this score used in a context other than the one in which the data were generated, or does it lead to detrimental treatment that is disproportionate?"
+    rationale:
+      de: "Soziale Bewertung mit Benachteiligung in fremden Zusammenhängen oder ohne Verhältnismäßigkeit ist verboten.\n"
+      en: "Social scoring with detrimental treatment in unrelated contexts or without proportionality is prohibited."
+    confidence: needs_review
+
+  - id: art5-1d-crime-prediction
+    risk_class: prohibited
+    legal_basis: ["AI-Act/art-5/para-1-d", "AI-Act/art-5"]
+    citation:
+      de: "Artikel 5 Absatz 1 Buchstabe d KI-VO"
+      en: "Article 5(1)(d) AI Act"
+    title:
+      de: "Vorhersage von Straftaten allein aus Profiling"
+      en: "Predicting criminal offences based solely on profiling"
+    when:
+      - trait: individual_crime_prediction
+        actual: true
+    # The prohibition requires that the prediction is based SOLELY on
+    # profiling. If this word is missing, the prohibition is not met:
+    # a recidivism forecast for the police then falls under Annex III
+    # point 6(d), i.e. high risk with obligations instead of a prohibition. For
+    # the user this is the difference between carrying on with conditions and
+    # shutting down - it must not hinge on the similarity of a phrase.
+    # As measured, the word "Rueckfall" (recidivism) alone used to trigger the prohibition.
+    required_wording:
+      de: [ausschliesslich, ausschließlich, allein, einzig, nur aufgrund, nur anhand, nur auf der grundlage, lediglich, ausschliessliche, ausschließliche]
+      en: [solely, exclusively, sole basis, only on the basis, on the basis alone, only because of, based only on, only based on, only by means of, only through profiling, only from profiling, only by profiling, purely on the basis, merely on the basis, purely based on, exclusive basis]
+    keywords:
+      de: [predictive policing person, straftat vorhersagen, rückfallrisiko profiling, kriminalitätsprognose person]
+      en: [predictive policing person, predict crime, predict criminal offence, predict offences, recidivism risk profiling, reoffending risk profiling, crime prediction person, crime forecast person]
+    question:
+      de: "Schätzt das System das Risiko ein, dass eine bestimmte Person eine Straftat begeht, und stützt sich dabei allein auf Profiling oder auf Persönlichkeitsmerkmale?\n"
+      en: "Does your system assess the risk that a specific person will commit a criminal offence, and does it rely solely on profiling or on personality traits to do so?"
+    rationale:
+      de: "Die Risikobewertung einzelner Menschen auf Straftaten allein aus Profiling oder Persönlichkeitsmerkmalen ist verboten. Erlaubt bleibt die Unterstützung einer menschlichen Bewertung, die auf objektiven, überprüfbaren und unmittelbar mit einer Straftat verbundenen Tatsachen beruht.\n"
+      en: "Assessing the risk of individual people committing criminal offences based solely on profiling or personality traits is prohibited. Still permitted is support for a human assessment that is based on objective and verifiable facts directly linked to a criminal activity."
+    confidence: needs_review
+
+  - id: art5-1e-facial-database
+    risk_class: prohibited
+    legal_basis: ["AI-Act/art-5/para-1-e", "AI-Act/art-5"]
+    citation:
+      de: "Artikel 5 Absatz 1 Buchstabe e KI-VO"
+      en: "Article 5(1)(e) AI Act"
+    title:
+      de: "Ungezieltes Auslesen von Gesichtsbildern"
+      en: "Untargeted scraping of facial images"
+    when:
+      - trait: untargeted_facial_image_scraping
+        actual: true
+    keywords:
+      de: [gesichter scrapen, gesichtsdatenbank aufbauen, bilder aus internet sammeln gesicht, videoüberwachung gesichter sammeln]
+      en: [scrape faces, build face database, build facial recognition database, collect face images from the internet, collect faces from cctv, collect faces from video surveillance]
+    question:
+      de: "Baut das System eine Gesichtserkennungsdatenbank auf, indem es Gesichtsbilder ungezielt aus dem Internet oder aus Videoüberwachung ausliest?\n"
+      en: "Does your system build a facial recognition database by scraping facial images untargeted from the internet or from CCTV footage?"
+    rationale:
+      de: "Der Aufbau von Gesichtserkennungsdatenbanken durch ungezieltes Auslesen von Gesichtsbildern aus dem Internet oder aus Videoüberwachung ist verboten.\n"
+      en: "Building facial recognition databases through untargeted scraping of facial images from the internet or from CCTV footage is prohibited."
+    confidence: certain
+
+  - id: art5-1f-emotion-work-education
+    risk_class: prohibited
+    legal_basis: ["AI-Act/art-5/para-1-f", "AI-Act/art-5"]
+    citation:
+      de: "Artikel 5 Absatz 1 Buchstabe f KI-VO"
+      en: "Article 5(1)(f) AI Act"
+    title:
+      de: "Emotionserkennung am Arbeitsplatz und in der Bildung"
+      en: "Emotion recognition in the workplace and in education"
+    when:
+      - trait: emotion_recognition
+        actual: true
+      - trait: workplace_or_education
+        actual: true
+    keywords:
+      de: [emotionserkennung mitarbeiter, stimmung beschäftigte, emotion schüler, aufmerksamkeit prüfung messen, bewerbergefühl]
+      en: [emotion recognition employees, employee mood, emotion students, emotion pupils, measure attention exams, applicant emotions, candidate emotions]
+    question:
+      de: "Erkennt oder erschließt das System Emotionen von Menschen am Arbeitsplatz oder in einer Bildungseinrichtung?\n"
+      en: "Does your system recognise or infer the emotions of people in the workplace or in an education institution?"
+    rationale:
+      de: "Emotionserkennung am Arbeitsplatz und in Bildungseinrichtungen ist verboten. Ausnahme nur aus medizinischen Gründen oder aus Gründen der Sicherheit.\n"
+      en: "Emotion recognition in the workplace and in education institutions is prohibited. The only exception is for medical or safety reasons."
+    exemption:
+      de: "Erlaubt bleibt der Einsatz aus medizinischen Gründen oder aus Sicherheitsgründen, etwa Müdigkeitserkennung bei Piloten.\n"
+      en: "Use for medical or safety reasons remains permitted, for example fatigue detection for pilots."
+    confidence: likely
+
+  - id: art5-1g-biometric-categorisation
+    risk_class: prohibited
+    legal_basis: ["AI-Act/art-5/para-1-g", "AI-Act/art-5"]
+    citation:
+      de: "Artikel 5 Absatz 1 Buchstabe g KI-VO"
+      en: "Article 5(1)(g) AI Act"
+    title:
+      de: "Biometrische Kategorisierung nach geschützten Merkmalen"
+      en: "Biometric categorisation by protected characteristics"
+    when:
+      - trait: biometrics
+        actual: true
+      - trait: infers_protected_characteristics
+        actual: true
+    keywords:
+      de: [ethnie erkennen, hautfarbe klassifizieren, religion ableiten, sexuelle orientierung erkennen, politische meinung ableiten, gewerkschaft erkennen]
+      en: [detect ethnicity, infer ethnicity, classify skin colour, classify skin color, infer religion, detect sexual orientation, infer sexual orientation, infer political opinion, detect trade union membership, infer trade union membership]
+    question:
+      de: "Ordnet das System Menschen anhand biometrischer Daten Kategorien zu, um ihre Rasse, politische Meinung, Gewerkschaftszugehörigkeit, religiöse oder philosophische Überzeugung, ihr Sexualleben oder ihre sexuelle Orientierung abzuleiten?\n"
+      en: "Does your system assign people to categories based on their biometric data in order to deduce or infer their race, political opinions, trade union membership, religious or philosophical beliefs, sex life or sexual orientation?"
+    rationale:
+      de: "Biometrische Kategorisierung zur Ableitung dieser geschützten Merkmale ist verboten.\n"
+      en: "Biometric categorisation to infer these protected characteristics is prohibited."
+    exemption:
+      de: "Nicht erfasst ist die Kennzeichnung oder Filterung rechtmäßig erworbener biometrischer Datensätze, etwa das Sortieren von Bildern.\n"
+      en: "Not covered is the labelling or filtering of lawfully acquired biometric datasets, such as sorting images."
+    confidence: likely
+
+  - id: art5-1h-realtime-remote-identification
+    risk_class: prohibited
+    legal_basis: ["AI-Act/art-5/para-1-h", "AI-Act/art-5"]
+    citation:
+      de: "Artikel 5 Absatz 1 Buchstabe h KI-VO"
+      en: "Article 5(1)(h) AI Act"
+    title:
+      de: "Biometrische Echtzeit-Fernidentifizierung im öffentlichen Raum"
+      en: "Real-time remote biometric identification in publicly accessible spaces"
+    when:
+      - trait: realtime_remote_biometric_identification
+        actual: true
+      - trait: publicly_accessible_space
+        actual: true
+      - trait: law_enforcement_purpose
+        actual: true
+    keywords:
+      de: [gesichtserkennung öffentlicher raum, echtzeit identifizierung kamera, biometrische überwachung polizei]
+      en: [facial recognition public space, facial recognition publicly accessible, real-time identification camera, biometric surveillance policing, biometric surveillance law enforcement]
+    question:
+      de: "Identifiziert das System Menschen biometrisch in Echtzeit in öffentlich zugänglichen Räumen, und zwar zu Zwecken der Strafverfolgung?\n"
+      en: "Does your system identify people biometrically in real time in publicly accessible spaces, and does it do so for the purpose of law enforcement?"
+    rationale:
+      de: "Biometrische Echtzeit-Fernidentifizierung in öffentlich zugänglichen Räumen zu Strafverfolgungszwecken ist verboten, von engen Ausnahmen abgesehen.\n"
+      en: "Real-time remote biometric identification in publicly accessible spaces for the purpose of law enforcement is prohibited, apart from narrow exceptions."
+    exemption:
+      de: "Enge Ausnahmen bestehen für die gezielte Suche nach Opfern bestimmter Straftaten, die Abwehr einer konkreten und gegenwärtigen Gefahr für Leben oder körperliche Unversehrtheit sowie die Lokalisierung Verdächtiger bestimmter schwerer Straftaten — jeweils mit vorheriger richterlicher oder behördlicher Genehmigung und einer Grundrechte-Folgenabschätzung.\n"
+      en: "Narrow exceptions exist for the targeted search for victims of certain criminal offences, the prevention of a specific and present threat to life or physical safety and the localisation of suspects of certain serious criminal offences, in each case with prior authorisation by a judicial or administrative authority and a fundamental rights impact assessment."
+    confidence: likely
+
+# ---------------------------------------------------------------------------
+# Tier 2: high risk via product safety law, Article 6(1)
+# ---------------------------------------------------------------------------
+high_risk_annex_i:
+  id: art6-1-product-safety
+  risk_class: high_risk_annex_i
+  legal_basis: ["AI-Act/art-6/para-1", "AI-Act/annex-I"]
+  citation:
+    de: "Artikel 6 Absatz 1 KI-VO in Verbindung mit Anhang I"
+    en: "Article 6(1) AI Act in conjunction with Annex I"
+  applies_from: 2027-08-02
+  when:
+    - trait: embedded_in_product
+      actual: true
+    - trait: product_under_annex_i
+      actual: true
+    - trait: third_party_conformity_assessment
+      actual: true
+  # The product category alone is not enough: a machine manufacturer who only
+  # translates its manuals builds nothing into the machine. Hence the
+  # phrases here require category and embedding together. On their own, only
+  # the categories that are themselves the product as software match.
+  keywords:
+    de: [medizinprodukt, in verkehr gebrachtes medizinprodukt, sicherheitsbauteil maschine, steuerung der maschine, maschine eingebaut, bauteil der maschine, aufzugssteuerung, spielzeug eingebaut, druckgerät steuerung, funkanlage eingebaut, fahrzeugbauteil, fahrzeugtypgenehmigung, bauteil fahrzeug, fahrzeug eingebaut, notbremsassistent, fahrerassistenz, luftfahrzeug, eisenbahnsteuerung, seilbahnsteuerung, persönliche schutzausrüstung, gasverbrauchseinrichtung]
+    en: [medical device, medical device placed on the market, safety component machinery, machinery control, controls the machinery, control of the machinery, built into machinery, embedded in machinery, integrated into machinery, component of the machinery, machinery component, elevator control, lift controller, lift control system, built into toys, embedded in toys, pressure equipment control, built into radio equipment, embedded in radio equipment, vehicle component, vehicle type approval, vehicle type-approval, component of the vehicle, built into the vehicle, built into vehicles, installed in the vehicle, embedded in the vehicle, emergency braking, emergency brake assist, driver assistance, driver-assistance, aircraft, railway control, railway signalling, railway signaling, rail traffic control, cableway control, cable car control, ropeway control, personal protective equipment, gas-burning appliance, appliances burning gaseous fuels]
+  question:
+    de: "Ist das KI-System ein Sicherheitsbauteil eines Produkts oder selbst ein Produkt, das unter eine der in Anhang I genannten Harmonisierungsrechtsvorschriften fällt — etwa Maschinen, Medizinprodukte, Spielzeug, Aufzüge, Fahrzeuge — und muss dieses Produkt von einer dritten Stelle geprüft werden?\n"
+    en: "Is the AI system a safety component of a product, or itself a product, covered by one of the Union harmonisation legislation listed in Annex I, such as machinery, medical devices, toys, lifts or vehicles, and must this product undergo a third-party conformity assessment?"
+  rationale:
+    de: "Ein KI-System, das Sicherheitsbauteil eines Produkts nach Anhang I ist oder selbst ein solches Produkt darstellt, gilt als Hochrisiko-KI-System, wenn für das Produkt eine Konformitätsbewertung durch Dritte verlangt wird.\n"
+    en: "An AI system that is a safety component of a product under Annex I, or is itself such a product, is considered a high-risk AI system if the product is required to undergo a third-party conformity assessment."
+
+# ---------------------------------------------------------------------------
+# Tier 3: high risk via the area of use, Article 6(2), Annex III
+# ---------------------------------------------------------------------------
+high_risk_annex_iii:
+  # If the description expressly says that the result affects no one
+  # or remains non-binding, there is no use "for" one of the areas
+  # of Annex III. The area is then not assigned. This is deliberately kept
+  # narrow: only the express statement counts, not its absence.
+  exoneration_phrases:
+    de: [unverbindlich, spielt keine rolle, spielen bei beurteilung, keine rolle bei, nicht an die vorgesetzten, nicht gemeldet, geprueft werden teile, geprüft werden teile, nicht menschen, keine personen, nicht ueber menschen, nicht über menschen, nur sachen]
+    en: [non-binding, not binding, merely advisory, purely advisory, play no role in the assessment, play no part in the assessment, plays no role in the assessment, plays no part in the assessment, no role in assessments, no role in the decision, no role in decisions, no part in the decision, no part in decisions, no role in appraisals, no role in promotions, no role in performance reviews, has no bearing on the decision, has no bearing on decisions, has no bearing on the assessment, not used in the assessment, not used for the assessment, not passed on to supervisors, not passed to supervisors, not shared with supervisors, not shared with managers, not reported to managers, not reported to supervisors, not reported, parts are inspected, parts are checked, inspects parts, inspects components, not people, not humans, not persons, no persons, no individuals, no people, not about people, not about humans, not about persons, not about individuals, only objects, only inanimate]
+  applies_from: 2026-08-02
+  general_legal_basis: ["AI-Act/art-6/para-2", "AI-Act/annex-III"]
+  areas:
+    - id: annex3-1-biometrics
+      strong_keywords:
+        de: [biometrie, biometrisch, gesichtserkennung, fingerabdruck, iriserkennung, emotionserkennung, gesichtsbild]
+        en: [biometric, facial recognition, face recognition, fingerprint, iris recognition, iris scan, emotion recognition, emotion detection, facial image, face image]
+      number: "1"
+      title:
+        de: "Biometrie"
+        en: "Biometrics"
+      legal_basis: ["AI-Act/annex-III/pt-1", "AI-Act/art-6/para-2"]
+      citation:
+        de: "Anhang III Nummer 1 KI-VO"
+        en: "Annex III point 1 AI Act"
+      covers:
+        - de: "biometrische Fernidentifizierung, soweit nicht verboten"
+          en: "remote biometric identification, where not prohibited"
+        - de: "biometrische Kategorisierung nach sensiblen Merkmalen"
+          en: "biometric categorisation according to sensitive attributes"
+        - de: "Emotionserkennung"
+          en: "emotion recognition"
+      keywords:
+        de: [biometrie, fingerabdruck, gesichtserkennung, iriserkennung, stimmerkennung person, emotionserkennung, biometrische kategorisierung]
+        en: [biometric, fingerprint, facial recognition, face recognition, iris recognition, iris scan, voice recognition person, speaker identification, speaker recognition, emotion recognition, emotion detection, biometric categorisation, biometric categorization]
+      question:
+        de: "Erkennt oder kategorisiert das System Menschen anhand körperlicher Merkmale?"
+        en: "Does your system recognise or categorise people based on physical characteristics?"
+
+    - id: annex3-2-critical-infrastructure
+      strong_keywords:
+        de: [stromnetz, wasserversorgung, gasnetz, fernwaerme, verkehrssteuerung, ampelsteuerung, netzleitstelle, kraftwerk]
+        en: [power grid, electricity grid, electricity network, water supply, gas transmission network, gas distribution network, district heating, road traffic control, road traffic management, traffic signal control, traffic light control, grid control, network control centre, network control center, power plant, power station]
+      number: "2"
+      title:
+        de: "Kritische Infrastruktur"
+        en: "Critical infrastructure"
+      legal_basis: ["AI-Act/annex-III/pt-2", "AI-Act/art-6/para-2"]
+      citation:
+        de: "Anhang III Nummer 2 KI-VO"
+        en: "Annex III point 2 AI Act"
+      covers:
+        - de: "Sicherheitsbauteile im Betrieb kritischer digitaler Infrastruktur"
+          en: "safety components in the operation of critical digital infrastructure"
+        - de: "Straßenverkehr"
+          en: "road traffic"
+        - de: "Versorgung mit Wasser, Gas, Wärme, Strom"
+          en: "supply of water, gas, heating, electricity"
+      keywords:
+        de: [stromnetz, wasserversorgung, gasnetz, fernwärme, verkehrssteuerung, ampelsteuerung, kritische infrastruktur, netzleitstelle]
+        en: [power grid, electricity grid, electricity network, water supply, gas transmission network, gas distribution network, district heating, road traffic control, road traffic management, traffic signal control, traffic light control, critical infrastructure, grid control, network control centre, network control center]
+      question:
+        de: "Steuert oder sichert das System kritische Infrastruktur?"
+        en: "Does your system control or secure critical infrastructure?"
+
+    - id: annex3-3-education
+      strong_keywords:
+        de: [klausur, zeugnis, schulplatz, studienplatz, zulassung, pruefungsaufsicht, lernstand, bildungseinrichtung, benotung, note, abschlusspruefung, abschlussprüfung, taeuschungsversuch, täuschungsversuch, pruefungsamt, prüfungsamt, schulamt, schulaufsicht, notenverteilung, lehrkraft, lernplattform]
+        en: [written exam, exams, report card, school report, diploma, degree programme, degree program, study programme, study program, school place, university place, study place, admissions, admission to, admission decision, admitted to, proctoring, exam supervision, invigilat, learning progress, learning level, level of knowledge, knowledge level, learning outcome, educational institution, education institution, grading, grades, graded, final exam, cheating, examination office, examinations office, exam office, school authority, education authority, school inspectorate, school supervision, grade distribution, teaching staff, learning platform, learning management system, e-learning]
+      number: "3"
+      title:
+        de: "Allgemeine und berufliche Bildung"
+        en: "Education and vocational training"
+      legal_basis: ["AI-Act/annex-III/pt-3", "AI-Act/art-6/para-2"]
+      citation:
+        de: "Anhang III Nummer 3 KI-VO"
+        en: "Annex III point 3 AI Act"
+      covers:
+        - de: "Zugang, Zulassung, Zuweisung zu Bildungseinrichtungen"
+          en: "access, admission, assignment to education institutions"
+        - de: "Bewertung von Lernergebnissen"
+          en: "evaluation of learning outcomes"
+        - de: "Einstufung des angemessenen Bildungsniveaus"
+          en: "assessment of the appropriate level of education"
+        - de: "Überwachung und Erkennung unerlaubten Verhaltens bei Prüfungen"
+          en: "monitoring and detecting prohibited behaviour during tests"
+      keywords:
+        de: [zulassung studium, prüfung bewerten, note automatisch, lernstand einstufen, prüfungsaufsicht, täuschung erkennen prüfung, schulplatz zuweisen]
+        en: [university admission, student admission, admission to study, grade exams, mark exams, exam marking, automatic grading, grades automatically, assess learning level, assess learning progress, proctoring, exam supervision, invigilat, detect cheating exams, cheating detection, assign school places, allocate school places, school place allocation]
+      question:
+        de: "Entscheidet oder bewertet das System im Bildungsbereich?"
+        en: "Does your system decide or evaluate in the field of education?"
+
+    - id: annex3-4-employment
+      # Annex III point 4(b) does not apply because a text contains the
+      # word "employees", but when decisions are taken about employees,
+      # their performance is evaluated or work is allocated to them based on their
+      # behaviour. Hence two lists: a carrier word
+      # and an action word must occur together.
+      combination:
+        carriers:
+          de: [beschaeftigte, beschäftigte, mitarbeiter, angestellte, personal, belegschaft, arbeitnehmer, kollege, bewerber, azubi, auszubildende, vertriebsinnendienst]
+          en: [employee, workforce, staff member, our staff, the staff, workers, personnel, staffing, worker, colleague, coworker, co-worker, job applicant, job candidate, apprentice, inside sales, sales team, sales staff, sales rep]
+        actions:
+          de: [bewertet, bewertung, kennzahl, einordnet, einordnen, eingeordnet, rangfolge, gruppen ein, beurteilung, befoerderung, beförderung, verguetung, vergütung, jahresgespraech, jahresgespräch, zuweist, zuweisen, zugewiesen, schicht, ueberwacht, überwacht, ueberwachung, überwachung, aufzeichnet, aufzeichnungen, meldet der leitung, abweicht vom, kuendigung, kündigung, leistung, auffaellig, auffällig, aktivitaet, aktivität, pausenzeiten]
+          en: [evaluates, evaluated, scores, rated, evaluating, assess, kpis, key performance indicator, productivity metric, classifies, categorises, categorizes, classify, categorise, categorize, classified, categorised, categorized, rank, ranks, ranked, ranking, into groups, appraisal, promotion decision, promotion report, promoted to, career progression, promote, promoted, promotions, salar, remuneration, wage, bonuses, annual review, annual appraisal, year-end review, assign task, assign work, assign jobs, assign duties, assign route, allocat task, allocat work, allocat jobs, allocat duties, allocat route, task allocation, task assignment, work allocation, shift, monitors, monitored, surveil, monitoring, surveillance, recorded, recordings, reports to management, notifies management, alerts the manager, deviates from, dismiss, termination, fired, performance, productivity, conspicuous, anomal, unusual, abnormal, suspicious, activit, break times, break time, breaks taken]
+      # "kuendigung" (termination) is NOT among the strong keywords: a search for
+      # notice periods in supply contracts has nothing to do with employment,
+      # but was classified as Annex III point 4. The word is
+      # therefore listed under combination.actions and needs a carrier word such as
+      # "Mitarbeiter" or "Beschäftigte" (employees) next to it.
+      strong_keywords:
+        de: [bewerbung, bewerber, lebenslauf, recruiting, einstellung, befoerderung, leistungsbewertung, mitarbeiterueberwachung, personalauswahl, stellenanzeige, arbeitszeugnis, probezeit, personalakte, personalabteilung, arbeitsverhaeltnis, arbeitsverhältnis, stellenabbau, betriebsrat, einstellungsverfahren]
+        en: [job application, job interview, video interview, job applicant, job candidate, resume, résumé, curriculum vitae, recruit, hiring, promotion decision, promotion report, promoted to, career progression, performance evaluation, performance review, performance appraisal, performance assessment, employee monitoring, employee surveillance, workplace monitoring, workplace surveillance, personnel selection, staff selection, candidate selection, job ad, job posting, vacanc, employment reference, job reference, reference letter, probation period, probationary period, end-of-probation, end of probation, personnel file, personnel record, employee file, employee record, human resources, hr department, employment relationship, employment contract, layoff, job cuts, downsizing, workforce reduction, headcount reduction, works council, hiring process, recruitment process]
+      number: "4"
+      title:
+        de: "Beschäftigung und Personalmanagement"
+        en: "Employment and workers management"
+      legal_basis: ["AI-Act/annex-III/pt-4", "AI-Act/art-6/para-2"]
+      citation:
+        de: "Anhang III Nummer 4 KI-VO"
+        en: "Annex III point 4 AI Act"
+      covers:
+        - de: "Einstellung und Auswahl, auch gezielte Stellenanzeigen und Vorauswahl"
+          en: "recruitment and selection, including targeted job advertisements and pre-screening"
+        - de: "Entscheidungen über Beförderung, Kündigung, Vertragsbedingungen"
+          en: "decisions on promotion, termination, terms of the contract"
+        - de: "Aufgabenzuweisung anhand von Verhalten oder Persönlichkeitsmerkmalen"
+          en: "allocation of tasks based on behaviour or personal traits"
+        - de: "Überwachung und Bewertung von Leistung und Verhalten"
+          en: "monitoring and evaluation of performance and behaviour"
+      # "kündigung" (termination) and "beförderung" (promotion) are NOT listed here as single words: a
+      # search for notice periods in supply contracts names the word, but has
+      # nothing to do with employment. Both processes can be reached via
+      # combination.actions, where a carrier word must appear alongside.
+      keywords:
+        de: [bewerbung filtern, lebenslauf sortieren, bewerberauswahl, beförderung mitarbeiter, kündigung mitarbeiter, leistungsbewertung mitarbeiter, mitarbeiterüberwachung, schichtplanung verhalten, recruiting]
+        en: [filter applications, screen applications, filter job applications, sort resumes, rank resumes, rank applicant, shortlist applicant, preselect applicant, pre-select applicant, applicant selection, candidate selection, shortlist candidates, rank candidates, employee promotion, promote employees, dismiss employees, employee dismissal, terminate employees, employee performance evaluation, employee performance review, employee appraisal, employee monitoring, monitor employees, employee surveillance, shift planning behaviour, shift planning behavior, shift scheduling behaviour, shift scheduling behavior, recruit]
+      question:
+        de: "Wirkt das System bei Einstellung, Beförderung, Kündigung, Aufgabenzuweisung oder Leistungsbewertung von Beschäftigten mit — auch bei Selbstständigen?\n"
+        en: "Is your system involved in the recruitment, promotion, termination, task allocation or performance evaluation of workers, including self-employed persons?"
+
+    - id: annex3-5-essential-services
+      strong_keywords:
+        de: [kreditwuerdigkeit, bonitaet, kreditvergabe, scoring, versicherungstarif, sozialleistung, wohngeld, buergergeld, notruf, triage, rettungsleitstelle, kreditantrag, risikopruefung, kredit, ratenkredit, kreditwuerdigkeitspruefung, rueckzahlungswahrscheinlichkeit, rückzahlungswahrscheinlichkeit, krankenversicher, lebensversicher, risikozuschlag, gesundheitsfragebogen, unterstuetzungsleistung, unterstützungsleistung, bewilligungsvoraussetzung, beihilfe, sozialhilfe, bescheid, leistungsbescheid, krankenversicherung, lebensversicherung]
+        en: [creditworth, credit scor, credit rating, lending, loan approval, credit approval, scoring, insurance premium, insurance pricing, insurance rate, insurance tariff, social benefit, social security benefit, welfare benefit, housing benefit, citizen's allowance, citizen's income, basic income support, emergency call, emergency number, triage, emergency dispatch, ambulance dispatch, dispatch centre, dispatch center, credit application, loan application, underwriting, credit risk, loan, credit decision, credit check, credit limit, consumer credit, instalment loan, installment loan, personal loan, creditworthiness assessment, creditworthiness check, probability of repayment, repayment probability, probability of default, default probability, likelihood of default, health insur, life insur, risk surcharge, risk loading, health questionnaire, public assistance, assistance benefit, benefit eligibility, eligibility for benefit, welfare payment, social assistance, social welfare, benefit notice, notice of decision, benefit decision, benefits decision, health insurance, life insurance]
+      number: "5"
+      title:
+        de: "Zugang zu grundlegenden privaten und öffentlichen Diensten"
+        en: "Access to essential private and public services"
+      legal_basis: ["AI-Act/annex-III/pt-5", "AI-Act/art-6/para-2"]
+      citation:
+        de: "Anhang III Nummer 5 KI-VO"
+        en: "Annex III point 5 AI Act"
+      covers:
+        - de: "Anspruch auf öffentliche Unterstützungsleistungen und Dienste"
+          en: "eligibility for public assistance benefits and services"
+        - de: "Kreditwürdigkeitsprüfung und Bonitätsbewertung"
+          en: "creditworthiness assessment and credit scoring"
+        - de: "Risikobewertung und Preisbildung bei Lebens- und Krankenversicherung"
+          en: "risk assessment and pricing in life and health insurance"
+        - de: "Einsatzkräftedisposition und Triage in Notfällen"
+          en: "dispatch of emergency first response services and triage in emergencies"
+      keywords:
+        de: [kreditwürdigkeit, bonität, scoring kredit, kreditvergabe, versicherungstarif, risikoprüfung versicherung, sozialleistung, wohngeld, notruf, triage, rettungsleitstelle, versicherung antrag, versicherung schadenmeldung, versicherung posteingang]
+        en: [creditworth, credit scor, credit rating, credit scoring, scoring loans, lending, loan approval, credit approval, insurance premium, insurance pricing, insurance rate, insurance tariff, insurance risk assessment, insurance underwriting, social benefit, social security benefit, welfare benefit, housing benefit, emergency call, emergency number, triage, emergency dispatch, ambulance dispatch, dispatch centre, dispatch center, insurance application, insurance claim, insurance inbox, insurance incoming mail]
+      question:
+        de: "Entscheidet das System über den Zugang zu Sozialleistungen, über Kreditwürdigkeit, über Versicherungstarife bei Leben oder Gesundheit oder über die Einsatzreihenfolge in Notfällen?\n"
+        en: "Does your system decide on access to social benefits, on creditworthiness, on insurance rates in life or health insurance or on the order of dispatch in emergencies?"
+      exemption:
+        de: "Die Aufdeckung von Finanzbetrug ist ausgenommen, ebenso Kreditwürdigkeitsprüfungen zum Zweck der Betrugsaufdeckung.\n"
+        en: "Detecting financial fraud is excluded, as are creditworthiness assessments for the purpose of detecting fraud."
+
+    - id: annex3-6-law-enforcement
+      strong_keywords:
+        de: [strafverfolgung, polizei, luegendetektor, beweiswuerdigung, taeterprofil, ermittlungsverfahren, fahndung]
+        en: [law enforcement agenc, law enforcement authorit, law enforcement officer, law enforcement purpose, criminal prosecution, police, policing, lie detector, lie-detector, polygraph, evaluation of evidence, assessing evidence, reliability of evidence, evidence assessment, offender profil, criminal profil, perpetrator profil, criminal investigation, criminal proceedings, manhunt, wanted persons, search for suspects, wanted suspect]
+      number: "6"
+      title:
+        de: "Strafverfolgung"
+        en: "Law enforcement"
+      legal_basis: ["AI-Act/annex-III/pt-6", "AI-Act/art-6/para-2"]
+      citation:
+        de: "Anhang III Nummer 6 KI-VO"
+        en: "Annex III point 6 AI Act"
+      covers:
+        - de: "Risikobewertung von Personen als Opfer oder Täter"
+          en: "risk assessment of persons as victims or offenders"
+        - de: "Lügendetektoren und ähnliche Werkzeuge"
+          en: "polygraphs and similar tools"
+        - de: "Bewertung der Verlässlichkeit von Beweismitteln"
+          en: "evaluation of the reliability of evidence"
+        - de: "Profiling im Rahmen der Aufdeckung und Verfolgung von Straftaten"
+          en: "profiling in the course of the detection and prosecution of criminal offences"
+      keywords:
+        de: [polizei, strafverfolgung, lügendetektor, beweiswürdigung, ermittlung, täterprofil, opferrisiko]
+        en: [police force, police officer, police department, police authorit, police service, police investigation, police custody, policing, law enforcement agenc, law enforcement authorit, law enforcement officer, law enforcement purpose, criminal prosecution, lie-detector, polygraph, evaluation of evidence, assessing evidence, reliability of evidence, evidence assessment, criminal investigation, offender profil, criminal profil, perpetrator profil, victim risk, risk of victimisation, risk of victimization, risk of becoming a victim]
+      question:
+        de: "Wird das System von Strafverfolgungsbehörden eingesetzt?"
+        en: "Is your system used by law enforcement authorities?"
+
+    - id: annex3-7-migration
+      strong_keywords:
+        de: [asyl, visum, aufenthaltstitel, grenzkontrolle, migration, einreise, abschiebung]
+        en: [asylum, visa application, visa applicant, visas, visa decision, visa request, residence permit, residence title, border control, border check, border guard, migrant, migration authorit, migration procedure, migration management, migration control, irregular migration, immigration, entry into the country, entering the country, entry screening, border crossing, deportation]
+      number: "7"
+      title:
+        de: "Migration, Asyl und Grenzkontrolle"
+        en: "Migration, asylum and border control management"
+      legal_basis: ["AI-Act/annex-III/pt-7", "AI-Act/art-6/para-2"]
+      citation:
+        de: "Anhang III Nummer 7 KI-VO"
+        en: "Annex III point 7 AI Act"
+      covers:
+        - de: "Lügendetektoren im Migrationsverfahren"
+          en: "polygraphs in migration procedures"
+        - de: "Risikobewertung einreisender Personen"
+          en: "risk assessment of persons entering the territory"
+        - de: "Prüfung von Anträgen auf Asyl, Visum, Aufenthaltstitel"
+          en: "examination of applications for asylum, visa, residence permits"
+        - de: "Aufspüren und Erkennen von Personen im Migrationszusammenhang"
+          en: "detecting and recognising persons in the context of migration"
+      keywords:
+        de: [asyl, visum, aufenthaltstitel, grenzkontrolle, migration, einreise prüfen]
+        en: [asylum, visa application, visa applicant, visas, visa decision, visa request, residence permit, residence title, border control, border check, border guard, migrant, migration authorit, migration procedure, migration management, migration control, irregular migration, immigration, entry screening, screening travellers, screening travelers, travel authorisation, travel authorization]
+      question:
+        de: "Wirkt das System in Migrations-, Asyl- oder Grenzverfahren mit?"
+        en: "Is your system involved in migration, asylum or border control procedures?"
+
+    - id: annex3-8-justice
+      strong_keywords:
+        de: [rechtsprechung, wahlbeeinflussung, wahlkampf, abstimmungsverhalten, richter, gerichtsverfahren, gerichtsentscheidung, gerichtlich, justiz, urteilsvorschlag, urteilsfindung, schiedsverfahren]
+        en: [case law, jurisprudence, judicature, election influenc, influencing elections, influence elections, election manipulation, electoral manipulation, election campaign, electoral campaign, political campaign, voting behaviour, voting behavior, voter behaviour, voter behavior, presiding judge, court judge, the judge, magistrate, court proceeding, court case, legal proceeding, lawsuit, litigation, court decision, court ruling, judicial decision, judicial, in court, judiciary, justice system, administration of justice, draft judgment, draft judgement, proposed judgment, proposed ruling, suggested verdict, reaching a verdict, reach a verdict, adjudication, sentencing, arbitration]
+      number: "8"
+      title:
+        de: "Rechtspflege und demokratische Prozesse"
+        en: "Administration of justice and democratic processes"
+      legal_basis: ["AI-Act/annex-III/pt-8", "AI-Act/art-6/para-2"]
+      citation:
+        de: "Anhang III Nummer 8 KI-VO"
+        en: "Annex III point 8 AI Act"
+      covers:
+        - de: "Unterstützung von Gerichten bei Auslegung von Recht und Tatsachen"
+          en: "assisting courts in interpreting the law and the facts"
+        - de: "Beeinflussung des Ergebnisses von Wahlen oder Abstimmungen"
+          en: "influencing the outcome of elections or referendums"
+      keywords:
+        de: [gerichtsverfahren, urteilsvorschlag, rechtsprechung unterstützen, wahlbeeinflussung, wahlkampf zielgruppe, abstimmungsverhalten]
+        en: [court proceeding, court case, legal proceeding, lawsuit, litigation, draft judgment, draft judgement, proposed judgment, proposed ruling, suggested verdict, assist judges, support judges, support court decisions, election influenc, influencing elections, influence elections, election manipulation, electoral manipulation, election campaign target, target voters, voting behaviour, voting behavior, voter behaviour, voter behavior]
+      question:
+        de: "Unterstützt das System ein Gericht bei der Rechtsfindung oder beeinflusst es das Ergebnis von Wahlen, Abstimmungen oder das Wahlverhalten?\n"
+        en: "Does your system assist a court in reaching legal decisions, or does it influence the outcome of elections or referendums or voting behaviour?"
+      exemption:
+        de: "Reine Hilfstätigkeiten der Verwaltung ohne Einfluss auf die Rechtsfindung sind ausgenommen, etwa Anonymisierung oder Schriftgutverwaltung.\n"
+        en: "Purely ancillary administrative activities without influence on legal decision-making are excluded, such as anonymisation or records management."
+
+# ---------------------------------------------------------------------------
+# Tier 4: derogation from Annex III, Article 6(3)
+# ---------------------------------------------------------------------------
+high_risk_exemption:
+  id: art6-3-exemption
+  risk_class: high_risk_exemption
+  legal_basis: ["AI-Act/art-6/para-3"]
+  citation:
+    de: "Artikel 6 Absatz 3 KI-VO"
+    en: "Article 6(3) AI Act"
+  precondition:
+    de: "Die Ausnahme greift nur, wenn das System kein erhebliches Risiko für Gesundheit, Sicherheit oder Grundrechte birgt und das Ergebnis der Entscheidungsfindung nicht wesentlich beeinflusst.\n"
+    en: "The exemption applies only if the system does not pose a significant risk of harm to health, safety or fundamental rights and does not materially influence the outcome of decision-making."
+  one_of_cases:
+    - id: art6-3-a-narrow-task
+      text:
+        de: "Das System führt eine eng umgrenzte verfahrenstechnische Aufgabe aus."
+        en: "The system performs a narrow procedural task."
+      example:
+        de: "Ein Modell, das unstrukturierte Eingaben in ein festes Format bringt."
+        en: "A model that converts unstructured input into a fixed format."
+    - id: art6-3-b-improvement
+      text:
+        de: "Das System verbessert das Ergebnis einer zuvor von einem Menschen ausgeführten Tätigkeit."
+        en: "The system improves the result of a previously completed human activity."
+      example:
+        de: "Eine Sprachglättung eines bereits geschriebenen Bescheids."
+        en: "Language polishing of an administrative decision that has already been written."
+    - id: art6-3-c-pattern-detection
+      text:
+        de: "Das System erkennt Entscheidungsmuster oder Abweichungen davon und soll die vorangegangene menschliche Bewertung nicht ersetzen oder beeinflussen, ohne dass ein Mensch sie überprüft."
+        en: "The system detects decision-making patterns or deviations from them and is not meant to replace or influence the previously completed human assessment without proper human review."
+      example:
+        de: "Eine Prüfung, ob Lehrkräfte von ihrem üblichen Notenmuster abweichen."
+        en: "A check whether teachers deviate from their usual grading pattern."
+    - id: art6-3-d-preparatory-task
+      text:
+        de: "Das System führt eine vorbereitende Aufgabe für eine Bewertung aus."
+        en: "The system performs a preparatory task for an assessment."
+      example:
+        de: "Dateien sortieren, Akten verschlagworten, Übersetzen von Unterlagen."
+        en: "Sorting files, indexing records, translating documents."
+  counter_exemption:
+    id: art6-3-profiling
+    text:
+      de: "Führt das System ein Profiling natürlicher Personen durch, gilt es immer als Hochrisiko-KI-System — die Ausnahme greift dann nicht.\n"
+      en: "If the system performs profiling of natural persons, it is always considered a high-risk AI system; the exemption then does not apply."
+    legal_basis: ["AI-Act/art-6/para-3"]
+  follow_up_obligation:
+    id: art6-4-documentation-registration
+    legal_basis: ["AI-Act/art-6/para-4", "AI-Act/art-49/para-2"]
+    citation:
+      de: "Artikel 6 Absatz 4 und Artikel 49 Absatz 2 KI-VO"
+      en: "Article 6(4) and Article 49(2) AI Act"
+    text:
+      de: "Wer sich auf die Ausnahme beruft, muss die Bewertung dokumentieren, bevor das System in Verkehr gebracht oder in Betrieb genommen wird, sich in der EU-Datenbank registrieren und die Bewertung den Behörden auf Verlangen vorlegen.\n"
+      en: "Anyone relying on the exemption must document the assessment before the system is placed on the market or put into service, register in the EU database and provide the assessment to the authorities on request."
+
+# ---------------------------------------------------------------------------
+# Tier 5: transparency obligations, Article 50
+# ---------------------------------------------------------------------------
+transparency:
+  applies_from: 2026-08-02
+  cases:
+    - id: art50-1-interaction
+      risk_class: transparency
+      # By its wording, paragraph 1 obliges the provider to design the system.
+      # The case is also named to the deployer, though: it conducts the conversation with
+      # the customer and must use the system in accordance with Article 26(1)
+      # as the instructions provide - i.e. keep the notice visible. A
+      # mail-order retailer that lets a bot with a human first name write in the first
+      # person would otherwise get "minimal" as the answer.
+      roles: [provider, deployer]
+      legal_basis: ["AI-Act/art-50/para-1"]
+      citation:
+        de: "Artikel 50 Absatz 1 KI-VO"
+        en: "Article 50(1) AI Act"
+      when:
+        - trait: interacts_with_people
+          actual: true
+      keywords:
+        de: [chatbot, assistent, sprachassistent, dialog, kundenservice bot]
+        en: [chatbot, assistant, voice assistant, dialogue, dialog, conversational, customer service bot]
+      obligation:
+        de: "Menschen müssen erfahren, dass sie mit einem KI-System sprechen — es sei denn, das ist aus den Umständen offensichtlich.\n"
+        en: "People must be informed that they are interacting with an AI system, unless this is obvious from the circumstances."
+    - id: art50-2-synthetic-content
+      risk_class: transparency
+      # Paragraph 2 stays with the provider, and not out of formalism: the
+      # machine-readable marking is created in the generating system. A
+      # deployer cannot apply it. Anyone using ChatGPT for advertising copy
+      # used to be confronted with the obligation of the model provider - a
+      # requirement they cannot fulfil is no answer.
+      role: provider
+      legal_basis: ["AI-Act/art-50/para-2"]
+      citation:
+        de: "Artikel 50 Absatz 2 KI-VO"
+        en: "Article 50(2) AI Act"
+      when:
+        - trait: generates_content
+          actual: true
+      keywords:
+        de: [bild erzeugen, text erzeugen, video erzeugen, audio erzeugen, synthetische inhalte, generativ]
+        en: [generate images, image generation, generate text, text generation, generate video, video generation, generate audio, audio generation, synthetic content, generative]
+      obligation:
+        de: "Erzeugte Inhalte müssen in maschinenlesbarer Form als künstlich erzeugt oder bearbeitet gekennzeichnet sein, etwa durch Wasserzeichen oder Metadaten.\n"
+        en: "Generated content must be marked in a machine-readable format as artificially generated or manipulated, for example by watermarks or metadata."
+    - id: art50-3-emotion-biometric
+      risk_class: transparency
+      role: deployer
+      legal_basis: ["AI-Act/art-50/para-3"]
+      citation:
+        de: "Artikel 50 Absatz 3 KI-VO"
+        en: "Article 50(3) AI Act"
+      when:
+        - trait: emotion_recognition
+          actual: true
+      keywords:
+        de: [emotionserkennung, biometrische kategorisierung]
+        en: [emotion recognition, emotion detection, biometric categorisation, biometric categorization]
+      obligation:
+        de: "Betroffene Personen müssen über den Einsatz informiert werden; die Datenschutzvorschriften gelten zusätzlich.\n"
+        en: "The persons concerned must be informed of the use; data protection rules apply in addition."
+    - id: art50-4-deepfake
+      risk_class: transparency
+      role: deployer
+      legal_basis: ["AI-Act/art-50/para-4"]
+      citation:
+        de: "Artikel 50 Absatz 4 KI-VO"
+        en: "Article 50(4) AI Act"
+      when:
+        - trait: generates_deepfakes
+          actual: true
+      # Second route: anyone who publishes generated images, sounds or videos must
+      # know that paragraph 4 depends on whether they falsely depict an existing place, a
+      # person or an event. An invented room with real
+      # furniture is as a rule not one; as soon as a real place or a
+      # recognisable person appears, the assessment tips. The case is
+      # named, not decided - the answer carries needs_review.
+      or_when:
+        - when:
+            - trait: publishes_generated_media
+              actual: true
+      keywords:
+        de: [deepfake, gesicht tauschen, stimme klonen, person imitieren]
+        en: [deepfake, face swap, voice cloning, clone voice, impersonate person, impersonation]
+      obligation:
+        de: "Deepfakes müssen offengelegt werden. Bei Texten zu Angelegenheiten von öffentlichem Interesse gilt die Offenlegungspflicht ebenfalls, wenn der Text nicht von einem Menschen geprüft wurde.\n"
+        en: "Deepfakes must be disclosed. For texts on matters of public interest the disclosure obligation also applies if the text has not been reviewed by a human."
+
+# ---------------------------------------------------------------------------
+# Tier 6: general-purpose AI models, Articles 51 to 55
+# ---------------------------------------------------------------------------
+gpai:
+  applies_from: 2025-08-02
+  # Article 3(63) excludes models used before being placed on the market only for
+  # research, development or prototyping activities. If the
+  # description says so expressly, the obligations for model providers do
+  # not apply. Checking for phrases alone could not see this: "wir
+  # bringen es nicht in Verkehr" (we do not place it on the market) contains all words of "modell in verkehr"
+  # and triggered the rule - the negation was lost.
+  exoneration_phrases:
+    de: [nicht in verkehr, nicht veroeffentlich, nicht veröffentlich, nur zur forschung, nur fuer die forschung, nur für die forschung, ausschliesslich fuer die eigene forschung, ausschließlich für die eigene forschung, nur zur eigenen forschung, nur intern, bleibt im unternehmen, nur als prototyp]
+    en: [not placed on the market, not place it on the market, not be placed on the market, not put on the market, not bring it to market, not bring it to the market, not commercialis, not commercializ, not publish, not be published, not release, not be released, not made public, not make it public, unpublished, only for research, solely for research, purely for research, for research purposes only, research use only, exclusively for our own research, only for our own research, for our own research only, for internal research only, internal use only, only internally, only used internally, used internally only, stays within the company, remains within the company, stays in the company, remains in the company, stays in-house, remains in-house, only as a prototype, prototype only, just a prototype, only a prototype]
+  id: art51-gpai-model
+  risk_class: gpai
+  legal_basis: ["AI-Act/art-51", "AI-Act/art-53"]
+  citation:
+    de: "Artikel 51 und 53 KI-VO"
+    en: "Articles 51 and 53 AI Act"
+  when:
+    - trait: is_gpai_model
+      actual: true
+  keywords:
+    de: [basismodell, foundation model, sprachmodell trainieren, allgemeiner verwendungszweck, eigenes modell trainiert]
+    en: [foundation model, base model, train language model, train a language model, general-purpose, general purpose, trained our own model, train our own model]
+  question:
+    de: "Trainieren oder veröffentlichen Sie selbst ein KI-Modell mit allgemeinem Verwendungszweck — also ein Modell, das sich für viele verschiedene Aufgaben einsetzen lässt?\n"
+    en: "Do you yourself train or publish a general-purpose AI model, that is, a model that can be used for many different tasks?"
+  systemic_risk:
+    id: art51-systemic-risk
+    risk_class: gpai_systemic_risk
+    legal_basis: ["AI-Act/art-51/para-2", "AI-Act/art-55"]
+    citation:
+      de: "Artikel 51 Absatz 2 und Artikel 55 KI-VO"
+      en: "Article 51(2) and Article 55 AI Act"
+    threshold_flop: 1.0e25
+    presumption:
+      de: "Übersteigt der kumulierte Rechenaufwand des Trainings 10^25 Gleitkommaoperationen, wird systemisches Risiko vermutet. Die Vermutung ist widerlegbar; die Kommission kann ein Modell auch ohne Erreichen der Schwelle benennen.\n"
+      en: "If the cumulative amount of computation used for training exceeds 10^25 floating-point operations, systemic risk is presumed. The presumption is rebuttable; the Commission can also designate a model without the threshold being reached."
+  legacy_models:
+    applies_from: 2027-08-02
+    text:
+      de: "Modelle, die vor dem 2. August 2025 in Verkehr gebracht wurden, müssen die Pflichten bis zum 2. August 2027 erfüllen.\n"
+      en: "Models placed on the market before 2 August 2025 must comply with the obligations by 2 August 2027."
+
+# ---------------------------------------------------------------------------
+# Tier 7: everything else
+# ---------------------------------------------------------------------------
+minimal:
+  id: minimal-risk
+  risk_class: minimal
+  legal_basis: ["AI-Act/art-4"]
+  citation:
+    de: "Artikel 4 KI-VO"
+    en: "Article 4 AI Act"
+  rationale:
+    de: "Das System fällt in keine der besonderen Klassen. Es bleibt die Pflicht zur KI-Kompetenz nach Artikel 4: Anbieter und Betreiber müssen dafür sorgen, dass die Menschen, die das System betreiben oder nutzen, dafür ausreichend geschult sind. Freiwillige Verhaltenskodizes nach Artikel 95 sind möglich.\n"
+    en: "The system does not fall into any of the specific classes. The AI literacy obligation under Article 4 remains: providers and deployers must ensure that the people who operate or use the system are sufficiently trained for it. Voluntary codes of conduct under Article 95 are possible."
+
+# ---------------------------------------------------------------------------
+# Who counts as provider although initially a deployer: Article 25
+# ---------------------------------------------------------------------------
+role_change:
+  id: art25-becomes-provider
+  legal_basis: ["AI-Act/art-25/para-1"]
+  citation:
+    de: "Artikel 25 Absatz 1 KI-VO"
+    en: "Article 25(1) AI Act"
+  deployer_becomes_provider_when:
+    - de: "Er bringt sein eigenes Zeichen oder seinen Namen auf einem Hochrisiko-KI-System an."
+      en: "They put their own name or trademark on a high-risk AI system."
+    - de: "Er ändert den Zweck eines Systems so, dass es zum Hochrisiko-KI-System wird."
+      en: "They modify the intended purpose of a system in such a way that it becomes a high-risk AI system."
+    - de: "Er nimmt eine wesentliche Änderung an einem Hochrisiko-KI-System vor und es bleibt ein Hochrisiko-KI-System."
+      en: "They make a substantial modification to a high-risk AI system and it remains a high-risk AI system."
+  effect:
+    de: "Mit dem Rollenwechsel treffen ihn die vollen Anbieterpflichten. Der ursprüngliche Anbieter ist dann nicht mehr Anbieter dieses Systems, muss aber mitwirken und Unterlagen bereitstellen.\n"
+    en: "With the change of role, the full provider obligations apply to them. The initial provider is then no longer the provider of this system, but must cooperate and make documentation available."
+
+# ---------------------------------------------------------------------------
+# Deadlines, Article 113, with caveat
+# ---------------------------------------------------------------------------
+deadlines:
+  legal_basis: ["AI-Act/art-113"]
+  citation:
+    de: "Artikel 113 KI-VO"
+    en: "Article 113 AI Act"
+  caveat:
+    de: "Die Fristen stehen so im Amtsblatt vom 12. Juli 2024. Zum Datenstand dieses Regelsatzes wurden Änderungen einzelner Fristen politisch erörtert. Vor einer Entscheidung mit Geld- oder Rechtsfolgen ist der geltende Stand bei der zuständigen Behörde zu prüfen.\n"
+    en: "The deadlines are as published in the Official Journal of 12 July 2024. As of the date of this rule set, changes to individual deadlines were under political discussion. Before a decision with financial or legal consequences, check the current state with the competent authority."
+  stages:
+    - date: 2024-08-01
+      event:
+        de: "Die Verordnung tritt in Kraft."
+        en: "The Regulation enters into force."
+    - date: 2025-02-02
+      event:
+        de: "Kapitel I und II gelten — die allgemeinen Bestimmungen, die verbotenen Praktiken nach Artikel 5 und die KI-Kompetenz nach Artikel 4.\n"
+        en: "Chapters I and II apply: the general provisions, the prohibited practices under Article 5 and AI literacy under Article 4."
+    - date: 2025-08-02
+      event:
+        de: "Pflichten für KI-Modelle mit allgemeinem Verwendungszweck, die Governance-Struktur, die notifizierenden Behörden und die Sanktionen gelten.\n"
+        en: "Obligations for general-purpose AI models, the governance structure, the notifying authorities and the penalties apply."
+    - date: 2026-08-02
+      event:
+        de: "Die Verordnung gilt im Übrigen, insbesondere für Hochrisiko-KI-Systeme nach Anhang III und die Transparenzpflichten nach Artikel 50.\n"
+        en: "The rest of the Regulation applies, in particular to high-risk AI systems under Annex III and the transparency obligations under Article 50."
+    - date: 2027-08-02
+      event:
+        de: "Hochrisiko-KI-Systeme nach Artikel 6 Absatz 1 in Produkten nach Anhang I sowie KI-Modelle, die vor dem 2. August 2025 in Verkehr gebracht wurden.\n"
+        en: "High-risk AI systems under Article 6(1) in products under Annex I, as well as AI models placed on the market before 2 August 2025."
+
+# ---------------------------------------------------------------------------
+# Penalties, Article 99
+# ---------------------------------------------------------------------------
+penalties:
+  legal_basis: ["AI-Act/art-99"]
+  citation:
+    de: "Artikel 99 KI-VO"
+    en: "Article 99 AI Act"
+  stages:
+    - infringement:
+        de: "Verbotene Praktik nach Artikel 5"
+        en: "Prohibited practice under Article 5"
+      amount:
+        de: "bis 35 Millionen Euro oder 7 Prozent des weltweiten Jahresumsatzes"
+        en: "up to EUR 35 million or 7 % of worldwide annual turnover"
+      applicable:
+        de: "der höhere Betrag"
+        en: "whichever is higher"
+    - infringement:
+        de: "Verstoß gegen Pflichten für Anbieter, Einführer, Händler, Betreiber, notifizierte Stellen oder gegen Artikel 50\n"
+        en: "Infringement of obligations of providers, importers, distributors, deployers, notified bodies or of Article 50"
+      amount:
+        de: "bis 15 Millionen Euro oder 3 Prozent des weltweiten Jahresumsatzes"
+        en: "up to EUR 15 million or 3 % of worldwide annual turnover"
+      applicable:
+        de: "der höhere Betrag"
+        en: "whichever is higher"
+    - infringement:
+        de: "Falsche, unvollständige oder irreführende Auskunft an Behörden"
+        en: "Incorrect, incomplete or misleading information supplied to authorities"
+      amount:
+        de: "bis 7,5 Millionen Euro oder 1 Prozent des weltweiten Jahresumsatzes"
+        en: "up to EUR 7.5 million or 1 % of worldwide annual turnover"
+      applicable:
+        de: "der höhere Betrag"
+        en: "whichever is higher"
+  smes:
+    de: "Bei kleinen und mittleren Unternehmen einschließlich Start-ups gilt jeweils der niedrigere der beiden Beträge als Obergrenze.\n"
+    en: "For small and medium-sized enterprises, including start-ups, the lower of the two amounts applies as the upper limit in each case."

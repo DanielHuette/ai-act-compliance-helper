@@ -1,0 +1,134 @@
+topic:
+  de: "Mischfälle mit Datenschutzrecht"
+  en: "Mixed cases with data protection law"
+hint:
+  de: "Hier treffen KI-Verordnung und Datenschutzrecht zusammen. Beide gelten nebeneinander; die KI-Verordnung ersetzt keine datenschutzrechtliche Grundlage. Die Fälle sind Beispiele zum Lernen, keine Rechtsberatung.\n"
+  en: "Here the AI Act and data protection law meet. Both apply side by side; the AI Act does not replace a legal basis under data protection law. The cases are examples for learning, not legal advice.\n"
+cases:
+  - id: fully-automated-rejection
+    title:
+      de: "Ablehnung eines Antrags ohne jedes menschliche Zutun"
+      en: "Rejection of an application without any human involvement"
+    scenario:
+      de: "Ein Mobilfunkanbieter prüft Anträge auf einen Vertrag mit Endgerät vollautomatisch. Ein KI-System bewertet die Bonität und lehnt bei einem Wert unter der Schwelle sofort ab; der Antragsteller erhält binnen Sekunden eine Absage per E-Mail. Ein Mitarbeiter sieht den Fall nicht.\n"
+      en: "A mobile network operator checks applications for a contract with a device fully automatically. An AI system assesses creditworthiness and, at a score below the threshold, rejects immediately; the applicant receives a rejection by email within seconds. No member of staff sees the case.\n"
+    roles: [deployer]
+    classification: high_risk_annex_iii
+    rationale:
+      de: "Nach der KI-Verordnung ist das ein Hochrisiko-Einsatz, weil Anhang III Nummer 5 Buchstabe b die Kreditwürdigkeitsprüfung und Bonitätsbewertung erfasst. Daneben steht eine zweite, eigenständige Hürde: Artikel 22 der Datenschutz-Grundverordnung gibt der betroffenen Person das Recht, nicht einer ausschließlich automatisierten Entscheidung unterworfen zu werden, die ihr gegenüber rechtliche Wirkung entfaltet oder sie ähnlich erheblich beeinträchtigt. Zulässig ist das nur in den dort genannten Fällen — etwa wenn es für den Vertragsabschluss erforderlich ist oder die Person ausdrücklich eingewilligt hat — und dann müssen mindestens das Recht auf Eingreifen eines Menschen, auf Darlegung des eigenen Standpunkts und auf Anfechtung gewährleistet sein.\n"
+      en: "Under the AI Act this is a high-risk use, because Annex III, point 5(b) covers evaluating creditworthiness and establishing credit scores. Alongside it stands a second, independent hurdle: Article 22 of the General Data Protection Regulation gives the data subject the right not to be subject to a decision based solely on automated processing which produces legal effects concerning him or her or similarly significantly affects him or her. This is permissible only in the cases named there — for example if it is necessary for entering into a contract or the person has given explicit consent — and then at least the right to obtain human intervention, to express his or her point of view and to contest the decision must be safeguarded.\n"
+    legal_basis: [AI-Act/annex-III/pt-5, AI-Act/art-6/para-2, AI-Act/art-26/para-2, AI-Act/art-26/para-11, AI-Act/art-27/para-1, GDPR/art-22, GDPR/art-13, GDPR/art-15]
+    obligations:
+      - de: "Prüfen, auf welchen der in Artikel 22 genannten Fälle die vollautomatische Entscheidung gestützt wird, und das festhalten."
+        en: "Check which of the cases named in Article 22 the fully automated decision is based on, and record this."
+      - de: "Ein Verfahren einrichten, mit dem der Antragsteller das Eingreifen eines Menschen erreichen kann."
+        en: "Set up a procedure through which the applicant can obtain human intervention."
+      - de: "In der Absage auf dieses Recht hinweisen, nicht nur in der Datenschutzerklärung."
+        en: "Point out this right in the rejection, not only in the privacy notice."
+      - de: "Über die Logik der Entscheidung in verständlicher Form informieren."
+        en: "Provide information about the logic of the decision in an understandable form."
+      - de: "Die Pflichten als Betreiber des Hochrisiko-Systems zusätzlich erfüllen, einschließlich der Abschätzung der Auswirkungen auf die Grundrechte."
+        en: "In addition, fulfil the obligations as deployer of the high-risk system, including the fundamental rights impact assessment."
+    learning_note:
+      de: "Die beiden Regelwerke stellen verschiedene Fragen. Die KI-Verordnung fragt, welche Pflichten beim Einsatz gelten. Das Datenschutzrecht fragt, ob eine Entscheidung überhaupt vollautomatisch ergehen darf. Wer die Pflichten der KI-Verordnung vollständig erfüllt, hat damit zu Artikel 22 noch nichts getan. Die menschliche Aufsicht der KI-Verordnung und das Recht auf Eingreifen eines Menschen aus Artikel 22 sind zudem nicht dasselbe: Die eine richtet sich an den Betrieb, das andere ist ein Recht des Betroffenen, das er geltend machen kann.\n"
+      en: "The two sets of rules ask different questions. The AI Act asks which obligations apply to the use. Data protection law asks whether a decision may be taken fully automatically at all. Anyone who fully meets the obligations of the AI Act has thereby not yet done anything about Article 22. Moreover, human oversight under the AI Act and the right to obtain human intervention under Article 22 are not the same: one is addressed to the business, the other is a right of the data subject that he or she can assert.\n"
+    pitfall:
+      de: "Das Unternehmen hält die menschliche Aufsicht nach der KI-Verordnung für die Erfüllung von Artikel 22. Eine Aufsicht, die der Betroffene nicht anrufen kann, ersetzt sein Recht auf Eingreifen eines Menschen nicht.\n"
+      en: "The company regards human oversight under the AI Act as fulfilling Article 22. Oversight that the data subject cannot invoke does not replace his or her right to obtain human intervention.\n"
+    related_cases: [consumer-loan-credit-scoring, layoff-shortlist, municipal-application-prescreening]
+
+  - id: training-on-customer-data
+    title:
+      de: "Training des eigenen Modells mit Kundendaten"
+      en: "Training an in-house model with customer data"
+    scenario:
+      de: "Ein Softwarehaus betreibt ein Buchhaltungsprogramm für kleine Betriebe. Es will die eingegebenen Buchungstexte seiner Kunden nutzen, um ein eigenes KI-System zu trainieren, das künftig Buchungen automatisch vorkontiert. Die Buchungstexte enthalten Namen von Lieferanten, Mitarbeitern und Privatpersonen.\n"
+      en: "A software house operates an accounting program for small businesses. It wants to use the booking texts entered by its customers to train its own AI system that will in future pre-assign accounts to bookings automatically. The booking texts contain names of suppliers, employees and private individuals.\n"
+    roles: [provider]
+    classification: minimal
+    rationale:
+      de: "Die Vorkontierung von Buchungen fällt in keinen Bereich von Anhang III, deshalb bleibt es nach der KI-Verordnung bei der Pflicht zur KI-Kompetenz nach Artikel 4. Die eigentliche Hürde liegt im Datenschutzrecht: Das Training ist eine neue Verarbeitung zu einem anderen Zweck als die Vertragserfüllung und braucht eine eigene Grundlage. Zu klären ist außerdem, in welcher Rolle das Softwarehaus die Kundendaten hält — verarbeitet es sie im Auftrag der Kunden, darf es sie nicht ohne weiteres für eigene Zwecke verwenden.\n"
+      en: "Pre-assigning accounts to bookings falls into no area of Annex III, so under the AI Act this leaves the AI literacy obligation under Article 4. The real hurdle lies in data protection law: the training is a new processing for a purpose other than performance of the contract and needs its own legal basis. It must also be clarified in which role the software house holds the customer data — if it processes them on behalf of its customers, it may not simply use them for its own purposes.\n"
+    legal_basis: [AI-Act/annex-III, AI-Act/art-4, AI-Act/art-10, GDPR/art-6, GDPR/art-5, GDPR/art-28, GDPR/art-13]
+    obligations:
+      - de: "Vor dem Training klären, ob die Daten im Auftrag der Kunden verarbeitet werden; dann ist eine Nutzung für eigene Zwecke ohne Weisung unzulässig."
+        en: "Before training, clarify whether the data are processed on behalf of the customers; if so, use for own purposes without instructions is impermissible."
+      - de: "Eine Rechtsgrundlage für den neuen Zweck bestimmen und die Zweckänderung bewerten."
+        en: "Determine a legal basis for the new purpose and assess the change of purpose."
+      - de: "Personenbezug aus den Trainingsdaten entfernen, soweit er für den Zweck nicht gebraucht wird."
+        en: "Remove personal references from the training data insofar as they are not needed for the purpose."
+      - de: "Kunden und betroffene Personen über die Verarbeitung informieren."
+        en: "Inform customers and data subjects about the processing."
+      - de: "Prüfen, ob das trainierte Modell Eingaben wiedergeben kann, und dem entgegenwirken."
+        en: "Check whether the trained model can reproduce inputs, and counteract this."
+    learning_note:
+      de: "Trainingsdaten sind der am häufigsten unterschätzte Teil eines KI-Vorhabens. Die Frage ist nicht nur, ob die Daten vorhanden sind, sondern zu welchem Zweck sie erhoben wurden und in welcher Rolle man sie hält. Wer Daten im Auftrag seiner Kunden verarbeitet, hat sie nicht zur eigenen Verfügung — und daran scheitern Trainingsvorhaben häufiger als an der KI-Verordnung. Diese Prüfung gehört vor den ersten Trainingslauf, weil ein mit unzulässigen Daten trainiertes Modell nachträglich kaum zu heilen ist.\n"
+      en: "Training data are the most frequently underestimated part of an AI project. The question is not only whether the data are available, but for what purpose they were collected and in which role you hold them. Anyone who processes data on behalf of their customers does not have them at their own disposal — and training projects fail on this more often than on the AI Act. This check belongs before the first training run, because a model trained with impermissible data can hardly be remedied afterwards.\n"
+    pitfall:
+      de: "Das Softwarehaus beruft sich auf eine Klausel in den allgemeinen Geschäftsbedingungen, die eine Nutzung zur Produktverbesserung erlaubt. Ob das als Grundlage für das Training personenbezogener Daten trägt, ist zweifelhaft und jedenfalls gesondert zu prüfen — erst recht, wenn die Daten Dritte betreffen, die mit dem Softwarehaus nichts zu tun haben.\n"
+      en: "The software house relies on a clause in its general terms and conditions that permits use for product improvement. Whether that holds as a basis for training on personal data is doubtful and must in any case be checked separately — all the more so if the data concern third parties who have nothing to do with the software house.\n"
+    related_cases: [domain-fine-tuning, model-vendor-processing-agreement, code-completion]
+
+  - id: third-country-model-vendor
+    title:
+      de: "Modellanbieter in den Vereinigten Staaten"
+      en: "Model provider in the United States"
+    scenario:
+      de: "Ein mittelständischer Hersteller lässt seine technischen Anfragen von einem Sprachmodell beantworten, das ein Anbieter mit Sitz in den Vereinigten Staaten über eine Programmierschnittstelle bereitstellt. Die Anfragen der Kunden gehen dabei einschließlich Namen, Anlagennummern und Kontaktdaten an die Server dieses Anbieters.\n"
+      en: "A medium-sized manufacturer has its technical enquiries answered by a language model that a provider based in the United States makes available through an application programming interface. In the process, customers' enquiries, including names, installation numbers and contact details, go to this provider's servers.\n"
+    roles: [deployer]
+    classification: minimal
+    rationale:
+      de: "Die Beantwortung technischer Anfragen fällt in keinen Bereich von Anhang III; es bleibt die Pflicht zur KI-Kompetenz nach Artikel 4, und wenn Kunden direkt mit dem System sprechen, kommt die Transparenzpflicht nach Artikel 50 Absatz 1 hinzu. Datenschutzrechtlich liegt eine Übermittlung personenbezogener Daten in ein Drittland vor. Sie ist nur auf einer der im Datenschutzrecht vorgesehenen Grundlagen zulässig — etwa aufgrund eines Angemessenheitsbeschlusses für das Zielland oder geeigneter Garantien — und der jeweils geltende Stand dieser Grundlagen ist vor der Entscheidung zu prüfen.\n"
+      en: "Answering technical enquiries falls into no area of Annex III; this leaves the AI literacy obligation under Article 4, and if customers talk directly with the system, the transparency obligation under Article 50(1) is added. Under data protection law, there is a transfer of personal data to a third country. It is permissible only on one of the bases provided for in data protection law — for example on the basis of an adequacy decision for the country of destination or of appropriate safeguards — and the current status of these bases must be checked before the decision.\n"
+    legal_basis: [AI-Act/annex-III, AI-Act/art-4, AI-Act/art-50/para-1, GDPR/art-44, GDPR/art-45, GDPR/art-46, GDPR/art-28, GDPR/art-13]
+    obligations:
+      - de: "Die Grundlage für die Übermittlung in das Drittland bestimmen und ihren aktuellen Stand prüfen, statt sich auf eine frühere Einschätzung zu verlassen."
+        en: "Determine the basis for the transfer to the third country and check its current status, instead of relying on an earlier assessment."
+      - de: "Mit dem Anbieter einen Vertrag über die Verarbeitung im Auftrag schließen."
+        en: "Conclude a data processing agreement with the provider."
+      - de: "Festlegen, welche Angaben überhaupt übermittelt werden, und den Rest vorher entfernen."
+        en: "Lay down which information is transmitted at all, and remove the rest beforehand."
+      - de: "Klären und vertraglich festhalten, ob der Anbieter die Eingaben für eigenes Training verwendet."
+        en: "Clarify and record in the contract whether the provider uses the inputs for its own training."
+      - de: "Kunden darüber informieren, dass ein KI-System antwortet und wohin ihre Angaben gehen."
+        en: "Inform customers that an AI system is answering and where their information goes."
+    learning_note:
+      de: "Bei zugekauften Modellen entsteht das Risiko meist nicht aus der Einstufung, sondern aus dem Datenweg. Zwei Fragen entscheiden fast jeden solchen Fall: Was verlässt das Haus, und was darf der Anbieter damit tun? Beide lassen sich vertraglich und technisch klären, und beide muss der Betreiber selbst klären — der Anbieter wird nicht von allein mitteilen, dass er Eingaben weiterverwendet.\n"
+      en: "With purchased models, the risk usually arises not from the classification but from the data path. Two questions decide almost every such case: what leaves the company, and what may the provider do with it? Both can be clarified contractually and technically, and the deployer must clarify both itself — the provider will not volunteer that it reuses inputs.\n"
+    pitfall:
+      de: "Die Übermittlungsgrundlage wird einmal geprüft und dann als dauerhaft geklärt behandelt. Die Grundlagen für Drittlandsübermittlungen haben sich in der Vergangenheit geändert; wer nicht nachprüft, arbeitet irgendwann ohne tragende Grundlage.\n"
+      en: "The transfer basis is checked once and then treated as permanently settled. The bases for third-country transfers have changed in the past; anyone who does not re-check will at some point be working without a valid basis.\n"
+    related_cases: [model-vendor-processing-agreement, training-on-customer-data, in-house-foundation-model]
+
+  - id: model-vendor-processing-agreement
+    title:
+      de: "Vertrag mit dem Modellanbieter über die Verarbeitung im Auftrag"
+      en: "Data processing agreement with the model provider"
+    scenario:
+      de: "Eine Steuerberatungsgesellschaft will ein Sprachmodell einsetzen, das Mandantenschreiben zusammenfasst. Der Modellanbieter stellt einen Standardvertrag über die Verarbeitung im Auftrag bereit. Darin behält er sich vor, Eingaben zur Verbesserung seiner Dienste zu verwenden und Unterauftragnehmer hinzuzuziehen, die in einer Liste auf seiner Internetseite stehen.\n"
+      en: "A tax advisory firm wants to use a language model that summarises client letters. The model provider makes a standard data processing agreement available. In it, the provider reserves the right to use inputs to improve its services and to engage sub-processors listed on its website.\n"
+    roles: [deployer]
+    classification: minimal
+    rationale:
+      de: "Die Zusammenfassung von Schreiben fällt in keinen Bereich von Anhang III; es bleibt die Pflicht zur KI-Kompetenz nach Artikel 4. Die datenschutzrechtliche Frage ist die Rollenverteilung: Wer Daten im Auftrag verarbeitet, darf sie nur nach Weisung des Verantwortlichen verwenden. Ein Vorbehalt, Eingaben für eigene Zwecke zu nutzen, passt dazu nicht — in diesem Umfang handelt der Anbieter für eigene Zwecke und ist insoweit selbst verantwortlich. Für Steuerberater kommt die berufsrechtliche Verschwiegenheitspflicht hinzu, die eigene Anforderungen an die Einbeziehung Dritter stellt.\n"
+      en: "Summarising letters falls into no area of Annex III; this leaves the AI literacy obligation under Article 4. The question under data protection law is the allocation of roles: a processor may use data only on the instructions of the controller. A reservation to use inputs for its own purposes does not fit with this — to that extent the provider acts for its own purposes and is itself a controller in that respect. For tax advisers, the professional duty of confidentiality is added, which imposes its own requirements on involving third parties.\n"
+    legal_basis: [AI-Act/annex-III, AI-Act/art-4, GDPR/art-28, GDPR/art-32, GDPR/art-5, GDPR/art-44]
+    obligations:
+      - de: "Den Vorbehalt zur Nutzung der Eingaben für eigene Zwecke abbedingen oder den Anbieter wechseln."
+        en: "Have the reservation to use the inputs for own purposes contractually excluded, or switch provider."
+      - de: "Die Liste der Unterauftragnehmer prüfen und ein Widerspruchsrecht bei Änderungen vereinbaren."
+        en: "Check the list of sub-processors and agree a right to object to changes."
+      - de: "Prüfen, ob die berufsrechtliche Verschwiegenheitspflicht die Einbeziehung dieses Anbieters zulässt."
+        en: "Check whether the professional duty of confidentiality permits involving this provider."
+      - de: "Technische und organisatorische Maßnahmen im Vertrag konkret festschreiben, nicht nur allgemein benennen."
+        en: "Lay down technical and organisational measures specifically in the contract, not just name them in general terms."
+      - de: "Festlegen, welche Mandantendaten überhaupt in das System eingegeben werden dürfen, und das den Mitarbeitern verbindlich sagen."
+        en: "Lay down which client data may be entered into the system at all, and tell the staff so in binding terms."
+    learning_note:
+      de: "Ein Standardvertrag über die Verarbeitung im Auftrag ist kein Nachweis, dass alles in Ordnung ist — er ist ein Angebot, das man liest. Die entscheidende Stelle ist immer dieselbe: Darf der Anbieter die Eingaben auch für sich verwenden? Steht dort ja, liegt insoweit keine Verarbeitung nach Weisung vor, und der Vertrag trägt das Vorhaben nicht. Bei Berufsgeheimnisträgern kommt eine weitere Schranke hinzu, die vom Datenschutzrecht unabhängig ist.\n"
+      en: "A standard data processing agreement is no proof that everything is in order — it is an offer that you read. The decisive passage is always the same: may the provider also use the inputs for itself? If it says yes, there is to that extent no processing on instructions, and the agreement does not support the project. For persons bound by professional secrecy, a further barrier is added that is independent of data protection law.\n"
+    pitfall:
+      de: "Der Vertrag wird unterschrieben, weil er vorhanden und vom Anbieter bereitgestellt ist. Niemand liest die Klausel zur Nutzung der Eingaben, und gerade sie entscheidet darüber, ob der Einsatz zulässig ist.\n"
+      en: "The agreement is signed because it exists and has been provided by the provider. Nobody reads the clause on use of the inputs, and it is precisely that clause that decides whether the use is permissible.\n"
+    related_cases: [third-country-model-vendor, training-on-customer-data, code-completion]

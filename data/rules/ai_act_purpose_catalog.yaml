@@ -1,0 +1,568 @@
+# Purpose catalog: the meaning-based route of classification.
+#
+# WHY THIS FILE EXISTS
+# Classification first ran on keywords alone. On the project's own
+# case collection that hit 44 of 44 cases; on twenty descriptions as
+# companies actually submit them, only 14. All six misses were
+# the same: nothing recognised, so "minimal". A keyword list only hits
+# what someone wrote down beforehand.
+#
+# So next to each citation this file states the same purpose in the words
+# a company would use, in German and English. Purpose is compared with purpose.
+#
+# WHY THE SENTENCES ARE WORDED THIS WAY
+# Three forms were measured (German), each against the same three descriptions:
+#
+#   Form                                correct        wrong
+#   "Bilder oder Fotos erzeugen"        0.036–0.447    up to 0.141
+#   "Das System erzeugt Bilder."        0.037–0.546    up to 0.159
+#   "Wir erzeugen mit KI Bilder."       0.986–0.989    up to 0.073
+#
+# Only the third form separates. The reason: a description is a statement in
+# the first person, and the cross-encoder compares sentence with sentence. An
+# infinitive without an actor reads like a keyword and brings back the same
+# vagueness that was to be fixed.
+#
+# THEREFORE: every purpose sentence is a complete statement in the first person
+# plural, as a company would write it ("Wir ..." / "We ..."). Whoever adds a
+# purpose keeps this form in both languages; otherwise the score drops by a
+# factor of twenty and the provision is no longer found. The English sentence is
+# what an English-speaking company would write, not a literal translation.
+#
+# WHAT THIS FILE DOES NOT DO
+# It does not classify. It says WHICH provision to check, not WHAT applies.
+# The field "rule" points to the existing id in ai_act_risk_classes.yaml: the
+# purpose route is a second entrance to the same rule, not a second rule set.
+# Role checks, trait filters, exemptions and the derivation of obligations
+# therefore apply unchanged, and classification still comes from the rule set.
+#
+# FIELDS
+#   citation          id in the corpus; checked against the official text at build time
+#   risk_class        risk class this provision triggers
+#   rule              existing id in ai_act_risk_classes.yaml
+#   purposes          the same purpose as a first-person statement, {de, en}
+#   counter_purposes  counter-purposes, {de, en}; if one matches better, the
+#                     provision does not carry the case
+#   required_words    words, {de, en}, at least one of which MUST appear in the
+#                     description. For provisions whose elements require an
+#                     explicit feature that no semantic comparison can replace:
+#                     Article 5(1)(d) prohibits predicting criminal offences only
+#                     when based SOLELY on profiling. If the word is absent, the
+#                     elements are not met; Annex III, point 6(d) applies, with
+#                     obligations instead of a prohibition.
+as_of: "2026-10-04"
+entries:
+
+  # === Annex III, point 1 — biometrics ===================================
+  - citation: AI-Act/annex-III/pt-1-a
+    risk_class: high_risk_annex_iii
+    rule: annex3-1-biometrics
+    purposes:
+      - de: "Wir erkennen Personen aus der Ferne an ihrem Gesicht, auch aus einer Menschenmenge heraus."
+        en: "We identify people remotely by their face, even in a crowd."
+      - de: "Wir gleichen Kamerabilder mit einer Datenbank von Gesichtern ab und stellen fest, wer die Person ist."
+        en: "We match camera images against a database of faces to establish who a person is."
+      - de: "Wir ordnen unbekannte Personen über ihre körperlichen Merkmale einer Identität zu."
+        en: "We link unknown people to an identity based on their physical features."
+    counter_purposes:
+      - de: "Wir prüfen nur, ob jemand die Person ist, für die er sich ausgibt, etwa beim Anmelden oder Entsperren."
+        en: "We only check whether someone is who they claim to be, for example when logging in or unlocking a device."
+  - citation: AI-Act/annex-III/pt-1-b
+    risk_class: high_risk_annex_iii
+    rule: annex3-1-biometrics
+    purposes:
+      - de: "Wir teilen Menschen anhand ihrer körperlichen Merkmale in Gruppen ein."
+        en: "We sort people into groups based on their physical features."
+      - de: "Wir schließen aus Aussehen oder Stimme auf Herkunft, Geschlecht, Alter oder Gesundheit."
+        en: "We infer someone's origin, gender, age or health from their appearance or voice."
+      - de: "Wir schätzen per Kamera das Alter oder die Altersgruppe von Personen."
+        en: "We use a camera to estimate people's age or age group."
+  - citation: AI-Act/annex-III/pt-1-c
+    risk_class: high_risk_annex_iii
+    rule: annex3-1-biometrics
+    purposes:
+      - de: "Wir erkennen die Gefühle und Stimmungen von Menschen."
+        en: "We recognise people's emotions and moods."
+      - de: "Wir lesen aus Gesicht, Stimme oder Tonfall ab, wie jemand sich fühlt."
+        en: "We read from someone's face, voice or tone how they are feeling."
+    counter_purposes:
+      # Speech recognition writes down what was said and infers
+      # nothing about the person. It resembles voice analysis but is
+      # not: without this counter-purpose, meeting minutes from an
+      # audio recording were reported as biometrics under Annex III, point 1.
+      - de: "Wir schreiben eine Tonaufnahme in Text um, ohne auf Merkmale oder Gefühle der Sprecher zu schließen."
+        en: "We convert an audio recording into text without drawing conclusions about the speakers' characteristics or emotions."
+      - de: "Wir erkennen gesprochene Sprache und wandeln sie in geschriebenen Text."
+        en: "We recognise spoken language and convert it into written text."
+  - citation: AI-Act/annex-III/pt-2
+    risk_class: high_risk_annex_iii
+    rule: annex3-2-critical-infrastructure
+    purposes:
+      - de: "Wir steuern ein Strom-, Gas-, Wärme- oder Wassernetz."
+        en: "We control an electricity, gas, heating or water network."
+      - de: "Wir überwachen ein Versorgungsnetz und greifen bei Störungen ein."
+        en: "We monitor a utility network and intervene when faults occur."
+      - de: "Wir steuern den Straßenverkehr, etwa Ampeln oder ein Verkehrsleitsystem."
+        en: "We control road traffic, for example traffic lights or a traffic management system."
+      - de: "Wir halten eine Anlage der Versorgung sicher und schalten sie im Notfall ab."
+        en: "We keep a utility plant safe and shut it down in an emergency."
+      - de: "Wir betreiben ein Rechenzentrum oder ein Netz als kritische digitale Infrastruktur."
+        en: "We operate a data centre or a network as critical digital infrastructure."
+  - citation: AI-Act/annex-III/pt-3-a
+    risk_class: high_risk_annex_iii
+    rule: annex3-3-education
+    purposes:
+      - de: "Wir entscheiden über die Aufnahme an einer Schule, Hochschule oder Ausbildungsstelle."
+        en: "We decide who is admitted to a school, university or vocational training place."
+      - de: "Wir wählen Bewerber um einen Studien- oder Ausbildungsplatz aus oder weisen sie einer Klasse zu."
+        en: "We select applicants for a university or training place or assign them to a class."
+      - de: "Wir stufen Teilnehmer in Niveaus ein und weisen sie danach den Kursen zu."
+        en: "We place participants at levels and assign them to courses accordingly."
+  - citation: AI-Act/annex-III/pt-3-b
+    risk_class: high_risk_annex_iii
+    rule: annex3-3-education
+    purposes:
+      - de: "Wir bewerten Prüfungen, Hausarbeiten oder Aufsätze von Lernenden und geben eine Note."
+        en: "We mark learners' exams, assignments or essays and give them a grade."
+      - de: "Wir beurteilen den Lernfortschritt von Schülern oder Studenten und geben den Lernweg vor."
+        en: "We assess the learning progress of pupils or students and set their learning path."
+  - citation: AI-Act/annex-III/pt-3-c
+    risk_class: high_risk_annex_iii
+    rule: annex3-3-education
+    purposes:
+      - de: "Wir legen fest, welches Bildungsniveau oder welchen Schulzweig jemand bekommt."
+        en: "We decide which level of education or which school track someone is given."
+  - citation: AI-Act/annex-III/pt-3-d
+    risk_class: high_risk_annex_iii
+    rule: annex3-3-education
+    purposes:
+      - de: "Wir überwachen Lernende während einer Prüfung und erkennen Täuschungsversuche."
+        en: "We monitor learners during an exam and detect attempts to cheat."
+  - citation: AI-Act/annex-III/pt-4-a
+    risk_class: high_risk_annex_iii
+    rule: annex3-4-employment
+    purposes:
+      - de: "Wir sichten Bewerbungen und sortieren sie vor."
+        en: "We screen job applications and pre-sort them."
+      - de: "Wir lesen Lebensläufe und schlagen die passendsten Bewerber vor."
+        en: "We read CVs and suggest the most suitable applicants."
+      - de: "Wir bewerten Bewerber und geben eine Empfehlung, wer eingestellt wird."
+        en: "We assess applicants and recommend who should be hired."
+      - de: "Wir zeigen Stellenanzeigen gezielt bestimmten Personen an."
+        en: "We show job adverts to specific people in a targeted way."
+  - citation: AI-Act/annex-III/pt-4-b
+    risk_class: high_risk_annex_iii
+    rule: annex3-4-employment
+    purposes:
+      - de: "Wir beobachten und bewerten die Leistung oder das Verhalten von Beschäftigten."
+        en: "We monitor and evaluate the performance or behaviour of employees."
+      - de: "Wir teilen Mitarbeitern Aufgaben, Schichten oder Touren nach ihrem Verhalten oder ihren Merkmalen zu."
+        en: "We assign tasks, shifts or routes to employees based on their behaviour or personal traits."
+      - de: "Wir entscheiden über Beförderung, Kündigung, Gehalt oder Vertragsbedingungen von Beschäftigten."
+        en: "We decide on promotion, dismissal, pay or contract terms for employees."
+      - de: "Unsere Ergebnisse fließen in die Leistungsbeurteilung von Angestellten ein."
+        en: "Our results feed into employees' performance reviews."
+      - de: "Wir zeigen der Leitung, welche Mitarbeiter unter der Vorgabe oder dem Soll liegen."
+        en: "We show management which employees are falling short of their targets or quotas."
+      - de: "Wir entscheiden mit, wer eine Prämie, einen Bonus oder eine Gehaltserhöhung bekommt."
+        en: "We help decide who gets an incentive payment, a bonus or a pay rise."
+      - de: "Wir werten die Arbeitsdaten einzelner Beschäftigter aus und melden Abweichungen nach oben."
+        en: "We analyse the work data of individual employees and report deviations to management."
+    counter_purposes:
+      # Two cases resembled an HR process and are not one: searching
+      # supply contracts for termination periods, and the minutes
+      # of a meeting. Both use employment-law words but evaluate
+      # nobody. Without these counter-purposes they were reported as Annex III,
+      # point 4.
+      - de: "Wir suchen in Verträgen nach Fristen oder Klauseln und listen sie auf."
+        en: "We search contracts for deadlines or clauses and list them."
+      - de: "Wir schreiben aus einer Tonaufnahme ein Besprechungsprotokoll, das wir selbst gegenlesen."
+        en: "We write meeting minutes from an audio recording and check them ourselves."
+  - citation: AI-Act/annex-III/pt-5-a
+    risk_class: high_risk_annex_iii
+    rule: annex3-5-essential-services
+    purposes:
+      - de: "Wir prüfen als Behörde, ob jemand Anspruch auf eine Sozialleistung hat."
+        en: "We check as a public authority whether someone is entitled to a social benefit."
+      - de: "Wir bewilligen, kürzen, streichen oder fordern eine staatliche Leistung zurück."
+        en: "We grant, reduce, withdraw or reclaim public benefits."
+  - citation: AI-Act/annex-III/pt-5-b
+    risk_class: high_risk_annex_iii
+    rule: annex3-5-essential-services
+    purposes:
+      - de: "Wir prüfen die Kreditwürdigkeit von Privatpersonen."
+        en: "We assess the creditworthiness of private individuals."
+      - de: "Wir berechnen einen Score, nach dem über einen Kredit oder eine Finanzierung entschieden wird."
+        en: "We calculate a score that is used to decide on a loan or financing."
+      - de: "Wir bewerten die Bonität eines Antragstellers."
+        en: "We assess an applicant's credit rating."
+    counter_purposes:
+      - de: "Wir decken Betrug bei Zahlungen oder Anträgen auf."
+        en: "We detect fraud in payments or applications."
+  - citation: AI-Act/annex-III/pt-5-c
+    risk_class: high_risk_annex_iii
+    rule: annex3-5-essential-services
+    purposes:
+      - de: "Wir schätzen bei einer Lebens- oder Krankenversicherung das Risiko einer Person ein."
+        en: "We assess a person's risk for life or health insurance."
+      - de: "Wir legen den Beitrag für eine Lebens- oder Krankenversicherung fest."
+        en: "We set the premium for life or health insurance."
+  - citation: AI-Act/annex-III/pt-5-d
+    risk_class: high_risk_annex_iii
+    rule: annex3-5-essential-services
+    purposes:
+      - de: "Wir nehmen Notrufe an, ordnen sie ein und sortieren sie nach Dringlichkeit."
+        en: "We take emergency calls, classify them and sort them by urgency."
+      - de: "Wir schicken Rettungswagen, Feuerwehr oder Polizei zu Einsätzen und legen die Reihenfolge fest."
+        en: "We dispatch ambulances, fire crews or police to incidents and decide the order of priority."
+      - de: "Wir teilen Patienten in der Notaufnahme nach Dringlichkeit ein."
+        en: "We triage patients in the emergency department by urgency."
+  - citation: AI-Act/annex-III/pt-6-a
+    risk_class: high_risk_annex_iii
+    rule: annex3-6-law-enforcement
+    purposes:
+      - de: "Wir schätzen für die Polizei ein, wie wahrscheinlich jemand Opfer einer Straftat wird."
+        en: "We estimate for the police how likely someone is to become a victim of crime."
+  - citation: AI-Act/annex-III/pt-6-b
+    risk_class: high_risk_annex_iii
+    rule: annex3-6-law-enforcement
+    purposes:
+      - de: "Wir erkennen für die Polizei, ob eine Aussage gelogen ist."
+        en: "We detect for the police whether a statement is a lie."
+  - citation: AI-Act/annex-III/pt-6-c
+    risk_class: high_risk_annex_iii
+    rule: annex3-6-law-enforcement
+    purposes:
+      - de: "Wir bewerten für die Polizei, wie verlässlich ein Beweismittel ist."
+        en: "We assess for the police how reliable a piece of evidence is."
+  - citation: AI-Act/annex-III/pt-6-d
+    risk_class: high_risk_annex_iii
+    rule: annex3-6-law-enforcement
+    purposes:
+      - de: "Wir schätzen für die Polizei ein, wie wahrscheinlich jemand eine Straftat begeht."
+        en: "We estimate for the police how likely someone is to commit a crime."
+      - de: "Wir bewerten Personen nach ihrem früheren kriminellen Verhalten."
+        en: "We assess people based on their past criminal behaviour."
+  - citation: AI-Act/annex-III/pt-6-e
+    risk_class: high_risk_annex_iii
+    rule: annex3-6-law-enforcement
+    purposes:
+      - de: "Wir erstellen für die Polizei Täterprofile von Personen."
+        en: "We create offender profiles of individuals for the police."
+  - citation: AI-Act/annex-III/pt-7-a
+    risk_class: high_risk_annex_iii
+    rule: annex3-7-migration
+    purposes:
+      - de: "Wir erkennen an der Grenze oder im Asylverfahren, ob jemand die Wahrheit sagt."
+        en: "We detect at the border or in asylum procedures whether someone is telling the truth."
+  - citation: AI-Act/annex-III/pt-7-b
+    risk_class: high_risk_annex_iii
+    rule: annex3-7-migration
+    purposes:
+      - de: "Wir schätzen bei Einreisenden ein Sicherheits- oder Gesundheitsrisiko ein."
+        en: "We assess the security or health risk posed by people entering the country."
+      - de: "Wir schätzen ein, ob jemand unerlaubt einwandern will."
+        en: "We assess whether someone intends to migrate irregularly."
+  - citation: AI-Act/annex-III/pt-7-c
+    risk_class: high_risk_annex_iii
+    rule: annex3-7-migration
+    purposes:
+      - de: "Wir prüfen Asylanträge, Visumanträge oder Aufenthaltstitel."
+        en: "We examine asylum applications, visa applications or residence permits."
+  - citation: AI-Act/annex-III/pt-7-d
+    risk_class: high_risk_annex_iii
+    rule: annex3-7-migration
+    purposes:
+      - de: "Wir spüren an der Grenze oder im Migrationsverfahren Personen auf und identifizieren sie."
+        en: "We detect and identify people at the border or in migration procedures."
+    counter_purposes:
+      - de: "Wir prüfen Reisedokumente auf Echtheit."
+        en: "We check travel documents for authenticity."
+  - citation: AI-Act/annex-III/pt-8-a
+    risk_class: high_risk_annex_iii
+    rule: annex3-8-justice
+    purposes:
+      - de: "Wir unterstützen ein Gericht bei der Auslegung des Rechts und bei der Entscheidung eines Falles."
+        en: "We support a court in interpreting the law and deciding a case."
+      - de: "Wir helfen in einem Schlichtungs- oder Schiedsverfahren, einen Streit zu entscheiden."
+        en: "We help resolve a dispute in mediation or arbitration proceedings."
+  - citation: AI-Act/annex-III/pt-8-b
+    risk_class: high_risk_annex_iii
+    rule: annex3-8-justice
+    purposes:
+      - de: "Wir sprechen Wähler an, um ihr Wahlverhalten oder das Ergebnis einer Wahl zu beeinflussen."
+        en: "We target voters in order to influence their voting behaviour or the outcome of an election."
+    counter_purposes:
+      - de: "Wir planen eine politische Kampagne organisatorisch, ohne Wähler direkt anzusprechen."
+        en: "We handle the logistics of a political campaign without addressing voters directly."
+  - citation: AI-Act/annex-I/pt-A-1
+    risk_class: high_risk_annex_i
+    rule: art6-1-product-safety
+    purposes:
+      - de: "Wir bauen ein KI-Teil, das eine Maschine sicher hält und sie notfalls stoppt."
+        en: "We build an AI component that keeps a machine safe and stops it if necessary."
+      - de: "Unsere Software steuert eine Maschine oder Anlage und löst den Not-Halt aus."
+        en: "Our software controls a machine or plant and triggers the emergency stop."
+      - de: "Wir liefern ein Sicherheitsbauteil für eine Werkzeugmaschine oder einen Roboter."
+        en: "We supply a safety component for a machine tool or a robot."
+    counter_purposes:
+      # Visual inspection in manufacturing resembles a safety component:
+      # both are a camera on a machine. But it does not keep the machine
+      # safe; it rejects parts and does not intervene in the
+      # controls. Without this counter-purpose, weld seam inspection was
+      # classified as Annex I although it falls under no class of the Regulation.
+      - de: "Wir prüfen die Qualität von Werkstücken oder Bauteilen und sortieren schlechte aus, ohne in die Maschine einzugreifen."
+        en: "We check the quality of workpieces or components and reject defective ones without intervening in the machine."
+      - de: "Wir kontrollieren mit einer Kamera, ob gefertigte Teile in Ordnung sind."
+        en: "We use a camera to check whether manufactured parts are free of defects."
+      - de: "Wir sagen voraus, wann eine Maschine oder Pumpe gewartet werden muss, ohne in ihre Sicherheitssteuerung einzugreifen."
+        en: "We predict when a machine or pump is due for maintenance, without intervening in its safety controls."
+      - de: "Wir sagen aus Maschinendaten den Ausschuss oder die Ausbeute in der Fertigung voraus."
+        en: "We predict scrap or yield in production from machine data."
+      - de: "Wir planen die Reihenfolge der Fertigungsaufträge an den Maschinen."
+        en: "We plan the sequence of production orders on the machines."
+  - citation: AI-Act/annex-I/pt-A-2
+    risk_class: high_risk_annex_i
+    rule: art6-1-product-safety
+    purposes:
+      - de: "Wir bauen KI in ein Spielzeug ein."
+        en: "We build AI into a toy."
+  - citation: AI-Act/annex-I/pt-A-4
+    risk_class: high_risk_annex_i
+    rule: art6-1-product-safety
+    purposes:
+      - de: "Wir liefern die Steuerung oder ein Sicherheitsbauteil für einen Aufzug."
+        en: "We supply the controls or a safety component for a lift or elevator."
+  - citation: AI-Act/annex-I/pt-A-5
+    risk_class: high_risk_annex_i
+    rule: art6-1-product-safety
+    purposes:
+      - de: "Wir bauen KI in ein Gerät für explosionsgefährdete Bereiche ein."
+        en: "We build AI into equipment for potentially explosive atmospheres."
+  - citation: AI-Act/annex-I/pt-A-6
+    risk_class: high_risk_annex_i
+    rule: art6-1-product-safety
+    purposes:
+      - de: "Wir bauen KI in eine Funkanlage oder ein Funkmodul ein."
+        en: "We build AI into radio equipment or a radio module."
+  - citation: AI-Act/annex-I/pt-A-7
+    risk_class: high_risk_annex_i
+    rule: art6-1-product-safety
+    purposes:
+      - de: "Wir liefern die Steuerung oder Überwachung für einen Druckbehälter oder ein Druckgerät."
+        en: "We supply the controls or monitoring for a pressure vessel or pressure equipment."
+  - citation: AI-Act/annex-I/pt-A-8
+    risk_class: high_risk_annex_i
+    rule: art6-1-product-safety
+    purposes:
+      - de: "Wir liefern die Steuerung oder ein Sicherheitsbauteil für eine Seilbahn."
+        en: "We supply the controls or a safety component for a cableway."
+  - citation: AI-Act/annex-I/pt-A-9
+    risk_class: high_risk_annex_i
+    rule: art6-1-product-safety
+    purposes:
+      - de: "Wir bauen KI in eine persönliche Schutzausrüstung ein, etwa in einen Helm oder eine Schutzweste."
+        en: "We build AI into personal protective equipment, such as a helmet or a protective vest."
+  - citation: AI-Act/annex-I/pt-A-10
+    risk_class: high_risk_annex_i
+    rule: art6-1-product-safety
+    purposes:
+      - de: "Wir liefern die Steuerung für ein Gasgerät, einen Brenner oder eine Heizung."
+        en: "We supply the controls for a gas appliance, a burner or a heating system."
+  - citation: AI-Act/annex-I/pt-A-11
+    risk_class: high_risk_annex_i
+    rule: art6-1-product-safety
+    purposes:
+      - de: "Wir bauen KI in ein Medizinprodukt ein."
+        en: "We build AI into a medical device."
+      - de: "Unsere Software ist selbst ein Medizinprodukt und befundet oder überwacht Patienten."
+        en: "Our software is itself a medical device and diagnoses or monitors patients."
+  - citation: AI-Act/annex-I/pt-A-12
+    risk_class: high_risk_annex_i
+    rule: art6-1-product-safety
+    purposes:
+      - de: "Unsere Software wertet Labor- oder Testergebnisse als In-vitro-Diagnostikum aus."
+        en: "Our software evaluates laboratory or test results as an in vitro diagnostic medical device."
+  - citation: AI-Act/annex-I/pt-B-14
+    risk_class: high_risk_annex_i
+    rule: art6-1-product-safety
+    purposes:
+      - de: "Wir bauen KI in ein Motorrad, einen Motorroller oder ein dreirädriges Fahrzeug ein."
+        en: "We build AI into a motorcycle, a scooter or a three-wheeled vehicle."
+  - citation: AI-Act/annex-I/pt-B-15
+    risk_class: high_risk_annex_i
+    rule: art6-1-product-safety
+    purposes:
+      - de: "Wir bauen KI in einen Traktor oder eine andere Landmaschine ein."
+        en: "We build AI into a tractor or other agricultural machinery."
+  - citation: AI-Act/annex-I/pt-B-16
+    risk_class: high_risk_annex_i
+    rule: art6-1-product-safety
+    purposes:
+      - de: "Wir liefern KI als Schiffsausrüstung oder für die Steuerung eines Schiffs."
+        en: "We supply AI as marine equipment or for steering a ship."
+  - citation: AI-Act/annex-I/pt-B-17
+    risk_class: high_risk_annex_i
+    rule: art6-1-product-safety
+    purposes:
+      - de: "Wir liefern KI für die Steuerung oder Sicherung eines Eisenbahnsystems."
+        en: "We supply AI for controlling or safeguarding a railway system."
+  - citation: AI-Act/annex-I/pt-B-18
+    risk_class: high_risk_annex_i
+    rule: art6-1-product-safety
+    purposes:
+      - de: "Wir bauen KI in ein Kraftfahrzeug ein, etwa als Fahrerassistenz oder Notbremsassistent."
+        en: "We build AI into a motor vehicle, for example as a driver assistance system or emergency brake assist."
+      - de: "Unsere Software fährt ein Fahrzeug oder greift in die Fahrzeugsteuerung ein."
+        en: "Our software drives a vehicle or intervenes in the vehicle's controls."
+  - citation: AI-Act/annex-I/pt-B-20
+    risk_class: high_risk_annex_i
+    rule: art6-1-product-safety
+    purposes:
+      - de: "Wir bauen KI in ein Luftfahrzeug oder eine Drohne ein."
+        en: "We build AI into an aircraft or a drone."
+      - de: "Wir liefern KI für die Flugsteuerung oder die Flugsicherung."
+        en: "We supply AI for flight control or air traffic control."
+  - citation: AI-Act/art-5/para-1-a
+    risk_class: prohibited
+    rule: art5-1a-subliminal
+    purposes:
+      - de: "Wir beeinflussen Menschen unterschwellig, ohne dass sie es merken."
+        en: "We influence people subliminally, without them noticing."
+      - de: "Wir drängen Nutzer mit täuschenden Mitteln zu einer Entscheidung, die ihnen schadet."
+        en: "We use deceptive techniques to push users into a decision that harms them."
+      - de: "Wir setzen Reize unterhalb der Wahrnehmungsschwelle ein, damit Nutzer länger bleiben und mehr kaufen."
+        en: "We use stimuli below the threshold of perception so that users stay longer and buy more."
+  - citation: AI-Act/art-5/para-1-b
+    risk_class: prohibited
+    rule: art5-1b-vulnerability
+    purposes:
+      - de: "Wir nutzen die Schwäche von Kindern, alten oder bedürftigen Menschen aus, um ihr Verhalten zu lenken."
+        en: "We exploit the vulnerability of children, older people or people in need to steer their behaviour."
+  - citation: AI-Act/art-5/para-1-c
+    risk_class: prohibited
+    rule: art5-1c-social-scoring
+    purposes:
+      - de: "Wir bewerten und stufen Menschen nach ihrem Sozialverhalten ein."
+        en: "We evaluate and rank people based on their social behaviour."
+      - de: "Wir führen einen allgemeinen Punktestand über Personen, der ihnen an anderer Stelle Nachteile bringt."
+        en: "We keep a general score on people that puts them at a disadvantage elsewhere."
+  - citation: AI-Act/art-5/para-1-d
+    risk_class: prohibited
+    rule: art5-1d-crime-prediction
+    required_words:
+      de: [ausschliesslich, ausschließlich, allein, einzig, nur aufgrund, nur anhand, nur auf der grundlage, lediglich]
+      en: [solely, exclusively, alone, purely, only on the basis of, based only on, only based on, based solely on, only from, merely]
+    purposes:
+      - de: "Wir sagen allein aus Persönlichkeitsmerkmalen voraus, ob jemand eine Straftat begehen wird."
+        en: "We predict whether someone will commit a crime solely from their personality traits."
+    counter_purposes:
+      # Article 5(1)(d) prohibits the prediction only when it is
+      # based SOLELY on profiling. If it relies on case files,
+      # previous convictions or the circumstances of the offence, it is not prohibited but falls under Annex III,
+      # point 6(d): high risk with obligations instead of a prohibition.
+      # Without this counter-purpose, a recidivism forecast for the police was reported as
+      # prohibited, which forbids the user a lawful business.
+      - de: "Wir schätzen für die Polizei das Rückfallrisiko aus Akten, Vorstrafen und Tatumständen."
+        en: "We estimate the risk of reoffending for the police from case files, previous convictions and the circumstances of the offence."
+  - citation: AI-Act/art-5/para-1-e
+    risk_class: prohibited
+    rule: art5-1e-facial-database
+    purposes:
+      - de: "Wir sammeln Gesichtsbilder ungezielt aus dem Internet oder aus Überwachungsaufnahmen und bauen daraus eine Gesichtsdatenbank auf."
+        en: "We gather facial images from the internet or CCTV footage in an untargeted way and build a database of faces from them."
+  - citation: AI-Act/art-5/para-1-f
+    risk_class: prohibited
+    rule: art5-1f-emotion-work-education
+    purposes:
+      - de: "Wir erkennen die Gefühle oder die Stimmung von Beschäftigten am Arbeitsplatz."
+        en: "We recognise the emotions or mood of employees in the workplace."
+      - de: "Wir erkennen die Gefühle von Schülern oder Studierenden in der Schule oder Hochschule."
+        en: "We recognise the emotions of pupils or students at school or university."
+      - de: "Wir schließen aus Gesicht, Stimme oder Tonfall von Mitarbeitern auf ihre Stimmung."
+        en: "We infer employees' mood from their face, voice or tone."
+    counter_purposes:
+      - de: "Wir erkennen aus Sicherheitsgründen die Müdigkeit eines Fahrers oder Piloten."
+        en: "We detect the fatigue of a driver or pilot for safety reasons."
+      - de: "Wir erkennen Gefühle aus medizinischen Gründen, etwa zur Behandlung."
+        en: "We recognise emotions for medical reasons, for example as part of treatment."
+  - citation: AI-Act/art-5/para-1-g
+    risk_class: prohibited
+    rule: art5-1g-biometric-categorisation
+    purposes:
+      - de: "Wir schließen aus biometrischen Daten auf Rasse, politische Einstellung, Gewerkschaft, Religion oder Sexualleben."
+        en: "We infer race, political opinions, trade union membership, religion or sex life from biometric data."
+      - de: "Wir leiten aus Gesichtsfotos die politische Einstellung einer Person ab."
+        en: "We infer a person's political views from photos of their face."
+      - de: "Wir schließen aus einem Porträtfoto auf die sexuelle Orientierung."
+        en: "We infer sexual orientation from a portrait photo."
+      - de: "Wir erkennen am Gesicht die Religion oder die Volksgruppe einer Person."
+        en: "We recognise a person's religion or ethnic group from their face."
+  - citation: AI-Act/art-5/para-1-h
+    risk_class: prohibited
+    rule: art5-1h-realtime-remote-identification
+    purposes:
+      - de: "Wir suchen Personen in Echtzeit an öffentlichen Orten per Gesichtserkennung für die Polizei."
+        en: "We search for people in real time in public places using facial recognition for the police."
+  - citation: AI-Act/art-50/para-1
+    risk_class: transparency
+    rule: art50-1-interaction
+    purposes:
+      - de: "Wir bieten einen Chatbot, der sich mit Kunden unterhält."
+        en: "We offer a chatbot that talks to customers."
+      - de: "Wir beantworten Kundenfragen im Dialog."
+        en: "We answer customer questions in a conversation."
+      - de: "Wir sprechen am Telefon oder im Chat mit Anrufern."
+        en: "We talk to callers on the phone or in a chat."
+  - citation: AI-Act/art-50/para-2
+    risk_class: transparency
+    rule: art50-2-synthetic-content
+    purposes:
+      - de: "Wir erzeugen mit KI Bilder, Fotos oder Grafiken."
+        en: "We use AI to generate images, photos or graphics."
+      - de: "Wir erzeugen mit KI Texte."
+        en: "We use AI to generate texts."
+      - de: "Wir schreiben mit KI ganze Artikel, Beiträge oder Texte aus einem Stichwort."
+        en: "We use AI to write complete articles, posts or other texts from just a keyword."
+      - de: "Wir erzeugen mit KI Stimmen, Musik oder Tonaufnahmen."
+        en: "We use AI to generate voices, music or audio recordings."
+      - de: "Wir erzeugen mit KI Videos."
+        en: "We use AI to generate videos."
+    counter_purposes:
+      - de: "Wir korrigieren einen vorhandenen Text nur, ohne ihn inhaltlich zu ändern."
+        en: "We only correct an existing text without changing its content."
+      - de: "Wir erstellen mit KI Übersichten oder Protokolle für den internen Betrieb und lesen sie selbst gegen."
+        en: "We use AI to produce summaries or minutes for internal operations and check them ourselves."
+  - citation: AI-Act/art-50/para-3
+    risk_class: transparency
+    rule: art50-3-emotion-biometric
+    purposes:
+      - de: "Wir betreiben ein System zur Gefühlserkennung oder zur biometrischen Einteilung."
+        en: "We operate an emotion recognition system or a biometric categorisation system."
+  - citation: AI-Act/art-50/para-4
+    risk_class: transparency
+    rule: art50-4-deepfake
+    purposes:
+      - de: "Wir verändern Bilder oder Videos von echten Menschen so, dass sie etwas tun oder sagen, was nicht geschehen ist."
+        en: "We alter images or videos of real people so that they appear to do or say something that never happened."
+      - de: "Wir erzeugen Texte zu Themen von öffentlichem Interesse und veröffentlichen sie."
+        en: "We generate texts on matters of public interest and publish them."
+      - de: "Wir veröffentlichen Bilder oder Videos, die eine KI für uns erzeugt hat."
+        en: "We publish AI-generated images or video footage."
+  - citation: AI-Act/art-3/pt-63
+    risk_class: gpai
+    rule: art51-gpai-model
+    purposes:
+      - de: "Wir trainieren ein eigenes Sprachmodell oder Basismodell und stellen es anderen bereit."
+        en: "We train our own language model or foundation model and make it available to others."
+      - de: "Wir verkaufen den Zugang zu unserem Modell über eine Programmierschnittstelle an andere Unternehmen."
+        en: "We sell access to our model to other companies through an API."
+      - de: "Wir veröffentlichen ein vielseitig einsetzbares Modell, das andere in ihre Anwendungen einbauen."
+        en: "We release a general-purpose model that others build into their applications."
+    counter_purposes:
+      - de: "Wir nutzen ein fremdes Modell nur im eigenen Unternehmen."
+        en: "We only use a third-party model within our own company."
+      - de: "Wir setzen ein Modell nur zur Forschung oder für einen Prototyp ein, ohne es in Verkehr zu bringen."
+        en: "We only use a model for research or a prototype, without placing it on the market."
+      - de: "Wir trainieren ein Modell ausschließlich für die eigene Forschung und bringen es nicht in Verkehr."
+        en: "We train a model exclusively for our own research and do not place it on the market."
