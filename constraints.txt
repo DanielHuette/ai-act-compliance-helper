@@ -101,7 +101,7 @@ safetensors==0.8.0
 scikit-learn==1.9.1
 scipy==1.17.1 ; python_full_version < '3.12'
 scipy==1.18.1 ; python_full_version >= '3.12'
-sentence-transformers==6.1.0
+sentence-transformers==6.2.0
 sentencepiece==0.2.2
 setuptools==84.1.0
 shellingham==1.5.4
