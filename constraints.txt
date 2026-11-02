@@ -101,7 +101,7 @@ safetensors==0.8.0
 scikit-learn==1.9.1
 scipy==1.17.1 ; python_full_version < '3.12'
 scipy==1.18.1 ; python_full_version >= '3.12'
-sentence-transformers==6.1.0
+sentence-transformers==6.2.0
 sentencepiece==0.2.2
 setuptools==84.1.0
 shellingham==1.5.4
@@ -116,8 +116,8 @@ threadpoolctl==3.7.0
 tokenizers==0.23.3
 tomli==2.5.0
 tomli-w==1.2.0
-torch==2.14.1 ; sys_platform == 'darwin'
-torch==2.14.1+cpu ; sys_platform != 'darwin'
+torch==2.15.0 ; sys_platform == 'darwin'
+torch==2.15.0 ; sys_platform != 'darwin'
 tqdm==4.70.1
 transformers==5.19.0
 truststore==0.10.4 ; sys_platform != 'emscripten'
