@@ -1,4 +1,4 @@
-# AI Act Compliance Helper
+# EU AI Act Compliance Helper (Konformitätshelfer)
 
 > A free tool that determines in six steps whether an AI system counts as high risk under
 > Regulation (EU) 2024/1689 on artificial intelligence, and names the exact provision the

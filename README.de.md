@@ -1,12 +1,6 @@
-# AI Act Compliance Helper – Einstufung nach der KI-Verordnung
+# AI Act Compliance Helper – Konformitätshelfer zur KI-Verordnung
 
 [English](README.md) | **Deutsch**
-
-Sagt Ihnen, in welche Risikoklasse der KI-Verordnung Ihr KI-System fällt, und nennt die genaue Stelle im Gesetz.
-
-Projektseite: [konformitaetshelfer.speedofthespirit.dev/#projekt](https://konformitaetshelfer.speedofthespirit.dev/#projekt)
-
-Stand: Beispiele aus dem Leitlinienentwurf der EU-Kommission vom 19.05.2026.
 
 **Kontext:** was das Werkzeug tut und wo man anfängt | **Eingabe:** eine Beschreibung Ihres KI-Systems, gegeben als Antworten auf Fragen | **Ergebnis:** seine Risikoklasse nach der KI-Verordnung, mit der genauen Stelle im Gesetz
 
@@ -23,7 +17,8 @@ arbeitet auf Deutsch und auf Englisch.
 
 **Projektseite:** <https://konformitaetshelfer.speedofthespirit.dev/>, ohne Anmeldung, ohne
 Installation, auch auf dem Handy.
-**Für den eigenen Rechner:** Pakete auf Anfrage, Build über `packages.yml`.
+**Für den eigenen Rechner:** [fertige Pakete für Windows, macOS und
+Linux](https://github.com/DanielHuette/ai-act-compliance-helper/releases).
 
 ## Das ist keine Rechtsberatung
 
@@ -135,7 +130,9 @@ aus `web/benchmarks.json`, die `scripts/export_benchmarks.py` aus den Messprotok
 
 ### Als Programm
 
-Pakete auf Anfrage, Build über `packages.yml`. Paket für Ihr System installieren, starten. Die Bedienoberfläche öffnet sich im Browser, in der Sprache des
+Paket für Ihr System von der
+[Veröffentlichungsseite](https://github.com/DanielHuette/ai-act-compliance-helper/releases)
+holen, installieren, starten. Die Bedienoberfläche öffnet sich im Browser, in der Sprache des
 Betriebssystems. Kein Python, kein Conda, keine Einrichtung.
 
 Dazu kommt dort die **Volltextsuche im Verordnungstext**: eine Frage in eigenen Worten, und der

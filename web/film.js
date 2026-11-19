@@ -3,8 +3,7 @@
  * Context: the scenes are HTML with CSS animations, so they stay sharp, translatable and light;
  * this module only keeps time | Input: the scenes and chapter buttons in #film, the "tab:shown"
  * event, page visibility, prefers-reduced-motion | Output: the current scene, chapter progress,
- * play and pause; it starts on its own when the tab opens and opens the project tab once the
- * last scene has played out, both except under reduced motion.
+ * play and pause; it starts on its own when the tab opens, except under reduced motion.
  */
 import {onLanguage} from "./language.js";
 
@@ -100,7 +99,6 @@ function tick(now) {
   lastFrame = now;
   if (elapsed >= duration(current)) {
     if (current === scenes.length - 1) {
-      if (openProject()) return;
       elapsed = duration(current);
       updateMeters();
       setPlaying(false);
@@ -110,17 +108,6 @@ function tick(now) {
   }
   updateMeters();
   requestAnimationFrame(tick);
-}
-
-// A film that has played to the end hands over to the project tab through the tab link, so the
-// address, history and tab bar follow; it waits on its first scene for the next visit.
-function openProject() {
-  const tab = document.getElementById("tab-projekt");
-  if (!tab || REDUCED_MOTION.matches) return false;
-  showScene(0);
-  setPlaying(false);
-  tab.click();
-  return true;
 }
 
 function togglePlay() {

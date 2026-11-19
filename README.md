@@ -2,12 +2,6 @@
 
 **English** | [Deutsch](README.de.md)
 
-Tells you which risk class your AI system falls into under the AI Act and names the exact legal provision behind it.
-
-Project page: [konformitaetshelfer.speedofthespirit.dev/#projekt](https://konformitaetshelfer.speedofthespirit.dev/#projekt)
-
-Status: examples from the European Commission's draft guidelines of 19.05.2026.
-
 **Context:** what the tool does and where to start | **Input:** a description of your AI system, given as answers to questions | **Output:** its risk class under the AI Act, with the exact legal provision behind it
 
 About six steps, and you know which risk class your artificial intelligence (AI) system
@@ -23,7 +17,8 @@ and English.
 
 **Project page:** <https://konformitaetshelfer.speedofthespirit.dev/>, no sign-up, no
 installation, works on a phone.
-**On your own computer:** Packages on request, built by `packages.yml`.
+**On your own computer:** [ready-made packages for Windows, macOS and
+Linux](https://github.com/DanielHuette/ai-act-compliance-helper/releases).
 
 ## This is not legal advice
 
@@ -134,8 +129,9 @@ walkthrough), `#organigramm` (how the parts connect), `#benchmarks` (the measure
 
 ### As a program
 
-Packages on request, built by `packages.yml`. Install the package for your system and
-start it. The interface opens in the browser, in the language of the operating system. No Python,
+Download the package for your system from the
+[releases page](https://github.com/DanielHuette/ai-act-compliance-helper/releases), install,
+start. The interface opens in the browser, in the language of the operating system. No Python,
 no Conda, no setup.
 
 The program adds a **full-text search in the legal text**: a question in your own words, and
