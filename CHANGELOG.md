@@ -19,6 +19,11 @@ The rule set still stands on **31 May 2026**; no question, rule or legal text ch
 
 ### Added
 
+- Scroll effects on the project page: sections move in from the sides, headings fill with
+  gold, dividers draw in and a light runs around the tiles. The flag in the masthead waves.
+  Everything stays still when reduced motion is requested.
+- Section with the four risk classes of the AI Act as a rotating pyramid, in German and
+  English.
 - Start page section with 20 worked examples from the Commission draft guidelines of 19 May
   2026: 13 high risk, 6 not high risk, 1 exemption under Article 6(3), across nine areas. A card
   replays the walkthrough with the answers prefilled and ends with the helper's finding next to

@@ -39,6 +39,9 @@
 /film.js
   Cache-Control: public, max-age=3600, must-revalidate
 
+/effects.js
+  Cache-Control: public, max-age=3600, must-revalidate
+
 /fonts/*
   Cache-Control: public, max-age=2592000
 
