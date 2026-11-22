@@ -20,7 +20,7 @@ The rule set still stands on **31 May 2026**; no question, rule or legal text ch
 ### Added
 
 - Scroll effects on the project page: sections move in from the sides, headings fill with
-  gold, dividers draw in and a light runs around the tiles. The flag in the masthead waves.
+  yellow, dividers draw in and a light runs around the tiles. The flag in the masthead waves.
   Everything stays still when reduced motion is requested.
 - Section with the four risk classes of the AI Act as a rotating pyramid, in German and
   English.
@@ -43,7 +43,8 @@ The rule set still stands on **31 May 2026**; no question, rule or legal text ch
 
 ### Changed
 
-- Web page in the RepoCity design: night blue, solid gold for everything chosen, self-hosted
+- Web page in the colours of the European flag: Europe blue (page ground `#06143a`, tiles
+  from `#14327e` to `#0d2463`) and star yellow `#ffcc00` for everything chosen, self-hosted
   Archivo, Source Serif 4 and Syncopate (`web/fonts/`, licences in `web/fonts/LICENSE`).
 - `scripts/check_web_locales.py` checks the catalog keys of every script in `web/`, not only
   `page.js`.
